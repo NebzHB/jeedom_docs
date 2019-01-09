@@ -2,6 +2,11 @@
 Changelog
 =========
 
+v1.4.6 (09&10-01-2019)
+-------------
+
+* Déménagement de la doc dans une doc centralisée
+
 v1.4.5 (23&24-11-2018)
 -------------
 
