@@ -65,6 +65,7 @@ commandes.
 -	Exemple d'options pour le champ Options : *volume=10,jingle=non,tts=picotts,lang=en_US*
 >**Important** : Les options doivent être séparées par des virgules sans importance d'ordre. Aucune option n'est obligatoire, si elle n'est pas présente, la valeur de l'équipement sera utilisée.
 Champ *Options* - choix valides :
+
 -	**volume=** pourcentage du volume, valeur comprise entre *0* et *100* (sans le signe %).
 -	**jingle=** *oui* ou *non* pour utiliser le jingle par défaut (ou pas) ou *sncf*, sinon des valeurs entre *10-13* pour les sons intégrés à la passerelle.
 -	**tts=** choisir entre *picotts* ou *googletts* (Recommandé) ou *jeedom* (Expérimental).
