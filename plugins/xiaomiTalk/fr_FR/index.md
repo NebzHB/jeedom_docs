@@ -70,5 +70,5 @@ Champ *Options* - choix valides :
 -	**tts=** choisir entre *picotts* ou *googletts* (Recommandé) ou *jeedom* (Expérimental).
 -	**lang=** choisir parmis les langues suivantes : *fr_FR* ou *en_US* ou *en_GB* ou *de_DE* ou *es_ES* ou *it_IT*
 
--	Champ *Message* : Ecrivez le texte qui doit être prononcé par votre passerelle
+Champ *Message* : Ecrivez le texte qui doit être prononcé par votre passerelle
 .
