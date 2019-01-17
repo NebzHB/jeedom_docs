@@ -57,12 +57,12 @@ commandes.
 **Onglet Commandes** :
 ----------------------
 
--   Il existe une seule commande **Parle**. Elle contient deux champs, un champ Options et un Message.
+Il existe une seule commande **Parle**. Elle contient deux champs, un champ Options et un Message.
 
 **Utilisation du Widget ou dans un Scénario** :
 -----------------------------------------------
 
--	Exemple d'options pour le champ Options : *volume=10,jingle=non,tts=picotts,lang=en_US*
+Exemple d'options pour le champ Options : *volume=10,jingle=non,tts=picotts,lang=en_US*
 >**Important** : Les options doivent être séparées par des virgules sans importance d'ordre. Aucune option n'est obligatoire, si elle n'est pas présente, la valeur de l'équipement sera utilisée.
 
 Champ *Options* - choix valides :
