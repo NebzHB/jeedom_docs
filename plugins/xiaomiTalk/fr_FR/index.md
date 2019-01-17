@@ -1,3 +1,6 @@
+Présentation XiaomiTalk
+=======================
+
 Ce plugin permet de faire parler vos passerelles xiaomi Mijia.
 
 >Attention, ce plugin est compatible avec la version xiaomi Mijia de la passerelle et PAS la version HomeKit (Aqara) !
