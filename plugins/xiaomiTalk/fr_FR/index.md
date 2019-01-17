@@ -68,7 +68,6 @@ Champ *Options* - choix valides :
 -	**volume=** pourcentage du volume, valeur comprise entre *0* et *100* (sans le signe %).
 -	**jingle=** *oui* ou *non* pour utiliser le jingle par défaut (ou pas) ou *sncf*, sinon des valeurs entre *10-13* pour les sons intégrés à la passerelle.
 -	**tts=** choisir entre *picotts* ou *googletts* (Recommandé) ou *jeedom* (Expérimental).
--	**lang=** choisir parmis les langues suivantes : *fr_FR* ou *en_US* ou *en_GB* ou *de_DE* ou *es_ES* ou *it_IT*
+-	**lang=** choisir parmis les langues suivantes : *fr_FR* ou *en_US* ou *en_GB* ou *de_DE* ou *es_ES* ou *it_IT*.
 
-Champ *Message* : Ecrivez le texte qui doit être prononcé par votre passerelle
-.
+Champ *Message* : Ecrivez le texte qui doit être prononcé par votre passerelle.
