@@ -71,4 +71,6 @@ Champ *Options* - choix valides :
 -	**tts=** choisir entre *picotts* ou *googletts* (Recommandé) ou *jeedom* (Expérimental).
 -	**lang=** choisir parmis les langues suivantes : *fr_FR* ou *en_US* ou *en_GB* ou *de_DE* ou *es_ES* ou *it_IT*.
 
+>Sous Debian Jessie (deb8) les messages qui font plus de 100 caractères et qui utilisent googletts passeront en picotts à cause d'une limitation de avconv. Sous Debian Stretch (deb9), ces messages seront fractionnés en parties de 100 caractères et joués à la suite.
+
 Champ *Message* : Ecrivez le texte qui doit être prononcé par votre passerelle.
