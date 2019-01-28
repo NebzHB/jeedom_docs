@@ -2,6 +2,11 @@
 Changelog
 =========
 
+28/01/2019
+-------------
+
+* Affichage debug en cas de check passerelle
+
 18/01/2019
 -------------
 
