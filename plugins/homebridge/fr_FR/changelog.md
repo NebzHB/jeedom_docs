@@ -2,6 +2,13 @@
 Changelog
 =========
 
+v1.4.7 (28&29-01-2019)
+-------------
+
+* Ajout du type générique CO (monoxyde de carbonne)
+* Meilleure suppression de homebridge-alexa global pour ne pas avoir de conflict avec l'existant
+
+
 v1.4.6 (09&10-01-2019)
 -------------
 
