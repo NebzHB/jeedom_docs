@@ -70,13 +70,13 @@ Champ *Options* - choix valides :
 -	**jingle=** *oui* ou *non* pour utiliser le jingle par défaut (ou pas) ou *sncf*, sinon des valeurs entre *10-13* pour les sons intégrés à la passerelle.
 -	**tts=** choisir entre *picotts* ou *googletts* (Recommandé) ou *jeedom* (Expérimental) ou *osx* (via SSH) ou *voicerss* (Besoin d'une clé API) ou *ttswebserver*.
 -	**lang=** choisir parmis les langues suivantes : *fr_FR* ou *en_US* ou *en_GB* ou *de_DE* ou *es_ES* ou *it_IT*.
-- **voix=** si *tts=osx* alors choisir parmis les voix suivantes : Thomas ou Aurelie ou Audrey (si installées)
+- **voix=** si *tts=osx* alors choisir parmis les voix suivantes : Thomas ou Aurelie ou Audrey (si installées)  (testé sur Mojave)
 - **voix=** si *tts=ttswebserver* alors choisir parmis les voix listées dans l'interface (dépendant de ce que vous avez installé)
 
 >Sous Debian Jessie (deb8), les messages qui font plus de 100 caractères et qui utilisent *googletts* passeront en *picotts* à cause d'une limitation de *avconv* (le convertisseur audio). Sous Debian Stretch (deb9), ces messages seront fractionnés en parties de 100 caractères et joués à la suite pour votre plus grand plaisir !
 
 Champ *Message* : Ecrivez le texte qui doit être prononcé par votre passerelle.
 
->Pour *tts=osx* vous devez avoir activé SSH sur votre mac dans Réglages système > Partage > Sessions Distantes et vérifiez que vous avez bien activé toutes les voix Personnalisées de votre langue dans Réglages système > Accessibilité > Voix
+>Pour *tts=osx* vous devez avoir activé SSH sur votre mac dans Réglages système > Partage > Sessions Distantes et vérifiez que vous avez bien activé toutes les voix Personnalisées de votre langue dans Réglages système > Accessibilité > Voix  (testé sur Mojave)
 
 >Pour *tts=voicerss* vous avez besoin d'une clé API (gratuite pour moins de 350 TTS/jour) : http://www.voicerss.org/login.aspx
