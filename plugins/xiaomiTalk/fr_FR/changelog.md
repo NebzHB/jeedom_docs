@@ -6,7 +6,7 @@ Changelog
 -------------
 
 * Nouveau TTS MacOSX
-* Nouveau TTS VOiceRSS
+* Nouveau TTS VoiceRSS
 * Correction pour jessie et avconv
 * Auto-Validation du token à chaque chargement de la page + validation ssh ou voiceRSS
 
