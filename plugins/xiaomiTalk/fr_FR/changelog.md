@@ -9,6 +9,7 @@ Changelog
 * Nouveau TTS VoiceRSS
 * Correction pour jessie et avconv
 * Auto-Validation du token à chaque chargement de la page + validation ssh ou voiceRSS
+* Check si l'adresse interne de jeedom est en 10.9 -> erreur si c'est le cas
 
 28/01/2019
 -------------
