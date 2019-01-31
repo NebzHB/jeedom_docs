@@ -78,3 +78,5 @@ Champ *Options* - choix valides :
 Champ *Message* : Ecrivez le texte qui doit être prononcé par votre passerelle.
 
 >Pour *tts=osx* vous devez avoir activé SSH sur votre mac dans Réglages système > Partage > Sessions Distantes et vérifiez que vous avez bien activé toutes les voix Personnalisées de votre langue dans Réglages système > Accessibilité > Voix
+
+>Pour *tts=voicerss* vous avez besoin d'une clé API (gratuite pour moins de 350 TTS/jour) : http://www.voicerss.org/login.aspx
