@@ -5,7 +5,7 @@ Changelog
 30/01/2019
 -------------
 
-* Nouveau TTS MacOSX
+* Nouveau TTS MacOSX  (testé sur Mojave)
 * Nouveau TTS VoiceRSS
 * Correction pour jessie et avconv
 * Auto-Validation du token à chaque chargement de la page + validation ssh ou voiceRSS
