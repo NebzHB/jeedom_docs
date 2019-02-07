@@ -391,10 +391,12 @@ Generic
 |Info/Porte<br/>Info/Fenêtre<br/>(même traitement)|`NON`|pas 1 = Contact<br/>1 = Pas de contact| 
 |Info/Sabotage|`NON`|1 = Pas de sabotage<br/>0 = Sabotage| 
 |Info/Détection de fumée|`NON`|1 = Pas de sabotage<br/>1 = fumée détectée| 
-|Info/Choc|`NON`|Générique (Eve Seulement)
-|Info/Pression|`NON`|Générique (Eve Seulement)
-|Info/Son (dB)|`NON`|Générique (Eve Seulement)
-|Info/UV|`NON`|Générique (Eve Seulement)
+|Info/Choc|`NON`|Générique (Eve Seulement)|
+|Info/Pression|`NON`|Générique (Eve Seulement)|
+|Info/Son (dB)|`NON`|Générique (Eve Seulement)|
+|Info/Détecteur CO|`NON`|0 = Pas de CO<br/>1 = CO|
+|Info/CO2 (ppm)|`NON`|PPM|
+|Info/UV|`NON`|Générique (Eve Seulement)|
 |Info/Générique|`NON`|Valeur <64 charactères<br/>avec Unité indiquée ou pas<br/>(Eve Seulement)| 
 |Action/Générique|`NON`|Type "Défaut"<br/>uniquement<br/><br/>Comme un Bouton poussoir|
 |Info/Pluie (accumulation)|`NON`|Générique (Eve Seulement)|
