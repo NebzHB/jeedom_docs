@@ -322,10 +322,10 @@ Thermostats
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
-|Info/Thermostat Etat (BINAIRE)|`NON`|0 = Eteint<br/>1 = Allumé|
-|Info/Thermostat Etat (HUMAIN)|`NON`|| 
-|Info/Thermostat Mode|`OUI si associé mode homekit`|Valeur Mappée| 
-|Action/Thermostat Mode|`NON`|Peut être associé mode homekit|
+|Info/Thermostat Etat (BINAIRE)|`NON Utilisé`|0 = Eteint<br/>1 = Allumé|
+|Info/Thermostat Etat (HUMAIN)|`NON`|'off' ou 'arrêté' ou 'arret'<br/>'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'| 
+|Info/Thermostat Mode|`OUI si associé mode homekit`|'Off' ou 'Arret' = OFF<br/>'Aucun' ou 'Thermostat' = AUTO<br/>Exactement le nom d'une Action/Thermostat Mode<br/> à associer à HEAT ou COOL|
+|Action/Thermostat Mode|`NON`|Mode à associer à un mode homekit (max 2)|
 |Info/Thermostat Température Extérieur|`NON utilisé`|N/A
 |Info/Thermostat Température ambiante|`NON`|-50 → 100| 
 |Info/Thermostat Consigne|`OUI`|10 → 38| 
