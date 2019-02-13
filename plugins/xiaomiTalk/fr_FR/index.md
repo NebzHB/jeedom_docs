@@ -1,3 +1,40 @@
+ATTENTION
+=========
+
+Bonjour,
+
+comme vous l'avez probablement lu dans le forum, Xiaomi a un bug quelque part dans sa passerelle.
+
+A ce jour, ce bug a été présent chez 5 personnes sur les 227 qui utilisent ce plugin. (2.2%)
+
+Ce n'est pas beaucoup, mais c'est un risque... j'ai donc décidé de bloquer le plugin en attendant que Xiaomi résolve son bug
+
+(ou de trouver la raison exacte du bug pour prévenir les gens de ce qu'il ne faut pas faire...)
+
+J'ai commandé plusieurs passerelles afin de creuser le problème à fond et de trouver la raison.
+
+Je vous invite à vérifier de temps en temps sur le forum le développement, je vous y tiendrai informés
+
+**En résumé :**
+- Risque bas (2.2% des utilisateurs à ce jour)<br />
+**Que risquez vous ?**
+- Toute la partie Zigbee et communication avec les capteurs <b>continue de fonctionner normalement.
+- *Le bug affecte uniquement les sons intégrés (ils sont désactivés) et la possibilité d'envoyer de nouveaux sons à la passerelle.*
+
+(Ce bug est bloquant, il n'y a (à ce jour) pas de moyen de faire marche arrière. Il faut attendre une mise à jour Xiaomi.)
+
+J'espère que Xiaomi va bientot résoudre ce problème et intégrer ses sons dans son firmware (même une mise à jour ne les réactive pas...)
+
+Ou qu'ils vont intégrer un vrai Factory Reset qui permettra de récupérer sa passerelle tel qu'à l'achat
+
+Je tiens à préciser que ce plugin a été dûement testé pendant plusieurs semaines et le bug ne se présentait pas dans une utilisation classique du plugin
+
+J'aime comprendre, je vais donc chercher à faire la lumière là dessus
+
+Désolé pour le désagrément,
+
+Nebz
+
 Présentation XiaomiTalk
 =======================
 
