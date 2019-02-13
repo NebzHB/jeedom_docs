@@ -17,6 +17,7 @@ Je vous invite à vérifier de temps en temps sur le forum le développement, je
 
 **En résumé :**
 - Risque bas (2.2% des utilisateurs à ce jour)<br />
+
 **Que risquez vous ?**
 - Toute la partie Zigbee et communication avec les capteurs <b>continue de fonctionner normalement.
 - *Le bug affecte uniquement les sons intégrés (ils sont désactivés) et la possibilité d'envoyer de nouveaux sons à la passerelle.*
