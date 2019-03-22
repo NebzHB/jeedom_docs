@@ -2,6 +2,11 @@
 Changelog
 =========
 
+v1.4.8 (22&23-03-2019)
+-------------
+
+* BugFix : retirer un type générique (homebridge)
+
 v1.4.7 (28&29-01-2019)
 -------------
 
