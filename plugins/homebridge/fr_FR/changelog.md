@@ -6,7 +6,7 @@ v1.4.8 (22&23-03-2019) + (29&30-03-2019)
 -------------
 
 * BugFix : retirer un type générique (homebridge)
-* BugFix : --allow-unauthenticated for not signed package on smart
+* BugFix : --allow-unauthenticated pour le package non signé sur le repo.jeedom sur smart
 
 v1.4.7 (28&29-01-2019)
 -------------
