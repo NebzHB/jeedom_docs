@@ -2,6 +2,10 @@
 Changelog
 =========
 
+11/08/2019
+-------------
+* Bugfix pour changement de langue sur voix OSX
+
 30/01/2019
 -------------
 
