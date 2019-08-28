@@ -2,6 +2,10 @@
 Changelog
 =========
 
+28&29/08/2019
+-------------
+* Compatibilité Buster et Nodejs12
+
 11/08/2019
 -------------
 * Bugfix pour changement de langue sur voix OSX
