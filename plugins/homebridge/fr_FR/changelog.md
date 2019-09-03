@@ -6,6 +6,7 @@ v1.4.9 (28&29-08-2019) (et les quelques jours qui ont suivit...)
 -------------
 
 * changement de limite à 149 périph
+* détection concentrateur homekit + alerte si aucun (pour indiquer que l'accès à distance impossible)
 * compatibilité buster et nodejs12 (+ sur smart)
 
 
