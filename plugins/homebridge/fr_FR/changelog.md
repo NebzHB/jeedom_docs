@@ -2,11 +2,11 @@
 Changelog
 =========
 
-v1.4.9 (28&29-08-2019)
+v1.4.9 (28&29-08-2019) (et les quelques jours qui ont suivit...)
 -------------
 
 * changement de limite à 149 périph
-* compatibilité buster et nodejs12
+* compatibilité buster et nodejs12 (+ sur smart)
 
 
 v1.4.8 (22&23-03-2019) + (29&30-03-2019)
