@@ -2,6 +2,11 @@
 Changelog
 =========
 
+06-09-2019
+-------------
+
+* correctif pour i386 (i686) 32 bits (install version 8)
+
 28&29/08/2019
 -------------
 * Compatibilité Buster et Nodejs12
