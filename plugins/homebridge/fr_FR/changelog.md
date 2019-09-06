@@ -2,6 +2,11 @@
 Changelog
 =========
 
+06-09-2019
+-------------
+
+* correctif pour i386 (i686) 32 bits (install version 8)
+
 v1.4.9 (28&29-08-2019) (et les quelques jours qui ont suivit...)
 -------------
 
