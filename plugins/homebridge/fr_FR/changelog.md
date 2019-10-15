@@ -2,6 +2,11 @@
 Changelog
 =========
 
+15-10-2019
+-------------
+
+* updates compatibilité V4 (design)
+
 09-09-2019
 -------------
 
