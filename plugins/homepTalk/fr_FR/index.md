@@ -1,4 +1,4 @@
-Présentation Homep-Talk
+Présentation HomepTalk
 =======================
 
 Ce plugin permet de faire parler en TTS vos Apple Homepod.
