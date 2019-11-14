@@ -43,12 +43,12 @@ commandes.
 
 -   **Objet parent** : Indique l’objet parent auquel appartient l’équipement
 
--   **Ip de la passerelle** : L'ip du homepod en question
+-   **Adresse IP** : L'ip du homepod en question
 
--   **Volume par défaut** : Le volume est un pourcentage (sans le signe pourcent). Utilisé si le champ Options ne donne pas d'autre information.
--   **Langue par défaut** : La langue a utiliser si le champ Options ne donne pas d'autre information.
--   **Multiplicateur de vitesse par défaut** : Valeur pour accélérer ou ralentir le flux de la voix, valeur de 0.5 à 2 (avec décimale point). Utilisé si le champ Options ne donne pas d'autre information.
--   **Système de TTS par défaut** : GoogleTTS est recommandé. Utilisé si le champ Options ne donne pas d'autre information.
+-   **Volume** : Le volume est un pourcentage (sans le signe pourcent). Utilisé si le champ Options ne donne pas d'autre information.
+-   **Langue** : La langue a utiliser si le champ Options ne donne pas d'autre information.
+-   **Multiplicateur de vitesse** : Valeur pour accélérer ou ralentir le flux de la voix, valeur de 0.5 à 2 (avec décimale point). Utilisé si le champ Options ne donne pas d'autre information.
+-   **Système de TTS** : GoogleTTS est recommandé. Utilisé si le champ Options ne donne pas d'autre information.
 
 **Onglet Commandes** :
 ----------------------
@@ -58,7 +58,7 @@ Il existe une commande **Parle**. Elle contient deux champs, un champ Options et
 **Utilisation du Widget ou dans un Scénario** :
 -----------------------------------------------
 
-Exemple d'options pour le champ Options : *volume=10,vitesse=1.2,tts=picotts,lang=en_US*
+Exemple d'options pour le champ *Options* : *volume=10,vitesse=1.2,tts=picotts,lang=en_US*
 >**Important** : Les options doivent être séparées par des virgules sans importance d'ordre. Aucune option n'est obligatoire, si elle n'est pas présente, la valeur de l'équipement sera utilisée.
 
 Champ *Options* - choix valides :
