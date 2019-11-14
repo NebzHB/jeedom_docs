@@ -109,11 +109,14 @@ Vous pouvez utiliser ces quelques astuces :
 >Je vous invite à tester le plug-in ttswebserveur, il vous permet d'utiliser un android (ou une vm android) pour générer la voix, il existe plein de voix très expressives gratuites ou à bas prix chez Voxygen
 10. Les mêmes phrases toujours prononcées c'est un peu monotone.
 >Vous pouvez utiliser les alternatives :
+
 [Bonjour|Hello|Salut] comment vas-tu ?
 
 >Et les conditions :
+
 Il fait #[domicile][meteo][temperature]# degrés, {(#[domicile][meteo][temperature]# >25) ? Il fait chaud : bonne journée }
-Mais évidemment, le cache a moins de chance d'exister dans ce cas...
+
+>Mais évidemment, le cache a moins de chance d'exister dans ce cas...
 11. Je parle une autre langue que celles proposées par le plug-in.
 >Aucun problème, contactez moi je le ferai un plaisir de l'ajouter, il faudra juste espérer que votre système TTS préfèré la supporte....
 
