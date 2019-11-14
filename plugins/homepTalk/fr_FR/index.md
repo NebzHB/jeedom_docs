@@ -66,7 +66,6 @@ Champ *Options* - choix valides :
 -	**vitesse=** multiplicateur de vitesse, valeur comprise entre 0.5 et 2 (avec décimales possibles et un POINT !) pour parler plus vite ou plus lentement.
 -	**tts=** choisir entre *picotts* (pas compatible mini+ ou rPI1/2) ou *googletts* (Recommandé) ou *jeedom* (Expérimental) ou *osx* (via SSH) ou *voicerss* (Besoin d'une clé API) ou *ttswebserver*.
 -	**lang=** choisir parmis les langues suivantes : *fr_FR* ou *en_US* ou *en_GB* ou *de_DE* ou *es_ES* ou *it_IT*.
-- **voix=** si vous avez choisi tts=jeedom alors vous pouvez écrire #idDeVotreSon# dans le message et il sera lu
 - **voix=** si *tts=osx* alors choisir parmis les voix suivantes : Thomas ou Aurelie ou Audrey (si installées)  (testé sur Mojave)
 - **voix=** si *tts=ttswebserver* alors choisir parmis les voix listées dans l'interface (dépendant de ce que vous avez installé)
 
