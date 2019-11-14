@@ -10,6 +10,10 @@ Après installation du plugin, il vous suffit de l’activer. Si vous voullez al
 
 >**Important** :L'installation des dépendances prend beaucoup de temps !!! soyez patient...
 
+Vos homepods ne doivent pas être bloqués par mot de passe :
+
+![config](../images/homepTalk-homekitConf.gif)
+
 Configuration des équipements 
 =============================
 
