@@ -71,12 +71,14 @@ Champ *Options* - choix valides :
 
 >Sous Debian Jessie (deb8), les messages qui font plus de 100 caractères et qui utilisent *googletts* passeront en *picotts* à cause d'une limitation de *avconv* (le convertisseur audio). Sous Debian Stretch (deb9), ces messages seront fractionnés en parties de 100 caractères et joués à la suite pour votre plus grand plaisir !
 
-Champ *Message* : Ecrivez le texte qui doit être prononcé par votre passerelle.
+Champ *Message* : Ecrivez le texte qui doit être prononcé par votre homepod.
 Vous pouvez utiliser ces quelques astuces :
->[Bonjour|Salut], ça va ? => Donnera soit “Bonjour, ça va ?” ou “Salut, ça va ?”
-
+```
+[Bonjour|Salut], ça va ? => Donnera soit “Bonjour, ça va ?” ou “Salut, ça va ?”
+```
+```
 >{(test) ?vrai:faux} => exemple : {(#[Maison][Météo][Température Max]# < 12) ?il va faire froid:il va faire beau !}
-
+```
 >Pour *tts=osx* vous devez avoir activé SSH sur votre mac dans Préférences système > Partages > Sessions Distantes et vérifiez que vous avez bien activé toutes les voix Personnalisées de votre langue dans Préférences système > Accessibilité > Parole  (testé sur Mojave)
 
 >Pour *tts=voicerss* vous avez besoin d'une clé API (gratuite pour moins de 350 TTS/jour) : http://www.voicerss.org/login.aspx
