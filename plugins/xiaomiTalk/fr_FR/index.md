@@ -110,7 +110,8 @@ Vous pouvez utiliser ces quelques astuces :
 10. Les mêmes phrases toujours prononcées c'est un peu monotone.
 >Vous pouvez utiliser les alternatives :
 [Bonjour|Hello|Salut] comment vas-tu ?
-Et les conditions :
+
+>Et les conditions :
 Il fait #[domicile][meteo][temperature]# degrés, {(#[domicile][meteo][temperature]# >25) ? Il fait chaud : bonne journée }
 Mais évidemment, le cache a moins de chance d'exister dans ce cas...
 11. Je parle une autre langue que celles proposées par le plug-in.
