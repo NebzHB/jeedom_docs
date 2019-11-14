@@ -73,8 +73,9 @@ Champ *Options* - choix valides :
 
 Champ *Message* : Ecrivez le texte qui doit être prononcé par votre passerelle.
 Vous pouvez utiliser ces quelques astuces :
-- [Bonjour|Salut], ça va ? => Donnera soit “Bonjour, ça va ?” ou “Salut, ça va ?”
-- {(test) ?vrai:faux} => exemple : {(#[Maison][Météo][Température Max]# < 12) ?il va faire froid:il va faire beau !}
+>[Bonjour|Salut], ça va ? => Donnera soit “Bonjour, ça va ?” ou “Salut, ça va ?”
+
+>{(test) ?vrai:faux} => exemple : {(#[Maison][Météo][Température Max]# < 12) ?il va faire froid:il va faire beau !}
 
 >Pour *tts=osx* vous devez avoir activé SSH sur votre mac dans Préférences système > Partages > Sessions Distantes et vérifiez que vous avez bien activé toutes les voix Personnalisées de votre langue dans Préférences système > Accessibilité > Parole  (testé sur Mojave)
 
