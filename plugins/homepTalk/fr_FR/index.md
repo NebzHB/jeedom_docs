@@ -82,6 +82,13 @@ Vous pouvez utiliser ces quelques astuces :
 
 >Pour *tts=jeedom* vous pouvez écrire #idDeVotreSon# qui correspond à l'id de votre son dans le *plugin Officiel Son* dans le message et il sera lu (seul)
 
+
+Il existe des commandes **Son natif ---**. Permet de jouer les sons natifs (trouvés dans le firmware Homepod par des Hackeurs).
+
+Il existe des commandes **Son ---**. Permet de jouer les sons ajoutés au plugin.
+
+Il existe une commande **Stop**. Elle joue en fait un son silencieux vide au volume par défaut de l'équipement.
+
 **FAQ** :
 ---------
 
