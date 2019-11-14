@@ -104,18 +104,18 @@ Vous pouvez utiliser ces quelques astuces :
 7. Pourquoi ça va plus vite le deuxième fois que je fais prononcer la même phrase ?
 >Car le plug-in garde en cache 30 jours les messages pour une utilisation plus rapide la prochaine fois. Cette durée est prolongée de 30 jours à chaque utilisation (lecture). Vous pouvez supprimer ce comportement avec l'option cache=non (utile si variables dans le texte)
 8. Pour le système de TTS OSX, dois-je laisser tout le temps mon mac allumé ?
->A chaque fois que vous prononcez une nouvelle phrase avec ce système TTS oui, pour les déjà prononcées (dans les 30 jours) pas besoin, il y a le cache! Ou alors une vm hackintosh.
+>A chaque fois que vous prononcez une nouvelle phrase avec ce système TTS oui, pour les déjà prononcées (dans les 30 jours) pas besoin, il y a le cache! Ou alors une vm *Hackintosh*.
 9. J'ai envie de voix plus fun ou mieux faites
->Je vous invite à tester le plug-in ttswebserveur, il vous permet d'utiliser un android (ou une vm android) pour générer la voix, il existe plein de voix très expressives gratuites ou à bas prix chez Voxygen
+>Je vous invite à tester le plug-in ttswebserveur, il vous permet d'utiliser un android (ou une vm android) pour générer la voix, il existe plein de voix très expressives gratuites ou à bas prix chez *Voxygen*
 10. Les mêmes phrases toujours prononcées c'est un peu monotone.
 >Vous pouvez utiliser les alternatives :
-
+```
 [Bonjour|Hello|Salut] comment vas-tu ?
-
+```
 >Et les conditions :
-
+```
 Il fait #[domicile][meteo][temperature]# degrés, {(#[domicile][meteo][temperature]# >25) ? Il fait chaud : bonne journée }
-
+```
 >Mais évidemment, le cache a moins de chance d'exister dans ce cas...
 11. Je parle une autre langue que celles proposées par le plug-in.
 >Aucun problème, contactez moi je le ferai un plaisir de l'ajouter, il faudra juste espérer que votre système TTS préfèré la supporte....
