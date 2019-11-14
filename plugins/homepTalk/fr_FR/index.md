@@ -3,16 +3,15 @@ Présentation Homep-Talk
 
 Ce plugin permet de faire parler en TTS vos Apple Homepod.
 
+>**Important** : Vos homepods ne doivent pas être bloqués par mot de passe :
+![config](../images/homepTalk-homekitConf.gif)
+
 Configuration du plugin 
 =======================
 
 Après installation du plugin, il vous suffit de l’activer. Si vous voullez aller plus vite, vous pouvez lancer les dépendances ou attendre ~5min.
 
->**Important** :L'installation des dépendances prend beaucoup de temps !!! soyez patient...
-
-Vos homepods ne doivent pas être bloqués par mot de passe :
-
-![config](../images/homepTalk-homekitConf.gif)
+>**Important** : L'installation des dépendances prend beaucoup de temps !!! soyez patient...
 
 Configuration des équipements 
 =============================
