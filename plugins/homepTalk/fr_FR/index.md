@@ -1,6 +1,3 @@
-ATTENTION
-=========
-
 Présentation Homep-Talk
 =======================
 
