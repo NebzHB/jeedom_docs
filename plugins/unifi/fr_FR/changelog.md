@@ -1,3 +1,7 @@
+# next version
+
+* fix version_incompatible dans cron_execution
+
 # 15-10-2019
 
 * compatibilité V4 (design)
