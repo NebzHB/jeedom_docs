@@ -4,6 +4,7 @@
 * syncro selectif par type de device
 * nouvelles images fournies avec le controleur (rescan nécessaire + relancer dépendances pour supprimer les anciennes)
 * images différentes pour clients wifi et cablés
+* commandes rxWAN et txWAN sur la gateway pour les débits en bps
 
 # 15-10-2019
 
