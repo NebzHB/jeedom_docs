@@ -2,6 +2,7 @@
 
 * fix version_incompatible (+ autres) dans cron_execution 
 * syncro selectif par type de device
+* nouvelles images fournies avec le controleur (rescan nécessaire + relancer dépendances pour supprimer les anciennes)
 
 # 15-10-2019
 
