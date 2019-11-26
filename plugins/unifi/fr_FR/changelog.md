@@ -3,6 +3,7 @@
 * fix version_incompatible (+ autres) dans cron_execution 
 * syncro selectif par type de device
 * nouvelles images fournies avec le controleur (rescan nécessaire + relancer dépendances pour supprimer les anciennes)
+* images différentes pour clients wifi et cablés
 
 # 15-10-2019
 
