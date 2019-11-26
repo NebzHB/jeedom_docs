@@ -1,7 +1,7 @@
 # next version
 
-* fix version_incompatible dans cron_execution
-* synch selectif par type de device
+* fix version_incompatible (+ autres) dans cron_execution 
+* syncro selectif par type de device
 
 # 15-10-2019
 
