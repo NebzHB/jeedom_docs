@@ -804,8 +804,9 @@ Suivant les configurations matérielles, la qualité de la transmission peut var
 
 ### Notification Photo # 
 Celles-ci peuvent afficher une notification lorsqu'un mouvement est détecté par un capteur de présence. 
+
 **Avant iOS 13** : Il fallait que la caméra et le capteur soient configurés dans la même pièce et que les notifications du capteur soient activées.
-**Depuis iOS 13** : le capteur de mouvement doit faire partie du même équipement. pour contourner ce problème, il faut :
+**Depuis iOS 13** : Le capteur de mouvement doit faire partie du même équipement. Pour contourner ce problème, il faut :
 1. Ajouter "motion":true dans le json de votre camera comme ceci :
 <pre><code>
 {
@@ -821,12 +822,15 @@ Celles-ci peuvent afficher une notification lorsqu'un mouvement est détecté pa
    ]
 }
 </code></pre>
-Cela va créer un detecteur de mouvement et un interrupteur dans votre camera. En actionnant l'interrupteur, le detecteur s'active.
+> Cela va créer un détecteur de mouvement et un interrupteur "virtuels" dans votre caméra. En actionnant l'interrupteur, le détecteur intégré à la caméra s'active.
 
-2. Créer une automation sur Maison pour activer l'interrupteur si votre detecteur demouvement Jeedom est activé.
-3. Et voilà, vous avez une notification :
+2. Créer une *Automation* sur Maison pour activer l'interrupteur de la camera si votre détecteur de mouvement Jeedom est activé.
+3. Activer les notifications dans la Caméra (roue crantée > Notification)
+4. Et voilà, vous avez une notification :
 ![notif](../images/notif.jpg)
 
+
+## Exemples de configuration # 
 
 Les caméras décrites ci-dessous ont été testées. Elles sont donc fonctionnelles dans Homebridge.
 
