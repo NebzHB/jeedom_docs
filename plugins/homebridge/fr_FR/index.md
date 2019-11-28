@@ -808,9 +808,9 @@ Celles-ci peuvent afficher une notification lorsqu'un mouvement est détecté pa
 **Avant iOS 13** : Il fallait que la caméra et le capteur soient configurés dans la même pièce et que les notifications du capteur soient activées.
 
 **Depuis iOS 13** : Le capteur de mouvement doit faire partie du même équipement. Pour contourner ce problème, il faut :
-1. Ajouter *"motion":true,* dans le json de votre camera comme ceci (Cela va créer un détecteur de mouvement et un interrupteur "virtuels" dans votre caméra. En actionnant l'interrupteur, le détecteur intégré à la caméra s'active.) (Voir exemple)
+1. Ajouter *"motion":true,* dans le json de votre camera comme dans l'exemple (Cela va créer un détecteur de mouvement et un interrupteur "virtuels" dans votre caméra. En actionnant l'interrupteur, le détecteur intégré à la caméra s'active.).
 2. Créer une **Automation** dans Maison pour activer l'interrupteur de la camera si votre détecteur de mouvement Jeedom est activé.
-3. Activer les notifications dans la Caméra (roue crantée > Notification)
+3. Activer les notifications dans la Caméra (roue crantée > Notification).
 4. Et voilà, vous avez une notification :
 ![notif](../images/notif.jpg)
 
