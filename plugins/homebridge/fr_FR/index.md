@@ -832,7 +832,7 @@ Celles-ci peuvent afficher une notification lorsqu'un mouvement est détecté pa
 
 > Plus d'informations (en anglais) ici : ![Informations](https://github.com/KhaosT/homebridge-camera-ffmpeg/wiki/iOS-13-and-Photo-Notifications)
 
-## Exemples de configuration # 
+### Exemples de configuration # 
 
 Les caméras décrites ci-dessous ont été testées. Elles sont donc fonctionnelles dans Homebridge.
 
