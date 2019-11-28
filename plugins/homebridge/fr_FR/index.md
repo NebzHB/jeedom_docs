@@ -830,7 +830,7 @@ Celles-ci peuvent afficher une notification lorsqu'un mouvement est détecté pa
 4. Et voilà, vous avez une notification :
 ![notif](../images/notif.jpg)
 
-> Plus d'informations (en anglais) ici : ![Informations](https://github.com/KhaosT/homebridge-camera-ffmpeg/wiki/iOS-13-and-Photo-Notifications)
+> Plus d'informations (en anglais) ici : https://github.com/KhaosT/homebridge-camera-ffmpeg/wiki/iOS-13-and-Photo-Notifications
 
 ### Exemples de configuration # 
 
