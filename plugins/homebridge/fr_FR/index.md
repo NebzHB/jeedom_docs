@@ -484,7 +484,7 @@ Maintenant, il ne reste plus qu'à ranger tous les accessoires dans les différe
 
 **Les accessoires doivent être "rangés" un par un. Si il y en a beaucoup, cette partie prendra du temps**.
 
-La documentation complète de l'application "Maison" d'Apple est disponible à cette adresse : https://support.apple.com/fr-fr/HT204893.
+La documentation complète de l'application "Maison" d'Apple est disponible à cette adresse : [https://support.apple.com/fr-fr/HT204893](https://support.apple.com/fr-fr/HT204893).
 
 Migration depuis le plugin App Mobile
 =====================================
@@ -828,7 +828,7 @@ Celles-ci peuvent afficher une notification lorsqu'un mouvement est détecté pa
 4. Et voilà, vous avez une notification :
 ![notif](../images/notif.jpg)
 
-> Plus d'informations (en anglais) ici : https://github.com/KhaosT/homebridge-camera-ffmpeg/wiki/iOS-13-and-Photo-Notifications
+> Plus d'informations (en anglais) ici : [Wiki Homebridge-Camera-FFMPEG](https://github.com/KhaosT/homebridge-camera-ffmpeg/wiki/iOS-13-and-Photo-Notifications)
 
 ### Exemples de configuration # 
 
