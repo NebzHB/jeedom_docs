@@ -802,9 +802,31 @@ En touchant la capture de la caméra souhaitée, elle s'affiche en plein écran 
 
 Suivant les configurations matérielles, la qualité de la transmission peut varier. Par exemple, sur un NUC gen7 core i7, c'est quasiment du live ! La latence est très faible.
 
-Celles-ci peuvent afficher une notification lorsqu'un mouvement est détecté par un capteur de présence. Il faut que la caméra et le capteur soient configurés dans la même pièce et que les notifications du capteur soient activées.
+### Notification Photo # 
+Celles-ci peuvent afficher une notification lorsqu'un mouvement est détecté par un capteur de présence. 
+**Avant iOS 13** : Il fallait que la caméra et le capteur soient configurés dans la même pièce et que les notifications du capteur soient activées.
+**Depuis iOS 13** : le capteur de mouvement doit faire partie du même équipement. pour contourner ce problème, il faut :
+1. Ajouter "motion":true dans le json de votre camera comme ceci :
+<pre><code>
+{
+   "platform":"Camera-ffmpeg",
+   "cameras":[
+      {
+         "name":"Camera-Salon",
+	 "motion":true,
+         "videoConfig":{
+            [...]
+         }
+      }
+   ]
+}
+</code></pre>
+Cela va créer un detecteur de mouvement et un interrupteur dans votre camera. En actionnant l'interrupteur, le detecteur s'active.
 
-![notig](../images/notif.jpg)
+2. Créer une automation sur Maison pour activer l'interrupteur si votre detecteur demouvement Jeedom est activé.
+3. Et voilà, vous avez une notification :
+![notif](../images/notif.jpg)
+
 
 Les caméras décrites ci-dessous ont été testées. Elles sont donc fonctionnelles dans Homebridge.
 
