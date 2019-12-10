@@ -2,6 +2,11 @@
 Changelog
 =========
 
+10-12-2019
+-------------
+
+* contournement pour modification plugin mode
+
 15-10-2019
 -------------
 
