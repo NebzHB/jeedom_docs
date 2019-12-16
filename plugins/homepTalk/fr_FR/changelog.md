@@ -4,7 +4,7 @@ Changelog
 
 NextUpdate
 -------------
-* Support Airplay Tiers : Ajout de détection Sonos One, AppleTV3 (AppleTV4 et 4K ne seront pas supportées !!)
+* Support Airplay Tiers : Ajout de détection Sonos One
 * gestion du port d'airplay (nécessaire pour players tiers)
 * forcer sur l'ipV4
 
