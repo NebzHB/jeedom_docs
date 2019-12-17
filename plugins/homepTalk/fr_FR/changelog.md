@@ -4,7 +4,7 @@ Changelog
 
 NextUpdate
 -------------
-* Support Airplay Tiers : Ajout de détection Sonos One et Yamaha RX-A880
+* Support Airplay2 Tiers : Ajout de détection Sonos One et Yamaha RX-A880
 * Gestion du port d'airplay (nécessaire pour players tiers)
 * Forcer la communication sur l'IPv4
 
