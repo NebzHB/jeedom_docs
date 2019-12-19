@@ -1,3 +1,8 @@
+# 19-12-2019
+
+* contournement si deux périphérique ont le même nom, renommage _mac
+* correction orthographe
+
 # 29-11-2019
 
 * fix version_incompatible (+ autres) dans cron_execution 
