@@ -2,6 +2,24 @@
 Changelog
 =========
 
+NextVersion
+-------------
+
+* Meilleur calcul de résolution de cam (moins de 0) pour le json camera et "UNKNOWN PLEASE SEE CAM DOCUMENTATION" si on ne sait pas trouver l'info.
+* Installation nodejs v12 sur i686 aussi.
+* Fix pour bug core si l'object_id = -1.
+* Ajout tag V4 dans info.json pour afficher dans le market.
+* Installation améliorée (suppression de package-lock.json et remise des droits www-data:www-data sur le dossier node_modules).
+* Désactivation d'avahi au démarrage du système uniquement sur smart (pour le bug ou elle démarre en 1970) et plus sur les autres systèmes.
+* Plateformes supplémentaires : si un champ dans une plateforme contient | dans sa valeur, ca ne fonctionne pas (à cause du séparateur de plateformes), on contourne en laissant la possibilité de mettre [pipe] dans le champ. Dans ce cas, ca fonctionne ! (pour homebridge-nest).
+
+
+30-12-2019
+-------------
+
+* Aucune modification, version pour égaliser un retour à la ligne avec la beta
+
+
 10-12-2019
 -------------
 
