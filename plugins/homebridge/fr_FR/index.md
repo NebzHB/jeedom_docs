@@ -1022,7 +1022,7 @@ Remplacer les valeurs xxx.xxx.xxx.xxx par l'adresse IP la caméra et Local_Acces
 
 ### Configurer plusieurs caméras (ou plateformes) #
 
-Pour configurer plusieurs caméras, il suffit de mettre une barre entre les deux configurations.
+Pour configurer plusieurs caméras, il suffit de mettre une barre | entre les deux configurations.
 
 <pre><code>{
   "platform": "Camera-ffmpeg",
@@ -1060,6 +1060,8 @@ Pour configurer plusieurs caméras, il suffit de mettre une barre entre les deux
 }</code></pre>
 
 **Cela est également valable pour toute autre plateforme comme le thermostat NEST par exemple.**
+
+**Si vous avez un | quelque part dans votre plateforme, celui-ci peut être donc confondu avec une séparation de plateforme, dans ce cas, il faut le remplacer par [pipe]**
 
 Station météo NETATMO
 ---------------------
