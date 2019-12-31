@@ -12,6 +12,8 @@ NextVersion
 * Installation améliorée (suppression de package-lock.json et remise des droits www-data:www-data sur le dossier node_modules).
 * Désactivation d'avahi au démarrage du système uniquement sur smart (pour le bug ou elle démarre en 1970) et plus sur les autres systèmes.
 * Plateformes supplémentaires : si un champ dans une plateforme contient | dans sa valeur, ca ne fonctionne pas (à cause du séparateur de plateformes), on contourne en laissant la possibilité de mettre [pipe] dans le champ. Dans ce cas, ca fonctionne ! (pour homebridge-nest).
+* Fix pour les lumières qui utilisent Info/Lumière Etat (binaire) et Info/Lumière Etat et le cas particulier où Info/Lumière Etat (binaire) se trouve après Info/Lumière Etat dans l'ordre des commandes
+* Fix pour les boutons poussoirs (retour de l'interrupteur à éteint automatiquement après allumage)
 
 
 30-12-2019
