@@ -2,7 +2,7 @@
 Changelog
 =========
 
-NextVersion
+02-01-2019
 -------------
 
 * Meilleur calcul de résolution de cam (moins de 0) pour le json camera et "UNKNOWN PLEASE SEE CAM DOCUMENTATION" si on ne sait pas trouver l'info.
