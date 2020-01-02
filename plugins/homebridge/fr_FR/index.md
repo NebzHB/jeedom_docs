@@ -253,6 +253,8 @@ Valves
 |Info/Valve<br/>Générique<br/>Etat|`OUI`|0 = Eteint<br/>1 = Allumé|
 |Action/Valve<br/>Générique<br/>Bouton On|`OUI`|Réf. vers Info/Valve Générique Etat| 
 |Action/Valve<br/>Générique<br/>Bouton Off|`OUI`|Réf. vers Info/Valve Générique Etat|
+|Info/Valve<br/>générique<br/>Durée|`NON`|0-3600 Secondes|
+|Info/Valve<br/>générique<br/>Durée Restante|`NON`|0-3600 Secondes|
 
 Interrupteurs
 ----------
