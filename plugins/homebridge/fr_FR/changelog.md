@@ -6,7 +6,7 @@ Changelog
 -------------
 
 * Meilleur calcul de résolution de cam (moins de 0) pour le json camera et "UNKNOWN PLEASE SEE CAM DOCUMENTATION" si on ne sait pas trouver l'info.
-* Installation nodejs v12 sur i686 aussi.
+* Installation nodejs v12 sur i686 32bits aussi. (retour en arrière 03-01-2020)
 * Fix pour bug core si l'object_id = -1.
 * Ajout tag V4 dans info.json pour afficher dans le market.
 * Installation améliorée (suppression de package-lock.json et remise des droits www-data:www-data sur le dossier node_modules).
