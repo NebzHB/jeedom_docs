@@ -2,6 +2,12 @@
 Changelog
 =========
 
+09-01-2019
+-------------
+
+* Fix erreur 500 à l'installation d'un plugin pour homebridge
+* Lancement du démon en Insecure si config pour google-smarthome (comme alexa)
+
 02-01-2019
 -------------
 
