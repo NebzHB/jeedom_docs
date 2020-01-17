@@ -314,6 +314,7 @@ Serrures
 
 Alarme
 ------
+
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
 |Info/Alarme état|`OUI`|1 = Déclenchée<br/>(prioritaire sur activée et modes)|
