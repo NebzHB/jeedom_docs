@@ -312,12 +312,23 @@ Serrures
 |Action/Serrure Bouton Ouvrir|`OUI`|Réf. vers Info/Serrure Etat| 
 |Action/Serrure Bouton Fermer|`OUI`|Réf. vers Info/Serrure Etat| 
 
+Alarme
+------
+|Type générique  | Obligatoire | Valeurs possibles |
+|---------------|:----------------:|----------------|
+|Info/Alarme état|`OUI`|1 = Déclenchée<br/>(prioritaire sur activée et modes)|
+|Info/Alarme état activée|`OUI`|0 = Désarmée<br/>(prioritaire sur modes)|
+|Info/Alarme mode|`OUI si associé mode homekit`|Exactement le nom d'une Action/Alarme Mode<br/> à associer à Nuit ou Present ou Absent|
+|Action/Alarme armée|`OUI`|Arme l'alarme|
+|Action/Alarme libérée|`OUI`|Désarme l'alarme|
+|Action/Alarme Mode|`NON`|Mode à associer à un mode homekit (max 3)|
+
 Sirènes
 -------
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
-|Info/Sirène Etat|`OUI`|pas 1 = pas d'alarme<br/>1 = Alarme|
+|Info/Sirène Etat|`OUI`|pas 1 = Sonne pas<br/>1 = Sonne|
 
 Thermostats
 -------------
