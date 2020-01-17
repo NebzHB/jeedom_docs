@@ -2,7 +2,7 @@
 Changelog
 =========
 
-nextUpdate
+17-01-2020
 -------------
 
 * Fix erreur si $eqLogicToSave est vide
@@ -11,13 +11,13 @@ nextUpdate
 * Reclassification du type générique "Qualité d'air (Indice AQI) (Homebridge)" dans Environnement
 * Re-coloration orange des types génériques spécifiques à Homebridge (fonctionnait en V3) pour la V4
 
-09-01-2019
+09-01-2020
 -------------
 
 * Fix erreur 500 à l'installation d'un plugin pour homebridge
 * Lancement du démon en Insecure si config pour google-smarthome (comme alexa)
 
-02-01-2019
+02-01-2020
 -------------
 
 * Meilleur calcul de résolution de cam (moins de 0) pour le json camera et "UNKNOWN PLEASE SEE CAM DOCUMENTATION" si on ne sait pas trouver l'info.
