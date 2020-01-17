@@ -2,6 +2,15 @@
 Changelog
 =========
 
+nextUpdate
+-------------
+
+* Fix erreur si $eqLogicToSave est vide
+* Affichage de tous les types génériques (même Alarme, Camera, Mode, Meteo etc)
+* Affichage config des modes alarmes meme si pas plugin alarme (besoin d'un refresh après avoir définit Action/Alarme Mode)
+* Reclassification du type générique "Qualité d'air (Indice AQI) (Homebridge)" dans Environnement
+* Re-coloration orange des types génériques spécifiques à Homebridge (fonctionnait en V3) pour la V4
+
 09-01-2019
 -------------
 
