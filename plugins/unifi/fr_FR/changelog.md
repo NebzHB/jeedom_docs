@@ -1,7 +1,8 @@
-# nextUpdate
+# 19-01-2020
 
 * contournement si deux commandes ont le même nom, renommage _1 _2 etc
 * contournement du problème du controller 5.12 : lorsqu'un wifi est absent, quelques minutes après, il réapparait comme présent et étant cablé (on ignore maintenant le changement de présence s'il revient dans un autre état (était wifi -> cablé ou était cablé -> wifi)) + on ne met pas à jour le last_seen pour essayer d'avoir une valeur cohérente dans cette commande
+* changement du format du last_seen pour etre utilisable avec time_diff dans un scénario
 
 # 19-12-2019
 
