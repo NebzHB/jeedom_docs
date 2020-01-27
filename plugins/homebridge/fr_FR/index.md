@@ -184,18 +184,9 @@ En cliquant sur l'équipement, les types génériques utilisés pour la communic
 
 ![typegen-1](../images/typegen-1.png)
 
-La majorité des types génériques est déjà renseignée. Dans certains cas, une configuration manuelle sera nécessaire (pour le plugin Virtuel par exemple).
+La majorité des types génériques est déjà renseignée. Dans certains cas, une configuration manuelle sera nécessaire (pour le plugin Virtuel ou si le developpeur du plugin ne les a pas renseignés).
 
 Voici les types génériques disponibles : 
-
-Pour les informations : 
-
-![typeginfo](../images/typeginfo.png) ![typeginfo1](../images/typeginfo1.png)
-
-Pour les actions : 
-
-![ypegeaction](../images/ypegeaction.png) ![ypegeaction1](../images/ypegeaction1.png) 
-
 
 Lumière
 ----------
