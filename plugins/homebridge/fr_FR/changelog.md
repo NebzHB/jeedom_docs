@@ -2,6 +2,14 @@
 Changelog
 =========
 
+28-01-2020
+-------------
+
+* Logs plus clairs dans le démon
+* Architecture dans DebugInfo
+* Affichage info debug au début de l'installation des dépendances
+* Test si npm existe avant l'installation/désinstallation d'un plugin pour homebridge
+
 17-01-2020
 -------------
 
