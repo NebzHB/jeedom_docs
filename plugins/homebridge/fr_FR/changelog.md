@@ -6,6 +6,8 @@ nextVersion
 -------------
 
 * Utilisation de la méthode de filtrage (via cache homebridge::event) des évenements du core (event::changes) pour ne plus recevoir les evenements sur des commandes qui n'ont pas de type générique (réduction de la charge de traitement et simplification des logs)
+* Affichage de la branche dans les dépendances
+* Ligne d'info du système au débug de l'install des dépendances
 
 28-01-2020
 -------------
