@@ -159,13 +159,13 @@ Les équipements seront à ajouter manuellement.
 
 ![config-piece](../images/config-piece.png)
 
-Afin d'intégrer un accessoire dans Homebridge, il faut sélectionner la pièce où il se trouve.
+Assurer-vous que la pièce soit bien activée. (Cocher la case activer la pièce case en haut)
 
 ![choix-acc](../images/choix-acc.png)
 
 ![scenario](../images/scenario.png)
 
-Afin d'ajouter un accessoire ou un scénario à Homebridge, il suffit de cocher la case "Envoyer à Homebridge". Pour sauvegarder, il suffit de cliquer sur la petite disquette verte.
+Afin d'ajouter un équipement ou un scénario à Homebridge, il suffit de cocher la case "Envoyer à Homebridge" se trouvant en face de l'équipement. Ensuite, Pour sauvegarder, il suffit de cliquer sur la petite disquette verte ou le bouton Sauvegarder.
 Les scénarios seront créés sous forme d'interrupteurs. En l'activant, vous lancerez le scénario. En le désactivant, vous le stopperez (s'il tournait toujours). L'interrupteur reste activé tant que le scénario tourne.
 
 Il est possible de modifier le nom de l'équipement dans Homekit. Si celui-ci est déja installé sous l'ancien nom, il sera supprimé. Un nouvelle accessoire sera alors crée. Il apparaîtra dans la pièce où se situe le pont.
@@ -549,7 +549,7 @@ FAQ
 
 **-> Mon équipement n'apparaît pas dans Homebridge !**
 
->Vérifiez que la case "Envoyer à Homebridge" est cochée dans la configuration du plugin Homebridge.
+>Vérifiez que la case "Envoyer à Homebridge" est cochée dans la configuration de la pièce du plugin Homebridge.
 
 **-> La case "Envoyer à Homebridge" est bien cochée mais mon équipement n'apparaît toujours pas !**
 
