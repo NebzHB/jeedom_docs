@@ -5,7 +5,7 @@ Changelog
 13-02-2020
 -------------
 
-* Utilisation de la méthode de filtrage (via cache homebridge::event) des évenements du core (event::changes) pour ne plus recevoir les evenements sur des commandes qui n'ont pas de type générique (réduction de la charge de traitement et simplification des logs)
+* Utilisation de la méthode de filtrage (via cache homebridge::event) des évenements du core (event::changes) pour ne plus recevoir les evenements sur des commandes qui n'ont pas de type générique (réduction de la charge de traitement et simplification des logs, surtout pour ceux qui ont blea et unifi ou tout plugin qui fait bcp de mise a jours)
 * Affichage de la branche dans les dépendances
 * Ligne d'info du système au débug de l'install des dépendances
 * fix du "copier tout" dans debugInfo
