@@ -998,6 +998,31 @@ Remplacer les valeurs xxx.xxx.xxx.xxx par l'adresse IP de la caméra, login par 
 
 Remplacer les valeurs xxx.xxx.xxx.xxx par l'adresse IP de la caméra, login par le login de connexion à la caméra et password par le mot de passe de connexion à la caméra. Merci à gui59169 pour l'intégration de cette caméra.
 
+###  Synology Surveillance Station #
+
+<pre><code> {
+   "platform":"Camera-ffmpeg",
+   "cameras":[
+      {
+         "name":"Camera-Salon",
+         "videoConfig":{
+            "source":"-rtsp_transport tcp -re -i rtsp://login:password@xxx.xxx.xxx.xxx:554/Sms=CAMID.unicast",
+            "stillImageSource":"-rtsp_transport tcp -re -i rtsp://login:password@IP:554/Sms=CAMID.unicast -updatefirst",
+            "maxStreams":2,
+            "maxWidth":2688,
+            "maxHeight":1520,
+            "maxFPS":20,
+            "vcodec": "h264"
+         }
+      }
+   ]
+}
+</code></pre>
+
+Remplacer les valeurs xxx.xxx.xxx.xxx par l'adresse IP de la caméra, login par le login de connexion à la caméra et password par le mot de passe de connexion à la caméra. Merci à mguyard pour l'intégration de cette caméra.
+
+Dans Surveillance Station, clic droit sur la caméra et puis choisir "Share streaming Path"
+
 ### Netatmo Welcome #
 
 Cette caméra deviendra officielement compatible HomeKit courant 2018. 
