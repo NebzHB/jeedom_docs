@@ -1,3 +1,7 @@
+# 09-03-2020
+
+* Non réécriture du schédule du cron à la mise à jour, si vous l'avez modifié, il restera.
+
 # 19-01-2020
 
 * contournement si deux commandes ont le même nom, renommage _1 _2 etc
