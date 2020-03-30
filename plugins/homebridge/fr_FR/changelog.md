@@ -2,6 +2,14 @@
 Changelog
 =========
 
+30-03-2020
+-------------
+
+* Fix branche dans DebugInfo
+* Changement Police des logs en monospaced
+* Nouveau système de dépendances plus clair, on voit tout de suite s'il y a un problème ou pas
+
+
 13-02-2020
 -------------
 
