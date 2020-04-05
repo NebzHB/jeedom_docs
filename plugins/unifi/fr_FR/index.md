@@ -9,7 +9,7 @@ Après installation du plugin, il vous suffit de l’activer. Il faut ensuite re
 -   **Controleur Unifi** : Indiquez l'adresse ip et le port (normalement 8443) de votre controleur Unifi
 -   **Utilisateur Unifi** : Indiquez l'utilisateur du controleur (**Attention: pas celui du cloud !**)
 -   **Mot de passe Unifi** : Indiquez votre mot de passe controleur
--   **Site Unifi** : si vous avez plusieurs sites, indique lequel le plugin doit gérer (defaut par défaut). Le nom correspond au nom dans l'url du site controleur, exemple : https://ip:8443/manage/site/**abc12345**/settings/site
+-   **Site Unifi** : si vous avez plusieurs sites, indique lequel le plugin doit gérer (default par défaut). Le nom correspond au nom dans l'url du site controleur, exemple : https://ip:8443/manage/site/**abc12345**/settings/site
 -   **Bouton Rechercher les équipements Unifi** : Permet de scanner les équipements sur le controleur
 
 -   **Pièce par défaut pour les Clients** : quand vous aurez ajouté vos équipements, les clients wifi/cablés peuvent être ajoutés par défaut à une pièce.
