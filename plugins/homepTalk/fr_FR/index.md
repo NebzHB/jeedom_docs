@@ -134,5 +134,5 @@ Il fait #[domicile][meteo][temperature]# degrés, {(#[domicile][meteo][temperatu
 11. Je parle une autre langue que celles proposées par le plug-in.
 >Aucun problème, contactez moi je le ferai un plaisir de l'ajouter, il faudra juste espérer que votre système TTS préfèré la supporte....
 12. Parfois je n'entends pas le debut de la phrase, on dirait que c'est coupé
->Ca peut arriver quand vous n'avez plus utilisé le homepod depuis un certain temps, je suppose qu'il passe en veille... la solution consiste a ajouter un mot (comme "Bonjour" ou "Cher Tim") avant le message important ou encore mieux de jouer un son avec le plugin Sons avant la phrase.
+>Ca peut arriver quand vous n'avez plus utilisé le homepod depuis un certain temps, je suppose qu'il passe en veille... la solution consiste a ajouter un mot (comme "Bonjour" ou "Cher Tim") avant le message important ou encore mieux faire un "Stop" juste avant de jouer votre phrase (ca joue un petit son silencieux).
 
