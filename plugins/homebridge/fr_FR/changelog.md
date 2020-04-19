@@ -2,6 +2,14 @@
 Changelog
 =========
 
+19-04-2020
+-------------
+* Fix estimations framerate et taille des cameras dans la propostion de json affichée
+* Fix si pas d'url de capture d'image mais uniquement un flux rtsp des cameras dans la propostion de json affichée
+* Fix detection RPI pour propose OMX comme codec des cameras dans la propostion de json affichée
+* Preset des modes alarmes et thermostat pour les plugins tiers (Verisure par exemple)
+* Fix install dépendance sur vieux systèmes et smart
+
 30-03-2020
 -------------
 
