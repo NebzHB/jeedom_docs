@@ -2,8 +2,8 @@ Ce plugin permet de monitorer et exécuter quelques actions sur vos AppleTV.
 
 Veuillez Noter 
 ==============
-- Compatible uniquement avec **Debian Stretch au minimum** !! (Pas compatible Debian Jessie)
-- Ce plugin n'est pas terminé, il s'agit plus d'une Preuve de Concept que je vous met à dispo. Les temps de réaction sont lents car une nouvelle session est ouverte à chaque commande vers l'AppleTV.
+- Compatible uniquement avec **Debian Stretch au minimum** mais Buster conseillé !! (Pas compatible Debian Jessie)
+- Ce plugin n'est pas terminé. Les temps de réaction sont lents car une nouvelle session est ouverte à chaque commande vers l'AppleTV.
 - Ce plugin utilise le protocole MRP pour communiquer avec votre AppleTV 4 et 4K. 
 - Il n'est pas possible avec ce protocole de :
   - Modifier le volume (c'est votre TV qui s'en charge)
@@ -75,30 +75,49 @@ Onglet Commandes
 ----------------
 Il existe de nombreuses commandes. Toutes ne sont pas affichées par défaut. Vous pouvez les renommer, les afficher ou non les réorganiser. 
 
--   **Lecture en cours** : Binaire permettant de déterminer si la lecture est en cours ou pas
--   **Bouton On** : *turn_on* : permet d'allumer l'appleTV 4+
--   **Bouton Off**: *turn_off*: permet de mettre en veille l'appleTV 4+
--   **Bouton Lecture** : *play* : Effectue la même action que le bouton play/pause de la télécommande
--   **Bouton Pause** : *pause* : Effectue la même action que le bouton play/pause de la télécommande
--   **Bouton Stop** : *stop* : Effectue la même action que le bouton play/pause de la télécommande (idem bouton pause en fait)
--   **Bouton Bas** : *down* : Effectue la même action que un swipe vers le bas sur la télécommande.
+-   **Lecture en cours** : Binaire permettant de déterminer si la lecture est en cours ou pas.
+-   **URL Artwork** : permet d'afficher l'image.
+-   **Hors Veille** : Binaire permettant de déterminer si l'appleTV 4+ est allumée.
+-   **Bouton On** : *turn_on* : permet d'allumer l'appleTV 4+.
+-   **Bouton Off**: *turn_off*: permet de mettre en veille l'appleTV 4+.
+-   **Bouton Lecture** : *play* : Effectue la même action que le bouton play/pause de la télécommande.
+-   **Bouton Pause** : *pause* : Effectue la même action que le bouton play/pause de la télécommande.
+-   **Bouton Stop** : *stop* : Effectue la même action que le bouton play/pause de la télécommande (idem bouton pause en fait).
+-   **Bouton Précédent** : *previous* : Passe au morceau Précédent.
+-   **Bouton Suivant** : *next* : Passe au morceau Suivant.
+
 -   **Bouton Haut** : *up* : Effectue la même action que un swipe vers le haut sur la télécommande.
 -   **Bouton Gauche** : *left* : Effectue la même action que un swipe vers la gauche sur la télécommande.
--   **Bouton Droit** : *right* : Effectue la même action que un swipe vers la gauche sur la télécommande.
--   **Bouton Précédent** : *previous* : Passe au morceau Précédent
--   **Bouton Suivant** : *next* : Passe au morceau Suivant
--   **Bouton Menu** : *menu* : Effectue la même action que le bouton Menu sur la télécommande.
 -   **Bouton Sélection** : *select* : Effectue la même action qu'un click sur la télécommande.
+-   **Bouton Droit** : *right* : Effectue la même action que un swipe vers la gauche sur la télécommande.
+-   **Bouton Bas** : *down* : Effectue la même action que un swipe vers le bas sur la télécommande.
+
+-   **Bouton Menu** : *menu* : Effectue la même action que le bouton Menu sur la télécommande.
 -   **Bouton Home** : *top_menu* : Effectue la même action que le bouton Home sur la télécommande.
 
--   **Enchainement** : Permet de grouper plusieurs commandes sur un seul appel (plus rapide d'exécution car une seule session !!!) (séparer par des espaces, utiliser les noms raccourcis des commandes (up down etc), utiliser wait pour faireune autre session et donc faire une pause)
+-   **Bouton Aléatoire ON** : *set_shuffle=1* : Active le mode Aléatoire.
+-   **Bouton Aléatoire OFF** : *set_shuffle=0* : Désactive le mode Aléatoire.
 
--   **Artwork** : artwork_save : Image de la lecture en cours si disponible.
--   **Artiste** : artist : Affiche l'artiste de la lecture en cours si disponible.
--   **Titre** : title : Affiche le titre de la lecture en cours si disponible.
--   **Album** : album : Affiche l'album de la lecture en cours si disponible.
--   **Type Media** : media_type : Affiche le type de media de la lecture en cours si disponible. (souvent Unknown)
--   **Position** : position : Affiche la position dans la lecture en cours si disponible.
+-   **Bouton Répétition Tout** : *set_repeat=2* : Répète tout.
+-   **Bouton Répétition Piste** : *set_repeat=1* : Répète la piste.
+-   **Bouton Répétition OFF** : *set_repeat=0* : Désactive le mode Répétition.
+
+-   **Statut** : Affiche l'état en langage humain.
+-   **Artiste** : Affiche l'artiste de la lecture en cours si disponible.
+-   **Titre** : Affiche le titre de la lecture en cours si disponible.
+-   **Album** : Affiche l'album de la lecture en cours si disponible.
+-   **Genre** : Affiche le genre de la lecture en cours si disponible.
+-   **Type Media** : Affiche le type de media de la lecture en cours si disponible. (souvent Unknown ou Music)
+-   **Position** : Affiche la position dans la lecture en cours si disponible.
+
+-   **Repeat** : Affiche l'état du mode Répétition.
+-   **Shuffle** : Affiche l'état du mode Aléatoire.
+
+-   **App Active** : Affiche l'application active (si possible...)
+
+-   **Enchainement** : Permet de grouper plusieurs commandes sur un seul appel (plus rapide d'exécution car une seule session !!!) (séparer par des espaces, utiliser les noms raccourcis des commandes (*up down* etc), utiliser *wait* pour faireune autre session et donc faire une pause)
+
+
 
 
 
