@@ -68,7 +68,7 @@ Onglet Equipement
 
 -   **Ip de l'AppleTV** : l'ip et port de votre AppleTV
 
--   **Credentials** : Crédentials récupérés au scan de votre AppleTV
+-   **MAC** : Adresse mac de votre AppleTV
 
 
 Onglet Commandes
