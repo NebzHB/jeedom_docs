@@ -20,8 +20,8 @@ Veuillez Noter
 - **Le partage à Domicile DOIT être activé dans Réglages > Comptes > Partage à domicile.** (toujours nécessaire ?)
 - **Votre AppleTV DOIT avoir une ip fixée (soit par réservation DHCP soit dans les Réglages)**
 - **L'AppleTV DOIT être dans le même réseau que votre jeedom (sans routage !!, elle est découverte par le protocole Bonjour)**
-- Pour l'instant, les données de lecture sont renouvellées toutes les minutes SI vous avez cliqué sur Play VIA JEEDOM (Jusqu'à avoir cliqué sur Pause ou Stop). Car si je scan ces données de lecture en permanance, votre AppleTV sort de veille :'( (va peut-etre changer pour la 4+)
-- Conseil : activez la mise en veille automatique pour contrer l'impossibilité de mettre en veille.
+- Pour l'instant, les données de lecture sont renouvellées toutes les minutes SI vous avez cliqué sur Play VIA JEEDOM (Jusqu'à avoir cliqué sur Pause ou Stop). Car si je scan ces données de lecture en permanance, votre AppleTV sort de veille :'( (peut-etre plus le cas avec la nouvelle lib... tester sur aTV3 et aTV4)
+- Conseil AppleTV3 : activez la mise en veille automatique pour contrer l'impossibilité de mettre en veille.
 
 Configuration du plugin 
 =======================
