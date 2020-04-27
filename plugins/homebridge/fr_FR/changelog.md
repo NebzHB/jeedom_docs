@@ -4,6 +4,10 @@ Changelog
 
 19-04-2020
 -------------
+* Contournement problème repo jeedom
+
+19-04-2020
+-------------
 * Fix estimations framerate et taille des cameras dans la propostion de json affichée
 * Fix si pas d'url de capture d'image mais uniquement un flux rtsp des cameras dans la propostion de json affichée
 * Fix detection RPI pour propose OMX comme codec des cameras dans la propostion de json affichée
