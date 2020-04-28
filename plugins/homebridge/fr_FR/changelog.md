@@ -2,7 +2,15 @@
 Changelog
 =========
 
-19-04-2020
+A Venir
+-------------
+* Mise à jour Homebridge en 1.0.2 et HAP-NodeJS en 0.6.4
+* Mise à jour homebridge-alexa en 0.4.70
+* Mise à jour homebridge-camera-ffmpeg en 0.1.17 (ffmpeg intégré qui supporte l'audio avec codec natif)
+* Support du FFMPEG intégré si homebridge-camera-ffmpeg >= 0.1.17 (si pas indiqué dans videoProcessor dans la plateforme supplémentaire)
+* Ajout audio:true si c'est le cas dans la proposition de configuration de camera dans la pièce.
+
+27&28-04-2020
 -------------
 * Contournement problème repo jeedom
 
