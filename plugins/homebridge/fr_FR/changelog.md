@@ -16,6 +16,8 @@ A Venir
 * Réaffichage des modes pour verisure pour permettre aux utilisateurs de reconfigurer la pré-config.
 * WARNING : après le 30-06-2020, le plugin ne sera plus compatible avec Debian Jessie (8), c'est déjà un peu le cas, mais ceux qui n'ont pas mis à jour depuis longtemps, ca pouvait encore fonctionner... Ca ne sera plus le cas !
 
+> https://community.jeedom.com/t/homebridge-et-tous-mes-plugins-utilisant-nodejs-fin-de-support-de-debian-8-jessie-le-30-juin/26999
+
 27&28-04-2020
 -------------
 * Contournement problème repo jeedom
