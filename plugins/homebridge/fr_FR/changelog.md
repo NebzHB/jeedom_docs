@@ -7,8 +7,14 @@ A Venir
 * Mise à jour Homebridge en 1.0.2 et HAP-NodeJS en 0.6.4
 * Mise à jour homebridge-alexa en 0.4.70
 * Mise à jour homebridge-camera-ffmpeg en 0.1.17 (ffmpeg intégré qui supporte l'audio avec codec natif)
-* Support du FFMPEG intégré si homebridge-camera-ffmpeg >= 0.1.17 (si pas indiqué dans videoProcessor dans la plateforme supplémentaire)
+
+11&12-05-2020
+-------------
+* Préparation du support du FFMPEG intégré si homebridge-camera-ffmpeg >= 0.1.17 (si pas indiqué dans videoProcessor dans la plateforme supplémentaire)
 * Ajout audio:true si c'est le cas dans la proposition de configuration de camera dans la pièce.
+* Modification priorités custom config pour alarme et thermostat (pré config dans les plugins alarme).
+* Réaffichage des modes pour verisure pour permettre aux utilisateurs de reconfigurer la pré-config.
+* WARNING : après le 30-06-2020, le plugin ne sera plus compatible avec Debian Jessie (8), c'est déjà un peu le cas, mais ceux qui n'ont pas mis à jour depuis longtemps, ca pouvait encore fonctionner... Ca ne sera plus le cas !
 
 27&28-04-2020
 -------------
