@@ -14,11 +14,11 @@ A Venir
 * Ajout audio:true si c'est le cas dans la proposition de configuration de camera dans la pièce.
 * Modification priorités custom config pour alarme et thermostat (pré config dans les plugins alarme).
 * Réaffichage des modes pour verisure pour permettre aux utilisateurs de reconfigurer la pré-config.
-* WARNING : après le 30-06-2020, le plugin ne sera plus compatible avec Debian Jessie (8), c'est déjà un peu le cas, mais ceux qui n'ont pas mis à jour depuis longtemps, ca pouvait encore fonctionner... Ca ne sera plus le cas !
+* **_ATTENTION_ : après le 30-06-2020, le plugin ne sera plus compatible avec Debian Jessie (8), c'est déjà un peu le cas actuellement, mais chez ceux qui n'ont pas mis à jour depuis longtemps, il était possible que le plugin fonctionne...**
 
 > https://community.jeedom.com/t/homebridge-et-tous-mes-plugins-utilisant-nodejs-fin-de-support-de-debian-8-jessie-le-30-juin/26999
 
-* WARNING : les systèmes x86 en 32bits ne sont plus supportés depuis un petit temps dans NodeJS12
+> **_ATTENTION_ : les systèmes x86 en 32bits ne sont plus supportés depuis un petit temps dans NodeJS12, l'installation des dépendances devient donc impossible dans ce cas avec un message clair.**
 
 27&28-04-2020
 -------------
