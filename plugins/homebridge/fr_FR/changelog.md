@@ -18,6 +18,9 @@ A Venir
 
 > https://community.jeedom.com/t/homebridge-et-tous-mes-plugins-utilisant-nodejs-fin-de-support-de-debian-8-jessie-le-30-juin/26999
 
+* WARNING : les systèmes x86 en 32bits ne sont plus supportés depuis un petit temps dans NodeJS12
+* WARNING : les Raspberry zero, 1 et 2 ne sont plus supportés depuis un petit temps dans NodeJS12
+
 27&28-04-2020
 -------------
 * Contournement problème repo jeedom
