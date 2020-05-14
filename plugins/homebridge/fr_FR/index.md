@@ -62,20 +62,16 @@ Les dépendances sont installées automatiquement par Jeedom dans les 5 min. Ell
 
 *Systèmes compatibles avec Homebridge :*
 
-* Raspberry Pi 2 et 3 (Le Pi 3 est conseillé)
-
-* Box Jeedom Mini +
-
-* Box Jeedom pro
+* Raspberry Pi 3 et 4
 
 * Box Jeedom smart
 
 * Box Jeedom pro V2
 
-* Tout système basé sur Debian 8 ou 9
+* Tout système basé sur Debian 9 ou 10
 
 
->Les installations sous Docker et Raspberry Pi 1 ne sont pas supportées.
+>Les installations sous Docker, la Jeedom Mini+ et Raspberry Pi zero, 1 & 2 ainsi que Debian 8 (Jessie) et les système x86 32bits ne sont pas supportés.
 
 Une fois les dépendances installées, le démon se lance (dans les 5 min). Si le statut n'est pas sur "OK", il faut cliquer sur "(Re)Démarrer".
 
