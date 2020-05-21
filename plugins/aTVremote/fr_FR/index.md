@@ -3,7 +3,6 @@ Ce plugin permet de monitorer et exécuter quelques actions sur vos AppleTV.
 Veuillez Noter 
 ==============
 - Compatible uniquement avec **Debian Stretch au minimum** mais Buster conseillé !! (Pas compatible Debian Jessie)
-- Ce plugin n'est pas terminé. Les temps de réaction sont lents car une nouvelle session est ouverte à chaque commande vers l'AppleTV.
 - Ce plugin utilise le protocole MRP pour communiquer avec votre AppleTV 4 et 4K. 
 - Il n'est pas possible avec ce protocole de :
   - Modifier le volume (c'est votre TV qui s'en charge)
@@ -15,12 +14,12 @@ Veuillez Noter
   - Modifier le volume (c'est votre TV qui s'en charge)
   - Effectuer le bouton "Micro" (Siri) de la télécommande :'(
   - Savoir si votre AppleTV3 est en Veille ou pas (Elle continue aussi à répondre aux pings dans les deux cas)
-- Si votre AppleTV est en veille et vous cliquer sur une commande, elle sortira de veille. (ca dépends des touches...)
+- Si votre AppleTV3 est en veille et vous cliquer sur une commande type Menu, elle sortira de veille. (ca dépends des touches...)
 - Testé sur AppleTV 4 et 4K aussi. Pour l'AppleTV 3, les fonctionnalités sont limitées...
 - **Le partage à Domicile DOIT être activé dans Réglages > Comptes > Partage à domicile.** (toujours nécessaire ?)
 - **Votre AppleTV DOIT avoir une ip fixée (soit par réservation DHCP soit dans les Réglages)**
 - **L'AppleTV DOIT être dans le même réseau que votre jeedom (sans routage !!, elle est découverte par le protocole Bonjour)**
-- Pour l'instant, les données de lecture sont renouvellées toutes les minutes SI vous avez cliqué sur Play VIA JEEDOM (Jusqu'à avoir cliqué sur Pause ou Stop). Car si je scan ces données de lecture en permanance, votre AppleTV sort de veille :'( (peut-etre plus le cas avec la nouvelle lib... tester sur aTV3 et aTV4)
+- Sur AppleTV3, les données de lecture sont renouvellées toutes les minutes SI vous avez cliqué sur Play VIA JEEDOM (Jusqu'à avoir cliqué sur Pause ou Stop). Car si je scan ces données de lecture en permanance, votre AppleTV sort de veille :'( 
 - Conseil AppleTV3 : activez la mise en veille automatique pour contrer l'impossibilité de mettre en veille.
 
 Configuration du plugin 
@@ -115,7 +114,6 @@ Il existe de nombreuses commandes. Toutes ne sont pas affichées par défaut. Vo
 
 -   **App Active** : Affiche l'application active (si possible...)
 
--   **Enchainement** : Permet de grouper plusieurs commandes sur un seul appel (plus rapide d'exécution car une seule session !!!) (séparer par des espaces, utiliser les noms raccourcis des commandes (*up down* etc), utiliser *wait* pour faireune autre session et donc faire une pause)
 
 
 
