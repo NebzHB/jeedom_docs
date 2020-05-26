@@ -87,7 +87,7 @@ Vous pouvez utiliser ces quelques astuces :
 {(test) ?vrai:faux} => exemple : {(#[Maison][Météo][Température Max]# < 12) ?il va faire froid:il va faire beau !}
 ```
 
->Pour *tts=osx* vous devez avoir activé SSH sur votre mac dans Préférences système > Partages > Sessions Distantes et vérifiez que vous avez bien activé toutes les voix Personnalisées de votre langue dans Préférences système > Accessibilité > Parole  (testé sur Mojave)
+>Pour *tts=osx* vous devez avoir activé SSH sur votre mac dans Préférences système > Partages > Sessions Distantes et vérifiez que vous avez bien activé toutes les voix Personnalisées de votre langue dans Préférences système > Accessibilité > Parole  (testé sur Mojave et sur le plugin Jailbreak)
 
 >Pour *tts=voicerss* vous avez besoin d'une clé API (gratuite pour moins de 350 TTS/jour) : http://www.voicerss.org/login.aspx
 
@@ -118,7 +118,7 @@ Il existe une commande **Stop**. Elle joue en fait un son silencieux vide au vol
 7. Pourquoi ça va plus vite le deuxième fois que je fais prononcer la même phrase ?
 >Car le plug-in garde en cache 30 jours les messages pour une utilisation plus rapide la prochaine fois. Cette durée est prolongée de 30 jours à chaque utilisation (lecture). Vous pouvez supprimer ce comportement avec l'option cache=non (utile si variables dans le texte)
 8. Pour le système de TTS OSX, dois-je laisser tout le temps mon mac allumé ?
->A chaque fois que vous prononcez une nouvelle phrase avec ce système TTS oui, pour les déjà prononcées (dans les 30 jours) pas besoin, il y a le cache! Ou alors une vm *Hackintosh*.
+>A chaque fois que vous prononcez une nouvelle phrase avec ce système TTS oui, pour les déjà prononcées (dans les 30 jours) pas besoin, il y a le cache! Ou alors une vm *Hackintosh*. Vous avez également la possibilité d'utiliser le plugin Jailbreak sur un iPad/iPhone Jailbreaké
 9. J'ai envie de voix plus fun ou mieux faites
 >Je vous invite à tester le plug-in ttswebserveur, il vous permet d'utiliser un android (ou une vm android) pour générer la voix, il existe plein de voix très expressives gratuites ou à bas prix chez *Voxygen*
 10. Les mêmes phrases toujours prononcées c'est un peu monotone.
