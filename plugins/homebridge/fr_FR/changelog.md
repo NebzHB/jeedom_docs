@@ -11,6 +11,79 @@ A Venir (normalement le 1er juillet (si homebridge-camera-ffmpeg est stabilisé)
 
 ![Exemple](https://raw.githubusercontent.com/NebzHB/jeedom_docs/master/plugins/homebridge/images/exemple.jpg){:width="300px"}
 
+* **_ATTENTION_ : si vous possédez plusieurs cameras, il sera conseillé de les mettre dans le tableau jeedom cameras plutot que de faire plusieurs platform !**
+**AVANT**
+```
+{
+    "platform": "Camera-ffmpeg",
+    "cameras": [
+        {
+            "name": "Cam1",
+            "videoConfig": {
+                "source": "-rtsp_transport tcp -re -i rtsp://login:pass@192.168.1.1:554/videoMain",
+                "stillImageSource": "-i http://192.168.1.1:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=login&pwd=pass",
+                "maxStreams": 2,
+                "maxWidth": 1280,
+                "maxHeight": 720,
+                "maxFPS": 15,
+                "vcodec": "h264",
+                "audio": true
+            }
+        }
+    ]
+}|{
+    "platform": "Camera-ffmpeg",
+    "cameras": [
+        {
+            "name": "Cam2",
+            "videoConfig": {
+                "source": "-rtsp_transport tcp -re -i rtsp://login:pass@192.168.1.2:554/videoMain",
+                "stillImageSource": "-i http://192.168.1.2:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=login&pwd=pass",
+                "maxStreams": 2,
+                "maxWidth": 1280,
+                "maxHeight": 720,
+                "maxFPS": 15,
+                "vcodec": "h264",
+                "audio": true
+            }
+        }
+    ]
+}
+```
+**APRÈS**
+```
+{
+    "platform": "Camera-ffmpeg",
+    "cameras": [
+        {
+            "name": "Cam1",
+            "videoConfig": {
+                "source": "-rtsp_transport tcp -re -i rtsp://login:pass@192.168.1.1:554/videoMain",
+                "stillImageSource": "-i http://192.168.1.1:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=login&pwd=pass",
+                "maxStreams": 2,
+                "maxWidth": 1280,
+                "maxHeight": 720,
+                "maxFPS": 15,
+                "vcodec": "h264",
+                "audio": true
+            }
+        },{
+            "name": "Cam2",
+            "videoConfig": {
+                "source": "-rtsp_transport tcp -re -i rtsp://login:pass@192.168.1.2:554/videoMain",
+                "stillImageSource": "-i http://192.168.1.2:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=login&pwd=pass",
+                "maxStreams": 2,
+                "maxWidth": 1280,
+                "maxHeight": 720,
+                "maxFPS": 15,
+                "vcodec": "h264",
+                "audio": true
+            }
+        }
+    ]
+}
+```
+
 11&12-05-2020
 -------------
 * Préparation du support du FFMPEG intégré si homebridge-camera-ffmpeg >= 0.1.17 (si pas indiqué dans videoProcessor dans la plateforme supplémentaire)
