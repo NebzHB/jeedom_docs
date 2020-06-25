@@ -11,7 +11,8 @@ A Venir (normalement le 1er juillet (si homebridge-camera-ffmpeg est stabilisé)
 
 ![Exemple](https://raw.githubusercontent.com/NebzHB/jeedom_docs/master/plugins/homebridge/images/exemple.jpg){:width="300px"}
 
-* **_ATTENTION_ : si vous possédez plusieurs cameras, il sera conseillé de les mettre dans le tableau jeedom cameras plutot que de faire plusieurs platform !**
+* **_ATTENTION_ : si vous possédez plusieurs cameras, il sera conseillé de les mettre dans le tableau "cameras" plutot que de faire plusieurs "platform" !**
+
 **AVANT**
 ```
 {
