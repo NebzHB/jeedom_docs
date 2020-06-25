@@ -8,6 +8,7 @@ A Venir
 * Mise à jour homebridge-alexa en 0.4.73
 * Mise à jour homebridge-camera-ffmpeg en 2.0.0 (ffmpeg intégré qui supporte l'audio avec codec natif)
 * **_ATTENTION_ : depuis la version 2.0.0 de homebridge-camera-ffmpeg, les cameras font partie du Pont Jeedom !!! Après redémarrage du démon lors de cette mise à jour, vous allez vous retrouver avec vos caméra en double, il vous faudra supprimer l'ancienne et garder celle qui est liée au Pont Jeedom, pour voir la différence, cliquez sur l'engrenage sur la cam sous "inclure dans les favoris" vous verrez "Pont >"**
+![Exemple](https://raw.githubusercontent.com/NebzHB/jeedom_docs/master/plugins/homebridge/images/exemple.jpg | width=50)
 
 11&12-05-2020
 -------------
