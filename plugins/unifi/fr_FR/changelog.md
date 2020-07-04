@@ -1,3 +1,8 @@
+# 04-07/2020
+
+* Fix détection dans certains cas qui ne remontait rien
+* Fix mise à jour de certains périphérique qui pouvait ne pas se faire
+
 # 09-03-2020
 
 * Non réécriture du schédule du cron à la mise à jour, si vous l'avez modifié, il restera.
