@@ -2,11 +2,11 @@
 Changelog
 =========
 
-A Venir (normalement le 1er juillet (si homebridge-camera-ffmpeg est stabilisé)
+A Venir (normalement le 1er aout)
 -------------
 * Mise à jour Homebridge en 1.1.1 et HAP-NodeJS en 0.7.5
 * Mise à jour homebridge-alexa en 0.4.73
-* Mise à jour homebridge-camera-ffmpeg en 2.0.0 (ffmpeg intégré qui supporte l'audio avec codec natif) (**attention, possibilité de délais de la date du 1er juillet à cause de ce composant... pour le moment, ils ont des erreurs de flux...**) https://github.com/homebridge-plugins/homebridge-camera-ffmpeg/issues/554
+* Mise à jour homebridge-camera-ffmpeg en 2.0.0 (ffmpeg intégré qui supporte l'audio avec codec natif)
 * **_ATTENTION_ : depuis la version 2.0.0 de homebridge-camera-ffmpeg, les cameras font partie du Pont Jeedom !!! Après redémarrage du démon lors de cette mise à jour, vous allez vous retrouver avec vos caméra en double, il vous faudra supprimer l'ancienne et garder celle qui est liée au Pont Jeedom, pour voir la différence, cliquez sur l'engrenage sur la cam sous "inclure dans les favoris" vous verrez "Pont >"**
 
 ![Exemple](https://raw.githubusercontent.com/NebzHB/jeedom_docs/master/plugins/homebridge/images/exemple.jpg){:width="300px"}
@@ -84,6 +84,8 @@ A Venir (normalement le 1er juillet (si homebridge-camera-ffmpeg est stabilisé)
     ]
 }
 ```
+
+* **_ATTENTION_ : Si vous avez des problèmes de flux après la migration, changez le nom de la camera dans les plateformes supplémentaires**
 
 11&12-05-2020
 -------------
