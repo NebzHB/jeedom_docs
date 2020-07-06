@@ -85,7 +85,7 @@ A Venir (normalement le 1er aout)
 }
 ```
 
-* **_ATTENTION_ : Si vous avez des problèmes de flux après la migration, changez le nom de la camera dans les plateformes supplémentaires**
+* **_ATTENTION_ : Si vous avez des problèmes de flux après la migration, changez le nom de la camera dans les plateformes supplémentaires et relancez le démon**
 
 11&12-05-2020
 -------------
