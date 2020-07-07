@@ -19,9 +19,9 @@ exclude:
 plugins:
 - jekyll-paginate
 - jekyll-seo-tag
-title: "Documentations des plugins et widgets de JAG"
-description: "Ceci est la documentation des plugins et widgets créés par JAG de la solution domotique Jeedom."
-author: "JAG"
+title: "Documentations des plugins Nebz"
+description: "Ceci est la documentation des plugins créés par Nebz de la solution domotique Jeedom."
+author: "Nebz"
 image: https://doc.jeedom.com/images/logo.png
 twitter:
   username: Jeedom_domotic
