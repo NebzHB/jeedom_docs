@@ -1,3 +1,9 @@
+---
+layout: default
+lang: fr_FR
+title: Homebridge
+description: Documentation du plugin Homebridge
+---
 
 Présentation Homebridge
 =======================
