@@ -4,86 +4,13 @@ Changelog
 
 A Venir (normalement le 1er aout)
 -------------
+* Fusion des plateformes camera-ffmpeg multiples en une seule plateforme contenant plusieurs cameras.
 * Mise à jour Homebridge en 1.1.1 et HAP-NodeJS en 0.7.5
 * Mise à jour homebridge-alexa en 0.4.73
 * Mise à jour homebridge-camera-ffmpeg en 2.0.0 (ffmpeg intégré qui supporte l'audio avec codec natif)
 * **_ATTENTION_ : depuis la version 2.0.0 de homebridge-camera-ffmpeg, les cameras font partie du Pont Jeedom !!! Après redémarrage du démon lors de cette mise à jour, vous allez vous retrouver avec vos caméra en double, il vous faudra supprimer l'ancienne et garder celle qui est liée au Pont Jeedom, pour voir la différence, cliquez sur l'engrenage sur la cam sous "inclure dans les favoris" vous verrez "Pont >"**
 
 ![Exemple](https://raw.githubusercontent.com/NebzHB/jeedom_docs/master/plugins/homebridge/images/exemple.jpg){:width="300px"}
-
-* **_ATTENTION_ : si vous possédez plusieurs cameras, il sera conseillé de les mettre dans le tableau "cameras" plutot que de faire plusieurs "platform" !**
-
-**AVANT**
-```
-{
-    "platform": "Camera-ffmpeg",
-    "cameras": [
-        {
-            "name": "Cam1",
-            "videoConfig": {
-                "source": "-rtsp_transport tcp -re -i rtsp://login:pass@192.168.1.1:554/videoMain",
-                "stillImageSource": "-i http://192.168.1.1:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=login&pwd=pass",
-                "maxStreams": 2,
-                "maxWidth": 1280,
-                "maxHeight": 720,
-                "maxFPS": 15,
-                "vcodec": "h264",
-                "audio": true
-            }
-        }
-    ]
-}|{
-    "platform": "Camera-ffmpeg",
-    "cameras": [
-        {
-            "name": "Cam2",
-            "videoConfig": {
-                "source": "-rtsp_transport tcp -re -i rtsp://login:pass@192.168.1.2:554/videoMain",
-                "stillImageSource": "-i http://192.168.1.2:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=login&pwd=pass",
-                "maxStreams": 2,
-                "maxWidth": 1280,
-                "maxHeight": 720,
-                "maxFPS": 15,
-                "vcodec": "h264",
-                "audio": true
-            }
-        }
-    ]
-}
-```
-**APRÈS**
-```
-{
-    "platform": "Camera-ffmpeg",
-    "cameras": [
-        {
-            "name": "Cam1",
-            "videoConfig": {
-                "source": "-rtsp_transport tcp -re -i rtsp://login:pass@192.168.1.1:554/videoMain",
-                "stillImageSource": "-i http://192.168.1.1:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=login&pwd=pass",
-                "maxStreams": 2,
-                "maxWidth": 1280,
-                "maxHeight": 720,
-                "maxFPS": 15,
-                "vcodec": "h264",
-                "audio": true
-            }
-        },{
-            "name": "Cam2",
-            "videoConfig": {
-                "source": "-rtsp_transport tcp -re -i rtsp://login:pass@192.168.1.2:554/videoMain",
-                "stillImageSource": "-i http://192.168.1.2:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=login&pwd=pass",
-                "maxStreams": 2,
-                "maxWidth": 1280,
-                "maxHeight": 720,
-                "maxFPS": 15,
-                "vcodec": "h264",
-                "audio": true
-            }
-        }
-    ]
-}
-```
 
 * **_ATTENTION_ : Si vous avez des problèmes de flux après la migration, changez le nom de la camera dans les plateformes supplémentaires et relancez le démon**
 
