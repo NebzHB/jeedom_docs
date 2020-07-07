@@ -35,5 +35,7 @@ community: https://community.jeedom.com
 market: https://market.jeedom.com
 blog: https://blog.jeedom.com
 doc: https://doc.jeedom.com
-plugins: "plugins"
+help: "help"
+archive: "widget_archive"
+widget: "widget"
 img: "images"
