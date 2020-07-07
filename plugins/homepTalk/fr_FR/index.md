@@ -1,3 +1,10 @@
+---
+layout: default
+lang: fr_FR
+title: Plugin homepTalk
+description: Documentation du plugin homepTalk
+---
+
 Présentation HomepTalk
 =======================
 

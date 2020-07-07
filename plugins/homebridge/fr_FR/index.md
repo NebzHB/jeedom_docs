@@ -1,7 +1,7 @@
 ---
 layout: default
 lang: fr_FR
-title: Homebridge
+title: Plugin Homebridge
 description: Documentation du plugin Homebridge
 ---
 

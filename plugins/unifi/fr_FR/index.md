@@ -1,3 +1,10 @@
+---
+layout: default
+lang: fr_FR
+title: Plugin Unifi
+description: Documentation du plugin Unifi
+---
+
 Ce plugin permet de monitorer et exécuter quelques actions sur un **controleur** UniFi et les équipements supportés par celui-ci.
 
 

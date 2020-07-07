@@ -1,7 +1,7 @@
 ---
 layout: default
 lang: fr_FR
-title: Homebridge - Changelog
+title: Plugin Homebridge - Changelog
 description: Changelog du plugin Homebridge
 ---
 

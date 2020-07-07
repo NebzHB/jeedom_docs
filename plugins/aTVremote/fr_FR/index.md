@@ -1,3 +1,10 @@
+---
+layout: default
+lang: fr_FR
+title: Plugin aTVRemote
+description: Documentation du plugin aTVRemote
+---
+
 Ce plugin permet de monitorer et exécuter quelques actions sur vos AppleTV.
 
 Veuillez Noter 

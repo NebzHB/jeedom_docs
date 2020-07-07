@@ -1,3 +1,9 @@
+---
+layout: default
+lang: fr_FR
+title: Plugin homepTalk - Changelog
+description: Changelog du plugin homepTalk
+---
 
 Changelog
 =========

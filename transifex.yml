@@ -3,23 +3,29 @@ filters:
     file_format: GITHUBMARKDOWN
     source_file_extension: md
     source_language: fr
-    source_file_dir: plugin-rosee/fr_FR/
-    translation_files_expression: /plugin-rosee/<lang>/
+    source_file_dir: plugins/homebridge/fr_FR/
+    translation_files_expression: /plugins/homebridge/<lang>/
     - filter_type: dir
     file_format: GITHUBMARKDOWN
     source_file_extension: md
     source_language: fr
-    source_file_dir: widget/fr_FR/
-    translation_files_expression: /widget/<lang>/
+    source_file_dir: plugins/unifi/fr_FR/
+    translation_files_expression: /plugins/unifi/<lang>/
     - filter_type: dir
     file_format: GITHUBMARKDOWN
     source_file_extension: md
     source_language: fr
-    source_file_dir: widget_archive/fr_FR/
-    translation_files_expression: /widget_archive/<lang>/
+    source_file_dir: plugins/aTVremote/fr_FR/
+    translation_files_expression: /plugins/aTVremote/<lang>/
     - filter_type: dir
     file_format: GITHUBMARKDOWN
     source_file_extension: md
     source_language: fr
-    source_file_dir: help/fr_FR/
-    translation_files_expression: /help/<lang>/
+    source_file_dir: plugins/homepTalk/fr_FR/
+    translation_files_expression: /plugins/homepTalk/<lang>/
+    - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
+    source_file_dir: plugins/xiaomiTalk/fr_FR/
+    translation_files_expression: /plugins/xiaomiTalk/<lang>/	

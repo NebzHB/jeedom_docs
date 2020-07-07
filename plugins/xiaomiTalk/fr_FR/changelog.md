@@ -1,3 +1,9 @@
+---
+layout: default
+lang: fr_FR
+title: Plugin xiaomiTalk - Changelog
+description: Changelog du plugin xiaomiTalk
+---
 
 Changelog
 =========

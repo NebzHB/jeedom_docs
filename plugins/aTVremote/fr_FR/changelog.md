@@ -1,3 +1,10 @@
+---
+layout: default
+lang: fr_FR
+title: Plugin aTVRemote - Changelog
+description: Changelog du plugin aTVRemote
+---
+
 # 21/05/2020
 Projet entièrement revisité !!
 - Nouveau widget ! (Merci à @Wators)

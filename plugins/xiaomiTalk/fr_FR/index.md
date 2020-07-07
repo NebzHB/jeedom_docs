@@ -1,3 +1,10 @@
+---
+layout: default
+lang: fr_FR
+title: Plugin xiaomiTalk
+description: Documentation du plugin xiaomiTalk
+---
+
 ATTENTION
 =========
 

@@ -1,3 +1,10 @@
+---
+layout: default
+lang: fr_FR
+title: Plugin Unifi - Changelog
+description: Changelog du plugin Unifi
+---
+
 # 04-07/2020
 
 * Fix détection dans certains cas qui ne remontait rien
