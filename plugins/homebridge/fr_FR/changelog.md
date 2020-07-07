@@ -1,9 +1,3 @@
----
-layout: default
-lang: fr_FR
-title: Homebridge - Changelog
-description: Changelog du plugin Homebridge
----
 
 Changelog
 =========
