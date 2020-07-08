@@ -12,7 +12,10 @@ A Venir (normalement le 1er aout)
 -------------
 * Fusion des plateformes camera-ffmpeg multiples en une seule plateforme contenant plusieurs cameras.
 * Import via un bouton des cameras venant du plugin camera (si celles-ci ont une "URL de flux", vérifier dans les plateformes supplémentaire l'import !).
-* Installation via les dépendances de homebridge-config-ui-x + bouton pour y accéder. **_ATTENTION_ : toute modification faite à la config dans cette interface ne sera pas (encore) prise en compte, c'est à titre de test pour l'instant ! (installation/désinstallation/mettre à jour plugin + redémarrer homebridge + visualiser les accessoires fonctionnent (pratique pour ceux qui utilisent homebridge-alexa ou homebridge-gsh et qui n'ont pas de iDevice) !) **
+* Installation via les dépendances de homebridge-config-ui-x + bouton pour y accéder. 
+
+**_ATTENTION_ : toute modification faite à la config dans cette interface ne sera pas (encore) prise en compte, c'est à titre de test pour l'instant ! (installation/désinstallation/mettre à jour plugin + redémarrer homebridge + visualiser les accessoires fonctionnent (pratique pour ceux qui utilisent homebridge-alexa ou homebridge-gsh et qui n'ont pas de iDevice) !) **
+
 * Mise à jour Homebridge en 1.1.1 et HAP-NodeJS en 0.7.7
 * Mise à jour homebridge-alexa en 0.4.73
 * Mise à jour homebridge-camera-ffmpeg en 2.1.1 (ffmpeg intégré qui supporte l'audio avec codec natif)
