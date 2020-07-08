@@ -11,9 +11,12 @@ Changelog
 A Venir (normalement le 1er aout)
 -------------
 * Fusion des plateformes camera-ffmpeg multiples en une seule plateforme contenant plusieurs cameras.
-* Mise à jour Homebridge en 1.1.1 et HAP-NodeJS en 0.7.5
+* Import via un bouton des cameras venant du plugin camera (si celles-ci ont une "URL de flux", vérifier dans les plateformes supplémentaire l'import !).
+* Installation via les dépendances de homebridge-config-ui-x + bouton pour y accéder. **_ATTENTION_ : toute modification faite à la config dans cette interface ne sera pas (encore) prise en compte, c'est à titre de test pour l'instant ! (installation/désinstallation/mettre à jour plugin + redémarrer homebridge + visualiser les accessoires fonctionnent (pratique pour ceux qui utilisent homebridge-alexa ou homebridge-gsh et qui n'ont pas de iDevice) !) **
+* Mise à jour Homebridge en 1.1.1 et HAP-NodeJS en 0.7.7
 * Mise à jour homebridge-alexa en 0.4.73
-* Mise à jour homebridge-camera-ffmpeg en 2.0.0 (ffmpeg intégré qui supporte l'audio avec codec natif)
+* Mise à jour homebridge-camera-ffmpeg en 2.1.1 (ffmpeg intégré qui supporte l'audio avec codec natif)
+* Installation de homebridge-config-ui-x en 4.23.2
 * **_ATTENTION_ : depuis la version 2.0.0 de homebridge-camera-ffmpeg, les cameras font partie du Pont Jeedom !!! Après redémarrage du démon lors de cette mise à jour, vous allez vous retrouver avec vos caméra en double, il vous faudra supprimer l'ancienne et garder celle qui est liée au Pont Jeedom, pour voir la différence, cliquez sur l'engrenage sur la cam sous "inclure dans les favoris" vous verrez "Pont >"**
 
 ![Exemple](https://raw.githubusercontent.com/NebzHB/jeedom_docs/master/plugins/homebridge/images/exemple.jpg){:width="300px"}
