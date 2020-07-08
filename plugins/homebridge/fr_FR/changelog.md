@@ -14,7 +14,7 @@ A Venir (normalement le 1er aout)
 * Import via un bouton des cameras venant du plugin camera (si celles-ci ont une "URL de flux", vérifier dans les plateformes supplémentaire l'import !).
 * Installation via les dépendances de homebridge-config-ui-x + bouton pour y accéder. (installation/désinstallation/mettre à jour plugin + redémarrer homebridge + visualiser les accessoires fonctionnent (pratique pour ceux qui utilisent homebridge-alexa ou homebridge-gsh et qui n'ont pas de iDevice) !)
 
-* **_ATTENTION_ : Toute modification faite à la config dans cette interface ne sera pas (encore) prise en compte, c'est à titre de test pour l'instant ! **
+**_ATTENTION_ : Toute modification faite à la config dans cette interface ne sera pas (encore) prise en compte, c'est à titre de test pour l'instant !**
 
 * Mise à jour Homebridge en 1.1.1 et HAP-NodeJS en 0.7.7
 * Mise à jour homebridge-alexa en 0.4.73
