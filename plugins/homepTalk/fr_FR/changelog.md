@@ -9,6 +9,11 @@ Changelog
 =========
 14-06-2020
 -------------
+* FFMPEG est installé par le core, suppression de l'install de celui-ci dans les dépendances
+* tag v4 das info.json
+
+14-06-2020
+-------------
 * Fix double install
 
 26-05-2020
