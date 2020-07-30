@@ -8,7 +8,7 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-A Venir (normalement le 1er aout)
+A Venir (normalement le 15 aout)
 -------------
 * Fusion des plateformes camera-ffmpeg multiples en une seule plateforme contenant plusieurs cameras.
 * Suppression de la possibilité de migrer **homebridge du plugin mobile** à **homebridge indépendant** (la séparation a eu lien il y a 3 ans)
@@ -28,6 +28,13 @@ A Venir (normalement le 1er aout)
 **A GARDER !**
 
 * **_ATTENTION_ : Si vous avez des problèmes de flux après la migration, changez le nom de la camera dans les plateformes supplémentaires et relancez le démon**
+
+
+
+
+30/07/2020
+----------
+* Préparation de jeedom pour l'upgrade (ceci ne veut pas dire qu'elle va arriver le 1er Aout ;) il reste des choses à débugger)
 
 11&12-05-2020
 -------------
