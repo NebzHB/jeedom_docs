@@ -27,6 +27,8 @@ A Venir (normalement le 15 aout)
 ![Exemple](https://raw.githubusercontent.com/NebzHB/jeedom_docs/master/plugins/homebridge/images/exemple.jpg){:width="300px"}
 **A GARDER !**
 
+* Pour vous aider à faire cette modification, une petite aide s'affichera dans la configuration du plugin la première fois SI le démon est démarré et SI vous avez des caméras et SI vous ne l'avez pas encore validée.
+
 * **_ATTENTION_ : Si vous avez des problèmes de flux après la migration, changez le nom de la camera dans les plateformes supplémentaires et relancez le démon**
 
 
