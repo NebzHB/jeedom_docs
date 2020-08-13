@@ -10,17 +10,20 @@ Changelog
 
 A Venir (normalement le 15 aout)
 -------------
-* Fusion des plateformes camera-ffmpeg multiples en une seule plateforme contenant plusieurs cameras.
-* Suppression de la possibilité de migrer **homebridge du plugin mobile** à **homebridge indépendant** (la séparation a eu lien il y a 3 ans)
-* Ajout de la possibilité de ne pas intégrer automatiquement un équipement dans homebridge par défaut.
-* Import via un bouton des cameras venant du plugin camera (si celles-ci ont une "URL de flux", vérifier dans les plateformes supplémentaire l'import ! **Ne pas modifier le serialNumber par après, sinon au prochain import, vous aurez un doublon**).
+* Fusion automatique des plateformes camera-ffmpeg multiples en une seule plateforme contenant plusieurs cameras.
+* Ajout de la possibilité de ne pas intégrer automatiquement un équipement dans homebridge par défaut (voir configuration du plugin).
+* Import via un bouton des caméras venant du plugin camera (**si celles-ci ont une "URL de flux"**, vérifier ensuite dans les plateformes supplémentaire l'import ! **Ne pas modifier le serialNumber par après, sinon au prochain import, vous aurez un doublon**).
+* Import via un bouton des caméras venant du plugin Hikvision (en beta pour l'instant).
+* Import via un bouton des caméras venant du plugin Synology Surveillance Station (patch en attente de validation par le dev...).
+
 * Installation via les dépendances de homebridge-config-ui-x + bouton pour y accéder. (installation/désinstallation/mettre à jour plugin + redémarrer homebridge + visualiser les accessoires fonctionnent (pratique pour ceux qui utilisent homebridge-alexa ou homebridge-gsh et qui n'ont pas de iDevice) !)
 **_ATTENTION_ : Toute modification faite à la config dans cette interface ne sera pas (encore) prise en compte, c'est à titre de test pour l'instant !**
 
+* Suppression de la possibilité de migrer **homebridge du plugin mobile** à **homebridge indépendant** (la séparation a eu lien il y a 3 ans)
 * Fin du support avec Debian 8 Jessie officiellement.
 * Mise à jour Homebridge en 1.1.1 et HAP-NodeJS en 0.7.7
 * Mise à jour homebridge-alexa en 0.4.73
-* Mise à jour homebridge-camera-ffmpeg en 2.4.2 (ffmpeg intégré qui supporte l'audio avec codec natif)
+* Mise à jour homebridge-camera-ffmpeg en 2.4.4 (ffmpeg intégré qui supporte l'audio avec codec natif)
 * Installation de homebridge-config-ui-x en 4.24.0
 * **_ATTENTION_ : depuis la version 2.0.0 de homebridge-camera-ffmpeg, les cameras font partie du Pont Jeedom !!! Après redémarrage du démon lors de cette mise à jour, vous allez vous retrouver avec vos caméra en double dans Maison, il vous faudra supprimer l'ancienne et garder celle qui est liée au Pont Jeedom, pour voir la différence, cliquez sur l'engrenage sur la cam sous "inclure dans les favoris" vous verrez "Pont >"**
 
