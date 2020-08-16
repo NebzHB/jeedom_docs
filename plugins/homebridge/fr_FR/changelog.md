@@ -23,7 +23,7 @@ A Venir (pas de date fixée... en attente de stabilisation homebridge)
 * Fin du support avec Debian 8 Jessie officiellement.
 * Mise à jour Homebridge en 1.1.2 et HAP-NodeJS en 0.7.8
 * Mise à jour homebridge-alexa en 0.4.74
-* Mise à jour homebridge-camera-ffmpeg en 2.4.5 (ffmpeg intégré qui supporte l'audio avec codec natif)
+* Mise à jour homebridge-camera-ffmpeg en 2.4.6 (ffmpeg intégré qui supporte l'audio avec codec natif)
 * Installation de homebridge-config-ui-x en 4.25.2
 * **_ATTENTION_ : depuis la version 2.0.0 de homebridge-camera-ffmpeg, les cameras font partie du Pont Jeedom !!! Après redémarrage du démon lors de cette mise à jour, vous allez vous retrouver avec vos caméra en double dans Maison, il vous faudra supprimer l'ancienne et garder celle qui est liée au Pont Jeedom, pour voir la différence, cliquez sur l'engrenage sur la cam sous "inclure dans les favoris" vous verrez "Pont >"**
 
