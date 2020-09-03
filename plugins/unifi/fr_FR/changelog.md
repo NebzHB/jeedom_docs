@@ -5,6 +5,14 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# A VENIR (en beta actuellement)
+
+* Meilleur support et affichage des DreamMachines (pour l'instant comme une USG)
+* (toujours en test car pas de retour) couper/activer le POE sur un port d'un switch
+* Ajout des commandes info "MAC Point Accès", "MAC Switch" et "MAC Passerelle" sur les clients.
+* Ajout des commandes info "Niveau Ventil", "Temp Générale" sur les switchs qui ont des ventilateurs et des capteurs température
+* Fix sur des doublons de nom de périphérique.
+
 # 04-07/2020
 
 * Fix détection dans certains cas qui ne remontait rien
