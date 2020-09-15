@@ -15,6 +15,7 @@ A Venir (pas de date fixée... en attente de stabilisation homebridge)
 * Import via un bouton des caméras venant du plugin camera (**si celles-ci ont une "URL de flux"**, vérifier ensuite dans les plateformes supplémentaire l'import ! **Ne pas modifier le serialNumber par après, sinon au prochain import, vous aurez un doublon**).
 * Import via un bouton des caméras venant du plugin Hikvision (en beta pour l'instant).
 * Import via un bouton des caméras venant du plugin Synology Surveillance Station (patch en attente de validation par le dev...).
+* Séparation des logs en anglais natifs de homebridge dans un bouton dans la configuration du plugin. Afin de simplifier le log même en mode debug et rendre celui-ci plus lisible aux utilisateurs ainsi que de simplifier le support avec des logs plus concis.
 
 * Installation via les dépendances de homebridge-config-ui-x + bouton pour y accéder. (installation/désinstallation/mettre à jour plugin + redémarrer homebridge + visualiser les accessoires fonctionnent (pratique pour ceux qui utilisent homebridge-alexa ou homebridge-gsh et qui n'ont pas de iDevice) !)
 **_ATTENTION_ : Toute modification faite à la config dans cette interface ne sera pas (encore) prise en compte, c'est à titre de test pour l'instant !**
