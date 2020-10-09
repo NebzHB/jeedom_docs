@@ -13,8 +13,9 @@ A Venir (pas de date fixée... en attente de stabilisation homebridge)
 * Fusion automatique des plateformes camera-ffmpeg multiples en une seule plateforme contenant plusieurs cameras.
 * Ajout de la possibilité de ne pas intégrer automatiquement un équipement dans homebridge par défaut (voir configuration du plugin).
 * Import via un bouton des caméras venant du plugin camera (**si celles-ci ont une "URL de flux"**, vérifier ensuite dans les plateformes supplémentaire l'import ! **Ne pas modifier le serialNumber par après, sinon au prochain import, vous aurez un doublon**).
-* Import via un bouton des caméras venant du plugin Hikvision (en beta pour l'instant).
+* Import via un bouton des caméras venant du plugin Hikvision.
 * Import via un bouton des caméras venant du plugin Synology Surveillance Station (patch en attente de validation par le dev...).
+* Installation des dépendances corrigent automatiquement certaines erreurs Linux sur le gestionnaire de paquets.
 * Séparation des logs debug natifs de homebridge et de ses plugins dans un bouton dans la configuration du plugin. Afin de simplifier le log même en mode debug et rendre celui-ci plus lisible aux utilisateurs ainsi que de simplifier le support avec des logs plus concis.
 
 * Installation via les dépendances de homebridge-config-ui-x + bouton pour y accéder. (installation/désinstallation/mettre à jour plugin + redémarrer homebridge + visualiser les accessoires fonctionnent (pratique pour ceux qui utilisent homebridge-alexa ou homebridge-gsh et qui n'ont pas de iDevice) !)
