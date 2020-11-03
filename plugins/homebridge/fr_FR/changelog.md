@@ -23,10 +23,11 @@ A Venir (pas de date fixée... en attente de stabilisation homebridge)
 
 * Suppression de la possibilité de migrer **homebridge du plugin mobile** à **homebridge indépendant** (la séparation a eu lien il y a 3 ans)
 * Fin du support avec Debian 8 Jessie officiellement.
-* Mise à jour Homebridge en 1.1.6 et HAP-NodeJS en 0.7.9
-* Mise à jour homebridge-alexa en 0.5.11
-* Mise à jour homebridge-camera-ffmpeg en 3.0.3 (ffmpeg intégré qui supporte l'audio avec codec natif)
-* Installation de homebridge-config-ui-x en 4.25.2
+* Mise à jour Homebridge en 1.1.6 et HAP-NodeJS en 0.7.9 (les versions suivantes ont des problèmes chez certains...)
+* Mise à jour homebridge-alexa en dernière version
+* Mise à jour homebridge-camera-ffmpeg en dernière version (ffmpeg intégré qui supporte l'audio avec codec natif)
+* Installation de homebridge-config-ui-x en dernière version
+* Installation de homebridge-gsh en dernière version
 * **_ATTENTION_ : depuis la version 2.0.0 de homebridge-camera-ffmpeg, les cameras font partie du Pont Jeedom !!! Après redémarrage du démon lors de cette mise à jour, vous allez vous retrouver avec vos caméra en double dans Maison, il vous faudra supprimer l'ancienne et garder celle qui est liée au Pont Jeedom, pour voir la différence, cliquez sur l'engrenage sur la cam sous "inclure dans les favoris" vous verrez "Pont >"**
 
 ![Exemple](https://raw.githubusercontent.com/NebzHB/jeedom_docs/master/plugins/homebridge/images/exemple.jpg){:width="300px"}
