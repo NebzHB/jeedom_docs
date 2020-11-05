@@ -155,7 +155,7 @@ Pour créer le pont, il suffit de lui donner un nom et un code "PIN".
 
 * *Accessoire Homebridge supplémentaire* : Permet de rajouter manuellement un plugin Homebridge de type accessoire (homebridge-freemote par exemple).
 
-* *Lancer l'interface de configuration Config-UI-X (Local seulement)* : Permet de lancer l'interface de homebridge-config-ui-x qui est maintenant pré-installé et configuré. Attention, toute modification dans un plugin ou config.json ne sera pas pris en compte pour l'instant. Peut-être plus tard.
+* *Lancer l'interface de configuration Config-UI-X (Local seulement)* : Permet de lancer l'interface de homebridge-config-ui-x qui est maintenant pré-installé et configuré. Attention, toute modification dans un plugin ou config.json ne sera pas pris en compte pour l'instant. Peut-être plus tard. Si vous ne voyez pas l'interface, tentez avec http://votreIP:33221/
 
 >Réservé à un public averti. Il n'y aura aucun support pour ces configurations de plugins supplémentaires et imports.
 
