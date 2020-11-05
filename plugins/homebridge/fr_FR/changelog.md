@@ -14,7 +14,7 @@ A Venir (pas de date fixée... en attente de stabilisation homebridge)
 * Ajout de la possibilité de ne pas intégrer automatiquement un équipement dans homebridge par défaut (voir configuration du plugin).
 * Import via un bouton des caméras venant du plugin camera (**si celles-ci ont une "URL de flux"**, vérifier ensuite dans les plateformes supplémentaire l'import ! **Ne pas modifier le serialNumber par après, sinon au prochain import, vous aurez un doublon**).
 * Import via un bouton des caméras venant du plugin Hikvision.
-* Import via un bouton des caméras venant du plugin Synology Surveillance Station (patch en attente de validation par le dev...).
+* Import via un bouton des caméras venant du plugin Synology Surveillance Station (patch en attente de validation par le dev... https://github.com/phifi92/surveillanceStation/pull/5).
 * Installation des dépendances corrigent automatiquement certaines erreurs Linux sur le gestionnaire de paquets.
 * Séparation des logs debug natifs de homebridge et de ses plugins dans un bouton dans la configuration du plugin. Afin de simplifier le log même en mode debug et rendre celui-ci plus lisible aux utilisateurs ainsi que de simplifier le support avec des logs plus concis.
 
