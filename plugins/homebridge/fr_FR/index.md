@@ -141,16 +141,30 @@ Pour créer le pont, il suffit de lui donner un nom et un code "PIN".
 
 * *Réparer & réinstaller* : Supprime et réinstalle complètement Homebridge. 
 
-
 >A n'effectuer que sur conseil d'un membre du forum et il faut retirer le pont de l'application "Maison".
+
+* *Gérer les plugins pour Homebridge* : Permet de gérer les modules npm homebridge-xxx installés sur le système.
+
+* *Importer Cameras du plugin Hikvision (BETA)* : Permet d'importer automatiquement les caméras du plugin Hikvision dans les plateformes supplémentaires (En test, à vérifier).
+
+* *Importer Cameras du plugin Camera (BETA)* : Permet d'importer automatiquement les caméras du plugin Camera dans les plateformes supplémentaires (En test, à vérifier).
+
+>L'importation risque de vous faire un doublon si vous avez déjà inclu votre caméra précédemment, une fois importée, une caméra ne sera plus modifiée par cet import. (grace au "serialNumber"). Pour le plugin Camera, la caméra doit avoir le champ "URL de flux" remplis.
 
 * *Plateforme Homebridge supplémentaire* : Permet de rajouter manuellement un plugin Homebridge de type plateforme (homebridge-camera-ffmpeg ou homebridge-nest par exemple).
 
 * *Accessoire Homebridge supplémentaire* : Permet de rajouter manuellement un plugin Homebridge de type accessoire (homebridge-freemote par exemple).
 
-* *Gérer les plugins pour Homebridge* : Permet de gérer les modules npm homebridge-xxx installés sur le système.
+* *Lancer l'interface de configuration Config-UI-X (Local seulement)* : Permet de lancer l'interface de homebridge-config-ui-x qui est maintenant pré-installé et configuré. Attention, toute modification dans un plugin ou config.json ne sera pas pris en compte pour l'instant. Peut-être plus tard.
 
->Réservé à un public averti. Il n'y aura aucun support pour ces trois dernières parties.
+>Réservé à un public averti. Il n'y aura aucun support pour ces configurations de plugins supplémentaires et imports.
+
+* *Activer le debug intégré de homebridge (très verbeux) et de ses plugins* : Permet d'activer le mode de debug complet de Homebridge et des autres plugins, rarement nécessaire donc il est maintenant séparé pour augmenter la lisibilité du log, même en débug. (Il s'agit du mode DEBUG=* de Homebridge, un redémarrage du ddémon est nécessaire)
+
+* *Envoyer les nouveaux équipements Jeedom dans Homebridge par défaut* : Nouveau comportement, en décochant cette case, tout nouvel équipement ajouté à Jeedom ne sera pas ajouté à Homebridge au prochain redémarrage du démon. Il faudra cocher manuellement la case devant le nom de l'équipement (voir chapitre suivant). Coché par défaut pour coller au précédent comportement.
+
+* *Activer les graphiques dans Eve (Alpha)* : Permet de relever les données pour être utilisées dans Eve en tant que graphiques. (Aucun Support) Fonctionne seulement pour Température, Humidité, Pression, Porte/Fenêtre, Présence.  Les graphiques ont été développés par ingénierie inversée des composants Elgato Eve et il peut y avoir des incohérences. Les données des graphiques sont les données collectées lorsque le démon Homebridge est démarré, il peut donc manquer certaines informations. Les graphiques sont uniquement à titre informatif.
+
 
 Une fois les cases *nom Homebridge et PIN Homebridge* correctement renseignées, la configuration se finalise en cliquant sur **Sauvegarder**. Le démon redémarre.
 
@@ -840,7 +854,7 @@ Celles-ci peuvent afficher une notification lorsqu'un mouvement est détecté pa
 }
 </code></pre>
 
-> Plus d'informations (en anglais) ici : [Wiki Homebridge-Camera-FFMPEG](https://github.com/KhaosT/homebridge-camera-ffmpeg/wiki/iOS-13-and-Photo-Notifications)
+> Plus d'informations (en anglais) ici : [Wiki Homebridge-Camera-FFMPEG](https://sunoo.github.io/homebridge-camera-ffmpeg/automation/switch.html)
 
 ### Exemples de configuration # 
 
@@ -852,7 +866,9 @@ L'intégration des caméras se fait via la bouton rouge "Plateforme Homebridge s
 
 Il suffira ensuite d'ajouter les caméras configurées depuis le menu "Maison" de l'application "Maison" : sélectionner le bouton "+", puis "Ajouter un accessoire". Il faut alors scanner le code PIN Homebridge du plugin et sélectionner la caméra à ajouter (Attention, il ne faut pas scanner le QR Code sinon le message "Accessoire déjà ajouté" apparaîtra et l'ajout ne sera donc pas possible).
 
-### Foscam C1 # 
+### Foscam C1 #
+
+>Cette caméra pose problème à cause d'une taille de pixel non conforme, il est donc quasi impossible de la faire fonctionner correctement, elles est déconseillée !
 
 <pre><code>{
    "platform":"Camera-ffmpeg",
@@ -875,6 +891,8 @@ Il suffira ensuite d'ajouter les caméras configurées depuis le menu "Maison" d
 Remplacer les valeurs xxx.xxx.xxx.xxx par l'adresse IP de la caméra, login par le login de connexion à la caméra et password par le mot de passe de connexion à la caméra.
 
 ### Foscam C1 V2 # 
+
+>Cette caméra pose problème à cause d'une taille de pixel non conforme, il est donc quasi impossible de la faire fonctionner correctement, elles est déconseillée !
 
 <pre><code>{
    "platform":"Camera-ffmpeg",
@@ -1057,7 +1075,8 @@ Remplacer les valeurs xxx.xxx.xxx.xxx par l'adresse IP la caméra et Local_Acces
 
 ### Configurer plusieurs caméras (ou plateformes) #
 
-Pour configurer plusieurs caméras, il suffit de mettre une barre | entre les deux configurations.
+Pour configurer plusieurs plateformes, il suffit de mettre une barre | entre les deux configurations.
+Pour configurer plusieurs caméras, il faut les placer toutes les deux dans le tableau "**cameras**" séparées par une virgule (ou par simplicité, dans une nouvelle platform: "Camera-ffmpeg", elles seront fusionnées automatiquement.
 
 <pre><code>{
   "platform": "Camera-ffmpeg",
@@ -1073,14 +1092,7 @@ Pour configurer plusieurs caméras, il suffit de mettre une barre | entre les de
 		"maxFPS": 30,
 		"vcodec": "h264"
 	  }
-	}
-  ]
-}
-|
-{
-  "platform": "Camera-ffmpeg",
-  "cameras": [
-	{
+	},{
 	  "name": "Salon 1",
 	  "videoConfig": {
 		"source": "-re -i http://adresseip/xxxxxxx/live/files/high/index.m3u8",
@@ -1092,11 +1104,18 @@ Pour configurer plusieurs caméras, il suffit de mettre une barre | entre les de
 	  }
 	}
   ]
+}
+|
+{
+    "platform": "Alexa",
+    "name": "Alexa",
+    "username": "....",
+    "password": "...."
 }</code></pre>
 
-**Cela est également valable pour toute autre plateforme comme le thermostat NEST par exemple.**
+**Cela est également valable pour toute autre plateforme comme le thermostat NEST, alexa ou google smarthome par exemple.**
 
-**Si vous avez un | quelque part dans votre plateforme, celui-ci peut être donc confondu avec une séparation de plateforme, dans ce cas, il faut le remplacer par [pipe]**
+**Si vous avez un *|* quelque part dans votre plateforme, celui-ci peut être donc confondu avec une séparation de plateforme, dans ce cas, il faut le remplacer par [pipe]**
 
 Station météo NETATMO
 ---------------------
