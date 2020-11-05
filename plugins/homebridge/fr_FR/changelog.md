@@ -8,7 +8,7 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-A Venir (pas de date fixée... en attente de stabilisation homebridge)
+06&07-11-2020
 -------------
 * Fusion automatique des plateformes camera-ffmpeg multiples en une seule plateforme contenant plusieurs cameras.
 * Ajout de la possibilité de ne pas intégrer automatiquement un équipement dans homebridge par défaut (voir configuration du plugin).
@@ -17,9 +17,9 @@ A Venir (pas de date fixée... en attente de stabilisation homebridge)
 * Import via un bouton des caméras venant du plugin Synology Surveillance Station.
 * Installation des dépendances corrigent automatiquement certaines erreurs Linux sur le gestionnaire de paquets.
 * Séparation des logs debug natifs de homebridge et de ses plugins dans un bouton dans la configuration du plugin. Afin de simplifier le log même en mode debug et rendre celui-ci plus lisible aux utilisateurs ainsi que de simplifier le support avec des logs plus concis.
-
 * Installation via les dépendances de homebridge-config-ui-x + bouton pour y accéder. (installation/désinstallation/mettre à jour plugin + redémarrer homebridge + visualiser les accessoires fonctionnent (pratique pour ceux qui utilisent homebridge-alexa ou homebridge-gsh et qui n'ont pas de iDevice) !)
-**_ATTENTION_ : Toute modification faite à la config dans cette interface ne sera pas (encore) prise en compte, c'est à titre de test pour l'instant !**
+
+>**_ATTENTION_ : Toute modification faite à la config dans cette interface ne sera pas (encore) prise en compte, c'est à titre de test pour l'instant !**
 
 * Suppression de la possibilité de migrer **homebridge du plugin mobile** à **homebridge indépendant** (la séparation a eu lien il y a 3 ans)
 * Fin du support avec Debian 8 Jessie officiellement.
@@ -28,19 +28,20 @@ A Venir (pas de date fixée... en attente de stabilisation homebridge)
 * Mise à jour homebridge-camera-ffmpeg en dernière version (ffmpeg intégré qui supporte l'audio avec codec natif)
 * Installation de homebridge-config-ui-x en dernière version
 * Installation de homebridge-gsh en dernière version
-* **_ATTENTION_ : depuis la version 2.0.0 de homebridge-camera-ffmpeg, les cameras font partie du Pont Jeedom !!! Après redémarrage du démon lors de cette mise à jour, vous allez vous retrouver avec vos caméra en double dans Maison, il vous faudra supprimer l'ancienne et garder celle qui est liée au Pont Jeedom, pour voir la différence, cliquez sur l'engrenage sur la cam sous "inclure dans les favoris" vous verrez "Pont >"**
+
+>**_ATTENTION_ : depuis la version 2.0.0 de homebridge-camera-ffmpeg, les cameras font partie du Pont Jeedom !!! Après redémarrage du démon lors de cette mise à jour, vous allez vous retrouver avec vos caméra en double dans Maison, il vous faudra supprimer l'ancienne et garder celle qui est liée au Pont Jeedom, pour voir la différence, cliquez sur l'engrenage sur la cam sous "inclure dans les favoris" vous verrez "Pont >"**
 
 ![Exemple](https://raw.githubusercontent.com/NebzHB/jeedom_docs/master/plugins/homebridge/images/exemple.jpg){:width="300px"}
-**A GARDER !**
+**Exemple de caméra à CONSERVER lors de la migration !**
 
 * Pour vous aider à faire cette modification, une petite aide s'affichera dans la configuration du plugin la première fois SI le démon est démarré et SI vous avez des caméras et SI vous ne l'avez pas encore validée.
 
-* **_ATTENTION_ : Si vous avez des problèmes de flux après la migration, changez le nom de la camera dans les plateformes supplémentaires et relancez le démon**
+>**_ATTENTION_ : Si vous avez des problèmes de flux après la migration, changez le nom de la camera dans les plateformes supplémentaires et relancez le démon**
 
 
 
 
-30/07/2020
+30-07-2020
 ----------
 * Préparation de jeedom pour l'upgrade (ceci ne veut pas dire qu'elle va arriver le 1er Aout ;) il reste des choses à débugger)
 
