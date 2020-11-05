@@ -108,6 +108,8 @@ Ces fichiers peuvent être nécessaires en cas de dysfonctionnement du plugin.
 
 * DebugInfo : Il ne s'agit pas vraiment d'un Log mais plutot d'informations de debuggage qui peuvent aider à diagnostiquer votre problème.  Pour avoir ces informations, il faut passer les logs du démon en "Debug" ou en "Info" puis actualiser la fenêtre (F5). A côté de "Configuration" dans le plugin Homebridge, vous avez l'icone DebugInfo qui est apparue. Il vous suffit de cliquer dessus et attendre que le relevé des informations s'effectue. Vous pouvez ensuite copier tout ou bien la catégorie qui vous est demandée.
 
+![ExempleDebugInfo](../images/debugInfo.png)
+
 Configuration du plugin Homebridge
 =================================
 
