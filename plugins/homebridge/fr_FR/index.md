@@ -1165,7 +1165,7 @@ Plugins spécifiques
 Plugin "Thermostat"
 ---------------------
 
->Pour configurer le plugin "Thermostat", il faut se référer à la documentation du plugin à cette adresse : https://jeedom.github.io/plugin-thermostat/fr_FR/.
+>Pour configurer le plugin "Thermostat", il faut se référer à la documentation du plugin à cette adresse : (https://doc.jeedom.com/fr_FR/plugins/wellness/thermostat/).
 
 ### Configuration #
 
