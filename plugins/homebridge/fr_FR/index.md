@@ -866,6 +866,8 @@ L'intégration des caméras se fait via la bouton rouge "Plateforme Homebridge s
 
 Il suffira ensuite d'ajouter les caméras configurées depuis le menu "Maison" de l'application "Maison" : sélectionner le bouton "+", puis "Ajouter un accessoire". Il faut alors scanner le code PIN Homebridge du plugin et sélectionner la caméra à ajouter (Attention, il ne faut pas scanner le QR Code sinon le message "Accessoire déjà ajouté" apparaîtra et l'ajout ne sera donc pas possible).
 
+>Depuis homebridge-camera-ffmpeg > 2.0.0 les cameras sont ajoutées automatiquement, plus besoin de faire l'ajout manuel !!!
+
 ### Foscam C1 #
 
 >Cette caméra pose problème à cause d'une taille de pixel non conforme, il est donc quasi impossible de la faire fonctionner correctement, elles est déconseillée !
@@ -1116,6 +1118,15 @@ Pour configurer plusieurs caméras, il faut les placer toutes les deux dans le t
 **Cela est également valable pour toute autre plateforme comme le thermostat NEST, alexa ou google smarthome par exemple.**
 
 **Si vous avez un &#124; quelque part dans votre plateforme, celui-ci peut être donc confondu avec une séparation de plateforme, dans ce cas, il faut le remplacer par [pipe]**
+
+### Migration des cameras dans homebridge-camera-ffmpeg > 2.0.0 #
+
+Depuis la dernière version du plugin homebridge-camera-ffmpeg, les caméras s'affichent automatiquement dans maison sans besoin de les ajouter manuellement.  Néanmoins, si vous les aviez déjà ajoutées manuellement, vous allez avoir des doublons.  Voici la procédure pour détecter l'ancienne camera et la supprimer de Maison :
+
+![ProcedureMigrationCameras](../images/migrationCameras.png)
+
+(cette procédure s'affichera également dans la configuration de homebridge si le démon est démarré et que vous n'avez pas encore cliqué sur "J'ai fait ces modifications, merci!")
+
 
 Station météo NETATMO
 ---------------------
