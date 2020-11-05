@@ -880,7 +880,7 @@ Il suffira ensuite d'ajouter les caméras configurées depuis le menu "Maison" d
       {
          "name":"Camera-Salon",
          "videoConfig":{
-            "source":"-rtsp_transport tcp -re -i rtsp://login:password@xxx.xxx.xxx.xxx:554/videoMain",
+            "source":"-rtsp_transport tcp -i rtsp://login:password@xxx.xxx.xxx.xxx:554/videoMain",
             "stillImageSource":"-i http://192.168.1.121:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=login&pwd=password",
             "maxStreams":2,
             "maxWidth":1280,
@@ -904,7 +904,7 @@ Remplacer les valeurs xxx.xxx.xxx.xxx par l'adresse IP de la caméra, login par 
       {
          "name":"Son nom",
          "videoConfig":{
-            "source":"-rtsp_transport tcp -re -i rtsp://login:password@xxx.xxx.xxx.xxx:Portrtsp/videoMain",
+            "source":"-rtsp_transport tcp -i rtsp://login:password@xxx.xxx.xxx.xxx:Portrtsp/videoMain",
             "stillImageSource":"-i http://login:password@xxx.xxx.xxx.xxx:Port/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=login&pwd=password",
             "maxStreams":2,
             "maxWidth":1280,
@@ -925,7 +925,7 @@ Remplacer les valeurs xxx.xxx.xxx.xxx par l'adresse IP de la caméra, login par 
       {
          "name":"son nom",
          "videoConfig":{
-            "source":"-rtsp_transport tcp -re -i rtsp://login:password@xxx.xxx.xxx.xxx:Port/videoMain",
+            "source":"-rtsp_transport tcp -i rtsp://login:password@xxx.xxx.xxx.xxx:Port/videoMain",
             "stillImageSource":"-i http://login:password@xxx.xxx.xxx.xxx:Port/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=login&pwd=password",
             "maxStreams":2,
             "maxWidth":1280,
@@ -946,7 +946,7 @@ Remplacer les valeurs xxx.xxx.xxx.xxx par l'adresse IP de la caméra, login par 
       {
          "name":"Son nom",
          "videoConfig":{
-            "source":"-rtsp_transport tcp -re -i rtsp://login:password@xxx.xxx.xxx.xxx:Portrtsp/videoMain",
+            "source":"-rtsp_transport tcp -i rtsp://login:password@xxx.xxx.xxx.xxx:Portrtsp/videoMain",
             "stillImageSource":"-i http://login:password@xxx.xxx.xxx.xxx:Port/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=login&pwd=password",
             "maxStreams":2,
             "maxWidth":1280,
@@ -965,7 +965,7 @@ Remplacer les valeurs xxx.xxx.xxx.xxx par l'adresse IP de la caméra, login par 
       {
          "name":"Camera-Arrière",
          "videoConfig":{
-            "source":"-rtsp_transport tcp -re -i rtsp://login:password@xxx.xxx.xxx.xxx:554/1",
+            "source":"-rtsp_transport tcp -i rtsp://login:password@xxx.xxx.xxx.xxx:554/1",
             "stillImageSource":"-i http://login:password@xxx.xxx.xxx.xxx/web/tmpfs/snap.jpg",
             "maxStreams":2,
             "maxWidth":1280,
@@ -987,7 +987,7 @@ Remplacer les valeurs xxx.xxx.xxx.xxx par l'adresse IP de la caméra, login par 
 	{
 	  "name": "Camera Cellier",
 	  "videoConfig": {
-		"source": "-re -f mjpeg -i http://login:password@xxx.xxx.xxx.xxx/mjpeg.cgi",
+		"source": "-f mjpeg -i http://login:password@xxx.xxx.xxx.xxx/mjpeg.cgi",
 		"stillImageSource": "-f mjpeg -i http://login:password@xxx.xxx.xxx.xxx/image/jpeg.cgi",
 		"maxStreams": 2,
 		"maxWidth": 640,
@@ -1010,7 +1010,7 @@ Remplacer les valeurs xxx.xxx.xxx.xxx par l'adresse IP de la caméra, login par 
       {
          "name":"Camera Garage1",
          "videoConfig":{
-            "source":"-re -i http://login:password@xxx.xxx.xxx.xxx:port/video.cgi",
+            "source":"-i http://login:password@xxx.xxx.xxx.xxx:port/video.cgi",
  "stillImageSource":"-i http://login:password@xxx.xxx.xxx.xxx:port/image.jpg",
            "maxStreams":5,
      "maxWidth": 1280,
@@ -1033,8 +1033,8 @@ Remplacer les valeurs xxx.xxx.xxx.xxx par l'adresse IP de la caméra, login par 
       {
          "name":"Camera-Salon",
          "videoConfig":{
-            "source":"-rtsp_transport tcp -re -i rtsp://login:password@xxx.xxx.xxx.xxx:554/Sms=CAMID.unicast",
-            "stillImageSource":"-rtsp_transport tcp -re -i rtsp://login:password@IP:554/Sms=CAMID.unicast -updatefirst",
+            "source":"-rtsp_transport tcp -i rtsp://login:password@xxx.xxx.xxx.xxx:554/Sms=CAMID.unicast",
+            "stillImageSource":"-rtsp_transport tcp -i rtsp://login:password@IP:554/Sms=CAMID.unicast -updatefirst",
             "maxStreams":2,
             "maxWidth":2688,
             "maxHeight":1520,
@@ -1061,7 +1061,7 @@ Son intégration dans Homebridge est néanmoins possible.
 		{
 		"name": "Camera Name",
 		"videoConfig": {
-			"source": "-re -i http://xxx.xxx.xxx.xxx/Local_Access_Key/live/files/high/index.m3u8",
+			"source": "-i http://xxx.xxx.xxx.xxx/Local_Access_Key/live/files/high/index.m3u8",
 			"stillImageSource": "-i http://xxx.xxx.xxx.xxx/Local_Access_Key/live/snapshot_720.jpg",
 			"maxStreams": 2,
 			"maxWidth": 1280,
@@ -1088,7 +1088,7 @@ Pour configurer plusieurs caméras, il faut les placer toutes les deux dans le t
 	{
 	  "name": "Cellier 1",
 	  "videoConfig": {
-		"source": "-re -f mjpeg -i http://login:password@adresseIP/mjpeg.cgi",
+		"source": "-f mjpeg -i http://login:password@adresseIP/mjpeg.cgi",
 		"stillImageSource": "-f mjpeg -i http://login:password@adresseIP/image/jpeg.cgi",
 		"maxStreams": 2,
 		"maxWidth": 640,
@@ -1099,7 +1099,7 @@ Pour configurer plusieurs caméras, il faut les placer toutes les deux dans le t
 	},{
 	  "name": "Salon 1",
 	  "videoConfig": {
-		"source": "-re -i http://adresseip/xxxxxxx/live/files/high/index.m3u8",
+		"source": "-i http://adresseip/xxxxxxx/live/files/high/index.m3u8",
 		"stillImageSource": "-i http://adresseIP/xxxxxx/live/snapshot_720.jpg",
 		"maxStreams": 2,
 		"maxWidth": 1280,
