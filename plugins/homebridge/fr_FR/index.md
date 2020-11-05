@@ -511,7 +511,7 @@ Maintenant, il ne reste plus qu'à ranger tous les accessoires dans les différe
 **Les accessoires doivent être "rangés" un par un. Si il y en a beaucoup, cette partie prendra du temps**.
 
 La documentation complète de l'application "Maison" d'Apple est disponible à cette adresse : [https://support.apple.com/fr-fr/HT204893](https://support.apple.com/fr-fr/HT204893).
-
+<!--
 Migration depuis le plugin App Mobile
 =====================================
 
@@ -527,7 +527,7 @@ Lors de l'installation du plugin Homebridge, tous les accessoires vont être ind
 
 ![migration1](../images/sans-reponse.png)
 
-Dès que l'installation des dépendances est terminée, tous les accessoires seront de nouveau disponibles.
+Dès que l'installation des dépendances est terminée, tous les accessoires seront de nouveau disponibles.-->
 
 Troubleshooting
 =================
