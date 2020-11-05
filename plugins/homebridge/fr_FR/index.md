@@ -147,6 +147,8 @@ Pour créer le pont, il suffit de lui donner un nom et un code "PIN".
 
 * *Importer Cameras du plugin Hikvision (BETA)* : Permet d'importer automatiquement les caméras du plugin Hikvision dans les plateformes supplémentaires (En test, à vérifier).
 
+* *Importer Cameras de Synology Surveillance Station (BETA)* : Permet d'importer automatiquement les caméras du plugin Synology Surveillance Station dans les plateformes supplémentaires (En test, à vérifier).
+
 * *Importer Cameras du plugin Camera (BETA)* : Permet d'importer automatiquement les caméras du plugin Camera dans les plateformes supplémentaires (En test, à vérifier).
 
 >L'importation risque de vous faire un doublon si vous avez déjà inclu votre caméra précédemment, une fois importée, une caméra ne sera plus modifiée par cet import. (grace au "serialNumber"). Pour le plugin Camera, la caméra doit avoir le champ "URL de flux" remplis.
