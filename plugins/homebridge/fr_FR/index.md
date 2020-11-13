@@ -430,6 +430,7 @@ Generic
 Status d'équipements
 ----------
 Ces types génériques s'ajoutent à un équipement, ils ne peuvent pas être seuls dans un équipement.
+
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
 |Info/Actif|`NON`|0 = inactif<br/>1 = actif|
