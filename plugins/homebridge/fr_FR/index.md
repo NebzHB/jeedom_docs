@@ -413,7 +413,7 @@ Generic
 |Info/Inondation|`NON`|pas 1 = Pas de fuite détectée<br/>1 = fuite détectée| 
 |Info/Humidité|`NON`|%| 
 |Info/Porte<br/>Info/Fenêtre<br/>(même traitement)|`NON`|pas 1 = Contact<br/>1 = Pas de contact| 
-|Info/Sabotage|`NON`|1 = Pas de sabotage<br/>0 = Sabotage| 
+|Info/Sabotage|`NON`|1 = Pas de sabotage<br/>0 = Sabotage<br/>Ajouté à un équipement existant<br/>Pas seul| 
 |Info/Détection de fumée|`NON`|1 = Pas de sabotage<br/>1 = fumée détectée| 
 |Info/Choc|`NON`|Générique (Eve Seulement)|
 |Info/Pression|`NON`|Générique (Eve Seulement)|
@@ -426,6 +426,12 @@ Generic
 |Info/Pluie (accumulation)|`NON`|Générique (Eve Seulement)|
 |Info/Vent (direction)|`NON`|Générique (Eve Seulement)|
 |Info/Vent (vitesse)|`NON`|Générique (Eve Seulement)|
+
+Status d'équipements
+----------
+Ces types génériques s'ajoutent à un équipement, ils ne peuvent pas être seuls dans un équipement.
+|Type générique  | Obligatoire | Valeurs possibles |
+|---------------|:----------------:|----------------|
 |Info/Actif|`NON`|0 = inactif<br/>1 = actif|
 |Info/Online|`NON`|0 = hors ligne<br/>1 = en ligne|
 |Info/Defectueux|`NON`|0 = non<br/>1 = oui|
