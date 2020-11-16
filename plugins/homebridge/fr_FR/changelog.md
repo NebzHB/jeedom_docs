@@ -8,6 +8,16 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+16&17-11-2020
+----------
+
+* Mise à jour documentation pour différents points
+* Corrections orthographiques.
+* Mise à jour install nodejs 12.19.0 sur arm6l (Mini+, raspberry 1 et 2 ou 0). non supporté mais best effort.
+* Fix pour problèmes de prefix sur votre install (dû à un autre plugin ou une manipulation manuelle)
+* Log de commande vide en erreur (bug quand on clique Tester sur la commande d'un autre plugin) dans log "homebridge"
+* Bloquage de l'installation sur i386 32bits buster.
+
 06&07-11-2020
 -------------
 * Fusion automatique des plateformes camera-ffmpeg multiples en une seule plateforme contenant plusieurs cameras.
