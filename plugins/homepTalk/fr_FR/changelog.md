@@ -7,6 +7,11 @@ description: Changelog du plugin homepTalk
 
 Changelog
 =========
+
+17-11-2020
+----------
+* Détection et logo Homepod Mini
+
 14-06-2020
 -------------
 * FFMPEG est installé par le core, suppression de l'install de celui-ci dans les dépendances
