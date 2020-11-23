@@ -8,9 +8,12 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+23&24-11-2020
+-------------
+* Fix npm prefix seulement si npm est existant sur la machine
+
 16&17-11-2020
 ----------
-
 * Mise à jour documentation pour différents points
 * Corrections orthographiques.
 * Mise à jour install nodejs 12.19.0 sur arm6l (Mini+, raspberry 1 et 2 ou 0). non supporté mais best effort.
