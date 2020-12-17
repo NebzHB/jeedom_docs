@@ -16,7 +16,7 @@ description: Changelog du plugin Unifi
 * Fix de l'uptime et de la mémoire sur les flex.
 * Nouvelle commande info binaire sur le site pour indiquer s'il y a une mise à jour du controleur.
 * Meilleure information sur le site dans la config.
-* Mise à jour de la lib Unifi.
+* Mise à jour de la lib Unifi. (relancez les dépendances !)
 
 # 04-07-2020
 
