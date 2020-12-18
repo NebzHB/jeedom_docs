@@ -292,11 +292,15 @@ Volets
 |Action/Volet Bouton Descendre|`Si Monter`|Réf. vers Info/Volet Etat|
 |Action/Volet Bouton Stop|`NON Utilisé`|N/A|
 |Action/Volet Bouton Slider|`Si seul`|Réf. vers Info/Volet Etat|
+|Info/Volet Etat Inclinaison Horizontale|`NON`|Angle 0->90°|
+|Action/Volet Slider Inclinaison Horizontale|`Si Etat Inclinaison H`|Angle 0->90°<br/>modifiable via min-max du slider|
+|Info/Volet Etat Inclinaison Verticale|`NON`|Angle 0->90°|
+|Action/Volet Slider Inclinaison Verticale|`Si Etat Inclinaison V`|Angle 0->90°<br/>modifiable via min-max du slider|
 
 Volets BSO
 ----------
 
-Pas encore supportés
+Pas encore supportés (mais possible via Volets normaux ?)
 
 Fenêtres Motorisées
 -------------------
