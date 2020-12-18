@@ -16,7 +16,7 @@ En Beta - A venir en stable
 	* Volet Slider Inclinaison Horizontale (Homebridge)
 	* Volet Etat Inclinaison Verticale (Homebridge)
 	* Volet Slider Inclinaison Verticale (Homebridge)
-* Désactivation de "scheduledBackupDisable" dans config-ui-x, jeedom se charge du backup, pas besoin.
+* "scheduledBackupDisable" dans config-ui-x, jeedom se charge du backup, pas besoin.
 * Meilleur fix pour les problèmes de prefix NodeJS
 * Fix pour problème d'ordre des commandes pour les Volets et Fenêtres automatiques
 
