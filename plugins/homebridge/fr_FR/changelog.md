@@ -8,6 +8,18 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+En Beta - A venir en stable
+-------------
+* Mise à jour homebridge 1.1.7
+* Nouveaux types génériques pour gérer l'inclinaison des volets soit horizontale, soit verticale. (un état et une action)
+	* Volet Etat Inclinaison Horizontale (Homebridge)
+	* Volet Slider Inclinaison Horizontale (Homebridge)
+	* Volet Etat Inclinaison Verticale (Homebridge)
+	* Volet Slider Inclinaison Verticale (Homebridge)
+* Désactivation de "scheduledBackupDisable" dans config-ui-x, jeedom se charge du backup, pas besoin.
+* Meilleur fix pour les problèmes de prefix NodeJS
+* Fix pour problème d'ordre des commandes pour les Volets et Fenêtres automatiques
+
 23&24-11-2020
 -------------
 * Fix npm prefix seulement si npm est existant sur la machine
