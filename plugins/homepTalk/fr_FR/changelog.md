@@ -7,6 +7,9 @@ description: Changelog du plugin homepTalk
 
 Changelog
 =========
+21-12-2020
+----------
+* Discover pour les Sonos Play:1 Play:3 Play:5
 
 17-11-2020
 ----------
