@@ -115,10 +115,7 @@ Il existe une commande **Stop**. Elle joue en fait un son silencieux vide au vol
 2. Quand je fais parler mon homepod avec le plug-in, ça change le volume actuel de mon homepod
 >Oui normal, je n'ai aucun moyen de connaître le volume actuel de votre Homepod, d'où vous devez définir un volume par défaut dans le plug-in 
 3. Je voudrais jouer de la voix sur un autre périphérique AirPlay, c'est possible ?
->Peut-être... mais je ne supporte rien d'autre que homepod, si vous y arrivez tant mieux, venez le partager sur le forum !
-
->Il est possible que certains haut-parleurs nécessitent la première fois de jouer une musique en airplay2 avec votre iDevice, pour ensuite lancer une voix (on dirait que les Sonos par exemple, nécessitent une "initialisation" de airplay2 via un périphérique Apple la première fois...). Mais normalement les fois suivantes ce n'est plus nécessaire (sauf reboot peut-être ?)
-
+>Peut-être... mais je ne supporte rien d'autre que homepod, si vous y arrivez tant mieux, venez le partager sur le forum ! *Il est possible que certains haut-parleurs nécessitent la première fois de jouer une musique en airplay2 avec votre iDevice, pour ensuite lancer une voix (on dirait que les Sonos par exemple, nécessitent une "initialisation" de airplay2 via un périphérique Apple la première fois...). Mais normalement les fois suivantes ce n'est plus nécessaire (sauf reboot peut-être ?)*
 4. Pouvez vous ajouter mon son personnel de canard qui croasse au plugin ?
 >Non, par contre en utilisant le plug-in officiel "Sons", c'est possible ! Indiquez tts=jeedom dans les options et #idDeVotreSon# dans le message
 5. Il y a un délai un peu trop long quand j'enchaîne deux sons
