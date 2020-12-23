@@ -20,6 +20,10 @@ En Beta - A venir en stable
 * Meilleur fix pour les problèmes de prefix NodeJS
 * Fix pour problème d'ordre des commandes pour les Volets et Fenêtres automatiques
 
+23-12-2020
+----------
+* Fix description (multilingue) et captures sur le market
+
 23&24-11-2020
 -------------
 * Fix npm prefix seulement si npm est existant sur la machine
