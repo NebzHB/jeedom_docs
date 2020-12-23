@@ -19,6 +19,8 @@ En Beta - A venir en stable
 * "scheduledBackupDisable" dans config-ui-x, jeedom se charge du backup, pas besoin.
 * Meilleur fix pour les problèmes de prefix NodeJS
 * Fix pour problème d'ordre des commandes pour les Volets et Fenêtres automatiques
+* Ajouté le HomePod Mini à la liste des concentrateurs homekit reconnus
+* Fix message d'erreur si google réponds pas pour la création du qrCode
 
 23-12-2020
 ----------
