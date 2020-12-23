@@ -5,6 +5,11 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 23-12-2020
+
+* Fix php notice
+* Nouvelle liste des pièces compat 4.1
+
 # 17-12-2020
 
 * Meilleur support et affichage des DreamMachines (pour l'instant comme une USG)
