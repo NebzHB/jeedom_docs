@@ -1115,7 +1115,7 @@ Pour configurer plusieurs caméras, il faut les placer toutes les deux dans le t
 
 ### Migration des caméras dans homebridge-camera-ffmpeg > 2.0.0 #
 
-Depuis la dernière version du plugin homebridge-camera-ffmpeg, les caméras s'affichent automatiquement dans maison sans besoin de les ajouter manuellement.  Néanmoins, si vous les aviez déjà ajoutées manuellement, vous allez avoir des doublons.  Voici la procédure pour détecter l'ancienne caméra et la supprimer de Maison :
+Depuis la dernière version du plugin homebridge-camera-ffmpeg, les caméras s'affichent automatiquement dans maison sans besoin de les ajouter manuellement dans maison.  Néanmoins, si vous les aviez déjà ajoutées manuellement, vous allez avoir des doublons.  Voici la procédure pour détecter l'ancienne caméra et la supprimer de Maison :
 
 ![ProcedureMigrationCameras](../images/migrationCameras.png)
 
