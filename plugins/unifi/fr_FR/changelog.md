@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 05-01-2021
+
+* Nouvelles images pour nouveau switchs et UAP wifi6
+
 # 23-12-2020
 
 * Fix php notice
