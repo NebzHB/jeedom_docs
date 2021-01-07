@@ -25,6 +25,7 @@ En Beta - A venir en stable
 07-01-2021
 ----------
 * Nouvelle image dans le market
+* Icone sans nom du plugin (nouvelle norme)
 
 23-12-2020
 ----------
