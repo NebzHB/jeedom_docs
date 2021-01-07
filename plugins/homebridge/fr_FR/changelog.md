@@ -22,7 +22,7 @@ En Beta - A venir en stable
 * Ajouté le HomePod Mini à la liste des concentrateurs homekit reconnus
 * Fix message d'erreur si google réponds pas pour la création du qrCode
 
-06-01-2021
+07-01-2021
 ----------
 * Nouvelle image dans le market
 
