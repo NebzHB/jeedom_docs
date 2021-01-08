@@ -389,7 +389,7 @@ Interrupteur programmable Multi-Valeurs
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
-|Info/Interrupteur programmable<br/>(multi-valeur)|`NON`|Valeurs correspondantes</br>(une colonne par bouton)<br/>Séparer par ;|
+|Info/Interrupteur programmable<br/>(multi-valeur)|`NON`|Valeurs correspondantes<br/>(une colonne par bouton)<br/>Séparer par ;|
 
 Interrupteur programmable Binaires
 --------
