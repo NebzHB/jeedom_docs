@@ -17,10 +17,14 @@ En Beta - A venir en stable
 	* Volet Etat Inclinaison Verticale (Homebridge)
 	* Volet Slider Inclinaison Verticale (Homebridge)
 * "scheduledBackupDisable" dans config-ui-x, jeedom se charge du backup, pas besoin.
-* Meilleur fix pour les problèmes de prefix NodeJS
-* Fix pour problème d'ordre des commandes pour les Volets et Fenêtres automatiques
-* Ajouté le HomePod Mini à la liste des concentrateurs homekit reconnus
-* Fix message d'erreur si google réponds pas pour la création du qrCode
+* Meilleur fix pour les problèmes de prefix NodeJS.
+* Fix pour problème d'ordre des commandes pour les Volets et Fenêtres automatiques.
+* Ajouté le HomePod Mini à la liste des concentrateurs homekit reconnus.
+* Fix message d'erreur si google réponds pas pour la création du qrCode.
+* Homebridge ne recevra plus les evenements jeedom des commandes appartenant à des équipements non envoyés dans homebridge.
+* Meilleure indication de l'utilité de l'équipement camera dans sa pièce. Plus d'affichage du json à cet endroit (utiliser l'import).
+* Message d'erreur dans le log "homebridge" lorsque vous ajoutez une plateforme supplémentaire avec un json invalide.
+* Amélioration DebugInfo pour le cache.
 
 07-01-2021
 ----------
