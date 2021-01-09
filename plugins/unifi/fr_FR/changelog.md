@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 10-01-2021
+
+* Correction couleur entête du widget
+
 # 05-01-2021
 
 * Nouvelles images pour nouveau switchs et UAP wifi6
