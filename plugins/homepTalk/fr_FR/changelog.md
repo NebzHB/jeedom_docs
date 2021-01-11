@@ -7,6 +7,12 @@ description: Changelog du plugin homepTalk
 
 Changelog
 =========
+
+11-01-2020
+----------
+* Discover pour le Yamaha WX-021
+* Nouvelle liste des pièces imbriquées
+
 21-12-2020
 ----------
 * Discover pour les Sonos Play:1 Play:3 Play:5
