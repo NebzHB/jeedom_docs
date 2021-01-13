@@ -25,6 +25,7 @@ En Beta - A venir en stable
 * Meilleure indication de l'utilité de l'équipement camera dans sa pièce. Plus d'affichage du json à cet endroit (utiliser l'import).
 * Message d'erreur dans le log "homebridge" lorsque vous ajoutez une plateforme supplémentaire avec un json invalide.
 * Amélioration DebugInfo pour le cache.
+* Vérification si NodeJS est installé pour les dépendances_info.
 
 07-01-2021
 ----------
