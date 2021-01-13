@@ -26,6 +26,8 @@ En Beta - A venir en stable
 * Message d'erreur dans le log "homebridge" lorsque vous ajoutez une plateforme supplémentaire avec un json invalide.
 * Amélioration DebugInfo pour le cache.
 * Vérification si NodeJS est installé pour les dépendances_info.
+* Correction si Consommation totale (électrique) est en Wh -> convertir en kWh et si la puissance est en kW -> convertir en W
+* Correction couleur de lumière, devrait être bcp plus précis (et plus rouge alors que c'était blanc)
 
 07-01-2021
 ----------
