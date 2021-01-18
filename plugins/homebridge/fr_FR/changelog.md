@@ -24,7 +24,6 @@ En Beta - A venir en stable
 * Homebridge ne recevra plus les evenements jeedom des commandes appartenant à des équipements non envoyés dans homebridge.
 * Meilleure indication de l'utilité de l'équipement camera dans sa pièce. Plus d'affichage du json à cet endroit (utiliser l'import).
 * Amélioration DebugInfo pour le cache.
-* Vérification si NodeJS est installé pour les dépendances_info.
 * Correction si Consommation totale (électrique) est en Wh -> convertir en kWh et si la puissance est en kW -> convertir en W
 * Correction couleur de lumière, devrait être bcp plus précis (et plus rouge alors que c'était blanc)
 
@@ -32,6 +31,7 @@ En Beta - A venir en stable
 ----------
 * Message d'erreur dans le log "homebridge" lorsque vous ajoutez une plateforme supplémentaire avec un json invalide.
 * Ajout de la plateforme malgré l'erreur de json invalide -> crash du démon mais au moins vous aurez un message d'erreur.
+* Vérification si NodeJS est installé pour les dépendances_info.
 
 07-01-2021
 ----------
