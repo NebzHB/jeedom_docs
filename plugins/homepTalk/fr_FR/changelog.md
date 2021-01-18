@@ -8,7 +8,11 @@ description: Changelog du plugin homepTalk
 Changelog
 =========
 
-11-01-2020
+18-01-2021
+----------
+* Ajout des voix dans voiceRSS
+
+11-01-2021
 ----------
 * Discover pour le Yamaha WX-021
 * Nouvelle liste des pièces imbriquées
