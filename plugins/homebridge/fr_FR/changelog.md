@@ -23,11 +23,15 @@ En Beta - A venir en stable
 * Fix message d'erreur si google réponds pas pour la création du qrCode.
 * Homebridge ne recevra plus les evenements jeedom des commandes appartenant à des équipements non envoyés dans homebridge.
 * Meilleure indication de l'utilité de l'équipement camera dans sa pièce. Plus d'affichage du json à cet endroit (utiliser l'import).
-* Message d'erreur dans le log "homebridge" lorsque vous ajoutez une plateforme supplémentaire avec un json invalide.
 * Amélioration DebugInfo pour le cache.
 * Vérification si NodeJS est installé pour les dépendances_info.
 * Correction si Consommation totale (électrique) est en Wh -> convertir en kWh et si la puissance est en kW -> convertir en W
 * Correction couleur de lumière, devrait être bcp plus précis (et plus rouge alors que c'était blanc)
+
+18-01-2021
+----------
+* Message d'erreur dans le log "homebridge" lorsque vous ajoutez une plateforme supplémentaire avec un json invalide.
+* Ajout de la plateforme malgré l'erreur de json invalide
 
 07-01-2021
 ----------
