@@ -78,8 +78,9 @@ Champ *Options* - choix valides :
 -	**tts=** choisir entre *picotts* (pas compatible mini+ ou rPI1/2) ou *googletts* (Recommandé) ou *jeedom* (Expérimental) ou *osx* (via SSH) ou *voicerss* (Besoin d'une clé API) ou *ttswebserver*.
 - **cache=** permet avec une valeur *non* ou *no* de ne pas sauvegarder le texte dans le cache du plugin (utile si vous utilisez des variables dans le texte ou des conditionnelles ou des alternatives.)
 -	**lang=** choisir parmis les langues suivantes : *fr_FR* ou *en_US* ou *en_GB* ou *de_DE* ou *es_ES* ou *it_IT*.
-- **voix=** si *tts=osx* alors choisir parmis les voix suivantes : Thomas ou Aurelie ou Audrey (si installées)  (testé sur Mojave)
+- **voix=** si *tts=osx* alors choisir parmis les voix suivantes : *Thomas* ou *Aurelie* ou *Audrey* (si installées)  (testé sur Mojave)
 - **voix=** si *tts=ttswebserver* alors choisir parmis les voix listées dans l'interface (dépendant de ce que vous avez installé)
+- **voix=** si *tts=voicerss* alors vous pouvez aussi ajouter la voix choisie en option (sinon c\'est *Bette*) : *Bette* ou *Iva* ou *Zola* ou *Alex*
 
 >Sous Debian Jessie (deb8), les messages qui font plus de 100 caractères et qui utilisent *googletts* passeront en *picotts* à cause d'une limitation de *avconv* (le convertisseur audio). Sous Debian Stretch (deb9), ces messages seront fractionnés en parties de 100 caractères et joués à la suite pour votre plus grand plaisir !
 
