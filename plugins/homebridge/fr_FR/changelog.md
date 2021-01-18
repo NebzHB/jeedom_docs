@@ -31,7 +31,7 @@ En Beta - A venir en stable
 18-01-2021
 ----------
 * Message d'erreur dans le log "homebridge" lorsque vous ajoutez une plateforme supplémentaire avec un json invalide.
-* Ajout de la plateforme malgré l'erreur de json invalide
+* Ajout de la plateforme malgré l'erreur de json invalide -> crash du démon mais au moins vous aurez un message d'erreur.
 
 07-01-2021
 ----------
