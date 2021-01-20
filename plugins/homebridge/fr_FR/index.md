@@ -157,6 +157,8 @@ Pour créer le pont, il suffit de lui donner un nom et un code "PIN".
 
 * *Lancer l'interface de configuration Config-UI-X (Local seulement)* : Permet de lancer l'interface de homebridge-config-ui-x qui est maintenant pré-installé et configuré. Attention, toute modification dans un plugin ou config.json ne sera pas pris en compte pour l'instant. Peut-être plus tard. Si vous ne voyez pas l'interface, tentez avec http://votreIP:33221/
 
+* *Authentification Config-UI-X* : Active l'authentification dans Config-UI-X, si vous vous êtes déjà loggué dans cette interface avant, votre cookie reste valide tant que vous ne vous êtes pas déconnecté. Sinon par défaut, c'est : Utilisateur : admin et mot de passe : admin. Pour modifier, dans Config-UI-X, le menu trois points en haut à droite > Comptes Utilisateurs
+
 >Réservé à un public averti. Il n'y aura aucun support pour ces configurations de plugins supplémentaires et imports.
 
 * *Activer le debug intégré de homebridge (très verbeux) et de ses plugins* : Permet d'activer le mode de debug complet de Homebridge et des autres plugins, rarement nécessaire donc il est maintenant séparé pour augmenter la lisibilité du log, même en débug. (Il s'agit du mode DEBUG=* de Homebridge, un redémarrage du ddémon est nécessaire)
