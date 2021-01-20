@@ -8,7 +8,7 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-En Beta - A venir en stable
+20-01-2021
 -------------
 * Mise à jour homebridge 1.1.7
 * Nouveaux types génériques pour gérer l'inclinaison des volets soit horizontale, soit verticale. (un état et une action)
