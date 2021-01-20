@@ -28,6 +28,7 @@ Changelog
 * Correction couleur de lumière, devrait être bcp plus précis (et plus rouge alors que c'était blanc)
 * Gestion de l'authentification de Config-UI-X, une fois activé dans la config de homebridge, vous pouvez aller modifier dans Config-UI-X > trois points en haut à droite > Gestion Utilisateurs.  Possible que votre cookie reste valide, déconnectez vous de Config-UI-X (menu trois points) pour vérifier.
 * Ajout (?) dans la configuration en plus du tooltip pour donner plus d'informations sur certaines fonctions.
+* Meilleur stop du démon plus respectueux, pour laisser le temps à homebridge d'écrire son cache si le système est trop lent.
 
 18-01-2021
 ----------
