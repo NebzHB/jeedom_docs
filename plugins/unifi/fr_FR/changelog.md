@@ -9,6 +9,8 @@ description: Changelog du plugin Unifi
 
 * Mise à jour de la lib Unifi.
 * Nom du modèle (court et long) téléchargé du controleur afin d'avoir toujours la liste la plus à jour.
+* Tentative controleur en tant que variable de class pour limiter les reconnexion (à voir si ca tient sur la durée)
+* retiré toHtml pour réactiver les onglets "Affichage" et "Disposition" dans les config avancées.
 
 # 10-01-2021
 
