@@ -8,6 +8,10 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+Prochaine stable (en beta pour l'instant)
+-----------------------------------------
+* Correction pour repasser à Aucun type générique si le type générique est un type (homebridge) sur safari
+
 20-01-2021
 -------------
 * Mise à jour homebridge 1.1.7
