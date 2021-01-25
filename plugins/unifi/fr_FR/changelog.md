@@ -5,6 +5,11 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# Version à venir (actuellement en beta)
+
+* Mise à jour de la lib Unifi.
+* Nom du modèle (court et long) téléchargé du controleur afin d'avoir toujours la liste la plus à jour.
+
 # 10-01-2021
 
 * Correction couleur entête du widget
