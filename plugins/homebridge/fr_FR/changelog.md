@@ -10,8 +10,10 @@ Changelog
 
 Prochaine stable (en beta pour l'instant)
 -----------------------------------------
-* Correction pour repasser à Aucun type générique si le type générique est un type (homebridge) sur safari
-* Validateur JSON dans les plateformes et accessoires supplémentaires (obligatoire pour sauvegarder)
+* Correction pour repasser à Aucun type générique si le type générique est un type (homebridge) sur safari.
+* Validateur JSON dans les plateformes et accessoires supplémentaires (obligatoire pour sauvegarder).
+* Message dans config.json pour éviter que les utilisateurs le modifient directement et qu'il se retrouve écrasé.
+* Cacher le "heartbeat" dans la configuration du plugin, car pas de sens puisque pas d'eqLogic.
 
 20-01-2021
 -------------
