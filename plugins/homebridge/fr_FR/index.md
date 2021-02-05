@@ -219,11 +219,12 @@ Lumière
 |Action/Lumière Slider (Luminosité)|`OUI`|Réf. vers Lumière Etat|
 |Action/Lumière Bouton On|`OUI`|Réf. vers Lumière Etat :<br/>- Binaire s’il est présent<br/>- Etat sinon|
 |Action/Lumière Bouton Off|`OUI`|Réf. vers Lumière Etat :<br/>- Binaire s’il est présent<br/>- Etat sinon|
-|Info/Lumière Couleur| `NON` |Format #RRGGBB|
-|Action/Lumière Couleur|   `Si Info/Lumière Couleur `|Réf. vers Info/Lumière Couleur|
-|Info/Lumière Température Couleur|`NON`|Réf. vers<br/>- Info/Lumière Température Couleur<br/>(Eve Seulement)|
-|Action/Lumière Toggle|  `NON Utilisé`  |N/A|
-| Action/Lumière Mode|  `NON Utilisé` |N/A|
+|Info/Lumière Couleur|`NON`|Format #RRGGBB|
+|Action/Lumière Couleur|`Si Info/Lumière Couleur `|Réf. vers Info/Lumière Couleur|
+|Info/Lumière Température Couleur|`NON`|Format Mired (<=500) ou Kelvin (>500)|
+|Action/Lumière Température Couleur|`Si Info/Lumière Température Couleur`|Réf. vers<br/>- Info/Lumière Température Couleur<br/>Min&Max Obligatoire|
+|Action/Lumière Toggle|`NON Utilisé`|N/A|
+|Action/Lumière Mode|`NON Utilisé`|N/A|
 
 Prises
 ----------
