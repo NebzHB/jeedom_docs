@@ -8,12 +8,13 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-Prochaine stable (en beta pour l'instant)
------------------------------------------
+08-02-2021
+-----------
 * Correction pour repasser à Aucun type générique si le type générique est un type (homebridge) sur safari.
 * Validateur JSON dans les plateformes et accessoires supplémentaires (obligatoire pour sauvegarder).
 * Message dans config.json pour éviter que les utilisateurs le modifient directement et qu'il se retrouve écrasé.
 * Cacher le "heartbeat" dans la configuration du plugin, car pas de sens puisque pas d'eqLogic.
+* Correction : Thermostat avec seulement une consigne(info+action), garde le thermostat activé
 
 20-01-2021
 -------------
