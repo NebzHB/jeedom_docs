@@ -8,6 +8,12 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+En Beta (prochainement en stable)
+---------------------------------
+* Correction validation JSON en cas de plateformes et accessoires vides
+* Désactivation de la correction orthographique sur les textarea des plateformes et accessoires
+* Changement du mode d'installation du plugin homebridge-jeedom pour être compatible avec npm 7
+
 08-02-2021
 -----------
 * Correction pour repasser à Aucun type générique si le type générique est un type (homebridge) sur safari.
