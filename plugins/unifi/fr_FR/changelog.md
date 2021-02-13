@@ -5,14 +5,15 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
-# Version à venir (actuellement en beta)
+# 13-02-2021
 
 * Mise à jour de la lib Unifi.
 * Nom du modèle (court et long) téléchargé du controleur afin d'avoir toujours la liste la plus à jour.
-* Tentative controleur en tant que variable de class pour limiter les reconnexion (à voir si ca tient sur la durée)
-* retiré toHtml pour réactiver les onglets "Affichage" et "Disposition" dans les config avancées.
+* Controleur en tant que variable de class pour limiter les reconnexion
+* Retiré toHtml pour réactiver les onglets "Affichage" et "Disposition" dans les config avancées.
 * Création des commandes en différé dans un cron +90s afin d'éviter les bugs de mémoire php
-* les switchs non POE n'auront plus les commandes poe sur les ports ne le supportant pas
+* Les switchs non POE n'auront plus les commandes poe sur les ports ne le supportant pas
+* Résolution des problèmes de perte de cookie pour les CloudKey.
 
 # 10-01-2021
 
