@@ -19,6 +19,8 @@ Le plugin Homebridge de Jeedom permet donc d’exposer des équipements Jeedom q
 Que peut-on faire avec Homebridge ?
 ---------------------------------
 
+![schemaHomebrdige](https://market.jeedom.com/filestore/market/plugin/images/homebridge_screenshot1.png)
+
 Homebridge peut s'utiliser avec une application compatible HomeKit ou avec l'assistant vocal Siri.
 
 Depuis iOS 10, l'application Maison (inclue par défaut avec iOS) permet le pilotage d'équipements compatibles HomeKit. 
