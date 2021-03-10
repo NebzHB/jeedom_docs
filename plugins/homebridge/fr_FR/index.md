@@ -549,6 +549,7 @@ En effet, le logiciel homebridge a été conçu de manière modulaire et vous po
 Pour ajouter un *plugin pour homebridge*, il faut d'abord trouver le plugin qui vous convient... pour ce faire il faut faire une recherche dans cette liste : http://www.homebridge.io puis dans "Find a plugin" ( il y en a des centaines !!). Vous en trouverez peut être plusieurs, comparez les et regardez ceux qui ont été mis à jour récemment, ceux qui sont toujours actifs, ceux qui ont les fonctionnalités que vous désirez. 
 
 Une fois que vous avez trouvé celui qui vous convient, il faut aller dans la configuration du *plugin homebridge* et cliquer sur le bouton "Gérer les *plugins pour Homebridge*". ![manageHomebridgePlugins](../images/manageHomebridgePlugins.png) 
+
 Le début est déjà noté (puisque tous les *plugins pour homebridge* commencent par le mot homebridge-), ajoutez donc le reste du nom du plugin derrière le homebridge- deja existant et cliquer sur "Installer".
 
 ![installPlugin](../images/installPlugin.png)
@@ -571,7 +572,7 @@ Dans ce cas là, il faut l'ajouter dans les **Accessoires supplémentaires**
 
 ![onlyPlatform](../images/onlyPlatform.png)![onlyAccessory](../images/onlyAccessory.png)
 
->Attention, si vous avez déjà d'autres plateformes (ou accessoires), il faut les séparer par le caractère | (qui s'appelle pipe).
+>Attention, si vous avez déjà d'autres plateformes (ou accessoires), il faut les séparer par le caractère \| (qui s'appelle pipe).
 
 ![pipe](../images/pipe.png)
 
