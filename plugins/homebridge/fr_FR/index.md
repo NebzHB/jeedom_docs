@@ -598,7 +598,7 @@ Depuis peu, l'interface **Config-UI-X** a été ajoutée au *plugin homebridge*,
 
 ![configuixButton](../images/configuixButton.png)
 
-Le plugin peut aussi s'installer via l'onglet "Plugins" de cette interface vous recherchez dans la barre supérieur :
+Le plugin peut aussi s'installer via l'onglet "Plugins" de cette interface, vous recherchez dans la barre supérieur :
 
 ![cuixPlugins](../images/cuix-plugins.png)
 
@@ -610,7 +610,7 @@ Une fois le *plugin pour homebridge* installé, soit il ne le prévoit pas de R�
 
 ![manualPlugin](../images/manualPlugin.png)
 
-soit celui-ci prévois un bouton "Réglages" pour vous aider à le configurer (malheureusement en anglais pas encore traduisible) :
+soit celui-ci prévoit un bouton "Réglages" pour vous aider à le configurer (malheureusement en anglais pas encore traduisible) :
 
 ![pluginExOK](../images/pluginExOK.png)
 
