@@ -534,7 +534,7 @@ Installer des Plugins Pour Homebridge
 Première Méthode
 ----------------
 
-Il arrive parfois que les types génériques ne suffisent pas pour intégrer votre équipement car celui-ci n'a pas un comportement **générique** mais vraiment **spécifique**, dans ce cas là, vous pouvez passer par un "*Plugin pour homebridge*".
+Il arrive parfois que les types génériques ne suffisent pas pour intégrer votre équipement car celui-ci n'a pas un comportement **générique** mais vraiment **spécifique** ou bien encore qu'il n'existe pas de plugin dans jeedom pour l'intégrer, dans ces cas là, vous pouvez passer par un "*Plugin pour homebridge*".
 
 >**Attention vocabulaire** : vous l'aurez compris, on risque vite de s'emmêler les pinceaux dans les termes plugins... de quel plugin parle-t-on ? Pour jeedom ? Pour homebridge ? Donc la dénomination suivante a été choisie :
 
