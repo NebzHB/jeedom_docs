@@ -538,9 +538,9 @@ Il arrive parfois que les types génériques ne suffisent pas pour intégrer vot
 
 >**Attention vocabulaire** : vous l'aurez compris, on risque vite de s'emmêler les pinceaux dans les termes plugins... de quel plugin parle-t-on ? Pour jeedom ? Pour homebridge ? Donc la dénomination suivante a été choisie :
 
-* *Plugin pour homebridge*: module s'ajoutant à homebridge pour se connecter à votre équipement.
-* *Plugin homebridge* : le plugin jeedom qui s'appelle homebridge installé sur jeedom via le Market.
-* *Plugin Jeedom xxx* : un plugin xxx installé sur jeedom via le Market (ou autre)
+* ***Plugin pour homebridge*** : module s'ajoutant à homebridge pour se connecter à votre équipement.
+* ***Plugin homebridge*** : le plugin jeedom qui s'appelle homebridge installé sur jeedom via le Market.
+* ***Plugin Jeedom xxx*** : un plugin xxx installé sur jeedom via le Market (ou autre)
 
 En effet, le logiciel homebridge a été conçu de manière modulaire et vous pouvez ajouter à celui-ci des modules (plugins) qui se connectent directement à vos équipements (un exemple est le *plugin pour homebridge* nommé homebridge-caméra-ffmpeg qui est déjà intégré par les dépendances et permet d'importer vos camera du *plugin jeedom caméra*).
 
