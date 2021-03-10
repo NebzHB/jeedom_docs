@@ -599,7 +599,7 @@ Depuis peu, l'interface config-Ui-x a été ajoutée au *plugin homebridge*, cel
 
 Le plugin peut aussi s'installer via l'onglet "Plugin" de cette interface (capture) vous recherchez dans la barre supérieur :
 
-![cuixPlugins](../images/cuixPlugins.png)
+![cuixPlugins](../images/cuix-plugins.png)
 
 Et cliquez sur "installer".
 
