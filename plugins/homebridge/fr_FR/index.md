@@ -547,6 +547,7 @@ En effet, le logiciel homebridge a été conçu de manière modulaire et vous po
 ![schema partiel](../images/partialSchema.png)
 
 Pour ajouter un *plugin pour homebridge*, il faut d'abord trouver le plugin qui vous convient... pour ce faire il faut faire une recherche dans cette liste : [http://www.homebridge.io](http://www.homebridge.io) puis dans "Find a plugin" ( il y en a des centaines !!). Vous en trouverez peut être plusieurs, comparez les et regardez ceux qui ont été mis à jour récemment, ceux qui sont toujours actifs, ceux qui ont les fonctionnalités que vous désirez. 
+![findAPlugin.png](../images/findAPlugin.png)
 
 Une fois que vous avez trouvé celui qui vous convient, il faut aller dans la configuration du *plugin homebridge* et cliquer sur le bouton "Gérer les *plugins pour Homebridge*". ![manageHomebridgePlugins](../images/manageHomebridgePlugins.png) 
 
