@@ -548,32 +548,43 @@ En effet, le logiciel homebridge a été conçu de manière modulaire et vous po
 
 Pour ajouter un *plugin pour homebridge*, il faut d'abord trouver le plugin qui vous convient... pour ce faire il faut faire une recherche dans cette liste : http://www.homebridge.io puis dans "Find a plugin" ( il y en a des centaines !!). Vous en trouverez peut être plusieurs, comparez les et regardez ceux qui ont été mis à jour récemment, ceux qui sont toujours actifs, ceux qui ont les fonctionnalités que vous désirez. 
 
-Une fois que vous avez trouvé celui qui vous convient, il faut aller dans la configuration du *plugin homebridge* et cliquer sur le bouton "Gérer les *plugins pour Homebridge*" ![manageHomebridgePlugins](../images/manageHomebridgePlugins.png). Le début est déjà noté (puisque tous les *plugins pour homebridge* commencent par le mot homebridge-), ajoutez donc le reste du nom du plugin derrière le homebridge- deja existant et cliquer sur "Installer". 
+Une fois que vous avez trouvé celui qui vous convient, il faut aller dans la configuration du *plugin homebridge* et cliquer sur le bouton "Gérer les *plugins pour Homebridge*". ![manageHomebridgePlugins](../images/manageHomebridgePlugins.png) 
+Le début est déjà noté (puisque tous les *plugins pour homebridge* commencent par le mot homebridge-), ajoutez donc le reste du nom du plugin derrière le homebridge- deja existant et cliquer sur "Installer".
+
 ![installPlugin](../images/installPlugin.png)
 
 Première étape effectuée ;-) sur la page github du *plugin pour homebridge* que vous avez trouvé, il indique probablement une commande de type npm install ... ne la faite pas !, cette première étape l'a faite pour vous :-) (certains indiquent aussi comment installer homebridge, vous vous doutez que c'est déjà fait aussi...)
+
 ![noNPM](../images/noNPM.png)
 
 Seconde étape on va devoir donner la configuration du *plugin pour homebridge*... sur leur github, la plupart des plugins indiquent une structure json de configuration, il faut la recopier dans les **Plateformes supplémentaires** ou **Accessoires supplémentaires** que vous trouverez dans la configuration du plugin homebridge.
+
 ![platformAccessories](../images/platformsAccessories.png)
 
 Il est possible que le *plugin pour homebridge* ne soit pas une plateforme mais un accessoire
+
 ![thisIsAccessory](../images/thisIsAccessory.png)![thisIsPlatform](../images/thisIsPlatform.png)
+
 Dans ce cas là, il faut l'ajouter dans les **Accessoires supplémentaires**
 
 >Attention, il faut recopier uniquement l'objet platform (un objet commence par { et terminé par }), pas tout le tableau platforms (avec s !!). (Idem avec accessories et accessory)
+
 ![onlyPlatform](../images/onlyPlatform.png)![onlyAccessory](../images/onlyAccessory.png)
 
 >Attention, si vous avez déjà d'autres plateformes (ou accessoires), il faut les séparer par le caractère | (qui s'appelle pipe).
+
 ![pipe](../images/pipe.png)
 
 >Attention, le format json est assez difficile à écrire, recopiez bien les " et les , à la fin des lignes etc !!! Un validateur vous aidera.
+
 ![notValid](../images/notValid.png)
 
 Une fois copié, il faut l'adapter à votre système... modifier des logins/pass ou des clés ou des ip's etc... (je ne peux pas vous aider pour cette partie... chaque *plugin pour homebridge* a sa propre spécificité... il faut bien lire la marche à suivre sur le github du plugin en question...). 
 
 Quand c'est fait vous pouvez sauvegarder et relancer le démon... et prier ;-) non, en fait il faut regarder dans le log homebridge_daemon qui vous indiquera s'il y a des erreurs (normalement les lignes commenceront avec le nom du plugin entre crochets...). 
+
 ![logEx](../images/logEx.png)
+
 Si vous avez des erreur, c'est généralement un problème de mot de passe ou de clé ou d'ip... vérifiez vos donnees et le github pour voir comment les obtenir. Si vous ne résolvez toujours pas vous pouvez faire un post dans communauté avec le tag #plugin-homebridge pour que je regarde si tout me semble cohérent ... si c'est cohérent il est fort probable que je vous redirige vers le github du *plugin pour homebridge* en question afin de leur poser des questions (en anglais...). (Vous comprendrez que je ne peux pas faire le support pour des centaines de plugins développés par plein de gens dans le monde...)
 
 Si tout se passe bien, voilà vous avez configuré votre *plugin pour homebridge* ! Enjoy ;-)
@@ -582,23 +593,31 @@ Seconde Méthode (avec en partie l'interface Config-UI-X)
 --------------------------------------------------------
 
 Depuis peu, l'interface config-Ui-x a été ajoutée au *plugin homebridge*, celle-ci est accessible via le bouton suivant :
+
 ![configuixButton](../images/configuixButton.png)
 
 Le plugin peut aussi s'installer via l'onglet "Plugin" de cette interface (capture) vous recherchez dans la barre supérieur :
+
 ![cuixPlugins](../images/cuixPlugins.png)
+
 Et cliquez sur "installer".
+
 ![pluginEx](../images/pluginEx.png)
 
 Une fois le *plugin pour homebridge* installé, soit il ne le prévoit pas de Réglages (dans ce cas, il faut utiliser la première méthode, à la main)
+
 ![manualPlugin](../images/manualPlugin.png)
 
 soit celui-ci prévois un bouton "Réglages" pour vous aider à le configurer (malheureusement en anglais pas encore traduisible) :
+
 ![pluginExOK](../images/pluginExOK.png)
 
 Une fois que vous avez terminé la configuration cliquez sur Enregistrer en bas de cette fenêtre.
+
 ![enregistrer](../images/enregistrer.png)
 
 Attention, pour l'instant la configuration (le fichier config) de cette interface n'est pas prise en compte, il faut copier la plateforme ou l'accessoire manuellement dans les plateformes (ou accessoires) supplémentaires pour que ça soit pris en compte.
+
 ![whatToCopy](../images/whatToCopy.png) -> ![accCopy](../images/accCopy.png)
 
 (Je dois encore trouver le moyen de régénérer correctement la partie pour jeedom si vous la modifiez et la cassez via cette interface pour le permettre...)
