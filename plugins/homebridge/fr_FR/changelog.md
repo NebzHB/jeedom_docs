@@ -10,7 +10,7 @@ Changelog
 
 A venir prochainement (En Beta)
 -------------------------------
-* Homebridge 1.3.2
+* Homebridge 1.3.3
 
 20-02-2021
 ----------
