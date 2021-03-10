@@ -621,6 +621,8 @@ Attention, pour l'instant la configuration (le fichier config) de cette interfac
 
 ![whatToCopy](../images/whatToCopy.png) -> ![accCopy](../images/accCopy.png)
 
+Il vous reste à sauver la plateforme ou l'accessoire et relancer le démon (voir première méthode)
+
 (Je dois encore trouver le moyen de régénérer correctement la partie pour jeedom si vous la modifiez et la cassez via cette interface pour le permettre...)
 
 Troubleshooting
