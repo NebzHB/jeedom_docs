@@ -555,7 +555,7 @@ Le début est déjà noté (puisque tous les *plugins pour homebridge* commencen
 
 ![installPlugin](../images/installPlugin.png)
 
-Première étape effectuée ;-) sur la page github du *plugin pour homebridge* que vous avez trouvé, il indique probablement une commande de type npm install ... ne la faite pas !, cette première étape l'a faite pour vous :-) (certains indiquent aussi comment installer homebridge, vous vous doutez que c'est déjà fait aussi...)
+Première étape effectuée ;-) sur la page github du *plugin pour homebridge* que vous avez trouvé, il indique probablement une commande de type npm install ... **ne la faite pas !**, cette première étape l'a faite pour vous :-) (certains indiquent aussi comment installer homebridge, vous vous doutez que c'est déjà fait aussi...)
 
 ![noNPM](../images/noNPM.png)
 
@@ -587,14 +587,14 @@ Quand c'est fait vous pouvez sauvegarder et relancer le démon... et prier ;-) n
 
 ![logEx](../images/logEx.png)
 
-Si vous avez des erreur, c'est généralement un problème de mot de passe ou de clé ou d'ip... vérifiez vos donnees et le github pour voir comment les obtenir. Si vous ne résolvez toujours pas vous pouvez faire un post dans communauté avec le tag #plugin-homebridge pour que je regarde si tout me semble cohérent ... si c'est cohérent il est fort probable que je vous redirige vers le github du *plugin pour homebridge* en question afin de leur poser des questions (en anglais...). (Vous comprendrez que je ne peux pas faire le support pour des centaines de plugins développés par plein de gens dans le monde...)
+Si vous avez des erreur, c'est généralement un problème de mot de passe ou de clé ou d'ip... vérifiez vos donnees et le github pour voir comment les obtenir. Si vous ne résolvez toujours pas vous pouvez faire un post dans communauté avec le tag **#plugin-homebridge** pour que je regarde si tout me semble cohérent ... si c'est cohérent il est fort probable que je vous redirige vers le github du *plugin pour homebridge* en question afin de leur poser des questions (en anglais...). **(Vous comprendrez que je ne peux pas faire le support pour des centaines de plugins développés par plein de gens dans le monde...)**
 
 Si tout se passe bien, voilà vous avez configuré votre *plugin pour homebridge* ! Enjoy ;-)
 
 Seconde Méthode (avec en partie l'interface Config-UI-X)
 --------------------------------------------------------
 
-Depuis peu, l'interface config-Ui-x a été ajoutée au *plugin homebridge*, celle-ci est accessible via le bouton suivant :
+Depuis peu, l'interface **Config-UI-X** a été ajoutée au *plugin homebridge*, celle-ci est accessible via le bouton suivant :
 
 ![configuixButton](../images/configuixButton.png)
 
@@ -622,9 +622,9 @@ Attention, pour l'instant la configuration (le fichier config) de cette interfac
 
 ![whatToCopy](../images/whatToCopy.png) -> ![accCopy](../images/accCopy.png)
 
-Il vous reste à sauver la plateforme ou l'accessoire et relancer le démon (voir première méthode)
+Il vous reste à "**Sauvegarder les changements**" de la plateforme ou l'accessoire et **relancer le démon** (voir première méthode)
 
-(Je dois encore trouver le moyen de régénérer correctement la partie pour jeedom si vous la modifiez et la cassez via cette interface pour le permettre...)
+*(Je dois encore trouver le moyen de régénérer correctement la partie pour jeedom si vous la modifiez et la cassez via cette interface pour le permettre...)*
 
 Troubleshooting
 =================
