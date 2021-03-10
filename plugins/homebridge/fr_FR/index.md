@@ -598,7 +598,7 @@ Depuis peu, l'interface **Config-UI-X** a été ajoutée au *plugin homebridge*,
 
 ![configuixButton](../images/configuixButton.png)
 
-Le plugin peut aussi s'installer via l'onglet "Plugin" de cette interface (capture) vous recherchez dans la barre supérieur :
+Le plugin peut aussi s'installer via l'onglet "Plugins" de cette interface vous recherchez dans la barre supérieur :
 
 ![cuixPlugins](../images/cuix-plugins.png)
 
