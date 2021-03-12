@@ -524,7 +524,7 @@ Maintenant, il ne reste plus qu'à ranger tous les accessoires dans les différe
 
 **Les accessoires doivent être "rangés" un par un. Si il y en a beaucoup, cette partie prendra du temps**.
 
-La documentation complète de l'application "Maison" d'Apple est disponible à cette adresse : [https://support.apple.com/fr-fr/HT204893](https://support.apple.com/fr-fr/HT204893).
+La documentation complète de l'application "Maison" d'Apple est disponible à cette adresse : [https://support.apple.com/fr-fr/HT204893](https://support.apple.com/fr-fr/HT204893){:target="_blank" rel="noopener"}.
 
 Installer des Plugins Pour Homebridge
 =====================================
@@ -539,14 +539,14 @@ Il arrive parfois que les types génériques ne suffisent pas pour intégrer vot
 * ***Plugin homebridge*** : le plugin jeedom qui s'appelle homebridge installé sur jeedom via le Market.
 * ***Plugin Jeedom xxx*** : un plugin xxx installé sur jeedom via le Market (ou autre)
 
-En effet, le logiciel homebridge a été conçu de manière modulaire et vous pouvez ajouter à celui-ci des modules (plugins) qui se connectent directement à vos équipements (un exemple est le *plugin pour homebridge* nommé homebridge-caméra-ffmpeg qui est déjà intégré par les dépendances et permet d'importer vos camera du *plugin jeedom caméra*). Un autre exemple sont les plugins homebridge-gsh et homebridge-alexa (pré-installés également) qui sont un peu différents des autres, vous pouvez consulter le [Tutoriel pour homebridge-gsh sur Communauté](https://community.jeedom.com/t/tuto-homebridge-et-google-smart-home/13855).
+En effet, le logiciel homebridge a été conçu de manière modulaire et vous pouvez ajouter à celui-ci des modules (plugins) qui se connectent directement à vos équipements (un exemple est le *plugin pour homebridge* nommé homebridge-caméra-ffmpeg qui est déjà intégré par les dépendances et permet d'importer vos camera du *plugin jeedom caméra*). Un autre exemple sont les plugins homebridge-gsh et homebridge-alexa (pré-installés également) qui sont un peu différents des autres, vous pouvez consulter le [Tutoriel pour homebridge-gsh sur Communauté](https://community.jeedom.com/t/tuto-homebridge-et-google-smart-home/13855){:target="_blank" rel="noopener"}.
 
 ![schema partiel](../images/partialSchema.png)
 
 Première Méthode
 ----------------
 
-Pour ajouter un *plugin pour homebridge*, il faut d'abord trouver le plugin qui vous convient... pour ce faire il faut faire une recherche dans cette liste : [http://www.homebridge.io](http://www.homebridge.io) puis dans "Find a plugin" ( il y en a des centaines !!). Vous en trouverez peut être plusieurs, comparez les et regardez ceux qui ont été mis à jour récemment, ceux qui sont toujours actifs, ceux qui ont les fonctionnalités que vous désirez. 
+Pour ajouter un *plugin pour homebridge*, il faut d'abord trouver le plugin qui vous convient... pour ce faire il faut faire une recherche dans cette liste : [http://www.homebridge.io](http://www.homebridge.io){:target="_blank" rel="noopener"} puis dans "Find a plugin" ( il y en a des centaines !!). Vous en trouverez peut être plusieurs, comparez les et regardez ceux qui ont été mis à jour récemment, ceux qui sont toujours actifs, ceux qui ont les fonctionnalités que vous désirez. 
 ![findAPlugin.png](../images/findAPlugin.png)
 
 Une fois que vous avez trouvé celui qui vous convient, il faut aller dans la configuration du *plugin homebridge* et cliquer sur le bouton "Gérer les *plugins pour Homebridge*". ![manageHomebridgePlugins](../images/manageHomebridgePlugins.png) 
