@@ -531,9 +531,6 @@ Installer des Plugins Pour Homebridge
 
 >Attention : réservé aux utilisateurs avancés et qui comprennent l'anglais.
 
-Première Méthode
-----------------
-
 Il arrive parfois que les types génériques ne suffisent pas pour intégrer votre équipement car celui-ci n'a pas un comportement **générique** mais vraiment **spécifique** ou bien encore qu'il n'existe pas de plugin dans jeedom pour l'intégrer, dans ces cas là, vous pouvez passer par un "*Plugin pour homebridge*".
 
 >**Attention vocabulaire** : vous l'aurez compris, on risque vite de s'emmêler les pinceaux dans les termes plugins... de quel plugin parle-t-on ? Pour jeedom ? Pour homebridge ? Donc la dénomination suivante a été choisie :
@@ -545,6 +542,9 @@ Il arrive parfois que les types génériques ne suffisent pas pour intégrer vot
 En effet, le logiciel homebridge a été conçu de manière modulaire et vous pouvez ajouter à celui-ci des modules (plugins) qui se connectent directement à vos équipements (un exemple est le *plugin pour homebridge* nommé homebridge-caméra-ffmpeg qui est déjà intégré par les dépendances et permet d'importer vos camera du *plugin jeedom caméra*). Un autre exemple sont les plugins homebridge-gsh et homebridge-alexa qui sont un peu différents des autres, vous pouvez consulter le Tutoriel pour homebridge-gsh sur Communauté.
 
 ![schema partiel](../images/partialSchema.png)
+
+Première Méthode
+----------------
 
 Pour ajouter un *plugin pour homebridge*, il faut d'abord trouver le plugin qui vous convient... pour ce faire il faut faire une recherche dans cette liste : [http://www.homebridge.io](http://www.homebridge.io) puis dans "Find a plugin" ( il y en a des centaines !!). Vous en trouverez peut être plusieurs, comparez les et regardez ceux qui ont été mis à jour récemment, ceux qui sont toujours actifs, ceux qui ont les fonctionnalités que vous désirez. 
 ![findAPlugin.png](../images/findAPlugin.png)
