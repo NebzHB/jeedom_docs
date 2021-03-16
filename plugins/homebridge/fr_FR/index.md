@@ -216,9 +216,10 @@ Lumière
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:---------:|-------------|
-|Info/Lumière Etat (Binaire)|`NON`|Ajout pour les lumières dont la luminosité ne change pas lorsqu’elle est éteinte (Yeelight, Ikea, …​)<br/>0 = Eteint<br/>Autre que 0 = Allumé|
+|Info/Lumière Etat (Binaire)|`NON`|Ajout uniquement pour les lumières dont la luminosité ne change pas lorsqu’elle est éteinte (Yeelight, Ikea, …)<br/>0 = Eteint<br/>Autre que 0 = Allumé|
 |Info/Lumière Etat|`OUI`|Luminosité<br/>0-100 Ou 0-99 ou 0-255<br/>(en fonction du max de Action/Lumière Slider)<br/>ou Binaire<br/>0 = Eteint<br/> autre que 0 = Allumé| 
-|Action/Lumière Slider (Luminosité)|`OUI`|Réf. vers Lumière Etat|
+|Info/Lumière Luminosité|`NON`|NE PAS UTILISER !!!<br/>Préférez Info/Lumière Etat|
+|Action/Lumière Slider|`OUI`|Réf. vers Lumière Etat|
 |Action/Lumière Bouton On|`OUI`|Réf. vers Lumière Etat :<br/>- Binaire s’il est présent<br/>- Etat sinon|
 |Action/Lumière Bouton Off|`OUI`|Réf. vers Lumière Etat :<br/>- Binaire s’il est présent<br/>- Etat sinon|
 |Info/Lumière Couleur|`NON`|Format #RRGGBB|
@@ -292,7 +293,8 @@ Volets
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
-|Info/Volet Etat|`OUI`|0 = Fermé<br/>> 95 = Ouvert|
+|Info/Volet Etat|`OUI mais état unique`|min du slider = Fermé<br/>max du slider = Ouvert|
+|Info/Volet Etat Fermeture|`OUI mais état unique`|min du slider = Ouvert<br/>max du curseur = Fermé|
 |Action/Volet Bouton Monter|`Si Descendre`|Réf. vers Info/Volet Etat| 
 |Action/Volet Bouton Descendre|`Si Monter`|Réf. vers Info/Volet Etat|
 |Action/Volet Bouton Stop|`NON Utilisé`|N/A|
@@ -305,7 +307,7 @@ Volets
 Volets BSO
 ----------
 
-Pas encore supportés (mais possible via Volets normaux ?)
+Pas encore supportés (mais possible via Volets normaux et les inclinaisons)
 
 Fenêtres Motorisées
 -------------------
@@ -388,6 +390,11 @@ Haut-Parleurs (Eve Seulement)
 |Action/Haut-Parleur Toggle Mute|`Si seul`|Réf. vers Info/Haut-Parleur Mute|
 |Info/Haut-Parleur Volume|`OUI`|%| 
 |Action/Haut-Parleur Volume|`OUI`|Réf. vers Info/Haut-Parleur Volume| 
+
+Multimedia (Eve Seulement)
+-----------------------------
+|Info/Volume|`OUI`|Même chose que Info/Haut-Parleur Volume| 
+|Action/Volume|`OUI`|Réf. vers Info/Volume<br/>ême chose que Action/Haut-Parleur Volume| 
 
 Interrupteur programmable Multi-Valeurs
 --------
