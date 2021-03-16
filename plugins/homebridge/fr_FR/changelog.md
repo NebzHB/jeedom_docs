@@ -12,6 +12,9 @@ A venir prochainement (En Beta)
 -------------------------------
 * Homebridge 1.3.3
 
+16-03-2021
+* Fix pour accessories vide
+
 20-02-2021
 ----------
 * Correction validation JSON en cas de plateformes et accessoires vides
