@@ -130,7 +130,7 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 
 <sup>1</sup> : Nécessite un iPhone ou iPad (et l'app Maison) pour mettre l'équipement sur le réseau la première fois ou en cas de problème.<br/>
 <sup>2</sup> : Nécessite un iPhone ou iPad (et l'app Eve) pour mettre l'équipement sur le réseau la première fois et à chaque ajout d'équipement au Pont.<br/>
-<sup>3</sup> : Pas certain (à tester...) mais l'app Xiaomi sur Android devrait suffire...
+<sup>3</sup> : Pas certain (à tester...) mais l'app Xiaomi Home sur Android devrait suffire...
 
 **Non-Compatibles**
 ----------------------------
