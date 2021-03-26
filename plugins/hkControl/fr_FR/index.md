@@ -87,6 +87,8 @@ La valeur est affichée en temps réel et est modifiée en temps réel.
 
 EXPLIQUER APPAIRAGE ET CODE PIN
 
+Pour appairer votre équipement avec le plugin, il vous faut trouver le code PIN de celui-ci. Il se trouvera sur la boîte de l'équipement ou sur l'équipement lui-même (sur le Pont)
+
 Une fois appairé avec ce plugin, les périphériques ne sont plus appairables avec « Maison ». Il faut donc (pour l’instant) les réinjecter dans homebridge manuellement avec des types génériques. 
 
 >Plus tard ou jamais (pas de date prévue), ils seront automatiquement réinjectés dans homebridge sans configuration (pour l’instant il faut passer par les types génériques et parfois des virtuels…). Cette seconde étape est en développement mais demande enormément de boulot donc ca ne sera pas prêt tout de suite ! Soyez patient !
@@ -104,7 +106,7 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 -    Autres * with Netatmo
 
 **Compatibles**
--------------------------
+---------------
 
 | Equipement | Site | Nécessite iBidule? | Remarques |
 |:---------- |:----:|:------------------:|:----------|
