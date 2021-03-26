@@ -106,8 +106,8 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 **Compatibles**
 -------------------------
 
-| Equipement | Site | Nécessite iBidule | Remarques |
-|:---------- |:----:|:----------------:|:----------|
+| Equipement | Site | Nécessite iBidule? | Remarques |
+|:---------- |:----:|:------------------:|:----------|
 | Legrand iDiamant with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/bubendorff) | NON | |
 | Legrand Céliane with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/legrand) | NON | |
 | Velux Active with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/velux) | NON | capteurs temperature/humidité/CO2 + Ouverture Velux + Volets extérieurs |
