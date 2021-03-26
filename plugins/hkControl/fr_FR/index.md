@@ -129,6 +129,7 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 | ESP8266 | [Avec lib Arduino-Homekit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266){:target="_blank" rel="noopener"} | NON | Elle intègre des exemples de led, sensor, switch et tout type d’accessoire.<br/>(modifier le pin par défaut qui est 111-11-111 et pas accepté par Apple) |
 
 <sup>1</sup> : Uniquement pour mettre sur le réseau la première fois ou en cas de problème.
+
 <sup>2</sup> : Pour mettre sur le réseau et à chaque ajout d'équipement au Pont.
 
 **:negative_squared_cross_mark:Non-Compatibles**
