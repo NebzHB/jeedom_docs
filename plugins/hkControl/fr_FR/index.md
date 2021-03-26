@@ -110,7 +110,7 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 **Compatibles**
 ---------------
 
-| Equipement | Site | Nécessite iBidule? | Remarques |
+| Equipement | Site | Nécessite iPhone/iPad? | Remarques |
 |:---------- |:----:|:------------------:|:----------|
 | Legrand iDiamant with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/bubendorff){:target="_blank" rel="noopener"} | NON | |
 | Legrand Céliane with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/legrand){:target="_blank" rel="noopener"} | NON | |
