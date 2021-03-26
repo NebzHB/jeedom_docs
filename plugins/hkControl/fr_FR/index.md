@@ -128,8 +128,8 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 | Pont Philips Hue | [Voir Site Officiel](https://www.philips-hue.com/fr-fr/p/hue-hue-bridge/8718696511800){:target="_blank" rel="noopener"} | NON | (Ampoules, Interrupteur Tap OK) (Ampoules non-hue non remontées dans homekit) |
 | ESP8266 | [Avec lib Arduino-Homekit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266){:target="_blank" rel="noopener"} | NON | Elle intègre des exemples de led, sensor, switch et tout type d’accessoire.<br/>(modifier le pin par défaut qui est 111-11-111 et pas accepté par Apple) |
 
-<sup>1</sup> : Uniquement pour mettre sur le réseau la première fois ou en cas de problème.<br/>
-<sup>2</sup> : Pour mettre sur le réseau et à chaque ajout d'équipement au Pont.<br/>
+<sup>1</sup> : Nécessite un iPhone ou iPad (et l'app Maison) pour mettre l'équipement sur le réseau la première fois ou en cas de problème.<br/>
+<sup>2</sup> : Nécessite un iPhone ou iPad (et l'app Eve) pour mettre l'équipement sur le réseau la première fois et à chaque ajout d'équipement au Pont.<br/>
 <sup>3</sup> : Pas certain (à tester...) mais l'app Xiaomi sur Android devrait suffire...
 
 **Non-Compatibles**
