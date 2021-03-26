@@ -99,7 +99,7 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 **Compatibilités**
 ==================
 
-**:hourglass_flowing_sand:En attente de tests**
+** :hourglass_flowing_sand: En attente de tests**
 ----------------------
 
 -    Tous les accessoires Philips Hue
