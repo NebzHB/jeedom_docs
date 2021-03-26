@@ -107,22 +107,22 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 -------------------------
 
 | Equipement | Site | Nécessite iBidule | Remarques |
-|:---------- |:---- |:----------------:|:----------|
-| Legrand iDiamant with Netatmo | [Site](https://www.netatmo.com/fr-fr/partners/bubendorff) | NON | |
-| Legrand Céliane with Netatmo | [Site](https://www.netatmo.com/fr-fr/partners/legrand) | NON | |
-| Velux Active with Netatmo | [Site](https://www.netatmo.com/fr-fr/partners/velux) | NON | capteurs temperature/humidité/CO2 + Ouverture Velux + Volets extérieurs |
-| Passerelle Xiaomi ZHWG11LM | [Site](https://www.aqara.com/us/smart_home_hub.html) | Peut-être? | |
+|:---------- |:----:|:----------------:|:----------|
+| Legrand iDiamant with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/bubendorff) | NON | |
+| Legrand Céliane with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/legrand) | NON | |
+| Velux Active with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/velux) | NON | capteurs temperature/humidité/CO2 + Ouverture Velux + Volets extérieurs |
+| Passerelle Xiaomi ZHWG11LM | [Voir Site Officiel](https://www.aqara.com/us/smart_home_hub.html) | Peut-être? | |
 | Passerelle Xiaomi ZNDMWG03LM | | Peut-être? | Tout firmware |
-| Passerelle Xiaomi HM2-G01 | [Site](https://www.aqara.com/eu/smart_hub_m2.html) | Peut-être? | |
-| Passerelle Xiaomi M1S ZHWG15LM | [Site](https://www.aqara.com/en/smart_hub_m1s.html) | Peut-être? | |
-| Prises Koogeek | [Site](https://www.koogeek.com/p-p1eu-1.html) | OUI | Doit être ajouté à Maison puis retiré |
-| Light strip Koogeek | [Site](https://www.koogeek.com/p-ls1-1.html) | OUI | Doit être ajouté à Maison puis retiré |
-| Nice IT4WIFI | [Site](https://www.niceforyou.com/fr/it4wifi) | OUI | |
-| VOCOlinc FlowerBud Smart Diffuser | [Site](https://www.vocolinc.com/products/flowerbud-smart-diffuser) | OUI | Doit être ajouté à Maison puis retiré |
-| Eve Extend | [Site](https://www.evehome.com/fr/eve-extend) | OUI | Rend compatible tous [ces périphériques](https://www.evehome.com/fr/extend-compatibility) Eve Bluetooth (max 8 par Extend)  (Energy, Aqua, Weather, Motion, Button testés OK) |
-| Passerelle IKEA TRADFRI | [Site](https://www.ikea.com/fr/fr/p/tradfri-passerelle-blanc-40337806/) | NON | (sauf télécommandes, non remontées dans homekit) |
-| Pont Philips Hue | [Site](https://www.philips-hue.com/fr-fr/p/hue-hue-bridge/8718696511800) | NON | (Ampoules, Interrupteur Tap OK) (Ampoules non-hue non remontées dans homekit) |
-| ESP8266 | [Avec la lib Arduino-Homekit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266). | NON | Elle intègre des exemples de led, sensor, switch et tout type d’accessoire.<br/>(modifier le pin par défaut qui est 111-11-111 et pas accepté par Apple) |
+| Passerelle Xiaomi HM2-G01 | [Voir Site Officiel](https://www.aqara.com/eu/smart_hub_m2.html) | Peut-être? | |
+| Passerelle Xiaomi M1S ZHWG15LM | [Voir Site Officiel](https://www.aqara.com/en/smart_hub_m1s.html) | Peut-être? | |
+| Prises Koogeek | [Voir Site Officiel](https://www.koogeek.com/p-p1eu-1.html) | OUI | Doit être ajouté à Maison puis retiré |
+| Light strip Koogeek | [Voir Site Officiel](https://www.koogeek.com/p-ls1-1.html) | OUI | Doit être ajouté à Maison puis retiré |
+| Nice IT4WIFI | [Voir Site Officiel](https://www.niceforyou.com/fr/it4wifi) | OUI | |
+| VOCOlinc FlowerBud Smart Diffuser | [Voir Site Officiel](https://www.vocolinc.com/products/flowerbud-smart-diffuser) | OUI | Doit être ajouté à Maison puis retiré |
+| Eve Extend | [Voir Site Officiel](https://www.evehome.com/fr/eve-extend) | OUI | Rend compatible tous [ces périphériques](https://www.evehome.com/fr/extend-compatibility) Eve Bluetooth (max 8 par Extend)<br/>(Energy, Aqua, Weather, Motion, Button testés OK) |
+| Passerelle IKEA TRADFRI | [Voir Site Officiel](https://www.ikea.com/fr/fr/p/tradfri-passerelle-blanc-40337806/) | NON | (sauf télécommandes, non remontées dans homekit) |
+| Pont Philips Hue | [Voir Site Officiel](https://www.philips-hue.com/fr-fr/p/hue-hue-bridge/8718696511800) | NON | (Ampoules, Interrupteur Tap OK) (Ampoules non-hue non remontées dans homekit) |
+| ESP8266 | [Avec lib Arduino-Homekit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266) | NON | Elle intègre des exemples de led, sensor, switch et tout type d’accessoire.<br/>(modifier le pin par défaut qui est 111-11-111 et pas accepté par Apple) |
 
 **Non-Compatibles**
 ----------------------------
