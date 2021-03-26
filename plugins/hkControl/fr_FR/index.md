@@ -5,6 +5,8 @@ title: Plugin hkControl
 description: Documentation du plugin hkControl
 ---
 
+**En cours de Rédaction**
+
 Présentation hkControl
 =======================
 
@@ -48,7 +50,7 @@ En cliquant sur un de vos équipements vous arrivez sur la page
 configuration de votre équipement comprenant 2 onglets, équipement et
 commandes.
 
-**Onglet Equipement** :
+**Onglet Equipement**
 -----------------------
 
 -   **Nom de l’équipement** : Nom de votre équipement
@@ -70,7 +72,7 @@ Pour les Accessoires ou les Ponts :
 -   **Rafraîchir les équipements liés** (dans le cas d'un Pont) : permet de vérifier si de nouveaux accessoires ont été ajoutés ou retirés au pont. En cas d'ajout, ils seront ajoutés à la liste. En cas de suppression, ils apparaîtrons barrés et vous pourrez les supprimer manuellement si vous ne comptez pas les ré-ajouter plus tard.
 
 
-**Onglet Commandes** :
+**Onglet Commandes**
 ----------------------
 
 Il existe de nombreuses commandes, elles sont différentes en fonction du type d'équipement. Toutes ne sont pas affichées par défaut. Vous pouvez les renommer, les afficher ou non et les réorganiser. Vous pouvez aussi attribuer un widget au choix. Tout est standard.
@@ -80,24 +82,30 @@ Les noms viennent directement de Homekit.  Les valeurs possibles de la commande 
 La valeur est affichée en temps réel et est modifiée en temps réel.
 
 
-**Appairage** :
----------------
+**Appairage**
+=============
+
+EXPLIQUER APPAIRAGE ET CODE PIN
 
 Une fois appairé avec ce plugin, les périphériques ne sont plus appairables avec « Maison ». Il faut donc (pour l’instant) les réinjecter dans homebridge manuellement avec des types génériques. 
 
->Plus tard ou jamais (pas de date prévue), ils seront automatiquement réinjecté dans homebridge sans configuration (pour l’instant il faut passer par les types génériques et parfois des virtuels…). Cette seconde étape est en développement mais demande enormément de boulot donc ca ne sera pas prêt tout de suite ! Soyez patient !
+>Plus tard ou jamais (pas de date prévue), ils seront automatiquement réinjectés dans homebridge sans configuration (pour l’instant il faut passer par les types génériques et parfois des virtuels…). Cette seconde étape est en développement mais demande enormément de boulot donc ca ne sera pas prêt tout de suite ! Soyez patient !
 
 
-**Compatibilités** :
--------------------
+**Compatibilités**
+==================
 
-**En attente de test :**
+**En attente de test **
+-----------------------
+
 -    Tous les accessoires Philips Hue
 -    Tous les accessoires IKEA
 -    Autres accessoires Eve Home
 -    Autres * with Netatmo
 
-**Compatibles jusqu'ici :**
+**Compatibles jusqu'ici **
+--------------------------
+
 -    Legrand iDiamant with Netatmo (https://www.netatmo.com/fr-fr/partners/bubendorff)
 -    Legrand Céliane with Netatmo (https://www.netatmo.com/fr-fr/partners/legrand)
 -    Velux Active with Netatmo (https://www.netatmo.com/fr-fr/partners/velux) (capteurs temperature/humidité/CO2 + Ouverture Velux + Volets extérieurs)
@@ -114,18 +122,22 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 -    Pont Philips Hue (https://www.philips-hue.com/fr-fr/p/hue-hue-bridge/8718696511800) (Ampoules, Interrupteur Tap OK) (Ampoules non-hue non remontées dans homekit)
 -    ESP8266 avec la lib Arduino-Homekit-ESP8266 (https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266). Elle intègre des exemples de led, sensor, switch et tout type d’accessoire. (modifier le pin par défaut qui est 111-11-111 et pas accepté par Apple)
 
-**Non-Compatible jusqu’ici :**
+**Non-Compatible jusqu’ici **
+-----------------------------
+
 -    prises Meross MSS210HK (pas de réponse à l’appairage)
 -    Shelly Firmwares alternatifs homekit (M4: Empty TLV)
 
-**Ne seront jamais compatible :**
+**Ne seront jamais compatible **
+--------------------------------
+
 -    Ampoules Yeelight homekit (sans code pin, code pin généré par l’app mais non affiché)
 -    Flux Caméras
 -    Flux vidéo des Sonnettes vidéo
 
 
 **Utilisation**
-----------------
+===============
 
 Pour certains périphériques, vous devez configurer votre périphérique Homekit comme habituellement avec l’app du constructeur (afin de le connecter au wifi) ou Maison et ensuite le supprimer proprement (le désappairer) de Maison. Il sera ensuite possible de le découvrir via ce plugin. D’autres périphériques n’ont pas besoin d’un iDevice et de Maison pour être compatibles (Céliane with Netatmo, iDiamant with Netatmo, …).
 
@@ -137,12 +149,12 @@ Si le plugin dit que votre périphérique est déjà appairé (on le voit dans l
 
 
 **Comment aider ?**
--------------------
+===================
 
 Si vous testez le plugin avec l’un de vos périphérique encore non listé dans la compatibilité et que ça fonctionne (même si ca ne fonctionne pas, c’est intéressant de le savoir), envoyez-moi (en privé, c’est mieux) la ligne complète « getAccessories » qui se trouve dans le log « hkControl » après l’appairage ou après une relance du démon.
 
 
-**FAQ** :
----------
+**FAQ**
+=======
 
 à venir
