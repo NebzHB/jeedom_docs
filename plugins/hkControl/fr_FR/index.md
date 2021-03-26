@@ -99,7 +99,7 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 **Compatibilités**
 ==================
 
-**En attente de tests**
+**:hourglass_flowing_sand:En attente de tests**
 ----------------------
 
 -    Tous les accessoires Philips Hue
@@ -107,7 +107,7 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 -    Autres accessoires Eve Home
 -    Autres * with Netatmo
 
-**Compatibles**
+**:ballot_box_with_check:Compatibles**
 ---------------
 
 | Equipement | Site | Nécessite iBidule? | Remarques |
@@ -128,13 +128,13 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 | Pont Philips Hue | [Voir Site Officiel](https://www.philips-hue.com/fr-fr/p/hue-hue-bridge/8718696511800){:target="_blank" rel="noopener"} | NON | (Ampoules, Interrupteur Tap OK) (Ampoules non-hue non remontées dans homekit) |
 | ESP8266 | [Avec lib Arduino-Homekit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266){:target="_blank" rel="noopener"} | NON | Elle intègre des exemples de led, sensor, switch et tout type d’accessoire.<br/>(modifier le pin par défaut qui est 111-11-111 et pas accepté par Apple) |
 
-**Non-Compatibles**
+**:negative_squared_cross_mark:Non-Compatibles**
 ----------------------------
 
 -    prises Meross MSS210HK (pas de réponse à l’appairage)
 -    Shelly Firmwares alternatifs homekit (M4: Empty TLV)
 
-**Ne seront jamais compatibles**
+**:skull_and_crossbones:Ne seront jamais compatibles**
 -------------------------------
 
 -    Ampoules Yeelight homekit (sans code pin, code pin généré par l’app mais non affiché)
