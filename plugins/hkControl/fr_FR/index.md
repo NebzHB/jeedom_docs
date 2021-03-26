@@ -12,6 +12,8 @@ Présentation hkControl
 
 Ce plugin permet de connecter les périphériques Homekit réseaux à Jeedom et de les contrôler dans Jeedom.
 
+![Schema](https://market.jeedom.com/filestore/market/plugin/images/hkControl_screenshot1.png)
+
 >**Si vous cherchez à envoyer les périphériques Jeedom dans Homekit, ce n’est pas le bon plugin, dans ce cas, il faut utiliser #plugin-homebridge !!**
 
 >**Important** : les périphériques Homekit Bluetooth et ceux qui nécessitent NFC pour être appariés, ne sont pas compatibles. D'autres ne sont également pas compatibles pour différentes raisons (voir Compatibilités).
