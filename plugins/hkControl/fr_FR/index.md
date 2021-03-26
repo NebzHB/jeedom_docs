@@ -115,10 +115,10 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 | Legrand iDiamant with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/bubendorff){:target="_blank" rel="noopener"} | NON | |
 | Legrand Céliane with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/legrand){:target="_blank" rel="noopener"} | NON | |
 | Velux Active with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/velux){:target="_blank" rel="noopener"} | NON | capteurs temperature/humidité/CO2 + Ouverture Velux + Volets extérieurs |
-| Passerelle Xiaomi ZHWG11LM | [Voir Site Officiel](https://www.aqara.com/us/smart_home_hub.html){:target="_blank" rel="noopener"} | Peut-être? | |
-| Passerelle Xiaomi ZNDMWG03LM | | Peut-être? | Tout firmware |
-| Passerelle Xiaomi HM2-G01 | [Voir Site Officiel](https://www.aqara.com/eu/smart_hub_m2.html){:target="_blank" rel="noopener"} | Peut-être? | |
-| Passerelle Xiaomi M1S ZHWG15LM | [Voir Site Officiel](https://www.aqara.com/en/smart_hub_m1s.html){:target="_blank" rel="noopener"} | Peut-être? | |
+| Passerelle Xiaomi ZHWG11LM | [Voir Site Officiel](https://www.aqara.com/us/smart_home_hub.html){:target="_blank" rel="noopener"} | Peut-être<sup>3</sup> | |
+| Passerelle Xiaomi ZNDMWG03LM | | Peut-être<sup>3</sup> | Tout firmware |
+| Passerelle Xiaomi HM2-G01 | [Voir Site Officiel](https://www.aqara.com/eu/smart_hub_m2.html){:target="_blank" rel="noopener"} | Peut-être<sup>3</sup> | |
+| Passerelle Xiaomi M1S ZHWG15LM | [Voir Site Officiel](https://www.aqara.com/en/smart_hub_m1s.html){:target="_blank" rel="noopener"} | Peut-être<sup>3</sup> | |
 | Prises Koogeek | [Voir Site Officiel](https://www.koogeek.com/p-p1eu-1.html){:target="_blank" rel="noopener"} | OUI<sup>1</sup> | Doit être ajouté à Maison puis retiré |
 | Light strip Koogeek | [Voir Site Officiel](https://www.koogeek.com/p-ls1-1.html){:target="_blank" rel="noopener"} | OUI<sup>1</sup> | Doit être ajouté à Maison puis retiré |
 | Nice IT4WIFI | [Voir Site Officiel](https://www.niceforyou.com/fr/it4wifi){:target="_blank" rel="noopener"} | OUI<sup>1</sup> | |
@@ -129,7 +129,8 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 | ESP8266 | [Avec lib Arduino-Homekit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266){:target="_blank" rel="noopener"} | NON | Elle intègre des exemples de led, sensor, switch et tout type d’accessoire.<br/>(modifier le pin par défaut qui est 111-11-111 et pas accepté par Apple) |
 
 <sup>1</sup> : Uniquement pour mettre sur le réseau la première fois ou en cas de problème.<br/>
-<sup>2</sup> : Pour mettre sur le réseau et à chaque ajout d'équipement au Pont.
+<sup>2</sup> : Pour mettre sur le réseau et à chaque ajout d'équipement au Pont.<br/>
+<sup>3</sup> : Pas certain (à tester...) mais l'app Xiaomi sur Android devrait suffire...
 
 **Non-Compatibles**
 ----------------------------
