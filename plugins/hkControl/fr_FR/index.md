@@ -51,7 +51,7 @@ configuration de votre équipement comprenant 2 onglets, équipement et
 commandes.
 
 **Onglet Equipement**
------------------------
+---------------------
 
 -   **Nom de l’équipement** : Nom de votre équipement
 
@@ -73,7 +73,7 @@ Pour les Accessoires ou les Ponts :
 
 
 **Onglet Commandes**
-----------------------
+--------------------
 
 Il existe de nombreuses commandes, elles sont différentes en fonction du type d'équipement. Toutes ne sont pas affichées par défaut. Vous pouvez les renommer, les afficher ou non et les réorganiser. Vous pouvez aussi attribuer un widget au choix. Tout est standard.
 
@@ -95,16 +95,16 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 **Compatibilités**
 ==================
 
-**En attente de test **
------------------------
+**En attente de test**
+----------------------
 
 -    Tous les accessoires Philips Hue
 -    Tous les accessoires IKEA
 -    Autres accessoires Eve Home
 -    Autres * with Netatmo
 
-**Compatibles jusqu'ici **
---------------------------
+**Compatibles jusqu'ici**
+-------------------------
 
 -    Legrand iDiamant with Netatmo (https://www.netatmo.com/fr-fr/partners/bubendorff)
 -    Legrand Céliane with Netatmo (https://www.netatmo.com/fr-fr/partners/legrand)
@@ -122,14 +122,14 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 -    Pont Philips Hue (https://www.philips-hue.com/fr-fr/p/hue-hue-bridge/8718696511800) (Ampoules, Interrupteur Tap OK) (Ampoules non-hue non remontées dans homekit)
 -    ESP8266 avec la lib Arduino-Homekit-ESP8266 (https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266). Elle intègre des exemples de led, sensor, switch et tout type d’accessoire. (modifier le pin par défaut qui est 111-11-111 et pas accepté par Apple)
 
-**Non-Compatible jusqu’ici **
------------------------------
+**Non-Compatible jusqu’ici**
+----------------------------
 
 -    prises Meross MSS210HK (pas de réponse à l’appairage)
 -    Shelly Firmwares alternatifs homekit (M4: Empty TLV)
 
-**Ne seront jamais compatible **
---------------------------------
+**Ne seront jamais compatible**
+-------------------------------
 
 -    Ampoules Yeelight homekit (sans code pin, code pin généré par l’app mais non affiché)
 -    Flux Caméras
