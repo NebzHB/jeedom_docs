@@ -7,8 +7,8 @@ description: Documentation du plugin hkControl
 
 ...**En cours de Rédaction**...
 
-Présentation hkControl
-=======================
+Présentation Homekit Network Devices Control (hkControl)
+========================================================
 
 Ce plugin permet de connecter les périphériques Homekit réseaux à Jeedom et de les contrôler dans Jeedom.
 
