@@ -93,7 +93,7 @@ Pour appairer votre équipement avec le plugin, il vous faut trouver le code PIN
 
 Une fois appairé avec ce plugin, les périphériques ne sont plus appairables avec « Maison ». Il faut donc (pour l’instant) les réinjecter dans homebridge manuellement avec des types génériques. 
 
->Plus tard ou jamais (pas de date prévue), ils seront automatiquement réinjectés dans homebridge sans configuration (pour l’instant il faut passer par les types génériques et parfois des virtuels…). Cette seconde étape est en développement mais demande enormément de boulot donc ca ne sera pas prêt tout de suite ! Soyez patient !
+>Plus tard ou jamais (pas de date prévue), ils seront automatiquement réinjectés dans homebridge sans configuration (pour l’instant il faut passer par les types génériques, parfois des virtuels et parfois vous ne trouverez pas de type générique…). Cette seconde étape est en développement mais demande enormément de boulot donc ca ne sera pas prêt tout de suite ! Soyez patient !
 
 
 **Compatibilités**
@@ -145,6 +145,10 @@ Une fois appairé avec ce plugin, les périphériques ne sont plus appairables a
 -    Flux Caméras
 -    Flux vidéo des Sonnettes vidéo
 
+**Autres Équipements**
+----------------------
+
+>Vous avez d'autres équipements Homekit Réseau et vous vous demandez s'ils sont compatibles avec ce plugin ? C'est possible, mais tant que quelqu'un ne l'aura pas testé, je ne peux le garantir... Les qqch With Netatmo semblent tous compatibles jusqu'ici et ne nécessitent pas d'iBidules pour être configurés sur le réseau. Si vous avez un retour (positif ou négatif) sur un équipement non listé, contactez-moi sur communauté (Voir Comment Aider ?)
 
 **Utilisation**
 ===============
