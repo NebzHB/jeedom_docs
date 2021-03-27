@@ -22,10 +22,10 @@ Ce plugin permet de connecter les périphériques Homekit réseaux à Jeedom et 
 
 >Le but du plugin est de rendre compatible avec Jeedom les périphériques qui sont SEULEMENT Homekit, donc qui n’ont pas d’autres moyens d’être contrôlés (via un autre plug-in) dans Jeedom. Donc Pont Philips Hue,Gateway Ikea, ça sera du bonus si ça fonctionne mais ce n’est clairement pas le but !
 
-Il y a trois types d'équipements dans Homekit, les Accessoires, les Ponts et les Accessoires Pontés.
-- Les Accessoires sont des équipements uniques et communiquent directement avec le plugin
-- Les Ponts sont des équipements qui contiennent un ou plusieurs Accessoires Pontés et communiquent avec le plugin
-- Les Accessoires Pontés sont liés à un Pont et communiquent avec le plugin via celui-ci
+Il y a trois types d'équipements dans Homekit, les **Accessoires**, les **Ponts** et les **Accessoires Pontés**.
+- Les **Accessoires** sont des équipements uniques et communiquent directement avec le plugin
+- Les **Ponts** sont des équipements qui contiennent un ou plusieurs **Accessoires Pontés** et communiquent avec le plugin
+- Les **Accessoires Pontés** sont liés à un **Pont** et communiquent avec le plugin via celui-ci
 
 Configuration du plugin 
 =======================
@@ -65,13 +65,13 @@ commandes.
 
 -   **Catégrorie** : Indique la catégorie à laquelle appartient l’équipement
 
--   **Adresse IP** : L'ip de l'équipement et le port (à titre informatif, en lecture seule)
 
 Pour les Accessoires ou les Ponts :
+
+-   **Adresse IP** : L'ip de l'équipement et le port (à titre informatif, en lecture seule)
 -   **Pin** : Le code pin Homekit que vous trouverez sur votre équipment ou sa boite.
 -   Bouton **Appairer**/**Désappairer** : permet de lier/délier jeedom avec votre équipement (un seul lien possible par équipement).
-
--   **Rafraîchir les équipements liés** (dans le cas d'un Pont) : permet de vérifier si de nouveaux accessoires ont été ajoutés ou retirés au pont. En cas d'ajout, ils seront ajoutés à la liste. En cas de suppression, ils apparaîtrons barrés et vous pourrez les supprimer manuellement si vous ne comptez pas les ré-ajouter plus tard.
+-   Bouton **Rafraîchir les équipements liés** (dans le cas d'un Pont) : permet de vérifier si de nouveaux accessoires ont été ajoutés ou retirés au pont. En cas d'ajout, ils seront ajoutés aux équipements. En cas de suppression, ils apparaîtrons barrés et vous pourrez les supprimer manuellement si vous ne comptez pas les ré-ajouter plus tard.
 
 
 **Onglet Commandes**
