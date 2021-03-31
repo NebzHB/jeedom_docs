@@ -16,7 +16,6 @@ A venir prochainement (En Beta)
 * Simplification du code si jeedom >3.2.1 (ce qui sera toujours le cas puisque le plugin requière 3.3.24)
 * Eclairage adaptatif : tests en cours (car pas possible sur les ampoules qui s'allument lors du changement de la couleur de temperature)
 * Gestion multi-interfaces réseau, si c'est le cas (autre que tun), la configuration du plugin laissera le choix de selectionner l'interface sur laquelle publier le mDNS de homebridge (attention aux boucles !!! ne doit être utilisé que si le système fait le pont entre deux réseaux !!!)
-* Fix accessoires vides
 * Fix petit bug d'affichage thermostats à la config des modes
 
 16-03-2021
