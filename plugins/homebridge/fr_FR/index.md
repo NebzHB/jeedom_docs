@@ -322,7 +322,7 @@ Fenêtres Motorisées
 Chauffage fil pilote
 ---------------------
 
-N’existe pas en HomeKit
+Utiliser le plugin Thermostat.
 
 Serrures
 --------
