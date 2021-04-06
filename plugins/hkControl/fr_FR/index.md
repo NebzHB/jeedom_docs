@@ -166,7 +166,7 @@ Si vous testez le plugin avec l’un de vos périphérique encore non listé dan
 **FAQ**
 =======
 
->Il me manque une commande dans mon équipement par rapport à *QQCH* (app android, interface web, autre...)
+>Il me manque une commande dans mon équipement si je compare à mon app android / l'interface web / autre...
 
 Toutes les commandes reçues de Homekit sont dans le plugin.  Si vous ne la voyez pas, c'est que le constructeur ne l'envoi pas dans Homekit.
 
@@ -178,7 +178,7 @@ Certains constructeurs utilisent des fonctions propriétaires et cryptent les do
 
 Je ne sais pas... le seul moyen est d'essayer :) si c'est le cas, n'hésitez pas à me tenir au courant via Communauté !!! (si ce n'est pas le cas aussi :))
 
->J'ai une passerelle Netatmo ou Xiaomi, j'ai ajouté un accessoire dessus, je le vois dans l'app "*Application Quelconque*" mais pas dans le plugin, comment faire ?
+>J'ai une passerelle Netatmo ou Xiaomi, j'ai ajouté un accessoire dessus, je le vois dans mon app android / l'interface web / autre... mais pas dans le plugin, comment faire ?
 
 Utilisez le bouton "**Rafraîchir les équipements liés**" dans l'*onglet Equipement* du **Pont**
 
