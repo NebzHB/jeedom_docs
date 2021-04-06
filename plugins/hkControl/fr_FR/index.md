@@ -179,3 +179,15 @@ Je ne sais pas... le seul moyen est d'essayer :) si c'est le cas, n'hésitez pas
 >J'ai une passerelle Netatmo ou Xiaomi, j'ai ajouté un accessoire dessus, je le vois dans l'app "*Application Quelconque*" mais pas dans le plugin, comment faire ?
 
 Utilisez le bouton "**Rafraîchir les équipements liés**" dans l'*onglet Equipement* du **Pont**
+
+>Je ne parviens pas à appairer mon équipement, il me dit que celui-ci est déjà appairé
+
+Comme indiqué plus haut, il faut peut-être faire une réinitialisation Homekit de votre équipement, consultez la documentation du constructeur.  Parfois une réinitialisation complète n'est pas nécessaire, parfois oui, c'est le choix du constructeur.
+
+>Le plugin ne voit pas mon équipement, j'ai regardé dans le log "hkControl" et je ne le vois pas même après relance du démon
+
+Votre périphérique n'a peut-être pas été configuré sur le réseau, utilisez l'application du constructeur ou vérifiez la documentation de celui-ci pour voir comment le mettre sur le réseau. Ensuite, si vous avez du l'intégrer à Maison sur iOS, retirez-le, il deviendra découvrable pour le plugin !
+
+>Malgré tout je ne vois pas l'équipement !
+
+Les Accessoires et Ponts Homekit utilisent le protocole Bonjour de Apple pour s'annoncer sur le réseau. Ce protocole n'est pas routable, il faut donc que votre jeedom soit sur le même réseau (non routé) que votre équipement.  Si c'est le cas, vérifiez vos équipements réseau, il faut activer tout ce qui touche à *mDNS*, *multicast DNS*, *IGMP Snooping* sur tout le trajet réseau entre votre équipement et jeedom.
