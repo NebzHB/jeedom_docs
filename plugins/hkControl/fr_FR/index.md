@@ -18,6 +18,8 @@ Ce plugin permet de connecter les périphériques Homekit réseaux à Jeedom et 
 
 >**Important** : les périphériques Homekit Bluetooth et ceux qui nécessitent NFC pour être appariés, ne sont pas compatibles. D'autres ne sont également pas compatibles pour différentes raisons (voir Compatibilités).
 
+>**Important** : le protocole Homekit n'est pas un protocole routable, jeedom et votre équipement DOIVENT donc se retrouver sur le même réseau non routé !!!
+
 >Pour certains d'entre eux, il est toujours nécessaire de posséder un iPhone, mais pas pour tous ! (voir tableau)
 
 >Le but du plugin est de rendre compatible avec Jeedom les périphériques qui sont SEULEMENT Homekit, donc qui n’ont pas d’autres moyens d’être contrôlés (via un autre plug-in) dans Jeedom. Donc Pont Philips Hue,Gateway Ikea, ça sera du bonus si ça fonctionne mais ce n’est clairement pas le but !
