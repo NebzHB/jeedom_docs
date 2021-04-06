@@ -192,4 +192,4 @@ Votre périphérique n'a peut-être pas été configuré sur le réseau, utilise
 
 >Malgré tout je ne vois pas l'équipement !
 
-Les Accessoires et Ponts Homekit utilisent le protocole Bonjour de Apple pour s'annoncer sur le réseau. Ce protocole n'est pas routable, il faut donc que votre jeedom soit sur le même réseau (non routé) que votre équipement.  Si c'est le cas, vérifiez vos équipements réseau, il faut activer tout ce qui touche à *mDNS*, *multicast DNS*, *IGMP Snooping* sur tout le trajet réseau entre votre équipement et jeedom.
+Les Accessoires et Ponts Homekit utilisent le protocole Bonjour de Apple pour s'annoncer sur le réseau (et donc au Plugin). Ce protocole n'est pas routable, il faut donc que votre jeedom soit sur le même réseau (non routé) que votre équipement.  Si c'est le cas, vérifiez vos équipements réseau, il faut activer tout ce qui touche à **mDNS**, **multicast DNS**, **IGMP Snooping** sur tout le trajet réseau entre votre équipement et jeedom.
