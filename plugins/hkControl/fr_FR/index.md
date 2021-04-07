@@ -7,7 +7,7 @@ description: Documentation du plugin hkControl
 
 ...**En cours de Rédaction**...
 
->**Si vous cherchez à envoyer les périphériques Jeedom dans Homekit, ce n’est pas le bon plugin, dans ce cas, il faut utiliser #plugin-homebridge !!**
+>**Si vous cherchez à envoyer les périphériques Jeedom dans Homekit, ce n’est pas le bon plugin, dans ce cas, il faut utiliser [#plugin-homebridge](https://nebzhb.github.io/jeedom_docs/plugins/homebridge/fr_FR/){:target="_blank" rel="noopener"} !!**
 
 Présentation Homekit Network Devices Control (hkControl)
 ========================================================
