@@ -193,3 +193,8 @@ Votre périphérique n'a peut-être pas été configuré sur le réseau, utilise
 >Malgré tout je ne vois pas l'équipement !
 
 Les Accessoires et Ponts Homekit utilisent le protocole Bonjour de Apple pour s'annoncer sur le réseau (et donc au Plugin). Ce protocole n'est pas routable, il faut donc que votre jeedom soit sur le même réseau (non routé) que votre équipement.  Si c'est le cas, vérifiez vos équipements réseau, il faut activer tout ce qui touche à **mDNS**, **multicast DNS**, **IGMP Snooping** sur tout le trajet réseau entre votre équipement et jeedom.
+
+>J'ai un **Pont** qui contient plusieurs **Accessoires Pontés**, j'aimerais en supprimer un mais je n'ai pas de bouton "Supprimer".
+
+C'est logique, car si vous le supprimez dans le plugin uniquement, il va revenir au prochain rafraichissement !
+Pour le retirer, vous devez le retirer d'abord de votre **Pont** (voir documentation constructeur). Une fois que c'est effectué, cliquez sur le bouton **Rafraîchir les équipements liés** dans le **Pont** et l'**Accessoire Ponté** concerné s'affichera maintenant en barré dans la liste des Accessoires. Cliquez dessus, il sera maintenant possible de le supprimer.
