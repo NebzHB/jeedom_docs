@@ -184,15 +184,35 @@ Utilisez le bouton "**Rafraîchir les équipements liés**" dans l'*onglet Equip
 
 Comme indiqué plus haut, il faut peut-être faire une réinitialisation Homekit de votre équipement, consultez la documentation du constructeur.  Parfois une réinitialisation complète n'est pas nécessaire, parfois oui, c'est le choix du constructeur.
 
->Le plugin ne voit pas mon équipement, j'ai regardé dans le log "hkControl" et je ne le vois pas même après relance du démon
+>Le plugin ne voit pas mon équipement
+
+Regardez dans le log "hkControl", s'il est bien sur le réseau, ce log vous donnera la raison du non-ajout.
+Si vous ne le voyez pas dans le log, relancez le démon, il va demander une ré-annonce de tous les équipements du réseau.
+Regardez à nouveau dans le log "hkControl".
+
+>Le plugin ne voit pas mon équipement, il n'est pas dans log "hkControl" et je ne le vois pas même après relance du démon
 
 Votre périphérique n'a peut-être pas été configuré sur le réseau, utilisez l'application du constructeur ou vérifiez la documentation de celui-ci pour voir comment le mettre sur le réseau. Ensuite, si vous avez du l'intégrer à Maison sur iOS, retirez-le, il deviendra découvrable pour le plugin !
 
 >Malgré tout je ne vois pas l'équipement !
 
-Les Accessoires et Ponts Homekit utilisent le protocole Bonjour de Apple pour s'annoncer sur le réseau (et donc au Plugin). Ce protocole n'est pas routable, il faut donc que votre jeedom soit sur le même réseau (non routé) que votre équipement.  Si c'est le cas, vérifiez vos équipements réseau, il faut activer tout ce qui touche à **mDNS**, **multicast DNS**, **IGMP Snooping** sur tout le trajet réseau entre votre équipement et jeedom.
+Les **Accessoires** et **Ponts** Homekit utilisent le protocole *Bonjour* de Apple pour s'annoncer sur le réseau (et donc au Plugin). Ce protocole n'est pas routable, il faut donc que votre jeedom soit sur le même réseau (non routé) que votre équipement.  Si c'est le cas, vérifiez vos équipements réseau, il faut activer tout ce qui touche à **mDNS**, **multicast DNS**, **IGMP Snooping** sur tout le trajet réseau entre votre équipement et jeedom.
 
 >J'ai un **Pont** qui contient plusieurs **Accessoires Pontés**, j'aimerais en supprimer un mais je n'ai pas de bouton "Supprimer".
 
 C'est logique, car si vous le supprimez dans le plugin uniquement, il va revenir au prochain rafraichissement !
 Pour le retirer, vous devez le retirer d'abord de votre **Pont** (voir documentation constructeur). Une fois que c'est effectué, cliquez sur le bouton **Rafraîchir les équipements liés** dans le **Pont** et l'**Accessoire Ponté** concerné s'affichera maintenant en barré dans la liste des Accessoires. Cliquez dessus, il sera maintenant possible de le supprimer.
+
+>J'ai une commande nommée "xxx (Manual Info)" et elle ne se met pas à jour toute seule
+
+C'est une commande pour laquelle le constructeur a choisi de ne pas la mettre à jour automatiquement mais uniquement si vous executez la commande "Rafraichir" (probablement pour économiser de la batterie ou pour une autre raison).
+
+>Pourquoi j'ai une commande On (Info), On (Allumer) et On (Eteindre) ?
+
+Car ces trois commandes sont liées à la caractéristique Homekit nommée "On" (oui... Apple aurait pu être plus original sur ce coup là ;)). Cette caractéristique Homekit renvoi un état "*On (Info)*" et il est possible de la modifier via deux actions : *On (Allumer)* et *On (Eteindre)*. J'aurais pu les renommer en Etat/Allumer/Eteindre mais cela peut porter à confusion dans certains cas (multi-prises, etc). Vous pouvez évidemment renommer les commandes comme vous le désirez afin de vous y retrouver au mieux dans votre popre logique.
+
+>Comment mettre à jour mon Equipement ? (Firmware / version logicielle interne / etc)
+
+Pour l'instant, il n'y a que les constructeurs qui peuvent mettre à jour leurs propres équipements.  Vous devez donc passer par l'application de celui-ci.
+Pour certains équipements (Eve, Koogeek etc), il sera peut-être nécessaire de désappairer l'équipement de Jeedom, appairer dans Maison ou l'app constructeur, mettre à jour, retirer de Maison ou l'app constructeur, et réappairer à Jeedom (pas de perte de l'équipement).
+Dans tous les cas, lancez un **Rafraîchir** pour charger les éventuelles nouveautés apportées par la mise à jour.
