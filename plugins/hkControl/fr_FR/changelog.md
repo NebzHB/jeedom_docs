@@ -8,7 +8,7 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
-Beta toujours en cours
+toStable demandé
 ----------------------
 
 * Version Initiale
