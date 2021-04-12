@@ -8,7 +8,7 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
-toStable demandé
+12-04-2021
 ----------------------
 
-* Version Initiale
+* Version Initiale en stable
