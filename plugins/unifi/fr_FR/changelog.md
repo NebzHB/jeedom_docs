@@ -5,6 +5,13 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 14-04-2021
+
+* Si le controleur ne réponds pas (par exemple pendant une sauvegarde) le message n'est plus une erreur mais juste un warning
+* Correction d'un warning si un equipement a été supprimé et que le démon n'a pas été relancé pour en prendre compte
+* Correction si certaines commandes n'existent pas
+* Correction ne pas mettre à jour un client si pas d'adresse mac
+
 # 13-02-2021
 
 * Mise à jour de la lib Unifi.
