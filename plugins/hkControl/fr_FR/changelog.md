@@ -8,6 +8,11 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+30-04-2021
+----------
+
+* Augmentation du timeout en cas d'action de 30sec à 60sec
+
 26-04-2021
 ----------
 
