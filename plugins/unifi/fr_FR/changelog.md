@@ -23,6 +23,7 @@ description: Changelog du plugin Unifi
 * Affichage des valeurs en temps réel directement dans la liste des commandes. (si l'équipement est activé !)
 * Page Santé complètement revue et complêtée.
 * Description Market plus précise et complète.
+
 Modifications coté Dev :
 * Mécanisme de vérification du code source automatique dans github (erreurs, optimisations)
 * Refactoring complet
