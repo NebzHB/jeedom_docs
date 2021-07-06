@@ -7,22 +7,26 @@ description: Changelog du plugin Unifi
 
 # Nouvelle version en beta - sortira une fois testée
 
-* Retrait du démon PHP qui mangeait trop de ressource.
+* Retrait du démon PHP qui mangeait trop de ressources.
 * Nouveau démon NodeJS en temps réel (websocket) avec le controleur. (Nécessite de ne pas avoir été désactivé dans l'interface Unifi (activé par défaut))
 * Nécessite Debian Stretch et plus récent, plus compatible avec Debian Jessie, Jeedom Mini+, Raspberry Pi 1 & 2, Raspberry Zéro (armv6) et i386 32bit.
-* Bouton de réinstallation de NodeJS en cas de problème
-* Wlan et Site sont mis à jour régulièrement car ils ne font malheureusement pas partie des messages en temps réel que le controleur envoi (60sec par def)
-* Nouvelle installation des dépendances (pour NodeJS + plus claire)
+* Bouton de réinstallation de NodeJS en cas de problème.
+* Wlan et Site sont mis à jour régulièrement car ils ne font malheureusement pas partie des messages en temps réel que le controleur envoi (60sec par def).
+* Nouvelle installation des dépendances (pour NodeJS + plus claire).
 * Présence en temps réel (comme les alertes dans le controleur !) beaucoup plus responsive !!!
-* Possibilité d'ignorer les mises à jour de la Satisfaction, Last_seen et Uptime sur les clients wifi (pour avoir moins de messages/mises à jour/charge)
-* Plus d'informations et d'aides lors de la configuration du plugin (cherchez les (?) et les tooltips quand vous survollez certains éléments)
-* Petites corrections à gauche et à droite
-* En cas de déconnexion du controleur (mise à jour ou problème), le démon s'arrette, on se base sur le mecanisme de jeedom pour le relancer (5min après par défaut)
-* Création des commandes des clients + site + point d'access + passerelles (ugw et udm) en temps réel, il n'y a plus que les switchs qui sont en décallés 90sec (car grand nombre de commandes)
-* Mises à jour d'icones pour FontAwesome
-* Affichage des valeurs en temps réel directement dans la liste des commandes
-* Page Santé complètement revue et complêtée
-* Description Market plus précise et complète
+* Possibilité d'ignorer les mises à jour de la Satisfaction, Last_seen et Uptime sur les clients wifi (pour avoir moins de messages/mises à jour/charge).
+* Plus d'informations et d'aides lors de la configuration du plugin (cherchez les (?) et les tooltips quand vous survollez certains éléments).
+* Petites corrections à gauche et à droite.
+* En cas de déconnexion du controleur (mise à jour ou problème), le démon s'arrette, on se base sur le mecanisme de jeedom pour le relancer (5min après par défaut).
+* Création des commandes des clients + site + point d'access + passerelles (ugw et udm) en temps réel, il n'y a plus que les switchs qui sont en décallés 90sec (car grand nombre de commandes).
+* Mises à jour d'icones pour FontAwesome.
+* Affichage des valeurs en temps réel directement dans la liste des commandes. (si l'équipement est activé !)
+* Page Santé complètement revue et complêtée.
+* Description Market plus précise et complète.
+Modifications coté Dev :
+* Mécanisme de vérification du code source automatique dans github (erreurs, optimisations)
+* Refactoring complet
+* Réécriture d'une grosse partie du code + optimisations
 
 # 14-04-2021
 
