@@ -5,7 +5,7 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
-# Nouvelle version en beta - sortira une fois testée
+# 15-07-2021
 
 * Retrait du démon PHP qui mangeait trop de ressources.
 * Nouveau démon NodeJS en temps réel (websocket) avec le controleur. (Nécessite de ne pas avoir été désactivé dans l'interface Unifi (activé par défaut))
