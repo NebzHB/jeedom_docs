@@ -5,6 +5,11 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 17-07-2021
+
+* Fix de message d'erreurs []- (debug)
+* Fix de notices php
+
 # 15-07-2021
 
 * Retrait du démon PHP qui mangeait trop de ressources.
