@@ -5,6 +5,11 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 20-07-2021
+
+* Fix problème de mot de passe contenant $ suivit un chiffre
+* Fix commande controllerHasUpdate sur le site
+
 # 17-07-2021
 
 * Fix de message d'erreurs []- (debug)
