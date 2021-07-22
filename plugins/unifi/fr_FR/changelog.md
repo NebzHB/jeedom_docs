@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 22-07-2021
+
+* Gestion des présences pour les clients cablés
+
 # 20-07-2021
 
 * Fix problème de mot de passe contenant $ suivit d'un chiffre
