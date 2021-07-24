@@ -5,9 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
-# 22-07-2021
+# 24-07-2021
 
 * Gestion des présences pour les clients cablés
+* Ajout commandes température et stockage pour les UDM si elles existent
 
 # 20-07-2021
 
