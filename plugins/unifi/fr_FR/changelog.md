@@ -5,6 +5,11 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 05-08-2021
+
+* Changement du port du démon qui est déjà pris par le plugin siapro
+* Fix Désactivation WLAN
+
 # 24-07-2021
 
 * Gestion des présences pour les clients cablés
