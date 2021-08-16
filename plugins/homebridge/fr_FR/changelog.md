@@ -17,7 +17,6 @@ A venir prochainement (En Beta)
 * Homebridge 1.3.4 (en utilisant 'bonjour-hap' à la place de 'ciao' tant que 'ciao' n'est pas au point)
 * Support d'un nouveau Type générique spécifique à homebridge "Info/Volet Etat Fermeture (homebridge)" qui gère les Volets qui ont un pourcentage de fermeture (100% = fermé / 0% = ouvert) à la place d'ouverture
 * QRcode plus rapide à s'afficher (mise en cache)
-* Gestion des thermostats à deux consignes (une Chaude et une Froide) : Nouveau type générique "Thermostat HC"
 * Simplification du code si jeedom >3.2.1 (ce qui sera toujours le cas puisque le plugin requière 3.3.24)
 * Gestion multi-interfaces réseau, si c'est le cas (autre que tun), la configuration du plugin laissera le choix de selectionner l'interface sur laquelle publier le mDNS de homebridge (attention aux boucles !!! ne doit être utilisé que si le système fait le pont entre deux réseaux !!!)
 * Fix petit bug d'affichage thermostats à la config des modes
