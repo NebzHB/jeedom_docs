@@ -15,7 +15,7 @@ A venir prochainement (En Beta)
 17-08-2021
 ----------
 * Homebridge 1.3.4 (en utilisant 'bonjour-hap' à la place de 'ciao' tant que 'ciao' n'est pas au point)
-* Homebridge-gsh 2.0.1
+* Homebridge-gsh 2.1.0
 * Support d'un nouveau Type générique spécifique à homebridge "Info/Volet Etat Fermeture (homebridge)" qui gère les Volets qui ont un pourcentage de fermeture (100% = fermé / 0% = ouvert) à la place d'ouverture
 * QRcode plus rapide à s'afficher (mise en cache)
 * Simplification du code si jeedom >3.2.1 (ce qui sera toujours le cas puisque le plugin requière 3.3.24)
