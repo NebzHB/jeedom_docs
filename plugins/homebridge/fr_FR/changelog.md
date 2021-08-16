@@ -17,6 +17,7 @@ A venir prochainement (En Beta)
 * Eclairage adaptatif : tests en cours (car pas possible sur les ampoules qui s'allument lors du changement de la couleur de temperature)
 * Gestion multi-interfaces réseau, si c'est le cas (autre que tun), la configuration du plugin laissera le choix de selectionner l'interface sur laquelle publier le mDNS de homebridge (attention aux boucles !!! ne doit être utilisé que si le système fait le pont entre deux réseaux !!!)
 * Fix petit bug d'affichage thermostats à la config des modes
+* Meilleur affichage en cas d'erreur de code pin dans le plugin
 
 16-03-2021
 ----------
