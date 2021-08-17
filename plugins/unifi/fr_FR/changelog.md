@@ -5,7 +5,7 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
-# 17-08-2021
+# 18-08-2021
 
 * Compatibilité Debian 11 (utilisation de node à la place de nodejs)
 
