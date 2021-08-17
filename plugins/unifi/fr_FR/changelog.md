@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 17-08-2021
+
+* Compatibilité Debian 11 (utilisation de node à la place de nodejs)
+
 # 05-08-2021
 
 * Changement du port du démon qui est déjà pris par le plugin siapro
