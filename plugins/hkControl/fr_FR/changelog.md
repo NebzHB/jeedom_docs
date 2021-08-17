@@ -8,6 +8,11 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+18-08-2021
+----------
+
+* Compatibilité Debian 11 (utilisation de node à la place de nodejs)
+
 30-04-2021
 ----------
 
