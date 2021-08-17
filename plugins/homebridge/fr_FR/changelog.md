@@ -22,7 +22,7 @@ A venir prochainement (En Beta)
 * Gestion multi-interfaces réseau, si c'est le cas (autre que tun), la configuration du plugin laissera le choix de selectionner l'interface sur laquelle publier le mDNS de homebridge (attention aux boucles !!! ne doit être utilisé que si le système fait le pont entre deux réseaux !!!)
 * Fix petit bug d'affichage thermostats à la config des modes
 * Meilleur affichage en cas d'erreur de code pin dans le plugin
-* Augmentation du délais de 3 secondes lors du check de github
+* Augmentation du délais de 3 secondes à 7 secondes lors du check de github
 
 16-03-2021
 ----------
