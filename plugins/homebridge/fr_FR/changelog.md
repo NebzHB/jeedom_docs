@@ -11,6 +11,9 @@ Changelog
 A venir prochainement (En Beta)
 -------------------------------
 * Eclairage adaptatif : tests en cours (car pas possible sur les ampoules qui s'allument lors du changement de la couleur de temperature)
+
+18-08-2021
+----------
 * Compatibilité Debian 11 (utilisation de node à la place de nodejs)
 
 17-08-2021
