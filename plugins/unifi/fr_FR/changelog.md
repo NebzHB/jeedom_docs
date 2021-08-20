@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 20-08-2021
+
+* Quitte le démon en cas d'erreur lors du startListening (si le controleur n'est pas dispo). Le mécanisme de jeedom le relancera dans les 5 min.
+
 # 18-08-2021
 
 * Compatibilité Debian 11 (utilisation de node à la place de nodejs)
