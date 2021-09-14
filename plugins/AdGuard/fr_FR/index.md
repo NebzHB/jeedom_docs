@@ -250,6 +250,6 @@ Identifiants
 
 > **Attention, s'il existe sur un autre client, il faut d'abord le retirer de ce client ! AdGuard n'autorise pas deux clients a partager les mêmes identifiants (logique ;))**
 
-**Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Identifiants) :
+**Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Identifiant) :
 
 ![image](https://user-images.githubusercontent.com/28622481/133277119-3de65a3b-2868-4db1-b136-ca9c498270d3.png)
