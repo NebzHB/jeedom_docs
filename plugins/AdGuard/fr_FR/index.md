@@ -53,9 +53,9 @@ commandes.
 **Commandes Equipement AdGuard**
 ================================
 - Rafraichir : Permet de rafraichir manuellement l'équipement en plus de l'auto-actualisation
-- Online : Binaire indiquant si AdGuard réponds correctement aux demandes
+- Online : Binaire indiquant si AdGuard répond correctement aux demandes
 - Update AdGuard Dispo : Binaire indiquant si une mise à jour est disponnible
-- Update AdGuard : Action permettant de mettre à jour AdGuard (si une mise à jour est disponnible)
+- Update AdGuard : Action permettant de mettre à jour AdGuard (si une mise à jour est disponible)
 
 Protection Globale
 -----------------------
@@ -121,11 +121,11 @@ Services Globaux
 
 Internet Bloqué via DNS
 -----------------------
-- Statut Internet Bloqué via DNS : Binaire indiquand si on a bloqué internet via le DNS
+- Statut Internet Bloqué via DNS : Binaire indiquant si on a bloqué internet via le DNS
 - Bloquer tout internet via DNS : Action permettant de bloquer internet via le DNS
 - Débloquer tout internet via DNS : Action permettant de débloquer internet via le DNS
 
-**Correspondance AdGuard** (Filtres > Règles de filtrage personnalisées > ajout de la rêgle : `||*^$important` en premier) : 
+**Correspondance AdGuard** (Filtres > Rêgles de filtrage personnalisées > ajout de la rêgle : `||*^$important` en premier) : 
 
 ![image](https://user-images.githubusercontent.com/28622481/133210452-4ebbc8b0-836d-43a4-9db9-e01c2534679e.png)
 
@@ -136,7 +136,7 @@ Rêgle filtrage personnalisée
 
 Voir [ici](https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists){:target="_blank" rel="noopener"}
 
-**Correspondance AdGuard** (Filtres > Règles de filtrage personnalisées > ajout de la rêgle donnée en premier)
+**Correspondance AdGuard** (Filtres > Rêgles de filtrage personnalisées > ajout de la rêgle donnée en premier)
 
 Statistiques
 -----------------------
