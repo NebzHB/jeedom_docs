@@ -156,3 +156,80 @@ Statistiques
 
 ![image](https://user-images.githubusercontent.com/28622481/133211276-6c24d23c-6647-4b5f-a26c-e5834bd1a657.png)
 
+**Commandes Equipement Client**
+================================
+
+Utiliser les Paramètres Généraux
+--------------------------------
+- **Statut Utiliser les Paramètres Généraux** : Binaire indiquant si on a activé Utiliser les Paramètres Généraux
+- **Activer Utiliser les Paramètres Généraux** : Action permettant d'activer Utiliser les Paramètres Généraux
+- **Désactiver Utiliser les Paramètres Généraux** : Action permettant de désactiver Utiliser les Paramètres Généraux
+
+**Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Paramètres > Utiliser les paramètres généraux (1)) :
+
+![image](https://user-images.githubusercontent.com/28622481/133217292-24f23ed8-8de2-492f-bd83-e9b90715de17.png)
+
+Filtrage
+--------------------------------
+- **Statut Filtrage** : Binaire indiquant l'état du filtrage
+- **Activer le Filtrage** : Action permettant d'activer le filtrage
+- **Désactiver le Filtrage** : Action permettant de désactiver le filtrage
+
+**Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Paramètres > Bloquer les domaines à l'aide des filtres et fichiers hosts (2))
+
+Sécurité de navigation
+-----------------------
+- **Statut Sécurité de navigation** : Binaire indiquant l'état de la Sécurité de navigation
+- **Activer la Sécurité de navigation** : Action permettant d'activer la Sécurité de navigation
+- **Désactiver la Sécurité de navigation** : Action permettant de désactiver la Sécurité de navigation
+
+**Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Paramètres > Utiliser le service Sécurité de navigation d'AdGuard (3))
+
+Contrôle Parental
+-----------------------
+- **Statut Contrôle Parental** : Binaire indiquant l'état de le Contrôle Parental
+- **Activer le Contrôle Parental** : Action permettant d'activer le Contrôle Parental
+- **Désactiver le Contrôle Parental** : Action permettant de désactiver le Contrôle Parental
+
+**Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Paramètres > Utiliser le contrôle parental d'AdGuard (4))
+
+Recherche Sécurisée
+-----------------------
+- **Statut Recherche Sécurisée** : Binaire indiquant l'état de la Recherche Sécurisée
+- **Activer la Recherche Sécurisée** : Action permettant d'activer la Recherche Sécurisée
+- **Désactiver la Recherche Sécurisée** : Action permettant de désactiver la Recherche Sécurisée
+
+**Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Paramètres > Renforcer la recherche sécurisée (5))
+
+Utiliser les services bloqués globlaux
+--------------------------------
+- **Statut Utiliser les services bloqués globlaux** : Binaire indiquant si on a activé Utiliser les services bloqués globlaux
+- **Activer Utiliser les services bloqués globlaux** : Action permettant d'activer Utiliser les services bloqués globlaux
+- **Désactiver Utiliser les services bloqués globlaux** : Action permettant de désactiver Utiliser les services bloqués globlaux
+
+**Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Bloquer des services spécifiques > Utiliser les services bloqués globaux (1)):
+
+![image](https://user-images.githubusercontent.com/28622481/133218452-cf994ad7-bf63-4dbd-b727-ff64339b7b31.png)
+
+Services spécifiques
+-----------------------
+- **Services Bloqués** : Chaine indiquant les services bloqués spécifiquement pour ce client
+- **Bloquer un service** : Action permettant de bloquer un service de la liste spécifiquement pour ce client
+- **Débloquer un service** : Action permettant de débloquer un service de la liste spécifiquement pour ce client
+
+**Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Bloquer des services spécifiques > les services (2))
+
+- **Bloquer tous les services** : Action permettant de bloquer tous les services de la liste spécifiquement pour ce client
+- **Débloquer tous les services** : Action permettant de débloquer tous les services de la liste spécifiquement pour ce client
+
+**Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Bloquer des services spécifiques > Tout bloquer/Tout débloquer (3))
+
+Internet Bloqué via DNS
+-----------------------
+- **Statut Internet Bloqué via DNS** : Binaire indiquant si on a bloqué internet via le DNS pour ce client
+- **Bloquer tout internet via DNS** : Action permettant de bloquer internet via le DNS pour ce client
+- **Débloquer tout internet via DNS** : Action permettant de débloquer internet via le DNS pour ce client
+
+**Correspondance AdGuard** (Filtres > Règles de filtrage personnalisées > ajout de la règle : `||*^\$client='NomClient',important` en premier)
+
+![image](https://user-images.githubusercontent.com/28622481/133219180-5d5c3228-5029-4d81-b24f-1f853134dfe7.png)
