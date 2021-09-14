@@ -139,8 +139,8 @@ Internet Bloqué via DNS
 
 Règle filtrage personnalisée
 -----------------------
-- **Ajouter une règle filtrage personnalisée** : Champ permettant d'ajouter une règle de filtrage personnalisée en premier (orthographe parfaite)
-- **Retirer une règle filtrage personnalisée** : Champ permettant de retirer une règle de filtrage personnalisée (orthographe parfaite)
+- **Ajouter une règle filtrage personnalisée** : Champ permettant d'ajouter une règle de filtrage personnalisée en premier (orthographe parfaite, sans guillemets autour)
+- **Retirer une règle filtrage personnalisée** : Champ permettant de retirer une règle de filtrage personnalisée (orthographe parfaite, sans guillemets autour)
 
 Voir [ici](https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists){:target="_blank" rel="noopener"}
 
@@ -245,8 +245,8 @@ Internet Bloqué via DNS
 Identifiants
 -----------------------
 - **Statut Identifiants** : Chaine contenant les identifiants actuels du client
-- **Ajouter un identifiant** : Action permettant d'ajouter un identifiant au client
-- **Retirer un identifiant** : Action permettant de retirer un identifiant au client
+- **Ajouter un identifiant** : Action permettant d'ajouter un identifiant au client (sans guillemets autour !!)
+- **Retirer un identifiant** : Action permettant de retirer un identifiant au client (sans guillemets autour !!)
 
 > **Attention, s'il existe sur un autre client, il faut d'abord le retirer de ce client ! AdGuard n'autorise pas deux clients a partager les mêmes identifiants (logique ;))**
 
