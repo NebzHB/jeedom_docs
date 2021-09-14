@@ -134,7 +134,7 @@ Rêgle filtrage personnalisée
 - Ajouter une rêgle filtrage personnalisée : Champ permettant d'ajouter une rêgle de filtrage personnalisée en premier (orthographe parfaite)
 - Retirer une rêgle filtrage personnalisée : Champ permettant de retirer une rêgle de filtrage personnalisée (orthographe parfaite)
 
-Voir https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists
+Voir [ici]https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists{:target="_blank" rel="noopener"}
 
 Correspondance AdGuard (Filtres > Règles de filtrage personnalisées > ajout de la rêgle donnée en premier)
 
