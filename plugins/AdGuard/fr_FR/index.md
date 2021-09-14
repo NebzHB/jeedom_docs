@@ -244,7 +244,7 @@ Internet Bloqué via DNS
 
 Identifiants
 -----------------------
-- **Statut Identifiants** : Chaine contenant les identifiants actuels du client
+- **Identifiant(s)** : Chaine contenant les identifiants actuels du client
 - **Ajouter un identifiant** : Action permettant d'ajouter un identifiant au client (sans guillemets autour !!)
 - **Retirer un identifiant** : Action permettant de retirer un identifiant au client (sans guillemets autour !!)
 
