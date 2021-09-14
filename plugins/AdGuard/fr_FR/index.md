@@ -230,6 +230,7 @@ Internet Bloqué via DNS
 - **Bloquer tout internet via DNS** : Action permettant de bloquer internet via le DNS pour ce client
 - **Débloquer tout internet via DNS** : Action permettant de débloquer internet via le DNS pour ce client
 
-**Correspondance AdGuard** (Filtres > Règles de filtrage personnalisées > ajout de la règle : `||*^\$client='NomClient',important` en premier)
+**Correspondance AdGuard** (Filtres > Règles de filtrage personnalisées > ajout de la règle : `||*^$client='NomClient',important` en premier)
 
-![image](https://user-images.githubusercontent.com/28622481/133219180-5d5c3228-5029-4d81-b24f-1f853134dfe7.png)
+![image](https://user-images.githubusercontent.com/28622481/133222436-9e17578a-93e2-4be2-a96c-957131d5686a.png)
+
