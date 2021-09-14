@@ -97,7 +97,7 @@ Sécurité de navigation Globale
 
 Contrôle Parental Global
 -----------------------
-- **Statut Contrôle Parental Global** : Binaire indiquant l'état de le Contrôle Parental Global
+- **Statut Contrôle Parental Global** : Binaire indiquant l'état du Contrôle Parental Global
 - **Activer le Contrôle Parental Global** : Action permettant d'activer le Contrôle Parental Global
 - **Désactiver le Contrôle Parental Global** : Action permettant de désactiver le Contrôle Parental Global
 
