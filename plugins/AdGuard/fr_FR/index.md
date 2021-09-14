@@ -63,7 +63,7 @@ Protection Globale
 - Activer la protection : Action permettant d'activer la protection globale
 - Désactiver la protection : Action permettant de désactiver la protection globale
 
-Correspondance AdGuard :
+**Correspondance AdGuard** :
 
 ![image](https://user-images.githubusercontent.com/28622481/133206289-810d7a4d-9705-4923-9831-e8e78100f05b.png)
 
@@ -73,7 +73,7 @@ Filtrage Global
 - Activer le Filtrage Global : Action permettant d'activer le filtrage global
 - Désactiver le Filtrage Global : Action permettant de désactiver le filtrage global
 
-Correspondance AdGuard (Paramètres > Paramètres généraux > Bloquer les domaines à l'aide des filtres et fichiers hosts) :
+**Correspondance AdGuard** (Paramètres > Paramètres généraux > Bloquer les domaines à l'aide des filtres et fichiers hosts) :
 
 ![image](https://user-images.githubusercontent.com/28622481/133206778-015af02d-8039-4c78-9732-e048c41cfa21.png)
 
@@ -83,7 +83,7 @@ Sécurité de navigation Globale
 - Activer la Sécurité de navigation Globale : Action permettant d'activer la Sécurité de navigation Globale
 - Désactiver la Sécurité de navigation Globale : Action permettant de désactiver la Sécurité de navigation Globale
 
-Correspondance AdGuard (Paramètres > Paramètres généraux > Utiliser le service Sécurité de navigation d'AdGuard) :
+**Correspondance AdGuard** (Paramètres > Paramètres généraux > Utiliser le service Sécurité de navigation d'AdGuard) :
 
 ![image](https://user-images.githubusercontent.com/28622481/133207227-8f9aa942-54c6-4048-8fa1-3711f4ca082c.png)
 
@@ -93,7 +93,7 @@ Contrôle Parental Global
 - Activer le Contrôle Parental Global : Action permettant d'activer le Contrôle Parental Global
 - Désactiver le Contrôle Parental Global : Action permettant de désactiver le Contrôle Parental Global
 
-Correspondance AdGuard (Paramètres > Paramètres généraux > Utiliser le contrôle parental d'AdGuard) :
+**Correspondance AdGuard** (Paramètres > Paramètres généraux > Utiliser le contrôle parental d'AdGuard) :
 
 ![image](https://user-images.githubusercontent.com/28622481/133207419-bac0d204-c4fc-414d-b411-c7ec072ab514.png)
 
@@ -103,7 +103,7 @@ Recherche Sécurisée Globale
 - Activer la Recherche Sécurisée Globale : Action permettant d'activer la Recherche Sécurisée Globale
 - Désactiver la Recherche Sécurisée Globale : Action permettant de désactiver la Recherche Sécurisée Globale
 
-Correspondance AdGuard (Paramètres > Paramètres généraux > Renforcer la recherche sécurisée) :
+**Correspondance AdGuard** (Paramètres > Paramètres généraux > Renforcer la recherche sécurisée) :
 
 ![image](https://user-images.githubusercontent.com/28622481/133207585-41110514-75f3-4a13-8f73-f3aca3c93820.png)
 
@@ -115,7 +115,7 @@ Services Globaux
 - Bloquer tous les services : Action permettant de bloquer tous les services de la liste
 - Débloquer tous les services : Action permettant de débloquer tous les services de la liste
 
-Correspondance AdGuard (Filtres > Services bloqués) : 
+**Correspondance AdGuard** (Filtres > Services bloqués) : 
 
 ![image](https://user-images.githubusercontent.com/28622481/133207917-e813a4d1-42d2-491c-982a-ebabf6510383.png)
 
@@ -125,7 +125,7 @@ Internet Bloqué via DNS
 - Bloquer tout internet via DNS : Action permettant de bloquer internet via le DNS
 - Débloquer tout internet via DNS : Action permettant de débloquer internet via le DNS
 
-Correspondance AdGuard (Filtres > Règles de filtrage personnalisées > ajout de la rêgle : `||*^$important` en premier) : 
+**Correspondance AdGuard** (Filtres > Règles de filtrage personnalisées > ajout de la rêgle : `||*^$important` en premier) : 
 
 ![image](https://user-images.githubusercontent.com/28622481/133210452-4ebbc8b0-836d-43a4-9db9-e01c2534679e.png)
 
@@ -136,7 +136,7 @@ Rêgle filtrage personnalisée
 
 Voir [ici](https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists){:target="_blank" rel="noopener"}
 
-Correspondance AdGuard (Filtres > Règles de filtrage personnalisées > ajout de la rêgle donnée en premier)
+**Correspondance AdGuard** (Filtres > Règles de filtrage personnalisées > ajout de la rêgle donnée en premier)
 
 Statistiques
 -----------------------
@@ -148,11 +148,11 @@ Statistiques
 - Sites à contenu adulte bloqués : indique le nombre de sites à contenu adulte bloqués
 - Temps moyen de traitement : indique le temps moyen (en millisecondes) de traitement d'une requête DNS
 
-Correspondance AdGuard (Paramètres > Paramètres généraux > Configuration des statistiques > bouton Effacer les statistiques) :
+**Correspondance AdGuard** (Paramètres > Paramètres généraux > Configuration des statistiques > bouton Effacer les statistiques) :
 
 ![image](https://user-images.githubusercontent.com/28622481/133211167-470e9959-bda7-4810-a02d-8d26363bb981.png)
 
-et (Tableau de bord > Statistiques générales) :
+**et** (Tableau de bord > Statistiques générales) :
 
 ![image](https://user-images.githubusercontent.com/28622481/133211276-6c24d23c-6647-4b5f-a26c-e5834bd1a657.png)
 
