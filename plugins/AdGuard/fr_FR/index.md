@@ -52,16 +52,16 @@ commandes.
 
 **Commandes Equipement AdGuard**
 ================================
-- Rafraichir : Permet de rafraichir manuellement l'équipement en plus de l'auto-actualisation
-- Online : Binaire indiquant si AdGuard répond correctement aux demandes
-- Update AdGuard Dispo : Binaire indiquant si une mise à jour est disponnible
-- Update AdGuard : Action permettant de mettre à jour AdGuard (si une mise à jour est disponible)
+- **Rafraichir** : Permet de rafraichir manuellement l'équipement en plus de l'auto-actualisation
+- **Online** : Binaire indiquant si AdGuard répond correctement aux demandes
+- **Update AdGuard Dispo** : Binaire indiquant si une mise à jour est disponnible
+- **Update AdGuard** : Action permettant de mettre à jour AdGuard (si une mise à jour est disponible)
 
 Protection Globale
 -----------------------
-- Statut protection : Binaire indiquant l'état de la protection globale
-- Activer la protection : Action permettant d'activer la protection globale
-- Désactiver la protection : Action permettant de désactiver la protection globale
+- **Statut protection** : Binaire indiquant l'état de la protection globale
+- **Activer la protection** : Action permettant d'activer la protection globale
+- **Désactiver la protection** : Action permettant de désactiver la protection globale
 
 **Correspondance AdGuard** :
 
@@ -69,9 +69,9 @@ Protection Globale
 
 Filtrage Global
 -----------------------
-- Statut Filtrage Global : Binaire indiquant l'état du filtrage global
-- Activer le Filtrage Global : Action permettant d'activer le filtrage global
-- Désactiver le Filtrage Global : Action permettant de désactiver le filtrage global
+- **Statut Filtrage Global** : Binaire indiquant l'état du filtrage global
+- **Activer le Filtrage Global** : Action permettant d'activer le filtrage global
+- **Désactiver le Filtrage Global** : Action permettant de désactiver le filtrage global
 
 **Correspondance AdGuard** (Paramètres > Paramètres généraux > Bloquer les domaines à l'aide des filtres et fichiers hosts) :
 
@@ -79,9 +79,9 @@ Filtrage Global
 
 Sécurité de navigation Globale
 -----------------------
-- Statut Sécurité de navigation Globale : Binaire indiquant l'état de la Sécurité de navigation Globale
-- Activer la Sécurité de navigation Globale : Action permettant d'activer la Sécurité de navigation Globale
-- Désactiver la Sécurité de navigation Globale : Action permettant de désactiver la Sécurité de navigation Globale
+- **Statut Sécurité de navigation Globale** : Binaire indiquant l'état de la Sécurité de navigation Globale
+- **Activer la Sécurité de navigation Globale** : Action permettant d'activer la Sécurité de navigation Globale
+- **Désactiver la Sécurité de navigation Globale** : Action permettant de désactiver la Sécurité de navigation Globale
 
 **Correspondance AdGuard** (Paramètres > Paramètres généraux > Utiliser le service Sécurité de navigation d'AdGuard) :
 
@@ -89,9 +89,9 @@ Sécurité de navigation Globale
 
 Contrôle Parental Global
 -----------------------
-- Statut Contrôle Parental Global : Binaire indiquant l'état de le Contrôle Parental Global
-- Activer le Contrôle Parental Global : Action permettant d'activer le Contrôle Parental Global
-- Désactiver le Contrôle Parental Global : Action permettant de désactiver le Contrôle Parental Global
+- **Statut Contrôle Parental Global** : Binaire indiquant l'état de le Contrôle Parental Global
+- **Activer le Contrôle Parental Global** : Action permettant d'activer le Contrôle Parental Global
+- **Désactiver le Contrôle Parental Global** : Action permettant de désactiver le Contrôle Parental Global
 
 **Correspondance AdGuard** (Paramètres > Paramètres généraux > Utiliser le contrôle parental d'AdGuard) :
 
@@ -99,9 +99,9 @@ Contrôle Parental Global
 
 Recherche Sécurisée Globale
 -----------------------
-- Statut Recherche Sécurisée Globale : Binaire indiquant l'état de la Recherche Sécurisée Globale
-- Activer la Recherche Sécurisée Globale : Action permettant d'activer la Recherche Sécurisée Globale
-- Désactiver la Recherche Sécurisée Globale : Action permettant de désactiver la Recherche Sécurisée Globale
+- **Statut Recherche Sécurisée Globale** : Binaire indiquant l'état de la Recherche Sécurisée Globale
+- **Activer la Recherche Sécurisée Globale** : Action permettant d'activer la Recherche Sécurisée Globale
+- **Désactiver la Recherche Sécurisée Globale** : Action permettant de désactiver la Recherche Sécurisée Globale
 
 **Correspondance AdGuard** (Paramètres > Paramètres généraux > Renforcer la recherche sécurisée) :
 
@@ -109,11 +109,11 @@ Recherche Sécurisée Globale
 
 Services Globaux
 -----------------------
-- Services Bloqués : Chaine indiquant les services bloqués globalement
-- Bloquer un service : Action permettant de bloquer un service de la liste
-- Débloquer un service : Action permettant de débloquer un service de la liste
-- Bloquer tous les services : Action permettant de bloquer tous les services de la liste
-- Débloquer tous les services : Action permettant de débloquer tous les services de la liste
+- **Services Bloqués** : Chaine indiquant les services bloqués globalement
+- **Bloquer un service** : Action permettant de bloquer un service de la liste
+- **Débloquer un service** : Action permettant de débloquer un service de la liste
+- **Bloquer tous les services** : Action permettant de bloquer tous les services de la liste
+- **Débloquer tous les services** : Action permettant de débloquer tous les services de la liste
 
 **Correspondance AdGuard** (Filtres > Services bloqués) : 
 
@@ -121,32 +121,32 @@ Services Globaux
 
 Internet Bloqué via DNS
 -----------------------
-- Statut Internet Bloqué via DNS : Binaire indiquant si on a bloqué internet via le DNS
-- Bloquer tout internet via DNS : Action permettant de bloquer internet via le DNS
-- Débloquer tout internet via DNS : Action permettant de débloquer internet via le DNS
+- **Statut Internet Bloqué via DNS** : Binaire indiquant si on a bloqué internet via le DNS
+- **Bloquer tout internet via DNS** : Action permettant de bloquer internet via le DNS
+- **Débloquer tout internet via DNS** : Action permettant de débloquer internet via le DNS
 
-**Correspondance AdGuard** (Filtres > Rêgles de filtrage personnalisées > ajout de la rêgle : `||*^$important` en premier) : 
+**Correspondance AdGuard** (Filtres > Règles de filtrage personnalisées > ajout de la règle : `||*^$important` en premier) : 
 
 ![image](https://user-images.githubusercontent.com/28622481/133210452-4ebbc8b0-836d-43a4-9db9-e01c2534679e.png)
 
-Rêgle filtrage personnalisée
+Règle filtrage personnalisée
 -----------------------
-- Ajouter une rêgle filtrage personnalisée : Champ permettant d'ajouter une rêgle de filtrage personnalisée en premier (orthographe parfaite)
-- Retirer une rêgle filtrage personnalisée : Champ permettant de retirer une rêgle de filtrage personnalisée (orthographe parfaite)
+- **Ajouter une règle filtrage personnalisée** : Champ permettant d'ajouter une règle de filtrage personnalisée en premier (orthographe parfaite)
+- **Retirer une règle filtrage personnalisée** : Champ permettant de retirer une règle de filtrage personnalisée (orthographe parfaite)
 
 Voir [ici](https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists){:target="_blank" rel="noopener"}
 
-**Correspondance AdGuard** (Filtres > Rêgles de filtrage personnalisées > ajout de la rêgle donnée en premier)
+**Correspondance AdGuard** (Filtres > Règles de filtrage personnalisées > ajout de la règle donnée en premier)
 
 Statistiques
 -----------------------
-- Réinitialiser Statistiques : Permet de remettre à zéro les statistiques
-- Requêtes DNS : indique le nombre de requêtes DNS traitées au cours des 24 dernières heures
-- Bloqués par Filtres : indique le nombre de requêtes DNS bloquées par les filtres adblock et les listes de blocage des hôtes
-- Tentatives de malware-hameçonnage bloquées : indique le nombre de requêtes DNS bloquées par le module Sécurité de navigation d'AdGuard
-- Recherches sécurisées forcées : indique le nombre de requêtes DNS faites avec la Recherche securisée
-- Sites à contenu adulte bloqués : indique le nombre de sites à contenu adulte bloqués
-- Temps moyen de traitement : indique le temps moyen (en millisecondes) de traitement d'une requête DNS
+- **Réinitialiser Statistiques** : Permet de remettre à zéro les statistiques
+- **Requêtes DNS** : indique le nombre de requêtes DNS traitées au cours des 24 dernières heures
+- **Bloqués par Filtres** : indique le nombre de requêtes DNS bloquées par les filtres adblock et les listes de blocage des hôtes
+- **Tentatives de malware-hameçonnage bloquées** : indique le nombre de requêtes DNS bloquées par le module Sécurité de navigation d'AdGuard
+- **Recherches sécurisées forcées** : indique le nombre de requêtes DNS faites avec la Recherche securisée
+- **Sites à contenu adulte bloqués** : indique le nombre de sites à contenu adulte bloqués
+- **Temps moyen de traitement** : indique le temps moyen (en millisecondes) de traitement d'une requête DNS
 
 **Correspondance AdGuard** (Paramètres > Paramètres généraux > Configuration des statistiques > bouton Effacer les statistiques) :
 
