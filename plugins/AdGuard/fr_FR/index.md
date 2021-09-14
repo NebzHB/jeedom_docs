@@ -1,8 +1,8 @@
 ---
 layout: default
 lang: fr_FR
-title: Plugin AdGuard
-description: Documentation du plugin AdGuard
+title: Plugin AdGuard Home
+description: Documentation du plugin AdGuard Home
 ---
 
 Ce plugin permet de monitorer et exécuter quelques actions sur vos AdGuard Home.
