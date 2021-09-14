@@ -245,10 +245,10 @@ Internet Bloqué via DNS
 Identifiants
 -----------------------
 - **Statut Identifiants** : Chaine contenant les identifiants actuels du client
-- **Ajouter un identifiant** : Action permettant d'ajouter un identifiant au client (**attention, s'il existe sur un autre client, il faut d'abord le retirer de ce client !**)
+- **Ajouter un identifiant** : Action permettant d'ajouter un identifiant au client
 - **Retirer un identifiant** : Action permettant de retirer un identifiant au client
 
-> Attention, s'il existe sur un autre client, il faut d'abord le retirer de ce client ! AdGuard n'autorise pas deux clients a partager les mêmes identifiants (logique ;))
+> **Attention, s'il existe sur un autre client, il faut d'abord le retirer de ce client ! AdGuard n'autorise pas deux clients a partager les mêmes identifiants (logique ;))**
 
 **Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Identifiants) :
 
