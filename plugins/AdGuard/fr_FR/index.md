@@ -242,3 +242,14 @@ Internet Bloqué via DNS
 
 ![image](https://user-images.githubusercontent.com/28622481/133222436-9e17578a-93e2-4be2-a96c-957131d5686a.png)
 
+Identifiants
+-----------------------
+- **Statut Identifiants** : Chaine contenant les identifiants actuels du client
+- **Ajouter un identifiant** : Action permettant d'ajouter un identifiant au client (**attention, s'il existe sur un autre client, il faut d'abord le retirer de ce client !**)
+- **Retirer un identifiant** : Action permettant de retirer un identifiant au client
+
+> Attention, s'il existe sur un autre client, il faut d'abord le retirer de ce client ! AdGuard n'autorise pas deux clients a partager les mêmes identifiants (logique ;))
+
+**Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Identifiants) :
+
+![image](https://user-images.githubusercontent.com/28622481/133277119-3de65a3b-2868-4db1-b136-ca9c498270d3.png)
