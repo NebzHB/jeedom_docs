@@ -44,6 +44,8 @@ commandes.
 
 -   **Ip du serveur** : l'ip du serveur AdGuard Home.
 
+> Si vous avez modifié le port par défaut (80) vous pouvez ajouter votre port ici sous la forme ip:port
+
 -   **Utilisateur** : Utilisateur AdGuard Home.
 
 -	**Mot de passe** : Mot de passe de l'utilisateur AdGuard Home.
