@@ -8,6 +8,11 @@ description: Changelog du plugin xiaomiTalk
 Changelog
 =========
 
+15-09-2021
+----------
+
+* fix installation dépendances
+
 18&19-11-2019
 -------------
 
