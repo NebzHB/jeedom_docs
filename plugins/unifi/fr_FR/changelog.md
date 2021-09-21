@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 21/09/2021
+
+* Fix si un équipement est déjà existant dans la meme pièce que le client et désactivé
+
 # 20-08-2021
 
 * Quitte le démon en cas d'erreur lors du startListening (si le controleur n'est pas dispo). Le mécanisme de jeedom le relancera dans les 5 min.
