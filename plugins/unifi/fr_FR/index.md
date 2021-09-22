@@ -78,3 +78,7 @@ Vous pouvez aussi attribuer un widget au choix. Tout est standard.
 
 -   **Astuce** :
 -   Pour lancer un scan dans un scénario, via un bloc code, vous pouvez lancer : `unifi::syncUnifi();`
+
+-   Pour la gestion des présences, assurez vous d'avoir coché ceci dans le contrôleur :
+![image](https://user-images.githubusercontent.com/28622481/134291583-68965409-aa72-4086-9843-495b4e932c30.png)
+
