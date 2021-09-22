@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 22-09-2021
+
+* Fix pour les nouvelles alertes dans le controleur 6.4.54 : gestion présence
+
 # 21-09-2021
 
 * Fix si un équipement est déjà existant dans la meme pièce que le client et désactivé
