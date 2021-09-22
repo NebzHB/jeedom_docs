@@ -52,7 +52,8 @@ En cliquant sur un de vos équipements vous arrivez sur la page
 configuration de votre équipement comprenant 2 onglets, équipement et
 commandes.
 
--   **Onglet Equipement** :
+Onglet Equipement
+-----------------
 
 -   **Nom de l’équipement** : nom de votre équipement
 
@@ -70,13 +71,15 @@ commandes.
 -   **Informations diverses** : plusieurs informations sur l'équipement sont affichées.
 
 
--   **Onglet Commandes** :
+Onglet Commandes
+----------------
 
 -   Il existe de nombreuses commandes, elles sont différentes en fonction du type d'équipement. Toutes ne sont pas affichées par défaut. Vous pouvez les renommer, les afficher ou non et les réorganiser. 
 -   La valeur des commandes est maintenant affiché et modifié en temps réel sur cette page
 Vous pouvez aussi attribuer un widget au choix. Tout est standard.
 
--   **Astuce** :
+Astuces & FAQ
+------
 -   Pour lancer un scan dans un scénario, via un bloc code, vous pouvez lancer : `unifi::syncUnifi();`
 
 -   Pour la gestion des présences, assurez vous d'avoir coché ceci dans le contrôleur :
