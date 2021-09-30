@@ -22,6 +22,7 @@ Après installation du plugin, il vous suffit de l’activer. Il faut ensuite re
 -   **Pièce par défaut pour les Clients** : Lors du scan, les nouveaux clients wifi/cablés peuvent être ajoutés par défaut à une pièce.
 -   **Bouton Ne plus ignorer les clients supprimés** : Permet de montrer à nouveau les clients que vous auriez supprimés et ignorés dans la liste des équipements.
 -   **Relevé Site et WLAN (secondes)** : Fréquence en secondes à laquelle le relevé des informations du Site et des WLANs doivent être fait.  Les autres mises à jour sont envoyées par le controleur en temps réel, malheureusement pas les informations du site et des wlans. Le plugin doit donc les consulter régulièrement.  Si les informations sont modifiées via le plugin (LED's ou désactiver un WLAN), elles sont mises à jour instantanément, mais si vous modifiez ces informations via l'interface UniFi ou un autre moyen, c'est ici que cette consultation régulière rentre en jeu. (60 secondes par défaut)
+
 -   **Ignorer les évênements Last_Seen sur les Clients** : le controleur envoi régulièrement des mises à jour des clients, surtout pour les informations Last_Seen (vu dernièrement), Satisfaction et Uptime. En ignorant ces informations (si elles ne sont pas important pour vous), vous allégez les mises à jour des équipements clients activés, et donc vous allégez la charge de votre Jeedom.
 -   **Ignorer les évênements Satisfaction sur les Clients** : le controleur envoi régulièrement des mises à jour des clients, surtout pour les informations Last_Seen (vu dernièrement), Satisfaction et Uptime. En ignorant ces informations (si elles ne sont pas important pour vous), vous allégez les mises à jour des équipements clients activés, et donc vous allégez la charge de votre Jeedom.
 -   **Ignorer les évênements Uptime sur les Clients** : le controleur envoi régulièrement des mises à jour des clients, surtout pour les informations Last_Seen (vu dernièrement), Satisfaction et Uptime. En ignorant ces informations (si elles ne sont pas important pour vous), vous allégez les mises à jour des équipements clients activés, et donc vous allégez la charge de votre Jeedom.
@@ -42,7 +43,7 @@ plugins puis Monitoring. Vous retrouvez ici :
 
 -   enfin en dessous vous retrouvez la liste de vos équipements par catégories
     -   A coté de chaque titre de catégories, vous pouvez lancer le scan sur ce type uniquement
-    -   A coté du titre des Clients, vous pouvez cliquer sur la poubelle pour supprimer les Clients (uniquement dans jeedom) qui sont en non-actif (ou la case Actif n'est pas cochée) et les ignorer lors des prochains scans (pour ne plus les ignorer, Configuration du plugin > Bouton "Ne plus ignorer les clients supprimés"
+    -   A coté du titre des Clients, vous pouvez cliquer sur la poubelle pour supprimer les Clients (uniquement dans jeedom) qui sont en non-actif (où la case Actif n'est pas cochée) et les ignorer lors des prochains scans (pour ne plus les ignorer, Configuration du plugin > Bouton "Ne plus ignorer les clients supprimés")
 
 
 Equipement
