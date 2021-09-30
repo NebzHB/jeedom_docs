@@ -417,24 +417,23 @@ Generic
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
-|Info/Puissance Electrique|`NON`|Watts (Eve Seulement)|
-|Info/Consommation Electrique|`NON`|KWh (Eve Seulement)|
-|Info/Température|`NON`|-50→100 °C| 
-|Info/Luminosité|`NON`|0.0001→ 100000 lux| 
+|Info/Puissance Electrique|`NON`|Watts (Eve Seulement)<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seulle commande d'un équipement*| 
+|Info/Consommation Electrique|`NON`|KWh (Eve Seulement)<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seulle commande d'un équipement*| 
+|Info/Température|`NON`|-50 → 300 °C| 
+|Info/Luminosité|`NON`|0 → 100000 lux| 
 |Info/Présence|`NON`|0 = Pas de mouvement<br/>1 = Mouvement|
 |Info/Occupation|`NON`|0 = Personne<br/>1 = Quelqu'un|
 |Info/Batterie|`NON`|%| 
-|Info/Batterie en charge|`NON`|0 = NON<br/>pas 0 = OUI| 
-|Info/Détection de fumée|`NON`|pas 1 = Pas de fumée détectée<br/>1 = fumée détectée| 
-|Info/Inondation|`NON`|pas 1 = Pas de fuite détectée<br/>1 = fuite détectée| 
+|Info/Batterie en charge|`NON`|0 = NON<br/>1 = OUI<br/>Non présent = Non Rechargable| 
+|Info/Détection de fumée|`NON`|0 = Pas de fumée<br/>Pas 0 = Fumée détectée| 
+|Info/Inondation|`NON`|0 = Pas de fuite détectée<br/>Pas 0 = fuite détectée| 
 |Info/Humidité|`NON`|%| 
 |Info/Porte<br/>Info/Fenêtre<br/>(même traitement)|`NON`|**Si pas inversé :**<br/>pas 1 = Pas de contact (ouvert)<br/>1 = Contact (fermé)<br/>**Si inversé :**<br/>pas 1 = Contact (fermé)<br/>1 = Pas de contact (ouvert)| 
 |Info/Sabotage|`NON`|**Si pas inversé :**<br/>1 = Pas de sabotage<br/>0 = Sabotage<br/>**Si inversé :**<br/>0 = Pas de sabotage<br/>1 = Sabotage<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seulle commande d'un équipement*| 
-|Info/Détection de fumée|`NON`|0 = Pas de fumée<br/>1 = fumée détectée| 
 |Info/Choc|`NON`|Générique (Eve Seulement)|
 |Info/Pression|`NON`|Générique (Eve Seulement)|
 |Info/Son (dB)|`NON`|Générique (Eve Seulement)|
-|Info/Détecteur CO|`NON`|0 = Pas de CO<br/>1 = CO|
+|Info/Détecteur CO|`NON`|0 = CO normal<br/>1 = CO anormal|
 |Info/CO2 (ppm)|`NON`|PPM|
 |Info/UV|`NON`|Générique (Eve Seulement)|
 |Info/Générique|`NON`|Valeur <64 charactères<br/>avec Unité indiquée ou pas<br/>(Eve Seulement)| 
