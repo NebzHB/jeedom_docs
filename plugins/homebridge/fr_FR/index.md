@@ -417,8 +417,8 @@ Generic
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
-|Info/Puissance Electrique|`NON`|Watts (Eve Seulement)<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seulle commande d'un équipement*| 
-|Info/Consommation Electrique|`NON`|KWh (Eve Seulement)<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seulle commande d'un équipement*| 
+|Info/Puissance Electrique|`NON`|Watts (Eve Seulement)<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seule commande d'un équipement*| 
+|Info/Consommation Electrique|`NON`|KWh (Eve Seulement)<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seule commande d'un équipement*| 
 |Info/Température|`NON`|-50 → 300 °C| 
 |Info/Luminosité|`NON`|0 → 100000 lux| 
 |Info/Présence|`NON`|0 = Pas de mouvement<br/>1 = Mouvement|
@@ -429,7 +429,7 @@ Generic
 |Info/Inondation|`NON`|0 = Pas de fuite détectée<br/>Pas 0 = fuite détectée| 
 |Info/Humidité|`NON`|%| 
 |Info/Porte<br/>Info/Fenêtre<br/>(même traitement)|`NON`|**Si pas inversé :**<br/>pas 1 = Pas de contact (ouvert)<br/>1 = Contact (fermé)<br/>**Si inversé :**<br/>pas 1 = Contact (fermé)<br/>1 = Pas de contact (ouvert)| 
-|Info/Sabotage|`NON`|**Si pas inversé :**<br/>1 = Pas de sabotage<br/>0 = Sabotage<br/>**Si inversé :**<br/>0 = Pas de sabotage<br/>1 = Sabotage<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seulle commande d'un équipement*| 
+|Info/Sabotage|`NON`|**Si pas inversé :**<br/>1 = Pas de sabotage<br/>0 = Sabotage<br/>**Si inversé :**<br/>0 = Pas de sabotage<br/>1 = Sabotage<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seule commande d'un équipement*| 
 |Info/Choc|`NON`|Générique (Eve Seulement)|
 |Info/Pression|`NON`|Générique (Eve Seulement)|
 |Info/Son (dB)|`NON`|Générique (Eve Seulement)|
