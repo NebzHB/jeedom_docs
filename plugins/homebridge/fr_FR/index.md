@@ -329,7 +329,7 @@ Serrures
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
-|Info/Serrure Etat|`OUI`|pas 1 = Non Sécurisée<br/>1 = Sécurisée|
+|Info/Serrure Etat|`OUI`|0 = Non Sécurisée (Non Verrouillée)<br/>1 = Sécurisée (Verrouillée)|
 |Action/Serrure Bouton Ouvrir|`OUI`|Réf. vers Info/Serrure Etat| 
 |Action/Serrure Bouton Fermer|`OUI`|Réf. vers Info/Serrure Etat| 
 
@@ -350,7 +350,7 @@ Sirènes
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
-|Info/Sirène Etat|`OUI`|pas 1 = Sonne pas<br/>1 = Sonne|
+|Info/Sirène Etat|`OUI`|Pas 1 = Sonne pas<br/>1 = Sonne|
 
 Thermostats
 -------------
@@ -424,11 +424,11 @@ Generic
 |Info/Présence|`NON`|0 = Pas de mouvement<br/>1 = Mouvement|
 |Info/Occupation|`NON`|0 = Personne<br/>1 = Quelqu'un|
 |Info/Batterie|`NON`|%| 
-|Info/Batterie en charge|`NON`|0 = NON<br/>1 = OUI<br/>Non présent = Non Rechargable| 
-|Info/Détection de fumée|`NON`|0 = Pas de fumée<br/>Pas 0 = Fumée détectée| 
-|Info/Inondation|`NON`|0 = Pas de fuite détectée<br/>Pas 0 = Fuite détectée| 
+|Info/Batterie en charge|`NON`|0 = NON<br/>Pas 0 = OUI<br/>Non présent = Non Rechargable| 
+|Info/Détection de fumée|`NON`|0 = Pas de fumée<br/>1 = Fumée détectée| 
+|Info/Inondation|`NON`|0 = Pas de fuite détectée<br/>1 = Fuite détectée| 
 |Info/Humidité|`NON`|%| 
-|Info/Porte<br/>Info/Fenêtre<br/>(même traitement)|`NON`|**Si pas inversé :**<br/>pas 1 = Pas de contact (ouvert)<br/>1 = Contact (fermé)<br/>**Si inversé :**<br/>pas 1 = Contact (fermé)<br/>1 = Pas de contact (ouvert)| 
+|Info/Porte<br/>Info/Fenêtre<br/>(même traitement)|`NON`|**Si pas inversé :**<br/>0 = Pas de contact (ouvert)<br/>1 = Contact (fermé)<br/>**Si inversé :**<br/>0 = Contact (fermé)<br/>1 = Pas de contact (ouvert)| 
 |Info/Sabotage|`NON`|**Si pas inversé :**<br/>1 = Pas de sabotage<br/>0 = Sabotage<br/>**Si inversé :**<br/>0 = Pas de sabotage<br/>1 = Sabotage<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seule commande d'un équipement*| 
 |Info/Choc|`NON`|Générique (Eve Seulement)|
 |Info/Pression|`NON`|Générique (Eve Seulement)|
