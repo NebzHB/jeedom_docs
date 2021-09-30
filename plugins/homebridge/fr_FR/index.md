@@ -429,8 +429,8 @@ Generic
 |Info/Inondation|`NON`|pas 1 = Pas de fuite détectée<br/>1 = fuite détectée| 
 |Info/Humidité|`NON`|%| 
 |Info/Porte<br/>Info/Fenêtre<br/>(même traitement)|`NON`|**Si pas inversé :**<br/>pas 1 = Pas de contact (ouvert)<br/>1 = Contact (fermé)<br/>**Si inversé :**<br/>pas 1 = Contact (fermé)<br/>1 = Pas de contact (ouvert)| 
-|Info/Sabotage|`NON`|1 = Pas de sabotage<br/>0 = Sabotage<br/>Ajouté à un équipement existant<br/>Pas seul| 
-|Info/Détection de fumée|`NON`|0 = Pas fumée<br/>1 = fumée détectée| 
+|Info/Sabotage|`NON`|**Si pas inversé :**<br/>1 = Pas de sabotage<br/>0 = Sabotage<br/>**Si inversé :**<br/>0 = Pas de sabotage<br/>1 = Sabotage<br/>Ajouté à un équipement existant<br/>Pas seul| 
+|Info/Détection de fumée|`NON`|0 = Pas de fumée<br/>1 = fumée détectée| 
 |Info/Choc|`NON`|Générique (Eve Seulement)|
 |Info/Pression|`NON`|Générique (Eve Seulement)|
 |Info/Son (dB)|`NON`|Générique (Eve Seulement)|
