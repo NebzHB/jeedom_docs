@@ -8,6 +8,7 @@ description: Changelog du plugin Unifi
 # 15-10-2021
 
 * Fix pour ne pas autoriser les reconnect sur un client bloqué (comme sur l'interface unifi)
+* Fix pour ne pas autoriser les reconnect sur un client cablé (comme sur l'interface unifi)
 * Fix pour gérer les blocages des clients LAN
 
 # 22-09-2021
