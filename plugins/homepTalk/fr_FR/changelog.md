@@ -8,6 +8,10 @@ description: Changelog du plugin homepTalk
 Changelog
 =========
 
+15-10-2021
+----------
+* Fix images 4.2
+
 18-01-2021
 ----------
 * Ajout des voix dans voiceRSS
