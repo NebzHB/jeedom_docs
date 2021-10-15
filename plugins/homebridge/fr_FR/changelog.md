@@ -12,6 +12,8 @@ A venir prochainement (En Beta)
 -------------------------------
 * Eclairage adaptatif : tests en cours (car pas possible sur les ampoules qui s'allument lors du changement de la couleur de temperature)
 * Si un volet n'as pas d'état et uniquement les boutons Up et/ou Down et/ou Stop, il sera créé des interrupteurs pour ces boutons.
+* Fix images en 4.2
+* Homebridge 1.3.5
 
 16-09-2021
 ----------
