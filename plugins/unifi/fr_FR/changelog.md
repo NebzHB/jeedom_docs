@@ -10,6 +10,7 @@ description: Changelog du plugin Unifi
 * Fix pour ne pas autoriser les reconnect sur un client bloqué (comme sur l'interface unifi)
 * Fix pour ne pas autoriser les reconnect sur un client cablé (comme sur l'interface unifi)
 * Fix pour gérer les blocages des clients LAN
+* Fix image pour 4.2
 
 # 22-09-2021
 
