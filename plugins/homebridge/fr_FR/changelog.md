@@ -14,6 +14,7 @@ A venir prochainement (En Beta)
 * Si un volet n'as pas d'état et uniquement les boutons Up et/ou Down et/ou Stop, il sera créé des interrupteurs pour ces boutons.
 * Fix images en 4.2 + copier coller dans debugInfo
 * Homebridge 1.3.5
+* Compat GenType avec 4.2
 
 16-09-2021
 ----------
