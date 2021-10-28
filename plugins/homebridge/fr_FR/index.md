@@ -545,7 +545,8 @@ Il arrive parfois que les types génériques ne suffisent pas pour intégrer vot
 * ***Plugin homebridge*** : le plugin jeedom qui s'appelle homebridge installé sur jeedom via le Market.
 * ***Plugin Jeedom xxx*** : un plugin xxx installé sur jeedom via le Market (ou autre)
 
-En effet, le logiciel homebridge a été conçu de manière modulaire et vous pouvez ajouter à celui-ci des modules (plugins) qui se connectent directement à vos équipements (un exemple est le *plugin pour homebridge* nommé homebridge-caméra-ffmpeg qui est déjà intégré par les dépendances et permet d'importer vos camera du *plugin jeedom caméra*). Un autre exemple sont les plugins homebridge-gsh et homebridge-alexa (pré-installés également) qui sont un peu différents des autres, vous pouvez consulter le [Tutoriel pour homebridge-gsh sur Communauté](https://community.jeedom.com/t/tuto-homebridge-et-google-smart-home/13855){:target="_blank" rel="noopener"}.
+En effet, le logiciel homebridge a été conçu de manière modulaire et vous pouvez ajouter à celui-ci des modules (plugins) qui se connectent directement à vos équipements (un exemple est le *plugin pour homebridge* nommé homebridge-caméra-ffmpeg qui est déjà intégré par les dépendances et permet d'importer vos camera du *plugin jeedom caméra*). Un autre exemple sont les plugins 
+et homebridge-alexa (pré-installés également) qui sont un peu différents des autres, vous pouvez consulter le [Tutoriel pour homebridge-gsh sur Communauté](https://community.jeedom.com/t/tuto-homebridge-et-google-smart-home/13855){:target="_blank" rel="noopener"} et le [Tutoriel pour homebridge-alexa sur Communauté](https://community.jeedom.com/t/homebridge-et-homebridge-alexa-question-sur-les-noms/66104/15){:target="_blank" rel="noopener"}.
 
 ![schema partiel](../images/partialSchema.png)
 
