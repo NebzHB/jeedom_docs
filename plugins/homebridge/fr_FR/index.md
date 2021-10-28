@@ -625,13 +625,14 @@ Une fois que vous avez terminé la configuration cliquez sur Enregistrer en bas 
 
 ![enregistrer](../images/enregistrer.png)
 
-Attention, pour l'instant la configuration (le fichier config) de cette interface n'est pas prise en compte, il faut copier la plateforme ou l'accessoire manuellement dans les plateformes (ou accessoires) supplémentaires pour que ça soit pris en compte.
+> Attention, pour l'instant la configuration (le fichier config) de cette interface n'est pas prise en compte, il faut copier la plateforme ou l'accessoire manuellement dans les plateformes (ou accessoires) supplémentaires pour que ça soit pris en compte.
+
+*(Je dois encore trouver le moyen de régénérer correctement la partie pour jeedom si vous la modifiez et la cassez via cette interface pour le permettre...)*
 
 ![whatToCopy](../images/whatToCopy.png) -> ![accCopy](../images/accCopy.png)
 
 Il vous reste à "**Sauvegarder les changements**" de la plateforme ou l'accessoire et **relancer le démon** (voir première méthode)
 
-*(Je dois encore trouver le moyen de régénérer correctement la partie pour jeedom si vous la modifiez et la cassez via cette interface pour le permettre...)*
 
 Troubleshooting
 =================
