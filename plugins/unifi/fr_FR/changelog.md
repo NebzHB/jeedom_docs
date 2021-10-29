@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 29-10-2021
+
+* Fix pour les commandes UDM
+
 # 15-10-2021
 
 * Fix pour ne pas autoriser les reconnect sur un client bloqué (comme sur l'interface unifi)
