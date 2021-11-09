@@ -8,6 +8,11 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+En Beta - Bientôt en stable
+---------------------------
+
+* Nouvelle méthode d'appairage, qui devrait permettre de nouveaux périphériques (prises Meross + autres ?).
+
 18-08-2021
 ----------
 
