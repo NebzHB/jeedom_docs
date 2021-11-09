@@ -141,8 +141,8 @@ Si le plugin dit que votre périphérique est déjà appairé (on le voit aussi 
 **Non-Compatibles**
 ----------------------------
 
--    prises Meross MSS210HK (pas de réponse à l’appairage)
--    Shelly Firmwares alternatifs homekit (M4: Empty TLV)
+-    prises Meross MSS210HK (pas de réponse à l’appairage) (en beta !!)
+-    Shelly Firmwares alternatifs homekit (M4: Empty TLV) (en beta !!)
 
 **Ne seront jamais compatibles**
 -------------------------------
