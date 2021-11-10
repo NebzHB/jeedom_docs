@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# en beta - à venir
+
+* Messages d'erreurs plus explicites.
+
 # 29-10-2021
 
 * Fix pour les commandes UDM
