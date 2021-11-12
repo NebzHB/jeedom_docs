@@ -187,7 +187,7 @@ Si vous testez le plugin avec l’un de vos périphérique encore non listé dan
 
 **-> Le plugin ne voit pas mon équipement**
 
->Regardez dans le log "hkControl", s'il est bien sur le réseau, ce log vous donnera la raison du non-ajout.  Si vous ne le voyez pas dans le log, relancez le démon, il va demander une ré-annonce de tous les équipements du réseau.  Regardez à nouveau dans le log "hkControl".
+>Regardez dans le log "hkControl_daemon" en debug, s'il est bien sur le réseau, ce log vous donnera la raison du non-ajout.  Si vous ne le voyez pas dans le log, relancez le démon, il va demander une ré-annonce de tous les équipements du réseau.  Regardez à nouveau dans le log "hkControl_daemon".
 
 **-> Le plugin ne voit pas mon équipement, il n'est pas dans log "hkControl" et je ne le vois pas même après relance du démon**
 
