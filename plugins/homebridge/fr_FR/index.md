@@ -293,8 +293,8 @@ Volets
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
-|Info/Volet Etat|`OUI mais état unique`|min du curseur = Fermé<br/>max du curseur = Ouvert|
-|Info/Volet Etat Fermeture|`OUI mais état unique`|min du curseur = Ouvert<br/>max du curseur = Fermé|
+|Info/Volet Etat|`OUI mais état unique`|min du Bouton Slider = Fermé<br/>max du Bouton Slider = Ouvert|
+|Info/Volet Etat Fermeture|`OUI mais état unique`|min du Bouton Slider = Ouvert<br/>max du Bouton Slider = Fermé|
 |Action/Volet Bouton Monter|`Si Descendre`|Réf. vers Info/Volet Etat| 
 |Action/Volet Bouton Descendre|`Si Monter`|Réf. vers Info/Volet Etat|
 |Action/Volet Bouton Stop|`NON Utilisé`|N/A|
