@@ -8,8 +8,8 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
-En Beta - Bientôt en stable
----------------------------
+16-11-2021
+----------
 
 * Nouvelle méthode d'appairage, qui devrait permettre de nouveaux périphériques (prises Meross + autres ?).
 * Compatibilité Jeedom 4.2
