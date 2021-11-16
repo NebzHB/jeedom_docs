@@ -12,6 +12,8 @@ En Beta - Bientôt en stable
 ---------------------------
 
 * Nouvelle méthode d'appairage, qui devrait permettre de nouveaux périphériques (prises Meross + autres ?).
+* Compatibilité Jeedom 4.2
+* A la découverte d'équipements, si l'équipement avec le même nom existe déjà (dans un autre plugin par ex), ajouter l'id derrière le nom
 
 18-08-2021
 ----------
