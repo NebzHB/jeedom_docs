@@ -134,7 +134,7 @@ Si le plugin dit que votre périphérique est déjà appairé (on le voit aussi 
 | Pont Philips Hue | [Voir Site Officiel](https://www.philips-hue.com/fr-fr/p/hue-hue-bridge/8718696511800){:target="_blank" rel="noopener"} | NON | (Ampoules, Interrupteur Tap OK) (Ampoules non-hue non remontées dans homekit) |
 | ESP8266 | [Avec lib Arduino-Homekit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266){:target="_blank" rel="noopener"} | NON | Elle intègre des exemples de led, sensor, switch et tout type d’accessoire.<br/>(modifier le pin par défaut qui est 111-11-111 et pas accepté par Apple) |
 | Shelly Homekit Firmware | [Voir Site Officiel](https://github.com/mongoose-os-apps/shelly-homekit){:target="_blank" rel="noopener"} | NON | |
-| Meross MSS210HK | [Voir Site Officiel](https://www.meross.com/Detail/3/Smart%20Wi-Fi%20Plug){:target="_blank" rel="noopener"} | OUI<sup>1</sup> | Prise FR testée (mais les autres devraient fonctionner aussi) |
+| Meross MSS210HK | [Voir Site Officiel](https://www.meross.com/Detail/3/Smart%20Wi-Fi%20Plug){:target="_blank" rel="noopener"} | OUI<sup>1</sup> | Doit être ajouté à Maison puis retiré<br />Prise FR testée (mais les autres devraient fonctionner aussi) |
 
 <sup>1</sup> : Nécessite un iPhone ou iPad (et l'app Maison) pour mettre l'équipement sur le réseau la première fois ou en cas de problème.<br/>
 <sup>2</sup> : Nécessite un iPhone ou iPad (et l'app Eve) pour mettre l'équipement sur le réseau la première fois et à chaque ajout d'équipement au Pont.<br/>
