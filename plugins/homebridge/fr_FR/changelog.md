@@ -19,6 +19,7 @@ A venir prochainement (En Beta)
 ----------
 * Homebridge 1.3.8
 * Homebridge-gsh 2.2.0
+* ajout de --allow-releaseinfo-change à apt update pour éviter les erreurs si debian passe d'une release
 
 16-09-2021
 ----------
