@@ -14,6 +14,7 @@ A venir prochainement (En Beta)
 * Si un volet n'as pas d'état et uniquement les boutons Up et/ou Down et/ou Stop, il sera créé des interrupteurs pour ces boutons.
 * Fix images en 4.2 + copier coller dans debugInfo
 * Compat GenType avec 4.2
+* Type générique "Fuite D'eau" passe comme le type générique "Innondation" (c'est un doublon mais bon...)
 
 08-12-2021
 ----------
