@@ -119,8 +119,8 @@ Si le plugin dit que votre périphérique est déjà appairé (on le voit aussi 
 |:---------- |:----:|:------------------:|:----------|
 | Legrand iDiamant with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/bubendorff){:target="_blank" rel="noopener"} | NON | |
 | Legrand Céliane with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/legrand){:target="_blank" rel="noopener"} | NON | |
-| Velux Active with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/velux){:target="_blank" rel="noopener"} | NON | Capteurs temperature/humidité/CO2 + Ouverture Velux + Volets extérieurs |
 | Legrand Drivia with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/drivia){:target="_blank" rel="noopener"} | NON | |
+| Velux Active with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/velux){:target="_blank" rel="noopener"} | NON | Capteurs temperature/humidité/CO2 + Ouverture Velux + Volets extérieurs |
 | Velux App Control (KIG 300) | [Voir Site Officiel](https://www.veluxshop.fr/tous-les-produits/maison-connectee/velux-app-control){:target="_blank" rel="noopener"} | NON | |
 | Passerelle Xiaomi ZHWG11LM | [Voir Site Officiel](https://www.aqara.com/us/smart_home_hub.html){:target="_blank" rel="noopener"} | Peut-être<sup>3</sup> | |
 | Passerelle Xiaomi ZNDMWG03LM | | Peut-être<sup>3</sup> | Tout firmware |
