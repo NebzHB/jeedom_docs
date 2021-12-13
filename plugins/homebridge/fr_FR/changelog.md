@@ -17,6 +17,7 @@ A venir prochainement (En Beta)
 * Type générique "Fuite D'eau" passe comme le type générique "Innondation" (c'est un doublon mais bon...)
 * Ajout du mode 0 si aucun mode n'a été trouvé pour l'alarme (Maison se comporte mieux)
 * Ne pas retourner de valeur pour l'alarme si ALARM_ENABLE_STATE = 1
+* Etat Volet peut maintenant être un binaire (et Etat Volet Fermeture aussi) et l'invertBinary dans ce cas est supporté aussi.
 
 08-12-2021
 ----------
