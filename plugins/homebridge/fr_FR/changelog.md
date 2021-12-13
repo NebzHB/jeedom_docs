@@ -15,8 +15,8 @@ A venir prochainement (En Beta)
 * Fix images en 4.2 + copier coller dans debugInfo
 * Compat GenType avec 4.2
 * Type générique "Fuite D'eau" passe comme le type générique "Innondation" (c'est un doublon mais bon...)
-* Ajout du mode 0 si aucun mode n'a été trouvé pour l'alarme (Maison se comporte mieux)
-* Ne pas retourner de valeur pour l'alarme si ALARM_ENABLE_STATE = 1
+* Ajout du mode 0 si aucun mode n'a été trouvé pour l'alarme (Maison se comporte mieux en cas d'utilisation non normale des types génériques alarme)
+* Ne pas retourner de valeur pour l'alarme si ALARM_ENABLE_STATE = 1 (Maison se comporte mieux en cas d'utilisation non normale des types génériques alarme)
 * Etat Volet peut maintenant être un binaire (et Etat Volet Fermeture aussi) et l'invertBinary dans ce cas est supporté aussi.
 
 08-12-2021
