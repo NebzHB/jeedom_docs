@@ -293,11 +293,11 @@ Volets
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
-|Info/Volet Etat|`OUI mais état unique`|min du Bouton Slider(sinon 0) = Fermé <br/>max du Bouton Slider(sinon 100) = Ouvert|
-|Info/Volet Etat Fermeture|`OUI mais état unique`|min du Bouton Slider(sinon 0) = Ouvert<br/>max du Bouton Slider(sinon 100) = Fermé|
-|Action/Volet Bouton Monter|`Si Descendre`|Réf. vers Info/Volet Etat| 
-|Action/Volet Bouton Descendre|`Si Monter`|Réf. vers Info/Volet Etat|
-|Action/Volet Bouton Stop|`NON Utilisé`|N/A|
+|Info/Volet Etat|`NON mais état unique`|Si Binaire :<br/>0 = Fermé<br/>1 = Ouvert<br/>Si Binaire Inversé :<br/>1 = Fermé<br/>0 = Ouvert<br/>Si Numérique :<br/>min du Bouton Slider(sinon 0) = Fermé <br/>max du Bouton Slider(sinon 100) = Ouvert|
+|Info/Volet Etat Fermeture|`NON mais état unique`|Si Binaire :<br/>1 = Fermé<br/>0 = Ouvert<br/>Si Binaire Inversé :<br/>0 = Fermé<br/>1 = Ouvert<br/>Si Numérique :<br/>min du Bouton Slider(sinon 0) = Ouvert<br/>max du Bouton Slider(sinon 100) = Fermé|
+|Action/Volet Bouton Monter|`Si Descendre`|Si pas d'état -> Interrupteur<br/>Si Etat: Réf. vers Info/Volet Etat| 
+|Action/Volet Bouton Descendre|`Si Monter`|Si pas d'état -> Interrupteur<br/>Si Etat: Réf. vers Info/Volet Etat|
+|Action/Volet Bouton Stop|`NON Utilisé`|Si pas d'état -> Interrupteur<br/>Si Etat: N/A|
 |Action/Volet Bouton Slider|`Si seul`|Réf. vers Info/Volet Etat|
 |Info/Volet Etat Inclinaison Horizontale|`NON`|Angle 0->90°|
 |Action/Volet Slider Inclinaison Horizontale|`Si Etat Inclinaison H`|Angle 0->90°<br/>modifiable via min-max du slider|
@@ -426,7 +426,7 @@ Generic
 |Info/Batterie|`NON`|%| 
 |Info/Batterie en charge|`NON`|0 = NON<br/>Pas 0 = OUI<br/>Non présent = Non Rechargable| 
 |Info/Détection de fumée|`NON`|0 = Pas de fumée<br/>1 = Fumée détectée| 
-|Info/Inondation|`NON`|0 = Pas de fuite détectée<br/>1 = Fuite détectée| 
+|Info/Inondation<br/>Info/Fuite d'eau|`NON`|0 = Pas de fuite détectée<br/>1 = Fuite détectée| 
 |Info/Humidité|`NON`|%| 
 |Info/Porte<br/>Info/Fenêtre<br/>(même traitement)|`NON`|**Si pas inversé :**<br/>0 = Pas de contact (ouvert)<br/>1 = Contact (fermé)<br/>**Si inversé :**<br/>0 = Contact (fermé)<br/>1 = Pas de contact (ouvert)| 
 |Info/Sabotage|`NON`|**Si pas inversé :**<br/>1 = Pas de sabotage<br/>0 = Sabotage<br/>**Si inversé :**<br/>0 = Pas de sabotage<br/>1 = Sabotage<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seule commande d'un équipement*| 
