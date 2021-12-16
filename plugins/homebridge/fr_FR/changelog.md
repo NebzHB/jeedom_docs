@@ -11,10 +11,14 @@ Changelog
 A venir prochainement (En Beta)
 -------------------------------
 * Eclairage adaptatif : tests en cours (car pas possible sur les ampoules qui s'allument lors du changement de la couleur de temperature)
+
+16-12-2021
+----------
+
 * Si un volet n'as pas d'état et uniquement les boutons Up et/ou Down et/ou Stop, il sera créé des interrupteurs pour ces boutons.
 * Fix images en 4.2 + copier coller dans debugInfo
 * Compat GenType avec 4.2
-* Type générique "Fuite D'eau" passe comme le type générique "Innondation" (c'est un doublon mais bon...)
+* Type générique "Fuite D'eau" passe comme le type générique "Inondation" (c'est un doublon mais bon...)
 * Ajout du mode 0 si aucun mode n'a été trouvé pour l'alarme (Maison se comporte mieux en cas d'utilisation non normale des types génériques alarme)
 * Ne pas retourner de valeur pour l'alarme si ALARM_ENABLE_STATE = 1 (Maison se comporte mieux en cas d'utilisation non normale des types génériques alarme)
 * Etat Volet peut maintenant être un binaire (et Etat Volet Fermeture aussi) et l'invertBinary dans ce cas est supporté aussi.
