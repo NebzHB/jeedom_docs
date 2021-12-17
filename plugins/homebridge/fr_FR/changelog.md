@@ -12,7 +12,7 @@ A venir prochainement (En Beta)
 -------------------------------
 * Eclairage adaptatif : tests en cours (car pas possible sur les ampoules qui s'allument lors du changement de la couleur de temperature)
 
-16-12-2021
+17-12-2021
 ----------
 
 * Si un volet n'as pas d'état et uniquement les boutons Up et/ou Down et/ou Stop, il sera créé des interrupteurs pour ces boutons.
