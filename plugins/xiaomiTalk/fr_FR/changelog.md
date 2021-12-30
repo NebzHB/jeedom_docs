@@ -8,6 +8,11 @@ description: Changelog du plugin xiaomiTalk
 Changelog
 =========
 
+30-12-2021
+----------
+
+* compatibilité 4.2 et bulleyes
+
 15-09-2021
 ----------
 
