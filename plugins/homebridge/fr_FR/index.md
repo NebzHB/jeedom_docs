@@ -340,7 +340,7 @@ Alarme
 |---------------|:----------------:|----------------|
 |Info/Alarme état|`OUI`|1 = Déclenchée<br/>(prioritaire sur activée et modes)|
 |Info/Alarme état activée|`OUI`|0 = Désarmée<br/>(prioritaire sur modes)|
-|Info/Alarme mode|`OUI si associé mode homekit`|Exactement le nom d'une Action/Alarme Mode<br/> à associer à Nuit ou Present ou Absent|
+|Info/Alarme mode|`OUI si associé mode homekit`<br/>`NON sinon`|Exactement le nom d'une Action/Alarme Mode<br/> à associer à Nuit ou Present ou Absent|
 |Action/Alarme armée|`OUI`|Arme l'alarme|
 |Action/Alarme libérée|`OUI`|Désarme l'alarme|
 |Action/Alarme Mode|`NON`|Mode à associer à un mode homekit (max 3)|
