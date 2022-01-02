@@ -134,6 +134,7 @@ Si le plugin dit que votre périphérique est déjà appairé (on le voit aussi 
 | Passerelle IKEA TRADFRI | [Voir Site Officiel](https://www.ikea.com/fr/fr/p/tradfri-passerelle-blanc-40337806/){:target="_blank" rel="noopener"} | NON | (sauf télécommandes, non remontées dans homekit) |
 | Pont Philips Hue | [Voir Site Officiel](https://www.philips-hue.com/fr-fr/p/hue-hue-bridge/8719514342620){:target="_blank" rel="noopener"} | NON | (Ampoules, Interrupteur Tap OK) (Ampoules non-hue non remontées dans homekit) |
 | ESP8266 | [Avec lib Arduino-Homekit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266){:target="_blank" rel="noopener"} | NON | Elle intègre des exemples de led, sensor, switch et tout type d’accessoire.<br/>(modifier le pin par défaut qui est 111-11-111 et pas accepté par Apple) |
+| ESP32 | [Avec la lib HomeSpan Arduino-Homekit-ESP32 V1.4.1](https://github.com/HomeSpan/HomeSpan){:target="_blank" rel="noopener"} | NON | Testé avec un « WEMOS DA Mini ESP32 » |
 | Shelly Homekit Firmware | [Voir Site Officiel](https://github.com/mongoose-os-apps/shelly-homekit){:target="_blank" rel="noopener"} | NON | |
 | Meross MSS210HK | [Voir Site Officiel](https://www.meross.com/Detail/3/Smart%20Wi-Fi%20Plug){:target="_blank" rel="noopener"} | OUI<sup>1</sup> | Doit être ajouté à Maison puis retiré<br />Prise FR testée (mais les autres devraient fonctionner aussi) |
 
