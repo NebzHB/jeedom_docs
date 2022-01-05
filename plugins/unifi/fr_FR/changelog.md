@@ -8,6 +8,7 @@ description: Changelog du plugin Unifi
 # en beta - à venir
 
 * Messages d'erreurs plus explicites.
+* Traductions anglaises
 
 # 29-10-2021
 
