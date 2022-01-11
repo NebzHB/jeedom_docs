@@ -17,7 +17,7 @@ A venir prochainement (En Beta)
 * Meilleure gestion dans le cas d'une alarme sans modes.
 * Homebridge 1.3.9
 * Correction pour plugin Météo
-* Ajout de traductions en_US
+* Ajout de traductions en_US et pt_PT
 
 17-12-2021
 ----------
