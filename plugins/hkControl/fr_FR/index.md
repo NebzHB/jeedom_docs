@@ -137,6 +137,7 @@ Si le plugin dit que votre périphérique est déjà appairé (on le voit aussi 
 | ESP32 | [Avec la lib HomeSpan Arduino-Homekit-ESP32 V1.4.1](https://github.com/HomeSpan/HomeSpan){:target="_blank" rel="noopener"} | NON | Testé avec un « WEMOS DA Mini ESP32 » |
 | Shelly Homekit Firmware | [Voir Site Officiel](https://github.com/mongoose-os-apps/shelly-homekit){:target="_blank" rel="noopener"} | NON | |
 | Meross MSS210HK | [Voir Site Officiel](https://www.meross.com/Detail/3/Smart%20Wi-Fi%20Plug){:target="_blank" rel="noopener"} | OUI<sup>1</sup> | Doit être ajouté à Maison puis retiré<br />Prise FR testée (mais les autres devraient fonctionner aussi) |
+| Meross MSS710HK | [Voir Site Officiel](https://www.meross.com/Detail/21/Smart%20Wi-Fi%20Switch){:target="_blank" rel="noopener"} | OUI<sup>1</sup> | Doit être ajouté à Maison puis retiré |
 
 <sup>1</sup> : Nécessite un iPhone ou iPad (et l'app Maison) pour mettre l'équipement sur le réseau la première fois ou en cas de problème.<br/>
 <sup>2</sup> : Nécessite un iPhone ou iPad (et l'app Eve) pour mettre l'équipement sur le réseau la première fois et à chaque ajout d'équipement au Pont.<br/>
