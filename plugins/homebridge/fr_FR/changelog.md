@@ -10,7 +10,7 @@ Changelog
 
 A venir prochainement (En Beta)
 -------------------------------
-* Eclairage adaptatif : tests en cours (car pas possible sur les ampoules qui s'allument lors du changement de la couleur de temperature)
+* Eclairage adaptatif : tests en cours (mais pas de beta testeur avec des ampoules à températures couleur)
 * "Activer la pièce" : est maintenant indépendant de l'app mobile. une pièce activée dans homebridge l'est uniquement pour homebridge !
 * Les états définis pour une porte de garage/portail peuvent maintenant être une chaine de caractère.
 * Si un état garage/portail a une valeur non définie dans les valeurs configurables, l'état sera "Stoppé en cours d'ouverture". (Pour gérer les garages à pourcentage d'ouverture)
