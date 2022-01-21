@@ -15,7 +15,7 @@ A venir prochainement (En Beta)
 * Les états définis pour une porte de garage/portail peuvent maintenant être une chaine de caractère.
 * Si un état garage/portail a une valeur non définie dans les valeurs configurables, l'état sera "Stoppé en cours d'ouverture". (Pour gérer les garages à pourcentage d'ouverture)
 * Meilleure gestion dans le cas d'une alarme sans modes.
-* Homebridge 1.3.9
+* Homebridge 1.4.0
 * Correction pour plugin Météo
 * Ajout de traductions en_US et pt_PT
 
