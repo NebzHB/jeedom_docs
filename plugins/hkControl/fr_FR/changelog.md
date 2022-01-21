@@ -8,6 +8,12 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+En Beta
+-------
+
+* Connexions permanente pour les équipements (commandes actions plus rapides)
+* Correctif pour les problèmes de double souscriptions ou de plantage après refresh
+
 16-11-2021
 ----------
 
