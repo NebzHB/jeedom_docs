@@ -18,6 +18,7 @@ A venir prochainement (En Beta)
 * Homebridge 1.4.0
 * Correction pour plugin Météo
 * Ajout de traductions en_US et pt_PT
+* Correctif pour l'état des thermostats si on utilise es_ES ou pt_PT ou de_DE
 
 17-12-2021
 ----------
