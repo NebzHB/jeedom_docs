@@ -19,6 +19,7 @@ A venir prochainement (En Beta)
 * Correction pour plugin Météo
 * Ajout de traductions en_US et pt_PT
 * Correctif pour l'état des thermostats si on utilise es_ES ou pt_PT ou de_DE
+* Le type générique Bouton Serrure Lock n'est plus obligatoire pour les serrures (pour les gaches par exemple)
 
 17-12-2021
 ----------
