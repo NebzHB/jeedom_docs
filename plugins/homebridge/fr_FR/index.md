@@ -331,7 +331,7 @@ Serrures
 |---------------|:----------------:|----------------|
 |Info/Serrure Etat|`OUI`|0 = Non Sécurisée (Non Verrouillée)<br/>1 = Sécurisée (Verrouillée)|
 |Action/Serrure Bouton Ouvrir|`OUI`|Réf. vers Info/Serrure Etat| 
-|Action/Serrure Bouton Fermer|`OUI`|Réf. vers Info/Serrure Etat| 
+|Action/Serrure Bouton Fermer|`NON`|Réf. vers Info/Serrure Etat| 
 
 Alarme
 ------
