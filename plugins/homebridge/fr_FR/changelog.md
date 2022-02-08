@@ -10,7 +10,11 @@ Changelog
 
 A venir prochainement (En Beta)
 -------------------------------
-* Eclairage adaptatif : tests en cours (mais pas de beta testeur avec des ampoules à températures couleur)
+* Eclairage adaptatif : en test pour l'instant (fonctionnalité en beta pour vérifier si on prend en compte tous les cas), test intégré si l'ampoule a les bonnes commandes, deux cas :
+	- soit l'ampoule s'allume lorsque la température couleur est modifiée : on doit retirer l'éclairage adaptatif à chaque fois qu'on éteint l'ampoule, sinon elle s'allumera toute seule !
+	- soit l'ampoule ne s'allume pas lorsque la température couleur est modifiée : situation idéale ! on peut garder l'éclairage adaptatif en permanence !
+* Test intégé pour voir dans quel cas l'ampoule est ! ce test va modifier la température couleur et vérifier ensuite si l'ampoule s'est allumée.
+* Mise en cache de la liste des concentrateurs homekit, car il est obligatoire d'un avoir au moins un pour utiliser l'éclairage adaptatif.
 * "Activer la pièce" : est maintenant indépendant de l'app mobile. une pièce activée dans homebridge l'est uniquement pour homebridge !
 * Les états définis pour une porte de garage/portail peuvent maintenant être une chaine de caractère.
 * Si un état garage/portail a une valeur non définie dans les valeurs configurables, l'état sera "Stoppé en cours d'ouverture". (Pour gérer les garages à pourcentage d'ouverture)
@@ -20,6 +24,8 @@ A venir prochainement (En Beta)
 * Ajout de traductions en_US et pt_PT
 * Correctif pour l'état des thermostats si on utilise es_ES ou pt_PT ou de_DE
 * Le type générique "Action/Serrure Bouton Fermer" n'est plus obligatoire pour les serrures (pour les gaches par exemple)
+* Correctif pour l'affichage des plugins pour homebridge installés pour 4.2
+* On peut maintenant utiliser plusieurs types "Interrupteurs" normaux dans un même équipement ! (la référence à l'état dans les commandes est obligatoire, voir doc troubleshooting > Point important) 
 
 17-12-2021
 ----------
