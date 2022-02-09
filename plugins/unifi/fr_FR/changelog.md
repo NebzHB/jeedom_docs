@@ -9,7 +9,7 @@ description: Changelog du plugin Unifi
 
 * Messages d'erreurs plus explicites.
 * Traductions anglaises
-* Dernières images venant du controleur en 6.5.55
+* Dernières images venant du controleur en 7.0.21
 * Ajout Up Down sur les clients (pour voir si communique toujours)
 * Ajout Powersave sur les clients
 
