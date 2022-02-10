@@ -11,7 +11,7 @@ Changelog
 A venir prochainement (En Beta)
 -------------------------------
 * Version de Jeedom 4.0 MINIMUM !!! le plugin sur une V3 ne recevra plus de mise à jour et n'est plus supporté !
-* Eclairage adaptatif : en test pour l'instant (fonctionnalité en beta pour vérifier si on prend en compte tous les cas), test intégré si l'ampoule a les bonnes commandes, deux cas :
+* Eclairage adaptatif : en test pour l'instant (fonctionnalité en beta pour vérifier si on prend en compte tous les cas, faites-moi des retours !), test intégré si l'ampoule a les bonnes commandes, deux cas :
 	- soit l'ampoule s'allume lorsque la température couleur est modifiée : on doit retirer l'éclairage adaptatif à chaque fois qu'on éteint l'ampoule, sinon elle s'allumera toute seule !
 	- soit l'ampoule ne s'allume pas lorsque la température couleur est modifiée : situation idéale ! on peut garder l'éclairage adaptatif en permanence !
 * Test intégé pour voir dans quel cas l'ampoule est ! ce test va modifier la température couleur et vérifier ensuite si l'ampoule s'est allumée.
