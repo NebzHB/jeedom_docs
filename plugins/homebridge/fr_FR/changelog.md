@@ -27,7 +27,8 @@ A venir prochainement (En Beta)
 * Le type générique "Action/Serrure Bouton Fermer" n'est plus obligatoire pour les serrures (pour les gaches par exemple)
 * Correctif cosmétique pour l'affichage des plugins pour homebridge installés pour 4.2
 * Correctif cosmétique pour l'affichage des alertes json pour les plateformes et accessoires supplémentaires pour 4.2
-* On peut maintenant utiliser plusieurs types "Interrupteurs" normaux dans un même équipement ! (la référence à l'état dans les commandes est obligatoire, voir doc troubleshooting > Point important) 
+* On peut maintenant utiliser plusieurs types "Interrupteurs" normaux dans un même équipement ! (la référence à l'état dans les commandes est obligatoire, voir doc troubleshooting > Point important)
+* Correction pour les plugins alarme lorsqu'on passait de Désactivé à un mode différent que le mode précédemment choisi.
 
 17-12-2021
 ----------
