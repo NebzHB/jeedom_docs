@@ -27,6 +27,8 @@ A venir prochainement (En Beta)
 * Le type générique "Action/Serrure Bouton Fermer" n'est plus obligatoire pour les serrures (pour les gaches par exemple)
 * Correctif cosmétique pour l'affichage des plugins pour homebridge installés pour 4.2
 * Correctif cosmétique pour l'affichage des alertes json pour les plateformes et accessoires supplémentaires pour 4.2
+* Correctif pour un warning dans le log démon quand on affichait tous les logs
+* Correctif pour les graphiques Eve si le serial de l'équipement contenait un "/" (jMQTT ou zigbee2mqtt par ex), les graphs ne s'affichaient pas (il faut décocher/relancer le démon/recocher et relancer le démon si ca vous est arrivé)
 * On peut maintenant utiliser plusieurs types "Interrupteurs" normaux dans un même équipement ! (la référence à l'état dans les commandes est obligatoire, voir doc troubleshooting > Point important)
 * Correction pour les plugins alarme lorsqu'on passait de Désactivé à un mode différent que le mode précédemment choisi.
 
