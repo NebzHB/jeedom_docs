@@ -25,6 +25,7 @@ A venir prochainement (En Beta)
 * Les états définis pour une porte de garage/portail peuvent maintenant être une chaine de caractère.
 * Si un état garage/portail a une valeur non définie dans les valeurs configurables, l'état sera "Stoppé en cours d'ouverture". (Pour gérer les garages à pourcentage d'ouverture)
 * Homebridge 1.4.0
+* Repassé sur le "latest" de homebridge-gsh à la place de la 2.2.0 (qui était la dernière déjà mais ca permet de prendre la prochaine nouvelle version)
 * Ajout de traductions en_US et pt_PT
 
 **Correctifs :**
