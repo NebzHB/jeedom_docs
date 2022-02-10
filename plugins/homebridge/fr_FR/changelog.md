@@ -21,7 +21,7 @@ A venir prochainement (En Beta)
 * Si un état garage/portail a une valeur non définie dans les valeurs configurables, l'état sera "Stoppé en cours d'ouverture". (Pour gérer les garages à pourcentage d'ouverture)
 * Meilleure gestion dans le cas d'une alarme sans modes.
 * Homebridge 1.4.0
-* Correction pour plugin Météo
+* Correction pour plugin Météo, il y avait des doublons de types génériques dans le plugin officiel.
 * Ajout de traductions en_US et pt_PT
 * Correctif pour l'état des thermostats si on utilise es_ES ou pt_PT ou de_DE
 * Le type générique "Action/Serrure Bouton Fermer" n'est plus obligatoire pour les serrures (pour les gaches par exemple)
@@ -30,7 +30,7 @@ A venir prochainement (En Beta)
 * Correctif pour un warning dans le log démon quand on affichait tous les logs
 * Correctif pour les graphiques Eve si le serial de l'équipement contenait un "/" (jMQTT ou zigbee2mqtt par ex), les graphs ne s'affichaient pas (il faut décocher/relancer le démon/recocher et relancer le démon si ca vous est arrivé)
 * On peut maintenant utiliser plusieurs types "Interrupteurs" normaux dans un même équipement ! (la référence à l'état dans les commandes est obligatoire, voir doc troubleshooting > Point important)
-* Correction pour les plugins alarme lorsqu'on passait de Désactivé à un mode différent que le mode précédemment choisi.
+* Correctif pour les plugins alarme (officiel + verisure + diagral) lorsqu'on passait de Désactivé à un mode différent que le mode précédemment choisi.
 
 10-02-2022
 ----------
