@@ -30,6 +30,11 @@ A venir prochainement (En Beta)
 * On peut maintenant utiliser plusieurs types "Interrupteurs" normaux dans un même équipement ! (la référence à l'état dans les commandes est obligatoire, voir doc troubleshooting > Point important)
 * Correction pour les plugins alarme lorsqu'on passait de Désactivé à un mode différent que le mode précédemment choisi.
 
+10-02-2022
+----------
+
+* Freeze de la version du plugin pour Jeedom V3 sur la stable du 17-12-2021. La V3 n'aura plus d'update du plugin. Fin du support pour la V3. Si vous avez reçu cette mise à jour, vous êtes toujours en V3, mettez à jour en V4 minimum au plus vite !
+
 17-12-2021
 ----------
 
