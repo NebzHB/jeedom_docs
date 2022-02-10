@@ -25,8 +25,8 @@ A venir prochainement (En Beta)
 * Ajout de traductions en_US et pt_PT
 * Correctif pour l'état des thermostats si on utilise es_ES ou pt_PT ou de_DE
 * Le type générique "Action/Serrure Bouton Fermer" n'est plus obligatoire pour les serrures (pour les gaches par exemple)
-* Correctif pour l'affichage des plugins pour homebridge installés pour 4.2
-* Correctif pour l'affichage des alertes json pour les plateformes et accessoires supplémentaires pour 4.2
+* Correctif cosmétique pour l'affichage des plugins pour homebridge installés pour 4.2
+* Correctif cosmétique pour l'affichage des alertes json pour les plateformes et accessoires supplémentaires pour 4.2
 * On peut maintenant utiliser plusieurs types "Interrupteurs" normaux dans un même équipement ! (la référence à l'état dans les commandes est obligatoire, voir doc troubleshooting > Point important) 
 
 17-12-2021
