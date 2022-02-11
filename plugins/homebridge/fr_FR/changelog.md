@@ -14,11 +14,11 @@ A venir prochainement (En Beta)
 
 **Nouvelles Foncitonnalités :**
 
-* Eclairage adaptatif : en test pour l'instant (fonctionnalité en beta pour vérifier si on prend en compte tous les cas, faites-moi des retours !), test intégré si l'ampoule a les bonnes commandes, deux cas :
+* Eclairage adaptatif (sur les ampoules qui gèrent la température couleur) : en test pour l'instant (fonctionnalité en beta pour vérifier si on prend en compte tous les cas, faites-moi des retours !), test intégré si l'ampoule a les bonnes commandes, deux cas :
 	- soit l'ampoule s'allume lorsque la température couleur est modifiée : on doit retirer l'éclairage adaptatif à chaque fois qu'on éteint l'ampoule, sinon elle s'allumera toute seule !
 	- soit l'ampoule ne s'allume pas lorsque la température couleur est modifiée : situation idéale ! on peut garder l'éclairage adaptatif en permanence !
 * Test intégé pour voir dans quel cas l'ampoule est ! ce test va modifier la température couleur et vérifier ensuite si l'ampoule s'est allumée.
-* Mise en cache de la liste des concentrateurs homekit, car il est obligatoire d'un avoir au moins un pour utiliser l'éclairage adaptatif.
+* Mise en cache de la liste des concentrateurs homekit, car il est obligatoire d'un avoir **au moins un** pour utiliser l'éclairage adaptatif.
 * "Activer la pièce" : est maintenant indépendant de l'app mobile. une pièce activée dans homebridge l'est uniquement pour homebridge !
 * Le type générique "Action/Serrure Bouton Fermer" n'est plus obligatoire pour les serrures (pour les gaches par exemple)
 * On peut maintenant utiliser plusieurs types "Interrupteurs" normaux dans un même équipement ! (la référence à l'état dans les commandes est obligatoire, voir doc troubleshooting > Point important)
@@ -26,7 +26,7 @@ A venir prochainement (En Beta)
 * Si un état garage/portail a une valeur non définie dans les valeurs configurables, l'état sera "Stoppé en cours d'ouverture". (Pour gérer les garages à pourcentage d'ouverture)
 * Homebridge 1.4.0
 * Repassé sur le "latest" de homebridge-gsh à la place de la 2.2.0 (qui était la dernière déjà mais ca permet de prendre la prochaine nouvelle version)
-* Ajout de traductions en_US et pt_PT
+* Ajout de traductions en_US (100% traduit), pt_PT (100% traduit merci @BLRPERES !), es_ES (56% traduit) et de_DE (40% traduit)
 
 **Correctifs :**
 
@@ -37,7 +37,7 @@ A venir prochainement (En Beta)
 * Correctif cosmétique pour l'affichage des alertes json pour les plateformes et accessoires supplémentaires pour 4.2
 * Correctif pour un warning dans le log démon quand on affichait tous les logs
 * Correctif pour les graphiques Eve si le serial de l'équipement contenait un "/" (jMQTT ou zigbee2mqtt par ex), les graphs ne s'affichaient pas (il faut décocher/relancer le démon/recocher et relancer le démon si ca vous est arrivé)
-* Correctif pour les plugins alarme (officiel + verisure + diagral) lorsqu'on passait de Désactivé à un mode différent que le mode précédemment choisi.
+* Correctif pour les plugins alarme (officiel + verisure + diagralOne) lorsqu'on passait de Désactivé à un mode différent que le mode précédemment choisi.
 
 
 10-02-2022
