@@ -5,7 +5,7 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
-# en beta - à venir
+# 11-02-2022
 
 * Messages d'erreurs plus explicites.
 * Traductions anglaises
