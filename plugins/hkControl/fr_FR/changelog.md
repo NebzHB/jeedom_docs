@@ -14,7 +14,7 @@ En Beta
 * Version de Jeedom 4.0 MINIMUM !!! le plugin sur une V3 ne recevra plus de mise à jour et n'est plus supporté !
 * Connexions permanente pour les équipements (commandes actions plus rapides)
 * Correctif pour les problèmes de double souscriptions ou de plantage après refresh
-* divers correctifs
+* divers correctifs pour gérer les déconnexions des équipements et les reprendre automatiquement quand ils reviennent.
 
 12-02-2022
 ----------
