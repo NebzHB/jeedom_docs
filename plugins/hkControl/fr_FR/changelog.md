@@ -11,8 +11,15 @@ Changelog
 En Beta
 -------
 
+* Version de Jeedom 4.0 MINIMUM !!! le plugin sur une V3 ne recevra plus de mise à jour et n'est plus supporté !
 * Connexions permanente pour les équipements (commandes actions plus rapides)
 * Correctif pour les problèmes de double souscriptions ou de plantage après refresh
+* divers correctifs
+
+12-02-2022
+----------
+
+* Freeze de la version du plugin pour Jeedom V3 sur la stable du 16-11-2021. La V3 n'aura plus d'update du plugin. Fin du support pour la V3. Si vous avez reçu cette mise à jour, vous êtes toujours en V3, mettez à jour en V4 minimum au plus vite !
 
 16-11-2021
 ----------
