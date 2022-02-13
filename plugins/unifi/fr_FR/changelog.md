@@ -5,6 +5,11 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# En Beta actuellement
+
+* Sécurisation API
+* Cacher satisfaction_real satisfaction_now et satisfaction_reason qui ne sont pas utilisés (arrivés probablement en 7.0.21)
+
 # 11-02-2022
 
 * Messages d'erreurs plus explicites.
