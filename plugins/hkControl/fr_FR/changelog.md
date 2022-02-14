@@ -8,13 +8,18 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
-En Beta
--------
+En Bêta actuellement
+--------------------
+
+* Rien ;)
+
+14-02-2022
+----------
 
 * Version de Jeedom 4.0 MINIMUM !!! le plugin sur une V3 ne recevra plus de mise à jour et n'est plus supporté !
 * Connexions permanente pour les équipements (commandes actions plus rapides)
 * Correctif pour les problèmes de double souscriptions ou de plantage après refresh
-* divers correctifs pour gérer les déconnexions des équipements et les reprendre automatiquement quand ils reviennent.
+* Divers correctifs pour gérer les déconnexions des équipements et les reprendre automatiquement quand ils reviennent.
 * Logs plus clairs et plus détaillés en cas de problème
 
 12-02-2022
