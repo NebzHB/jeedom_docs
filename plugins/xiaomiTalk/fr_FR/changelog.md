@@ -8,6 +8,11 @@ description: Changelog du plugin xiaomiTalk
 Changelog
 =========
 
+14-02-2021
+----------
+
+* fix images pour jeedom 4.2
+
 30-12-2021
 ----------
 
