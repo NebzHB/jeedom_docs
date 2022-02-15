@@ -8,6 +8,11 @@ description: Changelog du plugin xiaomiTalk
 Changelog
 =========
 
+15-02-2021
+----------
+
+* fix tts jeedom sur 4.2
+
 14-02-2021
 ----------
 
