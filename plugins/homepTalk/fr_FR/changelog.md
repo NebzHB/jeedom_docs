@@ -14,7 +14,7 @@ En Beta (à venir)
 
 15-02-2021
 ----------
-* Fix TTs jeedom avec 4.2
+* Fix TTs jeedom avec 4.2 (possible que jeedom 3 ne soit plus compatible du coup... je ne le supporte plus de toute façon)
 
 15-10-2021
 ----------
