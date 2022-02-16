@@ -10,6 +10,11 @@ Changelog
 
 A venir prochainement (En Beta)
 -------------------------------
+* Rien :)
+
+
+16-02-2022
+----------
 * Version de Jeedom 4.0 MINIMUM !!! le plugin sur une V3 ne recevra plus de mise à jour et n'est plus supporté !
 
 **Nouvelles Foncitonnalités :**
