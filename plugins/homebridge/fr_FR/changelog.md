@@ -10,7 +10,7 @@ Changelog
 
 A venir prochainement (En Beta)
 -------------------------------
-* Rien :)
+* Ne pas afficher l'interface docker dans les choix d'interface où envoyer/écouter homebridge
 
 
 16-02-2022
