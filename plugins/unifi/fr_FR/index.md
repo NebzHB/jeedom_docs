@@ -89,6 +89,8 @@ Astuces & FAQ
 
 ![image](https://user-images.githubusercontent.com/28622481/134291583-68965409-aa72-4086-9843-495b4e932c30.png)
 
+![image](https://user-images.githubusercontent.com/28622481/154662386-d4d016c6-470f-4221-846d-12f7d70ee768.png)
+
 -   Evidemment le websocket doit aussi être activé :
 
 ![image](https://user-images.githubusercontent.com/28622481/134291867-30121590-035f-454a-a42f-421e8f57b9b3.png)
