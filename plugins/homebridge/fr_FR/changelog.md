@@ -10,7 +10,8 @@ Changelog
 
 A venir prochainement (En Beta)
 -------------------------------
-* Ne pas afficher l'interface docker dans les choix d'interface où envoyer/écouter homebridge
+* Ne pas afficher l'interface docker dans les choix d'interface où envoyer/écouter homebridge.
+* Nouveau Type Générique Qualité d'air (Indice Personnalisable) pour définir les paliers de qualité d'air.
 
 
 16-02-2022
