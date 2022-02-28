@@ -15,6 +15,10 @@ A venir prochainement (En Beta)
 * Correction pour les lampes Zigbee2MQTT du plugin ZigbeeLinker. (types générique "Info/Lumière Etat (Binaire)" sur cmd Etat et "Lumière Etat" sur cmd Luminosité (Valeur))
 * Correction : Si on fait une réparation sur un système sans nom, on nomme quand même le pont Jeedom_...
 
+28-02-2022
+----------
+* Fix pour Jeedom 4.2.13 (forcer activation de l'api)
+
 16-02-2022
 ----------
 * Version de Jeedom 4.0 MINIMUM !!! le plugin sur une V3 ne recevra plus de mise à jour et n'est plus supporté !
