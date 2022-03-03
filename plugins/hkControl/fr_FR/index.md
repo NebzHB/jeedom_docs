@@ -139,6 +139,7 @@ Si le plugin dit que votre périphérique est déjà appairé (on le voit aussi 
 | Meross MSS210HK | [Voir Site Officiel](https://www.meross.com/Detail/3/Smart%20Wi-Fi%20Plug){:target="_blank" rel="noopener"} | OUI<sup>1</sup> | Doit être ajouté à Maison puis retiré<br />Prise FR testée (mais les autres devraient fonctionner aussi) |
 | Meross MSS710HK | [Voir Site Officiel](https://www.meross.com/Detail/21/Smart%20Wi-Fi%20Switch){:target="_blank" rel="noopener"} | OUI<sup>1</sup> | Doit être ajouté à Maison puis retiré |
 | Gateway Lidl HG07132 | [Voir Site Officiel (Belgique)](https://www.lidl.be/p/fr-BE/livarno-home-passerelle-domotique-smart-home/p100344717){:target="_blank" rel="noopener"} | OUI<sup>1</sup> | Doit être ajouté à Maison puis retiré |
+| Satechi ST-HK2OA-EU | [Voir Site Officiel](https://satechi.net/products/dual-smart-outlet?variant=29982394089560){:target="_blank" rel="noopener"} | OUI<sup>1</sup> | Doit être ajouté à Maison puis retiré |
 
 <sup>1</sup> : Nécessite un iPhone ou iPad (et l'app Maison) pour mettre l'équipement sur le réseau la première fois ou en cas de problème.<br/>
 <sup>2</sup> : Nécessite un iPhone ou iPad (et l'app Eve) pour mettre l'équipement sur le réseau la première fois et à chaque ajout d'équipement au Pont.<br/>
