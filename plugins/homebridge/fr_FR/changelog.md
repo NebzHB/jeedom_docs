@@ -14,6 +14,7 @@ A venir prochainement (En Beta)
 * Nouveau Type Générique Qualité d'air (Indice Personnalisable) pour définir les paliers de qualité d'air. DOIT utiliser l'unité µg/m3 ou ppb.
 * Correction pour les lampes Zigbee2MQTT du plugin ZigbeeLinker. (types générique "Info/Lumière Etat (Binaire)" sur cmd Etat et "Lumière Etat" sur cmd Luminosité (Valeur))
 * Correction : Si on fait une réparation sur un système sans nom, on nomme quand même le pont Jeedom_...
+* Traduction complète en ES (gracias @Bull)
 
 28-02-2022
 ----------
