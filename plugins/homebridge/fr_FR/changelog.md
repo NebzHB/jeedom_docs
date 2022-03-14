@@ -16,6 +16,11 @@ A venir prochainement (En Beta)
 * Correction : Si on fait une réparation sur un système sans nom, on nomme quand même le pont Jeedom_...
 * Traduction complète en ES (gracias @Bull)
 * Exlusion du plugin MeteoFull car trop de commandes
+* Migration des commandes custom directement dans les équipements (grosse modification !!)
+* Migration des types génériques homebridge dans le type de la commande directement (mieux pour les jeedom >4.2.5, pour les autres, le type générique peut apparaitre vide dans l'écran de la commande dans le core)
+* Migration des configuration custom des equipements dans l'equipement
+* Simplification du code
+* En Test : si jeedom est en https sur le réseau local (avant : non supporté, maintenant : reste non conseillé), le démon ignorera les problèmes éventuels de certificat (et affichera un warning)
 
 28-02-2022
 ----------
