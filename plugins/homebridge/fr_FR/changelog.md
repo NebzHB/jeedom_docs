@@ -24,7 +24,7 @@ A venir prochainement (En Beta)
 
 20-03-2022
 ----------
-* Fix migration pièces qui n'ont jamais été sauvegardées comme s'ajoutant automatiquement dans homebridge. (pour ceux qui n'avaient pas encore migré)
+* Fix migration pièces qui n'ont jamais été sauvegardées comme s'ajoutant automatiquement dans homebridge. (pour ceux qui n'avaient pas encore migré, les autres, il faut re-cocher vos pièces)
 
 28-02-2022
 ----------
