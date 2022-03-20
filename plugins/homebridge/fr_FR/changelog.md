@@ -22,6 +22,10 @@ A venir prochainement (En Beta)
 * Simplification du code
 * En Test : si jeedom est en https sur le réseau local (avant : non supporté, maintenant : reste non conseillé), le démon ignorera les problèmes éventuels de certificat (et affichera un warning)
 
+20-03-2022
+----------
+* Fix migration pièces qui n'ont jamais été sauvegardées comme s'ajoutant automatiquement dans homebridge. (pour ceux qui n'avaient pas encore migré)
+
 28-02-2022
 ----------
 * Fix pour Jeedom 4.2.13 (forcer activation de l'api)
