@@ -20,7 +20,7 @@ A venir prochainement (En Beta)
 * Migration des configuration custom des equipements dans l'equipement
 * Simplification du code
 * En Test : si jeedom est en https sur le réseau local (avant : non supporté, maintenant : reste non conseillé), le démon ignorera les problèmes éventuels de certificat (et affichera un warning)
-* Gestion de "Météo Pluie (homebridge)" et "Météo Température min" dans Eve seulement !
+* Gestion de "Météo Pluie (homebridge)", "Météo Neige (homebridge)" et "Météo Température min" dans Eve seulement !
 * Gestion et corrections des types génériques pour plugin MeteoFull.
 
 20-03-2022
