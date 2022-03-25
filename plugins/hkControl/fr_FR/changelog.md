@@ -11,7 +11,7 @@ Changelog
 En Bêta actuellement
 --------------------
 
-* Rien ;)
+* Ajout d'un timeout de 10sec pour setAccessorries (les actions venant de jeedom).
 
 14-02-2022
 ----------
