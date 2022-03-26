@@ -9,6 +9,7 @@ description: Changelog du plugin Unifi
 
 * Sécurisation API
 * Cacher satisfaction_real satisfaction_now et satisfaction_reason qui ne sont pas utilisés (arrivés probablement en 7.0.21)
+* Forcer l'écoute du démon en IPv4 seulement.
 
 # 11-02-2022
 
