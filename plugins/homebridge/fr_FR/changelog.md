@@ -15,13 +15,13 @@ A venir prochainement (En Beta)
 * Correction pour les lampes Zigbee2MQTT du plugin ZigbeeLinker. (types générique "Info/Lumière Etat (Binaire)" sur cmd Etat et "Lumière Etat" sur cmd Luminosité (Valeur))
 * Correction : Si on fait une réparation sur un système sans nom, on nomme quand même le pont Jeedom_...
 * Traduction complète en ES (gracias @Bull)
-* Migration des commandes custom directement dans les équipements (grosse modification !!)
+* Migration des commandes custom directement dans la configuration des équipements (grosse modification !!)
 * Migration des types génériques homebridge dans le type de la commande directement (mieux pour les jeedom >4.2.5, pour les autres, le type générique peut apparaitre vide dans l'écran de la commande dans le core)
-* Migration des configuration custom des equipements dans l'equipement
 * Simplification du code
 * En Test : si jeedom est en https sur le réseau local (avant : non supporté, maintenant : reste non conseillé), le démon ignorera les problèmes éventuels de certificat (et affichera un warning)
 * Gestion de "Météo Pluie (homebridge)", "Météo Neige (homebridge)" et "Météo Température min" dans Eve seulement !
 * Gestion et corrections des types génériques pour plugin MeteoFull.
+* Les paramètres des alarmes, des thermostats, de qualité d'air (indice personnalisable), des boutons sans etats et des garages/portails s'affichent maintenant dynamiquement lors du choix du type générique ! (il faut cependant encore réouvrir la fenêtre si vous ajoutez un mode à alarme ou thermostat mais un popup vous prévient)
 
 20-03-2022
 ----------
