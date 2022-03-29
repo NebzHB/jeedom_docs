@@ -21,7 +21,7 @@ A venir prochainement (En Beta)
 * En Test : si jeedom est en https sur le réseau local (avant : non supporté, maintenant : reste non conseillé), le démon ignorera les problèmes éventuels de certificat (et affichera un warning)
 * Gestion de "Météo Pluie (homebridge)", "Météo Neige (homebridge)" et "Météo Température min" dans Eve seulement !
 * Gestion et corrections des types génériques pour plugin MeteoFull.
-* Les paramètres des alarmes, des thermostats, de qualité d'air (indice personnalisable), des boutons sans etats et des garages/portails s'affichent maintenant dynamiquement lors du choix du type générique ! (il faut cependant encore réouvrir la fenêtre si vous ajoutez un mode à alarme ou thermostat mais un popup vous prévient)
+* Les paramètres des alarmes, des thermostats, de qualité d'air (indice personnalisable), des boutons sans etats et des garages/portails s'affichent maintenant dynamiquement lors du choix du type générique !
 
 20-03-2022
 ----------
