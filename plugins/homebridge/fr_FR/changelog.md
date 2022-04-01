@@ -22,9 +22,9 @@ A venir prochainement (En Beta)
 * Gestion de "Météo Pluie (homebridge)", "Météo Neige (homebridge)" et "Météo Température min" dans Eve seulement !
 * Gestion et corrections des types génériques pour plugin MeteoFull.
 * Les paramètres des alarmes, des thermostats, de qualité d'air (indice personnalisable), des boutons programmables et des garages/portails s'affichent maintenant dynamiquement lors du choix du type générique !
-* Affichage des équipements désactivés dans la configuration des pièces (avec une alerte pour dire qu'ils ne seront pas envoyés dans homebridge)
-* Affichage du plugin à coté du nom de l'équipement
+* Affichage barré rouge des équipements désactivés dans la configuration des pièces (avec une alerte pour dire qu'ils ne seront pas envoyés dans homebridge)
 * Affichage du lien vers la configuration de l'équipement (dans une nouvelle fenêtre)
+* Retiré le nom de la pièce devant l'équipement (car doublon) et ordonné les équipements par nom dans les pièces
 
 20-03-2022
 ----------
