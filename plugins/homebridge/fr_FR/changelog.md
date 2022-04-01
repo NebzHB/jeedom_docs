@@ -25,6 +25,7 @@ A venir prochainement (En Beta)
 * Affichage barré rouge des équipements désactivés dans la configuration des pièces (avec une alerte pour dire qu'ils ne seront pas envoyés dans homebridge)
 * Affichage du lien vers la configuration de l'équipement (dans une nouvelle fenêtre)
 * Retiré le nom de la pièce devant l'équipement (car doublon) et ordonné les équipements par nom dans les pièces
+* Affichage des pièces comme dans 4.2 avec couleurs et mode table
 
 20-03-2022
 ----------
