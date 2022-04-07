@@ -35,6 +35,7 @@ A venir prochainement (En Beta)
 * Correction pour les lampes Zigbee2MQTT du plugin ZigbeeLinker. (types générique "Info/Lumière Etat (Binaire)" sur cmd Etat et "Lumière Etat" sur cmd Luminosité (Valeur))
 * Correction : Si on fait une réparation sur un système sans nom, on nomme quand même le pont Jeedom_...
 * Gestion et corrections des types génériques pour plugin MeteoFull.
+* Changements cosmétiques et d'alignement.
 
 
 20-03-2022
