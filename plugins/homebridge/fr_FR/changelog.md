@@ -10,23 +10,32 @@ Changelog
 
 A venir prochainement (En Beta)
 -------------------------------
-* Ne pas afficher l'interface docker dans les choix d'interface où envoyer/écouter homebridge.
-* Nouveau Type Générique Qualité d'air (Indice Personnalisable) pour définir les paliers de qualité d'air. DOIT utiliser l'unité µg/m3 ou ppb.
-* Correction pour les lampes Zigbee2MQTT du plugin ZigbeeLinker. (types générique "Info/Lumière Etat (Binaire)" sur cmd Etat et "Lumière Etat" sur cmd Luminosité (Valeur))
-* Correction : Si on fait une réparation sur un système sans nom, on nomme quand même le pont Jeedom_...
+
+**Nouvelles Fonctionnalités :**
+
 * Traduction complète en ES (gracias @Bull)
 * Migration des commandes custom directement dans la configuration des équipements (grosse modification !!)
 * Migration des types génériques homebridge dans le type de la commande directement (mieux pour les jeedom >4.2.5, pour les autres, le type générique peut apparaitre vide dans l'écran de la commande dans le core)
-* Simplification du code
 * En Test : si jeedom est en https sur le réseau local (avant : non supporté, maintenant : reste non conseillé), le démon ignorera les problèmes éventuels de certificat (et affichera un warning)
 * Gestion de "Météo Pluie (homebridge)", "Météo Neige (homebridge)" et "Météo Température min" dans Eve seulement !
-* Gestion et corrections des types génériques pour plugin MeteoFull.
-* Les paramètres des alarmes, des thermostats, de qualité d'air (indice personnalisable), des boutons programmables et des garages/portails s'affichent maintenant dynamiquement lors du choix du type générique !
+* Nouveau Type Générique "Qualité d'air (Indice Personnalisable)(homebridge)" pour définir les paliers de qualité d'air. DOIT utiliser l'unité µg/m3 ou ppb.
+* Les paramètres des alarmes, des thermostats, de qualité d'air (indice personnalisable), des boutons programmables et des garages/portails s'affichent maintenant dynamiquement lors du choix du type générique ! plus besoin de recharger la fenêtre !
 * Si en mode Debug : Affichage barré rouge des équipements désactivés dans la configuration des pièces (avec une alerte pour dire qu'ils ne seront pas envoyés dans homebridge)
+* Affichage des pièces désactivées en rouge
 * Affichage du lien vers la configuration de l'équipement (dans une nouvelle fenêtre)
 * Retiré le nom de la pièce devant l'équipement (car doublon) et ordonné les équipements par nom dans les pièces
 * Affichage des pièces comme dans 4.2 avec couleurs et mode table
-* Attention : par défaut, une nouvelle pièce n'est plus envoyée directement dans Homebridge, il faut la cocher (votre ancien choix est normalement préservé)
+* Simplification du code
+
+>**Attention :** Par défaut, une nouvelle pièce n'est plus envoyée directement dans Homebridge, il faut la cocher (votre ancien choix est normalement préservé)
+
+**Correctifs :**
+
+* Ne pas afficher l'interface docker dans les choix d'interface où envoyer/écouter homebridge.
+* Correction pour les lampes Zigbee2MQTT du plugin ZigbeeLinker. (types générique "Info/Lumière Etat (Binaire)" sur cmd Etat et "Lumière Etat" sur cmd Luminosité (Valeur))
+* Correction : Si on fait une réparation sur un système sans nom, on nomme quand même le pont Jeedom_...
+* Gestion et corrections des types génériques pour plugin MeteoFull.
+
 
 20-03-2022
 ----------
@@ -40,7 +49,7 @@ A venir prochainement (En Beta)
 ----------
 * Version de Jeedom 4.0 MINIMUM !!! le plugin sur une V3 ne recevra plus de mise à jour et n'est plus supporté !
 
-**Nouvelles Foncitonnalités :**
+**Nouvelles Fonctionnalités :**
 
 * Eclairage adaptatif (sur les ampoules qui gèrent la température couleur) : en test pour l'instant (fonctionnalité en beta pour vérifier si on prend en compte tous les cas, faites-moi des retours !), test intégré si l'ampoule a les bonnes commandes, deux cas :
 	- soit l'ampoule s'allume lorsque la température couleur est modifiée : on doit retirer l'éclairage adaptatif à chaque fois qu'on éteint l'ampoule, sinon elle s'allumera toute seule !
