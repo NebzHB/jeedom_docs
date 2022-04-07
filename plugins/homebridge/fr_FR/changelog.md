@@ -26,7 +26,7 @@ A venir prochainement (En Beta)
 * Affichage du lien vers la configuration de l'équipement (dans une nouvelle fenêtre)
 * Retiré le nom de la pièce devant l'équipement (car doublon) et ordonné les équipements par nom dans les pièces
 * Affichage des pièces comme dans 4.2 avec couleurs et mode table
-* Attention : par défaut, une pièce et un scenario ne sont plus envoyés directement dans Homebridge, il faut les cocher (votre ancien choix est normalement préservé)
+* Attention : par défaut, une nouvelle pièce n'est plus envoyée directement dans Homebridge, il faut la cocher (votre ancien choix est normalement préservé)
 
 20-03-2022
 ----------
