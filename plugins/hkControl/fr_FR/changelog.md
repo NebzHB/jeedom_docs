@@ -12,6 +12,7 @@ En Bêta actuellement
 --------------------
 
 * Ajout d'un timeout de 10sec pour setAccessorries (les actions venant de jeedom).
+* Traduction en Anglais.
 
 14-02-2022
 ----------
