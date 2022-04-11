@@ -37,6 +37,9 @@ A venir prochainement (En Beta)
 * Gestion et corrections des types génériques pour plugin MeteoFull.
 * Changements cosmétiques et d'alignement.
 
+11-04-2022
+----------
+* Absolument rien n'a changé, j'ai juste recliqué sans faire exprès sur "publier sur le market"...
 
 20-03-2022
 ----------
