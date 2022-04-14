@@ -8,7 +8,7 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-A venir prochainement (En Beta)
+14-04-2022
 -------------------------------
 
 **Nouvelles Fonctionnalités :**
