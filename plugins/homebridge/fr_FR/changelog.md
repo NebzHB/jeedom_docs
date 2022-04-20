@@ -12,6 +12,7 @@ En Beta actuellement
 --------------------
 
 * Ignore les équipements du plugin mobile qui peuvent poser problème
+* Corrections Orthographe
 
 14-04-2022
 -------------------------------
