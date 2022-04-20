@@ -8,6 +8,11 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+En Beta actuellement
+--------------------
+
+* Ignore les équipements du plugin mobile qui peuvent poser problème
+
 14-04-2022
 -------------------------------
 
