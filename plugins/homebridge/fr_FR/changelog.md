@@ -13,6 +13,7 @@ En Beta actuellement
 
 * Ignore les équipements du plugin mobile qui peuvent poser problème
 * Corrections Orthographe
+* homebridge 1.4.1
 
 14-04-2022
 -------------------------------
