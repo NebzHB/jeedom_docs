@@ -13,6 +13,7 @@ En Bêta actuellement
 
 * Ajout d'un timeout de 10sec pour setAccessorries (les actions venant de jeedom).
 * Traduction en Anglais.
+* Mise à jour de la lib de communication : Correction d'un bug qui ferait fonctionner le thermostat Tado.
 
 14-02-2022
 ----------
