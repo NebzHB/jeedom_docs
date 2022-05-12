@@ -13,6 +13,8 @@ description: Changelog du plugin Unifi
 * Correction pour le renommage automatique des équipements dans jeedom lorsqu'on renomme coté controleur.
 * Correction fenetre santé : bloqué était inversé.
 * Si EADDRINUSE on réessaie dans 1 seconde.
+* Update des images venant du controleur
+* Contournement problème Unifi sur cloudkey (erreur 403) on va chercher la liste des noms des périphériques la nuit sans bloquer (il y aura quand meme une erreur dans le log mais elle n'est plus bloquante)
 
 # 11-02-2022
 
