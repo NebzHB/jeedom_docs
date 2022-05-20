@@ -14,6 +14,8 @@ En Beta actuellement
 * Ignore les équipements du plugin mobile qui peuvent poser problème
 * Corrections Orthographe
 * homebridge 1.4.1
+* Sur Raspberry Pi, support du codec h264_v4l2m2m qui promet de meilleures performance mais surtout omx est déprécié (et non compatible 64bit). (il faut réimporter la camera ou modifier le vcodec dans la plateforme.
+* Plus de détails pendant l'installation des dépendances entre 70 et 80%
 
 14-04-2022
 -------------------------------
