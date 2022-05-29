@@ -8,7 +8,7 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
-29/05/2022
+29-05-2022
 --------------------
 
 * Ajout d'un timeout de 10sec pour setAccessorries (les actions venant de jeedom).
