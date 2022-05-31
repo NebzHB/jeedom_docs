@@ -8,6 +8,11 @@ description: Changelog du plugin xiaomiTalk
 Changelog
 =========
 
+01-06-2022
+----------
+
+* Utilise NodeJS 16
+
 15-02-2021
 ----------
 
