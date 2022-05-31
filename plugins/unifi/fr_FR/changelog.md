@@ -5,7 +5,7 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
-# En Beta actuellement
+# 01-06-2022
 
 * Sécurisation API
 * Cacher satisfaction_real satisfaction_now et satisfaction_reason qui ne sont pas utilisés (arrivés probablement en 7.0.21)
@@ -15,6 +15,7 @@ description: Changelog du plugin Unifi
 * Si EADDRINUSE on réessaie dans 1 seconde.
 * Update des images venant du controleur
 * Contournement problème Unifi sur cloudkey (erreur 403) on va chercher la liste des noms des périphériques la nuit sans bloquer (il y aura quand meme une erreur dans le log mais elle n'est plus bloquante)
+* Utilise NodeJS 16
 
 # 11-02-2022
 
