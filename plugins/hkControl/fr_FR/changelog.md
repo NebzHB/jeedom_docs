@@ -8,6 +8,11 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+01-06-2022
+----------
+
+* Utilise NodeJS 16
+
 29-05-2022
 --------------------
 
