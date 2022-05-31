@@ -5,6 +5,9 @@ title: Plugin aTVRemote - Changelog
 description: Changelog du plugin aTVRemote
 ---
 
+# 01/06/2022
+- utilise nodejs 16
+
 # 21/05/2020
 Projet entièrement revisité !!
 - Nouveau widget ! (Merci à @Wators)
