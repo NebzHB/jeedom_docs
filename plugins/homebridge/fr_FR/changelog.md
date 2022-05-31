@@ -8,7 +8,7 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-En Beta actuellement
+01-06-2022
 --------------------
 
 * Ignore les équipements du plugin mobile qui peuvent poser problème
@@ -17,6 +17,7 @@ En Beta actuellement
 * Sur Raspberry Pi, support du codec h264_v4l2m2m qui promet de meilleures performance mais surtout omx est déprécié (et non compatible 64bit). (il faut réimporter la camera ou modifier le vcodec dans la plateforme.)
 * Plus de détails pendant l'installation des dépendances entre 70 et 80%
 * Correction en cas de thermostat de température négative
+* Utilise NodeJS 16
 
 14-04-2022
 -------------------------------
