@@ -12,6 +12,7 @@ Changelog
 ----------
 
 * Utilise NodeJS 16
+* Correction pour les unités qui pouvaient ne pas passer
 
 29-05-2022
 --------------------
