@@ -8,6 +8,11 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+03-06-2022
+----------
+
+* Message d'erreur plus clair si on veut faire une action et que l'équipement n'a pas dit de "Bonjour"
+
 01-06-2022
 ----------
 
