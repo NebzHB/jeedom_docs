@@ -8,6 +8,11 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+En Beta
+----------------
+
+* Apres une restauration d'une sauvegarde jeedom, on vide la liste des interfaces réseau de la config pour le cas ou on a restauré sur une nouvelle machine et que les interfaces ont un autre nom !
+
 01-06-2022
 --------------------
 
