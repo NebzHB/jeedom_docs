@@ -11,7 +11,7 @@ Changelog
 En Beta
 ----------------
 
-* Apres une restauration d'une sauvegarde jeedom, on vide la liste des interfaces réseau de la config pour le cas ou on a restauré sur une nouvelle machine et que les interfaces ont un autre nom !
+* Apres une restauration d'une sauvegarde jeedom, on vérifie la liste des interfaces réseau si elle n'a pas changé (restauration sur autre système).
 
 01-06-2022
 --------------------
