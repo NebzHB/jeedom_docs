@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 14-06-2022
+
+* Message d'erreur plus explicite dans le log "unifi" si le démon n'est pas lancé au moment d'une commande
+
 # 01-06-2022
 
 * Sécurisation API
