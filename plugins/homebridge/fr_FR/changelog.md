@@ -12,6 +12,11 @@ En Beta
 ----------------
 
 * Apres une restauration d'une sauvegarde jeedom, on vérifie la liste des interfaces réseau si elle n'a pas changé (restauration sur autre système).
+* Ajout d'un bouton réinstaller pour uniquement réinstaller Homebridge et NodeJS (sans réparer). (Doc à mettre à jour)
+* Exclure le plugin "conso" car les équipements ont plus de 100 commandes et homebridge n'aime pas.
+* Ajout dans DebugInfo de la compatibilité avec v4l2m2m (codec video pour Raspberry remplacant omx)
+* Remaniement des phrases d'alertes lors des réparations, réparer et réinstaller et réinstaller. Meilleure gestion du "loading" pendant la réparation et mise à jour du nouveau nom du homebridge via refresh.
+* Suppression des configurations du plugin s'il est supprimé de jeedom
 
 01-06-2022
 --------------------
