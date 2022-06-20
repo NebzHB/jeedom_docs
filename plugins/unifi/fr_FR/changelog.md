@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# En Beta
+
+* Réduction de la mémoire nécessaire pour créer un équipement avec bcp de commande en utilisant getCmd(null,logicalId) à la place de getCmd(null)
+
 # 14-06-2022
 
 * Message d'erreur plus explicite dans le log "unifi" si le démon n'est pas lancé au moment d'une commande
