@@ -11,6 +11,7 @@ Changelog
 En Beta
 ----------------
 
+* Homebridge 1.5.0
 * Apres une restauration d'une sauvegarde jeedom, on vérifie la liste des interfaces réseau si elle n'a pas changé (restauration sur autre système). Si les noms d'interfaces ont changés, on les retire de la sélection. S'il ne reste plus d'interface choisie, on reset le choix.
 * Ajout d'un bouton réinstaller pour uniquement réinstaller Homebridge et NodeJS (sans réparer). (Doc à mettre à jour)
 * Exclure le plugin "conso" car les équipements ont plus de 100 commandes et homebridge n'aime pas.
