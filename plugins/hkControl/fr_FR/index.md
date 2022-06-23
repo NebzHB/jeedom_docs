@@ -148,7 +148,7 @@ Si le plugin dit que votre périphérique est déjà appairé (on le voit aussi 
 **Non-Compatibles**
 ----------------------------
 
--    Tado en Homekit (à creuser, si qqun l'a je suis intéressé de me connecter à votre jeedom)
+-    Tado en Homekit (il semblerait qu'il y ait des timeout's avec ce périphérique, peut-être plus tard avec l'évolution de la librairie que j'utilise...)
 
 **Ne seront jamais compatibles**
 -------------------------------
