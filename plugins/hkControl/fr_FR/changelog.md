@@ -8,6 +8,11 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+En Beta
+----------
+
+* Utilisation d'un port libre aléatoire pour le démon
+
 03-06-2022
 ----------
 
