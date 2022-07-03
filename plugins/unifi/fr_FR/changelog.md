@@ -8,6 +8,7 @@ description: Changelog du plugin Unifi
 # En Beta
 
 * Réduction de la mémoire nécessaire pour créer un équipement avec bcp de commande en utilisant getCmd(null,logicalId) à la place de getCmd(null)
+* Utilisation d'un port libre aléatoire pour le démon
 
 # 14-06-2022
 
