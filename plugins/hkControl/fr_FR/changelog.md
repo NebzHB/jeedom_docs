@@ -12,6 +12,7 @@ En Beta
 ----------
 
 * Utilisation d'un port libre aléatoire pour le démon
+* Installation des dépendances plus rapide
 
 03-06-2022
 ----------
