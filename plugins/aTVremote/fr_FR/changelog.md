@@ -8,7 +8,7 @@ description: Changelog du plugin aTVRemote
 # 08/07/2022
 - Mise à jour importante (oui je sais ça fait longtemps) :)
 - Compatible uniquement Apple TV 4 et plus (les 3 j'en ai plus je peux pas vérifier et c'est pas la priorité !)
-- Compatible uniquement Jeedom 4.2
+- Compatible uniquement Jeedom 4.2 et plus
 - Compatible uniquement Debian Buster et plus (10+)
 - Il FAUT supprimer vos AppleTv existantes et redécouvrir !
 - Il FAUT réinstaller vos dépendances
