@@ -12,7 +12,7 @@ description: Changelog du plugin aTVRemote
 - Compatible uniquement Debian Buster et plus (10+)
 - Il FAUT supprimer vos AppleTv existantes et redécouvrir !
 - Il FAUT réinstaller vos dépendances
-- Le mode de fonctionnement a changé, il faut faire un appairage de l'apple TV en SSH (la commande à taper est visible dans l'équipement, copiez-collez-là dans SSH puis un code va s'afficher sur votre Apple TV, tapez-le dans l'invité de la commande et puis copiez la longue chaine affichée après "You may now use these credentials :" et collez-là dans l'équipement et sauvegardez.
+- Le mode de fonctionnement a changé, il faut faire un appairage de l'apple TV en SSH (la commande à taper est visible dans l'équipement, copiez-collez-là dans SSH puis un code va s'afficher sur votre Apple TV, tapez-le dans l'invité de la commande et puis copiez la longue chaine affichée après "You may now use these credentials :" et collez-là dans l'équipement et sauvegardez.)
 - **Pas necessaire de faire des retours de ceci ou cela fonctionne ou pas. on est au courant de tout ce qui fonctionne pas. Mais cette version est juste pour vous permettre d'avoir un minimum "vital"**
 
 # 01/06/2022
