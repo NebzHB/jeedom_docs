@@ -13,6 +13,7 @@ En Beta
 
 * Utilisation d'un port libre aléatoire pour le démon
 * Installation des dépendances plus rapide
+* Ajout d'un timeout si la souscription aux évènements d'un équipement prend plus de 10sec
 
 03-06-2022
 ----------
