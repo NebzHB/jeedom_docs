@@ -18,6 +18,9 @@ En Beta
 * Ajout dans DebugInfo de la compatibilité avec v4l2m2m (codec video pour Raspberry remplacant omx)
 * Remaniement des phrases d'alertes lors des réparations, réparer et réinstaller et réinstaller. Meilleure gestion du "loading" pendant la réparation et mise à jour du nouveau nom du homebridge via refresh.
 * Suppression des configurations du plugin s'il est supprimé de jeedom
+* Ajout d'un bouton pour exporter le DebugInfo d'un seul équipement à coté du nom de l'équipement quand on est en log de niveau Debug ou Info
+* Meilleur daemon_stop
+* L'installation des dépendances se stoppe sans continuer le reste pour certaines erreurs (plus rapide à voir l'erreur plutot que de continuer alors que ça sert à rien)
 
 01-06-2022
 --------------------
