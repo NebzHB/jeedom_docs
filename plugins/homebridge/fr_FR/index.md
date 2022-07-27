@@ -100,13 +100,13 @@ Ces fichiers peuvent être nécessaires en cas de dysfonctionnement du plugin.
 
 ![log](../images/log.png)
 
-* Homebridge : Historise toutes les communications avec le démon homebridge.
+* Homebridge : Historise toutes les communications avec le démon Homebridge.
 
 * Homebridge_daemon : Historise les actions effectuées par Homebridge (par exemple si un accessoire est envoyé à Homebridge mais n'apparaît pas dans l'application Maison, c'est ici qu'il faut aller voir).
 
 * Homebridge_dep : Historise toutes les étapes de l'installation des dépendances. Si le démon refuse de démarrer par exemple, un coup d'oeil peut aider).
 
-* DebugInfo : Il ne s'agit pas vraiment d'un Log mais plutot d'informations de debuggage qui peuvent aider à diagnostiquer votre problème.  Pour avoir ces informations, il faut passer les logs du démon en "Debug" ou en "Info" puis actualiser la fenêtre (F5). A côté de "Configuration" dans le plugin Homebridge, vous avez l'icone DebugInfo qui est apparue. Il vous suffit de cliquer dessus et attendre que le relevé des informations s'effectue. Vous pouvez ensuite copier tout ou bien la catégorie qui vous est demandée.
+* DebugInfo : Il ne s'agit pas vraiment d'un Log mais plutôt d'informations de debuggage qui peuvent aider à diagnostiquer votre problème.  Pour avoir ces informations, il faut passer les logs du démon en "Debug" ou en "Info" puis actualiser la fenêtre (F5). A côté de "Configuration" dans le plugin Homebridge, vous avez l'icône DebugInfo qui est apparue. Il vous suffit de cliquer dessus et attendre que le relevé des informations s'effectue. Vous pouvez ensuite copier tout ou bien la catégorie qui vous est demandée.
 
 ![ExempleDebugInfo](../images/debugInfo.png)
 
@@ -151,7 +151,7 @@ Pour créer le pont, il suffit de lui donner un nom et un code "PIN".
 
 * *Importer Cameras du plugin Camera (BETA)* : Permet d'importer automatiquement les caméras du plugin Camera dans les plateformes supplémentaires (En test, à vérifier).
 
->L'importation risque de vous faire un doublon si vous avez déjà inclu votre caméra précédemment, une fois importée, une caméra ne sera plus modifiée par cet import. (grace au "serialNumber"). Pour le plugin Camera, la caméra doit avoir le champ "URL de flux" remplis.
+>L'importation risque de vous faire un doublon si vous avez déjà inclu votre caméra précédemment, une fois importée, une caméra ne sera plus modifiée par cet import. (grace au "serialNumber"). Pour le plugin Camera, la caméra doit avoir le champ "URL de flux" rempli.
 
 * *Plateforme Homebridge supplémentaire* : Permet de rajouter manuellement un plugin Homebridge de type plateforme (homebridge-camera-ffmpeg ou homebridge-nest par exemple).
 
@@ -182,7 +182,7 @@ Les équipements seront à ajouter manuellement.
 
 ![config-piece](../images/config-piece.png)
 
-Assurer-vous que la pièce soit bien activée. (Cocher la case activer la pièce case en haut)
+Assurez-vous que la pièce soit bien activée. (Cocher la case activer la pièce case en haut)
 
 ![choix-acc](../images/choix-acc.png)
 
@@ -207,7 +207,7 @@ En cliquant sur l'équipement, les types génériques utilisés pour la communic
 
 ![typegen-1](../images/typegen-1.png)
 
-La majorité des types génériques est déjà renseignée. Dans certains cas, une configuration manuelle sera nécessaire (pour le plugin Virtuel ou si le developpeur du plugin ne les a pas renseignés).
+La majorité des types génériques est déjà renseignée. Dans certains cas, une configuration manuelle sera nécessaire (pour le plugin Virtuel ou si le développeur du plugin ne les a pas renseignés).
 
 Voici les types génériques disponibles : 
 
@@ -394,7 +394,7 @@ Haut-Parleurs (Eve Seulement)
 Multimedia (Eve Seulement)
 -----------------------------
 |Info/Volume|`OUI`|Même chose que Info/Haut-Parleur Volume| 
-|Action/Volume|`OUI`|Réf. vers Info/Volume<br/>ême chose que Action/Haut-Parleur Volume| 
+|Action/Volume|`OUI`|Réf. vers Info/Volume<br/>Même chose que Action/Haut-Parleur Volume| 
 
 Interrupteur programmable Multi-Valeurs
 --------
@@ -599,7 +599,7 @@ Quand c'est fait vous pouvez sauvegarder et relancer le démon... et prier ;-) n
 
 ![logEx](../images/logEx.png)
 
-Si vous avez des erreur, c'est généralement un problème de mot de passe ou de clé ou d'ip... vérifiez vos donnees et le github pour voir comment les obtenir. Si vous ne résolvez toujours pas vous pouvez faire un post dans communauté avec le tag **#plugin-homebridge** pour que je regarde si tout me semble cohérent ... si c'est cohérent il est fort probable que je vous redirige vers le github du *plugin pour homebridge* en question afin de leur poser des questions (en anglais...). **(Vous comprendrez que je ne peux pas faire le support pour des centaines de plugins développés par plein de gens dans le monde...)**
+Si vous avez des erreurs, c'est généralement un problème de mot de passe ou de clé ou d'ip... vérifiez vos données et le github pour voir comment les obtenir. Si vous ne résolvez toujours pas vous pouvez faire un post dans communauté avec le tag **#plugin-homebridge** pour que je regarde si tout me semble cohérent ... si c'est cohérent il est fort probable que je vous redirige vers le github du *plugin pour homebridge* en question afin de leur poser des questions (en anglais...). **(Vous comprendrez que je ne peux pas faire le support pour des centaines de plugins développés par plein de gens dans le monde...)**
 
 Si tout se passe bien, voilà vous avez configuré votre *plugin pour homebridge* ! Enjoy ;-)
 
@@ -610,7 +610,7 @@ Depuis peu, l'interface **Config-UI-X** a été ajoutée au *plugin homebridge*,
 
 ![configuixButton](../images/configuixButton.png)
 
-Le plugin peut aussi s'installer via l'onglet "Plugins" de cette interface, vous recherchez dans la barre supérieur :
+Le plugin peut aussi s'installer via l'onglet "Plugins" de cette interface, vous recherchez dans la barre supérieure :
 
 ![cuixPlugins](../images/cuix-plugins.png)
 
