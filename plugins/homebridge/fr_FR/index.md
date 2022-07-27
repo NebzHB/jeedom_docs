@@ -167,7 +167,7 @@ Pour créer le pont, il suffit de lui donner un nom et un code "PIN".
 
 >Réservé à un public averti. Il n'y aura aucun support pour ces configurations de plugins supplémentaires et imports.
 
-* *Activer le debug intégré de homebridge (très verbeux) et de ses plugins* : Permet d'activer le mode de debug complet de Homebridge et des autres plugins, rarement nécessaire donc il est maintenant séparé pour augmenter la lisibilité du log, même en débug. (Il s'agit du mode DEBUG=* de Homebridge, un redémarrage du ddémon est nécessaire)
+* *Activer le debug intégré de homebridge (très verbeux) et de ses plugins* : Permet d'activer le mode de debug complet de Homebridge et des autres plugins, rarement nécessaire donc il est maintenant séparé pour augmenter la lisibilité du log, même en débug. (Il s'agit du mode DEBUG=* de Homebridge, un redémarrage du démon est nécessaire)
 
 * *Envoyer les nouveaux équipements Jeedom dans Homebridge par défaut* : Nouveau comportement, en décochant cette case, tout nouvel équipement ajouté à Jeedom ne sera pas ajouté à Homebridge au prochain redémarrage du démon. Il faudra cocher manuellement la case devant le nom de l'équipement (voir chapitre suivant). Coché par défaut pour coller au précédent comportement.
 
