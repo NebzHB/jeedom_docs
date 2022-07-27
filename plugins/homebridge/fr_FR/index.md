@@ -901,7 +901,7 @@ Homebridge va créer 1 accessoires, avec 4 boutons et 2 actions par boutons :
 Bouton poussoir 
 ------------------------------------------------
 
-Ce type générique est utilisé par des accessoires qui ne nécessites pas de retour d'état. Le bouton poussoir est le parfait exemple. 
+Ce type générique est utilisé par des accessoires qui ne nécessitent pas de retour d'état. Le bouton poussoir est le parfait exemple. 
 Dans cet exemple, un simple appui sur le bouton poussoir permet de lancer un script (avec le plugin script).
 
 Le Bouton poussoir sera crée à l'aide du plugin virtuel.
@@ -1268,7 +1268,7 @@ Représentation graphique dans Eve avec les courbes :
 Type Générique Info/Générique
 ---------------------
 
-Le type générique "Info/Générique" permet de faire remonter n'importe quelle valeur "info" de tout type dans Homebridge. **Quelques exemples sont décris dans ce chapitre.**
+Le type générique "Info/Générique" permet de faire remonter n'importe quelle valeur "info" de tout type dans Homebridge. **Quelques exemples sont décrits dans ce chapitre.**
 
 **L'information à remonter dans Homebridge ne doit pas dépasser 64 caractères.**
 
