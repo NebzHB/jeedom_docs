@@ -139,9 +139,13 @@ Pour créer le pont, il suffit de lui donner un nom et un code "PIN".
 
 >Il faut retirer le bridge de l'application "Maison".
 
-* *Réparer & réinstaller* : Supprime et réinstalle complètement Homebridge. 
+* *Réparer & réinstaller* : Supprime et réinstalle complètement Homebridge et modifie les identifiants et supprime le cache
 
 >A n'effectuer que sur conseil d'un membre du forum et il faut retirer le pont de l'application "Maison".
+
+* *Réinstaller* : Supprime et réinstalle complètement Homebridge SANS modifier les identifiants et SANS supprimer le cache.
+
+>A n'effectuer que sur conseil d'un membre du forum
 
 * *Gérer les plugins pour Homebridge* : Permet de gérer les modules npm homebridge-xxx installés sur le système.
 
