@@ -122,7 +122,7 @@ Pour créer le pont Homebridge, il faut aller dans la rubrique "Gestion", et cli
 
 Pour créer le pont, il suffit de lui donner un nom et un code "PIN".
 
-![config-pluginhb](../images/config-pluginhb.png)
+![image](https://user-images.githubusercontent.com/28622481/181233386-861da5db-d0e8-47d3-b7e7-c341fe309e3b.png)
 
 * *Nom Homebridge* : Permet de nommer le pont Homebridge. 
 
