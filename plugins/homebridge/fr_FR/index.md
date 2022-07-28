@@ -704,15 +704,16 @@ FAQ
 
 >Vérifiez que les types génériques sont bien configurés. Il doit y avoir une cohérence entre les types. Si vous avez le type "Info Lumière Etat", vérifiez que les actions sont de types "Action / Lumière Bouton On" etc... Voir aussi la référence à l'état (le point important ci-dessus)
 
-**-> Le message "sans réponse" apparaît dans l'application Maison ou Eve**
+**-> Le message "sans réponse" apparaît dans l'application Maison ou Eve sur plusieurs équipements**
 
 ![sans-reponse](../images/sans-reponse.png)
 
-1. Si vous n'avez pas de concentrateur HomeKit (iPad ou Apple TV), vérifiez que vous êtes connecté au même réseau que votre Jeedom. (Pas de routage)
-2. Vérifiez que le démon est activé. Si ce n'est pas le cas, redémarrez le.
-3. Relancez votre box.
-4. Si malgré tout vous avez toujours ces états, lancez une réparation.
-5. Si le problème n'est pas réglé, vous avez un problème réseau, veillez à activer IGMP Snooping, le multicast et mDNS sur tout le trajet entre Jeedom et votre iDevice et votre AppleTV/HomePod. Aucun routage entre ces trois périphériques n'est toléré.
+1a. Si vous avez des concentrateurs HomeKit (iPad/AppleTV/HomePod), redémarrez-les tous !
+1b. Si vous n'avez pas de concentrateur HomeKit (iPad/AppleTV/HomePod), vérifiez que vous êtes connecté au même réseau que votre Jeedom. (Pas de routage supporté par le protocol HomeKit)
+2. Si ce n'est pas réglé, relancez votre box/routeur.
+3. Si ce n'est pas réglé, vérifiez que le démon est activé. Si ce n'est pas le cas, redémarrez le. Vérifiez qu'il n'y a aucune erreur dans le log.
+4. Si ce n'est pas réglé, lancez une réparation dans la configuration du plugin (il faut retirer le pont dans Maison).
+5. Si ce n'est pas réglé, vous avez un problème réseau, veillez à activer IGMP Snooping, le multicast et mDNS sur tout le trajet entre Jeedom et votre iPhone/iPad/... et votre concentrateur HomeKit (iPad/AppleTV/HomePod). Aucun routage entre ces trois périphériques n'est supporté.
 
 >Beaucoup d'informations se trouvent dans les logs, le prochain chapitre vous expliquera comment les analyser.
 
