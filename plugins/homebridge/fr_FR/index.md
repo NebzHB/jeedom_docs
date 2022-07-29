@@ -708,7 +708,7 @@ FAQ
 
 ![sans-reponse](../images/sans-reponse.png)
 
-1. Redémarrez votre iPhone,iPad, Mac (celui qui vous indique "sans réponse")
+1. Redémarrez votre iPhone,iPad, Mac (celui qui vous indique "sans réponse"). Si ce n'est pas réglé, passez au point suivant.
 2. Si vous avez des concentrateurs HomeKit (iPad/AppleTV/HomePod), redémarrez-les tous !
 3. Si vous n'avez pas de concentrateur HomeKit (iPad/AppleTV/HomePod), vérifiez que vous êtes connecté au même réseau que votre Jeedom. (Pas de routage supporté par le protocol HomeKit)
 4. Si ce n'est pas réglé, relancez votre box/routeur.
