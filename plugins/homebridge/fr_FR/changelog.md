@@ -8,6 +8,14 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+03-08-2022
+----------------
+
+* Activation Authentification dans homebridge-config-ui-x par défaut (car ils ont changé et rendent ca obligatoire)
+* Retiré l'auto configuration des lumières dans zigbee2mqtt en prévision d'une modification du démon à venir
+* Zigbee2mqtt, on retire le type générique température sur les device_temperature (aucun sens...)
+
+
 27-07-2022
 ----------------
 
