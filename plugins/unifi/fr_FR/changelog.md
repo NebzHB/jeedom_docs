@@ -11,6 +11,7 @@ description: Changelog du plugin Unifi
 * Utilisation d'un port libre aléatoire pour le démon
 * Installation des dépendances plus rapide
 * Ajout Gestion POE sur les UDM qui le supportent
+* Retiré la commande powercycle sur les ports de switchs qui ne supportent pas le POE (supprimer et redécouvrir l'équipement ou supprimer à la main la commande)
 
 # 14-06-2022
 
