@@ -5,13 +5,14 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
-# En Beta
+# 08-08-2022
 
 * Réduction de la mémoire nécessaire pour créer un équipement avec bcp de commande en utilisant getCmd(null,logicalId) à la place de getCmd(null)
 * Utilisation d'un port libre aléatoire pour le démon
 * Installation des dépendances plus rapide
-* Ajout Gestion POE sur les UDM qui le supportent
+* Ajout Gestion POE sur les UDM qui le supportent (le mieux est de supprimer l'équipement et le redécouvrir, les commandes seront mieux ordonnées)
 * Retiré la commande powercycle sur les ports de switchs qui ne supportent pas le POE (supprimer et redécouvrir l'équipement ou supprimer à la main la commande)
+* Arret de l'install des dépendances si erreur de sources apt
 
 # 14-06-2022
 
