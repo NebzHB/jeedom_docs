@@ -148,12 +148,13 @@ Si le plugin dit que votre périphérique est déjà appairé (on le voit aussi 
 **Non-Compatibles**
 ----------------------------
 
--    Tado en Homekit (il semblerait qu'il y ait des timeout's avec ce périphérique, peut-être plus tard avec l'évolution de la librairie que j'utilise...)
+-    Tado en Homekit : Ils utilisent une puce d'encryption. Ce qui rends impossible l'utilisation.
 
 **Ne seront jamais compatibles**
 -------------------------------
 
 -    Ampoules Yeelight homekit (sans code pin, code pin généré par l’app mais non affiché)
+-    Tado en Homekit : Ils utilisent une puce d'encryption. Ce qui rends impossible l'utilisation.
 -    Flux Caméras
 -    Flux vidéo des Sonnettes vidéo
 
