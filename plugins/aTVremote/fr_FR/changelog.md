@@ -5,7 +5,11 @@ title: Plugin aTVRemote - Changelog
 description: Changelog du plugin aTVRemote
 ---
 
-# 08/07/2022
+# 16/08/2022 - béta
+
+- 321 mises à jour, trop pour lister ici, c'est une beta donc voilà...
+
+# 08/07/2022 - béta
 - Mise à jour importante (oui je sais ça fait longtemps) :)
 - Compatible uniquement Apple TV 4 et plus (les 3 j'en ai plus je peux pas vérifier et c'est pas la priorité !)
 - Compatible uniquement Jeedom 4.2 et plus
@@ -16,10 +20,10 @@ description: Changelog du plugin aTVRemote
 - **Pas necessaire de faire des retours de ceci ou cela fonctionne ou pas. on est au courant de tout ce qui fonctionne pas. Mais cette version est juste pour vous permettre d'avoir un minimum "vital"**
 - Sur aTV4 et plus : creation des commandes « Lancer App xxxxx » qui permet de lancer les apps en question sur l’apple TV (appairage companion obligatoire !)
 
-# 01/06/2022
+# 01/06/2022 - béta
 - utilise nodejs 16
 
-# 21/05/2020
+# 21/05/2020 - béta
 Projet entièrement revisité !!
 - Nouveau widget ! (Merci à @Wators)
 - Démon pour quasi temps réel sur aTV4+
@@ -30,12 +34,12 @@ Bugs connus :
 - La fonction Repeat connait des problèmes, si OFF, la lecture s'arrette.
 - Les états de repeat ne correspondent pas au états réels (décallage).
 
-# 19/04/2020
+# 19/04/2020 - béta
 
 - Revisite avec @Wators
 
 
-# 23/08/2018
+# 23/08/2018 - béta
 
 - Initialisation
 
