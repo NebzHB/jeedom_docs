@@ -9,12 +9,12 @@ Ce plugin permet de monitorer et exécuter quelques actions sur vos AppleTV.
 
 Veuillez Noter 
 ==============
-- Compatible uniquement avec **Debian Stretch au minimum** mais Buster conseillé !! (Pas compatible Debian Jessie)
-- Ce plugin utilise le protocole MRP pour communiquer avec votre AppleTV 4 et 4K. 
+- Compatible uniquement avec **Debian Buster au minimum** mais Bullseye conseillé !! (Pas compatible Debian Jessie ou Stretch)
+- Ce plugin utilise le protocole Airplay (MRP) et Companion pour communiquer avec votre AppleTV 4 et 4K. 
 - Il n'est pas possible avec ce protocole de :
   - Modifier le volume (c'est votre TV qui s'en charge)
   - Effectuer le bouton "Micro" (Siri) de la télécommande :'(
-- Ce plugin utilise le protocole DMAP pour communiquer avec votre AppleTV3.
+- Ce plugin utilise le protocole Airplay pour communiquer avec votre AppleTV3.
 - Il n'est pas possible avec ce protocole de :
   - Mettre en veille votre AppleTV3.
   - Effectuer des pressions longue sur les boutons (je vous ai vu venir...) de l'AppleTV3.
@@ -22,8 +22,9 @@ Veuillez Noter
   - Effectuer le bouton "Micro" (Siri) de la télécommande :'(
   - Savoir si votre AppleTV3 est en Veille ou pas (Elle continue aussi à répondre aux pings dans les deux cas)
 - Si votre AppleTV3 est en veille et vous cliquer sur une commande type Menu, elle sortira de veille. (ca dépends des touches...)
-- Testé sur AppleTV 4 et 4K aussi. Pour l'AppleTV 3, les fonctionnalités sont limitées...
-- **Le partage à Domicile DOIT être activé dans Réglages > Comptes > Partage à domicile.** (toujours nécessaire ?)
+- Testé sur AppleTV 4+. Pour l'AppleTV 3, les fonctionnalités sont limitées...
+- **Le partage à Domicile DOIT être activé dans Réglages > Comptes > Partage à domicile.**
+- **Airplay doit être activé dans Réglages > Airplay > Airplay ET Accès = Tout le monde.**
 - **Votre AppleTV DOIT avoir une ip fixée (soit par réservation DHCP soit dans les Réglages)**
 - **L'AppleTV DOIT être dans le même réseau que votre jeedom (sans routage !!, elle est découverte par le protocole Bonjour)**
 - Sur AppleTV3, les données de lecture sont renouvellées toutes les minutes SI vous avez cliqué sur Play VIA JEEDOM (Jusqu'à avoir cliqué sur Pause ou Stop). Car si je scan ces données de lecture en permanance, votre AppleTV sort de veille :'( 
