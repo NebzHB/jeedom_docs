@@ -8,7 +8,7 @@ description: Changelog du plugin Unifi
 # 22-08-2022
 
 * Correctif pour cmdNameExist en utilisant directement cmd::byEqLogicIdCmdName
-* Ajout d'une ligne sur le hardware au début de l'install des dépendances
+* Ajout d'une ligne sur le hardware au début de l'install des dépendances pour aider au diagnostique
 * Mémorisation de la version précédente à chaque mise à jour pour éviter les "depuis la dernière mise à jour" sans avoir d'où on vient.
 
 # 08-08-2022
