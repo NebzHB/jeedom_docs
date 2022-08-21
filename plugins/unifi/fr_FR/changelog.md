@@ -5,6 +5,12 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 22-08-2022
+
+* Correctif pour cmdNameExist en utilisant directement cmd::byEqLogicIdCmdName
+* Ajout d'une ligne sur le hardware au début de l'install des dépendances
+* Mémorisation de la version précédente à chaque mise à jour pour éviter les "depuis la dernière mise à jour" sans avoir d'où on vient.
+
 # 08-08-2022
 
 * Réduction de la mémoire nécessaire pour créer un équipement avec bcp de commande en utilisant getCmd(null,logicalId) à la place de getCmd(null)
