@@ -13,7 +13,13 @@ En Beta
 
 * Utilisation d'un port libre aléatoire pour le démon
 * Installation des dépendances plus rapide
-* Ajout d'un timeout si la souscription aux évènements d'un équipement prend plus de 10sec
+* Ajout d'un timeout si la souscription aux évènements d'un équipement prend plus de 10sec + reconnexion + renvoi de la commande après reconnexion
+* Ajout d'une ligne sur le hardware au début de l'install des dépendances pour aider au diagnostique
+* Correctif pour cmdNameExist en utilisant directement cmd::byEqLogicIdCmdName
+* Correction du désappairage lorsqu'on supprime un équipement appairé
+* Mémorisation de la version précédente à chaque mise à jour pour éviter les "depuis la dernière mise à jour" sans avoir d'où on vient.
+* Pour les booléens, on fait un getValue et si la valeur est différente de l'event, on utilise cette valeur. (fix pour certaines lumières meross)
+* On stop les dépendances si erreur dans les sources
 
 03-06-2022
 ----------
