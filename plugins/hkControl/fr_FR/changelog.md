@@ -20,6 +20,7 @@ En Beta
 * Mémorisation de la version précédente à chaque mise à jour pour éviter les "depuis la dernière mise à jour" sans avoir d'où on vient.
 * Pour les booléens, on fait un getValue et si la valeur est différente de l'event, on utilise cette valeur. (fix pour certaines lumières meross)
 * On stop les dépendances si erreur dans les sources
+* Rediscover si "ServiceChanged"
 
 03-06-2022
 ----------
