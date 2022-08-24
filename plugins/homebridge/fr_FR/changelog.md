@@ -13,6 +13,8 @@ En Beta
 
 * Support pour le type générique "Info/Lumière Luminosité"
 * Fix erreur si pas de stack d'erreur
+* Mémorisation de la version précédente à chaque mise à jour pour éviter les "depuis la dernière mise à jour" sans avoir d'où on vient.
+* Meilleure surveillance du démon
 
 
 03-08-2022
