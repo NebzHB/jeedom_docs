@@ -8,6 +8,13 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+En Beta
+----------------
+
+* Support pour le type générique "Info/Lumière Luminosité"
+* Fix erreur si pas de stack d'erreur
+
+
 03-08-2022
 ----------------
 
