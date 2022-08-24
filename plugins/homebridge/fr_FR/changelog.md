@@ -17,7 +17,7 @@ En Beta
 24-08-2022
 ----------------
 
-* Mémorisation de la version précédente à chaque mise à jour pour éviter les "depuis la dernière mise à jour" sans avoir d'où on vient.
+* Mémorisation de la version précédente à chaque mise à jour pour éviter les utilisateurs qui disent "depuis la dernière mise à jour" sans avoir de quelle version ils viennent précisément (affiché en haut du log des dépendances)
 * Meilleure surveillance du démon
 
 
