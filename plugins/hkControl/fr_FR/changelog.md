@@ -21,6 +21,7 @@ En Beta
 * Pour les booléens, on fait un getValue et si la valeur est différente de l'event, on utilise cette valeur. (fix pour certaines lumières meross)
 * On stop les dépendances si erreur dans les sources
 * Rediscover si "ServiceChanged"
+* On floute le code pin et le numéro de série (défloute si on passe la souris par dessus ou rentre dans le champ ou s'il est vide (pour les captures d'écran etc)
 
 03-06-2022
 ----------
