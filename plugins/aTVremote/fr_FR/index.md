@@ -17,17 +17,17 @@ Veuillez Noter
 - Ce plugin utilise le protocole Airplay pour communiquer avec votre AppleTV3.
 - Il n'est pas possible avec ce protocole de :
   - Mettre en veille votre AppleTV3.
-  - Effectuer des pressions longue sur les boutons (je vous ai vu venir...) de l'AppleTV3.
+  - Effectuer des pressions longues sur les boutons (je vous ai vu venir...) de l'AppleTV3.
   - Modifier le volume (c'est votre TV qui s'en charge)
   - Effectuer le bouton "Micro" (Siri) de la télécommande :'(
   - Savoir si votre AppleTV3 est en Veille ou pas (Elle continue aussi à répondre aux pings dans les deux cas)
-- Si votre AppleTV3 est en veille et vous cliquer sur une commande type Menu, elle sortira de veille. (ca dépends des touches...)
+- Si votre AppleTV3 est en veille et que vous cliquez sur une commande type Menu, elle sortira de veille. (ca dépend des touches...)
 - Testé sur AppleTV 4+. Pour l'AppleTV 3, les fonctionnalités sont limitées...
 - **Le partage à Domicile DOIT être activé dans Réglages > Comptes > Partage à domicile.**
 - **Airplay doit être activé dans Réglages > Airplay > Airplay ET Accès = Tout le monde.**
 - **Votre AppleTV DOIT avoir une ip fixée (soit par réservation DHCP soit dans les Réglages)**
-- **L'AppleTV DOIT être dans le même réseau que votre jeedom (sans routage !!, elle est découverte par le protocole Bonjour)**
-- Sur AppleTV3, les données de lecture sont renouvellées toutes les minutes SI vous avez cliqué sur Play VIA JEEDOM (Jusqu'à avoir cliqué sur Pause ou Stop). Car si je scan ces données de lecture en permanance, votre AppleTV sort de veille :'( 
+- **L'AppleTV DOIT être dans le même réseau que votre Jeedom (sans routage !!, elle est découverte par le protocole Bonjour)**
+- Sur AppleTV3, les données de lecture sont renouvelées toutes les minutes SI vous avez cliqué sur Play VIA JEEDOM (Jusqu'à avoir cliqué sur Pause ou Stop). Car si je scanne ces données de lecture en permanence, votre AppleTV sort de veille :'( 
 - Conseil AppleTV3 : activez la mise en veille automatique pour contrer l'impossibilité de mettre en veille.
 
 Configuration du plugin 
@@ -41,7 +41,7 @@ Configuration des équipements
 Ajout Rapide :
 --------------
 **SI** votre AppleTV a le Partage à domicile activé, Lancez un scan. Celle-ci s'ajoutera en désactivé et invisible.
-Modifiez l'équipement créé et Activez-le + Placez le dans une pièce et visible.
+Modifiez l'équipement créé et Activez-le + Placez-le dans une pièce et visible.
 
 
 Description Complète
@@ -80,16 +80,16 @@ Onglet Equipement
 
 Onglet Commandes
 ----------------
-Il existe de nombreuses commandes. Toutes ne sont pas affichées par défaut. Vous pouvez les renommer, les afficher ou non les réorganiser. 
+Il existe de nombreuses commandes. Toutes ne sont pas affichées par défaut. Vous pouvez les renommer, les afficher ou non, les réorganiser. 
 
 -   **Lecture en cours** : Binaire permettant de déterminer si la lecture est en cours ou pas.
 -   **URL Artwork** : permet d'afficher l'image.
 -   **Hors Veille** : Binaire permettant de déterminer si l'appleTV 4+ est allumée.
 -   **Bouton On** : *turn_on* : permet d'allumer l'appleTV 4+.
 -   **Bouton Off**: *turn_off*: permet de mettre en veille l'appleTV 4+.
--   **Bouton Lecture** : *play* : Effectue la même action que le bouton play/pause de la télécommande.
--   **Bouton Pause** : *pause* : Effectue la même action que le bouton play/pause de la télécommande.
--   **Bouton Stop** : *stop* : Effectue la même action que le bouton play/pause de la télécommande (idem bouton pause en fait).
+-   **Bouton Lecture** : *play* : Effectue la même action que le bouton Play/Pause de la télécommande.
+-   **Bouton Pause** : *pause* : Effectue la même action que le bouton Play/Pause de la télécommande.
+-   **Bouton Stop** : *stop* : Effectue la même action que le bouton Play/Pause de la télécommande (idem bouton Pause en fait).
 -   **Bouton Précédent** : *previous* : Passe au morceau Précédent.
 -   **Bouton Suivant** : *next* : Passe au morceau Suivant.
 
