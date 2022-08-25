@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 26-08-2022
+
+* Floutage du numéro de série sur la fiche équipement, sauf quand la souris passe dessus.
+
 # 22-08-2022
 
 * Correctif pour cmdNameExist en utilisant directement cmd::byEqLogicIdCmdName
