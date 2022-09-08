@@ -6,6 +6,11 @@ description: Changelog du plugin AdGuard Home
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour pour la compatibilité Jeedom V4
 
+# 08/09/2022
+
+- Ajout du service BiliBili disponible dans v0.107.12
+- Plus d'erreur si version.json n'est plus dispo sur AdGuard (car bug de leur coté)
+
 # 28/06/2022
 
 - Ajout du protocol https pour ceux qui utiliseraient un proxy ou autre
