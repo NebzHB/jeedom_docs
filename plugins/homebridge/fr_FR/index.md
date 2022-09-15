@@ -21,9 +21,9 @@ Que peut-on faire avec Homebridge ?
 
 ![schemaHomebrdige](https://market.jeedom.com/filestore/market/plugin/images/homebridge_screenshot1.png)
 
-Homebridge peut s'utiliser avec une application compatible HomeKit ou avec l'assistant vocal Siri.
+Homebridge peut s'utiliser avec une application compatible HomeKit (Maison ou Eve) ou avec l'assistant vocal Siri.
 
-Depuis iOS 10, l'application Maison (inclue par défaut avec iOS) permet le pilotage d'équipements compatibles HomeKit. 
+Depuis iOS 10, l'application Maison (inclue par défaut avec iOS) permet le pilotage d'équipements compatibles HomeKit. Il existe aussi l'application Eve qui permet d'afficher beaucoup plus de types génériques et des graphiques pour certains (si l'option est cochée dans la configuration du plugin)
 
 ![cuisine-homekit](../images/cuisine-01.png) ![cuisine-homekit](../images/salon-01.png) ![cuisine-homekit](../images/salle-de-bain-01.png)
 
