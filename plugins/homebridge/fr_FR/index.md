@@ -397,6 +397,9 @@ Haut-Parleurs (Eve Seulement)
 
 Multimedia (Eve Seulement)
 -----------------------------
+
+|Type générique  | Obligatoire | Valeurs possibles |
+|---------------|:----------------:|----------------|
 |Info/Volume|`OUI`|Même chose que Info/Haut-Parleur Volume| 
 |Action/Volume|`OUI`|Réf. vers Info/Volume<br/>Même chose que Action/Haut-Parleur Volume| 
 
