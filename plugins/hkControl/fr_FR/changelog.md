@@ -22,6 +22,7 @@ En Beta
 * On stop les dépendances si erreur dans les sources
 * Rediscover si "ServiceChanged"
 * On floute le code pin et le numéro de série (défloute si on passe la souris par dessus ou rentre dans le champ ou s'il est vide (pour les captures d'écran etc)
+* Bouton de redécouverte (pour ne pas avoir à relancer le démon)
 
 03-06-2022
 ----------
