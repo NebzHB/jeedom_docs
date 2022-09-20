@@ -23,6 +23,7 @@ En Beta
 * Rediscover si "ServiceChanged"
 * On floute le code pin et le numéro de série (défloute si on passe la souris par dessus ou rentre dans le champ ou s'il est vide (pour les captures d'écran etc)
 * Bouton de redécouverte (pour ne pas avoir à relancer le démon)
+* En cas de déconnexion d'un périphérique, on tente de se reconnecter toutes les 1 min pendant 5 min, puis toutes les 5 min. (Permet un temps plus court sur les périphériques qui ont des problèmes wifi)
 
 03-06-2022
 ----------
