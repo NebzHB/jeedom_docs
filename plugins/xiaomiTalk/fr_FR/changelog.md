@@ -8,6 +8,11 @@ description: Changelog du plugin xiaomiTalk
 Changelog
 =========
 
+22-09-2022
+----------
+
+* Correction nodejs -> node (ancien executable a disparu dans les nouvelles versions de debian)
+
 01-06-2022
 ----------
 
