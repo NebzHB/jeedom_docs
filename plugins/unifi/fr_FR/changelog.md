@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# En Beta
+
+* Reconnexion automatique du démon en cas de coupure du websocket par le controleur (sans redémarrer). Pour palier au plantage du websocket par le controleur sur UDM. (et pas sur le controleur software)
+
 # 26-08-2022
 
 * Floutage du numéro de série sur la fiche équipement, sauf quand la souris passe dessus.
