@@ -6,6 +6,10 @@ description: Changelog du plugin AdGuard Home
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour pour la compatibilité Jeedom V4
 
+# En BETA
+
+- Depuis v0.107.17, AdGuard supporte des nouveaux services (iCloud plus etc). Cette version demande la liste des services à AdGuard et met à jour les commandes si besoin.
+
 # 08/09/2022
 
 - Ajout du service BiliBili disponible dans v0.107.12
