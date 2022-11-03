@@ -8,7 +8,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour pour la
 
 # En BETA
 
-- Depuis v0.107.17, AdGuard supporte des nouveaux services (iCloud plus etc). Cette version demande la liste des services à AdGuard et met à jour les commandes si besoin.
+- Depuis v0.107.17, AdGuard supporte des nouveaux services (iCloud Private relay, etc). Cette version demande la liste des services à AdGuard et met à jour les commandes si besoin.
 
 # 08/09/2022
 
