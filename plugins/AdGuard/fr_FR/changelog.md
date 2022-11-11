@@ -6,6 +6,10 @@ description: Changelog du plugin AdGuard Home
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour pour la compatibilité Jeedom V4
 
+# En beta
+
+- Fix internet block/unblock, rêgles personnalisées (sur versions v0.107.14+), update sur v0.107.17+
+
 # 04/11/2022
 
 - Depuis v0.107.17, AdGuard supporte des nouveaux services (iCloud Private relay, etc). Cette version demande la liste des services à AdGuard et met à jour les commandes si besoin.
