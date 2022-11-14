@@ -6,9 +6,10 @@ description: Changelog du plugin AdGuard Home
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour pour la compatibilité Jeedom V4
 
-# En beta
+# 14/11/2022
 
-- Fix internet block/unblock, rêgles personnalisées (sur versions v0.107.14+), update sur v0.107.17+
+- Fix internet block/unblock et rêgles personnalisées (sur versions v0.107.14+), update sur v0.107.17+
+- Nécessite donc une version d'AdGuard v0.107.17 minimum !
 
 # 04/11/2022
 
