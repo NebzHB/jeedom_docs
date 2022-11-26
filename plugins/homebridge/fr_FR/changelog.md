@@ -15,7 +15,7 @@ En Beta
 * Fix erreur si pas de stack d'erreur
 * Gestion des portes de garages venant de hkControl
 * Plugin Diagral_eOne : avec accord de @mguyard : retiréla config des modes car son plugin le fait deja et pas besoin de le modifier
-* Homebridge 1.5.1
+* Homebridge 1.6.0
 
 24-08-2022
 ----------------
