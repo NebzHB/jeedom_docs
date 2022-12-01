@@ -9,7 +9,7 @@ description: Changelog du plugin Unifi
 
 * Reconnexion automatique du démon en cas de coupure du websocket par le controleur (sans redémarrer). Pour palier au plantage du websocket par le controleur sur UDM. (et pas sur le controleur software)
 * Encryption login et pass dans la DB jeedom
-* En cas de renommage d'équipement ou de client, si le nom existe déjà dans la pièce, on affiche un warning
+* En cas de renommage d'équipement ou de client coté controleur, si le nom existe déjà dans la pièce, on affiche un warning dans le plugin.
 * Update de la librairie mais qui ne change pas grand chose à part des mises à jour de ses propres librairies
 * Optimisation pour Jeedom 4.4
 
