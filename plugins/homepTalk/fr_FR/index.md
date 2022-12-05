@@ -145,4 +145,19 @@ Il fait #[domicile][meteo][temperature]# degrés, {(#[domicile][meteo][temperatu
 >Ca peut arriver quand vous n'avez plus utilisé le homepod depuis un certain temps, je suppose qu'il passe en veille... la solution consiste a ajouter un mot (comme "Bonjour" ou "Cher Tim") avant le message important ou encore mieux faire un "Stop" juste avant de jouer votre phrase (ca joue un petit son silencieux).
 13. Le plugin peut fonctionner avec les (anciennes) bornes Airport Express modèle A1264 en Airplay 1 (mais ce n'est pas garanti et aucun support est fait dessus)
 >Même si elle ne seront pas maintenues car obsolètes, pour info vous pouvez faire parler Jeedom sur une borne Aiport A1264. En firmware 7.8.1, il faut ajouter un équipement manuel avec l'adresse IP de votre borne sur votre réseau (exp. 192.168.1.X) et indiquer le port n°5000.
-
+14. La connexion SSH ne fonctionne pas vers macOS Ventura.
+>Ils ont changé les clés SSH et du coup ça ne fonctionne plus avec certains debian (10). Il faut donc réautoriser les clés rsa comme ceci (en terminal):
+```
+cd /etc/ssh/sshd_config.d
+sudo nano homepTalk
+```
+collez ceci dans le fichier :
+```
+HostkeyAlgorithms +ssh-rsa
+PubkeyAcceptedAlgorithms +ssh-rsa
+```
+Ctrl+X pour fermer et sauvegardez puis relancez ssh :
+```
+sudo launchctl unload /System/Library/LaunchDaemons/ssh.plist
+sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist
+```
