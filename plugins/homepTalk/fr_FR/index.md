@@ -161,3 +161,4 @@ Ctrl+X pour fermer et sauvegardez puis relancez ssh :
 sudo launchctl unload /System/Library/LaunchDaemons/ssh.plist
 sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist
 ```
+Et retentez de vous connecter !
