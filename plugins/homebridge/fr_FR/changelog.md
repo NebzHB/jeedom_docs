@@ -14,6 +14,7 @@ En Beta
 * Support pour le type générique "Info/Lumière Luminosité"
 * Fix erreur si pas de stack d'erreur
 * Gestion des portes de garages venant de hkControl
+* Augmentation du temps limite d'install des dépendances à 60min
 * Plugin Diagral_eOne : avec accord de @mguyard : retiré la config des modes car son plugin le fait deja et pas besoin de le modifier
 * Correction d'activation des Boutons Programmables dans l'interface du plugin.
 * Fix pour iOS16+ : quand il y avait plusieurs interrupteurs dans un même équipement (plugin mode, Haut/Bas/Stop sur certains volets, Enregistrement camera, Interrupteurs multiples dans le même équipement, etc) depuis iOS16, ils prenaient le nom de l'équipement et plus de la commande etat de cet interrupteur car Apple avait changé un comportement de leur coté. Maitenant j'utilise ConfiguredName qui permet de changer ce nom directement ! par contre il écrasera celui que vous auriez pu mettre !
