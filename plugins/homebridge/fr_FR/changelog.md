@@ -16,10 +16,15 @@ En Beta
 * Gestion des portes de garages venant de hkControl
 * Augmentation du temps limite d'install des dépendances à 60min
 * Plugin Diagral_eOne : avec accord de @mguyard : retiré la config des modes car son plugin le fait deja et pas besoin de le modifier
-* Correction d'activation des Boutons Programmables dans l'interface du plugin.
+* Correction d'activation des Interrupteurs Programmables dans l'interface du plugin.
 * Fix pour iOS16+ : quand il y avait plusieurs interrupteurs dans un même équipement (plugin mode, Haut/Bas/Stop sur certains volets, Enregistrement camera, Interrupteurs multiples dans le même équipement, etc) depuis iOS16, ils prenaient le nom de l'équipement et plus de la commande etat de cet interrupteur car Apple avait changé un comportement de leur coté. Maitenant j'utilise ConfiguredName qui permet de changer ce nom directement ! par contre il écrasera celui que vous auriez pu mettre !
 * Cacher le warning pour les concentrateurs homekit, car ceux-ci ne sont plus annoncés sur le réseau si on a migré vers la nouvelle architecture homekit en iOS 16.2
 * Homebridge 1.6.0
+
+Bugs Connus
+-----------
+
+* Le type générique "Info/Interrupteurs Programmables (Multi-Valeur)" -*uniquement si vous utilisez des boutons multiples !*- (si vous avez des ; dans les valeurs) a des problèmes apparemment depuis iOS16.2. Je recherche une solution.
 
 24-08-2022
 ----------------
