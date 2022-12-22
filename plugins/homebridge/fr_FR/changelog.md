@@ -8,7 +8,7 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-En Beta
+En Beta - sortira probablement début janvier (freeze de fin d'année)
 ----------------
 
 * Support pour le type générique "Info/Lumière Luminosité"
