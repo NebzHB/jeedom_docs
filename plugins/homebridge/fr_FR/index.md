@@ -42,7 +42,7 @@ Siri peut aussi interagir. Il répond aux questions et fait des actions.
 Le plugin prend en charge les scénarios. Il est possible de les exécuter directement depuis l'app Maison d'Apple.
 
 HomeKit a l'avantage d'être utilisable à l'extérieur du domicile. Seule condition: il faut disposer d'un concentrateur. 
-L'iPad, l'AppleTV et le HomePod peuvent servir de concentrateur. Pour cela, ils doivent être connectés au même compte iCloud.
+L'AppleTV et le HomePod peuvent servir de concentrateur (Plus l'iPad depuis la nouvelle infrastructure homekit de 16.2). Pour cela, ils doivent être connectés au même compte iCloud.
 >Pour un fonctionnement optimal, il est recommandé d'utiliser une AppleTV ou un Homepod en tant que concentrateur. Ces équipements étant alimentés sur secteur, ils sont beaucoup plus fiables. 
 
 >HomeKit est le nom officiel du protocole développé par Apple. Homebridge est son équivalent Open Source développé par nfarina. Ce dernier a étendu le projet HAP-NodeJS qui est le moteur d'Homebridge.
@@ -712,12 +712,12 @@ FAQ
 ![sans-reponse](../images/sans-reponse.png)
 
 1. Redémarrez votre iPhone,iPad, Mac (celui qui vous indique "sans réponse"). Si ce n'est pas réglé, passez au point suivant.
-2. Si vous avez des concentrateurs HomeKit (iPad/AppleTV/HomePod), redémarrez-les tous !
-3. Si vous n'avez pas de concentrateur HomeKit (iPad/AppleTV/HomePod), vérifiez que vous êtes connecté au même réseau que votre Jeedom. (Pas de routage supporté par le protocol HomeKit)
+2. Si vous avez des concentrateurs HomeKit (iPad(si ancienne infra homekit)/AppleTV/HomePod), redémarrez-les tous !
+3. Si vous n'avez pas de concentrateur HomeKit (iPad(si ancienne infra homekit)/AppleTV/HomePod), vérifiez que vous êtes connecté au même réseau que votre Jeedom. (Pas de routage supporté par le protocol HomeKit)
 4. Si ce n'est pas réglé, relancez votre box/routeur.
 5. Si ce n'est pas réglé, vérifiez que le démon est activé. Si ce n'est pas le cas, redémarrez le. Vérifiez qu'il n'y a aucune erreur dans le log.
 6. Si ce n'est pas réglé, lancez une réparation dans la configuration du plugin (il faut retirer le pont dans Maison).
-7. Si ce n'est pas réglé, vous avez un problème réseau, veillez à activer IGMP Snooping, le multicast et mDNS sur tout le trajet entre Jeedom et votre iPhone/iPad/... et votre concentrateur HomeKit (iPad/AppleTV/HomePod). Aucun routage entre ces trois périphériques n'est supporté.
+7. Si ce n'est pas réglé, vous avez un problème réseau, veillez à activer IGMP Snooping, le multicast et mDNS sur tout le trajet entre Jeedom et votre iPhone/iPad/... et votre concentrateur HomeKit (iPad(si ancienne infra homekit)/AppleTV/HomePod). Aucun routage entre ces trois périphériques n'est supporté.
 
 >Beaucoup d'informations se trouvent dans les logs, le prochain chapitre vous expliquera comment les analyser.
 
