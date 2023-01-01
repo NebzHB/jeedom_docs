@@ -803,7 +803,7 @@ Type d'accessoire : Double contact de Nodon (EnOcean)
 
 Si les deux contacts sont utilisés, copier-coller les types génériques On-1 sur On-2, Off-1 sur Off-2 et Etat-1 sur Etat-2.
 
-**Exemple Lumière simple 3 commandes : info d'état binaire (0 ou 1)/bouton allumer/bouton fermer**
+**Exemple Lumière simple 3 commandes : info d'état binaire (0 ou 1)/bouton allumer/bouton fermer :**
 
 |Type générique|Sur quelle commande appliquer|
 |--------------|-----------------------------|
@@ -811,7 +811,8 @@ Si les deux contacts sont utilisés, copier-coller les types génériques On-1 s
 |Action/Lumière Bouton On|Sur la commande qui permet d'allumer la lumière|
 |Action/Lumière Bouton Off|Sur la commande qui permet d'éteindre la lumière|
 
-**Exemple Lumière avec variateur de luminosité**
+
+**Exemple Lumière avec variateur de luminosité :**
 
 |Type générique|Sur quelle commande appliquer|
 |--------------|-----------------------------|
@@ -821,7 +822,8 @@ Si les deux contacts sont utilisés, copier-coller les types génériques On-1 s
 |Action/Lumière Bouton On|Sur la commande qui permet d'allumer la lumière|
 |Action/Lumière Bouton Off|Sur la commande qui permet d'éteindre la lumière|
 
-**ou (nouvelle possibilité depuis 2023)**
+
+**ou (nouvelle possibilité depuis 2023) :**
 
 |Type générique|Sur quelle commande appliquer|
 |--------------|-----------------------------|
