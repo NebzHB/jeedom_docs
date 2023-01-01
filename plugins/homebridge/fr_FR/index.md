@@ -233,7 +233,7 @@ Lumière
 |Action/Lumière Toggle|`NON Utilisé`|N/A|
 |Action/Lumière Mode|`NON Utilisé`|N/A|
 
-(Voir Exemples pour explications)
+`(Voir Exemples en 9.1 pour explications)`
 
 Prises
 ----------
@@ -803,7 +803,7 @@ Type d'accessoire : Double contact de Nodon (EnOcean)
 
 Si les deux contacts sont utilisés, copier-coller les types génériques On-1 sur On-2, Off-1 sur Off-2 et Etat-1 sur Etat-2.
 
-Exemple Lumière simple 3 commandes : info d'état binaire (0 ou 1)/bouton allumer/bouton fermer
+**Exemple Lumière simple 3 commandes : info d'état binaire (0 ou 1)/bouton allumer/bouton fermer**
 
 |Type générique|Sur quelle commande appliquer|
 |--------------|-----------------------------|
@@ -811,21 +811,21 @@ Exemple Lumière simple 3 commandes : info d'état binaire (0 ou 1)/bouton allum
 |Action/Lumière Bouton On|Sur la commande qui permet d'allumer la lumière|
 |Action/Lumière Bouton Off|Sur la commande qui permet d'éteindre la lumière|
 
-Exemple Lumière avec variateur de luminosité
+**Exemple Lumière avec variateur de luminosité**
 
 |Type générique|Sur quelle commande appliquer|
 |--------------|-----------------------------|
-|Info/Lumière Etat|Sur la commande info indiquant la valeur de la luminosité| 
-|Info/Lumière Etat (Binaire)|Sur la commande info indiquant l'état binaire de la lumière<br/>0 = Eteint<br/> 1 = Allumé<br/>S'il y en a pas, c'est la commande qui a le type générique `Info/Lumière Etat` qui indique cet état d'allumage avec :<br/>0 = Eteint<br/> autre que  0 = Allumé|
+|Info/Lumière Etat|Sur la commande info indiquant la valeur de la luminosité<br/>**Ce type générique DOIT être utilisé, sinon votre équipement ne sera pas considéré comme une lumière !**| 
+|Info/Lumière Etat (Binaire)|Sur la commande info indiquant l'état binaire de la lumière<br/>0 = Eteint<br/> 1 = Allumé<br/>S'il y en a pas, c'est la commande qui a le type générique `Info/Lumière Etat` ci-dessus qui indique cet état d'allumage avec :<br/>0 = Eteint<br/> autre que  0 = Allumé|
 |Action/Lumière Slider|Sur la commande action de variation de la luminosité|
 |Action/Lumière Bouton On|Sur la commande qui permet d'allumer la lumière|
 |Action/Lumière Bouton Off|Sur la commande qui permet d'éteindre la lumière|
 
-ou (nouvelle possibilité depuis 2023)
+**ou (nouvelle possibilité depuis 2023)**
 
 |Type générique|Sur quelle commande appliquer|
 |--------------|-----------------------------|
-|Info/Lumière Etat|Sur la commande info indiquant l'état binaire de la lumière<br/>0 = Eteint<br/> 1 = Allumé|
+|Info/Lumière Etat|Sur la commande info indiquant l'état binaire de la lumière<br/>0 = Eteint<br/> 1 = Allumé<br/>**Ce type générique DOIT être utilisé, sinon votre équipement ne sera pas considéré comme une lumière !**|
 |Info/Lumière Luminosité|Sur la commande info indiquant la valeur de la luminosité|
 |Action/Lumière Slider|Sur la commande action de variation de la luminosité|
 |Action/Lumière Bouton On|Sur la commande qui permet d'allumer la lumière|
