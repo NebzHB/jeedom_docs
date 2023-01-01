@@ -21,8 +21,8 @@ Changelog
 * Cacher le warning pour les concentrateurs homekit, car ceux-ci ne sont plus annoncés sur le réseau si on a migré vers la nouvelle architecture homekit en iOS 16.2
 * Homebridge 1.6.0
 
-Bugs Connus
------------
+Bug Connu
+---------
 
 * Le type générique "Info/Interrupteurs Programmables (Multi-Valeur)" -*uniquement si vous utilisez des boutons multiples !*- (si vous avez des ; dans les valeurs) a des problèmes apparemment depuis iOS16.2. Je recherche une solution.
 
