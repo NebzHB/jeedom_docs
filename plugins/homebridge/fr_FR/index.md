@@ -220,10 +220,10 @@ Lumière
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:---------:|-------------|
-|Info/Lumière Etat (Binaire)|`NON`|Ajout uniquement pour les lumières dont la luminosité ne change pas lorsqu’elle est éteinte (Yeelight, Ikea, …)<br/>0 = Eteint<br/>Autre que 0 = Allumé|
-|Info/Lumière Etat|`OUI`|Luminosité<br/>0-100 Ou 0-99 ou 0-255<br/>(en fonction du max de Action/Lumière Slider)<br/>ou Binaire<br/>0 = Eteint<br/> autre que 0 = Allumé| 
-|Info/Lumière Luminosité|`NON`|NE PAS UTILISER !!!<br/>Préférez Info/Lumière Etat|
-|Action/Lumière Slider|`OUI`|Réf. vers Lumière Etat|
+|Info/Lumière Etat|`OUI`|Soit Luminosité<br/>0-100 Ou 0-99 ou 0-255<br/>(en fonction du max de Action/Lumière Slider)<br/>ou Soit Binaire<br/>0 = Eteint<br/> autre que 0 = Allumé| 
+|Info/Lumière Etat (Binaire)|`NON`|Ajout uniquement pour les lumières dont la luminosité ne change pas lorsqu’elle est éteinte (Yeelight, Ikea, …)<br/>0 = Eteint<br/>Autre que 0 = Allumé<br/>Utiliser uniquement avec Lumière Etat|
+|Info/Lumière Luminosité|`NON`|Supporté depuis 2023<br/>Luminosité<br/>0-100 Ou 0-99 ou 0-255<br/>(en fonction du max de Action/Lumière Slider)<br/>Utiliser avec Lumière Etat sur la commande binaire<br/>(et pas Lumière Etat (Binaire) !!|
+|Action/Lumière Slider|`Si Luminosité variable`|Réf. vers Lumière Luminosité ou Lumière Etat|
 |Action/Lumière Bouton On|`OUI`|Réf. vers Lumière Etat :<br/>- Binaire s’il est présent<br/>- Etat sinon|
 |Action/Lumière Bouton Off|`OUI`|Réf. vers Lumière Etat :<br/>- Binaire s’il est présent<br/>- Etat sinon|
 |Info/Lumière Couleur|`NON`|Format #RRGGBB|
@@ -232,6 +232,8 @@ Lumière
 |Action/Lumière Température Couleur|`Si Info/Lumière Température Couleur`|Réf. vers<br/>- Info/Lumière Température Couleur<br/>Min&Max Obligatoire|
 |Action/Lumière Toggle|`NON Utilisé`|N/A|
 |Action/Lumière Mode|`NON Utilisé`|N/A|
+
+(Voir Exemples pour explications)
 
 Prises
 ----------
@@ -800,6 +802,34 @@ Type d'accessoire : Double contact de Nodon (EnOcean)
 ![lumiere-2](../images/lumiere-2.png)
 
 Si les deux contacts sont utilisés, copier-coller les types génériques On-1 sur On-2, Off-1 sur Off-2 et Etat-1 sur Etat-2.
+
+Exemple Lumière simple 3 commandes : info d'état binaire (0 ou 1)/bouton allumer/bouton fermer
+
+|Type générique|Sur quelle commande appliquer|
+|--------------|-----------------------------|
+|Info/Lumière Etat|Sur la commande info indiquant l'état binaire de la lumière<br/>0 = Eteint<br/> 1 = Allumé|  
+|Action/Lumière Bouton On|Sur la commande qui permet d'allumer la lumière|
+|Action/Lumière Bouton Off|Sur la commande qui permet d'éteindre la lumière|
+
+Exemple Lumière avec variateur de luminosité
+
+|Type générique|Sur quelle commande appliquer|
+|--------------|-----------------------------|
+|Info/Lumière Etat|Sur la commande info indiquant la valeur de la luminosité| 
+|Info/Lumière Etat (Binaire)|Sur la commande info indiquant l'état binaire de la lumière<br/>0 = Eteint<br/> 1 = Allumé<br/>S'il y en a pas, c'est la commande qui a le type générique `Info/Lumière Etat` qui indique cet état d'allumage avec :<br/>0 = Eteint<br/> autre que  0 = Allumé|
+|Action/Lumière Slider|Sur la commande action de variation de la luminosité|
+|Action/Lumière Bouton On|Sur la commande qui permet d'allumer la lumière|
+|Action/Lumière Bouton Off|Sur la commande qui permet d'éteindre la lumière|
+
+ou (nouvelle possibilité depuis 2023)
+
+|Type générique|Sur quelle commande appliquer|
+|--------------|-----------------------------|
+|Info/Lumière Etat|Sur la commande info indiquant l'état binaire de la lumière<br/>0 = Eteint<br/> 1 = Allumé|
+|Info/Lumière Luminosité|Sur la commande info indiquant la valeur de la luminosité|
+|Action/Lumière Slider|Sur la commande action de variation de la luminosité|
+|Action/Lumière Bouton On|Sur la commande qui permet d'allumer la lumière|
+|Action/Lumière Bouton Off|Sur la commande qui permet d'éteindre la lumière|
 
 Température et hydrométrie
 ---------------------------
