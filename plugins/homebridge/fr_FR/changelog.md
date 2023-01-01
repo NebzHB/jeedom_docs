@@ -11,7 +11,7 @@ Changelog
 01-01-2023
 ----------------
 
-* Support pour le type générique "Info/Lumière Luminosité"
+* Support pour le type générique "Info/Lumière Luminosité" et mise à jour doc + exemples lumières
 * Fix erreur si pas de stack d'erreur
 * Gestion des portes de garages venant de hkControl
 * Augmentation du temps limite d'install des dépendances à 60min
