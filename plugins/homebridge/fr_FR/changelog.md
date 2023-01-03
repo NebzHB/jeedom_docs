@@ -11,7 +11,7 @@ Changelog
 Beta
 ------
 
-* Nouveau log homebridge_hkStart contenant le début du log homebridge_daemon même si jeedom a supprimé le début du log.
+* Nouveau log homebridge_hkStart contenant le début du log homebridge_daemon (la création des équipements) même si jeedom a supprimé le début du log.
 
 01-01-2023
 ----------------
