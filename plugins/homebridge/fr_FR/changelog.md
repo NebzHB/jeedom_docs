@@ -8,6 +8,11 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+Beta
+------
+
+* Nouveau log homebridge_hkStart contenant le début du log homebridge_daemon même si jeedom a supprimé le début du log.
+
 01-01-2023
 ----------------
 
