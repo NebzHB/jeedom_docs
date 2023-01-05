@@ -12,7 +12,8 @@ Beta
 ------
 
 * Nouveau log homebridge_start contenant le début du log homebridge_daemon (la création des équipements) même si jeedom a supprimé le début du log.
-* Fix message d'erreur dans les logs mais qui n'a aucune conséquence (sur les noms des modes etc)
+* Fix message d'erreur dans les logs mais qui n'a aucune conséquence (sur les noms des modes etc).
+* Ajout du nombre d'équipements et scénarios cochés pour "Envoi dans Homebridge" par pièce directement sur la liste des pièces.
 
 01-01-2023
 ----------------
