@@ -564,8 +564,10 @@ et homebridge-alexa (pré-installés également) qui sont un peu différents des
 
 ![schema partiel](../images/partialSchema.png)
 
-Première Méthode (Via la config du plugin) (À Distance ou en Local)
+Première Méthode (Via la config du plugin)
 ----------------
+
+>Cette méthode peut être effectuée aussi bien quand vous êtes chez vous (en local) que à distance car elle utilise l'interface habituelle Jeedom.
 
 Pour ajouter un *plugin pour homebridge*, il faut d'abord trouver le plugin qui vous convient... pour ce faire il faut faire une recherche dans cette liste : [http://www.homebridge.io](http://www.homebridge.io){:target="_blank" rel="noopener"} puis dans "Find a plugin" ( il y en a des centaines !!). Vous en trouverez peut être plusieurs, comparez les et regardez ceux qui ont été mis à jour récemment, ceux qui sont toujours actifs, ceux qui ont les fonctionnalités que vous désirez. 
 ![findAPlugin.png](../images/findAPlugin.png)
@@ -612,8 +614,10 @@ Si vous avez des erreurs, c'est généralement un problème de mot de passe ou d
 
 Si tout se passe bien, voilà vous avez configuré votre *plugin pour homebridge* ! Enjoy ;-)
 
-Seconde Méthode (Via l'interface Config-UI-X) (Doit être en Local !)
+Seconde Méthode (Via l'interface Config-UI-X)
 --------------------------------------------------------
+
+>Cette méthode ne peut être effectuée que à partir de chez vous (en local) car cette interface utilise un port différent de jeedom (33221) et ne sera donc par défaut pas accessible (via DNS Jeedom par ex) sans redirection de port (déconseillé !) ou reverse proxy (mieux déjà :))
 
 Depuis peu, l'interface **Config-UI-X** a été ajoutée au *plugin homebridge*, celle-ci est accessible via le bouton suivant :
 
