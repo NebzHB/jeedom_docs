@@ -15,6 +15,7 @@ Beta
 * Fix message d'erreur dans les logs mais qui n'a aucune conséquence (sur les noms des modes etc).
 * Ajout du nombre d'équipements et scénarios cochés pour "Envoi dans Homebridge" par pièce directement sur la liste des pièces.
 * Les plateformes et accessoires sont modifiables directement via config-ui-x sans les copier ensuite dans les plateformes et accessoires supplémentaires comme préconisé avant ! ATTENTION : il n'est pas possible de modifier le bridge ou la plateforme homebridge-jeedom ou homebridge-config-ui-x !!! uniquement les supplémentaires (plateformes et accessoires).
+* L'interface config-ui-x est maintenant dans la même langue que le navigateur, plus en Français forcé.
 
 01-01-2023
 ----------------
