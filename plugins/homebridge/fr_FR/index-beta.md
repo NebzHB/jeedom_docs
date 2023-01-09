@@ -631,7 +631,7 @@ Et cliquez sur "installer".
 
 ![pluginEx](../images/pluginEx.png)
 
-Une fois le *plugin pour homebridge* installé, soit il ne le prévoit pas de Réglages (dans ce cas, cliquez sur "Ouvrir L'éditeur de config" et référez-vous à la première méthode sur les rêgles d'écriture dans le fichier configuration JSON (sauf le | évidemment))
+Une fois le *plugin pour homebridge* installé, soit il ne le prévoit pas de Réglages (dans ce cas, cliquez sur "Ouvrir L'éditeur de config" et référez-vous à la première méthode sur les rêgles d'écriture dans le fichier configuration JSON (sauf le \| évidemment))
 
 ![manualPlugin](../images/manualPlugin.png)
 
