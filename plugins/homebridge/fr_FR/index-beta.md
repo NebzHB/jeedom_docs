@@ -564,7 +564,7 @@ et homebridge-alexa (pré-installés également) qui sont un peu différents des
 
 ![schema partiel](../images/partialSchema.png)
 
-Première Méthode
+Première Méthode (Via la config du plugin) (À Distance ou en Local)
 ----------------
 
 Pour ajouter un *plugin pour homebridge*, il faut d'abord trouver le plugin qui vous convient... pour ce faire il faut faire une recherche dans cette liste : [http://www.homebridge.io](http://www.homebridge.io){:target="_blank" rel="noopener"} puis dans "Find a plugin" ( il y en a des centaines !!). Vous en trouverez peut être plusieurs, comparez les et regardez ceux qui ont été mis à jour récemment, ceux qui sont toujours actifs, ceux qui ont les fonctionnalités que vous désirez. 
@@ -612,7 +612,7 @@ Si vous avez des erreurs, c'est généralement un problème de mot de passe ou d
 
 Si tout se passe bien, voilà vous avez configuré votre *plugin pour homebridge* ! Enjoy ;-)
 
-Seconde Méthode (avec en partie l'interface Config-UI-X)
+Seconde Méthode (Via l'interface Config-UI-X) (Doit être en Local !)
 --------------------------------------------------------
 
 Depuis peu, l'interface **Config-UI-X** a été ajoutée au *plugin homebridge*, celle-ci est accessible via le bouton suivant :
