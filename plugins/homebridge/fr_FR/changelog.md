@@ -16,6 +16,7 @@ Beta
 * Ajout du nombre d'équipements et scénarios cochés pour "Envoi dans Homebridge" par pièce directement sur la liste des pièces.
 * Les plateformes et accessoires sont modifiables directement via config-ui-x sans les copier ensuite dans les plateformes et accessoires supplémentaires comme préconisé avant ! ATTENTION : il n'est pas possible de modifier le bridge ou la plateforme homebridge-jeedom ou homebridge-config-ui-x !!! uniquement les supplémentaires (plateformes et accessoires).
 * L'interface config-ui-x est maintenant dans la même langue que le navigateur, plus en Français forcé.
+* Modification de l'import des caméras du plugin Surveillance Station (Synology) car le plugin a été modifié
 
 01-01-2023
 ----------------
