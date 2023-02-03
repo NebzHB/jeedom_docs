@@ -12,6 +12,10 @@ En Beta (à venir)
 --------
 * Plus de compilation de openssl 1.0 dans les dependances (la lib est compatible 1.1 !) -> install des dépendances bcp plus courtes et bcp plus fiables !!!
 
+03-02-2023
+----------
+* Support du Homepod 2
+
 15-02-2021
 ----------
 * Fix TTs jeedom avec 4.2 (possible que jeedom 3 ne soit plus compatible du coup... je ne le supporte plus de toute façon)
