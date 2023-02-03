@@ -5,6 +5,9 @@ title: Plugin aTVRemote - Changelog
 description: Changelog du plugin aTVRemote
 ---
 
+# 03/02/2023 - beta
+- Support du Homepod 2 ajouté :)
+
 # 16/08/2022 - beta
 
 - 321 mises à jour, trop pour lister ici, c'est une beta donc voilà...
