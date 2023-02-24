@@ -8,13 +8,13 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-Beta
+24-02-2023
 ------
 
+* **Grosse nouveauté** : Les plateformes et accessoires sont modifiables directement via config-ui-x sans les copier ensuite dans les plateformes et accessoires supplémentaires comme préconisé avant ! ATTENTION : il n'est pas possible de modifier le bridge ou la plateforme homebridge-jeedom ou homebridge-config-ui-x !!! uniquement les supplémentaires (plateformes et accessoires).
 * Nouveau log homebridge_start contenant le début du log homebridge_daemon (la création des équipements) même si jeedom a supprimé le début du log.
 * Fix message d'erreur dans les logs mais qui n'a aucune conséquence (sur les noms des modes etc).
 * Ajout du nombre d'équipements et scénarios cochés pour "Envoi dans Homebridge" par pièce directement sur la liste des pièces.
-* Les plateformes et accessoires sont modifiables directement via config-ui-x sans les copier ensuite dans les plateformes et accessoires supplémentaires comme préconisé avant ! ATTENTION : il n'est pas possible de modifier le bridge ou la plateforme homebridge-jeedom ou homebridge-config-ui-x !!! uniquement les supplémentaires (plateformes et accessoires).
 * L'interface config-ui-x est maintenant dans la même langue que le navigateur, plus en Français forcé.
 * Modification de l'import des caméras du plugin Surveillance Station (Synology) car le plugin a été modifié
 
