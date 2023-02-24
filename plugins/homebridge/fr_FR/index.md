@@ -161,7 +161,7 @@ Pour créer le pont, il suffit de lui donner un nom et un code "PIN".
 
 * *Accessoire Homebridge supplémentaire* : Permet de rajouter manuellement un plugin Homebridge de type accessoire (homebridge-freemote par exemple).
 
-* *Lancer l'interface de configuration Config-UI-X (Local seulement)* : Permet de lancer l'interface de homebridge-config-ui-x qui est maintenant pré-installé et configuré. Attention, toute modification dans un plugin ou config.json ne sera pas pris en compte pour l'instant. Peut-être plus tard. Si vous ne voyez pas l'interface, tentez avec http://votreIP:33221/
+* *Lancer l'interface de configuration Config-UI-X (Local seulement)* : Permet de lancer l'interface de homebridge-config-ui-x qui est maintenant pré-installée et configurée. Les modifications effectuées dans cette interface sont maintenant prises en compte. Excepté : celles sur homebridge-jeedom, sur le bridge, sur homebridge-config-ui-x et la mise à jour de Homebridge qui est plus que déconseillée (en fait elle installe un second homebridge sur votre système !!!) (Si vous l'avez fait, relancez les dépendances, elles remettront tout en ordre). Si vous ne voyez pas l'interface, tentez avec http://votreIP:33221/
 
 * *Authentification Config-UI-X* : Active l'authentification dans Config-UI-X, si vous vous êtes déjà loggué dans cette interface avant, votre cookie reste valide tant que vous ne vous êtes pas déconnecté. Sinon par défaut, c'est : Utilisateur : admin et mot de passe : admin. Pour modifier, dans Config-UI-X, le menu trois points en haut à droite > Comptes Utilisateurs
 
@@ -564,8 +564,10 @@ et homebridge-alexa (pré-installés également) qui sont un peu différents des
 
 ![schema partiel](../images/partialSchema.png)
 
-Première Méthode
+Première Méthode (Via la config du plugin)
 ----------------
+
+>Cette méthode peut être effectuée aussi bien quand vous êtes chez vous (en local) que à distance car elle utilise l'interface habituelle Jeedom.
 
 Pour ajouter un *plugin pour homebridge*, il faut d'abord trouver le plugin qui vous convient... pour ce faire il faut faire une recherche dans cette liste : [http://www.homebridge.io](http://www.homebridge.io){:target="_blank" rel="noopener"} puis dans "Find a plugin" ( il y en a des centaines !!). Vous en trouverez peut être plusieurs, comparez les et regardez ceux qui ont été mis à jour récemment, ceux qui sont toujours actifs, ceux qui ont les fonctionnalités que vous désirez. 
 ![findAPlugin.png](../images/findAPlugin.png)
@@ -612,8 +614,10 @@ Si vous avez des erreurs, c'est généralement un problème de mot de passe ou d
 
 Si tout se passe bien, voilà vous avez configuré votre *plugin pour homebridge* ! Enjoy ;-)
 
-Seconde Méthode (avec en partie l'interface Config-UI-X)
+Seconde Méthode (Via l'interface Config-UI-X)
 --------------------------------------------------------
+
+>Cette méthode ne peut être effectuée que à partir de chez vous (en local) car cette interface utilise un port différent de jeedom (33221) et ne sera donc par défaut pas accessible (via DNS Jeedom par ex) sans redirection de port (déconseillé !) ou reverse proxy (mieux déjà :))
 
 Depuis peu, l'interface **Config-UI-X** a été ajoutée au *plugin homebridge*, celle-ci est accessible via le bouton suivant :
 
@@ -627,7 +631,7 @@ Et cliquez sur "installer".
 
 ![pluginEx](../images/pluginEx.png)
 
-Une fois le *plugin pour homebridge* installé, soit il ne le prévoit pas de Réglages (dans ce cas, il faut utiliser la première méthode, à la main)
+Une fois le *plugin pour homebridge* installé, soit il ne le prévoit pas de Réglages (dans ce cas, cliquez sur "Ouvrir L'éditeur de config" et référez-vous à la première méthode sur les rêgles d'écriture dans le fichier configuration JSON (sauf le \| évidemment))
 
 ![manualPlugin](../images/manualPlugin.png)
 
@@ -639,13 +643,10 @@ Une fois que vous avez terminé la configuration cliquez sur Enregistrer en bas 
 
 ![enregistrer](../images/enregistrer.png)
 
-> Attention, pour l'instant la configuration (le fichier config) de cette interface n'est pas prise en compte, il faut copier la plateforme ou l'accessoire manuellement dans les plateformes (ou accessoires) supplémentaires pour que ça soit pris en compte.
+Il vous suffit maintenant de relancer le démon afin que la nouvelle configuration soit prise en compte, vous pouvez le faire soit dans jeedom soit dans l'interface via le bouton power en haut à droite
 
-*(Je dois encore trouver le moyen de régénérer correctement la partie pour jeedom si vous la modifiez et la cassez via cette interface pour le permettre...)*
+![image](https://user-images.githubusercontent.com/28622481/211325734-f348d49f-da65-4e16-a79d-2898fa191ba0.png)
 
-![whatToCopy](../images/whatToCopy.png) -> ![accCopy](../images/accCopy.png)
-
-Il vous reste à "**Sauvegarder les changements**" de la plateforme ou l'accessoire et **relancer le démon** (voir première méthode)
 
 
 Troubleshooting
