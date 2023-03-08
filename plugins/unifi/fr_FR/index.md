@@ -95,4 +95,8 @@ Astuces & FAQ
 
 ![image](https://user-images.githubusercontent.com/28622481/134291867-30121590-035f-454a-a42f-421e8f57b9b3.png)
 
+-   Vérifiez que ceci est bien en Always (mieux) ou en Automatique (Mais du coup si congestion réseau, vous n'aurez plus de mises à jour des périphériques, mieux ou moins bien, à vous de voir)
+
+![image](https://user-images.githubusercontent.com/28622481/223777175-2f60b743-ee66-4025-a946-d15d1b1611b6.png)
+
 
