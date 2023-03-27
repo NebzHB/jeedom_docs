@@ -15,6 +15,8 @@ Changelog
 * Correction sur commande refresh dans certains cas
 * Fix pour support Ikea Dirigera (à confirmer)
 
+(les dépendances devraient se relancer toutes seules)
+
 16-10-2022
 ----------
 
