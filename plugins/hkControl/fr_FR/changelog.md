@@ -8,6 +8,13 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+27-03-2022
+----------
+
+* Mise à jour librairies
+* Correction sur commande refresh dans certains cas
+* Fix pour support Ikea Dirigera (à confirmer)
+
 16-10-2022
 ----------
 
