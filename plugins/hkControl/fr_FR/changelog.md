@@ -8,6 +8,11 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+03-04-2022
+----------
+
+* Petit fix pour erreurs ajax en Jeedom 4.4 + version minimale jeedom 4.0 (les jeedom v3 ont toujours accès à l'ancienne version du plugin avant 14-02-2022)
+
 27-03-2022
 ----------
 
