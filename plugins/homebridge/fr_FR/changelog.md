@@ -8,6 +8,11 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+03-04-2023
+----------
+
+* Petit fix pour erreurs ajax en Jeedom 4.4
+
 24-02-2023
 ------
 
