@@ -6,6 +6,13 @@ description: Changelog du plugin AdGuard Home
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4
 
+# EN BETA
+
+- Modifications pour les nouveaux éléments de l'api dans la v0.107.28 (protection enabled + safesearch)
+- pas de possibilité de choisir le moteur de recherche de la protection safesearch pour l'instant (est-ce nécessaire ??)
+- pas de possibilité de définir un timing pour la désactivation de la protection pour l'instant (est-ce nécessaire avec jeedom ? car on peut réactiver via scénario ou autre...)
+- Nécessite donc une version d'AdGuard v0.107.28 minimum !
+
 # 14/11/2022
 
 - Fix internet block/unblock et rêgles personnalisées (sur versions v0.107.14+), update sur v0.107.17+
