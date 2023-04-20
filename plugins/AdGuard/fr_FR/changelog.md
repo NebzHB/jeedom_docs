@@ -11,6 +11,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 - Modifications pour les nouveaux éléments de l'api dans la v0.107.28 (protection enabled + safesearch)
 - pas de possibilité de choisir le moteur de recherche de la protection safesearch pour l'instant (est-ce nécessaire ??)
 - pas de possibilité de définir un timing pour la désactivation de la protection pour l'instant (est-ce nécessaire avec jeedom ? car on peut réactiver via scénario ou autre...)
+- Fix de la commande Update
 - Nécessite donc une version d'AdGuard v0.107.28 minimum !
 
 # 14/11/2022
