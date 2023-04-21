@@ -8,6 +8,11 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+21-04-2023
+----------
+
+* Meilleure comparaison des fichiers de config pour savoir si la modif vient de config-ui-x ou de jeedom (certains systèmes ajoutent un caractère spécial à la fin du fichier et ne gèrent pas les / de la même manière)
+
 03-04-2023
 ----------
 
