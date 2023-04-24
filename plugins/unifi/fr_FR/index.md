@@ -99,4 +99,10 @@ Astuces & FAQ
 
 ![image](https://user-images.githubusercontent.com/28622481/223777175-2f60b743-ee66-4025-a946-d15d1b1611b6.png)
 
+**Eviter les noms en doublon du coté du controleur Unifi :**
 
+Pensez à avoir des noms d'équipements différents sinon vous pourriez rencontrer une erreur du type "_[MySQL] Error code : 23000 (1062). Duplicate entry '[NOM DE L EQUIPEMENT EN DOUBLE]' for key 'unique' : ..._" dans Jeedom lorsque vous faites un scan des équipements. 
+
+Ce cas, peut être également rencontré lorsque vous avez un équipement qui peut etre connecté de plusieurs façons différentes à votre réseau.
+Par exemple avec un PC portable a généralement une inerface réseau filaire (ethernet) et une autre sans-fil (wifi). Par défaut, ce dernier peut apparaitre avec le même nom dans le controleur Unifi et causer l'erreur décrite ci-dessus dans Jeedom.
+Dans le controleur Unifi, ajoutez un suffixe afin de les différencier (ex: ethernet ou wifi) et relancer un scan coté Jeedom.
