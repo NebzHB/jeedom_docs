@@ -10,7 +10,10 @@ Changelog
 
 En Beta (à venir)
 --------
-* Plus de compilation de openssl 1.0 dans les dependances (la lib est compatible 1.1 !) -> install des dépendances bcp plus courtes et bcp plus fiables !!!
+* install des dépendances bcp plus courtes et bcp plus fiables !!!
+* dernière lib existante
+* fix pour jeedom 4.4
+* option dans la config du plugin pour utiliser la lib de atvremote s'il est installé quand on parle sur un seul homepod
 
 03-02-2023
 ----------
