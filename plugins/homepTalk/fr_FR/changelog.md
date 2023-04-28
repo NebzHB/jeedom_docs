@@ -13,7 +13,7 @@ En Beta (à venir)
 * install des dépendances bcp plus courtes et bcp plus fiables !!!
 * dernière lib existante
 * fix pour jeedom 4.4
-* option dans la config du plugin pour utiliser la lib de atvremote s'il est installé quand on parle sur un seul homepod
+* option dans la config du plugin pour utiliser la lib de atvremote s'il est installé quand on parle sur un seul homepod (fonctionne pas, c'est de l'ALPHA pour jouer)
 
 03-02-2023
 ----------
