@@ -8,7 +8,7 @@ description: Changelog du plugin homepTalk
 Changelog
 =========
 
-En Beta (à venir)
+28-04-2023
 --------
 * install des dépendances bcp plus courtes et bcp plus fiables !!!
 * dernière lib existante
