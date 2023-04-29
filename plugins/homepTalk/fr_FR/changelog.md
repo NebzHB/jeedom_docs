@@ -7,6 +7,9 @@ description: Changelog du plugin homepTalk
 
 Changelog
 =========
+29-04-2023
+----------
+* mise à jour pour raspberry 64bit (pas supporté par jeedom mais on essaie quand même...)
 
 28-04-2023
 --------
