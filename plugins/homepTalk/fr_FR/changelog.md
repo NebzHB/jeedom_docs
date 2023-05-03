@@ -7,6 +7,12 @@ description: Changelog du plugin homepTalk
 
 Changelog
 =========
+
+03-05-2023
+----------
+* re-fix pour raspberry 64bit (certains fonctionnent différemment... je m'adapte aux deux)
+* affichage hardware dans les dep
+
 29-04-2023
 ----------
 * mise à jour pour raspberry 64bit (pas supporté par jeedom mais on essaie quand même...)
