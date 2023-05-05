@@ -11,6 +11,7 @@ Changelog
 ----------
 * Augmentation du timeout à 90sec à la place de 60sec (le Aqara FP2 est lent à répondre)
 * Affichage du nom du service (s'il est fourni) dans la liste des commandes
+* Bouton Rafraichir pour accessoires en plus que pour les ponts
 
 03-04-2023
 ----------
