@@ -10,7 +10,7 @@ Changelog
 
 05-05-2023 - Dépendances uniquement
 ----------
-* Homebridge 1.6.1 (aucun changement intéressant)
+* Homebridge 1.6.1 (aucun changement (maj pour ceux qui utilisent homebridge sans jeedom + pour les developpeurs de plugins (pas concerné)))
 * Meilleure comparaison des modes d'alarmes (en minuscule)
 * Renommage des détecteurs de mouvements multiples dans un même équipement, on prend le nom de la commande coté jeedom (pour mieux réijecter l'Aqara FP2 par ex)
 
