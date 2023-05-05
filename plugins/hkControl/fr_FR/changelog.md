@@ -7,13 +7,17 @@ description: Changelog du plugin hkControl
 
 Changelog
 =========
+05-05-2023
+----------
+* Augmentation du timeout à 90sec à la place de 60sec (le Aqara FP2 est lent à répondre)
+* Affichage du nom du service (s'il est fourni) dans la liste des commandes
 
-03-04-2022
+03-04-2023
 ----------
 
 * Petit fix pour erreurs ajax en Jeedom 4.4 + version minimale jeedom 4.0 (les jeedom v3 ont toujours accès à l'ancienne version du plugin avant 14-02-2022)
 
-27-03-2022
+27-03-2023
 ----------
 
 * Mise à jour librairies
