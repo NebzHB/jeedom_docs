@@ -111,7 +111,7 @@ Si le plugin dit que votre périphérique est déjà appairé (on le voit aussi 
 -    Tous les accessoires IKEA
 -    Autres accessoires Eve Home
 -    Autres * with Netatmo
--    Somfy Connectivity Kit (Plusieurs utilisateurs l'utilise, mais bcp rapportent des problèmes de coupures wifi avec cet appareil (même proche du routeur/AP). Je ne peux donc pas garantir une compatibilité à 100%)
+-    Somfy Connectivity Kit (Plusieurs utilisateurs l'utilisent, mais certains rapportent des problèmes de coupures wifi avec cet appareil (même s'il est proche du routeur/AP). Je ne peux donc pas garantir une compatibilité à 100%)
 
 **Compatibles**
 ---------------
