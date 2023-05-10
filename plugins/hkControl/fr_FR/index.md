@@ -111,6 +111,7 @@ Si le plugin dit que votre périphérique est déjà appairé (on le voit aussi 
 -    Tous les accessoires IKEA
 -    Autres accessoires Eve Home
 -    Autres * with Netatmo
+-    Somfy Connectivity Kit (Plusieurs utilisateurs l'utilise, mais bcp rapportent des problèmes de coupures wifi avec cet appareil (même proche du routeur/AP). Je ne peux donc pas garantir une compatibilité à 100%)
 
 **Compatibles**
 ---------------
@@ -119,7 +120,7 @@ Si le plugin dit que votre périphérique est déjà appairé (on le voit aussi 
 |:---------- |:----:|:------------------:|:----------|
 | Legrand iDiamant with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/bubendorff){:target="_blank" rel="noopener"} | NON | |
 | Legrand Céliane with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/legrand){:target="_blank" rel="noopener"} | NON | |
-| Legrand Drivia with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/drivia){:target="_blank" rel="noopener"} | NON | |
+| Legrand Drivia with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/drivia){:target="_blank" rel="noopener"} | NON | Consommation non remontée dans Homekit par le fabricant :( |
 | Velux Active with Netatmo | [Voir Site Officiel](https://www.netatmo.com/fr-fr/partners/velux){:target="_blank" rel="noopener"} | NON | Capteurs temperature/humidité/CO2 + Ouverture Velux + Volets extérieurs |
 | Velux App Control (KIG 300) | [Voir Site Officiel](https://www.veluxshop.fr/tous-les-produits/maison-connectee/velux-app-control){:target="_blank" rel="noopener"} | NON | |
 | Passerelle Xiaomi ZHWG11LM | [Voir Site Officiel](https://www.aqara.com/us/smart_home_hub.html){:target="_blank" rel="noopener"} | Peut-être<sup>3</sup> | |
