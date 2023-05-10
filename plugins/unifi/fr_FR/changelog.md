@@ -5,7 +5,11 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
-# 03-04-2022
+# 10-05-2023
+
+* Mise à jour pour gérer les connexions/déconnexions aux réseaux Invités
+
+# 03-04-2023
 
 * Petit fix pour ajax en Jeedom 4.4.
 
