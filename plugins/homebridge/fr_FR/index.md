@@ -5,6 +5,8 @@ title: Plugin Homebridge
 description: Documentation du plugin Homebridge
 ---
 
+>**Si vous cherchez à intégrer les périphériques `Homekit en réseau` dans Jeedom, ce n’est pas le bon plugin, dans ce cas, il faut utiliser [#plugin-hkControl](https://nebzhb.github.io/jeedom_docs/plugins/hkControl/fr_FR/){:target="_blank" rel="noopener"} !!**
+
 Présentation Homebridge
 =======================
 
