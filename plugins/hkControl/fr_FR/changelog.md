@@ -7,6 +7,11 @@ description: Changelog du plugin hkControl
 
 Changelog
 =========
+
+26-05-2023
+----------
+* Fix orthographe + statistiques
+
 05-05-2023
 ----------
 * Augmentation du timeout à 90sec à la place de 60sec (le Aqara FP2 est lent à répondre)
