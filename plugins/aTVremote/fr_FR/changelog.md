@@ -7,7 +7,7 @@ description: Changelog du plugin aTVRemote
 
 # 02/06/2023 - beta
 - Ajout de la mise à jour de wheel avant installation du plugin
-- Oublis dans les versions précédentes : nouvelle version de la lib pour support du volume en temps réel
+- Oublis dans les changelogs précédents : nouvelle version de la lib pour support du volume en temps réel
 
 # 03/02/2023 - beta
 - Support du Homepod 2 ajouté :)
