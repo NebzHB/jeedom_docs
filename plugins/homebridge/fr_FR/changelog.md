@@ -8,6 +8,10 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+17-07-2023
+----------
+* Homebridge 1.6.1 pour tout le monde (pas uniquement ceux qui relancent les dépendances)
+
 05-05-2023 - Dépendances uniquement
 ----------
 * Homebridge 1.6.1 (aucun changement (maj pour ceux qui utilisent homebridge sans jeedom + pour les developpeurs de plugins (pas concerné)))
