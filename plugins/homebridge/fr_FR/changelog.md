@@ -8,6 +8,10 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+En Beta
+--------
+* Prise en compte de l'invertion binaire sur *Présence Occupation (Homebridge)* et sur *Présence* (ne semblait pas nécessaire avant mais certaines personnes sur IPX ont le cas...)
+
 17-07-2023
 ----------
 * Homebridge 1.6.1 pour tout le monde (pas uniquement ceux qui relancent les dépendances)
