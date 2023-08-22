@@ -8,8 +8,9 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-En Beta
+22-08-2023
 --------
+* Retiré la migration de sendToApp -> sendToHomebridge (ancienne migration plus nécessaire)
 * Prise en compte de l'invertion binaire sur *Présence Occupation (Homebridge)* et sur *Présence* (ne semblait pas nécessaire avant mais certaines personnes sur IPX ont le cas...)
 
 17-07-2023
