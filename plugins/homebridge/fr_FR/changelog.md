@@ -8,6 +8,10 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+23-08-2023
+----------
+* Retour en arrière pour les inversion binaires car c'est pas très clair les valeurs qui doivent s'afficher (widget core présence semble inversé par rapport au widget core default)
+
 22-08-2023
 --------
 * Retiré la migration de sendToApp -> sendToHomebridge (ancienne migration plus nécessaire)
