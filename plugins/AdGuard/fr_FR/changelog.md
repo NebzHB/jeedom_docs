@@ -6,6 +6,10 @@ description: Changelog du plugin AdGuard Home
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4
 
+# En Beta
+- Version v0.107.37 obligatoire !
+- Modification des blocked services à partir de la version v0.107.37
+
 # 24/05/2023
 
 - Modifications pour les nouveaux éléments de l'api dans la v0.107.28 (protection enabled + safesearch)
