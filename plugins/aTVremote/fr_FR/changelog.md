@@ -5,6 +5,9 @@ title: Plugin aTVRemote - Changelog
 description: Changelog du plugin aTVRemote
 ---
 
+# 14/09/2023 - beta
+- ATTENTION MISE A JOUR NODEJS 18 : ne pas faire cette mise à jour si vous avez d'autres plugins NodeJS, il est prévu que tous les plugins migreront le 30 Septembre, mais si vous mettez à jour avant, vous risque qu'ils ne fonctionnent plus d'ici là !!!
+
 # 02/06/2023 - beta
 - Ajout de la mise à jour de wheel avant installation du plugin
 - Oublis dans les changelogs précédents : nouvelle version de la lib pour support du volume en temps réel
