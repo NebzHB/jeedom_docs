@@ -8,7 +8,7 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-En Beta
+30-09-2023
 --------
 * NodeJS 18
 
