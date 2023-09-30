@@ -5,7 +5,7 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
-# En Beta
+# 30-09-2023
 
 * Fix pour les infos poe des ports de switchs, ils ont retiré un identifiant sur les ports, il faut donc les supprimer à la main tous (ou le switch) et refaire une découverte pour qu'il prenne les nouveaux identifiants.
 * ignore les modifs de tx_retry_burst_count
