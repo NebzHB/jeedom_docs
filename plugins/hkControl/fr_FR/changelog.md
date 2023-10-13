@@ -13,9 +13,12 @@ Beta
 * Si on recoit 100 sur une valeur binary, c'est true (Volets Celiane nouvelle version)
 * Transformer les détecteurs d'occupation en binaires (pour l'Aqara FP2, pour pouvoir l'utiliser dans le plugin alarme), plutot qu'un numérique avec 0 et 1 comme valeur (comme le fait Apple)
 
+14-10-2023
+----------
+* Correction du message : PHP Notice:  Undefined index: serviceOriginalName in /var/www/html/plugins/hkControl/core/class/hkControl.class.php on line 711
+
 30-09-2023
 -----------
-
 * NodeJS 18
 
 26-05-2023
