@@ -8,6 +8,10 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+31-10-2023
+----------
+* Dépendances seulement : modification pour ne pas bugger si le plugin ne tourne pas sur jeedom.
+
 30-09-2023
 --------
 * NodeJS 18
