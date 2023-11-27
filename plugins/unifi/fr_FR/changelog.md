@@ -9,6 +9,7 @@ description: Changelog du plugin Unifi
 
 * Prise en charge UXG-Lite
 * Gestion des évenements de présence compatible avec controleur 8.0.7 (tout en restant compatible avec la v7)
+* Mise à jour des images des équipements sur base du controleur 8.0.7.
 
 # 30-09-2023
 
