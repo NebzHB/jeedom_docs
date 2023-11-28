@@ -8,10 +8,11 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
-Beta
+28-11-2023
 ----------
 * Si on recoit 100 sur une valeur binary, c'est true (Volets Celiane nouvelle version)
-* Transformer les détecteurs d'occupation en binaires (pour l'Aqara FP2, pour pouvoir l'utiliser dans le plugin alarme), plutot qu'un numérique avec 0 et 1 comme valeur (comme le fait Apple)
+* Transformation des détecteurs d'occupation en binaires (pour l'Aqara FP2, pour pouvoir l'utiliser dans le plugin alarme), plutot qu'un numérique avec 0 et 1 comme valeur (comme le fait Apple).
+* Meilleure gestion si le fichier d'appairage est vide, on ne quitte pas tout, on fait avec.
 
 14-10-2023
 ----------
