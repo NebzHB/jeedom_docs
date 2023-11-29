@@ -99,6 +99,9 @@ Astuces & FAQ
 
 ![image](https://user-images.githubusercontent.com/28622481/223777175-2f60b743-ee66-4025-a946-d15d1b1611b6.png)
 
+![image](https://github.com/NebzHB/jeedom_docs/assets/28622481/314244ec-a39f-4a90-9c8c-a54ac7564b44)
+
+
 **Eviter les noms en doublon du coté du controleur Unifi :**
 
 Pensez à avoir des noms d'équipements différents sinon vous pourriez rencontrer une erreur du type "_[MySQL] Error code : 23000 (1062). Duplicate entry '[NOM DE L EQUIPEMENT EN DOUBLE]' for key 'unique' : ..._" dans Jeedom lorsque vous faites un scan des équipements. 
