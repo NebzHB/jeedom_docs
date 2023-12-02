@@ -5,6 +5,11 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 02-12-2023
+
+* Ajout commande Signal et mise à jour du signal optionnelle dans la configuration du plugin
+* Gestion des nouveaux évènements clients (controleur 8+)
+
 # 27-11-2023
 
 * Prise en charge UXG-Lite
