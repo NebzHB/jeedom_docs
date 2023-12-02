@@ -8,6 +8,10 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+02-12-2023
+----------
+* Correctif gestion couleurs pour les ampoules.
+
 28-11-2023
 ----------
 * Si on recoit 100 sur une valeur binary, c'est true (Volets Celiane nouvelle version)
