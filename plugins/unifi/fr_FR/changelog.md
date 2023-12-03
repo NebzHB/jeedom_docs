@@ -5,6 +5,13 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 03-12-2023
+
+* Affichage de tous les évenements reçus dans les logs en debug, même ceux qu'on gère pas. (pour aider au debug dans certains cas)
+* Commande Powersave_Enabled est maintenant ignorable si on le désire
+* Changement d'affichage des commandes clients ignorables dans la config du plugin (pour en afficher plus)
+* On ignore certaines raisons de mises à jour des clients non utilisées de toute façon pour réduire la charge
+
 # 02-12-2023
 
 * Ajout commande Signal et mise à jour du signal optionnelle dans la configuration du plugin
