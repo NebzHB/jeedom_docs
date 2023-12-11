@@ -15,7 +15,7 @@ description: Changelog du plugin Unifi
   Vous pouvez par exemple : Recevoir une notification quand quelqu'un se connecte au wifi invité, Lancer un scénario quand un certain périphérique se déconnecte du réseau, etc
   
   Pour voir les évènements reçu, dans la config du plugin, vous pouvez activer un nouveau log (ne pas le garder activer trop longtemps car il devient vite très gros !!) qui contient les évènements bruts du controleur, afin qu'il reste lisible les évènements Device et Client n'y sont pas inclus (vous pouvez voir ceux-ci dans le log "unifi" en debug). Vous pouvez ensuite utiliser les attributs de ces évènements comme tag dans vos actions ou scénarios (uniquement le premier niveau du json, si vous voulez aller plus loin il faut envoyer tout le json via #event# et traiter par vous même dans le scénario/action).
-
+Voir là : [https://community.jeedom.com/t/plugin-unifi-network-actualites/117009/2](https://community.jeedom.com/t/plugin-unifi-network-actualites/117009/2)
 
 # 03-12-2023
 
