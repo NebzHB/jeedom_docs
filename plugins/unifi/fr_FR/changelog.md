@@ -9,8 +9,11 @@ description: Changelog du plugin Unifi
 
 * Correction pour les UDM qui ne répondent pas au PING mais qui renvoient bien des évènements (plus de coupure du démon dans ce cas précis)
 * Nouveauté ! Ajout de la gestion des évènements bruts dans l'équipement site > onglet "Automatisations Evènements".
+
   Il est possible de gérer vous-même quoi faire avec les évènements reçu du controleur ! Cela ouvre énormément le champ des possibilités du plugin !
+  
   Vous pouvez par exemple : Recevoir une notification quand quelqu'un se connecte au wifi invité, Lancer un scénario quand un certain périphérique se déconnecte du réseau, etc
+  
   Pour voir les évènements reçu, dans la config du plugin, vous pouvez activer un nouveau log (ne pas le garder activer trop longtemps car il devient vite très gros !!) qui contient les évènements bruts du controleur, afin qu'il reste lisible les évènements Device et Client n'y sont pas inclus (vous pouvez voir ceux-ci dans le log "unifi" en debug). Vous pouvez ensuite utiliser les attributs de ces évènements comme tag dans vos actions ou scénarios (uniquement le premier niveau du json, si vous voulez aller plus loin il faut envoyer tout le json via #event# et traiter par vous même dans le scénario/action).
 
 
