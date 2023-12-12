@@ -8,7 +8,8 @@ description: Changelog du plugin Unifi
 # En Beta
 
 * Correction pour les UDM qui ne répondent pas au PING mais qui renvoient bien des évènements (plus de coupure du démon dans ce cas précis)
-* Nouveauté ! Ajout de la gestion des évènements bruts dans l'équipement site > onglet "Automatisations Evènements".
+* Obfuscation (on cache) du mot de passe d'adoption des devices dans les logs (et authentication key + guest token)
+* **Nouveauté !** Ajout de la gestion des évènements bruts dans l'équipement site > onglet "Automatisations Evènements".
 
 ![f748f1f178d1e7049a517d33be21a8da9d61d6ea_2_690x261](https://github.com/NebzHB/jeedom_docs/assets/28622481/70bdd408-70b9-4b70-a408-af3d83aff284)
 
