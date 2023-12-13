@@ -24,6 +24,10 @@ description: Changelog du plugin Unifi
 
 Voir là : [https://community.jeedom.com/t/plugin-unifi-network-actualites/117009/2](https://community.jeedom.com/t/plugin-unifi-network-actualites/117009/2)
 
+# 13-12-2023
+
+* On force la mise à jour des dépendances si on a une vieille version de la librairie unifi.
+
 # 03-12-2023
 
 * Affichage de tous les évenements reçus dans les logs en debug, même ceux qu'on gère pas. (pour aider au debug dans certains cas)
