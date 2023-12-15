@@ -114,6 +114,7 @@ evt_wg_connected :
     "datetime": "2023-01-15T13:15:04Z",
     "msg": "Guest[ab:cd:ef:ab:cd:ef] has connected to AP[bb:cc:dd:ee:ff:aa] with SSID \"Guest\" on \"channel 11(ng)\"",
     "_id": "554c142be4b7bd788697c2a5"
+}
 ```
 C'est un évènement w = wifi, g = guest qui se connecte à votre réseau. 
 > TIPS : Première lettre est la source : *l = lan* ou *w = wifi* / seconde lettre est le type : *g = guest*, *u = user* ou *c = client*.
