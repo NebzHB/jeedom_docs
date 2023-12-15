@@ -10,6 +10,8 @@ description: Changelog du plugin Unifi
 * Correction pour les UDM qui ne répondent pas au PING mais qui renvoient bien des évènements (plus de coupure du démon dans ce cas précis)
 * Obfuscation (on cache) du mot de passe d'adoption des devices dans les logs (et authentication key + guest token)
 * Les configurations pour ignorer certaines commandes, pour la durée du cycle des relevés Site et WLAN et le log des évènements bruts n'ont plus besoin de relancer le démon pour être appliquées, elles sont directement envoyées au démon s'il est lancé !
+* Il n'est plus nécessaire de relancer le démon lorsqu'on change le niveau de log ! merci @Bad
+  
 * **Nouveauté !** Ajout de la gestion des évènements bruts dans l'équipement site > onglet "Automatisations Evènements".
 
 ![f748f1f178d1e7049a517d33be21a8da9d61d6ea_2_690x261](https://github.com/NebzHB/jeedom_docs/assets/28622481/70bdd408-70b9-4b70-a408-af3d83aff284)
