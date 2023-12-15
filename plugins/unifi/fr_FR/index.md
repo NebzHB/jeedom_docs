@@ -125,7 +125,7 @@ Le plugin vous permet d'utiliser chaque champ de premier niveau comme un tag dan
 
 > Les évènements "Device : Mise à jour" ou "Client : Mise à jour" ne font pas partie du log *unifi_event* car il y en a beaucoup et souvent et ça le rendrait illisible, vous pouvez les voir si vous passez le log en debug dans le log *unifi*
 
-> **Les évènements "Client : Mise à jour" font augmenter la charge de jeedom, car à partir du moment où vous l'ajoutez, le démon va envoyer tous les changements client à jeedom (donc dès qu'une vitesse change ou un last_seen !!). Et ce, même si vous avez décoché ces commandes dans la configuration du plugin!!! Préfèrez-lui l'évènement "Client Activé dans Jeedom : Mise à jour (sync.generic)" qui n'enverra que les évènements que des clients activés dans Jeedom et prendra en compte les commandes ignorées de la configuration du plugin.**
+> **Les évènements "Client : Mise à jour" font augmenter la charge de jeedom, car à partir du moment où vous l'ajoutez, le démon va envoyer tous les changements client à jeedom (donc dès qu'une vitesse change ou un last_seen !!). Et ce, même si vous avez décoché ces commandes dans la configuration du plugin!!! Préfèrez-lui l'évènement "Client Activé dans Jeedom : Mise à jour (sync.generic)" qui n'enverra que les évènements des clients activés dans Jeedom et prendra en compte les commandes ignorées de la configuration du plugin.**
 
 Quelques exemples
 -----------------
