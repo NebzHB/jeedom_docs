@@ -17,6 +17,8 @@ Après installation du plugin, il vous suffit de l’activer. Il faut ensuite re
 -   **Utilisateur Unifi** : Indiquez l'utilisateur du controleur (**Attention: pas celui du cloud ! Un utilisateur Local avec les droits Super Admin**)
 -   **Mot de passe Unifi** : Indiquez votre mot de passe controleur
 -   **Site Unifi** : si vous avez plusieurs sites, indique lequel le plugin doit gérer (*default* par défaut). Le nom correspond au nom dans l'url du site controleur, exemple : https://ip:8443/manage/**default**/dashboard
+> Attention, beaucoup se trompent ici, il faut bien indiquer *default* et pas l'url de tout le site !!!!
+
 -   **Bouton Rechercher les équipements Unifi** : Permet de scanner les équipements sur le controleur
 
 -   **Pièce par défaut pour les Clients** : Lors du scan, les nouveaux clients wifi/cablés peuvent être ajoutés par défaut à une pièce.
