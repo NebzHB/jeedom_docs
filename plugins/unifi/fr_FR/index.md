@@ -138,6 +138,7 @@ Exemple
 
 ![image](https://github.com/NebzHB/jeedom_docs/assets/28622481/2908ff03-a8a0-4cd4-86bf-3f149786db0c)
 
+![image](https://github.com/NebzHB/jeedom_docs/assets/28622481/1ed8ad3c-90b8-4af9-8df1-a3bc9a9fb649)
 
 
 Astuces & FAQ
