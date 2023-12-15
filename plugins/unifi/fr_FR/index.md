@@ -23,11 +23,19 @@ Après installation du plugin, il vous suffit de l’activer. Il faut ensuite re
 -   **Bouton Ne plus ignorer les clients supprimés** : Permet de montrer à nouveau les clients que vous auriez supprimés et ignorés dans la liste des équipements.
 -   **Relevé Site et WLAN (secondes)** : Fréquence en secondes à laquelle le relevé des informations du Site et des WLANs doivent être fait.  Les autres mises à jour sont envoyées par le controleur en temps réel, malheureusement pas les informations du site et des wlans. Le plugin doit donc les consulter régulièrement.  Si les informations sont modifiées via le plugin (LED's ou désactiver un WLAN), elles sont mises à jour instantanément, mais si vous modifiez ces informations via l'interface UniFi ou un autre moyen, c'est ici que cette consultation régulière rentre en jeu. (60 secondes par défaut)
 
--   **Ignorer les évênements Last_Seen sur les Clients** : le controleur envoi régulièrement des mises à jour des clients, surtout pour les informations Last_Seen (vu dernièrement), Satisfaction et Uptime. En ignorant ces informations (si elles ne sont pas important pour vous), vous allégez les mises à jour des équipements clients activés, et donc vous allégez la charge de votre Jeedom.
+-   **Ignorer les évênements Last_Seen sur les Clients** : le controleur envoi régulièrement des mises à jour des clients, surtout pour l'information Last_Seen (vu dernièrement). En ignorant cette information (si elle n'est pas importante pour vous), vous allégez les mises à jour des équipements clients activés, et donc vous allégez la charge de votre Jeedom.
 
--   **Ignorer les évênements Satisfaction sur les Clients** : le controleur envoi régulièrement des mises à jour des clients, surtout pour les informations Last_Seen (vu dernièrement), Satisfaction et Uptime. En ignorant ces informations (si elles ne sont pas important pour vous), vous allégez les mises à jour des équipements clients activés, et donc vous allégez la charge de votre Jeedom.
+-   **Ignorer les évênements Satisfaction sur les Clients** : le controleur envoi régulièrement des mises à jour des clients, surtout pour l'information Satisfaction. En ignorant cette information (si elle n'est pas importante pour vous), vous allégez les mises à jour des équipements clients activés, et donc vous allégez la charge de votre Jeedom.
 
--   **Ignorer les évênements Uptime sur les Clients** : le controleur envoi régulièrement des mises à jour des clients, surtout pour les informations Last_Seen (vu dernièrement), Satisfaction et Uptime. En ignorant ces informations (si elles ne sont pas important pour vous), vous allégez les mises à jour des équipements clients activés, et donc vous allégez la charge de votre Jeedom.
+-   **Ignorer les évênements Uptime sur les Clients** : le controleur envoi régulièrement des mises à jour des clients, surtout pour l'information Uptime. En ignorant cette information (si elle n'est pas importante pour vous), vous allégez les mises à jour des équipements clients activés, et donc vous allégez la charge de votre Jeedom.
+
+-   **Ignorer les évênements Up et Down sur les Clients** : le controleur envoi régulièrement des mises à jour des clients, surtout pour les informations UP et DOWN. En ignorant cette information (si elle n'est pas importante pour vous), vous allégez les mises à jour des équipements clients activés, et donc vous allégez la charge de votre Jeedom.
+
+-   **Ignorer les évênements Signal sur les Clients** : le controleur envoi régulièrement des mises à jour des clients, surtout pour l'information Signal. En ignorant cette information (si elle n'est pas importante pour vous), vous allégez les mises à jour des équipements clients activés, et donc vous allégez la charge de votre Jeedom.
+
+-   **Ignorer les évênements Powersave_Enabled sur les Clients** : le controleur envoi régulièrement des mises à jour des clients, surtout pour l'information Powersave_Enabled. En ignorant cette information (si elle n'est pas importante pour vous), vous allégez les mises à jour des équipements clients activés, et donc vous allégez la charge de votre Jeedom.
+
+-   **Afficher les évènements bruts du controleur dans un log séparé** (En Beta) : Permet d'envoyer tous les évènements reçus du controleur dans le log unifi_event (excepté les évènements Clients et Devices, il deviendrait illisible !). Cela vous permet de voir les évènements reçus (et connaitre leurs champs) pour les ajouter dans les Automatisation Evènements sur l'équipement Site.
 
 -   **Bouton Réparation de NodeJS** : Ce bouton permet de réparer NodeJS sur votre système (désinstallation complête et réinstallation propre). Il n'est conseillé de le faire que sur conseil via le forum ou en dernier recours.
 
@@ -80,6 +88,49 @@ Onglet Commandes
 -   Il existe de nombreuses commandes, elles sont différentes en fonction du type d'équipement. Toutes ne sont pas affichées par défaut. Vous pouvez les renommer, les afficher ou non et les réorganiser. 
 -   La valeur des commandes est maintenant affiché et modifié en temps réel sur cette page
 Vous pouvez aussi attribuer un widget au choix. Tout est standard.
+
+Automatisations Évènements (En Beta)
+--------------------------
+Il s'agit d'une nouvelle foncitonnalité qui vous permet de traiter vous-même les évènements bruts reçus du controleur.
+Il faut vous rendre dans l'équipement Site, onglet *Automatisations Évènements*.
+
+Grâce au log unifi_event activable dans la configuration du plugin (voir plus haut), vous pouvez voir par exemple cet évènement :
+```
+evt_wg_connected :
+{
+    "guest": "ab:cd:ef:ab:cd:ef",
+    "ssid": "Guest",
+	"ap": "bb:cc:dd:ee:ff:aa",
+	"radio": "ng",
+    "channel": "11",
+    "ap_model": "U7PG2",
+    "ap_name": "APRez",
+    "ap_displayName": "APRez",
+    "key": "EVT_WG_Connected",
+    "subsystem": "wlan",
+    "is_negative": false,
+    "site_id": "153457853a5b2542257785c2",
+    "time": "1704652201104",
+    "datetime": "2023-01-15T13:15:04Z",
+    "msg": "Guest[ab:cd:ef:ab:cd:ef] has connected to AP[bb:cc:dd:ee:ff:aa] with SSID \"Guest\" on \"channel 11(ng)\"",
+    "_id": "554c142be4b7bd788697c2a5"
+```
+C'est un évènement w = wifi, g = guest qui se connecte à votre réseau. 
+> TIPS : Première lettre est la source : *l = lan* ou *w = wifi* / seconde lettre est le type : *g = guest*, *u = user* ou *c = client*.
+Vous pouvez aussi y trouver *ad = interface admin*, *hs = hotspot*, *gw = gateway*, *sw = switch* et *ap = access point*. (il y en a peut-être d'autres ?)
+
+Le plugin vous permet d'utiliser chaque champ de premier niveau comme un tag dans une commande ou à envoyer à un scénario. Ici donc vous pourriez utiliser *#guest#* pour l'adresse mac de l'invité, *#ap_name#* pour le nom du point d'accès où il se connecte ou encore *#time#* pour recevoir le datetime unix de la connexion (et tous les autres champs ! Attention cependant à msg qui contient des guillemets qui peuvent être mal interpretées parfois...). Le plugin vous permet également d'envoyer tout l'évènement en json avec le tag *#event#*. 
+> **Ce tag *#event#* est aussi utile pour les évènements de type Device ou Client, car ils ont plusieurs niveaux dans le json, il est donc impossible de faire des tags qui dépassent le premier niveau pour ces évènements !**.
+
+> Les évènements "Device : Mise à jour" ou "Client : Mise à jour" ne font pas partie du log *unifi_event* car il y en a beaucoup et souvent et ça le rendrait illisible, vous pouvez les voir si vous passez le log en debug dans le log *unifi*
+
+> **Les évènements "Client : Mise à jour" font augmenter la charge de jeedom, car à partir du moment où vous l'ajoutez, le démon va envoyer tous les changements client à jeedom (donc dès qu'une vitesse change ou un last_seen !!). Et ce, même si vous avez décoché ces commandes dans la configuration du plugin!!! Préfèrez-lui l'évènement "Client Activé dans Jeedom : Mise à jour (sync.generic)" qui n'enverra que les évènements que des clients activés dans Jeedom et prendra en compte les commandes ignorées de la configuration du plugin.**
+
+Quelques exemples
+-----------------
+
+
+
 
 Astuces & FAQ
 ------
