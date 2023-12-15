@@ -99,7 +99,7 @@ Il faut vous rendre dans l'équipement Site, onglet *Automatisations Évènement
 ![image](https://github.com/NebzHB/jeedom_docs/assets/28622481/b564667f-4d3c-415b-8116-b3f67d56fa6e)
 
 
-Grâce au log unifi_event activable dans la configuration du plugin (voir plus haut), vous pouvez voir par exemple cet évènement :
+Grâce au log *unifi_event* activable dans la configuration du plugin (voir plus haut), vous pouvez voir par exemple cet évènement :
 ```
 evt_wg_connected :
 {
@@ -121,14 +121,14 @@ evt_wg_connected :
     "_id": "554c142be4b7bd788697c2a5"
 }
 ```
-C'est un évènement w = wifi, g = guest qui se connecte à votre réseau. 
+C'est un évènement *w = wifi*, *g = guest* qui se connecte à votre réseau. 
 > TIPS : Première lettre est la source : *l = lan* ou *w = wifi* / seconde lettre est le type : *g = guest*, *u = user* ou *c = client*.
 Vous pouvez aussi y trouver *ad = interface admin*, *hs = hotspot*, *gw = gateway*, *sw = switch* et *ap = access point*. (il y en a peut-être d'autres ?)
 
 Le plugin vous permet d'utiliser chaque champ de premier niveau comme un tag dans une commande ou à envoyer à un scénario. Ici donc vous pourriez utiliser *#guest#* pour l'adresse mac de l'invité, *#ap_name#* pour le nom du point d'accès où il se connecte ou encore *#time#* pour recevoir le datetime unix de la connexion (et tous les autres champs ! Attention cependant à msg qui contient des guillemets qui peuvent être mal interpretées parfois...). Le plugin vous permet également d'envoyer tout l'évènement en json avec le tag *#event#*. 
 > **Ce tag *#event#* est aussi utile pour les évènements de type Device ou Client, car ils ont plusieurs niveaux dans le json, il est donc impossible de faire des tags qui dépassent le premier niveau pour ces évènements !**.
 
-> Les évènements "Device : Mise à jour" ou "Client : Mise à jour" ne font pas partie du log *unifi_event* car il y en a beaucoup et souvent et ça le rendrait illisible, vous pouvez les voir si vous passez le log en debug dans le log *unifi*
+> Les évènements "Device" ou "Client" ne font pas partie du log *unifi_event* car il y en a beaucoup et souvent et ça le rendrait illisible, vous pouvez les voir si vous passez le log en debug dans le log *unifi_deamon* après le démarrage du démon.
 
 > **Les évènements "Client : Mise à jour" font augmenter la charge de jeedom, car à partir du moment où vous l'ajoutez, le démon va envoyer tous les changements client à jeedom (donc dès qu'une vitesse change ou un last_seen !!). Et ce, même si vous avez décoché ces commandes dans la configuration du plugin!!! Préfèrez-lui l'évènement "Client Activé dans Jeedom : Mise à jour (sync.generic)" qui n'enverra que les évènements des clients activés dans Jeedom et prendra en compte les commandes ignorées de la configuration du plugin.**
 
