@@ -93,8 +93,11 @@ Vous pouvez aussi attribuer un widget au choix. Tout est standard.
 
 Automatisations Évènements (En Beta)
 ====================================
-Il s'agit d'une nouvelle foncitonnalité qui vous permet de traiter vous-même les évènements bruts reçus du controleur.
+Il s'agit d'une nouvelle fonctionnalité qui vous permet de traiter vous-même les évènements bruts reçus du controleur.
 Il faut vous rendre dans l'équipement Site, onglet *Automatisations Évènements*.
+![image](https://github.com/NebzHB/jeedom_docs/assets/28622481/c931ddc4-80cb-4670-8029-7c96d210fa9f)
+![image](https://github.com/NebzHB/jeedom_docs/assets/28622481/b564667f-4d3c-415b-8116-b3f67d56fa6e)
+
 
 Grâce au log unifi_event activable dans la configuration du plugin (voir plus haut), vous pouvez voir par exemple cet évènement :
 ```
