@@ -92,7 +92,7 @@ Onglet Commandes
 Vous pouvez aussi attribuer un widget au choix. Tout est standard.
 
 Automatisations Évènements (En Beta)
---------------------------
+====================================
 Il s'agit d'une nouvelle foncitonnalité qui vous permet de traiter vous-même les évènements bruts reçus du controleur.
 Il faut vous rendre dans l'équipement Site, onglet *Automatisations Évènements*.
 
@@ -137,7 +137,7 @@ Exemple
 
 
 Astuces & FAQ
-------
+=============
 -   Pour lancer un scan dans un scénario, via un bloc code, vous pouvez lancer : `unifi::syncUnifi();`
 
 -   Pour la gestion des présences, assurez vous d'avoir coché ceci dans le contrôleur :
