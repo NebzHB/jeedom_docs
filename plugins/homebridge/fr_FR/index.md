@@ -724,7 +724,7 @@ FAQ
 4. Si ce n'est pas réglé, relancez votre box/routeur.
 5. Si ce n'est pas réglé, vérifiez que le démon est activé. Si ce n'est pas le cas, redémarrez le. Vérifiez qu'il n'y a aucune erreur dans le log.
 6. Si ce n'est pas réglé, lancez une réparation dans la configuration du plugin (il faut retirer le pont dans Maison).
-7. Si ce n'est pas réglé, vous avez un problème réseau, veillez à activer le multicast/multicast DNS/mDNS sur tout le trajet entre Jeedom et votre iPhone/iPad/... et votre concentrateur HomeKit (iPad(si ancienne infra homekit)/AppleTV/HomePod). Aucun routage entre ces trois périphériques n'est supporté. Testez aussi le paramètre IGMP Snooping, s'il est activé, désactivez-le et inversément. 
+7. Si ce n'est pas réglé, vous avez un problème réseau, veillez à activer le multicast/multicast DNS/mDNS sur tout le trajet entre Jeedom et votre iPhone/iPad/... et votre concentrateur HomeKit (iPad(si ancienne infra homekit)/AppleTV/HomePod). Aucun routage entre ces trois périphériques n'est supporté. Testez aussi le paramètre IGMP Snooping, s'il est activé, désactivez-le et inversément (mais gardez une cohérence entre vos périphériques). 
 
 >Beaucoup d'informations se trouvent dans les logs, le prochain chapitre vous expliquera comment les analyser.
 
