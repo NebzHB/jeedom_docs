@@ -100,8 +100,8 @@ evt_wg_connected :
 {
     "guest": "ab:cd:ef:ab:cd:ef",
     "ssid": "Guest",
-	"ap": "bb:cc:dd:ee:ff:aa",
-	"radio": "ng",
+    "ap": "bb:cc:dd:ee:ff:aa",
+    "radio": "ng",
     "channel": "11",
     "ap_model": "U7PG2",
     "ap_name": "APRez",
