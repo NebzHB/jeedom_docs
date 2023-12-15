@@ -5,27 +5,14 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
-# En Beta
+# 15-12-2023
 
 * Correction pour les UDM qui ne répondent pas au PING mais qui renvoient bien des évènements (plus de coupure du démon dans ce cas précis)
+* Correction sur la réparation de NodeJS qui pouvait ne pas se lancer
 * Obfuscation (on cache) du mot de passe d'adoption des devices dans les logs (et authentication key + guest token)
 * Les configurations pour ignorer certaines commandes, pour la durée du cycle des relevés Site et WLAN et le log des évènements bruts n'ont plus besoin de relancer le démon pour être appliquées, elles sont directement envoyées au démon s'il est lancé !
-* Il n'est plus nécessaire de relancer le démon lorsqu'on change le niveau de log ! merci @Bad
-  
-* **Nouveauté !** Ajout de la gestion des évènements bruts dans l'équipement site > onglet "Automatisations Evènements".
-
-![f748f1f178d1e7049a517d33be21a8da9d61d6ea_2_690x261](https://github.com/NebzHB/jeedom_docs/assets/28622481/70bdd408-70b9-4b70-a408-af3d83aff284)
-
-  Il est possible de gérer vous-même quoi faire avec les évènements reçu du controleur ! Cela ouvre énormément le champ des possibilités du plugin !
-  
-  Vous pouvez par exemple : Recevoir une notification quand quelqu'un se connecte au wifi invité, Lancer un scénario quand un certain périphérique se déconnecte du réseau, etc
-  
-  Pour voir les évènements reçu, dans la config du plugin, vous pouvez activer un nouveau log (ne pas le garder activer trop longtemps car il devient vite très gros !!) qui contient les évènements bruts du controleur, afin qu'il reste lisible les évènements Device et Client n'y sont pas inclus (vous pouvez voir ceux-ci dans le log "unifi" en debug). Vous pouvez ensuite utiliser les attributs de ces évènements comme tag dans vos actions ou scénarios (uniquement le premier niveau du json, si vous voulez aller plus loin il faut envoyer tout le json via #event# et traiter par vous même dans le scénario/action).
-  
-![ba03113a6d076d4759cb0b5dd4a2a69077428157_2_690x89](https://github.com/NebzHB/jeedom_docs/assets/28622481/784ec001-c730-4b31-b14c-33b03730fde9)
-![6ecb722b1b4d7cac13e019ea485d42816846626e](https://github.com/NebzHB/jeedom_docs/assets/28622481/39a94747-d2f1-4b50-8471-1977fcdbb551)
-
-Voir là : [https://community.jeedom.com/t/plugin-unifi-network-actualites/117009/2](https://community.jeedom.com/t/plugin-unifi-network-actualites/117009/2)
+* Il n'est plus nécessaire de relancer le démon lorsqu'on change le niveau de log ! merci @Bad  
+* **Nouveauté !** Ajout de la gestion des évènements bruts dans l'équipement site > onglet "Automatisations Evènements" (voir doc : https://nebzhb.github.io/jeedom_docs/plugins/unifi/fr_FR/#tocAnchor-1-3-2)
 
 # 13-12-2023
 
