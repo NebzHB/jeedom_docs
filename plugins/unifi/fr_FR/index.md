@@ -130,7 +130,7 @@ Le plugin vous permet d'utiliser chaque champ de premier niveau comme un tag dan
 Quelques exemples
 -----------------
 
-
+![image](https://github.com/NebzHB/jeedom_docs/assets/28622481/cd773146-1564-49f0-9334-f543df5eeed3)
 
 
 Astuces & FAQ
