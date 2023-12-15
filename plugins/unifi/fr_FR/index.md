@@ -129,10 +129,11 @@ Le plugin vous permet d'utiliser chaque champ de premier niveau comme un tag dan
 
 > **Les évènements "Client : Mise à jour" font augmenter la charge de jeedom, car à partir du moment où vous l'ajoutez, le démon va envoyer tous les changements client à jeedom (donc dès qu'une vitesse change ou un last_seen !!). Et ce, même si vous avez décoché ces commandes dans la configuration du plugin!!! Préfèrez-lui l'évènement "Client Activé dans Jeedom : Mise à jour (sync.generic)" qui n'enverra que les évènements des clients activés dans Jeedom et prendra en compte les commandes ignorées de la configuration du plugin.**
 
-Quelques exemples
------------------
+Exemple
+-------
 
-![image](https://github.com/NebzHB/jeedom_docs/assets/28622481/cd773146-1564-49f0-9334-f543df5eeed3)
+![image](https://github.com/NebzHB/jeedom_docs/assets/28622481/2908ff03-a8a0-4cd4-86bf-3f149786db0c)
+
 
 
 Astuces & FAQ
