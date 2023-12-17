@@ -5,6 +5,11 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 17-12-2023
+
+* Correction de la couleur des notifications d'ajout de devices et client en vert plutot que orange
+* Aide à l'encodage du site dans la config, si on encode toute l'url (ce qu'il ne faut pas faire !!! voir doc !!!), on essaie de capturer le nom du site dans cette url.
+
 # 15-12-2023
 
 * Correction pour les UDM qui ne répondent pas au PING mais qui renvoient bien des évènements (plus de coupure du démon dans ce cas précis)
