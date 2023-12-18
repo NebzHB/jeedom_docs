@@ -5,6 +5,11 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# En Beta
+
+* On envoi plus toutes les configurations du démon en ligne de commande mais via un évènement de type configuration quand le démon a dit qu'il était prêt.
+* Notification pour les configurations qui sont envoyées directement au démon quand il est allumé ou s'il faut le relancer (info contrôleur)
+
 # 17-12-2023
 
 * Correction de la couleur des notifications d'ajout de devices et client en vert plutot que orange
