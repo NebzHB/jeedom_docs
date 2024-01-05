@@ -8,6 +8,12 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+05-01-2023
+----------
+* Imposer NodeJS 18.15 minimum en prévision de Homebridge 1.7.0 (relance des dépendances si pas le cas)
+* Colorisation des OK ou KO du log de dépendances pour plus de clarté
+* On retire mqtt des dépendances, pas besoin et chargé par une autre dépendance.
+
 31-10-2023
 ----------
 * Dépendances seulement : modification pour ne pas bugger si le plugin ne tourne pas sur jeedom.
