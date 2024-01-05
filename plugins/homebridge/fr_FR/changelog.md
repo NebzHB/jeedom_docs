@@ -8,6 +8,13 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+En Beta
+-------
+* Utilisation d'axios à la place de request qui est déprécié
+* Homebridge 1.7.0
+* Prise en charge du plugin Boiler
+* Amélioration des logs en cas d'erreur
+
 05-01-2023
 ----------
 * Imposer NodeJS 18.15 minimum en prévision de Homebridge 1.7.0 (relance des dépendances si pas le cas)
