@@ -371,13 +371,13 @@ Thermostats
 |Info/Thermostat Etat (HUMAIN)|`NON`|'off' ou 'arrêté' ou 'arret'<br/>'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'| 
 |Info/Thermostat Mode|`OUI si associé mode homekit`|'Off' ou 'Arret' = OFF<br/>'Aucun' ou 'Thermostat' = AUTO<br/>Exactement le nom d'une Action/Thermostat Mode<br/> à associer à HEAT ou COOL|
 |Action/Thermostat Mode|`NON`|Mode à associer à un mode homekit (max 2)|
-|Info/Thermostat Température Extérieur|`NON utilisé`|N/A
+|Info/Thermostat Température Extérieur|`NON utilisé`|N/A|
 |Info/Thermostat Température ambiante|`NON`|-50 → 100| 
 |Info/Thermostat Consigne|`OUI`|10 → 38| 
 |Action/Thermostat Consigne|`OUI`|10 → 38| 
 |Info/Thermostat Verrouillage|`NON`|0 = Non Verrouillé<br/>1 = Verrouillé| 
-|Action/Thermostat Verrouillage|`OUI si Info/Verrouillage`|N/A
-|Action/Thermostat Déverrouillage|`OUI si Info/Verrouillage`|N/A
+|Action/Thermostat Verrouillage|`OUI si Info/Verrouillage`|N/A| 
+|Action/Thermostat Déverrouillage|`OUI si Info/Verrouillage`|N/A| 
 
 Portails ou Garages
 --------------------
@@ -386,8 +386,8 @@ Portails ou Garages
 |---------------|:----------------:|----------------|
 |Info/Portail état ouvrant<br/>Info/Garage état ouvrant<br/>(même traitement)|`OUI`|0 = Fermé<br/>252 = Fermeture en cours<br/>253 = Stoppé<br/>254 = Ouverture en cours<br/>255 = Ouvert<br/>(Configurable numérique ou chaîne)|
 |Action/Portail ou garage bouton toggle|`Si seul`|Réf. vers Info/Portail état ouvrant<br/>ou<br/>Réf. vers Info/Garage état ouvrant| 
-|Action/Portail ou garage bouton d’ouverture|`Si pas Toggle`|Réf. vers Info/Portail état ouvrant<br/>ou<br/>Réf. vers Info/Garage état ouvrant
-|Action/Portail ou garage bouton de fermeture|`Si pas Toggle`|Réf. vers Info/Portail état ouvrant<br/>ou<br/>Réf. vers Info/Garage état ouvrant
+|Action/Portail ou garage bouton d’ouverture|`Si pas Toggle`|Réf. vers Info/Portail état ouvrant<br/>ou<br/>Réf. vers Info/Garage état ouvrant|
+|Action/Portail ou garage bouton de fermeture|`Si pas Toggle`|Réf. vers Info/Portail état ouvrant<br/>ou<br/>Réf. vers Info/Garage état ouvrant|
 
 Haut-Parleurs (Eve Seulement)
 -----------------------------
