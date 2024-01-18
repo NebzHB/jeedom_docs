@@ -16,7 +16,7 @@ En Beta
 * Correction des valeurs d'actions avec une virgule qui ne passaient plus (thermostat, etc)
 * Amélioration des logs en cas d'erreur
 
-05-01-2023
+05-01-2024
 ----------
 * Imposer NodeJS 18.15 minimum en prévision de Homebridge 1.7.0 (relance des dépendances si pas le cas)
 * Colorisation des OK ou KO du log de dépendances pour plus de clarté
