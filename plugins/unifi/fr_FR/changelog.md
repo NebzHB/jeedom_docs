@@ -5,10 +5,13 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
-# En Beta
+# 22-01-2023
 
 * On envoi plus toutes les configurations du démon en ligne de commande mais via un évènement de type configuration quand le démon a dit qu'il était prêt.
 * Notification pour les configurations qui sont envoyées directement au démon quand il est allumé ou s'il faut le relancer (info contrôleur)
+* Utilisation de axios dans le démon plutot que request qui est déprécié
+* Optimisation de la file d'attente des évènements à envoyer à Jeedom
+* Ajout du timing d'installation dans les dépendances
 
 # 17-12-2023
 
