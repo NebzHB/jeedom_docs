@@ -8,6 +8,14 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+En Beta
+--------
+* FIN DU SUPPORT DES VERSIONS DE JEEDOM < 4.2 ! VOUS NE VERREZ PAS L'UPDATE SI VOUS AVEZ UNE VIEILLE VERSION
+* Passage en JSONRPC plutot que event (plus robuste)
+* Fix sur certains booléens suite au passage en JSONRPC
+* Passage du démon en axios plutot que request qui est obsolète
+* Ajout du timing dans l'installation des dépendances
+
 02-12-2023
 ----------
 * Correctif gestion couleurs pour les ampoules.
