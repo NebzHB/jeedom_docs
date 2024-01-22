@@ -15,6 +15,7 @@ En Beta
 * Prise en charge du plugin Boiler
 * Correction des valeurs d'actions avec une virgule qui ne passaient plus (thermostat, etc)
 * Amélioration des logs en cas d'erreur
+* Plus besoin de redémarrer le démon quand on change le niveau de log dans la config du plugin, l'info est envoyée au démon directement.
 
 05-01-2024
 ----------
