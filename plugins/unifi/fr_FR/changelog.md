@@ -7,7 +7,7 @@ description: Changelog du plugin Unifi
 
 # 22-01-2023
 
-* FIN DU SUPPORT POUR JEEDOM < 4.2 ! NE METTEZ PAS A JOUR SI VOUS ÊTES TOUJOURS EN VIEILLE VERSION
+* FIN DU SUPPORT POUR JEEDOM < 4.2 ! LA MISE A JOUR NE VOUS SERA PAS PRESENTÉE PAR JEEDOM SI VOUS AVEZ UNE ANCIENNE VERSION
 * On envoi plus toutes les configurations du démon en ligne de commande mais via un évènement de type configuration quand le démon a dit qu'il était prêt.
 * Notification pour les configurations qui sont envoyées directement au démon quand il est allumé ou s'il faut le relancer (info contrôleur)
 * Utilisation de axios dans le démon plutot que request qui est déprécié
