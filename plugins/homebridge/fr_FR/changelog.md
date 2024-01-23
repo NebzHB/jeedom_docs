@@ -16,6 +16,7 @@ En Beta
 * Correction des valeurs d'actions avec une virgule qui ne passaient plus (thermostat, etc)
 * Amélioration des logs en cas d'erreur
 * Plus besoin de redémarrer le démon quand on change le niveau de log dans la config du plugin, l'info est envoyée au démon directement.
+* Si jeedom a regénéré le hash du user admin pendant la nuit, 5min après, on relance le démon (qui prendra le nouveau hash). Contournement du problème "Vous n'êtes pas autorisé à effectuer cette action".
 
 05-01-2024
 ----------
