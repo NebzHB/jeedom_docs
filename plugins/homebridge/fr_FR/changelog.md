@@ -17,7 +17,7 @@ En Beta
 * Amélioration des logs en cas d'erreur
 * Plus besoin de redémarrer le démon quand on change le niveau de log dans la config du plugin, l'info est envoyée au démon directement.
 * Utilisation de l'apikey du plugin plutot que celle de l'utilisateur admin.
-* Comme le démon écoute sur un port aléatoire pour l'instant, sous docker externe vous pouvez avoir un problème, je vais voir pour détecter docker et si c'est le cas fixer le port
+* Le démon écoute sur un port aléatoire sauf sur docker (8582) à ouvrir si votre docker est externe à jeedom !
 
 05-01-2024
 ----------
