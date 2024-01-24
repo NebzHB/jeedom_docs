@@ -16,7 +16,8 @@ En Beta
 * Correction des valeurs d'actions avec une virgule qui ne passaient plus (thermostat, etc)
 * Amélioration des logs en cas d'erreur
 * Plus besoin de redémarrer le démon quand on change le niveau de log dans la config du plugin, l'info est envoyée au démon directement.
-* Si jeedom a regénéré le hash du user admin pendant la nuit, 5min après, on relance le démon (qui prendra le nouveau hash). Contournement du problème "Vous n'êtes pas autorisé à effectuer cette action".
+* Utilisation de l'apikey du plugin plutot que celle de l'utilisateur admin.
+* Comme le démon écoute sur un port aléatoire pour l'instant, sous docker externe vous pouvez avoir un problème, je vais voir pour détecter docker et si c'est le cas fixer le port
 
 05-01-2024
 ----------
