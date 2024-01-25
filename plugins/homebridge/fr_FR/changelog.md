@@ -11,7 +11,7 @@ Changelog
 En Beta
 -------
 * Utilisation d'axios à la place de request qui est déprécié
-* Homebridge 1.7.0
+* Homebridge 1.7.0 (Aucun changement)
 * Prise en charge du plugin Boiler
 * Correction des valeurs d'actions avec une virgule qui ne passaient plus (thermostat, etc)
 * Amélioration des logs en cas d'erreur
