@@ -13,6 +13,7 @@ En Beta
 * Utilisation d'axios à la place de request qui est déprécié
 * Homebridge 1.7.0 (Aucun changement)
 * Prise en charge du plugin Boiler
+* Retiré la coloration, le Core 4.4 s’en chargera
 * Correction des valeurs d'actions avec une virgule qui ne passaient plus (thermostat, etc)
 * Amélioration des logs en cas d'erreur
 * Plus besoin de redémarrer le démon quand on change le niveau de log dans la config du plugin, l'info est envoyée au démon directement.
