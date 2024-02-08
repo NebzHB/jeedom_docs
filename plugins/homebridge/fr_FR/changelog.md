@@ -34,7 +34,7 @@ En Beta
 * Meilleure surveillance des dépendances et vérification de plus de paramètres pour déterminer que les dépendances sont OK.
 * Plus d'informations dans la page Santé de Jeedom.
 
-* Problème connu : Types génériques "Interrupteur Programmable (Multi-Valeur)" et "Interrupteur Programmable Binaire" toujours problématiques.
+>Problème connu : Types génériques "Interrupteur Programmable (Multi-Valeur)" et "Interrupteur Programmable Binaire" toujours problématiques.
 
 05-01-2024
 ----------
