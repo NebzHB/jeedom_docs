@@ -10,22 +10,29 @@ Changelog
 
 En Beta
 -------
-* Refactorisation du code et optimisations
-* Utilisation d'axios à la place de request qui est déprécié
-* Homebridge 1.7.0 (Aucun changement)
-* Prise en charge du plugin Boiler
-* Retiré la coloration, le Core 4.4 s’en chargera
-* Correction des valeurs d'actions avec une virgule qui ne passaient plus (thermostat, etc)
-* Amélioration des logs en cas d'erreur
+* Refactorisation du code et optimisations diverses.
+* Utilisation d'axios à la place de request qui est déprécié.
+* Homebridge 1.7.0 (Aucun changement).
+* Prise en charge du plugin Boiler.
+* Retiré la coloration, le Core 4.4 s’en chargera.
+* Correction des valeurs d'actions avec une virgule qui ne passaient plus (thermostat, etc).
+* Amélioration des logs en cas d'erreur.
 * Plus besoin de redémarrer le démon quand on change le niveau de log dans la config du plugin, l'info est envoyée au démon directement.
 * 5min après le cron Jeedom Daily, on vérifie s'il a regénéré la clé de l'admin, si c'est le cas, on relance le démon pour éviter les "Vous n'êtes pas autorisé à effectuer cette action".
-* Changement dans la sélection de l'administrateur pour faire les appels au Core :
-	* S'il existe un administrateur qui a coché la case "Ne pas regénérer la clé" on prendra cet administrateur. (Pour éviter justement ces relances de démon tous les 3 mois)
+* Dans ce cadre, changement dans la sélection de l'administrateur pour faire les appels au Core :
+	* S'il existe un administrateur qui a coché la case "Ne pas regénérer la clé" on prendra cet administrateur. (Pour éviter justement ces relances de démon tous les 3 mois).
 	* S'il existe un administrateur local on prendra cet administrateur.
-	* Sinon on prend un administrateur qui a juste l'api d'activée.
+	* Sinon on prend un administrateur qui a juste l'api d'activée (comme avant).
 	* Si aucun administrateur, on affiche un message clair dans le log.
 * Le démon écoute sur un port aléatoire sauf sur docker (8582) **à ouvrir si votre docker est externe à jeedom** !
-* Mise en place d'une file de traitement pour envoyer les actions à jeedom, elles sont envoyées une par une à Jeedom séquentiellement et chronologiquement. Permet d'éviter que Jeedom sature quand on dit "Dis Siri, éteint toutes les lumières" ou qu'on lance une grosse scène par exemple.
+* Mise en place d'une file de traitement pour envoyer les actions à Jeedom, elles sont envoyées une par une à Jeedom séquentiellement et chronologiquement. Permet d'éviter que Jeedom sature quand on dit "Dis Siri, éteint toutes les lumières" ou qu'on lance une grosse scène par exemple.
+* Amélioration de la gestion des Volets et Fenêtres motorisées.
+* Icone Communauté pour Jeedom 4.4.
+* Meilleure surveillance du process homebridge.
+* Meilleur arret du process homebridge.
+* Meilleure gestion des interfaces lors de la restauration de Jeedom sur un système différent.
+* Meilleure surveillance des dépendances et vérification de plus de paramètres pour déterminer que les dépendances sont OK.
+* Plus d'informations dans la page Santé de Jeedom.
 
 05-01-2024
 ----------
