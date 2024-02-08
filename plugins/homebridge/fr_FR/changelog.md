@@ -34,6 +34,8 @@ En Beta
 * Meilleure surveillance des dépendances et vérification de plus de paramètres pour déterminer que les dépendances sont OK.
 * Plus d'informations dans la page Santé de Jeedom.
 
+* Problème connu : Types génériques "Interrupteur Programmable (Multi-Valeur)" et "Interrupteur Programmable Binaire" toujours problématiques.
+
 05-01-2024
 ----------
 * Imposer NodeJS 18.15 minimum en prévision de Homebridge 1.7.0 (relance des dépendances si pas le cas)
