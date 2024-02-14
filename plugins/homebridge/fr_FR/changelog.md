@@ -8,7 +8,7 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-En Beta
+14-02-2024
 -------
 * Refactorisation du code et optimisations diverses.
 * Utilisation d'axios à la place de request qui est déprécié.
