@@ -33,6 +33,8 @@ En Beta
 * Meilleure gestion des interfaces lors de la restauration de Jeedom sur un système différent.
 * Meilleure surveillance des dépendances et vérification de plus de paramètres pour déterminer que les dépendances sont OK.
 * Plus d'informations dans la page Santé de Jeedom.
+* Amélioration de la génération des commandes et eqLogic pour envoyer au plugin : lancement du démon plus rapide.
+* Forcage des dépendances en ipv4
 
 >Problème connu : Types génériques "Interrupteur Programmable (Multi-Valeur)" et "Interrupteur Programmable Binaire" toujours problématiques.
 
