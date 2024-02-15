@@ -8,6 +8,10 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+15-02-2024
+----------
+* Modification de l'appel au script des dépendances, les arguments sont maintenant nommés et plus en fonction de leur ordre. Cela n'implique aucun changement pour la plupart des utilisateurs.
+
 14-02-2024
 -------
 * Refactorisation du code et optimisations diverses.
