@@ -8,6 +8,11 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+18-02-2024
+----------
+* Modification des paramètres des dépendances.
+* Fix du stop démon qui pouvait ne pas attendre que le démon soit stoppé
+
 15-02-2024
 ----------
 * Modification de l'appel au script des dépendances, les arguments sont maintenant nommés et plus en fonction de leur ordre. Cela n'implique aucun changement pour la plupart des utilisateurs.
