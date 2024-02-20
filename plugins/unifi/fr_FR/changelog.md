@@ -5,7 +5,11 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
-# 22-01-2023
+# 20-02-2024
+
+* Fix d'un problème de détection des équipements du même nom dans la même pièce : permet d'éviter les doublons et erreurs de sql quand plusieurs équipements ont le même nom dans le controleur Unifi
+
+# 22-01-2024
 
 * FIN DU SUPPORT POUR JEEDOM < 4.2 ! LA MISE A JOUR NE VOUS SERA PAS PRESENTÉE PAR JEEDOM SI VOUS AVEZ UNE ANCIENNE VERSION
 * On envoi plus toutes les configurations du démon en ligne de commande mais via un évènement de type configuration quand le démon a dit qu'il était prêt.
