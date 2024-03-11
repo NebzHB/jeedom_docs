@@ -8,6 +8,11 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+11-03-2024
+----------
+* Bouton Réinstaller dans la config du plugin : meilleure désinstallation avant réinstall.
+* Alerte incompatibilité Debian Stretch (9) à l'install. Demande de mettre à jour (il est temps !).
+
 18-02-2024
 ----------
 * Modification des paramètres des dépendances.
