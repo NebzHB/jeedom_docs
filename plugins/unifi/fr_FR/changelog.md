@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 18-03-2024
+
+* Ajout d'un ignore sur les mises à jour d'une nouvelle valeur apparue en unifi 8.1.113 (wifi_tx_retries_percentage) sur les clients .
+
 # 20-02-2024
 
 * Fix d'un problème de détection des équipements du même nom dans la même pièce : permet d'éviter les doublons et erreurs de sql quand plusieurs équipements ont le même nom dans le controleur Unifi
