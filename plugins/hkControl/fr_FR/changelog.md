@@ -16,6 +16,8 @@ En Beta
 * Passage du démon en axios plutot que request qui est obsolète
 * Ajout du timing dans l'installation des dépendances
 * Plus besoin de redémarrer le démon quand on change le niveau de log dans la config du plugin, l'info est envoyée au démon directement.
+* Correction pour les équipements qui ont le même nom qu'un équipement déjà existant
+* Meilleure vérification des dépendances, toutes les libs doivent être à la bonne version !
 
 02-12-2023
 ----------
