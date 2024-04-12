@@ -8,6 +8,11 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+En Beta
+-------
+* Meilleure gestion de la version de NodeJS et NPM et de la surveillance des dépendances pour ces versions.
+* Correction d'un bug de log dans la commande restore du plugin
+
 11-03-2024
 ----------
 * Bouton Réinstaller dans la config du plugin : meilleure désinstallation avant réinstall.
