@@ -8,10 +8,12 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-En Beta
--------
+14-04-2024
+----------
 * Meilleure gestion de la version de NodeJS et NPM et de la surveillance des dépendances pour ces versions.
-* Correction d'un bug de log dans la commande restore du plugin
+* Mise à jour de NPM si besoin.
+* Correction d'un bug de log dans la commande restore du plugin.
+* Changement de site pour la génération du QR Code, Google a stoppé son service.
 
 11-03-2024
 ----------
