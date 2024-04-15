@@ -8,6 +8,10 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+En Beta
+-------
+* Ajout de la gestion de la version de NPM
+
 22-03-2024
 --------
 * FIN DU SUPPORT DES VERSIONS DE JEEDOM < 4.2 ! VOUS NE VERREZ PAS L'UPDATE SI VOUS AVEZ UNE VIEILLE VERSION
