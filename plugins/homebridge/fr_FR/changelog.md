@@ -8,6 +8,10 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+En beta
+-------
+* Homebridge 1.8.0
+
 14-04-2024
 ----------
 * Meilleure gestion de la version de NodeJS et NPM et de la surveillance des dépendances pour ces versions.
