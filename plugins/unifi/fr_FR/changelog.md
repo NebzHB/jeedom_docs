@@ -9,7 +9,7 @@ description: Changelog du plugin Unifi
 
 * Meilleure vérification des dépendances.
 * Meilleur arret du démon.
-* Ignorer led_enabled sur les controleurs qui ne le mettent pas à jour + message en debug dans le log.
+* Ignorer led_enabled sur les controleurs qui ne le mettent pas à jour + message en debug dans le log + désactiver les autres appels à getSiteSettings qui ne sont plus nécessaires.
 * Passage des commandes en POST plutot qu'en GET pour être certain que tout passe sur les switchs avec beaucoup de ports (POE Enable etc)
 * Optimisations diverses
 
