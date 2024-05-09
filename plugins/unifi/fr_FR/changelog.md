@@ -5,6 +5,14 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 09-05-2024
+
+* Meilleure vérification des dépendances.
+* Meilleur arret du démon.
+* Ignorer led_enabled sur les controleurs qui ne le mettent pas à jour + message en debug dans le log.
+* Passage des commandes en POST plutot qu'en GET pour être certain que tout passe sur les switchs avec beaucoup de ports (POE Enable etc)
+* Optimisations diverses
+
 # 18-03-2024
 
 * Ajout d'un ignore sur les mises à jour d'une nouvelle valeur apparue en unifi 8.1.113 (wifi_tx_retries_percentage) sur les clients .
