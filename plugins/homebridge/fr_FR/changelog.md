@@ -10,7 +10,11 @@ Changelog
 
 En beta
 -------
-* Homebridge 1.8.0
+* Homebridge 1.8.2
+
+19-05-2024 (Seulement les dépendances)
+----------
+* Meilleure gestion des conversions de valeurs pour les volets 0-99
 
 14-04-2024
 ----------
