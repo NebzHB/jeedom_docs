@@ -8,13 +8,11 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-En beta
--------
-* Homebridge 1.8.2
-
-19-05-2024 (Seulement les dépendances)
+20-05-2024
 ----------
-* Meilleure gestion des conversions de valeurs pour les volets 0-99
+* Homebridge 1.8.2
+* Meilleure gestion des conversions de valeurs pour les volets 0-99 0-255.
+* Meilleur stop du démon.
 
 14-04-2024
 ----------
