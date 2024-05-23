@@ -8,7 +8,7 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
-En Beta
+23-05-2024
 -------
 * Ajout de la gestion de la version de NPM
 * Meilleur arret du démon
