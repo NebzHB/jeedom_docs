@@ -11,6 +11,8 @@ Changelog
 En Beta
 -------
 * Ajout de la gestion de la version de NPM
+* Meilleur arret du démon
+* Si un équipement envoi une "Déconnexion des Events", lorsqu'on tente de se reconnecter, on redemande les dernières valeurs à l'équipements pour les envoyer à Jeedom (des fois qu'on aurait loupé des évènements pendant cette coupure). 
 
 22-03-2024
 --------
