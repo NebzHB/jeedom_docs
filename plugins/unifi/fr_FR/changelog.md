@@ -5,6 +5,13 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 28-05-2024
+
+* Ne plus forcer à installer les dépendances sur buster après le 30 juin 2024 (fin du support de buster). Cela permet que le démon continue de tourner comme il est sans forcer les dépendances s'il y a des mises à jour de libraires. A partir de cette date, buster ne sera plus supporté par le plugin, mais il devrait continuer à fonctionner tel quel grace à cette modification. Sauf pour les nouvelles installations sous buster, mais ça ne devrait pas arriver.
+* Réencodage du démon en async/await plutot que promise (aucun changement pour les utilisateurs mais plus simple à maintenir).
+* On ignore les modifications de clients quand is_allowed_in_visual_programming est modifié (quand on est dans l'interface du controleur 8.1.127)
+* Mise à jour Axios.
+
 # 09-05-2024
 
 * Meilleure vérification des dépendances.
