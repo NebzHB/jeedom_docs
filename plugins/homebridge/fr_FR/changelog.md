@@ -8,6 +8,11 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+28-05-2024
+----------
+* Ne plus forcer à installer les dépendances sur buster après le 30 juin 2024 (fin du support de buster). Cela permet que le démon continue de tourner comme il est sans forcer les dépendances s'il y a des mises à jour de libraires. A partir de cette date, buster ne sera plus supporté par le plugin, mais il devrait continuer à fonctionner tel quel grace à cette modification. Sauf pour les nouvelles installations sous buster, mais ça ne devrait pas arriver.
+* Correction pour l'envoi des informations sur communauté quand on cliques sur l'icone, les informations de debug sont maitenant entre ''' pour être affichées comme du code.
+
 20-05-2024
 ----------
 * Homebridge 1.8.2
