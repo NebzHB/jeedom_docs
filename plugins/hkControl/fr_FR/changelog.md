@@ -8,6 +8,10 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+30-05-2024
+----------
+* Forcer les dépendances en IPv4 pour les réseaux mal configurés en IPv6
+
 28-05-2024
 ----------
 * Ne plus forcer à installer les dépendances sur buster après le 30 juin 2024 (fin du support de buster). Cela permet que le démon continue de tourner comme il est sans forcer les dépendances s'il y a des mises à jour de libraires. A partir de cette date, buster ne sera plus supporté par le plugin, mais il devrait continuer à fonctionner tel quel grace à cette modification. Sauf pour les nouvelles installations sous buster, mais ça ne devrait pas arriver.
