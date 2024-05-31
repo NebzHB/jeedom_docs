@@ -8,6 +8,10 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+31-05-2024
+----------
+* Retiré une commande en double des dépendances.
+
 30-05-2024
 ----------
 * Forcer les dépendances en IPv4 pour les réseaux mal configurés en IPv6
