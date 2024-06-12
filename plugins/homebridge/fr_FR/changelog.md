@@ -8,6 +8,12 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+12-06-2024
+----------
+* Afficher un avertissement si vous êtes toujours en Debian 10 Buster, à partir du 1er juillet 2024, votre système ne sera plus supporté. Vous ne pourrez donc plus faire appel au support pour ce plugin. Mettez à jour en Debian 11.
+* Ajout dans DebugInfo d'une alerte s'il y a des problèmes de mémoire sur votre système.
+* Ajout dans la configuration du plugin d'une alerte s'il y a des problèmes de mémoire sur votre système.
+
 28-05-2024
 ----------
 * Ne plus forcer à installer les dépendances sur buster après le 30 juin 2024 (fin du support de buster). Cela permet que le démon continue de tourner comme il est sans forcer les dépendances s'il y a des mises à jour de libraires. A partir de cette date, buster ne sera plus supporté par le plugin, mais il devrait continuer à fonctionner tel quel grace à cette modification. Sauf pour les nouvelles installations sous buster, mais ça ne devrait pas arriver.
