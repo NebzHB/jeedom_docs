@@ -8,6 +8,10 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+12-06-2024
+----------
+* Rien n'a été mis à jour, juste pour vous informer que si vous êtes toujours en Debian 10 Buster, à partir du 1er juillet 2024, votre système ne sera plus supporté. Vous ne pourrez donc plus faire appel au support pour ce plugin. Mettez à jour en Debian 11.
+
 31-05-2024
 ----------
 * Retiré une commande en double des dépendances.
