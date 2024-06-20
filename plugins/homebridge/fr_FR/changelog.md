@@ -8,6 +8,10 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+En Beta
+----------
+* Homebridge 1.8.3
+
 12-06-2024
 ----------
 * Afficher un avertissement si vous êtes toujours en Debian 10 Buster, à partir du 1er juillet 2024, votre système ne sera plus supporté. Vous ne pourrez donc plus faire appel au support pour ce plugin. Mettez à jour en Debian 11.
