@@ -4,6 +4,9 @@ lang: fr_FR
 title: Plugin aTVRemote - Changelog
 description: Changelog du plugin aTVRemote
 ---
+# 03/07/2024 - beta
+- exclusion du venv pour le backup
+- suppression du venv avant réinstallation des dépendances
 
 # 05/04/2024 - beta
 - Correction pour 4.4 sur le widget
