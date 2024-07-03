@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 03-07-2024
+
+* Aucune modification, juste une mise à jour pour indiquer dans le market que Debian 10 Buster n'est plus supporté.
+
 # 12-06-2024
 
 * Ignorer les messages "last_radio" sur le controleur 8.2
