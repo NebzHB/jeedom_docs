@@ -8,9 +8,10 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-En Beta
+03-07-2024
 ----------
 * Homebridge 1.8.3
+* Aucune autre modification, juste une mise à jour pour indiquer dans le market que Debian 10 Buster n'est plus supporté.
 
 12-06-2024
 ----------
