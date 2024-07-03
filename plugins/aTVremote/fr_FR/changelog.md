@@ -6,6 +6,7 @@ description: Changelog du plugin aTVRemote
 ---
 # 03/07/2024 - beta
 - exclusion du venv pour le backup
+- Ajout dans le market que Debian Buster (10) n'est plus supporté
 
 # 05/04/2024 - beta
 - Correction pour 4.4 sur le widget
