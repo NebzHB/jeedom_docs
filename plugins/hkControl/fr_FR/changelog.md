@@ -8,6 +8,11 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+03-07-2024
+----------
+* Affichage dans le market que Debian Buster (10) n'est plus supporté
+* Fix pour éviter une division par zéro si un équipement ne renvoi pas son minStep
+
 12-06-2024
 ----------
 * Rien n'a été mis à jour, juste pour vous informer que si vous êtes toujours en Debian 10 Buster, à partir du 1er juillet 2024, votre système ne sera plus supporté. Vous ne pourrez donc plus faire appel au support pour ce plugin. Mettez à jour en Debian 11.
