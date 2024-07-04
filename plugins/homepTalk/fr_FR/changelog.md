@@ -8,6 +8,16 @@ description: Changelog du plugin homepTalk
 Changelog
 =========
 
+04-07-2024
+----------
+* Ajout bouton Communauté pour jeedom 4.4
+* Correction warning sur debian 12 php 8
+* Le démon de aTVremote n'a pas besoin d'etre lancé pour utiliser la lib dans la configuration (beta !! ne fonctionne probablement pas !)
+* Augmentation de 100ms de la synchronisation entre plusieurs homepods quand on envoi un son à un groupe.
+* Affichage de la liste des équipements en lignes si désiré.
+* Modification de l'icone, on retire le nom du plugin.
+* Changement de mise en page pour moderniser un peu
+
 03-05-2023
 ----------
 * re-fix pour raspberry 64bit (certains fonctionnent différemment... je m'adapte aux deux)
