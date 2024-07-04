@@ -10,7 +10,7 @@ Changelog
 
 04-07-2024
 ----------
-* Correction pièce vide et juste une alarme sur php8
+* Correction pièce vide et juste une alarme sur debian12 php8
   
 03-07-2024
 ----------
