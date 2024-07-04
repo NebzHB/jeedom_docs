@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 04-07-2024
+
+* Correction d'un warning sur debian 12 php8
+
 # 03-07-2024
 
 * Aucune modification, juste une mise à jour pour indiquer dans le market que Debian 10 Buster n'est plus supporté.
