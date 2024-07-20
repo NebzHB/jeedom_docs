@@ -8,6 +8,13 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+En Beta
+-------
+* Correction sur niveau Warning pour affichage en couleur sur Jeedom 4.4
+* Alignement des niveaux de logs pour le log de création (homebridge_start)
+* Corrections de fonctions dépréciées et qui seront retirées en Homebridge v2
+* Si on a pas d'action ON/OFF pour les lumières mais uniquement un variateur de luminosité, adaptation pour que le ON/OFF sur homekit mette la luminosité à 0 ou à max.
+
 04-07-2024
 ----------
 * Correction pièce vide et juste une alarme sur debian12 php8
