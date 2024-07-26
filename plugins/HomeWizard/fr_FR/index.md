@@ -15,6 +15,8 @@ Une fois les dépendances terminées, le démon démarrera dans les 5min égalem
 
 Le démon va détecter les périphériques HomeWizard Energy sur votre réseau automatiquement lors de son démarrage (multicast utilisé, routage non supporté !). Ensuite il continuera d'écouter les messages de vos équipements, ceux-ci doivent envoyer quand ils se connectent.  Pour forcer une découverte sur le réseau, relancez le démon (normalement pas nécessaire).
 
+Vous pouvez régler la fréquence de questionnement des différents équipements déjà reconnus, par défaut c'est toutes les 5 secondes, le constructeur ne conseille pas de descendre sous la seconde (< 1000 ms).
+
 Configuration des équipements 
 =============================
 
