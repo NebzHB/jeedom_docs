@@ -5,7 +5,7 @@ title: Plugin HomeWizard Energy
 description: Documentation du plugin HomeWizard Energy
 ---
 
-Ce plugin permet de monitorer et exécuter quelques actions sur vos équipements HomeWizard Energy.
+Ce plugin permet de monitorer et exécuter quelques actions sur vos équipements [HomeWizard Energy](http://www.homewizard.com).
 
 Configuration du plugin 
 =======================
