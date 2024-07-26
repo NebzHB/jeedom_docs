@@ -73,18 +73,18 @@ Afin que votre équipement soit visible dans le plugin il est NECESSAIRE d'activ
 **En attente de tests (mais devraient être fonctionnel)**
 ----------------------
 
--    Compteur d'eau (HWE-WTR) (Seulement si branché en USB) https://www.homewizard.com/fr-be/boutique/compteur-deau-wi-fi/
--    Wi-Fi kWh Meter (1 phase) (HWE-KWH1) https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-1-phase/
--    Wi-Fi kWh Meter (3 phases) (HWE-KWH3) https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-3-phases/
+-    Compteur d'eau (HWE-WTR) (Seulement si branché en USB) [https://www.homewizard.com/fr-be/boutique/compteur-deau-wi-fi/](https://www.homewizard.com/fr-be/boutique/compteur-deau-wi-fi/)
+-    Wi-Fi kWh Meter (1 phase) (HWE-KWH1) [https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-1-phase/](https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-1-phase/)
+-    Wi-Fi kWh Meter (3 phases) (HWE-KWH3) [https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-3-phases/](https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-3-phases/)
 
 **Compatibles**
 ---------------
 
--    Compteur P1 (HWE-P1) https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-p1/
--    Prises connectées wifi (HWE-SKT) https://www.homewizard.com/fr-be/boutique/energy-socket-wi-fi/
+-    Compteur P1 (HWE-P1) [https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-p1/](https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-p1/)
+-    Prises connectées wifi (HWE-SKT) [https://www.homewizard.com/fr-be/boutique/energy-socket-wi-fi/](https://www.homewizard.com/fr-be/boutique/energy-socket-wi-fi/)
 
 **NON-Compatibles**
 ---------------
 
--    Compteur d'eau WIFI (HWE-WTR) (Sur pile) https://www.homewizard.com/fr-be/boutique/compteur-deau-wi-fi/
--    Energy Display (pas d'API) https://www.homewizard.com/fr-be/boutique/energy-display/
+-    Compteur d'eau WIFI (HWE-WTR) (Sur pile) [https://www.homewizard.com/fr-be/boutique/compteur-deau-wi-fi/](https://www.homewizard.com/fr-be/boutique/compteur-deau-wi-fi/)
+-    Energy Display (pas d'API) [https://www.homewizard.com/fr-be/boutique/energy-display/](https://www.homewizard.com/fr-be/boutique/energy-display/)
