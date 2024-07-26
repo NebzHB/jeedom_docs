@@ -70,7 +70,7 @@ Afin que votre équipement soit visible dans le plugin il est NECESSAIRE d'activ
 **Compatibilités**
 ==================
 
-**En attente de tests (mais devraient être fonctionnel)**
+**En attente de tests (mais devraient être fonctionnels)**
 ----------------------
 
 -    Compteur d'eau (HWE-WTR) (Seulement si branché en USB) [https://www.homewizard.com/fr-be/boutique/compteur-deau-wi-fi/](https://www.homewizard.com/fr-be/boutique/compteur-deau-wi-fi/)
