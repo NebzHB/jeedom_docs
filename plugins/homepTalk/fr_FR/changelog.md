@@ -8,6 +8,10 @@ description: Changelog du plugin homepTalk
 Changelog
 =========
 
+12-08-2024
+----------
+* Traductions et mise à jour des traductions en Anglais, Allemand, Espagnol, Italien, Portugais
+
 04-07-2024
 ----------
 * Ajout bouton Communauté pour jeedom 4.4
