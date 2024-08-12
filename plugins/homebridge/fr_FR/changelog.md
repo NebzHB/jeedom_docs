@@ -8,12 +8,13 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-En Beta
+12-08-2024
 -------
 * Correction sur niveau Warning pour affichage en couleur sur Jeedom 4.4
 * Alignement des niveaux de logs pour le log de création (homebridge_start)
 * Si on a pas d'action ON/OFF pour les lumières mais uniquement un variateur de luminosité, adaptation pour que le ON/OFF sur homekit mette la luminosité à 0 ou à max.
 * Corrections pour rentre compatible avec HAP-NodeJS v1 et Homebridge v2
+* Traductions et mise à jour des traductions en Anglais, Allemand, Espagnol, Italien, Portugais
 
 04-07-2024
 ----------
