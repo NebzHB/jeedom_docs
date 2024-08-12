@@ -5,6 +5,11 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 12-08-2024
+
+* Correction d'un niveau de log par défaut qui passait pas dans le démon
+* Traductions et mise à jour des traductions en Anglais, Allemand, Espagnol, Italien, Portugais
+
 # 04-07-2024
 
 * Correction d'un warning sur debian 12 php8
