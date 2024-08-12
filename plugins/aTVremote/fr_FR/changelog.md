@@ -4,6 +4,10 @@ lang: fr_FR
 title: Plugin aTVRemote - Changelog
 description: Changelog du plugin aTVRemote
 ---
+
+# 12/08/2024 - beta
+- Traductions et mise à jour des traductions en Anglais, Allemand, Espagnol, Italien, Portugais
+
 # 03/07/2024 - beta
 - exclusion du venv pour le backup
 - Ajout dans le market que Debian Buster (10) n'est plus supporté
