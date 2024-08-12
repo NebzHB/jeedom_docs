@@ -6,6 +6,9 @@ description: Changelog du plugin AdGuard Home
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4
 
+# 12/08/2024
+- Traductions et mise à jour des traductions en Anglais, Allemand, Espagnol, Italien, Portugais
+
 # 11/09/2023
 - Version v0.107.37 obligatoire !
 - Modification des blocked services à partir de la version v0.107.37
