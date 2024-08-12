@@ -8,6 +8,11 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+12-08-2024
+----------
+* Traductions et mise à jour des traductions en Anglais, Allemand, Espagnol, Italien, Portugais
+* Correction d'un niveau de log par défaut qui passait pas dans le démon
+
 03-07-2024
 ----------
 * Affichage dans le market que Debian Buster (10) n'est plus supporté
