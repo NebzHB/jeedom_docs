@@ -9,7 +9,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 # 2024-08-12
 - Ajout de logs
 - Correction d'une erreur en anglais
-- Traduction du plugin en Allemand et Espagnol
+- Traductions et mise à jour des traductions en Anglais, Allemand, Espagnol, Italien, Portugais
 
 # 2024-08-08
 - Traduction du plugin en anglais
