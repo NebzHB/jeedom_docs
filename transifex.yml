@@ -28,4 +28,22 @@ filters:
     source_file_extension: md
     source_language: fr
     source_file_dir: plugins/xiaomiTalk/fr_FR/
-    translation_files_expression: /plugins/xiaomiTalk/<lang>/	
+    translation_files_expression: /plugins/xiaomiTalk/<lang>/
+    - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
+    source_file_dir: plugins/AdGuard/fr_FR/
+    translation_files_expression: /plugins/AdGuard/<lang>/
+    - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
+    source_file_dir: plugins/HomeWizard/fr_FR/
+    translation_files_expression: /plugins/HomeWizard/<lang>/	      
+    - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
+    source_file_dir: plugins/hkControl/fr_FR/
+    translation_files_expression: /plugins/hkControl/<lang>/	    
