@@ -16,5 +16,5 @@
 
 [xiaomiTalk](https://nebzhb.github.io/jeedom_docs/plugins/xiaomiTalk/fr_FR/)
 
-![NebzHB's GitHub stats](https://github-readme-stats.vercel.app/api?username=NebzHB\&show_icons=true\&show=reviews,prs_merged,prs_merged_percentage)
+![NebzHB's GitHub stats](https://github-readme-stats.vercel.app/api?username=NebzHB&show_icons=true&show=reviews,prs_merged,prs_merged_percentage)
 
