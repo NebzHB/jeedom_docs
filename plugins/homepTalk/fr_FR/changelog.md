@@ -8,6 +8,10 @@ description: Changelog du plugin homepTalk
 Changelog
 =========
 
+19-08-2024
+----------
+* Traductions oubliées (onglet commandes)
+  
 12-08-2024
 ----------
 * Traductions et mise à jour des traductions en Anglais, Allemand, Espagnol, Italien, Portugais
