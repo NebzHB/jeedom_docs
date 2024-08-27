@@ -8,6 +8,11 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+27-08-2024
+----------
+* Possibilité de refuser le support en inscrivant "AucunSupport" dans le champ magique caché en bas de la configuration du plugin (Permet de relancer les dépendances sous Debian 10)
+* **MAIS ATTENTION : A PARTIR DE FIN SEPTEMBRE, JEEDOM VA PASSER EN NODEJS 20 QUI NE FONCTIONNE PAS SUR DEBIAN 10, VOUS SEREZ DONC QUAND MEME BLOQUÉ, DONC MIGREZ !**
+
 12-08-2024
 -------
 * Correction sur niveau Warning pour affichage en couleur sur Jeedom 4.4
