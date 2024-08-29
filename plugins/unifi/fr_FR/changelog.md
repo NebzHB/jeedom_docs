@@ -5,6 +5,11 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 29-08-2024
+
+* Jeedom 4.4 Obligatoire
+* Debian 11 Obligatoire
+
 # 12-08-2024
 
 * Correction d'un niveau de log par défaut qui passait pas dans le démon
