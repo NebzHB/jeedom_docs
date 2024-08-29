@@ -10,6 +10,7 @@ Changelog
 
 29-08-2024
 ----------
+* Correction plantage plugin Weather (Météo)
 * Jeedom 4.4 Obligatoire
 * Debian 11 Obligatoire
 
