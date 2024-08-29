@@ -8,6 +8,11 @@ description: Changelog du plugin hkControl
 Changelog
 =========
 
+29-08-2024
+----------
+* Jeedom 4.4 Obligatoire
+* Debian 11 Obligatoire
+
 12-08-2024
 ----------
 * Traductions et mise à jour des traductions en Anglais, Allemand, Espagnol, Italien, Portugais
