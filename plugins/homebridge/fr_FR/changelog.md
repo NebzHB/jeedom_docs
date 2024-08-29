@@ -8,6 +8,11 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+29-08-2024
+----------
+* Jeedom 4.4 Obligatoire
+* Debian 11 Obligatoire
+
 27-08-2024
 ----------
 * Possibilité de refuser le support en inscrivant "AucunSupport" dans le champ magique caché en bas de la configuration du plugin (Permet de relancer les dépendances sous Debian 10)
