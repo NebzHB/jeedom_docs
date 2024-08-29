@@ -5,6 +5,10 @@ title: Plugin aTVRemote - Changelog
 description: Changelog du plugin aTVRemote
 ---
 
+# 2024-08-29
+- Jeedom 4.4 Obligatoire
+- Debian 11 Obligatoire
+
 # 12/08/2024 - beta
 - Traductions et mise à jour des traductions en Anglais, Allemand, Espagnol, Italien, Portugais
 
