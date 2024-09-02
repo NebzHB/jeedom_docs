@@ -8,6 +8,13 @@ description: Changelog du plugin xiaomiTalk
 Changelog
 =========
 
+02-09-2022
+----------
+
+* Correction pour Jeedom 4.4
+* Correction des langues pour le market
+* Correction des dépendances
+
 22-09-2022
 ----------
 
