@@ -5,6 +5,12 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# 10-09-2024
+
+* Mise à jour pour autoriser les mises à jour en debian > 12.0
+* Mise à jour des images
+* Mise à jour traductions
+
 # 29-08-2024
 
 * Jeedom 4.4 Obligatoire
