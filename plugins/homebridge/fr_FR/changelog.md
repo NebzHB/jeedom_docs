@@ -8,6 +8,10 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
+18-09-2024
+----------
+* Mise à jour pour autoriser les mises à jour en debian > 12.0
+
 29-08-2024
 ----------
 * Correction plantage plugin Weather (Météo)
