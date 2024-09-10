@@ -6,6 +6,9 @@ description: Changelog du plugin HomeWizard Energy
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4
 
+# 2024-09-10
+- Mise à jour pour autoriser les mises à jour en debian > 12.0
+
 # 2024-08-29
 - Jeedom 4.4 Obligatoire
 - Debian 11 Obligatoire
