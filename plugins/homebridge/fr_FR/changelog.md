@@ -8,7 +8,7 @@ description: Changelog du plugin Homebridge
 Changelog
 =========
 
-18-09-2024
+10/11-09-2024
 ----------
 * Mise à jour pour autoriser les mises à jour en debian > 12.0
 
