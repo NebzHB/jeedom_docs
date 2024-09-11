@@ -5,6 +5,10 @@ title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
 
+# Bientot !!!
+
+* Migration vers NodeJS 20
+
 # 10/11-09-2024
 
 * Mise à jour pour autoriser les mises à jour en debian > 12.0
