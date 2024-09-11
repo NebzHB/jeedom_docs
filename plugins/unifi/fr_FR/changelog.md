@@ -4,6 +4,7 @@ lang: fr_FR
 title: Plugin Unifi - Changelog
 description: Changelog du plugin Unifi
 ---
+Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4.x
 
 # Changelog
 
