@@ -4,6 +4,7 @@ lang: fr_FR
 title: Plugin xiaomiTalk - Changelog
 description: Changelog du plugin xiaomiTalk
 ---
+Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4.x
 
 Changelog
 =========
