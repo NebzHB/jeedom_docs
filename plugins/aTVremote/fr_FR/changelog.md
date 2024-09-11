@@ -5,6 +5,9 @@ title: Plugin aTVRemote - Changelog
 description: Changelog du plugin aTVRemote
 ---
 
+# Bientot !!!
+- Migration vers NodeJS 20
+
 # 10/09/2024 - beta
 - Mise à jour pour autoriser les mises à jour en debian > 12.0
 
