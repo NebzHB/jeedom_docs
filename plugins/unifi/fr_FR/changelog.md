@@ -8,7 +8,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
-## Bientot !!!
+## 12-09-2024
 
 * Migration vers NodeJS 20
 
