@@ -9,430 +9,436 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+En beta
+--------
+- Plus d'informations sur le système quand on utilise l'icone "Communauté"
+- Si aucun utilisateur adéquat n'est trouvé pour homebridge, un est créé
+- Mise à jour traductions
+
 12-09-2024
 -------------
-* Migration vers NodeJS 20
+- Migration vers NodeJS 20
 
 10/11-09-2024
 ----------
-* Mise à jour pour autoriser les mises à jour en debian > 12.0
+- Mise à jour pour autoriser les mises à jour en debian > 12.0
 
 29-08-2024
 ----------
-* Correction plantage plugin Weather (Météo)
-* Jeedom 4.4 Obligatoire
-* Debian 11 Obligatoire
+- Correction plantage plugin Weather (Météo)
+- Jeedom 4.4 Obligatoire
+- Debian 11 Obligatoire
 
 27-08-2024
 ----------
-* Possibilité de refuser le support en inscrivant "AucunSupport" dans le champ magique caché en bas de la configuration du plugin (Permet de relancer les dépendances sous Debian 10)
-* **MAIS ATTENTION : A PARTIR DE FIN SEPTEMBRE, JEEDOM VA PASSER EN NODEJS 20 QUI NE FONCTIONNE PAS SUR DEBIAN 10, VOUS SEREZ DONC QUAND MEME BLOQUÉ, DONC MIGREZ !**
+- Possibilité de refuser le support en inscrivant "AucunSupport" dans le champ magique caché en bas de la configuration du plugin (Permet de relancer les dépendances sous Debian 10)
+- **MAIS ATTENTION : A PARTIR DE FIN SEPTEMBRE, JEEDOM VA PASSER EN NODEJS 20 QUI NE FONCTIONNE PAS SUR DEBIAN 10, VOUS SEREZ DONC QUAND MEME BLOQUÉ, DONC MIGREZ !**
 
 12-08-2024
 -------
-* Correction sur niveau Warning pour affichage en couleur sur Jeedom 4.4
-* Alignement des niveaux de logs pour le log de création (homebridge_start)
-* Si on a pas d'action ON/OFF pour les lumières mais uniquement un variateur de luminosité, adaptation pour que le ON/OFF sur homekit mette la luminosité à 0 ou à max.
-* Corrections pour rentre compatible avec HAP-NodeJS v1 et Homebridge v2
-* Mise à jour Homebridge 1.8.4
-* Traductions et mise à jour des traductions en Anglais, Allemand, Espagnol, Italien, Portugais
+- Correction sur niveau Warning pour affichage en couleur sur Jeedom 4.4
+- Alignement des niveaux de logs pour le log de création (homebridge_start)
+- Si on a pas d'action ON/OFF pour les lumières mais uniquement un variateur de luminosité, adaptation pour que le ON/OFF sur homekit mette la luminosité à 0 ou à max.
+- Corrections pour rentre compatible avec HAP-NodeJS v1 et Homebridge v2
+- Mise à jour Homebridge 1.8.4
+- Traductions et mise à jour des traductions en Anglais, Allemand, Espagnol, Italien, Portugais
 
 04-07-2024
 ----------
-* Correction pièce vide et juste une alarme sur debian12 php8
+- Correction pièce vide et juste une alarme sur debian12 php8
   
 03-07-2024
 ----------
-* Homebridge 1.8.3
-* Aucune autre modification, juste une mise à jour pour indiquer dans le market que Debian 10 Buster n'est plus supporté.
+- Homebridge 1.8.3
+- Aucune autre modification, juste une mise à jour pour indiquer dans le market que Debian 10 Buster n'est plus supporté.
 
 12-06-2024
 ----------
-* Afficher un avertissement si vous êtes toujours en Debian 10 Buster, à partir du 1er juillet 2024, votre système ne sera plus supporté. Vous ne pourrez donc plus faire appel au support pour ce plugin. Mettez à jour en Debian 11.
-* Ajout dans DebugInfo d'une alerte s'il y a des problèmes de mémoire sur votre système.
-* Ajout dans la configuration du plugin d'une alerte s'il y a des problèmes de mémoire sur votre système.
+- Afficher un avertissement si vous êtes toujours en Debian 10 Buster, à partir du 1er juillet 2024, votre système ne sera plus supporté. Vous ne pourrez donc plus faire appel au support pour ce plugin. Mettez à jour en Debian 11.
+- Ajout dans DebugInfo d'une alerte s'il y a des problèmes de mémoire sur votre système.
+- Ajout dans la configuration du plugin d'une alerte s'il y a des problèmes de mémoire sur votre système.
 
 28-05-2024
 ----------
-* Ne plus forcer à installer les dépendances sur buster après le 30 juin 2024 (fin du support de buster). Cela permet que le démon continue de tourner comme il est sans forcer les dépendances s'il y a des mises à jour de libraires. A partir de cette date, buster ne sera plus supporté par le plugin, mais il devrait continuer à fonctionner tel quel grace à cette modification. Sauf pour les nouvelles installations sous buster, mais ça ne devrait pas arriver.
-* Correction pour l'envoi des informations sur communauté quand on cliques sur l'icone, les informations de debug sont maitenant entre ''' pour être affichées comme du code.
+- Ne plus forcer à installer les dépendances sur buster après le 30 juin 2024 (fin du support de buster). Cela permet que le démon continue de tourner comme il est sans forcer les dépendances s'il y a des mises à jour de libraires. A partir de cette date, buster ne sera plus supporté par le plugin, mais il devrait continuer à fonctionner tel quel grace à cette modification. Sauf pour les nouvelles installations sous buster, mais ça ne devrait pas arriver.
+- Correction pour l'envoi des informations sur communauté quand on cliques sur l'icone, les informations de debug sont maitenant entre ''' pour être affichées comme du code.
 
 20-05-2024
 ----------
-* Homebridge 1.8.2
-* Meilleure gestion des conversions de valeurs pour les volets 0-99 0-255.
-* Meilleur stop du démon.
+- Homebridge 1.8.2
+- Meilleure gestion des conversions de valeurs pour les volets 0-99 0-255.
+- Meilleur stop du démon.
 
 14-04-2024
 ----------
-* Meilleure gestion de la version de NodeJS et NPM et de la surveillance des dépendances pour ces versions.
-* Mise à jour de NPM si besoin.
-* Correction d'un bug de log dans la commande restore du plugin.
-* Changement de site pour la génération du QR Code, Google a stoppé son service.
+- Meilleure gestion de la version de NodeJS et NPM et de la surveillance des dépendances pour ces versions.
+- Mise à jour de NPM si besoin.
+- Correction d'un bug de log dans la commande restore du plugin.
+- Changement de site pour la génération du QR Code, Google a stoppé son service.
 
 11-03-2024
 ----------
-* Bouton Réinstaller dans la config du plugin : meilleure désinstallation avant réinstall.
-* Alerte incompatibilité Debian Stretch (9) à l'install. Demande de mettre à jour (il est temps !).
+- Bouton Réinstaller dans la config du plugin : meilleure désinstallation avant réinstall.
+- Alerte incompatibilité Debian Stretch (9) à l'install. Demande de mettre à jour (il est temps !).
 
 18-02-2024
 ----------
-* Modification des paramètres des dépendances.
-* Fix du stop démon qui pouvait ne pas attendre que le démon soit stoppé
+- Modification des paramètres des dépendances.
+- Fix du stop démon qui pouvait ne pas attendre que le démon soit stoppé
 
 15-02-2024
 ----------
-* Modification de l'appel au script des dépendances, les arguments sont maintenant nommés et plus en fonction de leur ordre. Cela n'implique aucun changement pour la plupart des utilisateurs.
+- Modification de l'appel au script des dépendances, les arguments sont maintenant nommés et plus en fonction de leur ordre. Cela n'implique aucun changement pour la plupart des utilisateurs.
 
 14-02-2024
 -------
-* Refactorisation du code et optimisations diverses.
-* Utilisation d'axios à la place de request qui est déprécié.
-* Homebridge 1.7.0 (Aucun changement).
-* Prise en charge du plugin Boiler.
-* Retiré la coloration, le Core 4.4 s’en chargera.
-* Correction des valeurs d'actions avec une virgule qui ne passaient plus (thermostat, etc).
-* Amélioration des logs en cas d'erreur.
-* Plus besoin de redémarrer le démon quand on change le niveau de log dans la config du plugin, l'info est envoyée au démon directement.
-* 5min après le cron Jeedom Daily, on vérifie s'il a regénéré la clé de l'admin, si c'est le cas, on relance le démon pour éviter les "Vous n'êtes pas autorisé à effectuer cette action".
-* Dans ce cadre, changement dans la sélection de l'administrateur pour faire les appels au Core :
-	* S'il existe un administrateur qui a coché la case "Ne pas regénérer la clé" on prendra cet administrateur. (Pour éviter justement ces relances de démon tous les 3 mois).
-	* S'il existe un administrateur local on prendra cet administrateur.
-	* Sinon on prend un administrateur qui a juste l'api d'activée (comme avant).
-	* Si aucun administrateur, on affiche un message clair dans le log.
-* Le démon écoute sur un port aléatoire sauf sur docker (8582) **à ouvrir si votre docker est externe à jeedom** !
-* Mise en place d'une file de traitement pour envoyer les actions à Jeedom, elles sont envoyées une par une à Jeedom séquentiellement et chronologiquement. Permet d'éviter que Jeedom sature quand on dit "Dis Siri, éteint toutes les lumières" ou qu'on lance une grosse scène par exemple.
-* Amélioration de la gestion des Volets et Fenêtres motorisées.
-* Icone Communauté pour Jeedom 4.4.
-* Meilleure surveillance du process homebridge.
-* Meilleur arret du process homebridge.
-* Meilleure gestion des interfaces lors de la restauration de Jeedom sur un système différent.
-* Meilleure surveillance des dépendances et vérification de plus de paramètres pour déterminer que les dépendances sont OK.
-* Plus d'informations dans la page Santé de Jeedom.
-* Amélioration de la génération des commandes et eqLogic pour envoyer au plugin : lancement du démon plus rapide.
-* Forcage des dépendances en ipv4
+- Refactorisation du code et optimisations diverses.
+- Utilisation d'axios à la place de request qui est déprécié.
+- Homebridge 1.7.0 (Aucun changement).
+- Prise en charge du plugin Boiler.
+- Retiré la coloration, le Core 4.4 s’en chargera.
+- Correction des valeurs d'actions avec une virgule qui ne passaient plus (thermostat, etc).
+- Amélioration des logs en cas d'erreur.
+- Plus besoin de redémarrer le démon quand on change le niveau de log dans la config du plugin, l'info est envoyée au démon directement.
+- 5min après le cron Jeedom Daily, on vérifie s'il a regénéré la clé de l'admin, si c'est le cas, on relance le démon pour éviter les "Vous n'êtes pas autorisé à effectuer cette action".
+- Dans ce cadre, changement dans la sélection de l'administrateur pour faire les appels au Core :
+	- S'il existe un administrateur qui a coché la case "Ne pas regénérer la clé" on prendra cet administrateur. (Pour éviter justement ces relances de démon tous les 3 mois).
+	- S'il existe un administrateur local on prendra cet administrateur.
+	- Sinon on prend un administrateur qui a juste l'api d'activée (comme avant).
+	- Si aucun administrateur, on affiche un message clair dans le log.
+- Le démon écoute sur un port aléatoire sauf sur docker (8582) **à ouvrir si votre docker est externe à jeedom** !
+- Mise en place d'une file de traitement pour envoyer les actions à Jeedom, elles sont envoyées une par une à Jeedom séquentiellement et chronologiquement. Permet d'éviter que Jeedom sature quand on dit "Dis Siri, éteint toutes les lumières" ou qu'on lance une grosse scène par exemple.
+- Amélioration de la gestion des Volets et Fenêtres motorisées.
+- Icone Communauté pour Jeedom 4.4.
+- Meilleure surveillance du process homebridge.
+- Meilleur arret du process homebridge.
+- Meilleure gestion des interfaces lors de la restauration de Jeedom sur un système différent.
+- Meilleure surveillance des dépendances et vérification de plus de paramètres pour déterminer que les dépendances sont OK.
+- Plus d'informations dans la page Santé de Jeedom.
+- Amélioration de la génération des commandes et eqLogic pour envoyer au plugin : lancement du démon plus rapide.
+- Forcage des dépendances en ipv4
 
 >Problème connu : Types génériques "Interrupteur Programmable (Multi-Valeur)" et "Interrupteur Programmable Binaire" toujours problématiques.
 
 05-01-2024
 ----------
-* Imposer NodeJS 18.15 minimum en prévision de Homebridge 1.7.0 (relance des dépendances si pas le cas)
-* On retire mqtt des dépendances, pas besoin et chargé par une autre dépendance.
+- Imposer NodeJS 18.15 minimum en prévision de Homebridge 1.7.0 (relance des dépendances si pas le cas)
+- On retire mqtt des dépendances, pas besoin et chargé par une autre dépendance.
 
 31-10-2023
 ----------
-* Dépendances seulement : modification pour ne pas bugger si le plugin ne tourne pas sur jeedom.
+- Dépendances seulement : modification pour ne pas bugger si le plugin ne tourne pas sur jeedom.
 
 30-09-2023
 --------
-* NodeJS 18
+- NodeJS 18
 
 23-08-2023
 ----------
-* Retour en arrière pour les inversion binaires car c'est pas très clair les valeurs qui doivent s'afficher (widget core présence semble inversé par rapport au widget core default)
+- Retour en arrière pour les inversion binaires car c'est pas très clair les valeurs qui doivent s'afficher (widget core présence semble inversé par rapport au widget core default)
 
 22-08-2023
 --------
-* Retiré la migration de sendToApp -> sendToHomebridge (ancienne migration plus nécessaire)
-* Prise en compte de l'invertion binaire sur *Présence Occupation (Homebridge)* et sur *Présence* (ne semblait pas nécessaire avant mais certaines personnes sur IPX ont le cas...)
+- Retiré la migration de sendToApp -> sendToHomebridge (ancienne migration plus nécessaire)
+- Prise en compte de l'invertion binaire sur *Présence Occupation (Homebridge)* et sur *Présence* (ne semblait pas nécessaire avant mais certaines personnes sur IPX ont le cas...)
 
 17-07-2023
 ----------
-* Homebridge 1.6.1 pour tout le monde (pas uniquement ceux qui relancent les dépendances)
+- Homebridge 1.6.1 pour tout le monde (pas uniquement ceux qui relancent les dépendances)
 
 05-05-2023 - Dépendances uniquement
 ----------
-* Homebridge 1.6.1 (aucun changement (maj pour ceux qui utilisent homebridge sans jeedom + pour les developpeurs de plugins (pas concerné)))
-* Meilleure comparaison des modes d'alarmes (en minuscule)
-* Renommage des détecteurs de mouvements multiples dans un même équipement, on prend le nom de la commande coté jeedom (pour mieux réijecter l'Aqara FP2 par ex)
+- Homebridge 1.6.1 (aucun changement (maj pour ceux qui utilisent homebridge sans jeedom + pour les developpeurs de plugins (pas concerné)))
+- Meilleure comparaison des modes d'alarmes (en minuscule)
+- Renommage des détecteurs de mouvements multiples dans un même équipement, on prend le nom de la commande coté jeedom (pour mieux réijecter l'Aqara FP2 par ex)
 
 21-04-2023
 ----------
 
-* Meilleure comparaison des fichiers de config pour savoir si la modif vient de config-ui-x ou de jeedom (certains systèmes ajoutent un caractère spécial à la fin du fichier et ne gèrent pas les / de la même manière)
+- Meilleure comparaison des fichiers de config pour savoir si la modif vient de config-ui-x ou de jeedom (certains systèmes ajoutent un caractère spécial à la fin du fichier et ne gèrent pas les / de la même manière)
 
 03-04-2023
 ----------
 
-* Petit fix pour erreurs ajax en Jeedom 4.4
+- Petit fix pour erreurs ajax en Jeedom 4.4
 
 24-02-2023
 ------
 
-* **Grosse nouveauté** : Les plateformes et accessoires sont modifiables directement via config-ui-x sans les copier ensuite dans les plateformes et accessoires supplémentaires comme préconisé avant ! ATTENTION : il n'est pas possible de modifier le bridge ou la plateforme homebridge-jeedom ou homebridge-config-ui-x !!! uniquement les supplémentaires (plateformes et accessoires).
-* Nouveau log homebridge_start contenant le début du log homebridge_daemon (la création des équipements) même si jeedom a supprimé le début du log.
-* Fix message d'erreur dans les logs mais qui n'a aucune conséquence (sur les noms des modes etc).
-* Ajout du nombre d'équipements et scénarios cochés pour "Envoi dans Homebridge" par pièce directement sur la liste des pièces.
-* L'interface config-ui-x est maintenant dans la même langue que le navigateur, plus en Français forcé.
-* Modification de l'import des caméras du plugin Surveillance Station (Synology) car le plugin a été modifié
+- **Grosse nouveauté** : Les plateformes et accessoires sont modifiables directement via config-ui-x sans les copier ensuite dans les plateformes et accessoires supplémentaires comme préconisé avant ! ATTENTION : il n'est pas possible de modifier le bridge ou la plateforme homebridge-jeedom ou homebridge-config-ui-x !!! uniquement les supplémentaires (plateformes et accessoires).
+- Nouveau log homebridge_start contenant le début du log homebridge_daemon (la création des équipements) même si jeedom a supprimé le début du log.
+- Fix message d'erreur dans les logs mais qui n'a aucune conséquence (sur les noms des modes etc).
+- Ajout du nombre d'équipements et scénarios cochés pour "Envoi dans Homebridge" par pièce directement sur la liste des pièces.
+- L'interface config-ui-x est maintenant dans la même langue que le navigateur, plus en Français forcé.
+- Modification de l'import des caméras du plugin Surveillance Station (Synology) car le plugin a été modifié
 
 01-01-2023
 ----------------
 
-* Support pour le type générique "Info/Lumière Luminosité" et mise à jour doc + exemples lumières
-* Fix erreur si pas de stack d'erreur
-* Gestion des portes de garages venant de hkControl
-* Augmentation du temps limite d'install des dépendances à 60min
-* Plugin Diagral_eOne : avec accord de @mguyard : retiré la config des modes car son plugin le fait deja et pas besoin de le modifier
-* Correction d'activation des Interrupteurs Programmables dans l'interface du plugin.
-* Fix pour iOS16+ : quand il y avait plusieurs interrupteurs dans un même équipement (plugin mode, Haut/Bas/Stop sur certains volets, Enregistrement camera, Interrupteurs multiples dans le même équipement, etc) depuis iOS16, ils prenaient le nom de l'équipement et plus de la commande etat de cet interrupteur car Apple avait changé un comportement de leur coté. Maitenant j'utilise ConfiguredName qui permet de changer ce nom directement ! par contre il écrasera celui que vous auriez pu mettre !
-* Cacher le warning pour les concentrateurs homekit, car ceux-ci ne sont plus annoncés sur le réseau si on a migré vers la nouvelle architecture homekit en iOS 16.2
-* Homebridge 1.6.0
+- Support pour le type générique "Info/Lumière Luminosité" et mise à jour doc + exemples lumières
+- Fix erreur si pas de stack d'erreur
+- Gestion des portes de garages venant de hkControl
+- Augmentation du temps limite d'install des dépendances à 60min
+- Plugin Diagral_eOne : avec accord de @mguyard : retiré la config des modes car son plugin le fait deja et pas besoin de le modifier
+- Correction d'activation des Interrupteurs Programmables dans l'interface du plugin.
+- Fix pour iOS16+ : quand il y avait plusieurs interrupteurs dans un même équipement (plugin mode, Haut/Bas/Stop sur certains volets, Enregistrement camera, Interrupteurs multiples dans le même équipement, etc) depuis iOS16, ils prenaient le nom de l'équipement et plus de la commande etat de cet interrupteur car Apple avait changé un comportement de leur coté. Maitenant j'utilise ConfiguredName qui permet de changer ce nom directement ! par contre il écrasera celui que vous auriez pu mettre !
+- Cacher le warning pour les concentrateurs homekit, car ceux-ci ne sont plus annoncés sur le réseau si on a migré vers la nouvelle architecture homekit en iOS 16.2
+- Homebridge 1.6.0
 
 **Bug Connu**
 
-* Le type générique "Info/Interrupteurs Programmables (Multi-Valeur)" -*uniquement si vous utilisez des boutons multiples !*- (si vous avez des ; dans les valeurs) a des problèmes apparemment depuis iOS16.2. Je recherche une solution.
+- Le type générique "Info/Interrupteurs Programmables (Multi-Valeur)" -*uniquement si vous utilisez des boutons multiples !*- (si vous avez des ; dans les valeurs) a des problèmes apparemment depuis iOS16.2. Je recherche une solution.
 
 24-08-2022
 ----------------
 
-* Mémorisation de la version précédente à chaque mise à jour pour éviter les utilisateurs qui disent "depuis la dernière mise à jour" sans avoir de quelle version ils viennent précisément (affiché en haut du log des dépendances)
-* Meilleure surveillance du démon
+- Mémorisation de la version précédente à chaque mise à jour pour éviter les utilisateurs qui disent "depuis la dernière mise à jour" sans avoir de quelle version ils viennent précisément (affiché en haut du log des dépendances)
+- Meilleure surveillance du démon
 
 
 03-08-2022
 ----------------
 
-* Activation Authentification dans homebridge-config-ui-x par défaut (car ils ont changé et rendent ca obligatoire)
-* Retiré l'auto configuration des lumières dans zigbee2mqtt en prévision d'une modification du démon à venir
-* Zigbee2mqtt, on retire le type générique température sur les device_temperature (aucun sens...)
+- Activation Authentification dans homebridge-config-ui-x par défaut (car ils ont changé et rendent ca obligatoire)
+- Retiré l'auto configuration des lumières dans zigbee2mqtt en prévision d'une modification du démon à venir
+- Zigbee2mqtt, on retire le type générique température sur les device_temperature (aucun sens...)
 
 
 27-07-2022
 ----------------
 
-* Homebridge 1.5.0
-* Apres une restauration d'une sauvegarde jeedom, on vérifie la liste des interfaces réseau si elle n'a pas changé (restauration sur autre système). Si les noms d'interfaces ont changés, on les retire de la sélection. S'il ne reste plus d'interface choisie, on reset le choix.
-* Ajout d'un bouton réinstaller pour uniquement réinstaller Homebridge et NodeJS (sans réparer et donc en gardant l'existant).
-* Exclure le plugin "conso" car les équipements ont plus de 100 commandes et homebridge n'aime pas.
-* Ajout dans DebugInfo de la compatibilité avec v4l2m2m (codec video pour Raspberry remplacant omx)
-* Remaniement des phrases d'alertes lors des réparations, réparer et réinstaller et réinstaller. Meilleure gestion du "loading" pendant la réparation et mise à jour du nouveau nom du homebridge via refresh.
-* Suppression des configurations du plugin s'il est supprimé de jeedom
-* Ajout d'un bouton pour exporter le DebugInfo d'un seul équipement à coté du nom de l'équipement quand on est en log de niveau Debug ou Info
-* Meilleur daemon_stop
-* L'installation des dépendances se stoppe sans continuer le reste pour certaines erreurs (plus rapide à voir l'erreur plutot que de continuer alors que ça sert à rien)
+- Homebridge 1.5.0
+- Apres une restauration d'une sauvegarde jeedom, on vérifie la liste des interfaces réseau si elle n'a pas changé (restauration sur autre système). Si les noms d'interfaces ont changés, on les retire de la sélection. S'il ne reste plus d'interface choisie, on reset le choix.
+- Ajout d'un bouton réinstaller pour uniquement réinstaller Homebridge et NodeJS (sans réparer et donc en gardant l'existant).
+- Exclure le plugin "conso" car les équipements ont plus de 100 commandes et homebridge n'aime pas.
+- Ajout dans DebugInfo de la compatibilité avec v4l2m2m (codec video pour Raspberry remplacant omx)
+- Remaniement des phrases d'alertes lors des réparations, réparer et réinstaller et réinstaller. Meilleure gestion du "loading" pendant la réparation et mise à jour du nouveau nom du homebridge via refresh.
+- Suppression des configurations du plugin s'il est supprimé de jeedom
+- Ajout d'un bouton pour exporter le DebugInfo d'un seul équipement à coté du nom de l'équipement quand on est en log de niveau Debug ou Info
+- Meilleur daemon_stop
+- L'installation des dépendances se stoppe sans continuer le reste pour certaines erreurs (plus rapide à voir l'erreur plutot que de continuer alors que ça sert à rien)
 
 01-06-2022
 --------------------
 
-* Ignore les équipements du plugin mobile qui peuvent poser problème
-* Corrections Orthographe
-* homebridge 1.4.1
-* Sur Raspberry Pi, support du codec h264_v4l2m2m qui promet de meilleures performance mais surtout omx est déprécié (et non compatible 64bit). (il faut réimporter la camera ou modifier le vcodec dans la plateforme.)
-* Plus de détails pendant l'installation des dépendances entre 70 et 80%
-* Correction en cas de thermostat de température négative
-* Utilise NodeJS 16
+- Ignore les équipements du plugin mobile qui peuvent poser problème
+- Corrections Orthographe
+- homebridge 1.4.1
+- Sur Raspberry Pi, support du codec h264_v4l2m2m qui promet de meilleures performance mais surtout omx est déprécié (et non compatible 64bit). (il faut réimporter la camera ou modifier le vcodec dans la plateforme.)
+- Plus de détails pendant l'installation des dépendances entre 70 et 80%
+- Correction en cas de thermostat de température négative
+- Utilise NodeJS 16
 
 14-04-2022
 -------------------------------
 
 **Nouvelles Fonctionnalités :**
 
-* Traduction complète en ES (gracias @Bull)
-* Migration des commandes custom directement dans la configuration des équipements (grosse modification !!)
-* Migration des types génériques homebridge dans le type de la commande directement (mieux pour les jeedom >4.2.5, pour les autres, le type générique peut apparaitre vide dans l'écran de la commande dans le core)
-* En Test : si jeedom est en https sur le réseau local (avant : non supporté, maintenant : reste non conseillé), le démon ignorera les problèmes éventuels de certificat (et affichera un warning)
-* Gestion de "Météo Pluie (homebridge)", "Météo Neige (homebridge)" et "Météo Température min" dans Eve seulement !
-* Nouveau Type Générique "Qualité d'air (Indice Personnalisable)(homebridge)" pour définir les paliers de qualité d'air. DOIT utiliser l'unité µg/m3 ou ppb.
-* Les paramètres des alarmes, des thermostats, de qualité d'air (indice personnalisable), des boutons programmables et des garages/portails s'affichent maintenant dynamiquement lors du choix du type générique ! plus besoin de recharger la fenêtre !
-* Si en mode Debug : Affichage barré rouge des équipements désactivés dans la configuration des pièces (avec une alerte pour dire qu'ils ne seront pas envoyés dans homebridge)
-* Affichage des pièces désactivées en rouge
-* Affichage du lien vers la configuration de l'équipement (dans une nouvelle fenêtre)
-* Retiré le nom de la pièce devant l'équipement (car doublon) et ordonné les équipements par nom dans les pièces
-* Affichage des pièces comme dans 4.2 avec couleurs et mode table
-* Simplification du code
+- Traduction complète en ES (gracias @Bull)
+- Migration des commandes custom directement dans la configuration des équipements (grosse modification !!)
+- Migration des types génériques homebridge dans le type de la commande directement (mieux pour les jeedom >4.2.5, pour les autres, le type générique peut apparaitre vide dans l'écran de la commande dans le core)
+- En Test : si jeedom est en https sur le réseau local (avant : non supporté, maintenant : reste non conseillé), le démon ignorera les problèmes éventuels de certificat (et affichera un warning)
+- Gestion de "Météo Pluie (homebridge)", "Météo Neige (homebridge)" et "Météo Température min" dans Eve seulement !
+- Nouveau Type Générique "Qualité d'air (Indice Personnalisable)(homebridge)" pour définir les paliers de qualité d'air. DOIT utiliser l'unité µg/m3 ou ppb.
+- Les paramètres des alarmes, des thermostats, de qualité d'air (indice personnalisable), des boutons programmables et des garages/portails s'affichent maintenant dynamiquement lors du choix du type générique ! plus besoin de recharger la fenêtre !
+- Si en mode Debug : Affichage barré rouge des équipements désactivés dans la configuration des pièces (avec une alerte pour dire qu'ils ne seront pas envoyés dans homebridge)
+- Affichage des pièces désactivées en rouge
+- Affichage du lien vers la configuration de l'équipement (dans une nouvelle fenêtre)
+- Retiré le nom de la pièce devant l'équipement (car doublon) et ordonné les équipements par nom dans les pièces
+- Affichage des pièces comme dans 4.2 avec couleurs et mode table
+- Simplification du code
 
 >**Attention :** Par défaut, une nouvelle pièce n'est plus envoyée directement dans Homebridge, il faut la cocher (votre ancien choix est normalement préservé)
 
 **Correctifs :**
 
-* Ne pas afficher l'interface docker dans les choix d'interface où envoyer/écouter homebridge.
-* Correction pour les lampes Zigbee2MQTT du plugin ZigbeeLinker. (types générique "Info/Lumière Etat (Binaire)" sur cmd Etat et "Lumière Etat" sur cmd Luminosité (Valeur))
-* Correction : Si on fait une réparation sur un système sans nom, on nomme quand même le pont Jeedom_...
-* Gestion et corrections des types génériques pour plugin MeteoFull.
-* Changements cosmétiques et d'alignement.
+- Ne pas afficher l'interface docker dans les choix d'interface où envoyer/écouter homebridge.
+- Correction pour les lampes Zigbee2MQTT du plugin ZigbeeLinker. (types générique "Info/Lumière Etat (Binaire)" sur cmd Etat et "Lumière Etat" sur cmd Luminosité (Valeur))
+- Correction : Si on fait une réparation sur un système sans nom, on nomme quand même le pont Jeedom_...
+- Gestion et corrections des types génériques pour plugin MeteoFull.
+- Changements cosmétiques et d'alignement.
 
 11-04-2022
 ----------
-* Absolument rien n'a changé, j'ai juste recliqué sans faire exprès sur "publier sur le market"...
+- Absolument rien n'a changé, j'ai juste recliqué sans faire exprès sur "publier sur le market"...
 
 20-03-2022
 ----------
-* Fix migration pièces qui n'ont jamais été sauvegardées comme s'ajoutant automatiquement dans homebridge. (pour ceux qui n'avaient pas encore migré, les autres, il faut re-cocher vos pièces)
+- Fix migration pièces qui n'ont jamais été sauvegardées comme s'ajoutant automatiquement dans homebridge. (pour ceux qui n'avaient pas encore migré, les autres, il faut re-cocher vos pièces)
 
 28-02-2022
 ----------
-* Fix pour Jeedom 4.2.13 (forcer activation de l'api)
+- Fix pour Jeedom 4.2.13 (forcer activation de l'api)
 
 16-02-2022
 ----------
-* Version de Jeedom 4.0 MINIMUM !!! le plugin sur une V3 ne recevra plus de mise à jour et n'est plus supporté !
+- Version de Jeedom 4.0 MINIMUM !!! le plugin sur une V3 ne recevra plus de mise à jour et n'est plus supporté !
 
 **Nouvelles Fonctionnalités :**
 
-* Eclairage adaptatif (sur les ampoules qui gèrent la température couleur) : en test pour l'instant (fonctionnalité en beta pour vérifier si on prend en compte tous les cas, faites-moi des retours !), test intégré si l'ampoule a les bonnes commandes, deux cas :
+- Eclairage adaptatif (sur les ampoules qui gèrent la température couleur) : en test pour l'instant (fonctionnalité en beta pour vérifier si on prend en compte tous les cas, faites-moi des retours !), test intégré si l'ampoule a les bonnes commandes, deux cas :
 	- soit l'ampoule s'allume lorsque la température couleur est modifiée : on doit retirer l'éclairage adaptatif à chaque fois qu'on éteint l'ampoule, sinon elle s'allumera toute seule !
 	- soit l'ampoule ne s'allume pas lorsque la température couleur est modifiée : situation idéale ! on peut garder l'éclairage adaptatif en permanence !
-* Test intégé pour voir dans quel cas l'ampoule est ! ce test va modifier la température couleur et vérifier ensuite si l'ampoule s'est allumée.
-* Mise en cache de la liste des concentrateurs homekit, car il est obligatoire d'un avoir **au moins un** pour utiliser l'éclairage adaptatif.
-* "Activer la pièce" : est maintenant indépendant de l'app mobile. une pièce activée dans homebridge l'est uniquement pour homebridge !
-* Le type générique "Action/Serrure Bouton Fermer" n'est plus obligatoire pour les serrures (pour les gaches par exemple)
-* On peut maintenant utiliser plusieurs types "Interrupteurs" normaux dans un même équipement ! (la référence à l'état dans les commandes est obligatoire, voir doc troubleshooting > Point important)
-* Les états définis pour une porte de garage/portail peuvent maintenant être une chaine de caractère.
-* Si un état garage/portail a une valeur non définie dans les valeurs configurables, l'état sera "Stoppé en cours d'ouverture". (Pour gérer les garages à pourcentage d'ouverture)
-* Homebridge 1.4.0
-* Repassé sur le "latest" de homebridge-gsh à la place de la 2.2.0 (qui était la dernière déjà mais ca permet de prendre la prochaine nouvelle version)
-* Ajout de traductions en_US (100% traduit), pt_PT (100% traduit merci @BLRPERES !), es_ES (56% traduit) et de_DE (40% traduit)
+- Test intégé pour voir dans quel cas l'ampoule est ! ce test va modifier la température couleur et vérifier ensuite si l'ampoule s'est allumée.
+- Mise en cache de la liste des concentrateurs homekit, car il est obligatoire d'un avoir **au moins un** pour utiliser l'éclairage adaptatif.
+- "Activer la pièce" : est maintenant indépendant de l'app mobile. une pièce activée dans homebridge l'est uniquement pour homebridge !
+- Le type générique "Action/Serrure Bouton Fermer" n'est plus obligatoire pour les serrures (pour les gaches par exemple)
+- On peut maintenant utiliser plusieurs types "Interrupteurs" normaux dans un même équipement ! (la référence à l'état dans les commandes est obligatoire, voir doc troubleshooting > Point important)
+- Les états définis pour une porte de garage/portail peuvent maintenant être une chaine de caractère.
+- Si un état garage/portail a une valeur non définie dans les valeurs configurables, l'état sera "Stoppé en cours d'ouverture". (Pour gérer les garages à pourcentage d'ouverture)
+- Homebridge 1.4.0
+- Repassé sur le "latest" de homebridge-gsh à la place de la 2.2.0 (qui était la dernière déjà mais ca permet de prendre la prochaine nouvelle version)
+- Ajout de traductions en_US (100% traduit), pt_PT (100% traduit merci @BLRPERES !), es_ES (56% traduit) et de_DE (40% traduit)
 
 **Correctifs :**
 
-* Meilleure gestion dans le cas d'une alarme sans modes.
-* Correctif pour plugin Météo, il y avait des doublons de types génériques dans le plugin officiel.
-* Correctif pour l'état des thermostats si on utilise es_ES ou pt_PT ou de_DE
-* Correctif cosmétique pour l'affichage des plugins pour homebridge installés pour 4.2
-* Correctif cosmétique pour l'affichage des alertes json pour les plateformes et accessoires supplémentaires pour 4.2
-* Correctif pour un warning dans le log démon quand on affichait tous les logs
-* Correctif pour les graphiques Eve si le serial de l'équipement contenait un "/" (jMQTT ou zigbee2mqtt par ex), les graphs ne s'affichaient pas (il faut décocher/relancer le démon/recocher et relancer le démon si ca vous est arrivé)
-* Correctif pour les plugins alarme (officiel + verisure + diagralOne) lorsqu'on passait de Désactivé à un mode différent que le mode précédemment choisi.
+- Meilleure gestion dans le cas d'une alarme sans modes.
+- Correctif pour plugin Météo, il y avait des doublons de types génériques dans le plugin officiel.
+- Correctif pour l'état des thermostats si on utilise es_ES ou pt_PT ou de_DE
+- Correctif cosmétique pour l'affichage des plugins pour homebridge installés pour 4.2
+- Correctif cosmétique pour l'affichage des alertes json pour les plateformes et accessoires supplémentaires pour 4.2
+- Correctif pour un warning dans le log démon quand on affichait tous les logs
+- Correctif pour les graphiques Eve si le serial de l'équipement contenait un "/" (jMQTT ou zigbee2mqtt par ex), les graphs ne s'affichaient pas (il faut décocher/relancer le démon/recocher et relancer le démon si ca vous est arrivé)
+- Correctif pour les plugins alarme (officiel + verisure + diagralOne) lorsqu'on passait de Désactivé à un mode différent que le mode précédemment choisi.
 
 
 10-02-2022
 ----------
 
-* Freeze de la version du plugin pour Jeedom V3 sur la stable du 17-12-2021. La V3 n'aura plus d'update du plugin. Fin du support pour la V3. Si vous avez reçu cette mise à jour, vous êtes toujours en V3, mettez à jour en V4 minimum au plus vite !
+- Freeze de la version du plugin pour Jeedom V3 sur la stable du 17-12-2021. La V3 n'aura plus d'update du plugin. Fin du support pour la V3. Si vous avez reçu cette mise à jour, vous êtes toujours en V3, mettez à jour en V4 minimum au plus vite !
 
 17-12-2021
 ----------
 
-* Si un volet n'as pas d'état et uniquement les boutons Up et/ou Down et/ou Stop, il sera créé des interrupteurs pour ces boutons.
-* Fix images en 4.2 + copier coller dans debugInfo
-* Compat GenType avec 4.2
-* Type générique "Fuite D'eau" passe comme le type générique "Inondation" (c'est un doublon mais bon...)
-* Ajout du mode 0 si aucun mode n'a été trouvé pour l'alarme (Maison se comporte mieux en cas d'utilisation non normale des types génériques alarme)
-* Ne pas retourner de valeur pour l'alarme si ALARM_ENABLE_STATE = 1 (Maison se comporte mieux en cas d'utilisation non normale des types génériques alarme)
-* Etat Volet peut maintenant être un binaire (et Etat Volet Fermeture aussi) et l'invertBinary dans ce cas est supporté aussi.
+- Si un volet n'as pas d'état et uniquement les boutons Up et/ou Down et/ou Stop, il sera créé des interrupteurs pour ces boutons.
+- Fix images en 4.2 + copier coller dans debugInfo
+- Compat GenType avec 4.2
+- Type générique "Fuite D'eau" passe comme le type générique "Inondation" (c'est un doublon mais bon...)
+- Ajout du mode 0 si aucun mode n'a été trouvé pour l'alarme (Maison se comporte mieux en cas d'utilisation non normale des types génériques alarme)
+- Ne pas retourner de valeur pour l'alarme si ALARM_ENABLE_STATE = 1 (Maison se comporte mieux en cas d'utilisation non normale des types génériques alarme)
+- Etat Volet peut maintenant être un binaire (et Etat Volet Fermeture aussi) et l'invertBinary dans ce cas est supporté aussi.
 
 08-12-2021
 ----------
-* Homebridge 1.3.8
-* Homebridge-gsh 2.2.0
-* ajout de --allow-releaseinfo-change à apt update pour éviter les erreurs si debian passe d'une release
+- Homebridge 1.3.8
+- Homebridge-gsh 2.2.0
+- ajout de --allow-releaseinfo-change à apt update pour éviter les erreurs si debian passe d'une release
 
 16-09-2021
 ----------
-* Homebridge-gsh 2.1.0
+- Homebridge-gsh 2.1.0
 
 18-08-2021
 ----------
-* Compatibilité Debian 11 (utilisation de node à la place de nodejs)
+- Compatibilité Debian 11 (utilisation de node à la place de nodejs)
 
 17-08-2021
 ----------
-* Homebridge 1.3.4 (en utilisant 'bonjour-hap' à la place de 'ciao' tant que 'ciao' n'est pas au point)
-* Support d'un nouveau Type générique spécifique à homebridge "Info/Volet Etat Fermeture (homebridge)" qui gère les Volets qui ont un pourcentage de fermeture (100% = fermé / 0% = ouvert) à la place d'ouverture
-* QRcode plus rapide à s'afficher (mise en cache)
-* Simplification du code si jeedom >3.2.1 (ce qui sera toujours le cas puisque le plugin requière 3.3.24)
-* Gestion multi-interfaces réseau, si c'est le cas (autre que tun), la configuration du plugin laissera le choix de selectionner l'interface sur laquelle publier le mDNS de homebridge (attention aux boucles !!! ne doit être utilisé que si le système fait le pont entre deux réseaux !!!)
-* Fix petit bug d'affichage thermostats à la config des modes
-* Meilleur affichage en cas d'erreur de code pin dans le plugin
-* Augmentation du délais de 3 secondes à 7 secondes lors du check de github
+- Homebridge 1.3.4 (en utilisant 'bonjour-hap' à la place de 'ciao' tant que 'ciao' n'est pas au point)
+- Support d'un nouveau Type générique spécifique à homebridge "Info/Volet Etat Fermeture (homebridge)" qui gère les Volets qui ont un pourcentage de fermeture (100% = fermé / 0% = ouvert) à la place d'ouverture
+- QRcode plus rapide à s'afficher (mise en cache)
+- Simplification du code si jeedom >3.2.1 (ce qui sera toujours le cas puisque le plugin requière 3.3.24)
+- Gestion multi-interfaces réseau, si c'est le cas (autre que tun), la configuration du plugin laissera le choix de selectionner l'interface sur laquelle publier le mDNS de homebridge (attention aux boucles !!! ne doit être utilisé que si le système fait le pont entre deux réseaux !!!)
+- Fix petit bug d'affichage thermostats à la config des modes
+- Meilleur affichage en cas d'erreur de code pin dans le plugin
+- Augmentation du délais de 3 secondes à 7 secondes lors du check de github
 
 16-03-2021
 ----------
-* Fix pour accessories vide
+- Fix pour accessories vide
 
 20-02-2021
 ----------
-* Correction validation JSON en cas de plateformes et accessoires vides
-* Désactivation de la correction orthographique sur les textarea des plateformes et accessoires
-* Changement du mode d'installation du plugin homebridge-jeedom pour être compatible avec npm 7
-* Bloquer homebridge en 1.1.7 tant que 1.3.x n'a pas été testé en beta
+- Correction validation JSON en cas de plateformes et accessoires vides
+- Désactivation de la correction orthographique sur les textarea des plateformes et accessoires
+- Changement du mode d'installation du plugin homebridge-jeedom pour être compatible avec npm 7
+- Bloquer homebridge en 1.1.7 tant que 1.3.x n'a pas été testé en beta
 
 08-02-2021
 -----------
-* Correction pour repasser à Aucun type générique si le type générique est un type (homebridge) sur safari.
-* Validateur JSON dans les plateformes et accessoires supplémentaires (obligatoire pour sauvegarder).
-* Message dans config.json pour éviter que les utilisateurs le modifient directement et qu'il se retrouve écrasé.
-* Cacher le "heartbeat" dans la configuration du plugin, car pas de sens puisque pas d'eqLogic.
-* Correction : Thermostat avec seulement une consigne(info+action), garde le thermostat activé
+- Correction pour repasser à Aucun type générique si le type générique est un type (homebridge) sur safari.
+- Validateur JSON dans les plateformes et accessoires supplémentaires (obligatoire pour sauvegarder).
+- Message dans config.json pour éviter que les utilisateurs le modifient directement et qu'il se retrouve écrasé.
+- Cacher le "heartbeat" dans la configuration du plugin, car pas de sens puisque pas d'eqLogic.
+- Correction : Thermostat avec seulement une consigne(info+action), garde le thermostat activé
 
 20-01-2021
 -------------
-* Mise à jour homebridge 1.1.7
-* Nouveaux types génériques pour gérer l'inclinaison des volets soit horizontale, soit verticale. (un état et une action)
-	* Volet Etat Inclinaison Horizontale (Homebridge)
-	* Volet Slider Inclinaison Horizontale (Homebridge)
-	* Volet Etat Inclinaison Verticale (Homebridge)
-	* Volet Slider Inclinaison Verticale (Homebridge)
-* "scheduledBackupDisable" dans config-ui-x, jeedom se charge du backup, pas besoin.
-* Meilleur fix pour les problèmes de prefix NodeJS.
-* Fix pour problème d'ordre des commandes pour les Volets et Fenêtres automatiques.
-* Ajouté le HomePod Mini à la liste des concentrateurs homekit reconnus.
-* Fix message d'erreur si google réponds pas pour la création du qrCode.
-* Homebridge ne recevra plus les evenements jeedom des commandes appartenant à des équipements non envoyés dans homebridge.
-* Meilleure indication de l'utilité de l'équipement camera dans sa pièce. Plus d'affichage du json à cet endroit (utiliser l'import).
-* Amélioration DebugInfo pour le cache.
-* Correction si Consommation totale (électrique) est en Wh -> convertir en kWh et si la puissance est en kW -> convertir en W
-* Correction couleur de lumière, devrait être bcp plus précis (et plus rouge alors que c'était blanc)
-* Gestion de l'authentification de Config-UI-X, une fois activé dans la config de homebridge, vous pouvez aller modifier dans Config-UI-X > trois points en haut à droite > Gestion Utilisateurs.  Possible que votre cookie reste valide, déconnectez vous de Config-UI-X (menu trois points) pour vérifier.
-* Ajout (?) dans la configuration en plus du tooltip pour donner plus d'informations sur certaines fonctions.
-* Meilleur stop du démon plus respectueux, pour laisser le temps à homebridge d'écrire son cache si le système est trop lent.
+- Mise à jour homebridge 1.1.7
+- Nouveaux types génériques pour gérer l'inclinaison des volets soit horizontale, soit verticale. (un état et une action)
+	- Volet Etat Inclinaison Horizontale (Homebridge)
+	- Volet Slider Inclinaison Horizontale (Homebridge)
+	- Volet Etat Inclinaison Verticale (Homebridge)
+	- Volet Slider Inclinaison Verticale (Homebridge)
+- "scheduledBackupDisable" dans config-ui-x, jeedom se charge du backup, pas besoin.
+- Meilleur fix pour les problèmes de prefix NodeJS.
+- Fix pour problème d'ordre des commandes pour les Volets et Fenêtres automatiques.
+- Ajouté le HomePod Mini à la liste des concentrateurs homekit reconnus.
+- Fix message d'erreur si google réponds pas pour la création du qrCode.
+- Homebridge ne recevra plus les evenements jeedom des commandes appartenant à des équipements non envoyés dans homebridge.
+- Meilleure indication de l'utilité de l'équipement camera dans sa pièce. Plus d'affichage du json à cet endroit (utiliser l'import).
+- Amélioration DebugInfo pour le cache.
+- Correction si Consommation totale (électrique) est en Wh -> convertir en kWh et si la puissance est en kW -> convertir en W
+- Correction couleur de lumière, devrait être bcp plus précis (et plus rouge alors que c'était blanc)
+- Gestion de l'authentification de Config-UI-X, une fois activé dans la config de homebridge, vous pouvez aller modifier dans Config-UI-X > trois points en haut à droite > Gestion Utilisateurs.  Possible que votre cookie reste valide, déconnectez vous de Config-UI-X (menu trois points) pour vérifier.
+- Ajout (?) dans la configuration en plus du tooltip pour donner plus d'informations sur certaines fonctions.
+- Meilleur stop du démon plus respectueux, pour laisser le temps à homebridge d'écrire son cache si le système est trop lent.
 
 18-01-2021
 ----------
-* Message d'erreur dans le log "homebridge" lorsque vous ajoutez une plateforme supplémentaire avec un json invalide.
-* Ajout de la plateforme malgré l'erreur de json invalide -> crash du démon mais au moins vous aurez un message d'erreur.
-* Vérification si NodeJS est installé pour les dépendances_info.
+- Message d'erreur dans le log "homebridge" lorsque vous ajoutez une plateforme supplémentaire avec un json invalide.
+- Ajout de la plateforme malgré l'erreur de json invalide -> crash du démon mais au moins vous aurez un message d'erreur.
+- Vérification si NodeJS est installé pour les dépendances_info.
 
 07-01-2021
 ----------
-* Nouvelle image dans le market
-* Icone sans nom du plugin (nouvelle norme)
+- Nouvelle image dans le market
+- Icone sans nom du plugin (nouvelle norme)
 
 23-12-2020
 ----------
-* Fix description (multilingue) et captures sur le market
+- Fix description (multilingue) et captures sur le market
 
 23&24-11-2020
 -------------
-* Fix npm prefix seulement si npm est existant sur la machine
+- Fix npm prefix seulement si npm est existant sur la machine
 
 16&17-11-2020
 ----------
-* Mise à jour documentation pour différents points
-* Corrections orthographiques.
-* Mise à jour install nodejs 12.19.0 sur arm6l (Mini+, raspberry 1 et 2 ou 0). non supporté mais best effort.
-* Fix pour problèmes de prefix sur votre install (dû à un autre plugin ou une manipulation manuelle)
-* Log de commande vide en erreur (bug quand on clique Tester sur la commande d'un autre plugin) dans log "homebridge"
-* Bloquage de l'installation sur i386 32bits buster.
+- Mise à jour documentation pour différents points
+- Corrections orthographiques.
+- Mise à jour install nodejs 12.19.0 sur arm6l (Mini+, raspberry 1 et 2 ou 0). non supporté mais best effort.
+- Fix pour problèmes de prefix sur votre install (dû à un autre plugin ou une manipulation manuelle)
+- Log de commande vide en erreur (bug quand on clique Tester sur la commande d'un autre plugin) dans log "homebridge"
+- Bloquage de l'installation sur i386 32bits buster.
 
 06&07-11-2020
 -------------
-* Fusion automatique des plateformes camera-ffmpeg multiples en une seule plateforme contenant plusieurs cameras.
-* Ajout de la possibilité de ne pas intégrer automatiquement un équipement dans homebridge par défaut (voir configuration du plugin).
-* Import via un bouton des caméras venant du plugin camera (**si celles-ci ont une "URL de flux"**, vérifier ensuite dans les plateformes supplémentaire l'import ! **Ne pas modifier le serialNumber par après, sinon au prochain import, vous aurez un doublon**).
-* Import via un bouton des caméras venant du plugin Hikvision.
-* Import via un bouton des caméras venant du plugin Synology Surveillance Station.
-* Installation des dépendances corrigent automatiquement certaines erreurs Linux sur le gestionnaire de paquets.
-* Séparation des logs debug natifs de homebridge et de ses plugins dans un bouton dans la configuration du plugin. Afin de simplifier le log même en mode debug et rendre celui-ci plus lisible aux utilisateurs ainsi que de simplifier le support avec des logs plus concis.
-* Installation via les dépendances de homebridge-config-ui-x + bouton pour y accéder. (installation/désinstallation/mettre à jour plugin + redémarrer homebridge + visualiser si les accessoires fonctionnent (pratique pour ceux qui utilisent homebridge-alexa ou homebridge-gsh et qui n'ont pas de iDevice) !)
+- Fusion automatique des plateformes camera-ffmpeg multiples en une seule plateforme contenant plusieurs cameras.
+- Ajout de la possibilité de ne pas intégrer automatiquement un équipement dans homebridge par défaut (voir configuration du plugin).
+- Import via un bouton des caméras venant du plugin camera (**si celles-ci ont une "URL de flux"**, vérifier ensuite dans les plateformes supplémentaire l'import ! **Ne pas modifier le serialNumber par après, sinon au prochain import, vous aurez un doublon**).
+- Import via un bouton des caméras venant du plugin Hikvision.
+- Import via un bouton des caméras venant du plugin Synology Surveillance Station.
+- Installation des dépendances corrigent automatiquement certaines erreurs Linux sur le gestionnaire de paquets.
+- Séparation des logs debug natifs de homebridge et de ses plugins dans un bouton dans la configuration du plugin. Afin de simplifier le log même en mode debug et rendre celui-ci plus lisible aux utilisateurs ainsi que de simplifier le support avec des logs plus concis.
+- Installation via les dépendances de homebridge-config-ui-x + bouton pour y accéder. (installation/désinstallation/mettre à jour plugin + redémarrer homebridge + visualiser si les accessoires fonctionnent (pratique pour ceux qui utilisent homebridge-alexa ou homebridge-gsh et qui n'ont pas de iDevice) !)
 
 >**_ATTENTION_ : Toute modification faite à la config dans cette interface ne sera pas (encore) prise en compte, c'est à titre de test pour l'instant !**
 
-* Suppression de la possibilité de migrer **homebridge du plugin mobile** à **homebridge indépendant** (la séparation a eu lien il y a 3 ans)
-* Fin du support avec Debian 8 Jessie officiellement.
-* Mise à jour Homebridge en 1.1.6 et HAP-NodeJS en 0.7.9 (les versions suivantes ont des problèmes chez certains...)
-* Mise à jour homebridge-alexa en dernière version
-* Mise à jour homebridge-camera-ffmpeg en dernière version (ffmpeg intégré qui supporte l'audio avec codec natif)
-* Installation de homebridge-config-ui-x en dernière version
-* Installation de homebridge-gsh en dernière version
+- Suppression de la possibilité de migrer **homebridge du plugin mobile** à **homebridge indépendant** (la séparation a eu lien il y a 3 ans)
+- Fin du support avec Debian 8 Jessie officiellement.
+- Mise à jour Homebridge en 1.1.6 et HAP-NodeJS en 0.7.9 (les versions suivantes ont des problèmes chez certains...)
+- Mise à jour homebridge-alexa en dernière version
+- Mise à jour homebridge-camera-ffmpeg en dernière version (ffmpeg intégré qui supporte l'audio avec codec natif)
+- Installation de homebridge-config-ui-x en dernière version
+- Installation de homebridge-gsh en dernière version
 
 >**_ATTENTION_ : depuis la version 2.0.0 de homebridge-camera-ffmpeg, les cameras font partie du Pont Jeedom !!! Après redémarrage du démon lors de cette mise à jour, vous allez vous retrouver avec vos caméra en double dans Maison, il vous faudra supprimer l'ancienne et garder celle qui est liée au Pont Jeedom, pour voir la différence, cliquez sur l'engrenage sur la cam sous "inclure dans les favoris" vous verrez "Pont >"**
 
 ![Exemple](https://raw.githubusercontent.com/NebzHB/jeedom_docs/master/plugins/homebridge/images/exemple.jpg){:width="300px"}
 **Exemple de caméra à CONSERVER lors de la migration !**
 
-* Pour vous aider à faire cette modification, une petite aide s'affichera dans la configuration du plugin la première fois SI le démon est démarré et SI vous avez des caméras et SI vous ne l'avez pas encore validée.
+- Pour vous aider à faire cette modification, une petite aide s'affichera dans la configuration du plugin la première fois SI le démon est démarré et SI vous avez des caméras et SI vous ne l'avez pas encore validée.
 
 ![ProcedureMigrationCameras](../images/migrationCameras.png){:height="300px"}
 
@@ -442,266 +448,266 @@ Changelog
 
 30-07-2020
 ----------
-* Préparation de jeedom pour l'upgrade (ceci ne veut pas dire qu'elle va arriver le 1er Aout ;) il reste des choses à débugger)
+- Préparation de jeedom pour l'upgrade (ceci ne veut pas dire qu'elle va arriver le 1er Aout ;) il reste des choses à débugger)
 
 11&12-05-2020
 -------------
-* Préparation du support du FFMPEG intégré si homebridge-camera-ffmpeg >= 0.1.17 (si pas indiqué dans videoProcessor dans la plateforme supplémentaire)
-* Ajout audio:true si c'est le cas dans la proposition de configuration de camera dans la pièce.
-* Modification priorités custom config pour alarme et thermostat (pré config dans les plugins alarme).
-* Réaffichage des modes pour verisure pour permettre aux utilisateurs de reconfigurer la pré-config.
-* **_ATTENTION_ : après le 30-06-2020, le plugin ne sera plus compatible avec Debian Jessie (8), c'est déjà un peu le cas actuellement, mais chez ceux qui n'ont pas mis à jour depuis longtemps, il était possible que le plugin fonctionne...**
+- Préparation du support du FFMPEG intégré si homebridge-camera-ffmpeg >= 0.1.17 (si pas indiqué dans videoProcessor dans la plateforme supplémentaire)
+- Ajout audio:true si c'est le cas dans la proposition de configuration de camera dans la pièce.
+- Modification priorités custom config pour alarme et thermostat (pré config dans les plugins alarme).
+- Réaffichage des modes pour verisure pour permettre aux utilisateurs de reconfigurer la pré-config.
+- **_ATTENTION_ : après le 30-06-2020, le plugin ne sera plus compatible avec Debian Jessie (8), c'est déjà un peu le cas actuellement, mais chez ceux qui n'ont pas mis à jour depuis longtemps, il était possible que le plugin fonctionne...**
 
 > https://community.jeedom.com/t/homebridge-et-tous-mes-plugins-utilisant-nodejs-fin-de-support-de-debian-8-jessie-le-30-juin/26999
 
-* **_ATTENTION_ : les systèmes x86 en 32bits ne sont plus supportés depuis un petit temps dans NodeJS12, l'installation des dépendances devient donc impossible dans ce cas avec un message clair.**
+- **_ATTENTION_ : les systèmes x86 en 32bits ne sont plus supportés depuis un petit temps dans NodeJS12, l'installation des dépendances devient donc impossible dans ce cas avec un message clair.**
 
 27&28-04-2020
 -------------
-* Contournement problème repo jeedom
+- Contournement problème repo jeedom
 
 19-04-2020
 -------------
-* Fix estimations framerate et taille des cameras dans la propostion de json affichée
-* Fix si pas d'url de capture d'image mais uniquement un flux rtsp des cameras dans la propostion de json affichée
-* Fix detection RPI pour propose OMX comme codec des cameras dans la propostion de json affichée
-* Preset des modes alarmes et thermostat pour les plugins tiers (Verisure par exemple)
-* Fix install dépendance sur vieux systèmes et smart
+- Fix estimations framerate et taille des cameras dans la propostion de json affichée
+- Fix si pas d'url de capture d'image mais uniquement un flux rtsp des cameras dans la propostion de json affichée
+- Fix detection RPI pour propose OMX comme codec des cameras dans la propostion de json affichée
+- Preset des modes alarmes et thermostat pour les plugins tiers (Verisure par exemple)
+- Fix install dépendance sur vieux systèmes et smart
 
 30-03-2020
 -------------
 
-* Fix branche dans DebugInfo
-* Fix couleurs orange dans les select pour Fenetres motorisées + CO
-* Changement Police des logs en monospaced
-* Nouveau système de log dépendances plus clair, on voit tout de suite s'il y a un problème ou pas
+- Fix branche dans DebugInfo
+- Fix couleurs orange dans les select pour Fenetres motorisées + CO
+- Changement Police des logs en monospaced
+- Nouveau système de log dépendances plus clair, on voit tout de suite s'il y a un problème ou pas
 
 
 13-02-2020
 -------------
 
-* Utilisation de la méthode de filtrage (via cache homebridge::event) des évenements du core (event::changes) pour ne plus recevoir les evenements sur des commandes qui n'ont pas de type générique (réduction de la charge de traitement et simplification des logs, surtout pour ceux qui ont blea et unifi ou tout plugin qui fait bcp de mise a jours)
-* Affichage de la branche dans les dépendances
-* Ligne d'info du système au débug de l'install des dépendances
-* fix du "copier tout" dans debugInfo
+- Utilisation de la méthode de filtrage (via cache homebridge::event) des évenements du core (event::changes) pour ne plus recevoir les evenements sur des commandes qui n'ont pas de type générique (réduction de la charge de traitement et simplification des logs, surtout pour ceux qui ont blea et unifi ou tout plugin qui fait bcp de mise a jours)
+- Affichage de la branche dans les dépendances
+- Ligne d'info du système au débug de l'install des dépendances
+- fix du "copier tout" dans debugInfo
 
 28-01-2020
 -------------
 
-* Logs plus clairs dans le démon
-* Architecture dans DebugInfo
-* Affichage info debug au début de l'installation des dépendances
-* Test si npm existe avant l'installation/désinstallation d'un plugin pour homebridge
+- Logs plus clairs dans le démon
+- Architecture dans DebugInfo
+- Affichage info debug au début de l'installation des dépendances
+- Test si npm existe avant l'installation/désinstallation d'un plugin pour homebridge
 
 17-01-2020
 -------------
 
-* Fix erreur si $eqLogicToSave est vide
-* Affichage de tous les types génériques (même Alarme, Camera, Mode, Meteo etc)
-* Affichage config des modes alarmes meme si pas plugin alarme (besoin d'un refresh après avoir définit Action/Alarme Mode et sauvegardé)
-* Reclassification du type générique "Qualité d'air (Indice AQI) (Homebridge)" dans Environnement
-* Re-coloration orange des types génériques spécifiques à Homebridge (fonctionnait en V3) pour la V4
+- Fix erreur si $eqLogicToSave est vide
+- Affichage de tous les types génériques (même Alarme, Camera, Mode, Meteo etc)
+- Affichage config des modes alarmes meme si pas plugin alarme (besoin d'un refresh après avoir définit Action/Alarme Mode et sauvegardé)
+- Reclassification du type générique "Qualité d'air (Indice AQI) (Homebridge)" dans Environnement
+- Re-coloration orange des types génériques spécifiques à Homebridge (fonctionnait en V3) pour la V4
 
 09-01-2020
 -------------
 
-* Fix erreur 500 à l'installation d'un plugin pour homebridge
-* Lancement du démon en Insecure si config pour google-smarthome (comme alexa)
+- Fix erreur 500 à l'installation d'un plugin pour homebridge
+- Lancement du démon en Insecure si config pour google-smarthome (comme alexa)
 
 02-01-2020
 -------------
 
-* Meilleur calcul de résolution de cam (moins de 0) pour le json camera et "UNKNOWN PLEASE SEE CAM DOCUMENTATION" si on ne sait pas trouver l'info.
-* Installation nodejs v12 sur i686 32bits aussi. (retour en arrière 03-01-2020)
-* Fix pour bug core si l'object_id = -1.
-* Ajout tag V4 dans info.json pour afficher dans le market.
-* Installation améliorée (suppression de package-lock.json et remise des droits www-data:www-data sur le dossier node_modules).
-* Désactivation d'avahi au démarrage du système uniquement sur smart (pour le bug ou elle démarre en 1970) et plus sur les autres systèmes.
-* Plateformes supplémentaires : si un champ dans une plateforme contient | dans sa valeur, ca ne fonctionne pas (à cause du séparateur de plateformes), on contourne en laissant la possibilité de mettre [pipe] dans le champ. Dans ce cas, ca fonctionne ! (pour homebridge-nest).
-* Fix pour les lumières qui utilisent Info/Lumière Etat (binaire) et Info/Lumière Etat et le cas particulier où Info/Lumière Etat (binaire) se trouve après Info/Lumière Etat dans l'ordre des commandes
-* Fix pour les boutons poussoirs (retour de l'interrupteur à éteint automatiquement après allumage)
-* Ajout des Types génériques Info/Valve générique Durée et Info/Valve générique Durée Restante pour les valves dans Eve
+- Meilleur calcul de résolution de cam (moins de 0) pour le json camera et "UNKNOWN PLEASE SEE CAM DOCUMENTATION" si on ne sait pas trouver l'info.
+- Installation nodejs v12 sur i686 32bits aussi. (retour en arrière 03-01-2020)
+- Fix pour bug core si l'object_id = -1.
+- Ajout tag V4 dans info.json pour afficher dans le market.
+- Installation améliorée (suppression de package-lock.json et remise des droits www-data:www-data sur le dossier node_modules).
+- Désactivation d'avahi au démarrage du système uniquement sur smart (pour le bug ou elle démarre en 1970) et plus sur les autres systèmes.
+- Plateformes supplémentaires : si un champ dans une plateforme contient | dans sa valeur, ca ne fonctionne pas (à cause du séparateur de plateformes), on contourne en laissant la possibilité de mettre [pipe] dans le champ. Dans ce cas, ca fonctionne ! (pour homebridge-nest).
+- Fix pour les lumières qui utilisent Info/Lumière Etat (binaire) et Info/Lumière Etat et le cas particulier où Info/Lumière Etat (binaire) se trouve après Info/Lumière Etat dans l'ordre des commandes
+- Fix pour les boutons poussoirs (retour de l'interrupteur à éteint automatiquement après allumage)
+- Ajout des Types génériques Info/Valve générique Durée et Info/Valve générique Durée Restante pour les valves dans Eve
 
 
 30-12-2019
 -------------
 
-* Aucune modification, version pour égaliser un retour à la ligne avec la beta
+- Aucune modification, version pour égaliser un retour à la ligne avec la beta
 
 
 10-12-2019
 -------------
 
-* contournement pour modification plugin mode
+- contournement pour modification plugin mode
 
 15-10-2019
 -------------
 
-* updates compatibilité V4 (design)
+- updates compatibilité V4 (design)
 
 09-09-2019
 -------------
 
-* version jeedom minimale : 3.3.24 (pour compatibilité V4)
+- version jeedom minimale : 3.3.24 (pour compatibilité V4)
 
 06-09-2019
 -------------
 
-* correctif pour i386 (i686) 32 bits (install version 8)
+- correctif pour i386 (i686) 32 bits (install version 8)
 
 v1.4.9 (28&29-08-2019) (et les quelques jours qui ont suivit...)
 -------------
 
-* changement de limite à 149 périph
-* détection concentrateur homekit + alerte si aucun (pour indiquer que l'accès à distance impossible)
-* compatibilité buster et nodejs12 (+ sur smart)
+- changement de limite à 149 périph
+- détection concentrateur homekit + alerte si aucun (pour indiquer que l'accès à distance impossible)
+- compatibilité buster et nodejs12 (+ sur smart)
 
 
 v1.4.8 (22&23-03-2019) + (29&30-03-2019)
 -------------
 
-* BugFix : retirer un type générique (homebridge)
-* BugFix : --allow-unauthenticated pour le package non signé sur le repo.jeedom sur smart
+- BugFix : retirer un type générique (homebridge)
+- BugFix : --allow-unauthenticated pour le package non signé sur le repo.jeedom sur smart
 
 v1.4.7 (28&29-01-2019)
 -------------
 
-* Ajout du type générique CO (monoxyde de carbonne)
-* Meilleure suppression de homebridge-alexa global pour ne pas avoir de conflict avec l'existant
-* Mise à jour version Homebridge en 0.4.46
+- Ajout du type générique CO (monoxyde de carbonne)
+- Meilleure suppression de homebridge-alexa global pour ne pas avoir de conflict avec l'existant
+- Mise à jour version Homebridge en 0.4.46
 
 
 v1.4.6 (09&10-01-2019)
 -------------
 
-* Déménagement de la doc dans une doc centralisée
-* Corrections dans la doc
+- Déménagement de la doc dans une doc centralisée
+- Corrections dans la doc
 
 v1.4.5 (23&24-11-2018)
 -------------
 
-* Suppression du type Humidité pour le nouvel élément du plugin Thermostat (inutile car lien vers un autre élément)
-* Correction bug sur type générique Info/Batterie En Charge
-* Ajout d'un detecteur CO2 dans l'accessoire de qualité d'air pour CO2 qui déclenche >=1400ppm
-* Détection si Raspberry et si conditions pour utiliser h264_omx sont rassemblées si on a une camera
-* Correction bug sur type générique Info/Générique de type Autre : s'affiche maintenant dans Eve (pour UPSAPC)
-* Correction Nuki : gache plus obligatoirement en interrupteur + Fix Status
-* Correction des Seuils CO2 pour coller à Netatmo
-* Gestion du Type générique info/Bruit (db) + Evaluation du bruit (sur base des seuils netatmo)
-* Correction bug install dépendances pour vieilles architectures (arm6l)
-* Mise à jour version Homebridge en 0.4.45
+- Suppression du type Humidité pour le nouvel élément du plugin Thermostat (inutile car lien vers un autre élément)
+- Correction bug sur type générique Info/Batterie En Charge
+- Ajout d'un detecteur CO2 dans l'accessoire de qualité d'air pour CO2 qui déclenche >=1400ppm
+- Détection si Raspberry et si conditions pour utiliser h264_omx sont rassemblées si on a une camera
+- Correction bug sur type générique Info/Générique de type Autre : s'affiche maintenant dans Eve (pour UPSAPC)
+- Correction Nuki : gache plus obligatoirement en interrupteur + Fix Status
+- Correction des Seuils CO2 pour coller à Netatmo
+- Gestion du Type générique info/Bruit (db) + Evaluation du bruit (sur base des seuils netatmo)
+- Correction bug install dépendances pour vieilles architectures (arm6l)
+- Mise à jour version Homebridge en 0.4.45
 
 v1.4.4 (18&19-10-2018)
 -------------
 
-* Nouveaux types :
-	* Sirène (configuré comme une alarme sans mode)
-	* Fenetre motorisée
-* Cache les modes thermostats ou alarme non configurés.
-* Meilleure intégration Jeelink pour alarme et thermostat.
-* Auto configuration serrure Nuki
+- Nouveaux types :
+	- Sirène (configuré comme une alarme sans mode)
+	- Fenetre motorisée
+- Cache les modes thermostats ou alarme non configurés.
+- Meilleure intégration Jeelink pour alarme et thermostat.
+- Auto configuration serrure Nuki
 
 v1.4.3 (05&06-09-2018)
 -------------
 
-* Nouveaux types Valves :
-	* Robinet
-	* Irrigation
-	* Valve générique (s'affiche comme un robinet dans Maison mais différent dans Eve)
-* Nouveau type Ventilateur (On/Off ou bien avec un variateur de vitesse pourcentage)
-* Meilleur affichage des Info/Générique
-* Ajout de www-data au groupe video (accès à l'accélération hardware)
-* Possibilité de forcer le videoProcessor des cameras (ffmpeg ou avconv)
-* Petite interface pour gérer les modules npm homebridge-* installés sur le système (hors Alexa et camera-ffmpeg qui sont déjà installés)
-* Mise à jour doc + traductions anglaises (j+1) + traductions espagnoles (gracias a Bull !)
-* Possibilité de renommer un accessoire directement dans Jeedom (pseudo)
-* Changements cosmétiques dans les pièces du plugin, checkbox "Envoyer dans homebridge" se trouve devant le nom de l'equipement.
+- Nouveaux types Valves :
+	- Robinet
+	- Irrigation
+	- Valve générique (s'affiche comme un robinet dans Maison mais différent dans Eve)
+- Nouveau type Ventilateur (On/Off ou bien avec un variateur de vitesse pourcentage)
+- Meilleur affichage des Info/Générique
+- Ajout de www-data au groupe video (accès à l'accélération hardware)
+- Possibilité de forcer le videoProcessor des cameras (ffmpeg ou avconv)
+- Petite interface pour gérer les modules npm homebridge-* installés sur le système (hors Alexa et camera-ffmpeg qui sont déjà installés)
+- Mise à jour doc + traductions anglaises (j+1) + traductions espagnoles (gracias a Bull !)
+- Possibilité de renommer un accessoire directement dans Jeedom (pseudo)
+- Changements cosmétiques dans les pièces du plugin, checkbox "Envoyer dans homebridge" se trouve devant le nom de l'equipement.
 
 v1.4.2 (02&03-07-2018)
 -------------
 
-* Installation des dépendances plus rapide.
+- Installation des dépendances plus rapide.
 
-* Update version Homebridge, moins de compilation, plus de caractères spéciaux début des logs
+- Update version Homebridge, moins de compilation, plus de caractères spéciaux début des logs
 
-* Fix bug reconnaissance docker avec derniers Core (Docker -> docker)
+- Fix bug reconnaissance docker avec derniers Core (Docker -> docker)
 
-* préparation pour autoconfig cameras sur base du plugin camera, affichage config.
+- préparation pour autoconfig cameras sur base du plugin camera, affichage config.
 
-* préparation pour gestion des listes pour les thermostats
+- préparation pour gestion des listes pour les thermostats
 
-* pré-installation de homebridge-alexa, il reste plus qu'à ajouter la config dans les plateformes supplémentaires.
+- pré-installation de homebridge-alexa, il reste plus qu'à ajouter la config dans les plateformes supplémentaires.
 
-* intégration du plugin Mode : création d'un interrupteur par mode (chacun est mutuellement exclusif). Permet : "Dis siri, active le mode vacance". Si on désactive un interrupteur actif on effectue l'action jeedom "Mode Précédent".
+- intégration du plugin Mode : création d'un interrupteur par mode (chacun est mutuellement exclusif). Permet : "Dis siri, active le mode vacance". Si on désactive un interrupteur actif on effectue l'action jeedom "Mode Précédent".
 
 v1.4.1 (24&25-04-2018)
 -------------
 
-* Plugins Météo, Darksky, METAR en partie compatibles (Température et Humidité dans maison) (Plus d'informations dans Elgato Eve ! (Pression, Vitesse et Direction du vent, IndexUV etc))
+- Plugins Météo, Darksky, METAR en partie compatibles (Température et Humidité dans maison) (Plus d'informations dans Elgato Eve ! (Pression, Vitesse et Direction du vent, IndexUV etc))
 
-* Compatibilité Smart sous Stretch
+- Compatibilité Smart sous Stretch
 
-* Type Générique CO2 avec graphique de qualité d'air sur Eve
+- Type Générique CO2 avec graphique de qualité d'air sur Eve
 
-* Correction d'un bug si Jeedom renvoie "" dans une commande info de type numérique.
+- Correction d'un bug si Jeedom renvoie "" dans une commande info de type numérique.
 
-* Mise à jour pour compatibilité Jeedom Core 3.2.x
+- Mise à jour pour compatibilité Jeedom Core 3.2.x
 
 > Attention : la mise à jour doit être effectuée APRÈS la mise à jour vers Jeedom Core 3.2.x pour que les données existantes soient migrées vers le nouveau système de type_génériques du Core.
 
 v1.4.0 (22&23-03-2018)
 -------------
 
-* Documentation au nouveau format + mise à jour par @BPhoque
+- Documentation au nouveau format + mise à jour par @BPhoque
 
-* Meilleur code de génération pour le QRcode (en php).
+- Meilleur code de génération pour le QRcode (en php).
 
-* Changement de plusieurs libellés dans la configuration du plugin.
+- Changement de plusieurs libellés dans la configuration du plugin.
 
-* Nouveau type spécifique homebridge : "Occupation" légèrement différent de "mouvement" dans Maison et dans Eve, il est plus clair pour par exemple afficher une présence (plutot qu'un mouvement).
+- Nouveau type spécifique homebridge : "Occupation" légèrement différent de "mouvement" dans Maison et dans Eve, il est plus clair pour par exemple afficher une présence (plutot qu'un mouvement).
 
-* Nouveau type spécifique homebridge : "Online" permettant de passer le composant en "Sans réponse" dans Maison s'il a la valeur de 0.
+- Nouveau type spécifique homebridge : "Online" permettant de passer le composant en "Sans réponse" dans Maison s'il a la valeur de 0.
 
-* Nouveau type spécifique homebridge : "Bouton poussoir" qui est en fait un interrupteur mais qui s'éteint tout seul. Cela permet d'associer n'importe quelle commande action de type "autre".
+- Nouveau type spécifique homebridge : "Bouton poussoir" qui est en fait un interrupteur mais qui s'éteint tout seul. Cela permet d'associer n'importe quelle commande action de type "autre".
 
-* Support du type générique Action/Générique pour les commandes action de type "Défaut" seulement. (Comme un Bouton poussoir).
+- Support du type générique Action/Générique pour les commandes action de type "Défaut" seulement. (Comme un Bouton poussoir).
 
-* Support des commandes camera comme Bouton poussoir (Haut,Bas,Gauche,Droite,Zoom,DéZoom,Preset) et de l'enregistrement comme un interrupteur.
+- Support des commandes camera comme Bouton poussoir (Haut,Bas,Gauche,Droite,Zoom,DéZoom,Preset) et de l'enregistrement comme un interrupteur.
 
-* Meilleur gestion du type Haut-Parleur (si pas de Mute).
+- Meilleur gestion du type Haut-Parleur (si pas de Mute).
 
-* Gestion automatique pour la serrure TheKeys.
+- Gestion automatique pour la serrure TheKeys.
 
-* Séparation des types "Prise" et "Interrupteur".
+- Séparation des types "Prise" et "Interrupteur".
 
-* Les prises dans Jeedom sont maintenant des vrais prises dans Homebridge.
+- Les prises dans Jeedom sont maintenant des vrais prises dans Homebridge.
 
-* Les scénarios Jeedom sont ajoutés en tant qu'interrupteur dans Homebridge (si sélectionné dans la configuration).
+- Les scénarios Jeedom sont ajoutés en tant qu'interrupteur dans Homebridge (si sélectionné dans la configuration).
 
-* Composant "Pression" modifié pour apparaitre mieux dans Eve.
+- Composant "Pression" modifié pour apparaitre mieux dans Eve.
 
-* Les interrupteur programmables dans homekit font leur apparition.
+- Les interrupteur programmables dans homekit font leur apparition.
 
-    * Interrupteur Programmable (Multi-Valeur) (Homebridge) : 
-        * Il s'agit d'un interrupteur avec une commande de type info qui contiendra plusieurs valeurs en fonction du type de click effectué. ("click", "double_click", "long_click"
+    - Interrupteur Programmable (Multi-Valeur) (Homebridge) : 
+        - Il s'agit d'un interrupteur avec une commande de type info qui contiendra plusieurs valeurs en fonction du type de click effectué. ("click", "double_click", "long_click"
 
-    * Interrupteur Programmable Binaire (Simple Click) (Homebridge) : 
-        * Il s'agit d'un interrupteur ou la commande de type info est un binaire et correspond à un simple click sur le bouton.
-    * Interrupteur Programmable Binaire (Double Click) (Homebridge) :
-        * Il s'agit d'un interrupteur ou la commande de type info est un binaire et correspond à un double click sur le bouton.
-    * Interrupteur Programmable Binaire (Long   Click) (Homebridge) :
-        * Il s'agit d'un interrupteur ou la commande de type info est un binaire et correspond à un long click sur le bouton.
+    - Interrupteur Programmable Binaire (Simple Click) (Homebridge) : 
+        - Il s'agit d'un interrupteur ou la commande de type info est un binaire et correspond à un simple click sur le bouton.
+    - Interrupteur Programmable Binaire (Double Click) (Homebridge) :
+        - Il s'agit d'un interrupteur ou la commande de type info est un binaire et correspond à un double click sur le bouton.
+    - Interrupteur Programmable Binaire (Long   Click) (Homebridge) :
+        - Il s'agit d'un interrupteur ou la commande de type info est un binaire et correspond à un long click sur le bouton.
  
-* Compatibilité (Alpha) avec Docker : (toujours aucun support) mais quelques modifications ont été faites pour faciliter l'utilisation du plugin sous Docker officiel Jeedom en mode réseau "Host".
+- Compatibilité (Alpha) avec Docker : (toujours aucun support) mais quelques modifications ont été faites pour faciliter l'utilisation du plugin sous Docker officiel Jeedom en mode réseau "Host".
 
-* Affichage des graphiques dans l'application Eve (support Alpha). Fonctionne pour les types suivants :
+- Affichage des graphiques dans l'application Eve (support Alpha). Fonctionne pour les types suivants :
 
-    * Température (chaque point de donnée est une moyenne des 10min précédentes)
-    * Humidité (chaque point de donnée est une moyenne des 10min précédentes)
-    * Pression (chaque point de donnée est une moyenne des 10min précédentes)
-    * Porte ou Fenêtre 
-    * Mouvement 
-    * Puissance Electrique (chaque point de donnée est une moyenne des 10min précédentes)
+    - Température (chaque point de donnée est une moyenne des 10min précédentes)
+    - Humidité (chaque point de donnée est une moyenne des 10min précédentes)
+    - Pression (chaque point de donnée est une moyenne des 10min précédentes)
+    - Porte ou Fenêtre 
+    - Mouvement 
+    - Puissance Electrique (chaque point de donnée est une moyenne des 10min précédentes)
 
 > Il s'agit d'un support Alpha, juste car c'est fun :) Les graphiques ont été développés par ingénierie inversée des composants Elgato Eve et il peut y avoir des incohérences. Les données des graphiques sont les données collectées lorsque le démon Homebridge est démarré, il peut donc manquer certaines informations. Les graphiques sont là à titre informatif. A part les trois premiers types qui peuvent être dans le même Périphérique, les autres ne peuvent pas être combinés (il faut coller aux produits Elgato).
 
@@ -709,181 +715,181 @@ v1.4.0 (22&23-03-2018)
 
 v1.3.5 (12-12-2017)
 ------------------
-* Suppression du besoin de sélection de l'utilisateur
-* Plus besoin que les actions réfèrent l'état auquel elles sont liées sauf si multi-prises ou multi-relay (on split)
-* QRCode pour configurer le bridge (attention, les cameras et plateformes supplémentaires doivent toujours scanner le PIN)
-* Plus jolie config
-* Afficher une erreur si l'adresse interne est en https
-* Mise à jour de Homebridge en 0.4.32 et HAP-Nodejs en 0.4.36
+- Suppression du besoin de sélection de l'utilisateur
+- Plus besoin que les actions réfèrent l'état auquel elles sont liées sauf si multi-prises ou multi-relay (on split)
+- QRCode pour configurer le bridge (attention, les cameras et plateformes supplémentaires doivent toujours scanner le PIN)
+- Plus jolie config
+- Afficher une erreur si l'adresse interne est en https
+- Mise à jour de Homebridge en 0.4.32 et HAP-Nodejs en 0.4.36
 
 v1.3.4 (29-11-2017)
 -------------------
-* Réécriture du mode de fonctionnement des thermostats, plus logique :)
-* Accessoire supplémentaire pour installer les plugin Homebridge qui ne publient qu'un accessoire
-* Mise à jour documentation.
-* Corrections de bugs
+- Réécriture du mode de fonctionnement des thermostats, plus logique :)
+- Accessoire supplémentaire pour installer les plugin Homebridge qui ne publient qu'un accessoire
+- Mise à jour documentation.
+- Corrections de bugs
 
 v1.3.3 (13-11-2017)
 -------------------
-* Modification documentation
-* Gestion des actions Ouvrir et Fermer pour les portes de garages.
-* DebugInfo affiche maintenant le log de création d'accessoires (si celui-ci n'est pas encore tronqué)
+- Modification documentation
+- Gestion des actions Ouvrir et Fermer pour les portes de garages.
+- DebugInfo affiche maintenant le log de création d'accessoires (si celui-ci n'est pas encore tronqué)
 
 v1.3.2 (09 et 10 et 12-11-2017)
 ---------------------
-* Fichier fusionné pour la doc
-* Autre bug sur Inversion corrigé
-* Bug Siri "Ouvre tous les volets du salon" corrigé
-* Meilleure réparation et réinstallation
-* Documentation corrigée
+- Fichier fusionné pour la doc
+- Autre bug sur Inversion corrigé
+- Bug Siri "Ouvre tous les volets du salon" corrigé
+- Meilleure réparation et réinstallation
+- Documentation corrigée
 
 v1.3.1 (31-10-2017)
 ---------------
-* Bug invertBinary sur présence sans inversion
-* Mise à jour documentation
-* Compatibilité Serrure Nuki
+- Bug invertBinary sur présence sans inversion
+- Mise à jour documentation
+- Compatibilité Serrure Nuki
 
 v1.3 (30-10-2017)
 ------------------
-* Plugin séparé du plugin App Mobile.
-* Récupération de la configuration du plugin App Mobile s'il est installé.
-* Meilleure réparation et installation plus poussée pour éviter des problèmes divers.
-* Documentation complètement réécrite et adaptée par @bphoque, près de 60 pages A4 !!!
-* Type "Info/Générique" supporté pour les infos Jeedom de type Numérique, Binaire, Autre dans l'application Eve uniquement (pas encore disponnible dans "Maison").
+- Plugin séparé du plugin App Mobile.
+- Récupération de la configuration du plugin App Mobile s'il est installé.
+- Meilleure réparation et installation plus poussée pour éviter des problèmes divers.
+- Documentation complètement réécrite et adaptée par @bphoque, près de 60 pages A4 !!!
+- Type "Info/Générique" supporté pour les infos Jeedom de type Numérique, Binaire, Autre dans l'application Eve uniquement (pas encore disponnible dans "Maison").
 
 >Ne pas modifier ce type dans Jeedom pendant que Homebridge fonctionne
 
-* Les types génériques "Info/Choc", "Info/Vent (direction)", "Info/Vent (vitesse)", "Info/Pluie (mm/h)", "Info/Pluie (accumulation)", "Info/Pression", "Info/Son (dB)" sont gérés comme des "Info/Générique" et affichés dans Eve.
-* Lumières : Fonctionnement est corrigé pour certains plugins (voir annonce forum)
+- Les types génériques "Info/Choc", "Info/Vent (direction)", "Info/Vent (vitesse)", "Info/Pluie (mm/h)", "Info/Pluie (accumulation)", "Info/Pression", "Info/Son (dB)" sont gérés comme des "Info/Générique" et affichés dans Eve.
+- Lumières : Fonctionnement est corrigé pour certains plugins (voir annonce forum)
 > Si vous aviez un pont Philips Hue v1, vous avez maintenant accès à HomeKit.
-* Alarme : les modes sont liables aux modes imposés d'HomeKit : Absent, Nuit, Présent, Désactivé. Fonctionne en consultation ET action.
-* Thermostat : (Fonctionne mieux dans Eve) : Température de consigne fonctionne, les modes peuvent être liés aux modes imposés d'HomeKit : Chauf., Clim.. L'asservissement se faisant dans Jeedom, le mode auto ne sert à rien dans HomeKit. Le statut est dans un champ générique (visible dans Eve) (cette façon de faire permet de lier les modes et d'avoir une fonctionnalité supplémentaire au lieu  de simplement vous montrer que votre chauffage chauffe). Le verrouillage apparait aussi dans Eve.
-* Nouveau design du plugin, simplification, plus besoin de choisir les plugins qui seront envoyés à Homebridge, le choix est maintenant par équipement.
-* Fenêtre "DebugInfo" (en niveau de log "info" ou "debug") pour donner des éléments importants de votre configuration en cas de demande d'aide sur le forum (à la demande).
-* Périphériques invisibles ajoutés à Homebridge, tant que "Envoyer dans Homebridge" est coché.
-* Temporisation des Slider des lumières et des volets et volumes, sinon toutes les valeurs sont envoyées à Jeedom, maintenant elles ne le sont que si le slider dans Maison ne bouge plus depuis 500ms.
-* Type Générique officiel Sabotage supporté (binaire).
-* Possibilité de personnaliser les états des Portes de Garage (Ouvert (255), En Ouverture (254), Stopé (253), En Fermeture (252), Fermé (0)) avec d'autres valeurs.
-* Les types spécifiques à Homebridge : j'ai maintenant la possibilité de créer des types spécifiques pour Homebridge, ceux-ci ne font pas partie du core (comme les types génériques) mais les complètent. Il faut néanmoins les définir manuellement dans le plugin (les types génériques restent utilisés principalement, ces types sont un ajout pour les types génériques qui n'existent pas).
-* Nouveaux types spécifiques à Homebridge : 
-    * Status Defectueux (binaire : 0:non/ 1:oui -> peut-être mappé à un binaire représentant par exemple un lien mort chez Z-Wave) .
-    * Status Actif (binaire : 0:non/ 1:oui -> peut-etre mappé au status "online" d'une Xiaomi Yeelight par exemple).
-* Haut-parleurs, il devrait fonctionner automatiquement avec le plugin Sonos par exemple (à tester), les types sont : 
-    * Info/Haut-parleur Mute (binaire)
-    * Info/Haut-parleur Volume (pourcentage)
-    * Action/Haut-parleur Mute
-    * Action/Haut-parleur Unmute
-    * Action/Haut-parleur Toggle Mute (soit Toggle soit Mute/Unmute, les deux choix sont possibles séparément)
-    * Action/Haut-parleur Volume (typiquement un slider)
+- Alarme : les modes sont liables aux modes imposés d'HomeKit : Absent, Nuit, Présent, Désactivé. Fonctionne en consultation ET action.
+- Thermostat : (Fonctionne mieux dans Eve) : Température de consigne fonctionne, les modes peuvent être liés aux modes imposés d'HomeKit : Chauf., Clim.. L'asservissement se faisant dans Jeedom, le mode auto ne sert à rien dans HomeKit. Le statut est dans un champ générique (visible dans Eve) (cette façon de faire permet de lier les modes et d'avoir une fonctionnalité supplémentaire au lieu  de simplement vous montrer que votre chauffage chauffe). Le verrouillage apparait aussi dans Eve.
+- Nouveau design du plugin, simplification, plus besoin de choisir les plugins qui seront envoyés à Homebridge, le choix est maintenant par équipement.
+- Fenêtre "DebugInfo" (en niveau de log "info" ou "debug") pour donner des éléments importants de votre configuration en cas de demande d'aide sur le forum (à la demande).
+- Périphériques invisibles ajoutés à Homebridge, tant que "Envoyer dans Homebridge" est coché.
+- Temporisation des Slider des lumières et des volets et volumes, sinon toutes les valeurs sont envoyées à Jeedom, maintenant elles ne le sont que si le slider dans Maison ne bouge plus depuis 500ms.
+- Type Générique officiel Sabotage supporté (binaire).
+- Possibilité de personnaliser les états des Portes de Garage (Ouvert (255), En Ouverture (254), Stopé (253), En Fermeture (252), Fermé (0)) avec d'autres valeurs.
+- Les types spécifiques à Homebridge : j'ai maintenant la possibilité de créer des types spécifiques pour Homebridge, ceux-ci ne font pas partie du core (comme les types génériques) mais les complètent. Il faut néanmoins les définir manuellement dans le plugin (les types génériques restent utilisés principalement, ces types sont un ajout pour les types génériques qui n'existent pas).
+- Nouveaux types spécifiques à Homebridge : 
+    - Status Defectueux (binaire : 0:non/ 1:oui -> peut-être mappé à un binaire représentant par exemple un lien mort chez Z-Wave) .
+    - Status Actif (binaire : 0:non/ 1:oui -> peut-etre mappé au status "online" d'une Xiaomi Yeelight par exemple).
+- Haut-parleurs, il devrait fonctionner automatiquement avec le plugin Sonos par exemple (à tester), les types sont : 
+    - Info/Haut-parleur Mute (binaire)
+    - Info/Haut-parleur Volume (pourcentage)
+    - Action/Haut-parleur Mute
+    - Action/Haut-parleur Unmute
+    - Action/Haut-parleur Toggle Mute (soit Toggle soit Mute/Unmute, les deux choix sont possibles séparément)
+    - Action/Haut-parleur Volume (typiquement un slider)
 
 >Info/Haut-parleur Mute est obligatoire, c'est étrange mais c'est une obligation coté HomeKit.
 
 v1.2.1
 --------
-* Bugfix : capteurs Fenêtres
-* Bugfix : volets Somfy
-* Bugfix : Consommation Electrique qui bug sur composants Z-Wave
-* Bugfix : En chargement pour périf avec batterie
+- Bugfix : capteurs Fenêtres
+- Bugfix : volets Somfy
+- Bugfix : Consommation Electrique qui bug sur composants Z-Wave
+- Bugfix : En chargement pour périf avec batterie
 
 v1.2.0
 -------
-* Realease Stable
+- Realease Stable
 
 v1.1.4
 ----
-* Bugfix : unregister Accessories si on a une erreur
-* Update Homebridge & HAP-NodeJS
-* Bugfix : Temperature isNaN -> 0
-* pré-support Sabotage
-* Bugfix : Interdire une valeur Null ou Undefined d'être envoyée à HomeKit
+- Bugfix : unregister Accessories si on a une erreur
+- Update Homebridge & HAP-NodeJS
+- Bugfix : Temperature isNaN -> 0
+- pré-support Sabotage
+- Bugfix : Interdire une valeur Null ou Undefined d'être envoyée à HomeKit
     
 v1.1.2
 ----
-* Support basique Alarme : besoin d'une config coté plugin pour mapper les modes NUIT, ABSENT, PRESENT avec des ALARM_SET_MODE Jeedom
+- Support basique Alarme : besoin d'une config coté plugin pour mapper les modes NUIT, ABSENT, PRESENT avec des ALARM_SET_MODE Jeedom
     
 v1.1.1
 --------
-* Bugfix : Restauration des valeurs en cache au redémarrage
-* Bugfix : Bornage des valeurs du détecteur de lumière
+- Bugfix : Restauration des valeurs en cache au redémarrage
+- Bugfix : Bornage des valeurs du détecteur de lumière
 
 v1.1.0
 --------
-* Support des Plateformes Homebridge en mode expert (Cameras, autre...)
-* Documentation code
-* Freeze des fonctionnalités, debugging à faire en vue de version stable
+- Support des Plateformes Homebridge en mode expert (Cameras, autre...)
+- Documentation code
+- Freeze des fonctionnalités, debugging à faire en vue de version stable
 
 v1.0.27
 ---------
-* Simplifié l'ajout/suppression des services
-* Commencé à résoudre les problèmes LightBulbs mais pas terminé
+- Simplifié l'ajout/suppression des services
+- Commencé à résoudre les problèmes LightBulbs mais pas terminé
 
 v1.0.26
 ----------
-* Gestion pourcentage batterie via le type générique "BATTERY"
-* Si < 20% on set un flag "LowBattery" dans Homekit pour afficher dans Maison/Eve/...
-* Gestion du "charge en cours" définit sur "non chargeable" pour l'instant car il faut voir comment on gère ca coté Jeedom
+- Gestion pourcentage batterie via le type générique "BATTERY"
+- Si < 20% on set un flag "LowBattery" dans Homekit pour afficher dans Maison/Eve/...
+- Gestion du "charge en cours" définit sur "non chargeable" pour l'instant car il faut voir comment on gère ca coté Jeedom
 
 v1.0.25 
 --------
-* Nettoyage du code et simplification
-* Meilleure gestion des services en cas de modification de ceux-ci (modification des types génériques)
+- Nettoyage du code et simplification
+- Meilleure gestion des services en cas de modification de ceux-ci (modification des types génériques)
 
 v1.0.24
 ----------
-* Optimisation (on break les boucles si on a trouvé l'élément, plus rapide sur les grosses installations)
+- Optimisation (on break les boucles si on a trouvé l'élément, plus rapide sur les grosses installations)
 
 v1.0.23
 --------
-* si un volet est ouvert à 95% afficher 100% dans Maison (usure mécanique, recalibration)
+- si un volet est ouvert à 95% afficher 100% dans Maison (usure mécanique, recalibration)
 
 v1.0.22
 --------
-* Préparation des Sonnettes en prévision du support dans HomeKit par Apple
+- Préparation des Sonnettes en prévision du support dans HomeKit par Apple
 
 v1.0.21
 ----------
-* Corrigé la gestion des Serrures, elles fonctionnent
+- Corrigé la gestion des Serrures, elles fonctionnent
 *!!! si vous utilisez un iPad comme concentrateur HomeKit, pensez a désactiver Siri pour éviter à qqun de crier "siri ouvre la porte d'entrée" par la boite aux lettres (c'est arrivé !) !!!*
 
 v1.0.20
 -------
-* Logs plus clairs et plus de verbosité sur la création des Characteristics
+- Logs plus clairs et plus de verbosité sur la création des Characteristics
 
 v1.0.19
 ---------
-* Support pour les portes de garage/barrières, N'utiliser que BARRIER_STATE ou GARAGE_STATE (même traitement, états 255,254,253,252,0) et GB_TOGGLE
+- Support pour les portes de garage/barrières, N'utiliser que BARRIER_STATE ou GARAGE_STATE (même traitement, états 255,254,253,252,0) et GB_TOGGLE
 
 v1.0.18
 --------
-* Combiné les types OPENING et OPENING_WINDOW car c'est un même type dans Homebridge.
-* Ajout du Model (nom du type de l'eqLogic) et du Serial Number (id de l'objet + id logique) dans Homebridge.
+- Combiné les types OPENING et OPENING_WINDOW car c'est un même type dans Homebridge.
+- Ajout du Model (nom du type de l'eqLogic) et du Serial Number (id de l'objet + id logique) dans Homebridge.
 
 v1.0.17
 --------
-* Prise en charge du niveau de debug du plugin App Mobile (il faut sauver le niveau et relancer le demon pour prise en charge)
-* Simplification du code (retiré des choses inutiles comme la création d'un serveur http)
+- Prise en charge du niveau de debug du plugin App Mobile (il faut sauver le niveau et relancer le demon pour prise en charge)
+- Simplification du code (retiré des choses inutiles comme la création d'un serveur http)
 
 v1.0.16
 --------
-* activation d'un mode debug dans la plateforme, il sera lié au status du plugin.
-* Francisation des messages du log, plus de verbosité, plus de clareté et de détails pour encore mieux vous aider en cas de problème.
-* Modification des paramètres de composition des UUID, uniquement l'id Jeedom et le nom du périphérique (la pièce Jeedom entrait en considération).
+- activation d'un mode debug dans la plateforme, il sera lié au status du plugin.
+- Francisation des messages du log, plus de verbosité, plus de clareté et de détails pour encore mieux vous aider en cas de problème.
+- Modification des paramètres de composition des UUID, uniquement l'id Jeedom et le nom du périphérique (la pièce Jeedom entrait en considération).
 
 >Cela signifie qu'à l'installation de cette version, vos périphériques dans Maison vont disparaitre pour réapparaitre dans la pièce par défaut (et casser vos scènes et automations).
 
-    * Point positif : vous pouvez maintenant changer de pièce dans Jeedom les périphériques sans les perdre dans Maison. Malheureusement, ils ne changeront pas dans Maison (non-implémenté dans Homebridge).
-    * j'ai gardé le nom du périphérique pour l'instant dans l'identifiant car le renommage d'un périphérique dans Jeedom casserait tout dans Maison (pour l'instant) de toute façon.
-* Modification du délais d'interrogation-longue pour optimiser les systèmes avec moins de changements d'états.
-* Modification du modèle de fonctionnement. Maintenant on prend un état des périphérique au démarrage du plugin et on le met à jour en temps réel à chaque changement dans Jeedom ou Maison. Moins de requêtes sur l'API Jeedom, plus petits temps de réponse dans Maison.
-* Ajout d'un ramasse miettes à la fin de l'ajout des périphériques présent dans Jeedom à Homebridge, tout ce qui n'a pas été ajouté/modifié est supprimé d'Homebridge (si vous avez rendu invisible un périf ou supprimé dans Jeedom par exemple).
-* Suppression du bouton Regénérer le fichier de configuration : plus besoin, lorsqu'on sauvegarde la configuration, on regénère le fichier automatiquement et on relance le daemon.
-* Suppression du bouton Effacer le cache : plus besoin, on gère la suppression individuelle des périphériques. 
+    - Point positif : vous pouvez maintenant changer de pièce dans Jeedom les périphériques sans les perdre dans Maison. Malheureusement, ils ne changeront pas dans Maison (non-implémenté dans Homebridge).
+    - j'ai gardé le nom du périphérique pour l'instant dans l'identifiant car le renommage d'un périphérique dans Jeedom casserait tout dans Maison (pour l'instant) de toute façon.
+- Modification du délais d'interrogation-longue pour optimiser les systèmes avec moins de changements d'états.
+- Modification du modèle de fonctionnement. Maintenant on prend un état des périphérique au démarrage du plugin et on le met à jour en temps réel à chaque changement dans Jeedom ou Maison. Moins de requêtes sur l'API Jeedom, plus petits temps de réponse dans Maison.
+- Ajout d'un ramasse miettes à la fin de l'ajout des périphériques présent dans Jeedom à Homebridge, tout ce qui n'a pas été ajouté/modifié est supprimé d'Homebridge (si vous avez rendu invisible un périf ou supprimé dans Jeedom par exemple).
+- Suppression du bouton Regénérer le fichier de configuration : plus besoin, lorsqu'on sauvegarde la configuration, on regénère le fichier automatiquement et on relance le daemon.
+- Suppression du bouton Effacer le cache : plus besoin, on gère la suppression individuelle des périphériques. 
 
 >Si vous avez un problème avec un périphérique malgré tout : décochez "Envoyer à Homebridge" | relancez le daemon | décochez "Envoyer à Homebridge" | relancez le daemon : il sera recréé tout proprement (et dans la pièce par défaut de Maison).
 
-* Ajout d'avertissements et de messages d'attention si on s'approche du nombre fatidique de 100 accessoires envoyés dans Homebridge (HomeKit ne supporte pas plus de 100 accessoires).
-* Au démarrage du daemon, vérification si avahi-daemon et dbus sont bien lancés, sinon, les démarrer.
-* A l'install des dépendances, passer avahi-daemon et dbus à enabled si pas le cas.
-* Corrections diverses, simplifications et optimisations.
+- Ajout d'avertissements et de messages d'attention si on s'approche du nombre fatidique de 100 accessoires envoyés dans Homebridge (HomeKit ne supporte pas plus de 100 accessoires).
+- Au démarrage du daemon, vérification si avahi-daemon et dbus sont bien lancés, sinon, les démarrer.
+- A l'install des dépendances, passer avahi-daemon et dbus à enabled si pas le cas.
+- Corrections diverses, simplifications et optimisations.
     
 
