@@ -14,6 +14,9 @@ En beta
 - Plus d'informations sur le système quand on utilise l'icone "Communauté"
 - Si aucun utilisateur adéquat n'est trouvé pour homebridge, un est créé
 - Mise à jour traductions
+- Ajout des autres plugins qui pourraient utiliser les mêmes types génériques entre () dans le plugin (par ex Jeemate, FreeboxOS etc)
+- installation de ffmpeg-for-homebridge séparément de homebridge-camera-ffmpeg
+- Utilisation forcée de ffmpeg-for-homebridge (si rpi) comme videoProcessor de homebridge-camera-ffmpeg
 
 12-09-2024
 -------------
