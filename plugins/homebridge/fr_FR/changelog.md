@@ -9,7 +9,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
-En beta
+24-09-2024
 --------
 - Plus d'informations sur le système quand on utilise l'icone "Communauté"
 - Si aucun utilisateur adéquat n'est trouvé pour homebridge, un est créé
