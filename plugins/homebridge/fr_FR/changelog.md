@@ -16,7 +16,7 @@ En beta
 - Mise à jour traductions
 - Ajout des autres plugins qui pourraient utiliser les mêmes types génériques entre () dans le plugin (par ex Jeemate, FreeboxOS etc)
 - Installation de ffmpeg-for-homebridge séparément de homebridge-camera-ffmpeg (sinon bizarrement il installe pas sa version spéciale de ffmpeg ?!)
-- Utilisation forcée de ffmpeg-for-homebridge (si rpi) comme videoProcessor de homebridge-camera-ffmpeg
+- Utilisation forcée de ffmpeg-for-homebridge comme videoProcessor de homebridge-camera-ffmpeg
 
 12-09-2024
 -------------
