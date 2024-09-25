@@ -9,6 +9,11 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+25-09-2024
+----------
+- Retrait de OMX car déprécié, il y a plus que V4L (sur RPI)
+- Correction d'un bug qui empêchait la mise à jour de la liste des plugins pour homebridge installés s'il y a une mise à jour npm en attente
+
 24-09-2024
 --------
 - Plus d'informations sur le système quand on utilise l'icone "Communauté"
