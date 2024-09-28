@@ -6,6 +6,9 @@ description: Changelog du plugin HomeWizard Energy
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4
 
+# 2024-09-28
+- Correction d'une mauvaise detection des Compteurs 1 et 3 phases
+
 # 2024-09-12
 - Migration vers NodeJS 20
 
