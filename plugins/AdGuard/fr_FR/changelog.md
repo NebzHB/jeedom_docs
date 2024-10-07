@@ -8,6 +8,9 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## 07-10-2024
+- Ajout Bouton Communauté pour obtenir une aide plus façilement
+
 ## 12-08-2024
 - Traductions et mise à jour des traductions en Anglais, Allemand, Espagnol, Italien, Portugais
 
