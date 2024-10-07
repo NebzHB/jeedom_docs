@@ -8,6 +8,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## 07-10-2024
+
+* Ajout Bouton Communauté pour obtenir une aide plus façilement
+
 ## 12-09-2024
 
 * Migration vers NodeJS 20
