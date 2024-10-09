@@ -9,6 +9,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+09-10-2024
+----------
+* Ajout de l'option "Inverser" sur les binaires.
+
 07-10-2024
 ----------
 * Ajout Bouton Communauté pour obtenir une aide plus façilement
