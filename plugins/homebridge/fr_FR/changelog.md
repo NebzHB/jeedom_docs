@@ -9,6 +9,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+En Beta
+----------
+- Homebridge 1.8.5
+
 25-09-2024
 ----------
 - Retrait de OMX car déprécié, il y a plus que V4L (sur RPI)
