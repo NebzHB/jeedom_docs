@@ -8,6 +8,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## 27-10-2024
+
+* Ajout de l'évènement : evt_gw_wantransition (Gateway Transition WAN) qui permet de savoir si on est passé sur le WAN secondaire.
+
 ## 07-10-2024
 
 * Ajout Bouton Communauté pour obtenir une aide plus façilement
