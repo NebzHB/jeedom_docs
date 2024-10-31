@@ -9,6 +9,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+31-10-2024
+----------
+* Mise à jour de la librairie homekit : permet d'installer le plugin sur docker sans problème (ou sur LXC).
+
 09-10-2024
 ----------
 * Ajout de l'option "Inverser" sur les binaires.
