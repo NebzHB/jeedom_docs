@@ -8,6 +8,9 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## 05-11-2024
+- Mise à jour de la lib pyatv
+
 ## 06-10-2024
 - Forcer la réinstallation du venv pour le problème chacha
 - retiré un warning en php 8
