@@ -9,9 +9,9 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
-En Beta
+06-11-2024
 ----------
-- Homebridge 1.8.5
+- Homebridge 1.8.5 : aucun changement notable
 
 25-09-2024
 ----------
