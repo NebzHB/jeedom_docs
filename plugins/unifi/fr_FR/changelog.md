@@ -8,6 +8,11 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## 08-11-2024
+
+* Correction warning uxg et warning name
+* Indentation des Objets pour la pièce par défaut dans la configuration du plugin
+
 ## 27-10-2024
 
 * Ajout de l'évènement : evt_gw_wantransition (Gateway Transition WAN) qui permet de savoir si on est passé sur le WAN secondaire.
