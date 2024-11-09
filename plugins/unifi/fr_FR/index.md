@@ -142,6 +142,15 @@ Exemple
 
 ![image](https://github.com/NebzHB/jeedom_docs/assets/28622481/8ede1182-8abf-4eb5-af4a-adafd3505ce2)
 
+> Pour le champ msg, vous pouvez passer par une variable qui supporte beaucoup mieux le contenu JSON et les guillemets
+
+![image](https://github.com/user-attachments/assets/6f9ad369-7d1c-434c-8431-fde52d9f1f65)
+
+![image](https://github.com/user-attachments/assets/4b2ff860-6ca4-4b45-a167-29475085482e)
+
+![image](https://github.com/user-attachments/assets/927051a7-195a-45dc-a7e6-be458b3802a8)
+
+
 
 Astuces & FAQ
 =============
