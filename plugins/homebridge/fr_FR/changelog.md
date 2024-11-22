@@ -9,6 +9,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+22-11-2024 - Dépendances seulement
+----------
+- Correction pour le type générique "Fuite D'eau" pour qu'il fonctionne comme "Innondation"
+
 06-11-2024
 ----------
 - Homebridge 1.8.5 : aucun changement notable
