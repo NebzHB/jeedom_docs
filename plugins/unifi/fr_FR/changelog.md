@@ -8,6 +8,16 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## En Beta (Merci à @tomitomas)
+
+* Correction présence dans page santé si pas de données de présence.
+* Correction d'un warning si on a pas renommé un routeur.
+* Commande de création des vouchers dans le site.
+* Gestion des automatisations évènements pour l'evenement de création des vouchers via Jeedom.
+* Correction pour le champ msg des evenements de connexion wifi pour qu'il passe sur le tag #msg#.
+* Ajout de la source Unifi sur les actions à lancer dans les automatisations d'évènements.
+* Possibilité d'activer/désactiver une action d'automatisation d'évènements.
+
 ## 08-11-2024
 
 * Correction warning uxg et warning name
