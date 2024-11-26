@@ -8,7 +8,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
-## En Beta (Merci à @tomitomas)
+## 27-11-2024 (Merci à @tomitomas)
 
 * Correction présence dans page santé si pas de données de présence.
 * Correction d'un warning si on a pas renommé un routeur.
