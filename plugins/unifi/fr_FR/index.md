@@ -162,22 +162,23 @@ Vous pouvez ensuite récupérer l'évènement via l'automatisations des évènem
 
 Voici un exemple d'event que vous recevez suite à cette commande : 
 ```
+DEBUG  : Génération nouvel Event "custom.voucher_created_from_jeedom" : 
 {
-	"duration": 1440,
-	"qos_overwrite": false,
-	"note": "24hVoucher",
-	"code": "38523-67242",
-	"for_hotspot": false,
-	"create_time": 1739698999,
-	"quota": 1,
-	"site_id": "abcdefghijklmnopqrstuvwxyz",
-	"_id": "2245cfc04f4f2735491ae3b1",
-	"admin_name": "unifiAdmin",
-	"used": 0,
-	"status": "VALID_ONE",
-	"status_expires": 0
+    "duration": 1440,
+    "qos_overwrite": false,
+    "note": "24hVoucher",
+    "code": "38523-67242",
+    "for_hotspot": false,
+    "create_time": 1739698999,
+    "quota": 1,
+    "site_id": "abcdefghijklmnopqrstuvwxyz",
+    "_id": "2245cfc04f4f2735491aa6b2",
+    "admin_name": "jeedom",
+    "used": 0,
+    "status": "VALID_ONE",
+    "status_expires": 0,
+    "jeedomUser": "Nebz"
 }
-
 ```
 
 
