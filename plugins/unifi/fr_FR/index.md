@@ -154,6 +154,8 @@ Exemple
 
 ![image](https://github.com/user-attachments/assets/e7d67f37-47a4-4b64-abd8-92f9de45d072)
 
+![image](https://github.com/user-attachments/assets/4559f655-c563-4c40-b1c8-36b62a89329a)
+
 Vous pouvez ensuite récupérer l'évènement via l'automatisations des évènements sur le même site :
 
 ![image](https://github.com/user-attachments/assets/3c748ab3-9123-4e24-8f84-509433e99270)
