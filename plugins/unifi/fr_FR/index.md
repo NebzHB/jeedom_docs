@@ -150,7 +150,7 @@ Exemple
 
 ![image](https://github.com/user-attachments/assets/927051a7-195a-45dc-a7e6-be458b3802a8)
 
-> Exemple pour gérer les Vouchers, Dans le site, vous avez une commande "Creation Voucher"
+> Exemple pour gérer les Vouchers, Dans le site, vous avez une commande "Créer un Voucher"
 
 ![image](https://github.com/user-attachments/assets/e7d67f37-47a4-4b64-abd8-92f9de45d072)
 
