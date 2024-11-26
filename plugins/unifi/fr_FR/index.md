@@ -156,7 +156,7 @@ Exemple
 
 Vous pouvez ensuite récupérer l'évènement via l'automatisations des évènements sur le même site :
 
-![image](https://github.com/user-attachments/assets/65dca199-6382-44af-9f7f-9124c73c0680)
+![image](https://github.com/user-attachments/assets/3c748ab3-9123-4e24-8f84-509433e99270)
 
 Voici un exemple d'event que vous recevez suite à cette commande : 
 ```
