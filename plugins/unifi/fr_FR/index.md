@@ -161,6 +161,7 @@ Vous pouvez ensuite récupérer l'évènement via l'automatisations des évènem
 ![image](https://github.com/user-attachments/assets/3c748ab3-9123-4e24-8f84-509433e99270)
 
 Voici un exemple d'event que vous recevez suite à cette commande : 
+
 ```
 DEBUG  : Génération nouvel Event "custom.voucher_created_from_jeedom" : 
 {
