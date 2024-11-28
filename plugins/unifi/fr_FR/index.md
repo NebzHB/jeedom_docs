@@ -167,7 +167,7 @@ DEBUG  : Génération nouvel Event "custom.voucher_created_from_jeedom" :
 {
     "duration": 1440,
     "qos_overwrite": false,
-    "note": "24hVoucher",
+    "name": "24hVoucher",
     "code": "38523-67242",
     "for_hotspot": false,
     "create_time": 1739698999,
