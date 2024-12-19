@@ -1,12 +1,20 @@
 ---
 layout: default
 lang: fr_FR
-title: Plugin Unifi - Changelog
-description: Changelog du plugin Unifi
+title: Plugin UniFi - Changelog
+description: Changelog du plugin UniFi
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4.x
 
 # Changelog
+
+## 19-12-2024
+
+* Correction ip pour UDM qui affichait l'ip publique plutot que la privée
+* Support et image pour les Dream Wall, Cloud Gateway Max, Cloud Gateway Ultra et UniFi Express
+* Renommé Unifi en UniFi partout
+* Obfuscation des mots de passes des devices avant d'envoyer à jeedom (x_authkey,guest_token,x_adopt_password,x_adopt_username)
+* Mise à jour Axios
 
 ## 27-11-2024 (Merci à @tomitomas)
 
