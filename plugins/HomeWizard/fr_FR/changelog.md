@@ -14,6 +14,9 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 - Mise à jour dernière version d'Axios
 - Début de la préparation pour l'API v2 qui est encore en beta et en cours de développement chez HomeWizard (très impatient, car elle devrait permettre de s'affranchir du polling et de recevoir les changements directement en websocket :)), qui plus est, elle devrait aussi permettre de gérer l'écran !!!
 
+![image](https://github.com/user-attachments/assets/b1029333-9984-4f1e-be2b-edec6a60df61)
+
+
 # 2024-09-28
 - Correction d'une mauvaise detection des Compteurs 1 et 3 phases
 
