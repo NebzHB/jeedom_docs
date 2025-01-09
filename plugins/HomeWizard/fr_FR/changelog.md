@@ -6,6 +6,14 @@ description: Changelog du plugin HomeWizard Energy
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4
 
+# 2025-01-09
+- Ajout du pid du démon dans le fichier daemon.pid dans le dossier temp du plugin
+- Modification des traductions
+- Meilleure gestion des coupures d'équipement, si l'équipement perd le wifi et revient il se réannonce sur mdns et on recrée proprement le lien sans doublon.
+- Gestion du changement d'ip d'un équipement même s'il est conseillé de fixer l'ip dans votre DHCP
+- Mise à jour dernière version d'Axios
+- Début de la préparation pour l'API v2 qui est encore en beta et en cours de développement chez HomeWizard (très impatient, car elle devrait permettre de s'affranchir du polling et de recevoir les changements directement en websocket :)), qui plus est, elle devrait aussi permettre de gérer l'écran !!!
+
 # 2024-09-28
 - Correction d'une mauvaise detection des Compteurs 1 et 3 phases
 
