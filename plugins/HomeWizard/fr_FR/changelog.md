@@ -12,7 +12,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 - Meilleure gestion des coupures d'équipement, si l'équipement perd le wifi et revient il se réannonce sur mdns et on recrée proprement le lien sans doublon.
 - Gestion du changement d'ip d'un équipement même s'il est conseillé de fixer l'ip dans votre DHCP
 - Mise à jour dernière version d'Axios
-- Début de la préparation pour l'API v2 qui est encore en beta et en cours de développement chez HomeWizard (très impatient, car elle devrait permettre de s'affranchir du polling et de recevoir les changements directement en websocket :)), qui plus est, elle devrait aussi permettre de gérer l'écran Energy Display !!! par contre il faudra faire un appairage avec le bouton présent sur l'équipement, donc je vous proposerai une migration manuelle vers la nouvelle API v2.
+- Début de la préparation pour l'API v2 qui est encore en beta et en cours de développement chez HomeWizard (très impatient, car elle devrait permettre de s'affranchir du polling et de recevoir les changements directement en websocket :)), qui plus est, elle devrait aussi permettre de gérer l'écran Energy Display !!! par contre il faudra faire un appairage en deux étapes avec le bouton présent sur l'équipement, donc je vous proposerai une migration manuelle vers la nouvelle API v2.
 
 ![image](https://github.com/user-attachments/assets/b1029333-9984-4f1e-be2b-edec6a60df61)
 
