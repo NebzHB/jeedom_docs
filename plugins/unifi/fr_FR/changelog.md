@@ -8,6 +8,12 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## En Beta
+
+* Correction d'un warning php
+* Retiré les portconf_id qui ont disparu du controleur -> correction d'erreurs de la commande port_poe
+* Simplification des fonctions de recherche d'équipement sur la page des équipements
+
 ## 19-12-2024
 
 * Correction ip pour UDM qui affichait l'ip publique plutot que la privée
