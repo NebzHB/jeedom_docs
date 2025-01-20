@@ -54,9 +54,9 @@ commandes.
 
 Une fois AdGuard Home ajouté et sauvegarde de l'équipement, les clients trouvés dans AdGuard Home sont ajoutés en tant qu'équipements séparés.
 
-Si vous **ajoutez un client** par la suite, il sera ajouté **automatiquement de la nuit**, pour forcer son ajout dans jeedom, **re-sauvegardez l'équipement AdGuard Home**.
+Si vous **ajoutez un client** par la suite, il sera ajouté **automatiquement pendant la nuit**, pour forcer son ajout dans jeedom, **re-sauvegardez l'équipement AdGuard Home**.
 
-Si vous **retirez un client** par la suite, il sera désactivé **automatiquement de la nuit**, pour forcer sa désactivation dans jeedom, **re-sauvegardez l'équipement AdGuard Home**.
+Si vous **retirez un client** par la suite, il sera désactivé **automatiquement pendant la nuit**, pour forcer sa désactivation dans jeedom, **re-sauvegardez l'équipement AdGuard Home**.
 
 > NB : Un équipement de type **Client**, doit être **désactivé pour être supprimable**.
 
