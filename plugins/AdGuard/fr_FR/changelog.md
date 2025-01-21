@@ -8,6 +8,11 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## En Beta
+- Traduction des noms des commandes
+- Correction d'un warning php si pas de user rules
+- (Merci @TomiTomas) : Ajout du temps de désactivation de la protection (comme dans AdGuardHome)
+
 ## 07-10-2024
 - Ajout Bouton Communauté pour obtenir une aide plus façilement
 
