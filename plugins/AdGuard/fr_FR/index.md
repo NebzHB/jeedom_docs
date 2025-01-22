@@ -73,6 +73,8 @@ Protection Globale
 - **Activer la protection** : Action permettant d'activer la protection globale
 - **Désactiver la protection** : Action permettant de désactiver la protection globale
 
+> Nouveau, vous pouvez maintenant modifier la durée pendant laquelle la protection est désactivée (comme dans l'interface AdGuardHome)
+
 **Correspondance AdGuard** :
 
 ![image](https://user-images.githubusercontent.com/28622481/133206289-810d7a4d-9705-4923-9831-e8e78100f05b.png)
