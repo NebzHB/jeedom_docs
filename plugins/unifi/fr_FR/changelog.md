@@ -13,6 +13,9 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 * Correction d'un warning php
 * Retiré les portconf_id qui ont disparu du controleur -> correction d'erreurs de la commande port_poe
 * Simplification des fonctions de recherche d'équipement sur la page des équipements
+* Gestion de la LED sur les Points d'Accès. (Allumé, Éteint, valeur du site)
+* On ne réapplique plus les Types Génériques à chaque synchronisation. (On peut donc maintenant les modifier longuement, il ne sont plus remis par le plugin)
+* Renommage de certaines actions qui commencent par "Bouton" retiré le mot Bouton. (Nécessite la suppression/resynchronisation de l'équipement pour être appliqué).
 
 ## 19-12-2024
 
