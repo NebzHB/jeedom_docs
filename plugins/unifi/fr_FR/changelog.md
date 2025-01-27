@@ -16,6 +16,8 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 * Gestion de la LED sur les Points d'Accès. (Allumé, Éteint, valeur du site)
 * On ne réapplique plus les Types Génériques à chaque synchronisation. (On peut donc maintenant les modifier longuement, il ne sont plus remis par le plugin)
 * Renommage de certaines actions qui commencent par "Bouton" retiré le mot Bouton. (Nécessite la suppression/resynchronisation de l'équipement pour être appliqué).
+* Ajout pour les switchs et UDM qui le supportent de la puissance active des ports POE et de la puissance totale.
+* Configuration de l'historique sur les nouvelles commandes créées.
 
 ## 19-12-2024
 
