@@ -12,7 +12,7 @@ Changelog
 27-01-2024
 ----------
 - Nouvelle version en urgence. Homebridge-camera-ffmpeg a sortir une version 4 cette nuit qui force les caméras a être en "unbridged" mode (ça veut dire qu'il faut ajouter les cameras manuellement une par une à Maison).
-- Cette version gardera la version 3.1.4 de Homebridge-camera-ffmpeg tant que vous n'avez pas accepté la fenêtre qui s'ouvre dans la configuration de homebridge (et donc fait le nécessaire coté maison)
+- Cette version gardera la version 3.1.4 de Homebridge-camera-ffmpeg tant que vous n'avez pas accepté la fenêtre qui s'ouvre dans la configuration de homebridge (et donc fait le nécessaire coté json et maison)
 
 22-11-2024 - Dépendances seulement
 ----------
