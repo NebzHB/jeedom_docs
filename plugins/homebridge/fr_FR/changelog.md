@@ -9,6 +9,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+En Beta
+----------
+- Homebridge-camera-ffmpeg en v4 SI vous avez accepté la fenêtre qui s'ouvre dans la configuration de homebridge (et donc fait le nécessaire coté json et Maison) (modification de la source d'installation)
+
 27-01-2025
 ----------
 - Nouvelle version en urgence. Homebridge-camera-ffmpeg a sortir une version 4 cette nuit qui force les caméras a être en "unbridged" mode (ça veut dire qu'il faut ajouter les cameras manuellement une par une à Maison).
