@@ -8,7 +8,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
-## En Beta
+## 30-12-2025
 
 * Correction d'un warning php
 * Retiré les portconf_id qui ont disparu du controleur -> correction d'erreurs de la commande port_poe
