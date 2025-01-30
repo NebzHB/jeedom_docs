@@ -7,8 +7,7 @@ description: Changelog du plugin AdGuard Home
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4.x
 
 # Changelog
-
-## En Beta
+## 30-01-2025
 - Traduction des noms des commandes
 - Correction d'un warning php si pas de user rules
 - (Merci @TomiTomas) : Ajout du temps de désactivation de la protection (comme dans AdGuardHome)
