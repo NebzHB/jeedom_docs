@@ -18,6 +18,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 * Renommage de certaines actions qui commencent par "Bouton" retiré le mot Bouton. (Nécessite la suppression/resynchronisation de l'équipement pour être appliqué).
 * Ajout pour les switchs et UDM qui le supportent de la puissance active des ports POE et de la puissance totale.
 * Configuration de l'historique sur les nouvelles commandes créées.
+* Ajout des informations de WAN pour les UDM UXG UCG UGW (Up, Uptime, Downtime, Availability et Latency_average)
 
 ## 19-12-2024
 
