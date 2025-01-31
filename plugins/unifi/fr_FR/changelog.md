@@ -10,15 +10,17 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 ## 30-01-2025
 
-* Correction d'un warning php
-* Retiré les portconf_id qui ont disparu du controleur -> correction d'erreurs de la commande port_poe
-* Simplification des fonctions de recherche d'équipement sur la page des équipements
-* Gestion de la LED sur les Points d'Accès. (Allumé, Éteint, valeur du site)
-* On ne réapplique plus les Types Génériques à chaque synchronisation. (On peut donc maintenant les modifier longuement, il ne sont plus remis par le plugin)
-* Renommage de certaines actions qui commencent par "Bouton" retiré le mot Bouton. (Nécessite la suppression/resynchronisation de l'équipement pour être appliqué).
-* Ajout pour les switchs et UDM qui le supportent de la puissance active des ports POE et de la puissance totale.
-* Configuration de l'historique sur les nouvelles commandes créées.
 * Ajout des informations de WAN pour les UDM UXG UCG UGW (Up, Uptime, Downtime, Availability et Latency_average)
+* Ajout pour les switchs et UDM qui le supportent de la puissance active des ports POE et de la puissance totale.
+* Ajout de la gestion de la LED sur les Points d'Accès. (Allumé, Éteint, valeur du site)
+* Ajout : Configuration de l'historique sur les nouvelles commandes créées.
+* Modification : On ne réapplique plus les Types Génériques à chaque synchronisation. (On peut donc maintenant les modifier longuement, il ne sont plus remis par le plugin)
+* Modification : Retiré les portconf_id qui ont disparu du controleur
+* Modification : Simplification des fonctions de recherche d'équipement sur la page des équipements
+* Modification : Renommage de certaines actions qui commencent par "Bouton" retiré le mot Bouton. (Nécessite la suppression/resynchronisation de l'équipement pour être appliqué).
+* Correction d'erreurs de la commande port_poe
+* Correction d'un warning php
+
 
 ## 19-12-2024
 
