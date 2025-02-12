@@ -6,6 +6,12 @@ description: Changelog du plugin HomeWizard Energy
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4
 
+# 2025-02-12
+- Correction des unités pour le compteur d'eau
+- Correction d'un warning php
+- Correction pour isHistorized
+- Changement icone pomme pour éclair
+
 # 2025-01-09
 - Ajout du pid du démon dans le fichier daemon.pid dans le dossier temp du plugin
 - Modification des traductions
