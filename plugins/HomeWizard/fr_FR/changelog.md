@@ -6,7 +6,7 @@ description: Changelog du plugin HomeWizard Energy
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4
 
-# 2025-02-12
+# 2025-02-13
 - Correction des unités pour le compteur d'eau
 - Correction d'un warning php
 - Correction pour isHistorized
