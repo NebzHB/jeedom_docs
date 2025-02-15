@@ -64,7 +64,7 @@ Afin que votre équipement soit visible dans le plugin il est NECESSAIRE d'activ
 
 1. Ouvrez l'application HomeWizard sur votre téléphone
 2. En haut à droite appuyez sur l'engrenage
-3. Allez dans "Mesures"
+3. Allez dans "Mesures" (sur iOS) ou "Compteurs" (sur Android)
 4. Appuyez sur votre équipement
 5. Tout en bas dans les Paramètres, activez "API Locale"
 6. **Relancez le démon car l'activation/désactivation alors que le démon est lancé peut le planter**.
@@ -75,13 +75,13 @@ Afin que votre équipement soit visible dans le plugin il est NECESSAIRE d'activ
 **En attente de tests (mais devraient être fonctionnels)**
 ----------------------
 
--    Compteur d'eau (HWE-WTR) (Seulement si branché en USB) [https://www.homewizard.com/fr-be/boutique/compteur-deau-wi-fi/](https://www.homewizard.com/fr-be/boutique/compteur-deau-wi-fi/)
 -    Wi-Fi kWh Meter (1 phase) (HWE-KWH1) [https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-1-phase/](https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-1-phase/)
 -    Wi-Fi kWh Meter (3 phases) (HWE-KWH3) [https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-3-phases/](https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-3-phases/)
 
 **Compatibles**
 ---------------
 
+-    Compteur d'eau (HWE-WTR) (Seulement si branché en USB) [https://www.homewizard.com/fr-be/boutique/compteur-deau-wi-fi/](https://www.homewizard.com/fr-be/boutique/compteur-deau-wi-fi/)
 -    Compteur P1 (HWE-P1) [https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-p1/](https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-p1/)
 -    Prises connectées wifi (HWE-SKT) [https://www.homewizard.com/fr-be/boutique/energy-socket-wi-fi/](https://www.homewizard.com/fr-be/boutique/energy-socket-wi-fi/)
 
