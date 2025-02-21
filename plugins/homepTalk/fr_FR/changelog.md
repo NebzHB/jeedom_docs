@@ -9,6 +9,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+21-02-2025
+----------
+* Ajout reconnaissance Denon Home Sound Bar 550
+
 19-08-2024
 ----------
 * Traductions oubliées (onglet commandes)
