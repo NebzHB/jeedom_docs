@@ -9,9 +9,11 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
-En Beta
+21-02-2025
 ----------
+- Homebridge 1.9.0
 - Homebridge-camera-ffmpeg en v4 SI vous avez accepté la fenêtre qui s'ouvre dans la configuration de homebridge (et donc fait le nécessaire coté json et Maison) (modification de la source d'installation)
+- Meilleures traductions
 
 27-01-2025
 ----------
