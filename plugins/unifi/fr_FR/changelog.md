@@ -8,9 +8,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
-## En Beta
+## 21-02-2025
 
 * Suppression de la limite de 45 caractères (historique du core) pour les noms des commandes, le core gère maintenant correctement sa limite et tronque lui-même à la valeur qu'il supporte dans la db. (Ce n'était pas le cas à l'époque)
+* Correction de warnings dans certains cas
 
 ## 30-01-2025
 
