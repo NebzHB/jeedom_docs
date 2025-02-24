@@ -30,7 +30,8 @@ En cliquant sur un de vos équipements vous arrivez sur la page
 configuration de votre équipement comprenant 2 onglets, équipement et
 commandes.
 
--   **Onglet Equipement** :
+**Onglet Equipement** :
+-----------------------
 
 -   **Nom de l’équipement** : nom de votre équipement
 
@@ -55,7 +56,8 @@ Copiez le mot de passe caché par des hachures et collez-le dans le champ Apikey
 
 
 
--   **Onglet Commandes** :
+**Onglet Commandes** :
+----------------------
 
 -   Il existe de nombreuses commandes. Toutes ne sont pas affichées par défaut. Vous pouvez les renommer, les afficher ou non les réorganiser. 
 Vous pouvez aussi attribuer un widget au choix. Tout est standard.
