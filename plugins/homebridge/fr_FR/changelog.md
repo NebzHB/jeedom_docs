@@ -9,6 +9,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+26-02-2025
+----------
+- Retiré l'alerte sur jsonRPC qui serait activé ou pas dans jeedom puisque cette clé n'existe plus (aucune incidence sur le reste du plugin)
+
 21-02-2025
 ----------
 - Homebridge 1.9.0
