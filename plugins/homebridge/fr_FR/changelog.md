@@ -9,6 +9,11 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+24-03-2025
+----------
+- Suppression de l'analyse de gpu_mem dans /boot/config.txt pour les rpi 4+
+- Correction en préparation de Homebridge V2
+
 26-02-2025
 ----------
 - Retiré l'alerte sur jsonRPC qui serait activé ou pas dans jeedom puisque cette clé n'existe plus (aucune incidence sur le reste du plugin)
