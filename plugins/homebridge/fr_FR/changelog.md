@@ -9,7 +9,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
-07-04-2025
+07-04-2025 (dépendances seulement)
 ----------
 - Correction d'un problème de ExpressJS 5. (Breaking change, changing "query parser" to "extended")
 - Correction pour un crash si une couleur n'est pas une chaine de caractère (mauvais type générique appliqué)
