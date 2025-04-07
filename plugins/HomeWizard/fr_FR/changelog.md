@@ -6,13 +6,16 @@ description: Changelog du plugin HomeWizard Energy
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4
 
-# 2025-02-13
+# 07-04-2025
+- Correction d'un problème de ExpressJS 5. (Breaking change, changing "query parser" to "extended")
+
+# 13-02-2025
 - Correction des unités pour le compteur d'eau
 - Correction d'un warning php
 - Correction pour isHistorized
 - Changement icone pomme pour éclair
 
-# 2025-01-09
+# 09-01-2025
 - Ajout du pid du démon dans le fichier daemon.pid dans le dossier temp du plugin
 - Modification des traductions
 - Meilleure gestion des coupures d'équipement, si l'équipement perd le wifi et revient il se réannonce sur mdns et on recrée proprement le lien sans doublon.
@@ -23,26 +26,26 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 ![image](https://github.com/user-attachments/assets/b1029333-9984-4f1e-be2b-edec6a60df61)
 
 
-# 2024-09-28
+# 28-09-2024
 - Correction d'une mauvaise detection des Compteurs 1 et 3 phases
 
-# 2024-09-12
+# 12-09-2024
 - Migration vers NodeJS 20
 
-# 2024-09-10/11
+# 10-09-2024
 - Mise à jour pour autoriser les mises à jour en debian > 12.0
 
-# 2024-08-29
+# 29-08-2024
 - Jeedom 4.4 Obligatoire
 - Debian 11 Obligatoire
 
-# 2024-08-12
+# 12-08-2024
 - Ajout de logs
 - Correction d'une erreur en anglais
 - Traductions et mise à jour des traductions en Anglais, Allemand, Espagnol, Italien, Portugais
 
-# 2024-08-08
+# 08-08-2024
 - Traduction du plugin en anglais
 
-# 2024-08
+# 08-2024
 - Version initiale
