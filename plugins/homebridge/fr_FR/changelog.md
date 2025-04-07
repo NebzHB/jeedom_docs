@@ -9,6 +9,11 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+07-04-2025
+----------
+- Correction d'un problème de ExpressJS 5. (Breaking change, changing "query parser" to "extended")
+- Correction pour un crash si une couleur n'est pas une chaine de caractère (mauvais type générique appliqué)
+
 24-03-2025
 ----------
 - Suppression de l'analyse de gpu_mem dans /boot/config.txt pour les rpi 4+
