@@ -8,6 +8,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## 22-04-2025
+
+* Retiré les "Historiser" sur les chaines de caractères.
+
 ## 07-04-2025
 
 * Floutage de la mac adresse
