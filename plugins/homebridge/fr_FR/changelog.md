@@ -9,6 +9,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+15-07-2025
+----------
+- Forcer homebridge-config-ui-x en version 4.80.0 car la version 5.0.0 a l'air de bugger sans message d'erreur clair
+
 07-04-2025 (dépendances seulement)
 ----------
 - Correction d'un problème de ExpressJS 5. (Breaking change, changing "query parser" to "extended")
