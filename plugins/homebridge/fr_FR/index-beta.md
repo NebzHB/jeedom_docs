@@ -5,6 +5,8 @@ title: Plugin Homebridge
 description: Documentation du plugin Homebridge
 ---
 
+>**Si vous cherchez à intégrer les périphériques Homekit en réseau dans Jeedom, ce n’est pas le bon plugin, dans ce cas, il faut utiliser [#plugin-hkControl](https://nebzhb.github.io/jeedom_docs/plugins/hkControl/fr_FR/){:target="_blank" rel="noopener"} !!**
+
 Présentation Homebridge
 =======================
 
@@ -67,19 +69,6 @@ Les dépendances sont installées automatiquement par Jeedom dans les 5 min. Ell
 
 *Le temps d'installation des dépendances peut varier en fonction du matériel utilisé.*
 
-*Systèmes compatibles avec Homebridge :*
-
-* Raspberry Pi 3 et 4
-
-* Box Jeedom smart
-
-* Box Jeedom pro V2
-
-* Tout système basé sur Debian 9 ou 10
-
-
->Les installations sous Docker, la Jeedom Mini+ et Raspberry Pi zero, 1 & 2 ainsi que Debian 8 (Jessie) et les système x86 32bits ne sont pas supportés.
-
 Une fois les dépendances installées, le démon se lance (dans les 5 min). Si le statut n'est pas sur "OK", il faut cliquer sur "(Re)Démarrer".
 
 ![demon-homebridge](../images/demon-homebridge.png)
@@ -104,9 +93,9 @@ Ces fichiers peuvent être nécessaires en cas de dysfonctionnement du plugin.
 
 * Homebridge_daemon : Historise les actions effectuées par Homebridge (par exemple si un accessoire est envoyé à Homebridge mais n'apparaît pas dans l'application Maison, c'est ici qu'il faut aller voir).
 
-* Homebridge_start : Contient le log de création des équipements dans homekit, il peut vous indiquer la raison pour laquelle un équipement n'apparait pas ou pas bien dans homekit
-
 * Homebridge_dep : Historise toutes les étapes de l'installation des dépendances. Si le démon refuse de démarrer par exemple, un coup d'oeil peut aider).
+
+* Homebridge_start : Contient le log de création des équipements dans homekit, il peut vous indiquer la raison pour laquelle un équipement n'apparait pas ou pas bien dans homekit
 
 * DebugInfo : Il ne s'agit pas vraiment d'un Log mais plutôt d'informations de debuggage qui peuvent aider à diagnostiquer votre problème.  Pour avoir ces informations, il faut passer les logs du démon en "Debug" ou en "Info" puis actualiser la fenêtre (F5). A côté de "Configuration" dans le plugin Homebridge, vous avez l'icône DebugInfo qui est apparue. Il vous suffit de cliquer dessus et attendre que le relevé des informations s'effectue. Vous pouvez ensuite copier tout ou bien la catégorie qui vous est demandée.
 
@@ -369,13 +358,13 @@ Thermostats
 |Info/Thermostat Etat (HUMAIN)|`NON`|'off' ou 'arrêté' ou 'arret'<br/>'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'| 
 |Info/Thermostat Mode|`OUI si associé mode homekit`|'Off' ou 'Arret' = OFF<br/>'Aucun' ou 'Thermostat' = AUTO<br/>Exactement le nom d'une Action/Thermostat Mode<br/> à associer à HEAT ou COOL|
 |Action/Thermostat Mode|`NON`|Mode à associer à un mode homekit (max 2)|
-|Info/Thermostat Température Extérieur|`NON utilisé`|N/A
+|Info/Thermostat Température Extérieur|`NON utilisé`|N/A|
 |Info/Thermostat Température ambiante|`NON`|-50 → 100| 
 |Info/Thermostat Consigne|`OUI`|10 → 38| 
 |Action/Thermostat Consigne|`OUI`|10 → 38| 
 |Info/Thermostat Verrouillage|`NON`|0 = Non Verrouillé<br/>1 = Verrouillé| 
-|Action/Thermostat Verrouillage|`OUI si Info/Verrouillage`|N/A
-|Action/Thermostat Déverrouillage|`OUI si Info/Verrouillage`|N/A
+|Action/Thermostat Verrouillage|`OUI si Info/Verrouillage`|N/A| 
+|Action/Thermostat Déverrouillage|`OUI si Info/Verrouillage`|N/A| 
 
 Portails ou Garages
 --------------------
@@ -384,8 +373,8 @@ Portails ou Garages
 |---------------|:----------------:|----------------|
 |Info/Portail état ouvrant<br/>Info/Garage état ouvrant<br/>(même traitement)|`OUI`|0 = Fermé<br/>252 = Fermeture en cours<br/>253 = Stoppé<br/>254 = Ouverture en cours<br/>255 = Ouvert<br/>(Configurable numérique ou chaîne)|
 |Action/Portail ou garage bouton toggle|`Si seul`|Réf. vers Info/Portail état ouvrant<br/>ou<br/>Réf. vers Info/Garage état ouvrant| 
-|Action/Portail ou garage bouton d’ouverture|`Si pas Toggle`|Réf. vers Info/Portail état ouvrant<br/>ou<br/>Réf. vers Info/Garage état ouvrant
-|Action/Portail ou garage bouton de fermeture|`Si pas Toggle`|Réf. vers Info/Portail état ouvrant<br/>ou<br/>Réf. vers Info/Garage état ouvrant
+|Action/Portail ou garage bouton d’ouverture|`Si pas Toggle`|Réf. vers Info/Portail état ouvrant<br/>ou<br/>Réf. vers Info/Garage état ouvrant|
+|Action/Portail ou garage bouton de fermeture|`Si pas Toggle`|Réf. vers Info/Portail état ouvrant<br/>ou<br/>Réf. vers Info/Garage état ouvrant|
 
 Haut-Parleurs (Eve Seulement)
 -----------------------------
@@ -722,7 +711,7 @@ FAQ
 4. Si ce n'est pas réglé, relancez votre box/routeur.
 5. Si ce n'est pas réglé, vérifiez que le démon est activé. Si ce n'est pas le cas, redémarrez le. Vérifiez qu'il n'y a aucune erreur dans le log.
 6. Si ce n'est pas réglé, lancez une réparation dans la configuration du plugin (il faut retirer le pont dans Maison).
-7. Si ce n'est pas réglé, vous avez un problème réseau, veillez à activer IGMP Snooping, le multicast et mDNS sur tout le trajet entre Jeedom et votre iPhone/iPad/... et votre concentrateur HomeKit (iPad(si ancienne infra homekit)/AppleTV/HomePod). Aucun routage entre ces trois périphériques n'est supporté.
+7. Si ce n'est pas réglé, vous avez un problème réseau, veillez à activer le multicast/multicast DNS/mDNS sur tout le trajet entre Jeedom et votre iPhone/iPad/... et votre concentrateur HomeKit (iPad(si ancienne infra homekit)/AppleTV/HomePod). Aucun routage entre ces trois périphériques n'est supporté. Testez aussi le paramètre IGMP Snooping, s'il est activé, désactivez-le et inversément (mais gardez une cohérence entre vos périphériques). 
 
 >Beaucoup d'informations se trouvent dans les logs, le prochain chapitre vous expliquera comment les analyser.
 
