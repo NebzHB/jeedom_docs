@@ -366,6 +366,25 @@ Thermostats
 |Action/Thermostat Verrouillage|`OUI si Info/Verrouillage`|N/A| 
 |Action/Thermostat Déverrouillage|`OUI si Info/Verrouillage`|N/A| 
 
+Thermostats HC
+-------------
+
+|Type générique  | Obligatoire | Valeurs possibles |
+|---------------|:----------------:|----------------|
+|Info/Thermostat HC Etat (BINAIRE)|`OUI`|Nécessaire pour gérer 'éteint'<br/>0 = Eteint<br/>1 = Allumé|
+|Info/Thermostat HC Etat (HUMAIN)|`NON`|'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'| 
+|Info/Thermostat HC Mode|`OUI si associé mode homekit`|'Aucun' ou 'Thermostat' = AUTO<br/>Exactement le nom d'une Action/Thermostat HC Mode<br/> à associer à HEAT ou COOL|
+|Action/Thermostat HC Mode|`NON`|Mode à associer à un mode homekit (max 2)|
+|Info/Thermostat HC Température Extérieur|`NON utilisé`|N/A|
+|Info/Thermostat HC Température ambiante|`NON`|-50 → 100| 
+|Info/Thermostat HC Consigne Chaude|`OUI`|10 → 38| 
+|Info/Thermostat HC Consigne Froide|`OUI`|10 → 38| 
+|Action/Thermostat HC Consigne Chaude|`OUI`|10 → 38| 
+|Action/Thermostat HC Consigne Froide|`OUI`|10 → 38| 
+|Info/Thermostat HC Verrouillage|`NON`|0 = Non Verrouillé<br/>1 = Verrouillé| 
+|Action/Thermostat HC Verrouillage|`OUI si Info/Verrouillage`|N/A| 
+|Action/Thermostat HC Déverrouillage|`OUI si Info/Verrouillage`|N/A| 
+
 Portails ou Garages
 --------------------
 
