@@ -162,3 +162,5 @@ sudo launchctl unload /System/Library/LaunchDaemons/ssh.plist
 sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist
 ```
 Et retentez de vous connecter !
+15. probleme avec macos 26 ? allez voir la :
+[https://community.jeedom.com/t/pb-ssh-mac-os-26/143186/12](https://community.jeedom.com/t/pb-ssh-mac-os-26/143186/12)
