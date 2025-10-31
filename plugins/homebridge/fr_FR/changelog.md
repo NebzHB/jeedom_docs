@@ -9,6 +9,13 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+31-10-2025
+----------
+- Mise à jour Homebridge 1.11.1
+- En cas de réparation le nouveau nom ne contient plus de "_" car déconseillé dans les derniers iOS
+- Nettoyage des logs pour retirer ce qui touche à l'interface config-ui-x en mode très verbeux
+- Préparations diverses pour Homebridge v2
+
 15-07-2025
 ----------
 - Forcer homebridge-config-ui-x en version 4.80.0 car la version 5.0.0 a l'air de bugger sans message d'erreur clair
