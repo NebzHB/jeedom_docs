@@ -10,7 +10,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 ## 16-01-2025 - Beta
 
-* Compatible uniquement avec controleur 9.2 : récupération des images des périphériques directement sur le site unifi si jeedom a accès à internet. (sinon on utilise celles du plugin qui peuvent être anciennes ou génériques)
+* Compatible uniquement avec controleur >9.2 : récupération des images des périphériques directement sur le site unifi si jeedom a accès à internet. (sinon on utilise celles du plugin qui peuvent être anciennes ou génériques)
 * Ajout la possibilité de limiter le nombre de messages pour les périphériques (voir doc ou (i) dans le plugin) dans la configuration du plugin
 * Mise à jour des dépendances
 
