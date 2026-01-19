@@ -8,7 +8,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
-## 19-01-2025
+## 19-01-2026
 
 * Compatible uniquement avec controleur >9.2 : lors du scan (chaque nuit ou manuellement) : récupération des images des périphériques directement sur le site unifi si jeedom a accès à internet. (sinon on utilise celles du plugin qui peuvent être anciennes ou génériques)
 * Ajout la possibilité de limiter le nombre de messages pour les périphériques (voir doc ou (i) dans le plugin) dans la configuration du plugin afin de décharger le démon.
