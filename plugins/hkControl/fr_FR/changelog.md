@@ -9,6 +9,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+01-04-2026
+----------
+* Mise à jour des dépendances et NodeJS 22 par défaut
+
 07-04-2025
 ----------
 * Correction d'un problème de ExpressJS 5. (Breaking change, changing "query parser" to "extended")
