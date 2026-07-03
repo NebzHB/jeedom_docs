@@ -8,6 +8,14 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## Beta
+
+* Modification de la méthode de reconnexion au controlleur pour être plus robuste et compatible avec la version 5.1.15+ (qui perdait la connexion après 24h).
+* Meilleur arret du démon.
+* Suppression d'une erreur si on recevait un evenement du controleur qui ne contient pas d'adresse MAC (source VPN) et affichage d'un message en debug.
+* Mise à jour des librairies.
+* Nettoyage périodique (toutes les 24h) du cache du démon afin d'empècher un éventuel memory leak sur les très grosses installations.
+
 ## 19-01-2026
 
 * Compatible uniquement avec controleur >9.2 : lors du scan (chaque nuit ou manuellement) : récupération des images des périphériques directement sur le site unifi si jeedom a accès à internet. (sinon on utilise celles du plugin qui peuvent être anciennes ou génériques)
