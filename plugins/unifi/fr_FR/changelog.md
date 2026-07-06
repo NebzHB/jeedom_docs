@@ -12,7 +12,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 * Modification de la méthode de reconnexion au controlleur pour être plus robuste et compatible avec la version 5.1.15+ (qui perdait la connexion après 24h).
 * Meilleur arret du démon.
-* Suppression d'une erreur si on recevait un evenement du controleur qui ne contient pas d'adresse MAC (source VPN) et affichage d'un message en debug.
+* Suppression d'une erreur si on recevait un evenement du controleur qui ne contient pas d'adresse MAC (source probable VPN) et affichage d'un message en debug.
 * Mise à jour des librairies.
 * Optimisation du cache des clients.
 * Optimisation du log brut et décharge de jeedom en cas de log niveau info ou inférieur.
