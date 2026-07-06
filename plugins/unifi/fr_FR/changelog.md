@@ -8,13 +8,15 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
-## Beta
+## 06-07-2026
 
 * Modification de la méthode de reconnexion au controlleur pour être plus robuste et compatible avec la version 5.1.15+ (qui perdait la connexion après 24h).
 * Meilleur arret du démon.
 * Suppression d'une erreur si on recevait un evenement du controleur qui ne contient pas d'adresse MAC (source VPN) et affichage d'un message en debug.
 * Mise à jour des librairies.
-* Nettoyage périodique (toutes les 24h) du cache du démon afin d'empècher un éventuel memory leak sur les très grosses installations.
+* Optimisation du cache des clients.
+* Optimisation du log brut et décharge de jeedom en cas de log niveau info ou inférieur.
+* Nettoyage périodique (toutes les 24h) du cache des clients afin d'empècher un éventuel memory leak sur les très grosses installations.
 
 ## 19-01-2026
 
