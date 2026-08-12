@@ -1,5 +1,7 @@
 # Documentation Plugins Nebz
 
+> About AI usage : I'm only using AI to review, audit, secure my code. Never to "vibe-code" or delegate everything to AI.
+
 [AdGuard](https://nebzhb.github.io/jeedom_docs/plugins/AdGuard/fr_FR/)
 
 [aTVremote](https://nebzhb.github.io/jeedom_docs/plugins/aTVremote/fr_FR/)
@@ -17,8 +19,6 @@
 [piHole](https://nebzhb.github.io/jeedom_docs/plugins/piHole/fr_FR/)
 
 [xiaomiTalk](https://nebzhb.github.io/jeedom_docs/plugins/xiaomiTalk/fr_FR/)
-
-![NebzHB's GitHub stats](https://github-readme-stats.vercel.app/api?username=NebzHB&show_icons=true&show=reviews,prs_merged,prs_merged_percentage)
 
 ![NebzHB's GitHub stats](https://github-stats-extended.vercel.app/api?username=NebzHB&show_icons=true&show=reviews,prs_merged,prs_merged_percentage)
 
