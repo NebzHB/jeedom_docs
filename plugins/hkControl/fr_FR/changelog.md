@@ -9,6 +9,17 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+En Beta
+--------
+* Meilleur arret du démon
+* Désactivation du bouton Appairage (et Rafraichir) pendant l'appairage pour éviter les doubles clicks
+* Message plus clair quand on reçoit une erreur EHOSTUNREACH : Périphérique injoignable sur le réseau
+* Quand on essaie de désappairer un équipement qui ne l'est plus, repasser le bouton à "Appairer"
+* Beaucoup moins de blocages possibles dans le démon, même si le périphérique ne réponds pas, on affiche un timeout mais ça plante plus le démon.
+* Si un périphérique perd sa connection aux évènements, on réessaie 3x et puis on ne refait pas à chaque fois la reconnexion aux évènements, il devrait la refaire de lui même... (pour pas charger les petits périphériques peu puissants)
+* Moins d'écritures disque et mise en async pour ne pas bloquer le démon
+* Mise à jour librairies
+
 01-04-2026
 ----------
 * Mise à jour des dépendances et NodeJS 22 par défaut
