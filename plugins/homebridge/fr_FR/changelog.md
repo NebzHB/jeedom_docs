@@ -9,6 +9,17 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+En Alpha
+--------
+- Nécessite Jeedom 4.6 et Debian 12
+- Passage à Homebridge 2.4.0 (version fixée) en mode APT
+- Passage au mode Service (hb-service)
+- Passage à Homebridge-Config-UI-X 5.28.0 (latest)
+- Utilisation d'un NodeJS et NPM à part de celui de Jeedom : NodeJS 24
+- Plus de réinstallation de NodeJS du core si on fait "Réinstaller" ou "Réparer et Réinstaller"
+
+> IL N'EST PAS ENCORE CONSEILLÉ D'ACTIVER MATTER DANS CONFIG-UI-X !!! (vous aurez juste le pont sur matter mais sans accessoires...)
+
 21-08-2026
 ----------
 > Ceci est la dernière version compatible avec debian 11 (qui est hors support à partir du 30-08-2026) et Jeedom < 4.6
