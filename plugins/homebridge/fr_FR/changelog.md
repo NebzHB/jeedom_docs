@@ -11,7 +11,7 @@ Changelog
 
 21-08-2026
 ----------
-> Ceci est la dernière version compatible avec debian 11 (qui est hors support à partir du 30-08-2026)
+> Ceci est la dernière version compatible avec debian 11 (qui est hors support à partir du 30-08-2026) et Jeedom < 4.6
 - Ajout des colonnes "Type de la commande", "Min/Max de la commande" et "Exemple de Valeur" à côté de l'assignation des types génériques, pour mieux se rendre compte de ce que la commande info fournit comme valeur et pour mieux trouver le type générique adéquat.
 - Monter nodejs à 22 et homebridge à 1.11.2
 
