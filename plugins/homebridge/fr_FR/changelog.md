@@ -9,7 +9,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
-En Alpha
+En Beta
 --------
 - Nécessite Jeedom 4.6 et Debian 12
 - Passage à Homebridge 2.4.0 (version fixée) en mode APT
