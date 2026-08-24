@@ -17,6 +17,10 @@ En Beta
 - Passage à Homebridge-Config-UI-X 5.28.0 (latest)
 - Utilisation d'un NodeJS et NPM à part de celui de Jeedom : NodeJS 24
 - Plus de réinstallation de NodeJS du core si on fait "Réinstaller" ou "Réparer et Réinstaller"
+- Installation de homebridge-camera-ffmpeg v4 d'office si pas de caméra et si vous avez des caméras, proposition de migration.
+- Retrait d'une ancienne migration de homebridge-camera-ffmpeg qui pouvait encore s'afficher parfois...
+
+> Si vous aviez des plugins supplémentaires dans homebridge, lors de la migration, on garde leurs configs **MAIS** vous devez les réinstaller vous même (via Config-UI-X ou via "Gérer les plugins pour homebridge")
 
 > IL N'EST PAS ENCORE CONSEILLÉ D'ACTIVER MATTER DANS CONFIG-UI-X !!! (vous aurez juste le pont sur matter mais sans accessoires...)
 
