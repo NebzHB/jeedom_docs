@@ -19,6 +19,9 @@ En Beta
 - Plus de réinstallation de NodeJS du core si on fait "Réinstaller" ou "Réparer et Réinstaller"
 - Installation de homebridge-camera-ffmpeg v4 d'office si pas de caméra et si vous avez des caméras, proposition de migration.
 - Retrait d'une ancienne migration de homebridge-camera-ffmpeg qui pouvait encore s'afficher parfois...
+- Passage à l'advertiser AVAHI plutot que Bonjour-HAP.
+- Meilleure gestion des plugins scopés @repo/homebridge-exemple (mais pas encore de possibilité de les installer/désinstaller via "Gerer les plugins pour homebridge", uniquement Config-ui-x)
+- Vérification que homebridge-jeedom est bien là avant de lancer le démon, pour éviter de reset tous les équipements dans la pièce par défaut si c'est pas le cas
 
 > Si vous aviez des plugins supplémentaires dans homebridge, lors de la migration, on garde leurs configs **MAIS** vous devez les réinstaller vous même (via Config-UI-X ou via "Gérer les plugins pour homebridge")
 
