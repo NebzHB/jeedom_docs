@@ -21,11 +21,12 @@ En Beta
 - Retrait d'une ancienne migration de homebridge-camera-ffmpeg qui pouvait encore s'afficher parfois...
 - Passage à l'advertiser AVAHI plutot que Bonjour-HAP.
 - Meilleure gestion des plugins scopés @repo/homebridge-exemple (mais pas encore de possibilité de les installer/désinstaller via "Gerer les plugins pour homebridge", uniquement Config-ui-x)
-- Vérification que homebridge-jeedom est bien là avant de lancer le démon, pour éviter de reset tous les équipements dans la pièce par défaut si c'est pas le cas
+- Vérification que homebridge-jeedom est bien là avant de lancer le démon, pour éviter de reset tous les équipements dans la pièce par défaut si c'est pas le cas.
+- Mise à jour des librairies clipboard.js et de generation du QRCode.
 
-> Si vous aviez des plugins supplémentaires dans homebridge, lors de la migration, on garde leurs configs **MAIS** vous devez les réinstaller vous même (via Config-UI-X ou via "Gérer les plugins pour homebridge")
+> Si vous aviez des plugins supplémentaires dans homebridge, lors de la migration, on garde leurs configs **MAIS** vous devez les réinstaller vous même (via Config-UI-X ou via "Gérer les plugins pour homebridge"), il est possible qu'ils reviennent dans la pièce par défaut.
 
-> IL N'EST PAS ENCORE CONSEILLÉ D'ACTIVER MATTER DANS CONFIG-UI-X !!! (vous aurez juste le pont sur matter mais sans accessoires...)
+> IL N'EST PAS ENCORE CONSEILLÉ D'ACTIVER MATTER DANS CONFIG-UI-X !!! (vous aurez juste le pont sur matter mais sans accessoires jeedom pour l'instant...)
 
 21-08-2026
 ----------
