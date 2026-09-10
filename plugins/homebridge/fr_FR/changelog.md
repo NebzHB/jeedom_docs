@@ -17,14 +17,15 @@ En Beta
 - Passage à Homebridge-Config-UI-X 5.28.0 (latest)
 - Utilisation d'un NodeJS et NPM à part de celui de Jeedom : NodeJS 24
 - Plus de réinstallation de NodeJS du core si on fait "Réinstaller" ou "Réparer et Réinstaller"
-- Installation de homebridge-camera-ffmpeg v4 d'office si pas de caméra et si vous avez des caméras, proposition de migration.
+- Installation de homebridge-camera-ffmpeg v4 d'office si pas de caméra et si vous avez des caméras, proposition de migration (nécessaire pour Homebridge 2).
 - Retrait d'une ancienne migration de homebridge-camera-ffmpeg qui pouvait encore s'afficher parfois...
 - Passage à l'advertiser AVAHI plutot que Bonjour-HAP.
-- Meilleure gestion des plugins scopés @repo/homebridge-exemple (mais pas encore de possibilité de les installer/désinstaller via "Gerer les plugins pour homebridge", uniquement Config-ui-x)
+- Meilleure gestion des plugins scopés @repo/homebridge-exemple (mais pas encore de possibilité de les installer/désinstaller via "Gerer les plugins pour Homebridge", uniquement Config-ui-x)
 - Vérification que homebridge-jeedom est bien là avant de lancer le démon, pour éviter de reset tous les équipements dans la pièce par défaut si c'est pas le cas.
 - Mise à jour des librairies clipboard.js et de generation du QRCode.
+- Retiré les binaires homebridge et des plugins du backup Jeedom (mais on garde les configurations)
 
-> Si vous aviez des plugins supplémentaires dans homebridge, lors de la migration, on garde leurs configs **MAIS** vous devez les réinstaller vous même (via Config-UI-X ou via "Gérer les plugins pour homebridge"), il est possible qu'ils reviennent dans la pièce par défaut.
+> Si vous aviez des plugins supplémentaires dans homebridge, lors de la migration, on garde leurs configs **MAIS** s'ils n'ont pas indiqué qu'ils sont compatibles avec Homebridge 2, vous devez les réinstaller vous même (via Config-UI-X ou via "Gérer les plugins pour homebridge"), il est possible qu'ils reviennent dans la pièce par défaut. S'ils ont indiqué leur compatibilité avec Homebridge 2, ils seront migrés pour vous.
 
 > IL N'EST PAS ENCORE CONSEILLÉ D'ACTIVER MATTER DANS CONFIG-UI-X !!! (vous aurez juste le pont sur matter mais sans accessoires jeedom pour l'instant...)
 
