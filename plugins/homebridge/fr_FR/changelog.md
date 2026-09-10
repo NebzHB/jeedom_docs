@@ -25,7 +25,7 @@ En Beta
 - Mise à jour des librairies clipboard.js et de generation du QRCode.
 - Retiré les binaires homebridge et des plugins du backup Jeedom (mais on garde les configurations)
 
-> Si vous aviez des plugins supplémentaires dans homebridge, lors de la migration, on garde leurs configs **MAIS** s'ils n'ont pas indiqué qu'ils sont compatibles avec Homebridge 2, vous devez les réinstaller vous même (via Config-UI-X ou via "Gérer les plugins pour homebridge"), il est possible qu'ils reviennent dans la pièce par défaut. S'ils ont indiqué leur compatibilité avec Homebridge 2, ils seront migrés pour vous.
+> Si vous aviez des plugins supplémentaires dans homebridge, lors de la migration, on garde leurs configs **MAIS** s'ils n'ont pas indiqué qu'ils sont compatibles avec Homebridge 2, vous devez les réinstaller vous même (via Config-UI-X ou via "Gérer les plugins pour homebridge"), il est possible qu'ils reviennent dans la pièce par défaut ou qu'ils ne fonctionnent pas... S'ils ont indiqué leur compatibilité avec Homebridge 2, ils seront migrés pour vous par le plugin.
 
 > IL N'EST PAS ENCORE CONSEILLÉ D'ACTIVER MATTER DANS CONFIG-UI-X !!! (vous aurez juste le pont sur matter mais sans accessoires jeedom pour l'instant...)
 
