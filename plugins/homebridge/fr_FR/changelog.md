@@ -9,9 +9,9 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
-En Beta
+11-09-2026
 --------
-- Nécessite Jeedom 4.6 et Debian 12
+- **Nécessite Jeedom 4.6 et Debian 12**
 - Passage à Homebridge 2.4.0 (version fixée) en mode APT
 - Passage au mode Service (hb-service)
 - Passage à Homebridge-Config-UI-X 5.28.0 (latest)
