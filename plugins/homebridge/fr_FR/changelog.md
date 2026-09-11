@@ -23,7 +23,7 @@ Changelog
 - Meilleure gestion des plugins scopés @repo/homebridge-exemple (mais pas encore de possibilité de les installer/désinstaller via "Gerer les plugins pour Homebridge", uniquement Config-ui-x)
 - Vérification que homebridge-jeedom est bien là avant de lancer le démon, pour éviter de reset tous les équipements dans la pièce par défaut si c'est pas le cas.
 - Mise à jour des librairies clipboard.js et de generation du QRCode.
-- Retiré les binaires homebridge et des plugins du backup Jeedom (mais on garde les configurations)
+- Retiré les binaires homebridge et les plugins du backup Jeedom (mais on garde les configurations)
 
 > Si vous aviez des plugins supplémentaires dans homebridge, lors de la migration, on garde leurs configs **MAIS** s'ils n'ont pas indiqué qu'ils sont compatibles avec Homebridge 2, vous devez les réinstaller vous même (via Config-UI-X ou via "Gérer les plugins pour homebridge"), il est possible qu'ils reviennent dans la pièce par défaut ou qu'ils ne fonctionnent pas... S'ils ont indiqué leur compatibilité avec Homebridge 2, ils seront migrés pour vous par le plugin.
 
