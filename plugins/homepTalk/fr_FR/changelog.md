@@ -9,6 +9,12 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+16-09-2025
+----------
+* Modification massive du plugin pour utiliser la lib atvremote à la place de libroap pour que le plugin continue à fonctionner en iOS/TVOS 27.
+* Les groupes fonctionnent aussi.
+* Dans la configuration du plugin atvremote est coché par défaut maintenant.
+
 21-02-2025
 ----------
 * Ajout reconnaissance Denon Home Sound Bar 550
