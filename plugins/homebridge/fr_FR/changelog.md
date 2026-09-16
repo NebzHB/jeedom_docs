@@ -9,6 +9,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+16-09-2026
+----------
+- Correction du videoProcessor si vous en aviez un configuré
+
 11-09-2026
 --------
 - **Nécessite Jeedom 4.6 et Debian 12**
