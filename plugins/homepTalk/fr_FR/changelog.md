@@ -9,7 +9,11 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
-16-09-2025
+17-09-2026
+----------
+* Option pour forcer libroap sur un équipement (pour les compatibles AirPlay 1 seulement)
+
+16-09-2026
 ----------
 * Modification massive du plugin pour utiliser la lib atvremote à la place de libroap pour que le plugin continue à fonctionner en iOS/TVOS 27.
 * Les groupes fonctionnent aussi.
