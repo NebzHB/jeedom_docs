@@ -52,6 +52,8 @@ commandes.
 
 -   **Visible** : Le rend visible sur le dashboard
 
+-   **Forcer en AirPlay1 (RAOP)** : Force l'ancienne librairie sur cet équipement (pour les périphériques compatible seulement AirPlay 1)
+
 -   **Objet parent** : Indique l’objet parent auquel appartient l’équipement
 
 -   **Adresse IP** : L'ip du homepod en question
