@@ -52,7 +52,7 @@ commandes.
 
 -   **Visible** : Le rend visible sur le dashboard
 
--   **Forcer en AirPlay1 (RAOP)** : Force l'ancienne librairie sur cet équipement (pour les périphériques compatible seulement AirPlay 1)
+-   **Version AirPlay** : Vous pouvez choisir d'utiliser AirPlay 1 (Ancienne librairie RAOP) ou AirPlay 2 (par défaut et conseillé pour Homepods). Les groupes doivent donc être homogènes AirPlay 1 ou AirPlay 2 !
 
 -   **Objet parent** : Indique l’objet parent auquel appartient l’équipement
 
