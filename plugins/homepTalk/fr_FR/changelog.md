@@ -9,6 +9,13 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+18-09-2026
+----------
+* Harmonisation, on peut/doit maintenant choisir si on utilise AirPlay 1 ou 2 pour chaque périphérique et groupe (un groupe doit donc être homogène !!), plus de paramètre global.
+* Par défaut tous les HomePods et les groupes sont en Airplay 2
+* Par défaut tous les autres équipements sont en Airplay 1
+* Fix du son alarme qui n'était pas en mp3
+
 17-09-2026
 ----------
 * Option pour forcer libroap sur un équipement (pour les compatibles AirPlay 1 seulement)
