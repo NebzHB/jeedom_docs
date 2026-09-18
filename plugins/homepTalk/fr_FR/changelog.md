@@ -15,6 +15,7 @@ Changelog
 * Par défaut tous les HomePods et les groupes sont en Airplay 2
 * Par défaut tous les autres équipements sont en Airplay 1
 * Fix du son alarme qui n'était pas en mp3
+* Coupure des phrases plus intelligemment pour GoogleTTS qui est limité à 99 charactères, on coupe d’abord sur la ponctuation (sauf si c’est suivit d’un chiffre comme 53,2). Ce qui permet d’avoir des phrases plus naturelles, avec des pauses au bon moment
 
 17-09-2026
 ----------
