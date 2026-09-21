@@ -61,7 +61,7 @@ commandes.
 -   **Volume** : Le volume est un pourcentage (sans le signe pourcent). Utilisé si le champ Options ne donne pas d'autre information.
 -   **Langue** : La langue a utiliser si le champ Options ne donne pas d'autre information.
 -   **Multiplicateur de vitesse** : Valeur pour accélérer ou ralentir le flux de la voix, valeur de 0.5 à 2 (avec décimale point). Utilisé si le champ Options ne donne pas d'autre information.
--   **Jingle** : Jingle à jouer avant une commande "Parle", permet d'éviter que le son soit coupé si vous enchainez une commande son et puis parle par exemple.
+-   **Jingle** : Jingle à jouer avant une commande "Parle", permet d'éviter que le son soit coupé si vous enchainez une commande son et puis parle par exemple. Utilisé si le champ Options ne donne pas d'autre information.
 -   **Système de TTS** : GoogleTTS est recommandé. Utilisé si le champ Options ne donne pas d'autre information.
 
 **Onglet Commandes** :
