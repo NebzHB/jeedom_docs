@@ -78,7 +78,7 @@ Exemple d'options pour le champ *Options* : *volume=10,vitesse=1.2,tts=picotts,l
 Champ *Options* - choix valides :
 -	**volume=** pourcentage du volume, valeur comprise entre *0* et *100* (sans le signe %).
 -	**jingle=** *jingle=oui* ou *jingle=non* pour utiliser le jingle par défaut *notif* (ou forcer sans jingle si la valeur par défaut en défini un) ou *jingle=sncf* ou un des autres jingles (sensible à la case) qu'on trouve dans la liste des valeurs par défaut.
--	**norestart** sans autre valeur, sans signe égal, juste le paramètre, permet de **ne pas** relancer la musique après avoir joué le son (si elle devait se relancer, donc s'il y en avait une qui jouait avant, si c'est pas un groupe et si le homepod est pas en multi-room)
+-	**norestart** sans signe égal, permet de **ne pas** relancer la musique après avoir joué le son (si elle devait se relancer, donc : s'il y en avait une qui jouait avant, si c'est pas un groupe et si le HomePod est pas en multi-room).
 -	**vitesse=** multiplicateur de vitesse, valeur comprise entre 0.5 et 2 (avec décimales possibles et un POINT !) pour parler plus vite ou plus lentement.
 -	**tts=** choisir entre *picotts* (pas compatible mini+ ou rPI1/2) ou *googletts* (Recommandé) ou *jeedom* (Expérimental) ou *osx* (via SSH) ou *voicerss* (Besoin d'une clé API) ou *ttswebserver* (si vous avez le plugin).
 - **cache=** permet avec une valeur *non* ou *no* de ne pas sauvegarder le texte dans le cache du plugin (utile si vous utilisez des variables dans le texte ou des conditionnelles ou des alternatives.)
