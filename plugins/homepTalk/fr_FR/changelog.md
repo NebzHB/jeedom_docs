@@ -9,8 +9,8 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
-En Beta
--------
+21-09-2026
+----------
 * Changement de la qualité de conversion des mp3.
 * Sur AirPlay2 et sur un HomePod individuel (qui n'est pas en groupe multi-room à ce moment là) : s'il joue de la musique, on garde son volume d'avant et après avoir joué notre son, on remet le volume et on fait play.
   (malheureusement ce n'est pas possible quand un HomePod est en groupe multi-room, le play lance autre chose et casse le multi-room).
