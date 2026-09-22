@@ -8,9 +8,9 @@ description: Documentation du plugin homepTalk
 Présentation HomepTalk
 =======================
 
-Ce plugin permet de faire parler en TTS vos Apple Homepod.
+Ce plugin permet de faire parler en TTS vos Apple HomePod.
 
->**Important** : Vos homepods ne doivent pas être protégés par mot de passe :
+>**Important** : Vos HomePods ne doivent pas être protégés par mot de passe :
 
 ![config](../images/homepTalk-homekitConf.gif)
 
@@ -24,14 +24,14 @@ Après installation du plugin, il vous suffit de l’activer. Si vous voulez all
 Configuration des équipements 
 =============================
 
-La configuration des HomePod est accessible à partir du menu
+La configuration des HomePods est accessible à partir du menu
 plugins puis Multimedia. Vous retrouvez ici :
 
--   un bouton pour chercher les homepods sur votre réseau (pas de routage, même réseau obligatoire)
+-   un bouton pour chercher les HomePods sur votre réseau (pas de routage, même réseau obligatoire)
 
 -   un bouton pour créer un équipement manuellement (utilisez la découverte de préférence, sinon pas de support)
 
--   (si plusieurs homepods) un bouton pour créer un groupe
+-   (si plusieurs HomePods) un bouton pour créer un groupe
 
 -   un bouton pour afficher la configuration du plugin
 
@@ -46,17 +46,17 @@ commandes.
 **Onglet Equipement** :
 -----------------------
 
--   **Nom de l’équipement** : Nom de votre homepod
+-   **Nom de l’équipement** : Nom de votre HomePod
 
 -   **Activer** : Permet de rendre votre équipement actif
 
 -   **Visible** : Le rend visible sur le dashboard
 
--   **Version AirPlay** : Vous pouvez choisir d'utiliser AirPlay 1 (Ancienne librairie RAOP) ou AirPlay 2 (par défaut et conseillé pour Homepods). Les groupes doivent donc être homogènes AirPlay 1 ou AirPlay 2 !
+-   **Version AirPlay** : Vous pouvez choisir d'utiliser AirPlay 1 (Ancienne librairie RAOP) ou AirPlay 2 (par défaut et conseillé pour HomePods). Les groupes doivent donc être homogènes AirPlay 1 ou AirPlay 2 !
 
 -   **Objet parent** : Indique l’objet parent auquel appartient l’équipement
 
--   **Adresse IP** : L'ip du homepod en question
+-   **Adresse IP** : L'ip du HomePod en question
 
 -   **Volume** : Le volume est un pourcentage (sans le signe pourcent). Utilisé si le champ Options ne donne pas d'autre information.
 -   **Langue** : La langue a utiliser si le champ Options ne donne pas d'autre information.
@@ -89,7 +89,7 @@ Champ *Options* - choix valides :
 
 >Sous Debian Jessie (deb8), les messages qui font plus de 100 caractères et qui utilisent *googletts* passeront en *picotts* à cause d'une limitation de *avconv* (le convertisseur audio). Sous Debian Stretch (deb9), ces messages seront fractionnés en parties de 100 caractères et joués à la suite pour votre plus grand plaisir !
 
-Champ *Message* : Ecrivez le texte qui doit être prononcé par votre homepod.
+Champ *Message* : Ecrivez le texte qui doit être prononcé par votre HomePod.
 Vous pouvez utiliser ces quelques astuces :
 
 ```
@@ -107,7 +107,7 @@ Vous pouvez utiliser ces quelques astuces :
 >Pour *tts=jeedom* vous pouvez écrire #idDeVotreSon# qui correspond à l'id de votre son dans le *plugin Officiel Son* dans le message et il sera lu (seul)
 
 
-Il existe des commandes **Son natif ---**. Permet de jouer les sons natifs (trouvés dans le firmware Homepod par des Hackeurs).
+Il existe des commandes **Son natif ---**. Permet de jouer les sons natifs (trouvés dans le firmware HomePod par des Hackeurs).
 
 Il existe des commandes **Son ---**. Permet de jouer les sons ajoutés au plugin.
 
@@ -116,12 +116,12 @@ Il existe une commande **Stop**. Elle joue en fait un son silencieux vide au vol
 **FAQ** :
 ---------
 
-1. Quand je fait parler mon homepod avec le plug-in, ça coupe la musique
->Oui normal, le plug-in utilise AirPlay 2 pour envoyer la voix sur votre Homepod. Ensuite si vous jouiez une source interne au HomePod (Apple Music), le son est rejoué (sauf pour les groupes, ou les HomePods configurés en Multi-Room au moment du son), si c'était un flux AirPlay, il n'est plus disponible après le son, et donc n'est pas rejoué...
-2. Quand je fais parler mon homepod avec le plug-in, ça change le volume actuel de mon homepod
->Oui normal, vous avez défini un volume par défaut dans le plug-in, mais le plugin remet le volume précédent après la lecture. (nouveauté AirPlay 2)
+1. Quand je fait parler mon HomePod avec le plug-in, ça coupe la musique
+>Oui normal, le plug-in utilise AirPlay 2 pour envoyer la voix sur votre HomePod. Ensuite si vous jouiez une source interne au HomePod (Apple Music), le son est rejoué (sauf pour les groupes, ou les HomePods configurés en Multi-Room au moment du son), si c'était un flux AirPlay venant d'un iPhone ou d'une AppleTV, il n'est malheureusement plus disponible après avoir joué votre son, et donc n'est pas rejoué...
+2. Quand je fais parler mon HomePod avec le plug-in, ça change le volume actuel de mon HomePod
+>Oui normal, vous avez défini un volume par défaut dans le plug-in, mais le plugin remet le volume précédent après la lecture. (Nouveauté AirPlay 2)
 3. Je voudrais jouer de la voix sur un autre périphérique AirPlay, c'est possible ?
->Peut-être... mais je ne supporte rien d'autre que homepod, si vous y arrivez tant mieux, venez le partager sur le forum ! *Il est possible que certains haut-parleurs nécessitent la première fois de jouer une musique en airplay2 avec votre iDevice, pour ensuite lancer une voix (on dirait que les Sonos par exemple, nécessitent une "initialisation" de airplay2 via un périphérique Apple la première fois...). Mais normalement les fois suivantes ce n'est plus nécessaire (sauf reboot peut-être ?)*
+>Peut-être... mais je ne supporte rien d'autre que HomePod, si vous y arrivez tant mieux, venez le partager sur le forum ! *Il est possible que certains haut-parleurs nécessitent la première fois de jouer une musique en airplay2 avec votre iDevice, pour ensuite lancer une voix (on dirait que les Sonos par exemple, nécessitent une "initialisation" de airplay2 via un périphérique Apple la première fois...). Mais normalement les fois suivantes ce n'est plus nécessaire (sauf reboot peut-être ?)*
 4. Pouvez vous ajouter mon son personnel de canard qui croasse au plugin ?
 >Non, par contre en utilisant le plug-in officiel "Sons", c'est possible ! Indiquez tts=jeedom dans les options et #idDeVotreSon# dans le message
 5. Quand j'enchaine deux sons, le second coupe le premier.
@@ -145,7 +145,7 @@ Il fait #[domicile][meteo][temperature]# degrés, {(#[domicile][meteo][temperatu
 10. Je parle une autre langue que celles proposées par le plug-in.
 >Aucun problème, contactez moi je le ferai un plaisir de l'ajouter, il faudra juste espérer que votre système TTS préfèré la supporte....
 11. Parfois je n'entends pas le debut de la phrase, on dirait que c'est coupé
->~~Ca peut arriver quand vous n'avez plus utilisé le homepod depuis un certain temps, je suppose qu'il passe en veille... la solution consiste a ajouter un mot (comme "Bonjour" ou "Cher Tim") avant le message important ou encore mieux faire un "Stop" juste avant de jouer votre phrase (ca joue un petit son silencieux).~~ C'est résolu avec AirPlay 2 :)
+>~~Ca peut arriver quand vous n'avez plus utilisé le HomePod depuis un certain temps, je suppose qu'il passe en veille... la solution consiste a ajouter un mot (comme "Bonjour" ou "Cher Tim") avant le message important ou encore mieux faire un "Stop" juste avant de jouer votre phrase (ca joue un petit son silencieux).~~ C'est résolu avec AirPlay 2 :)
 12. Le plugin peut fonctionner avec les (anciennes) bornes Airport Express modèle A1264 en Airplay 1 (mais ce n'est pas garanti et aucun support est fait dessus)
 >Même si elle ne seront pas maintenues car obsolètes, pour info vous pouvez faire parler Jeedom sur une borne Aiport A1264. En firmware 7.8.1, il faut ajouter un équipement manuel avec l'adresse IP de votre borne sur votre réseau (exp. 192.168.1.X) et indiquer le port n°5000.
 13. La connexion SSH ne fonctionne pas vers macOS Ventura.
