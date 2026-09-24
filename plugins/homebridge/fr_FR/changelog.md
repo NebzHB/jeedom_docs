@@ -9,6 +9,16 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+En Beta
+-------
+- Nouveau Type Générique "DOORBELL_STATE" "Sonnette Etat (Homebridge)" qui s'applique sur une commande info de type binaire, lors du passage à la valeur 1 de cette info (à vous à la repasser à 0 coté Jeedom si besoin) elle déclenche un évènement de type sonnette dans Homekit => à configurer dans l'app maison, vous pouvez faire sonner les HomePods de la maison et vous recevrez une notification du type "Quelqu'un a sonné à la porte" dans la pièce ou vous avez mis l'équipement (qui apparaîtra comme "Non géré" dans maison, mais c'est normal), permet de résoudre le délais de lancement des sons depuis AirPlay 2 pour le plugin homePTalk si vous l'utilisez comme sonnette !
+- Fix lorsqu'on a mis le type générique Energie et pas Consommation
+- Fix de la tolérance sur le type générique Volets/Volets inversés et Windows Electrique à 1%
+- Fix une currentValue oubliée pour le type générique "Fenetres Motorisées" et un état temps réel sur les Volets
+- Correction des unités sur le type générique Visibilité
+- Corrections de la désactivation de HTTPS pour seulement le plugin homebridge-jeedom et pas les autres plugins pour Homebridge
+- Fix double assignation des services non nécessaire, démarrage plus rapide du démon
+
 16-09-2026
 ----------
 - Correction du videoProcessor si vous en aviez un configuré
