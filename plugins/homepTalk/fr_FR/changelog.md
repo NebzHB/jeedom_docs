@@ -9,6 +9,15 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+En Beta
+-------
+* Augmentation de la limite de googletts à 200 caractères, d'après les tests, ça a augmenté.
+* On coupe les phrases pour googletts sur les "..." aussi et les ) ] } -
+* Une fois remise ensemble, ces morceaux de phrase, on retire les blancs qui pourraient se faire entendre.
+* On communique avec les HomePods via unicast plutot que multicast maintenant, si le multicast est mal configuré dans votre réseau, ça peut réduire le temps de réaction.
+* On retire les éventuels blancs au début et à la fin des TTS
+* Ajout de logs en debug pour la commande "Parle" on sait maintenant à partir de combien de seconde le HomePod a commencé à jouer le son.
+
 21-09-2026
 ----------
 * Changement de la qualité de conversion des mp3.
