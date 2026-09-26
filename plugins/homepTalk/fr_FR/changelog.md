@@ -15,7 +15,6 @@ En Beta
 * On coupe les phrases pour googletts sur les "..." aussi et les ) ] } -
 * Une fois remis ensemble, ces morceaux de phrase, on retire les blancs qui pourraient se faire entendre.
 * On communique avec les HomePods via unicast plutot que multicast maintenant, si le multicast est mal configuré dans votre réseau, ça peut réduire le temps de réaction.
-* On retire les éventuels blancs au début et à la fin des TTS
 * Ajout de logs en debug pour la commande "Parle" on sait maintenant à partir de combien de seconde le HomePod a commencé à jouer le son.
 * Correction installation picotts sur debian 11 et 12.
 
