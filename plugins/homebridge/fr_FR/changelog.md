@@ -19,6 +19,10 @@ En Beta
 - Corrections de la désactivation de HTTPS pour seulement le plugin homebridge-jeedom et pas les autres plugins pour Homebridge
 - Fix double assignation des services non nécessaire, démarrage plus rapide du démon
 
+27-09-2026
+----------
+- Correction d'exclusion du backup (environ 80Mb gagnés sur la taille du backup)
+
 25-09-2026
 ----------
 - Mise à jour du paquet Homebridge
