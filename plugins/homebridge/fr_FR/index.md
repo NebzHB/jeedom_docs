@@ -356,6 +356,8 @@ Sonnette
 |---------------|:----------------:|----------------|
 |Info/Sonnette Etat|`OUI`|Pas 1 = Sonne pas<br/>1 = Sonne|
 
+> La sonnette apparrait comme "Non géré" dans Maison, c'est normal. Si vous avez des HomePods, ceux-ci sonneront quand elle sera déclenchée. Si vous en avez plusieurs, vous pouvez choisir ceux qui vont sonner ou pas dans l'app maison, sur le HomePod : "Carillon de la sonnette" ou dans "Réglages du domicile" > "Caméras et sonnettes" > "Sonnette" > "Carillon de la sonnette".
+
 Thermostats
 -------------
 
