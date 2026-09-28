@@ -349,6 +349,13 @@ Sirènes
 |---------------|:----------------:|----------------|
 |Info/Sirène Etat|`OUI`|Pas 1 = Sonne pas<br/>1 = Sonne|
 
+Sonnette
+-------
+
+|Type générique  | Obligatoire | Valeurs possibles |
+|---------------|:----------------:|----------------|
+|Info/Sonnette Etat|`OUI`|Pas 1 = Sonne pas<br/>1 = Sonne|
+
 Thermostats
 -------------
 
