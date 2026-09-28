@@ -4,9 +4,13 @@ lang: fr_FR
 title: Plugin UniFi - Changelog
 description: Changelog du plugin UniFi
 ---
-Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4.x
+Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe, de librairie ou pour la compatibilité Jeedom V4.x
 
 # Changelog
+
+## 28-09-2026
+
+* Ajout du dossier resources/node_modules aux exclusions de backup
 
 ## 06-07-2026
 
