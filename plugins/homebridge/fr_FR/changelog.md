@@ -4,7 +4,7 @@ lang: fr_FR
 title: Plugin Homebridge - Changelog
 description: Changelog du plugin Homebridge
 ---
-Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4.x
+Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe, de librairie ou pour la compatibilité Jeedom V4
 
 Changelog
 =========
