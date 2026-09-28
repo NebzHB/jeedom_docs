@@ -9,8 +9,8 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
-En Beta
--------
+28-09-2026
+----------
 * Augmentation de la limite de googletts à 200 caractères, d'après les tests, ça a augmenté.
 * On coupe les phrases pour googletts sur les "..." aussi et les ) ] } -
 * Une fois remis ensemble, ces morceaux de phrase, on retire les blancs qui pourraient se faire entendre.
