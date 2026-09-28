@@ -4,7 +4,10 @@ lang: fr_FR
 title: Plugin HomeWizard Energy - Changelog
 description: Changelog du plugin HomeWizard Energy
 ---
-Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4
+Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe, de librairie ou pour la compatibilité Jeedom V4
+
+# 28-09-2026
+- Ajout du dossier resources/node_modules aux exclusions de backup
 
 # 07-04-2025
 - Correction d'un problème de ExpressJS 5. (Breaking change, changing "query parser" to "extended")
