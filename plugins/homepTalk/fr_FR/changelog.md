@@ -17,6 +17,7 @@ En Beta
 * On communique avec les HomePods via unicast plutot que multicast maintenant, si le multicast est mal configuré dans votre réseau, ça peut réduire le temps de réaction.
 * Ajout de logs en debug pour la commande "Parle" on sait maintenant à partir de combien de seconde le HomePod a commencé à jouer le son.
 * Correction installation picotts sur debian 11 et 12.
+* Nouveau TTS : Edge-TTS nommé dans les commandes tts=edgetts qui supporte pas mal de langues et de voix, bonne qualité, sans quotas.
 
 21-09-2026
 ----------
