@@ -86,8 +86,7 @@ Champ *Options* - choix valides :
 - **voix=** si *tts=osx* alors choisir parmi les voix suivantes : *Thomas* ou *Aurelie* ou *Audrey* (si installées)  (testé sur Mojave)
 - **voix=** si *tts=ttswebserver* alors choisir parmi les voix listées dans l'interface (dépendant de ce que vous avez installé)
 - **voix=** si *tts=voicerss* alors vous pouvez aussi ajouter la voix choisie en option (sinon c\'est *Bette*) : *Bette* ou *Iva* ou *Zola* ou *Alex*
-
->Sous Debian Jessie (deb8), les messages qui font plus de 100 caractères et qui utilisent *googletts* passeront en *picotts* à cause d'une limitation de *avconv* (le convertisseur audio). Sous Debian Stretch (deb9), ces messages seront fractionnés en parties de 100 caractères et joués à la suite pour votre plus grand plaisir !
+- **voix=** si *tts=edgetts* alors vous pouvez aussi ajouter la voix choisie en option (sinon c\'est *Denise*): *fr-FR-DeniseNeural* ou *fr-FR-RemyMultilingualNeural* ou *pt-PT-RaquelNeural* etc, (n'importe quelle voix que vous trouvez dans le premier onglet, champ Voix Edge-TTS, sensible à la case)
 
 Champ *Message* : Ecrivez le texte qui doit être prononcé par votre HomePod.
 Vous pouvez utiliser ces quelques astuces :
