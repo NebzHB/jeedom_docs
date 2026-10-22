@@ -9,6 +9,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+22-10-2026
+----------
+- mise a jour NodeJS 24.22.1
+
 28-09-2026
 ----------
 - Nouveau Type Générique « DOORBELL_STATE » « Sonnette Etat (Homebridge) » qui s’applique sur une commande info de type binaire. Lors du passage à la valeur 1 de cette info (à vous de la repasser à 0 côté Jeedom si besoin), elle déclenche un évènement de type sonnette dans Homekit => à configurer dans l’app Maison. Vous pouvez faire sonner les HomePods de la maison et vous recevrez une notification du type « Quelqu’un a sonné à la porte » dans la pièce où vous avez mis l’équipement (qui apparaîtra comme « Non géré » dans Maison, mais c’est normal). Cela permet de résoudre le délai de lancement des sons depuis AirPlay 2 pour le plugin homePTalk si vous l’utilisez comme sonnette !
