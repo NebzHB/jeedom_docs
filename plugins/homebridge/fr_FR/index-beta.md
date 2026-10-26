@@ -484,7 +484,7 @@ Ces types génériques s'ajoutent à un équipement, ils ne peuvent pas être se
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
 |Info/Statut Actif|`NON`|0 = inactif<br/>1 = actif|
-|Info/Connecté|`NON`|0 = hors ligne<br/>1 = en ligne|
+|Info/Connectivité En Ligne|`NON`|0 = hors ligne<br/>1 = en ligne|
 |Info/Statut Défectueux|`NON`|0 = non<br/>1 = oui|
 
 *Des exemples de configurations sont disponibles à la fin de la documentation*
