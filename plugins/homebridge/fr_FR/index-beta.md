@@ -213,7 +213,7 @@ Lumière
 |---------------|:---------:|-------------|
 |Info/Lumière Etat|`OUI`|Binaire<br/>0 = Eteint<br/>1 = Allumé<br/>ou, si une seule commande donne l'état et la luminosité, la luminosité :<br/>0-100 Ou 0-99 ou 0-255<br/>(en fonction du max de Action/Lumière Slider)<br/>0 = Eteint<br/>autre que 0 = Allumé| 
 |Info/Lumière Luminosité|`NON`|Luminosité<br/>0-100 Ou 0-99 ou 0-255<br/>(en fonction du max de Action/Lumière Slider)<br/>Avec Info/Lumière Etat sur la commande binaire|
-|Action/Lumière Slider|`Si Luminosité variable`|Réf. vers Lumière Luminosité ou Lumière Etat|
+|Action/Lumière Slider|`Si Luminosité variable`|Réf. vers Lumière Luminosité<br/>(ou Lumière Etat si une seule commande donne l'état et la luminosité)|
 |Action/Lumière Bouton On|`OUI`|Réf. vers Lumière Etat|
 |Action/Lumière Bouton Off|`OUI`|Réf. vers Lumière Etat|
 |Info/Lumière Couleur|`NON`|Format #RRGGBB|
