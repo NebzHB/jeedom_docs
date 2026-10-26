@@ -9,6 +9,19 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+En Beta
+-------
+- **Lumières** : migration automatique (une seule fois, à la mise à jour) vers le fonctionnement Info/Lumière Etat binaire + Info/Lumière Luminosité : l'ancien Info/Lumière Etat (Binaire) devient Info/Lumière Etat et l'ancien Info/Lumière Etat numérique devient Info/Lumière Luminosité. Les équipements ayant à la fois un Info/Lumière Etat binaire et un Info/Lumière Etat numérique (qui apparaissaient comme deux lumières) sont aussi migrés. Les équipements multi-lumières ne sont pas migrés. Le détail est dans le log homebridge.
+- **CO** : nouveau type générique « CO Alarme (Homebridge) » pour les détecteurs binaires (0 = normal, 1 = CO détecté). Le type générique « CO (ppm) » du core est maintenant lu comme un niveau en ppm (affiché dans Maison) avec une alarme à partir de 50 ppm s'il n'y a pas de CO Alarme sur l'équipement. Les commandes binaires qui avaient le type CO sont passées automatiquement en CO Alarme à la mise à jour.
+- **Multi-prises** : la puissance, la consommation et l'indicateur « en utilisation » sont maintenant rattachés à chaque prise (dans l'ordre des commandes), s'il y en a autant que de prises.
+- Équipements découpés (multi-prises, multi-relais…) : nom « Équipement - Commande » (au lieu de « / », non autorisé) et prise en compte du pseudo.
+- Interface(s) Homebridge : le choix reste visible quand une interface est enregistrée (même s'il n'y en a plus qu'une), une interface cochée mais absente est signalée et ignorée, pré-sélection corrigée (IP interne exacte).
+- DebugInfo : affichage de l'interface (ou des interfaces) utilisée(s) par Homebridge.
+- Vérification de la mémoire : fonctionne maintenant aussi en conteneur (LXC, Docker), et plus d'erreur « dmesg » dans le log http.error.
+- Amélioration des graphiques Eve.
+- Refactorisation et simplification du code.
+- Mise à jour de la librairie express.
+
 22-10-2026
 ----------
 - mise a jour NodeJS 24.22.1
