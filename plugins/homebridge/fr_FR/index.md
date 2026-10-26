@@ -211,12 +211,11 @@ Lumière
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:---------:|-------------|
-|Info/Lumière Etat|`OUI`|Soit Luminosité<br/>0-100 Ou 0-99 ou 0-255<br/>(en fonction du max de Action/Lumière Slider)<br/>ou Soit Binaire<br/>0 = Eteint<br/> autre que 0 = Allumé| 
-|Info/Lumière Etat (Binaire)|`NON`|Ajout uniquement pour les lumières dont la luminosité ne change pas lorsqu’elle est éteinte (Yeelight, Ikea, …)<br/>0 ou off = Eteint<br/>Autre = Allumé<br/>Utiliser uniquement avec Lumière Etat|
-|Info/Lumière Luminosité|`NON`|Supporté depuis 2023<br/>Luminosité<br/>0-100 Ou 0-99 ou 0-255<br/>(en fonction du max de Action/Lumière Slider)<br/>Utiliser avec Lumière Etat sur la commande binaire<br/>(et pas Lumière Etat (Binaire) !!|
-|Action/Lumière Slider|`Si Luminosité variable`|Réf. vers Lumière Luminosité ou Lumière Etat|
-|Action/Lumière Bouton On|`OUI`|Réf. vers Lumière Etat :<br/>- Binaire s’il est présent<br/>- Etat sinon|
-|Action/Lumière Bouton Off|`OUI`|Réf. vers Lumière Etat :<br/>- Binaire s’il est présent<br/>- Etat sinon|
+|Info/Lumière Etat|`OUI`|Binaire<br/>0 = Eteint<br/>1 = Allumé<br/>ou, si une seule commande donne l'état et la luminosité, la luminosité :<br/>0-100 Ou 0-99 ou 0-255<br/>(en fonction du max de Action/Lumière Slider)<br/>0 = Eteint<br/>autre que 0 = Allumé| 
+|Info/Lumière Luminosité|`NON`|Luminosité<br/>0-100 Ou 0-99 ou 0-255<br/>(en fonction du max de Action/Lumière Slider)<br/>Avec Info/Lumière Etat sur la commande binaire|
+|Action/Lumière Slider|`Si Luminosité variable`|Réf. vers Lumière Luminosité<br/>(ou Lumière Etat si une seule commande donne l'état et la luminosité)|
+|Action/Lumière Bouton On|`OUI`|Réf. vers Lumière Etat|
+|Action/Lumière Bouton Off|`OUI`|Réf. vers Lumière Etat|
 |Info/Lumière Couleur|`NON`|Format #RRGGBB|
 |Action/Lumière Couleur|`Si Info/Lumière Couleur `|Réf. vers Info/Lumière Couleur|
 |Info/Lumière Température Couleur|`NON`|Format Mired (<=500) ou Kelvin (>500)|
@@ -234,6 +233,7 @@ Prises
 |Info/Prise<br/>Etat|`OUI`|0 = Eteint<br/>1 = Allumé|
 |Action/Prise<br/>Bouton On|`OUI`|Réf. vers Info/Prise Etat| 
 |Action/Prise<br/>Bouton Off|`OUI`|Réf. vers Info/Prise Etat|
+|Info/Prise<br/>En Utilisation|`NON`|0 = Non utilisée<br/>1 = Utilisée<br/>Si absente : déduite de Info/Puissance Electrique (> 1 W)|
 |Action/Prise<br/>Slider|`NON Utilisé`|N/A|
 
 Ventilateur
@@ -266,7 +266,7 @@ Valves
 |Info/Valve<br/>Générique<br/>Etat|`OUI`|0 = Eteint<br/>1 = Allumé|
 |Action/Valve<br/>Générique<br/>Bouton On|`OUI`|Réf. vers Info/Valve Générique Etat| 
 |Action/Valve<br/>Générique<br/>Bouton Off|`OUI`|Réf. vers Info/Valve Générique Etat|
-|Info/Valve<br/>générique<br/>Durée|`NON`|0-3600 Secondes|
+|Action/Valve<br/>générique<br/>Durée|`NON`|0-3600 Secondes|
 |Info/Valve<br/>générique<br/>Durée Restante|`NON`|0-3600 Secondes|
 
 Interrupteurs
@@ -370,10 +370,28 @@ Thermostats
 |Info/Thermostat Température Extérieur|`NON utilisé`|N/A|
 |Info/Thermostat Température ambiante|`NON`|-50 → 100| 
 |Info/Thermostat Consigne|`OUI`|10 → 38| 
-|Action/Thermostat Consigne|`OUI`|10 → 38| 
+|Action/Thermostat Consigne|`OUI`|10 → 38<br/>(ou le min/max de la commande action s'ils sont renseignés)| 
 |Info/Thermostat Verrouillage|`NON`|0 = Non Verrouillé<br/>1 = Verrouillé| 
 |Action/Thermostat Verrouillage|`OUI si Info/Verrouillage`|N/A| 
 |Action/Thermostat Déverrouillage|`OUI si Info/Verrouillage`|N/A| 
+
+Thermostats HC
+-------------
+
+|Type générique  | Obligatoire | Valeurs possibles |
+|---------------|:----------------:|----------------|
+|Info/Thermostat HC Etat (BINAIRE)|`OUI`|Nécessaire pour gérer 'éteint'<br/>0 = Eteint<br/>1 = Allumé|
+|Info/Thermostat HC Etat (HUMAIN)|`NON`|'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'| 
+|Info/Thermostat HC Mode|`OUI si associé mode homekit`|'Aucun' ou 'Thermostat' = AUTO<br/>Exactement le nom d'une Action/Thermostat HC Mode<br/> à associer à HEAT ou COOL|
+|Action/Thermostat HC Mode|`NON`|Mode à associer à un mode homekit (max 2)|
+|Info/Thermostat HC Température ambiante|`NON`|-50 → 100| 
+|Info/Thermostat HC Consigne Chaude|`OUI`|10 → 38| 
+|Info/Thermostat HC Consigne Froide|`OUI`|10 → 38| 
+|Action/Thermostat HC Consigne Chaude|`OUI`|10 → 38<br/>(ou le min/max de la commande action s'ils sont renseignés)| 
+|Action/Thermostat HC Consigne Froide|`OUI`|10 → 38<br/>(ou le min/max de la commande action s'ils sont renseignés)| 
+|Info/Thermostat HC Verrouillage|`NON`|0 = Non Verrouillé<br/>1 = Verrouillé| 
+|Action/Thermostat HC Verrouillage|`OUI si Info/Verrouillage`|N/A| 
+|Action/Thermostat HC Déverrouillage|`OUI si Info/Verrouillage`|N/A| 
 
 Portails ou Garages
 --------------------
@@ -435,12 +453,13 @@ Generic/Environnement/Météo
 |Info/Humidité|`NON`|%|
 |Info/CO2 (ppm)|`NON`|PPM|
 |Info/Météo Index UV|`NON`|Générique (Eve Seulement)|
+|Info/UV|`NON`|Indice UV (Eve Seulement)|
 |Info/Météo Pluie|`NON`|0 = Pas de Pluie<br/>1 = Pluie<br/>(Eve Seulement)|
 |Info/Météo Neige|`NON`|0 = Pas de Neige<br/>1 = Neige<br/>(Eve Seulement)|
 |Info/Météo Visibilité|`NON`|Générique (Eve Seulement)|
 |Info/Puissance Electrique|`NON`|Watts (Eve Seulement)<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seule commande d'un équipement*| 
 |Info/Consommation Electrique|`NON`|KWh (Eve Seulement)<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seule commande d'un équipement*| 
-|Info/Température|`NON`|-50 → 300 °C| 
+|Info/Température|`NON`|-270 → 100 °C (limites HomeKit)| 
 |Info/Batterie|`NON`|%| 
 |Info/Batterie en charge|`NON`|0 = NON<br/>Pas 0 = OUI<br/>Non présent = Non Rechargable| 
 |Info/Détection de fumée|`NON`|0 = Pas de fumée<br/>1 = Fumée détectée| 
@@ -450,6 +469,7 @@ Generic/Environnement/Météo
 |Info/Choc|`NON`|Générique (Eve Seulement)|
 |Info/Pression|`NON`|Générique (Eve Seulement)|
 |Info/Son (dB)|`NON`|Générique (Eve Seulement)|
+|Info/Pluie (mm/h)|`NON`|Générique (Eve Seulement)|
 |Info/Pluie (accumulation)|`NON`|Générique (Eve Seulement)|
 |Info/Vent (direction)|`NON`|Générique (Eve Seulement)|
 |Info/Vent (vitesse)|`NON`|Générique (Eve Seulement)|
@@ -813,23 +833,22 @@ Si les deux contacts sont utilisés, copier-coller les types génériques On-1 s
 |Action/Lumière Bouton Off|Sur la commande qui permet d'éteindre la lumière|
 
 <br/>
-**Exemple Lumière avec variateur de luminosité :**
-
-|Type générique|Sur quelle commande appliquer|
-|--------------|-----------------------------|
-|Info/Lumière Etat|Sur la commande info indiquant la valeur de la luminosité<br/>**Ce type générique DOIT être utilisé, sinon votre équipement ne sera pas considéré comme une lumière !**| 
-|Info/Lumière Etat (Binaire)|Sur la commande info indiquant l'état binaire de la lumière<br/>0 = Eteint<br/> 1 = Allumé<br/>S'il y en a pas, c'est la commande qui a le type générique `Info/Lumière Etat` ci-dessus qui indique cet état d'allumage avec :<br/>0 = Eteint<br/> autre que  0 = Allumé|
-|Action/Lumière Slider|Sur la commande action de variation de la luminosité|
-|Action/Lumière Bouton On|Sur la commande qui permet d'allumer la lumière|
-|Action/Lumière Bouton Off|Sur la commande qui permet d'éteindre la lumière|
-
-<br/>
-**ou (nouvelle possibilité depuis 2023) :**
+**Exemple Lumière avec variateur de luminosité (état et luminosité séparés) :**
 
 |Type générique|Sur quelle commande appliquer|
 |--------------|-----------------------------|
 |Info/Lumière Etat|Sur la commande info indiquant l'état binaire de la lumière<br/>0 = Eteint<br/> 1 = Allumé<br/>**Ce type générique DOIT être utilisé, sinon votre équipement ne sera pas considéré comme une lumière !**|
 |Info/Lumière Luminosité|Sur la commande info indiquant la valeur de la luminosité|
+|Action/Lumière Slider|Sur la commande action de variation de la luminosité|
+|Action/Lumière Bouton On|Sur la commande qui permet d'allumer la lumière|
+|Action/Lumière Bouton Off|Sur la commande qui permet d'éteindre la lumière|
+
+<br/>
+**Exemple Lumière avec variateur, une seule commande donnant l'état et la luminosité :**
+
+|Type générique|Sur quelle commande appliquer|
+|--------------|-----------------------------|
+|Info/Lumière Etat|Sur la commande info indiquant la valeur de la luminosité, qui indique aussi l'état d'allumage :<br/>0 = Eteint<br/> autre que 0 = Allumé<br/>**Ce type générique DOIT être utilisé, sinon votre équipement ne sera pas considéré comme une lumière !**|
 |Action/Lumière Slider|Sur la commande action de variation de la luminosité|
 |Action/Lumière Bouton On|Sur la commande qui permet d'allumer la lumière|
 |Action/Lumière Bouton Off|Sur la commande qui permet d'éteindre la lumière|
