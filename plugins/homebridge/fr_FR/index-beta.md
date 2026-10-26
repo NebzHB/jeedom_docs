@@ -223,7 +223,7 @@ Lumière
 |Action/Lumière Toggle|`NON Utilisé`|N/A|
 |Action/Lumière Mode|`NON Utilisé`|N/A|
 
-`(Voir les exemples de configuration Lumière en fin de documentation)`
+`(Voir Exemples en 9.1 pour explications)`
 
 Prises
 ----------
