@@ -234,6 +234,7 @@ Prises
 |Info/Prise<br/>Etat|`OUI`|0 = Eteint<br/>1 = Allumé|
 |Action/Prise<br/>Bouton On|`OUI`|Réf. vers Info/Prise Etat| 
 |Action/Prise<br/>Bouton Off|`OUI`|Réf. vers Info/Prise Etat|
+|Info/Prise<br/>En Utilisation|`NON`|0 = Non utilisée<br/>1 = Utilisée<br/>Si absente : déduite de Info/Puissance Electrique (> 1 W)|
 |Action/Prise<br/>Slider|`NON Utilisé`|N/A|
 
 Ventilateur
@@ -370,7 +371,7 @@ Thermostats
 |Info/Thermostat Température Extérieur|`NON utilisé`|N/A|
 |Info/Thermostat Température ambiante|`NON`|-50 → 100| 
 |Info/Thermostat Consigne|`OUI`|10 → 38| 
-|Action/Thermostat Consigne|`OUI`|10 → 38| 
+|Action/Thermostat Consigne|`OUI`|10 → 38<br/>(ou le min/max de la commande action s'ils sont renseignés)| 
 |Info/Thermostat Verrouillage|`NON`|0 = Non Verrouillé<br/>1 = Verrouillé| 
 |Action/Thermostat Verrouillage|`OUI si Info/Verrouillage`|N/A| 
 |Action/Thermostat Déverrouillage|`OUI si Info/Verrouillage`|N/A| 
@@ -387,8 +388,8 @@ Thermostats HC
 |Info/Thermostat HC Température ambiante|`NON`|-50 → 100| 
 |Info/Thermostat HC Consigne Chaude|`OUI`|10 → 38| 
 |Info/Thermostat HC Consigne Froide|`OUI`|10 → 38| 
-|Action/Thermostat HC Consigne Chaude|`OUI`|10 → 38| 
-|Action/Thermostat HC Consigne Froide|`OUI`|10 → 38| 
+|Action/Thermostat HC Consigne Chaude|`OUI`|10 → 38<br/>(ou le min/max de la commande action s'ils sont renseignés)| 
+|Action/Thermostat HC Consigne Froide|`OUI`|10 → 38<br/>(ou le min/max de la commande action s'ils sont renseignés)| 
 |Info/Thermostat HC Verrouillage|`NON`|0 = Non Verrouillé<br/>1 = Verrouillé| 
 |Action/Thermostat HC Verrouillage|`OUI si Info/Verrouillage`|N/A| 
 |Action/Thermostat HC Déverrouillage|`OUI si Info/Verrouillage`|N/A| 
@@ -453,12 +454,13 @@ Generic/Environnement/Météo
 |Info/Humidité|`NON`|%|
 |Info/CO2 (ppm)|`NON`|PPM|
 |Info/Météo Index UV|`NON`|Générique (Eve Seulement)|
+|Info/UV|`NON`|Indice UV (Eve Seulement)|
 |Info/Météo Pluie|`NON`|0 = Pas de Pluie<br/>1 = Pluie<br/>(Eve Seulement)|
 |Info/Météo Neige|`NON`|0 = Pas de Neige<br/>1 = Neige<br/>(Eve Seulement)|
 |Info/Météo Visibilité|`NON`|Générique (Eve Seulement)|
 |Info/Puissance Electrique|`NON`|Watts (Eve Seulement)<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seule commande d'un équipement*| 
 |Info/Consommation Electrique|`NON`|KWh (Eve Seulement)<br/><br/>*à ajouter à un équipement existant*<br/>*Pas seule commande d'un équipement*| 
-|Info/Température|`NON`|-50 → 300 °C| 
+|Info/Température|`NON`|-270 → 100 °C (limites HomeKit)| 
 |Info/Batterie|`NON`|%| 
 |Info/Batterie en charge|`NON`|0 = NON<br/>Pas 0 = OUI<br/>Non présent = Non Rechargable| 
 |Info/Détection de fumée|`NON`|0 = Pas de fumée<br/>1 = Fumée détectée| 
@@ -468,6 +470,7 @@ Generic/Environnement/Météo
 |Info/Choc|`NON`|Générique (Eve Seulement)|
 |Info/Pression|`NON`|Générique (Eve Seulement)|
 |Info/Son (dB)|`NON`|Générique (Eve Seulement)|
+|Info/Pluie (mm/h)|`NON`|Générique (Eve Seulement)|
 |Info/Pluie (accumulation)|`NON`|Générique (Eve Seulement)|
 |Info/Vent (direction)|`NON`|Générique (Eve Seulement)|
 |Info/Vent (vitesse)|`NON`|Générique (Eve Seulement)|
