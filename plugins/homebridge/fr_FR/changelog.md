@@ -15,7 +15,7 @@ En Beta
 - **CO** : nouveau type générique « CO Alarme (Homebridge) » pour les détecteurs binaires (0 = normal, 1 = CO détecté). Le type générique « CO (ppm) » du core est maintenant lu comme un niveau en ppm (affiché dans Maison) avec une alarme à partir de 50 ppm s'il n'y a pas de CO Alarme sur l'équipement. Les commandes binaires qui avaient le type CO sont passées automatiquement en CO Alarme à la mise à jour.
 - **Multi-prises** : la puissance, la consommation et l'indicateur « en utilisation » sont maintenant rattachés à chaque prise (dans l'ordre des commandes), s'il y en a autant que de prises.
 - **Multi-lumières** : la luminosité, la couleur et la température couleur (et leurs commandes) sont maintenant rattachées à chaque lumière (dans l'ordre des commandes), s'il y en a autant que de lumières.
-- Nouveau type générique « Qualité d'air (PM2.5) (Homebridge) », affiché avec l'indice de qualité d'air.
+- Nouveau type générique « Qualité d'air (PM2.5) (Homebridge) », affiché avec l'indice de qualité d'air. Sans indice sur l'équipement, la qualité d'air est calculée à partir du PM2.5 (norme européenne).
 - Lumières : correction de la couleur et de la température couleur affichées quand l'équipement en a plusieurs.
 - Lumières : correction d'une température couleur invalide quand la valeur est vide ou à 0.
 - Lumières : sans minimum/maximum sur l'action Température Couleur, la plage par défaut de HomeKit est utilisée.
