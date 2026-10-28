@@ -447,6 +447,7 @@ Generic/Environnement/Météo
 |Info/Présence Occupation|`NON`|0 = Personne<br/>1 = Quelqu'un|
 |Info/Qualité d'air (Indice AQI)|`NON`|indice AQI|
 |Info/Qualité d'air (Indice Personnalisable)|`NON`|ppb ou µg/m3|
+|Info/Qualité d'air (PM2.5)|`NON`|µg/m3 (0 → 1000)<br/>Affiché avec Info/Qualité d'air (Indice AQI) du même équipement|
 |Info/CO Alarme|`NON`|0 = CO normal<br/>1 = CO anormal<br/>(les commandes binaires qui avaient le type CO sont passées en CO Alarme à la mise à jour du plugin)|
 |Info/CO (ppm)|`NON`|Niveau de CO en ppm (0 → 100 dans HomeKit)<br/>Sans Info/CO Alarme sur l'équipement : alarme à partir de 50 ppm|
 |Info/Luminosité|`NON`|0 → 100000 lux| 
