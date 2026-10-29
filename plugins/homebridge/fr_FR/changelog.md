@@ -25,7 +25,8 @@ En Beta
 - Amélioration des graphiques Eve.
 - Refactorisation et simplification du code.
 - Mise à jour de la librairie express.
-- **Équipements découpés** (multi-prises, multi-lumières, multi-relais…) : nom « Équipement - Commande » (au lieu de « / », non autorisésur HomeKit) et prise en compte du pseudo.
+- Mise à jour du paquet Homebridge (2.0.22).
+- **Équipements découpés** (multi-prises, multi-lumières, multi-relais…) : nom « Équipement - Commande » (au lieu de « / », non autorisé sur HomeKit) et prise en compte du pseudo.
 
 > Les équipements découpés (multi-prises, multi-lumières, multi-relais) changent de nom (« Équipement - Commande » au lieu de « Équipement / Commande »). Ils reviennent donc dans la pièce par défaut de Maison : il faut les replacer et vérifier les automatisations qui les utilisent.
 
