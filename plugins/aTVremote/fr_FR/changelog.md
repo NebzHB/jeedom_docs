@@ -8,6 +8,9 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## 30-10-2026
+- plein de mise à jour depuis 2024 mais celle du jour permet de supporter les nouveaux HomePods Mini 2 sortis aujourd'hui et on gère même leurs nouvelles couleurs :)
+
 ## 05-11-2024
 - Mise à jour de la lib pyatv
 
