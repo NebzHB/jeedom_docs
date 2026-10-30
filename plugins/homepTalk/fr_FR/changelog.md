@@ -9,6 +9,13 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+30-10-2026
+----------
+* Ils sont sortis aujourd'hui :) et.... hop une mise à jour pour supporter les HomePods Mini 2 :)
+* ils sont reconnus
+* ils ont une image à eux avec le 2
+* ils fonctionnent :)
+
 28-09-2026
 ----------
 * Augmentation de la limite de googletts à 200 caractères, d'après les tests, ça a augmenté.
