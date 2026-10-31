@@ -9,6 +9,12 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+En Beta
+-------
+- **Thermostats** : nouvelle ligne « Éteint » dans la personnalisation des modes (thermostat et thermostat HC) pour choisir la commande d'arrêt. Elle est proposée automatiquement d'après son nom (Arrêt, Éteint, Stop, Off…, avec ou sans accents ni majuscules). Pour un équipement déjà configuré, il suffit de rouvrir la personnalisation et d'enregistrer.
+- **Thermostats** : un avertissement apparaît dans le log homebridge quand aucune commande d'arrêt n'est configurée (« Éteint » dans Maison ne fait alors rien).
+- **Thermostats HC** : correction des modes Chauffer, Refroidir et Éteint qui ne faisaient rien.
+
 30-10-2026
 ----------
 - **Lumières** : migration automatique (une seule fois, à la mise à jour) vers le fonctionnement Info/Lumière Etat binaire + Info/Lumière Luminosité : l'ancien Info/Lumière Etat (Binaire) devient Info/Lumière Etat et l'ancien Info/Lumière Etat numérique devient Info/Lumière Luminosité. Les équipements ayant à la fois un Info/Lumière Etat binaire et un Info/Lumière Etat numérique (qui apparaissaient comme deux lumières) sont aussi migrés. Les équipements multi-lumières ne sont pas migrés. Le détail est dans le log homebridge.
