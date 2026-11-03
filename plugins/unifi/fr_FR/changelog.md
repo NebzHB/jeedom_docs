@@ -8,6 +8,39 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## En Beta
+
+**Nécessite Jeedom 4.6 minimum.**
+
+* **Coupures du contrôleur** : les actions lancées pendant une coupure ou un redémarrage du contrôleur sont mises en attente puis exécutées dès qu'il revient (jusqu'à 50 secondes), au lieu d'échouer. Les lectures abandonnent après 10 secondes.
+* **Reconnexion** : le démon réessaie pendant 50 secondes de se reconnecter au contrôleur avant de s'arrêter (Jeedom le relance ensuite), y compris quand le contrôleur ne répond plus ou que la session a expiré. Plus de reconnexions en boucle ni de connexions fantômes au contrôleur.
+* **Arrêt du démon** plus rapide et plus propre, même quand le contrôleur est injoignable.
+* **Sécurité des logs** : le mot de passe du contrôleur, la clé API de Jeedom et les mots de passe Wi-Fi (et autres secrets du contrôleur) n'apparaissent plus dans les logs du plugin et du démon. Pensez quand même à relire un log avant de le partager.
+* **Sécurité** : les actions et la page de configuration du plugin sont réservées aux administrateurs, et le démon n'accepte plus que les commandes du contrôleur.
+* **Synchronisation (Scan)** : affiche une erreur si le démon est arrêté ou si le contrôleur est injoignable, au lieu de « Synchronisation réussie ». Les noms d'équipements contenant une apostrophe ou un caractère spécial (ex. « iPhone d'Antoine ») ne sont plus renommés à chaque mise à jour et ne bloquent plus la synchronisation. Un équipement renommé automatiquement (nom en double) ne génère plus d'avertissement à chaque mise à jour.
+* **Sites autres que « default »** : les noms et images des modèles sont maintenant récupérés sur le bon site.
+* **PoE** : correction des actions PoE quand la configuration du switch ne peut pas être lue, l'état « PoE activé » ne change plus deux fois à chaque mise à jour (ce qui pouvait déclencher des scénarios à tort), et un port en PoE passif 24V est bien affiché comme alimenté.
+* **WLAN et LED** : l'état n'est plus modifié quand l'action a échoué (contrôleur injoignable). Les boutons Activer/Désactiver des WLAN et PowerCycle des ports d'UDM sont maintenant reliés à leur état, après la prochaine sauvegarde de l'équipement.
+* **Clients** : les infos Wi-Fi (SSID, signal, canal) sont vidées quand un client passe en filaire, et les noms de clients ne peuvent plus contenir de code HTML.
+* **Vouchers** : correction de la création avec un nom contenant des caractères spéciaux, des options multiUse/multiUtilisation qui n'étaient pas reconnues, et de l'évènement envoyé après la création.
+* **Automatisations sur évènements** : les tags sont correctement remplacés dans les options des actions, la liste des évènements est mieux regroupée dans toutes les langues, et l'onglet n'apparaît que sur l'équipement Site.
+* **Fenêtre Santé** : colonnes alignées, appareils hors ligne affichés, « Inconnu » quand aucune valeur n'a encore été reçue, chaque équipement n'est plus listé qu'une fois, et le tableau peut être trié.
+* **Interface** :
+  * Fenêtres et messages au format Jeedom 4.4+.
+  * Les erreurs du serveur s'affichent à nouveau correctement.
+  * Tous les champs de recherche fonctionnent.
+  * La correction automatique de l'URL du site gère toutes les formes d'adresse.
+  * Les lignes inutiles sont masquées sur un équipement Site.
+* **Page de configuration** : correction de la page qui ne fonctionnait plus du tout en anglais, et le panneau des dépendances se rafraîchit après une réparation de NodeJS.
+* **Traductions** : correction de nombreuses traductions fausses (allemand, espagnol, italien, portugais) et de fautes de français.
+* **Divers** :
+  * Le temps de polling et le délai de limitation des messages sont plafonnés à 24h.
+  * Le téléchargement des images est limité à 5 secondes.
+  * Moins de commandes sudo à chaque synchronisation.
+  * Nouveaux états d'appareil reconnus (Firmware incompatible, Suppression, Adoption échouée).
+  * Les dépendances de développement ne sont plus installées.
+  * Corrections de nombreux warnings PHP et mise à jour des librairies.
+
 ## 28-09-2026
 
 * Ajout du dossier resources/node_modules aux exclusions de backup
