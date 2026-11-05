@@ -13,7 +13,9 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 **Nécessite Jeedom 4.6 minimum.**
 
 * **Coupures du contrôleur** : les actions lancées pendant une coupure ou un redémarrage du contrôleur sont mises en attente puis exécutées dès qu'il revient (jusqu'à 50 secondes), au lieu d'échouer. Les lectures abandonnent après 10 secondes.
-* **Reconnexion** : le démon réessaie pendant 50 secondes de se reconnecter au contrôleur avant de s'arrêter (Jeedom le relance ensuite), y compris quand le contrôleur ne répond plus ou que la session a expiré. Plus de reconnexions en boucle ni de connexions fantômes au contrôleur.
+* **Reconnexion** : quand le contrôleur ne répond plus (redémarrage, mise à jour, coupure) ou que la session a expiré, le démon réessaie de se reconnecter pendant 5 minutes : toutes les 5 secondes la première minute, puis toutes les 10 secondes jusqu'à 3 minutes, puis toutes les 15 secondes jusqu'à 5 minutes. Un redémarrage de la gateway passe ainsi sans arrêt du démon. Au-delà, le démon s'arrête (Jeedom le relance ensuite). Plus de reconnexions en boucle ni de connexions fantômes au contrôleur.
+* **Démarrage** : si le contrôleur n'est pas encore joignable au démarrage du démon (par exemple après une coupure de courant, quand Jeedom redémarre plus vite que la gateway), le démon réessaie de la même façon au lieu de s'arrêter tout de suite.
+* **Identifiants refusés** : si le contrôleur refuse l'utilisateur ou le mot de passe, le démon s'arrête immédiatement avec un message clair dans le log, au lieu de réessayer (ce qui pouvait faire bloquer le compte par le contrôleur).
 * **Arrêt du démon** plus rapide et plus propre, même quand le contrôleur est injoignable.
 * **Sécurité des logs** : le mot de passe du contrôleur, la clé API de Jeedom et les mots de passe Wi-Fi (et autres secrets du contrôleur) n'apparaissent plus dans les logs du plugin et du démon. Pensez quand même à relire un log avant de le partager.
 * **Sécurité** : les actions et la page de configuration du plugin sont réservées aux administrateurs, et le démon n'accepte plus que les commandes du contrôleur.
