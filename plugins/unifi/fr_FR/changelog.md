@@ -12,11 +12,16 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 **Nécessite Jeedom 4.6 minimum.**
 
+* **Compatibilité UniFi Network 11** :
+  * Les équipements WLAN sont automatiquement migrés vers les nouveaux identifiants du contrôleur (dans le log : « WLAN migré vers son nouvel identifiant »). Sans cela, leur état n'était plus mis à jour et Activer/Désactiver ne fonctionnait plus. L'historique et les scénarios ne sont pas touchés.
+  * L'info « mise à jour du contrôleur disponible » fonctionne à nouveau.
+  * Les réglages du site, dont l'état des LED, sont à nouveau relus régulièrement. Plus d'erreur 404 dans le log du démon.
 * **Coupures du contrôleur** : les actions lancées pendant une coupure ou un redémarrage du contrôleur sont mises en attente puis exécutées dès qu'il revient (jusqu'à 50 secondes), au lieu d'échouer. Les lectures abandonnent après 10 secondes.
 * **Reconnexion** : quand le contrôleur ne répond plus (redémarrage, mise à jour, coupure) ou que la session a expiré, le démon réessaie de se reconnecter pendant 5 minutes : toutes les 5 secondes la première minute, puis toutes les 10 secondes jusqu'à 3 minutes, puis toutes les 15 secondes jusqu'à 5 minutes. Un redémarrage de la gateway passe ainsi sans arrêt du démon. Au-delà, le démon s'arrête (Jeedom le relance ensuite). Plus de reconnexions en boucle ni de connexions fantômes au contrôleur.
 * **Démarrage** : si le contrôleur n'est pas encore joignable au démarrage du démon (par exemple après une coupure de courant, quand Jeedom redémarre plus vite que la gateway), le démon réessaie de la même façon au lieu de s'arrêter tout de suite.
 * **Identifiants refusés** : si le contrôleur refuse l'utilisateur ou le mot de passe, le démon s'arrête immédiatement avec un message clair dans le log, au lieu de réessayer (ce qui pouvait faire bloquer le compte par le contrôleur).
 * **Arrêt du démon** plus rapide et plus propre, même quand le contrôleur est injoignable.
+* **Envoi des informations vers Jeedom** (après réinstallation des dépendances) : plus de blocage définitif des mises à jour après une coupure ou un redémarrage de Jeedom. Pendant une coupure, les informations sont conservées jusqu'à 2 minutes puis envoyées dans l'ordre dès que Jeedom revient. Une erreur du plugin ne fait plus rejouer plusieurs fois le même évènement (et donc les automatisations).
 * **Sécurité des logs** : le mot de passe du contrôleur, la clé API de Jeedom et les mots de passe Wi-Fi (et autres secrets du contrôleur) n'apparaissent plus dans les logs du plugin et du démon. Pensez quand même à relire un log avant de le partager.
 * **Sécurité** : les actions et la page de configuration du plugin sont réservées aux administrateurs, et le démon n'accepte plus que les commandes du contrôleur.
 * **Synchronisation (Scan)** : affiche une erreur si le démon est arrêté ou si le contrôleur est injoignable, au lieu de « Synchronisation réussie ». Les noms d'équipements contenant une apostrophe ou un caractère spécial (ex. « iPhone d'Antoine ») ne sont plus renommés à chaque mise à jour et ne bloquent plus la synchronisation. Un équipement renommé automatiquement (nom en double) ne génère plus d'avertissement à chaque mise à jour.
