@@ -9,16 +9,13 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
-En Beta
+10-11-2026
 -------
 - **Thermostats** : nouvelle ligne « Auto » dans la personnalisation des modes : renvoyer la consigne (comme avant), masquer Auto dans Maison, ou exécuter une commande (par exemple le mode Auto d'une climatisation, aussi utilisé par Siri pour « allume la clim »).
 - **Thermostats HC** : Maison affiche maintenant si le thermostat est allumé et s'il chauffe ou refroidit (la tuile restait sur « Éteint »).
 - **Thermostats HC** : allumer depuis Maison dans un mode (ex. Chauffage depuis Éteint) ne repasse plus dans un autre mode (Climatisation) quelques secondes après.
 - **Thermostats** : la tuile ne passe plus brièvement par « Auto » lors d'un changement de mode (cas des thermostats virtuels).
 - **Thermostats** : Maison affiche maintenant si le thermostat chauffe ou refroidit même sans commande « Etat (nom) » (déduit de l'état et du mode).
-
-10-11-2026
--------
 - **Thermostats** : nouvelle ligne « Éteint » dans la personnalisation des modes (thermostat et thermostat HC) pour choisir la commande d'arrêt. Elle est proposée automatiquement d'après son nom (Arrêt, Éteint, Stop, Off…, avec ou sans accents ni majuscules). Rien ne change pour les thermostats déjà configurés : si « Éteint » ne faisait rien dans Maison, rouvrir la personnalisation et enregistrer.
 - **Thermostats** : un avertissement apparaît dans le log homebridge quand aucune commande d'arrêt n'est configurée (« Éteint » dans Maison ne fait alors rien).
 - **Thermostats HC** : correction des modes Chauffer, Refroidir et Éteint qui ne faisaient rien.
