@@ -190,6 +190,10 @@ Astuces & FAQ
 =============
 -   Pour lancer un scan dans un scénario, via un bloc code, vous pouvez lancer : `unifi::syncUnifi();`
 
+-   **Le démon s'arrête tout seul ?** Regardez le log *unifi_deamon* :
+    -   « Identifiants refusés par le contrôleur » : l'utilisateur ou le mot de passe de la configuration du plugin est refusé par le contrôleur (mot de passe changé, compte bloqué, utilisateur non local…). Le démon s'arrête immédiatement pour ne pas faire bloquer le compte.
+    -   « Contrôleur injoignable depuis 5 min » : le contrôleur ne répondait plus (éteint, en redémarrage, mauvaise IP ou mauvais port). Le démon réessaie pendant 5 minutes, au démarrage comme en cours de fonctionnement, avant de s'arrêter ; Jeedom le relance ensuite.
+
 -   Pour la gestion des présences, assurez vous d'avoir coché ceci dans le contrôleur :
 
 ![image](https://user-images.githubusercontent.com/28622481/134291583-68965409-aa72-4086-9843-495b4e932c30.png)
@@ -209,7 +213,7 @@ Astuces & FAQ
 
 **Eviter les noms en doublon du coté du controleur Unifi :**
 
-Pensez à avoir des noms d'équipements différents sinon vous pourriez rencontrer une erreur du type "_[MySQL] Error code : 23000 (1062). Duplicate entry '[NOM DE L EQUIPEMENT EN DOUBLE]' for key 'unique' : ..._" dans Jeedom lorsque vous faites un scan des équipements. 
+Jeedom n'accepte pas deux équipements du même nom dans une même pièce. Si deux équipements du contrôleur portent le même nom, le plugin crée le second avec son adresse MAC (ou son identifiant) ajoutée à la fin du nom, par exemple `iPhone_aa:bb:cc:dd:ee:ff`. Pensez quand même à avoir des noms différents dans le contrôleur, ce sera plus lisible dans Jeedom.
 
 Ce cas, peut être également rencontré lorsque vous avez un équipement qui peut etre connecté de plusieurs façons différentes à votre réseau.
 Par exemple avec un PC portable a généralement une inerface réseau filaire (ethernet) et une autre sans-fil (wifi). Par défaut, ce dernier peut apparaitre avec le même nom dans le controleur Unifi et causer l'erreur décrite ci-dessus dans Jeedom.
