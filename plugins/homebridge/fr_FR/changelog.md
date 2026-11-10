@@ -11,6 +11,7 @@ Changelog
 
 En Beta
 -------
+- **Thermostats** : nouvelle ligne « Auto » dans la personnalisation des modes : renvoyer la consigne (comme avant), masquer Auto dans Maison, ou exécuter une commande (par exemple le mode Auto d'une climatisation, aussi utilisé par Siri pour « allume la clim »).
 - **Thermostats HC** : Maison affiche maintenant si le thermostat est allumé et s'il chauffe ou refroidit (la tuile restait sur « Éteint »).
 - **Thermostats HC** : allumer depuis Maison dans un mode (ex. Chauffage depuis Éteint) ne repasse plus dans un autre mode (Climatisation) quelques secondes après.
 - **Thermostats** : la tuile ne passe plus brièvement par « Auto » lors d'un changement de mode (cas des thermostats virtuels).

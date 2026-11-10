@@ -366,7 +366,7 @@ Thermostats
 |Info/Thermostat Etat (BINAIRE)|`NON Utilisé`|0 = Eteint<br/>1 = Allumé|
 |Info/Thermostat Etat (HUMAIN)|`NON`|'off' ou 'arrêté' ou 'arret'<br/>'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'| 
 |Info/Thermostat Mode|`OUI si associé mode homekit`|'Off' ou 'Arret' = OFF<br/>'Aucun' ou 'Thermostat' = AUTO<br/>Exactement le nom d'une Action/Thermostat Mode<br/> à associer à HEAT ou COOL|
-|Action/Thermostat Mode|`NON`|Mode à associer à un mode HomeKit : Chauffer, Refroidir et Éteint (voir la personnalisation des modes dans la configuration de l'équipement)|
+|Action/Thermostat Mode|`NON`|Mode à associer à un mode HomeKit : Chauffer, Refroidir, Éteint et Auto (voir la personnalisation des modes dans la configuration de l'équipement)|
 |Info/Thermostat Température Extérieur|`NON utilisé`|N/A|
 |Info/Thermostat Température ambiante|`NON`|-50 → 100| 
 |Info/Thermostat Consigne|`OUI`|10 → 38| 
@@ -383,7 +383,7 @@ Thermostats HC
 |Info/Thermostat HC Etat (BINAIRE)|`OUI`|Nécessaire pour gérer 'éteint'<br/>0 = Eteint<br/>1 = Allumé|
 |Info/Thermostat HC Etat (HUMAIN)|`NON`|'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'| 
 |Info/Thermostat HC Mode|`OUI si associé mode homekit`|'Aucun' ou 'Thermostat' = AUTO<br/>Exactement le nom d'une Action/Thermostat HC Mode<br/> à associer à HEAT ou COOL|
-|Action/Thermostat HC Mode|`NON`|Mode à associer à un mode HomeKit : Chauffer, Refroidir et Éteint (voir la personnalisation des modes dans la configuration de l'équipement)|
+|Action/Thermostat HC Mode|`NON`|Mode à associer à un mode HomeKit : Chauffer, Refroidir, Éteint et Auto (voir la personnalisation des modes dans la configuration de l'équipement)|
 |Info/Thermostat HC Température ambiante|`NON`|-50 → 100| 
 |Info/Thermostat HC Consigne Chaude|`OUI`|10 → 38| 
 |Info/Thermostat HC Consigne Froide|`OUI`|10 → 38| 
@@ -1361,9 +1361,14 @@ Plugin "Thermostat"
 
 ### Configuration #
 
-Les modes "Chauffer", "Refroidir" et "Éteint" sont à configurer : il faut attribuer un mode du plugin "Thermostat" à chaque mode de HomeKit.
+Les modes "Chauffer", "Refroidir", "Éteint" et "Auto" sont à configurer : il faut attribuer un mode du plugin "Thermostat" à chaque mode de HomeKit.
 
 Pour "Éteint", la commande dont le nom veut dire arrêt (Off, Arrêt, Éteint, Stop…) est proposée automatiquement, on peut en choisir une autre. Sans commande pour "Éteint", "Éteint" dans Maison ne fait rien (un avertissement est écrit dans le log).
+
+La ligne "Auto" propose trois choix :
+* **Renvoyer la consigne** (par défaut) : "Auto" dans Maison renvoie la consigne actuelle, ce qui remet le plugin Thermostat en mode Aucun (voir **E** ci-dessous).
+* **Masquer** : "Auto" n'est plus proposé dans Maison (utile pour une climatisation qui n'a pas de mode automatique).
+* **Une commande de mode** : "Auto" dans Maison exécute cette commande (par exemple le mode Auto d'une climatisation). Une commande nommée Auto, Automatique… est proposée automatiquement.
 
 ![thermostat](../images/thermostat.png)
 
@@ -1377,7 +1382,7 @@ Pour "Éteint", la commande dont le nom veut dire arrêt (Off, Arrêt, Éteint, 
 * **C** : Commande de modification de la Consigne A : Augmenter ou diminuer la température à l’aide du curseur. Cela aura pour action de modifier également le mode du chauffage E qui passera à AUCUN dans le dashboard Jeedom.
 * **D** : Statut du thermostat retourné par le plugin Thermostat : Arrêté (ou Désactivé ou Eteint) (Rond vert dans Maison) / Chauffage (Rond Orange dans Maison) / Climatisation (Rond Bleu dans Maison).
 
-* **E** : Mode Auto (dans Maison ou Eve) : correspond au mode Aucun dans Jeedom où le Plugin Thermostat décide de ce qu'il doit faire en fonction de la température qu'on lui envoie. Ce mode permet de régler une température cible via le curseur C
+* **E** : Mode Auto (dans Maison ou Eve) : par défaut, correspond au mode Aucun dans Jeedom où le Plugin Thermostat décide de ce qu'il doit faire en fonction de la température qu'on lui envoie. Ce mode permet de régler une température cible via le curseur C. Il peut aussi exécuter une commande ou être masqué (ligne "Auto" de la configuration du Thermostat dans le Plugin Homebridge)
 
 * **F** : Mode Clim / Refroidir : Mode customisé associé manuellement dans la configuration du Thermostat dans le Plugin Homebridge. Permet de lancer le mode associé dans le plugin Thermostat. (Repasse en mode AUTO, si une température cible est donnée)
 
