@@ -9,7 +9,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
-10-11-2026 (beta)
+10-11-2026 
 --------
 **Nouveau : exposer les équipements dans Maison via Homebridge (BETA)**
 * Option **Exposer dans Maison** sur la fiche d'un accessoire ou d'un pont appairé : l'équipement est exposé à l'identique dans l'app Maison, par son propre pont Homebridge. Nécessite le plugin homebridge à jour (voir la documentation, section « Exposer dans Maison »).
