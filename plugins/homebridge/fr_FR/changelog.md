@@ -19,6 +19,7 @@ Changelog
 - La page de configuration du plugin est réservée aux administrateurs.
 - Mise à jour de Homebridge (2.5.0).
 - Mise à jour du paquet Homebridge (2.0.24).
+- Mise à jour du paquet NodeJS (version que pour homebridge) en 26.
 - Mise à jour de la librairie axios.
 
 30-10-2026
