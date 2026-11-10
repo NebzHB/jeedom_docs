@@ -12,6 +12,7 @@ Changelog
 En Beta
 -------
 - **Thermostats** : nouvelle ligne « Auto » dans la personnalisation des modes : renvoyer la consigne (comme avant), masquer Auto dans Maison, ou exécuter une commande (par exemple le mode Auto d'une climatisation, aussi utilisé par Siri pour « allume la clim »).
+- **Thermostats** : Maison affiche maintenant si le thermostat chauffe ou refroidit même sans commande « Etat (nom) » (déduit de l'état et du mode).
 
 10-11-2026
 -------
