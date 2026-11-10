@@ -9,7 +9,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
-En Beta
+10-11-2026
 -------
 - **Thermostats** : nouvelle ligne « Éteint » dans la personnalisation des modes (thermostat et thermostat HC) pour choisir la commande d'arrêt. Elle est proposée automatiquement d'après son nom (Arrêt, Éteint, Stop, Off…, avec ou sans accents ni majuscules). Rien ne change pour les thermostats déjà configurés : si « Éteint » ne faisait rien dans Maison, rouvrir la personnalisation et enregistrer.
 - **Thermostats** : un avertissement apparaît dans le log homebridge quand aucune commande d'arrêt n'est configurée (« Éteint » dans Maison ne fait alors rien).
