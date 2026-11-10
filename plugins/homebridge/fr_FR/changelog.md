@@ -10,21 +10,21 @@ Changelog
 =========
 
 10-11-2026
--------
-- **Thermostats** : nouvelle ligne « Auto » dans la personnalisation des modes : renvoyer la consigne (comme avant), masquer Auto dans Maison, ou exécuter une commande (par exemple le mode Auto d'une climatisation, aussi utilisé par Siri pour « allume la clim »).
-- **Thermostats HC** : Maison affiche maintenant si le thermostat est allumé et s'il chauffe ou refroidit (la tuile restait sur « Éteint »).
-- **Thermostats HC** : allumer depuis Maison dans un mode (ex. Chauffage depuis Éteint) ne repasse plus dans un autre mode (Climatisation) quelques secondes après.
-- **Thermostats** : la tuile ne passe plus brièvement par « Auto » lors d'un changement de mode (cas des thermostats virtuels).
-- **Thermostats** : Maison affiche maintenant si le thermostat chauffe ou refroidit même sans commande « Etat (nom) » (déduit de l'état et du mode).
+----------
+- **Thermostats** : nouvelle ligne « Auto » dans la personnalisation des modes : renvoyer la consigne (comme avant, par défaut), masquer Auto dans Maison, ou exécuter une commande (par exemple le mode Auto d'une climatisation, aussi utilisé par Siri pour « allume la clim »).
 - **Thermostats** : nouvelle ligne « Éteint » dans la personnalisation des modes (thermostat et thermostat HC) pour choisir la commande d'arrêt. Elle est proposée automatiquement d'après son nom (Arrêt, Éteint, Stop, Off…, avec ou sans accents ni majuscules). Rien ne change pour les thermostats déjà configurés : si « Éteint » ne faisait rien dans Maison, rouvrir la personnalisation et enregistrer.
 - **Thermostats** : un avertissement apparaît dans le log homebridge quand aucune commande d'arrêt n'est configurée (« Éteint » dans Maison ne fait alors rien).
+- **Thermostats** : Maison affiche maintenant si le thermostat chauffe ou refroidit même sans commande « Etat (HUMAIN) » (déduit de l'état et du mode).
+- **Thermostats HC** : Maison affiche maintenant si le thermostat est allumé et s'il chauffe ou refroidit (la tuile restait sur « Éteint »).
 - **Thermostats HC** : correction des modes Chauffer, Refroidir et Éteint qui ne faisaient rien.
+- **Thermostats HC** : allumer depuis Maison dans un mode (ex. Chauffage depuis Éteint) ne repasse plus dans un autre mode (Climatisation) quelques secondes après.
 - **Thermostats** : Maison affichait « Auto » quand le mode du thermostat portait le nom de la commande d'arrêt (ex. « Éteint ») ou un nom accentué : le bon mode est maintenant affiché.
+- **Thermostats** : la tuile ne passe plus brièvement par « Auto » lors d'un changement de mode (cas des thermostats virtuels).
 - **Identifier** : identifier un accessoire depuis Maison (ou pendant son ajout) affiche une notification sur la page de configuration du plugin, avec son nom.
 - La page de configuration du plugin est réservée aux administrateurs.
 - Mise à jour de Homebridge (2.5.0).
 - Mise à jour du paquet Homebridge (2.0.24).
-- Mise à jour du paquet NodeJS (version que pour homebridge) en 26.
+- Mise à jour du paquet NodeJS en version 26 (utilisé uniquement par Homebridge).
 - Mise à jour de la librairie axios.
 
 30-10-2026
