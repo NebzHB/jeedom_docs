@@ -364,7 +364,7 @@ Thermostats
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
 |Info/Thermostat Etat (BINAIRE)|`NON`|0 = Eteint<br/>1 = En marche (chauffe ou refroidit selon le mode)<br/>Utilisé seulement sans Etat (HUMAIN)|
-|Info/Thermostat Etat (HUMAIN)|`NON`|'off' ou 'arrêté' ou 'arret'<br/>'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'<br/>Sans Etat (HUMAIN) ni Etat (BINAIRE), l'état affiché est déduit du mode| 
+|Info/Thermostat Etat (HUMAIN)|`NON`|'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'<br/>autre valeur ('off', 'arrêté'…) = éteint<br/>Sans Etat (HUMAIN) ni Etat (BINAIRE), l'état affiché est déduit du mode| 
 |Info/Thermostat Mode|`OUI si associé mode homekit`|'Off' ou 'Arret' = OFF<br/>'Aucun' ou 'Thermostat' = AUTO<br/>Exactement le nom d'une Action/Thermostat Mode<br/> à associer à HEAT ou COOL|
 |Action/Thermostat Mode|`NON`|Mode à associer à un mode HomeKit : Chauffer, Refroidir, Éteint et Auto (voir la personnalisation des modes dans la configuration de l'équipement)|
 |Info/Thermostat Température Extérieur|`NON utilisé`|N/A|
@@ -380,8 +380,8 @@ Thermostats HC
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
-|Info/Thermostat HC Etat (BINAIRE)|`OUI`|Nécessaire pour gérer 'éteint'<br/>0 = Eteint<br/>1 = Allumé|
-|Info/Thermostat HC Etat (HUMAIN)|`NON`|'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'| 
+|Info/Thermostat HC Etat (BINAIRE)|`NON`|0 = Eteint<br/>1 = Allumé<br/>Sans elle, l'état Allumé / Éteint est déduit du mode (Éteint ou non)|
+|Info/Thermostat HC Etat (HUMAIN)|`NON`|'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'<br/>autre valeur = au repos<br/>Sans elle, l'état affiché (chauffe / refroidit) est déduit du mode|
 |Info/Thermostat HC Mode|`OUI si associé mode homekit`|'Aucun' ou 'Thermostat' = AUTO<br/>Exactement le nom d'une Action/Thermostat HC Mode<br/> à associer à HEAT ou COOL|
 |Action/Thermostat HC Mode|`NON`|Mode à associer à un mode HomeKit : Chauffer, Refroidir, Éteint et Auto (voir la personnalisation des modes dans la configuration de l'équipement)|
 |Info/Thermostat HC Température ambiante|`NON`|-50 → 100| 
