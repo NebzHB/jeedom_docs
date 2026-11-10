@@ -366,7 +366,7 @@ Thermostats
 |Info/Thermostat Etat (BINAIRE)|`NON Utilisé`|0 = Eteint<br/>1 = Allumé|
 |Info/Thermostat Etat (HUMAIN)|`NON`|'off' ou 'arrêté' ou 'arret'<br/>'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'| 
 |Info/Thermostat Mode|`OUI si associé mode homekit`|'Off' ou 'Arret' = OFF<br/>'Aucun' ou 'Thermostat' = AUTO<br/>Exactement le nom d'une Action/Thermostat Mode<br/> à associer à HEAT ou COOL|
-|Action/Thermostat Mode|`NON`|Mode à associer à un mode homekit (max 2)|
+|Action/Thermostat Mode|`NON`|Mode à associer à un mode HomeKit : Chauffer, Refroidir et Éteint (voir la personnalisation des modes dans la configuration de l'équipement)|
 |Info/Thermostat Température Extérieur|`NON utilisé`|N/A|
 |Info/Thermostat Température ambiante|`NON`|-50 → 100| 
 |Info/Thermostat Consigne|`OUI`|10 → 38| 
@@ -383,7 +383,7 @@ Thermostats HC
 |Info/Thermostat HC Etat (BINAIRE)|`OUI`|Nécessaire pour gérer 'éteint'<br/>0 = Eteint<br/>1 = Allumé|
 |Info/Thermostat HC Etat (HUMAIN)|`NON`|'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'| 
 |Info/Thermostat HC Mode|`OUI si associé mode homekit`|'Aucun' ou 'Thermostat' = AUTO<br/>Exactement le nom d'une Action/Thermostat HC Mode<br/> à associer à HEAT ou COOL|
-|Action/Thermostat HC Mode|`NON`|Mode à associer à un mode homekit (max 2)|
+|Action/Thermostat HC Mode|`NON`|Mode à associer à un mode HomeKit : Chauffer, Refroidir et Éteint (voir la personnalisation des modes dans la configuration de l'équipement)|
 |Info/Thermostat HC Température ambiante|`NON`|-50 → 100| 
 |Info/Thermostat HC Consigne Chaude|`OUI`|10 → 38| 
 |Info/Thermostat HC Consigne Froide|`OUI`|10 → 38| 
@@ -1361,7 +1361,9 @@ Plugin "Thermostat"
 
 ### Configuration #
 
-Seuls les modes "Chauffer" et "Refroidir" sont à configurer. Il faut attribuer un mode du plugin "Thermostat" à un mode de HomeKit.
+Les modes "Chauffer", "Refroidir" et "Éteint" sont à configurer : il faut attribuer un mode du plugin "Thermostat" à chaque mode de HomeKit.
+
+Pour "Éteint", la commande dont le nom veut dire arrêt (Off, Arrêt, Éteint, Stop…) est proposée automatiquement, on peut en choisir une autre. Sans commande pour "Éteint", "Éteint" dans Maison ne fait rien (un avertissement est écrit dans le log).
 
 ![thermostat](../images/thermostat.png)
 
@@ -1381,7 +1383,7 @@ Seuls les modes "Chauffer" et "Refroidir" sont à configurer. Il faut attribuer 
 
 * **G** : Mode Chauf / Chauffer : Mode customisé associé manuellement dans la configuration du Thermostat dans le Plugin Homebridge. Permet de lancer le mode associé dans le plugin Thermostat. (Repasse en mode AUTO, si une température cible est donnée)
 
-* **H** : Eteint / Off : permet d'éteindre le thermostat.
+* **H** : Eteint / Off : permet d'éteindre le thermostat (commande choisie sur la ligne "Éteint" de la configuration du Thermostat dans le Plugin Homebridge).
 * **I** : Verrouillage/Protection Enfants (uniquement dans Eve) : permet de verrouiller le thermostat. (modifié)
 
 ### Utilisation #
