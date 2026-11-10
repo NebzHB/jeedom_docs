@@ -9,6 +9,12 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+En Beta
+-------
+- **Thermostats HC** : Maison affiche maintenant si le thermostat est allumé et s'il chauffe ou refroidit (la tuile restait sur « Éteint »).
+- **Thermostats HC** : allumer depuis Maison dans un mode (ex. Chauffage depuis Éteint) ne repasse plus dans un autre mode (Climatisation) quelques secondes après.
+- **Thermostats** : la tuile ne passe plus brièvement par « Auto » lors d'un changement de mode (cas des thermostats virtuels).
+
 10-11-2026
 -------
 - **Thermostats** : nouvelle ligne « Éteint » dans la personnalisation des modes (thermostat et thermostat HC) pour choisir la commande d'arrêt. Elle est proposée automatiquement d'après son nom (Arrêt, Éteint, Stop, Off…, avec ou sans accents ni majuscules). Rien ne change pour les thermostats déjà configurés : si « Éteint » ne faisait rien dans Maison, rouvrir la personnalisation et enregistrer.
