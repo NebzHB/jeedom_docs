@@ -363,8 +363,8 @@ Thermostats
 
 |Type générique  | Obligatoire | Valeurs possibles |
 |---------------|:----------------:|----------------|
-|Info/Thermostat Etat (BINAIRE)|`NON Utilisé`|0 = Eteint<br/>1 = Allumé|
-|Info/Thermostat Etat (HUMAIN)|`NON`|'off' ou 'arrêté' ou 'arret'<br/>'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'| 
+|Info/Thermostat Etat (BINAIRE)|`NON`|0 = Eteint<br/>1 = En marche (chauffe ou refroidit selon le mode)<br/>Utilisé seulement sans Etat (HUMAIN)|
+|Info/Thermostat Etat (HUMAIN)|`NON`|'off' ou 'arrêté' ou 'arret'<br/>'heat' ou 'chauffage'<br/>'cool' ou 'climatisation'<br/>Sans Etat (HUMAIN) ni Etat (BINAIRE), l'état affiché est déduit du mode| 
 |Info/Thermostat Mode|`OUI si associé mode homekit`|'Off' ou 'Arret' = OFF<br/>'Aucun' ou 'Thermostat' = AUTO<br/>Exactement le nom d'une Action/Thermostat Mode<br/> à associer à HEAT ou COOL|
 |Action/Thermostat Mode|`NON`|Mode à associer à un mode HomeKit : Chauffer, Refroidir, Éteint et Auto (voir la personnalisation des modes dans la configuration de l'équipement)|
 |Info/Thermostat Température Extérieur|`NON utilisé`|N/A|
