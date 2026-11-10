@@ -8,7 +8,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
-## En Beta
+## 10-11-2026
 
 **Nécessite Jeedom 4.6 minimum.**
 
