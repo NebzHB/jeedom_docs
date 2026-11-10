@@ -9,6 +9,47 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+10-11-2026 (beta)
+--------
+**Nouveau : exposer les équipements dans Maison via Homebridge (BETA)**
+* Option **Exposer dans Maison** sur la fiche d'un accessoire ou d'un pont appairé : l'équipement est exposé à l'identique dans l'app Maison, par son propre pont Homebridge. Nécessite le plugin homebridge à jour (voir la documentation, section « Exposer dans Maison »).
+* QR code et code d'appairage affichés sur la fiche ; l'appairage dans Maison est détecté tout seul, sans recharger la page.
+* État de l'exposition dans la page **Santé** (colonne Maison) et icône sur les vignettes des équipements.
+* Supprimer un équipement exposé : avertissement, puis proposition de relancer Homebridge pour retirer son pont.
+* Les dépendances installent le module homebridge-hkcontrol de la même branche que le plugin (beta ou stable).
+
+**Appairage**
+* Refus d'appairage expliqués en clair : code PIN incorrect, accessoire déjà appairé ailleurs, trop de tentatives, accessoire occupé…
+* Un accessoire désappairé en dehors de Jeedom est détecté : un message le signale et il peut être réappairé depuis la même fiche, sans perdre ses commandes.
+* Bouton **Oublier quand même** quand le désappairage échoue (accessoire hors service ou déjà réinitialisé).
+* Supprimer un équipement appairé le désappaire, ou oublie ses clés s'il ne répond pas : plus d'appairage orphelin.
+* Pré-appairage (équipements à écran) relançable après un mauvais code ou un redémarrage du démon ; un double clic ne lance plus deux appairages.
+* Un appairage qui aboutit après le délai d'attente est conservé (avant : l'accessoire restait appairé à des clés perdues).
+
+**État « En Ligne » et connexions**
+* « En Ligne » reflète la connexion réelle avec l'équipement (et non plus un ping) : hors ligne 60 s après une perte de connexion, 10 s si l'équipement est injoignable sur le réseau, 5 s s'il annonce son départ. Tout passe hors ligne quand le démon est arrêté.
+* Reconnexion automatique (après 30 s, 1 min, 2 min puis toutes les 5 min) et immédiate dès que l'équipement s'annonce de nouveau. Une coupure est détectée en 40 s environ.
+* Changement d'adresse IP ou de port suivi automatiquement ; adresse IPv4 utilisée de préférence.
+* Les valeurs sont relues toutes les heures, pour rattraper les changements perdus pendant une indisponibilité de Jeedom.
+
+**Commandes**
+* Une commande qui échoue l'affiche (et fait échouer le scénario), avec la raison donnée par l'équipement.
+* Sauvegarder un équipement ne réécrit plus les valeurs, l'unité ni l'affichage des commandes.
+* Binaires à plusieurs états (0/50/100, 1/2…) corrects ; Ouvrir / Fermer / Stop envoient les valeurs réelles de l'équipement.
+* Commande Éteindre ajoutée aux interrupteurs qui ne remontent pas leur état tout seuls (Manual Info).
+
+**Fiabilité**
+* Le démon ne plante plus et ne gèle plus sur une réponse anormale d'un équipement ; un démon qui ne répond plus est détecté et relancé par Jeedom ; arrêt propre.
+* Fichier des appairages protégé : écriture sûre, copie de secours et récupération automatique (avec message) s'il est abîmé ou supprimé. Un échec d'écriture (disque plein) est signalé et réessayé.
+* Le démon se relance tout seul si son port est occupé au démarrage.
+* Les appels au démon passent par l'IP interne de Jeedom (fonctionne sous Docker).
+
+**Sécurité et interface**
+* Les noms et informations venant des équipements du réseau sont nettoyés avant affichage.
+* La clé privée et le code PIN n'apparaissent plus dans les logs.
+* Erreurs du serveur affichées (ex. « Le démon n'est pas démarré ») au lieu d'une alerte vide.
+* Log du démon allégé (plus de ligne toutes les 5 s pour le test de vie).
+
 28-09-2026
 --------
 * Meilleur arret du démon

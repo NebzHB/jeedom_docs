@@ -6,6 +6,7 @@ description: Documentation du plugin hkControl
 ---
 
 >**Si vous cherchez à envoyer les périphériques Jeedom dans Homekit, ce n’est pas le bon plugin, dans ce cas, il faut utiliser [#plugin-homebridge](https://nebzhb.github.io/jeedom_docs/plugins/homebridge/fr_FR/){:target="_blank" rel="noopener"} !!**
+>(Exception : les équipements appairés dans hkControl peuvent être renvoyés dans Maison, voir [Exposer dans Maison](#exposer-dans-maison-via-homebridge).)
 
 Présentation Homekit Network Devices Control (hkControl)
 ========================================================
@@ -33,7 +34,13 @@ Configuration du plugin
 Après installation du plugin, il vous suffit de l’activer. Si vous voullez aller plus vite, vous pouvez lancer les dépendances ou attendre ~5min.
 Une fois les dépendances terminées, le démon démarrera dans les 5min également (ou vous pouvez le lancer à la main).
 
-Le démon va détecter les périphériques Homekit sur votre réseau automatiquement lors de son démarrage (multicast utilisé, routage non supporté !). Ensuite il continuera d'écouter les messages de vos équipements, ceux-ci doivent envoyer quand ils se connectent.  Pour forcer un Bonjour sur le réseau, relancez le démon (normalement pas nécessaire).
+Le démon va détecter les périphériques Homekit sur votre réseau automatiquement lors de son démarrage (multicast utilisé, routage non supporté !). Ensuite il continuera d'écouter les messages de vos équipements, ceux-ci doivent envoyer quand ils se connectent.  Pour forcer un Bonjour sur le réseau, utilisez le bouton **Redécouvrir** de la page du plugin (normalement pas nécessaire).
+
+La configuration du plugin propose aussi deux **Réparations** :
+-   **Réparation de NodeJS** : supprime et réinstalle NodeJS, puis relance les dépendances.
+-   **Supprimer des périphériques appairés du cache** : fait oublier au démon les clés d'un ou plusieurs équipements (par exemple un équipement qui n'existe plus). Ils devront être réappairés pour être utilisés de nouveau.
+
+>Les clés d'appairage sont enregistrées dans `data/pairings.json`, avec une copie de secours. Si ce fichier est abîmé ou supprimé, le démon reprend automatiquement la copie de secours et un message Jeedom le signale. Si le fichier ne peut pas être écrit (disque plein), un message le signale aussi : libérez de la place sans redémarrer le démon, il réessaie tout seul.
 
 
 Configuration des équipements 
@@ -71,7 +78,11 @@ Pour les Accessoires ou les Ponts :
 -   **Adresse IP** : L'ip de l'équipement et le port (à titre informatif, en lecture seule)
 -   **Pin** : Le code pin Homekit que vous trouverez sur votre équipment ou sa boite.
 -   Bouton **Appairer**/**Désappairer** : permet de lier/délier jeedom avec votre équipement (un seul lien possible par équipement).
+-   **Oublier quand même** : proposé quand le désappairage échoue (équipement hors service, débranché définitivement ou déjà réinitialisé). Jeedom oublie alors ses clés ; si l'équipement est encore en marche, il faudra le réinitialiser pour l'appairer de nouveau.
 -   Bouton **Rafraîchir les équipements liés** (dans le cas d'un Pont) : permet de vérifier si de nouveaux accessoires ont été ajoutés ou retirés au pont. En cas d'ajout, ils seront ajoutés aux équipements. En cas de suppression, ils apparaîtrons barrés et vous pourrez les supprimer manuellement si vous ne comptez pas les ré-ajouter plus tard.
+-   Section **Maison (via Homebridge)** : voir [Exposer dans Maison](#exposer-dans-maison-via-homebridge).
+
+>Supprimer un équipement appairé le désappaire d'abord. S'il ne répond pas, ses clés sont oubliées et un message vous l'indique : réinitialisez-le si vous voulez l'appairer de nouveau.
 
 
 **Onglet Commandes**
@@ -81,7 +92,16 @@ Il existe de nombreuses commandes, elles sont différentes en fonction du type d
 
 Les noms viennent directement de Homekit.  Les valeurs possibles de la commande sont également affichées si ce sont des valeurs connues.
 
-La valeur est affichée en temps réel et est modifiée en temps réel.
+La valeur est affichée en temps réel et est modifiée en temps réel. Les valeurs sont aussi relues toutes les heures, pour rattraper un changement manqué (par exemple pendant un redémarrage de Jeedom).
+
+Si une action échoue (équipement injoignable, valeur refusée…), un message l'indique avec la raison, et le scénario qui l'a lancée passe en erreur.
+
+La commande **En Ligne** indique si le démon est connecté à l'équipement :
+-   elle passe à 1 dès que l'équipement est connecté ;
+-   elle passe à 0 si la connexion est perdue depuis 60 s, après 10 s si l'équipement ne répond plus du tout sur le réseau, après 5 s s'il annonce lui-même son départ ;
+-   tous les équipements passent à 0 quand le démon est arrêté.
+
+Une coupure est détectée en 40 s environ. Le démon retente ensuite la connexion (après 30 s, 1 min, 2 min puis toutes les 5 min) et se reconnecte aussitôt que l'équipement s'annonce de nouveau sur le réseau. Les changements d'adresse IP sont suivis automatiquement.
 
 
 **Appairage**
@@ -89,9 +109,7 @@ La valeur est affichée en temps réel et est modifiée en temps réel.
 
 Pour appairer votre équipement avec le plugin, il vous faut trouver le code PIN de celui-ci. Il se trouvera sur la boîte de l'équipement ou sur l'équipement lui-même (sur le Pont)
 
-Une fois appairé avec ce plugin, les périphériques ne sont plus appairables avec « Maison ». Il faut donc (pour l’instant) les réinjecter dans homebridge manuellement avec des types génériques. 
-
->Plus tard ou jamais (pas de date prévue), ils seront automatiquement réinjectés dans homebridge sans configuration (pour l’instant il faut passer par les types génériques, parfois des virtuels et parfois vous ne trouverez pas de type générique…). Cette seconde étape est en développement mais demande enormément de boulot donc ca ne sera pas prêt tout de suite ! Soyez patient !
+Une fois appairé avec ce plugin, les périphériques ne sont plus appairables directement avec « Maison » (un seul lien possible). Pour les retrouver dans Maison, utilisez [Exposer dans Maison](#exposer-dans-maison-via-homebridge) (ou les types génériques du plugin homebridge, comme pour n'importe quel équipement Jeedom).
 
 Pour certains périphériques, vous devez configurer votre périphérique Homekit comme habituellement avec l’app du constructeur (afin de le connecter au wifi) ou Maison et ensuite le supprimer proprement (le désappairer) de Maison. Il sera ensuite possible de le découvrir via ce plugin. D’autres périphériques n’ont pas besoin d’un iDevice et de Maison pour être compatibles (Céliane with Netatmo, iDiamant with Netatmo, …).
 
@@ -100,6 +118,37 @@ Certains périphériques possèdent un appairage propriétaire (uniquement via l
 Certains périphériques on un écran et y affichent le code pin une fois la procédure d’appairage commencée (Thermostat Netatmo), il faut donc lancer l’appairage sans code pin dans le plugin (bouton appairage habituel, mais sans avoir rentré le code pin) puis le code va s’afficher sur l’écran, le copier dans le plugin et cliquer sur le bouton « post-Appairage » pour terminer l’appairage.
 
 Si le plugin dit que votre périphérique est déjà appairé (on le voit aussi dans le log hkControl après découverte), il faut effectuer un reset Homekit sur votre périphérique, suivez les instruction du constructeur pour l’effectuer.
+
+En cas de refus, le message indique la raison : **code PIN incorrect**, **déjà appairé à un autre contrôleur** (à réinitialiser), **trop de tentatives** (attendre ou redémarrer l'équipement), **occupé par un autre appairage** (réessayer dans un instant)…
+
+Si un équipement appairé à Jeedom est désappairé en dehors de Jeedom (depuis l'app du constructeur par exemple), le démon le détecte : un message vous prévient et la fiche repasse en « non appairé ». Il suffit de l'appairer de nouveau depuis la même fiche, les commandes et leur historique sont conservés.
+
+Exposer dans Maison (via Homebridge)
+====================================
+
+>**BETA** : cette fonction est récente, vos retours sont les bienvenus sur Communauté.
+
+Un équipement appairé dans hkControl n'est plus appairable directement dans Maison. Cette option le renvoie dans Maison **à l'identique** (mêmes services, mêmes caractéristiques), sans configurer de types génériques : chaque équipement exposé a son propre pont Homebridge (« child bridge »), que l'on ajoute à Maison avec un QR code.
+
+**Prérequis**
+-   Le plugin **homebridge** installé, actif et à jour (sinon la fiche indique ce qui manque).
+-   Les dépendances de hkControl relancées après la mise à jour : elles installent le module **homebridge-hkcontrol** (de la même branche, beta ou stable, que hkControl).
+-   L'équipement doit être appairé à hkControl. L'option est sur la fiche des Accessoires et des Ponts (les Accessoires Pontés sont exposés avec leur Pont).
+
+**Exposer un équipement**
+1.  Ouvrez la fiche de l'équipement, section **Maison (via Homebridge)**, cochez **Exposer dans Maison** puis sauvegardez.
+2.  Cliquez sur **Relancer Homebridge** (nécessaire pour créer le pont).
+3.  Dans l'app Maison : **+** > **Ajouter un accessoire**, puis scannez le QR code affiché sur la fiche ou saisissez le code.
+4.  La fiche détecte toute seule l'appairage dans Maison (« Pont appairé dans Maison »).
+
+**Retirer un équipement de Maison** : décochez **Exposer dans Maison**, sauvegardez puis relancez Homebridge. Si vous supprimez un équipement exposé, Jeedom vous prévient et propose de relancer Homebridge pour retirer son pont.
+
+**Suivi** : la page **Santé** du plugin (colonne Maison) et les vignettes des équipements indiquent l'état de chaque équipement :
+-   **Non exposé** ;
+-   **À appairer** : exposé, mais pas encore ajouté dans Maison ;
+-   **Appairé** : exposé et ajouté dans Maison ;
+-   **Relance requise** : relancez Homebridge pour appliquer le changement ;
+-   **Indisponible** : exposé, mais Homebridge ne peut pas l'exposer (la raison est affichée).
 
 **Compatibilités**
 ==================
@@ -218,6 +267,18 @@ Si vous testez le plugin avec l’un de vos périphérique encore non listé dan
 **-> Pourquoi j'ai une commande On (Info), On (Allumer) et On (Eteindre) ?**
 
 >Car ces trois commandes sont liées à la caractéristique Homekit nommée "On" (oui... Apple aurait pu être plus original sur ce coup là ;)). Cette caractéristique Homekit renvoi un état "*On (Info)*" et il est possible de la modifier via deux actions : *On (Allumer)* et *On (Eteindre)*. J'aurais pu les renommer en Etat/Allumer/Eteindre mais cela peut porter à confusion dans certains cas (multi-prises, etc). Vous pouvez évidemment renommer les commandes comme vous le désirez afin de vous y retrouver au mieux dans votre popre logique.
+
+**-> Mon équipement est « hors ligne »**
+
+>La commande **En Ligne** suit la connexion du démon avec l'équipement (voir *Onglet Commandes*). Vérifiez que l'équipement est alimenté et sur le réseau : dès qu'il s'annonce de nouveau, le démon se reconnecte tout seul. Le log "hkControl_daemon" en debug indique la cause (« injoignable (EHOSTUNREACH) », etc.). Une action envoyée pendant ce temps est refusée avec le message « … est hors ligne (injoignable), commande non envoyée ».
+
+**-> J'ai réinitialisé (reset usine) mon équipement, que se passe-t-il ?**
+
+>Après une réinitialisation, la plupart des équipements prennent un **nouvel identifiant Homekit** : ils apparaissent alors comme un **nouvel équipement** dans le plugin, et l'ancien reste hors ligne. Appairez le nouveau, puis supprimez l'ancien (avec **Oublier quand même** si le désappairage échoue). Si l'équipement garde son identifiant, la fiche existante repasse en « non appairé » et il suffit de l'appairer de nouveau.
+
+**-> Un message parle du fichier des appairages (illisible, disparu ou impossible à enregistrer)**
+
+>Voir *Configuration du plugin* : le démon reprend sa copie de secours tout seul. Vérifiez les équipements appairés depuis le dernier démarrage du démon (ils ne sont pas dans la copie de secours). Pour « impossible d'enregistrer », libérez de la place disque **sans redémarrer le démon** : il réessaie toutes les 30 s et le message disparaît une fois l'écriture réussie.
 
 **-> Comment mettre à jour mon Equipement ? (Firmware / version logicielle interne / etc)**
 
