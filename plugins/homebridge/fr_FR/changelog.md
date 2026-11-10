@@ -15,7 +15,11 @@ En Beta
 - **Thermostats** : un avertissement apparaît dans le log homebridge quand aucune commande d'arrêt n'est configurée (« Éteint » dans Maison ne fait alors rien).
 - **Thermostats HC** : correction des modes Chauffer, Refroidir et Éteint qui ne faisaient rien.
 - **Thermostats** : Maison affichait « Auto » quand le mode du thermostat portait le nom de la commande d'arrêt (ex. « Éteint ») ou un nom accentué : le bon mode est maintenant affiché.
+- **Identifier** : identifier un accessoire depuis Maison (ou pendant son ajout) affiche une notification sur la page de configuration du plugin, avec son nom.
+- La page de configuration du plugin est réservée aux administrateurs.
 - Mise à jour de Homebridge (2.5.0).
+- Mise à jour du paquet Homebridge (2.0.24).
+- Mise à jour de la librairie axios.
 
 30-10-2026
 ----------
