@@ -9,6 +9,11 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+11-11-2026
+----------
+* Retrait du venv du backup pour gagner de la place
+* ajax et config uniquement pour admin
+
 30-10-2026
 ----------
 * Ils sont sortis aujourd'hui :) et.... hop une mise à jour pour supporter les HomePods Mini 2 :)
