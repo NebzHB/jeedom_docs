@@ -8,6 +8,9 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## 11-11-2026
+- retrait des artworks des backups, gain de place non négligable
+
 ## 30-10-2026
 - plein de mise à jour depuis 2024 mais celle du jour permet de supporter les nouveaux HomePods Mini 2 sortis aujourd'hui et on gère même leurs nouvelles couleurs :)
 
