@@ -7,6 +7,10 @@ description: Changelog du plugin AdGuard Home
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe ou pour la compatibilité Jeedom V4.x
 
 # Changelog
+
+## 12-11-2026
+- Configuration requière d'être administrateur
+
 ## 30-01-2025
 - Traduction des noms des commandes
 - Correction d'un warning php si pas de user rules
