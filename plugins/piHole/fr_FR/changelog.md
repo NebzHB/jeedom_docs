@@ -8,6 +8,9 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## 12-11-2026
+- Configuration requière d'être administrateur
+
 ## 25-02-2025
 - ATTENTION Cette mise à jour ne fonctionne que avec piHole V6, ne mettez à jour le plugin QUE si vous avez cette version au minimum
 - Compatibilité piHole V6
