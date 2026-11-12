@@ -9,6 +9,11 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+12-11-2026
+----------
+- Mise à jour de node en 22
+- Configuration et Ajax requièrent d'être administrateur
+
 02-09-2022
 ----------
 
