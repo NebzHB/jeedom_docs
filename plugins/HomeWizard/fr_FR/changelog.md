@@ -6,6 +6,10 @@ description: Changelog du plugin HomeWizard Energy
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe, de librairie ou pour la compatibilité Jeedom V4
 
+# 12-11-2026
+- Mise à jour de librairies (request, axios)
+- Configuration et Ajax requièrent d'être administrateur
+  
 # 28-09-2026
 - Ajout du dossier resources/node_modules aux exclusions de backup
 
