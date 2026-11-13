@@ -12,6 +12,7 @@ Changelog
 13-11-2026
 ----------
 - Mise à jour du paquet apt homebridge (qui met à jour le NodeJS utilisé par Homebridge)
+- retiré le message d'erreur à la mise à jour de nodejs
 
 10-11-2026
 ----------
