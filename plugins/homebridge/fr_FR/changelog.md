@@ -9,6 +9,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+16-11-2026
+----------
+- Mise à jour de Config-ui-x via le paquet apt homebridge
+
 13-11-2026
 ----------
 - Mise à jour du paquet apt homebridge (qui met à jour le NodeJS utilisé par Homebridge)
