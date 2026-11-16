@@ -167,7 +167,7 @@ Si l'équipement a été réinitialisé ou si l'autorisation de Jeedom a été s
 **En attente de tests (mais devraient être fonctionnels)**
 ----------------------
 
--    Plug-In Battery (HWE-BAT) (API v2 uniquement : elle apparait dans le plugin dès sa découverte, ses valeurs arrivent une fois Jeedom [autorisé par un appui sur son bouton](#plug-in-battery))
+-    Plug-In Battery (HWE-BAT) (API v2 uniquement : elle apparait dans le plugin dès sa découverte, ses valeurs arrivent une fois Jeedom [autorisé par un appui sur son bouton](#plug-in-battery)) [https://www.homewizard.com/fr-be/boutique/plug-in-battery/](https://www.homewizard.com/fr-be/boutique/plug-in-battery/)
 -    Wi-Fi kWh Meter (1 phase) (HWE-KWH1) [https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-1-phase/](https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-1-phase/)
 -    Wi-Fi kWh Meter (3 phases) (HWE-KWH3) [https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-3-phases/](https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-3-phases/)
 
