@@ -8,6 +8,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # En Beta
 - Migration des équipements vers la nouvelle API v2 de HomeWizard, à la demande et équipement par équipement, avec un assistant qui vous montre où appuyer sur l'équipement et attend votre appui (bouton "Migration API v2"). Voir la [documentation beta](index-beta#migration-vers-lapi-v2)
+- La page Santé indique l'API utilisée par chaque équipement
 - Migration possible pour : Compteur P1, kWh Meters 1 et 3 phases. Pas encore proposée par HomeWizard pour l'Energy Socket, le compteur d'eau et l'Energy Display
 - En API v2 la connexion est chiffrée et l'équipement envoie ses mesures en temps réel (websocket), avec retour automatique à l'interrogation régulière si besoin
 - Les commandes sont renommées avec les noms de l'API v2, l'historique, les scénarios et les designs sont conservés. Retour à l'API v1 possible depuis l'assistant

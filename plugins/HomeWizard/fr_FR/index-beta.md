@@ -27,7 +27,7 @@ plugins puis Objets connectés. Vous retrouvez ici :
 
 -   un bouton pour afficher la configuration du plugin
 
--   un bouton Santé qui vous donne une vue d'ensemble de tous vos équipements à un moment donné
+-   un bouton Santé qui vous donne une vue d'ensemble de tous vos équipements à un moment donné, dont l'API utilisée par chacun (v1, v2, v2 à autoriser)
 
 -   un bouton Migration API v2 qui ouvre l'assistant de migration (voir [Migration vers l'API v2](#migration-vers-lapi-v2)), qui sert aussi à autoriser Jeedom sur une Plug-In Battery
 
@@ -155,6 +155,15 @@ La Plug-In Battery n'existe qu'en API v2 : il n'y a rien à migrer. Elle se comp
 3. Appuyez une fois sur le bouton de la batterie pendant le décompte.
 
 Ses commandes sont créées et mises à jour dès que l'appui est détecté. Il n'y a pas d'API Locale à activer dans l'application HomeWizard pour cet équipement.
+
+**Plusieurs Jeedom sur le même équipement**
+---------------------
+
+Un même équipement peut être utilisé en API v2 par plusieurs Jeedom en même temps (une box de production et une box de test par exemple). Chaque Jeedom doit faire sa propre autorisation, avec son propre appui sur le bouton : il reçoit sa propre autorisation, sous un nom qui lui est propre, et les deux cohabitent sur l'équipement.
+
+La migration ne concerne que le Jeedom sur lequel vous la faites. L'équipement continue de répondre en API v1 tant que l'API Locale reste activée dans l'application HomeWizard : un autre Jeedom, ou une autre application, peut donc rester en API v1 sur le même équipement.
+
+Attention si un Jeedom est une copie d'un autre (restauration d'une sauvegarde sur une autre box) : les deux portent alors le même nom d'autorisation. Ils fonctionnent tous les deux tant que vous ne touchez à rien, mais refaire l'autorisation sur l'un rend celle de l'autre invalide.
 
 **Si un équipement en API v2 ne remonte plus**
 ---------------------
