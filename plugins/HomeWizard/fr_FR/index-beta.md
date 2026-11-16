@@ -52,7 +52,7 @@ commandes.
 
 -   **Adresse IP** (lecture seule) : L'adresse IP envoyée par votre équipement (non modifiable car les équipements sont découverts)
 
--   **API utilisée** (lecture seule) : v1 ou v2. Un bouton **Migrer vers l'API v2** apparait quand la migration est possible pour cet équipement (pour une Plug-In Battery, le bouton s'appelle **Autoriser Jeedom**).
+-   **API utilisée** (lecture seule) : v1 ou v2. Un bouton **Migrer vers l'API v2** apparait quand la migration est possible pour cet équipement (pour une Plug-In Battery ou un nouvel équipement ajouté directement en API v2, le bouton s'appelle **Autoriser Jeedom**).
 
 **Onglet Commandes**
 --------------------
