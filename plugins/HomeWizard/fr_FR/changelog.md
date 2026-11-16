@@ -6,6 +6,16 @@ description: Changelog du plugin HomeWizard Energy
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe, de librairie ou pour la compatibilité Jeedom V4
 
+# En Beta
+- Migration des équipements vers la nouvelle API v2 de HomeWizard, à la demande et équipement par équipement, avec un assistant qui vous montre où appuyer sur l'équipement et attend votre appui (bouton "Migration API v2"). Voir la [documentation beta](index-beta#migration-vers-lapi-v2)
+- API v2 disponible pour : Compteur P1, kWh Meters 1 et 3 phases, Plug-In Battery. Pas encore proposée par HomeWizard pour l'Energy Socket, le compteur d'eau et l'Energy Display
+- En API v2 la connexion est chiffrée et l'équipement envoie ses mesures en temps réel (websocket), avec retour automatique à l'interrogation régulière si besoin
+- Les commandes sont renommées avec les noms de l'API v2, l'historique, les scénarios et les designs sont conservés. Retour à l'API v1 possible depuis l'assistant
+- Exception pour les kWh Meters : les commandes d'index par tarif (`Total_power_import_t1_kwh`, `Total_power_export_t1_kwh`) ne sont plus mises à jour en API v2, utilisez les totaux
+- Support de la Plug-In Battery (HWE-BAT), uniquement en API v2
+- Images des kWh Meters HWE-KWH1 et HWE-KWH3 et de la Plug-In Battery
+- La librairie homewizard-energy-api est maintenant installée depuis mon fork GitHub (relance des dépendances nécessaire)
+
 # 12-11-2026
 - Mise à jour de librairies (request, axios)
 - Configuration et Ajax requièrent d'être administrateur

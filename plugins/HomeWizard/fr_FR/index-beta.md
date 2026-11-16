@@ -17,6 +17,8 @@ Le démon va détecter les périphériques HomeWizard Energy sur votre réseau a
 
 Vous pouvez régler la fréquence de questionnement des différents équipements déjà reconnus, par défaut c'est toutes les 5 secondes, le constructeur ne conseille pas de descendre sous la seconde (< 1000 ms).
 
+Pour un équipement migré en API v2, il n'est plus questionné : c'est lui qui envoie ses mesures dès qu'elles changent. Cette fréquence devient alors le rythme maximum auquel Jeedom met à jour les commandes (un compteur P1 envoie une mesure par seconde).
+
 Configuration des équipements 
 =============================
 
@@ -26,6 +28,8 @@ plugins puis Objets connectés. Vous retrouvez ici :
 -   un bouton pour afficher la configuration du plugin
 
 -   un bouton Santé qui vous donne une vue d'ensemble de tous vos équipements à un moment donné
+
+-   un bouton Migration API v2 qui ouvre l'assistant de migration (voir [Migration vers l'API v2](#migration-vers-lapi-v2))
 
 -   enfin en dessous vous retrouvez la liste de vos équipements HomeWizard Energy
 
@@ -48,6 +52,8 @@ commandes.
 
 -   **Adresse IP** (lecture seule) : L'adresse IP envoyée par votre équipement (non modifiable car les équipements sont découverts)
 
+-   **API utilisée** (lecture seule) : v1 ou v2. Un bouton **Migrer vers l'API v2** apparait quand la migration est possible pour cet équipement.
+
 **Onglet Commandes**
 --------------------
 
@@ -60,7 +66,7 @@ La valeur est affichée en temps réel et est modifiée en temps réel.
 **Activer l'api locale dans l'application HomeWizard**
 =============
 
-Afin que votre équipement soit visible dans le plugin il est NECESSAIRE d'activer l'API Locale sur celui-ci.
+Afin que votre équipement soit visible dans le plugin il est NECESSAIRE d'activer l'API Locale sur celui-ci (sauf pour la Plug-In Battery, qui n'utilise que l'API v2 et son bouton).
 
 1. Ouvrez l'application HomeWizard sur votre téléphone
 2. En haut à droite appuyez sur l'engrenage
@@ -69,12 +75,77 @@ Afin que votre équipement soit visible dans le plugin il est NECESSAIRE d'activ
 5. Tout en bas dans les Paramètres, activez "API Locale"
 6. **Relancez le démon car l'activation/désactivation alors que le démon est lancé peut le planter**.
 
+**Migration vers l'API v2**
+=============
+
+HomeWizard remplace progressivement son API locale (v1) par une nouvelle API (v2). Le plugin propose de migrer vos équipements un par un, quand vous le voulez. Rien n'est migré automatiquement et un équipement non migré continue de fonctionner comme avant.
+
+Ce que l'API v2 apporte :
+
+-   la connexion entre Jeedom et l'équipement est chiffrée (https) et protégée par une autorisation propre à votre Jeedom
+-   l'équipement envoie ses mesures à Jeedom dès qu'elles changent (websocket), Jeedom ne l'interroge plus en boucle. Si cette liaison ne fonctionne pas, le plugin repasse tout seul en interrogation régulière.
+-   elle est indispensable pour la batterie Plug-In Battery, qui n'a pas d'API v1
+
+**Quels équipements ?**
+---------------------
+
+| Équipement | API v2 |
+| --- | --- |
+| Compteur P1 (HWE-P1) | Oui |
+| kWh Meter 1 phase (HWE-KWH1, SDM230-wifi) | Oui |
+| kWh Meter 3 phases (HWE-KWH3, SDM630-wifi) | Oui |
+| Plug-In Battery (HWE-BAT) | Oui, uniquement en API v2 |
+| Energy Socket (HWE-SKT) | Pas encore proposée par HomeWizard |
+| Compteur d'eau (HWE-WTR) | Pas encore proposée par HomeWizard |
+| Energy Display | Pas encore proposée par HomeWizard |
+
+L'équipement doit avoir un firmware récent : le plugin détecte tout seul si votre équipement annonce l'API v2. Si l'assistant indique « L'équipement n'annonce pas l'API v2 », mettez son firmware à jour avec l'application HomeWizard puis relancez le démon.
+
+**Migrer un équipement**
+---------------------
+
+Vous devez pouvoir aller jusqu'à l'équipement : il faut appuyer sur son bouton pour autoriser Jeedom.
+
+1. Cliquez sur **Migration API v2** dans la page du plugin (ou sur **Migrer vers l'API v2** dans la page de l'équipement).
+2. L'assistant liste vos équipements et leur état. Cliquez sur **Migrer** sur l'équipement voulu (ou **Migrer tous les équipements possibles** pour les enchainer).
+3. L'assistant affiche l'équipement avec l'emplacement du bouton et un décompte de 2 minutes. Appuyez sur le bouton de l'équipement :
+    -   Compteur P1 et Plug-In Battery : un appui
+    -   kWh Meter : maintenez le bouton enfoncé entre 1 et 3 secondes, puis relâchez
+4. Jeedom détecte l'appui tout seul et termine la migration. Si rien n'est détecté pendant le décompte, cliquez sur **Réessayer**.
+
+Vous pouvez annuler ou fermer la fenêtre pendant l'attente, rien n'est modifié tant que le bouton n'a pas été appuyé.
+
+**Ce qui change pour vos commandes**
+---------------------
+
+Les données ont changé de nom dans l'API v2 (par exemple `total_power_import_kwh` devient `energy_import_kwh`, `active_power_w` devient `power_w`). Le plugin renomme vos commandes existantes : ce sont les mêmes commandes, **l'historique, les scénarios, les designs et les virtuels sont conservés**. Le nom affiché n'est modifié que si vous ne l'aviez pas personnalisé.
+
+Pensez à vérifier ce qui utiliserait le nom ou le logicalId d'une commande en dehors de Jeedom (appels API, autres box, interactions).
+
+Quelques particularités :
+
+-   **kWh Meters** : l'API v2 ne fournit plus les index par tarif, seulement les totaux. Les commandes `Total_power_import_t1_kwh` et `Total_power_export_t1_kwh` ne sont donc plus mises à jour après la migration (elles sont conservées avec leur historique). Utilisez à la place les commandes des totaux (`Energy_import_kwh` et `Energy_export_kwh`). L'assistant vous rappelle les commandes concernées avant et après la migration.
+-   **Wifi** : la force du signal reste disponible en % (`Wifi_strength`), une commande `Wifi_rssi_db` (en dB) est ajoutée. Elles sont mises à jour toutes les minutes.
+-   **Gaz** (compteur P1) : les commandes `Total_gas_m3` et `Gas_unique_id` continuent d'être mises à jour.
+-   **Pic mensuel** (compteur P1 belge) : `Montly_power_peak_w` et `Montly_power_peak_timestamp` deviennent `Monthly_power_peak_w` et `Monthly_power_peak_timestamp`, `Active_power_average_w` devient `Average_power_15m_w`.
+
+**Revenir à l'API v1**
+---------------------
+
+Dans l'assistant, un équipement migré propose **Revenir à l'API v1** (sauf la Plug-In Battery qui n'a pas d'API v1). L'autorisation de Jeedom est supprimée de l'équipement et les commandes reprennent leurs noms d'origine, toujours avec leur historique.
+
+**Si un équipement migré ne remonte plus**
+---------------------
+
+Si l'équipement a été réinitialisé ou si l'autorisation de Jeedom a été supprimée, l'assistant indique « Token refusé par l'équipement, migration à refaire » : refaites simplement la migration de cet équipement.
+
 **Compatibilités**
 ==================
 
 **En attente de tests (mais devraient être fonctionnels)**
 ----------------------
 
+-    Plug-In Battery (HWE-BAT) (API v2 uniquement : elle apparait dans le plugin dès sa découverte, ses valeurs arrivent après la [migration](#migration-vers-lapi-v2))
 -    Wi-Fi kWh Meter (1 phase) (HWE-KWH1) [https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-1-phase/](https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-1-phase/)
 -    Wi-Fi kWh Meter (3 phases) (HWE-KWH3) [https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-3-phases/](https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-3-phases/)
 
@@ -89,4 +160,4 @@ Afin que votre équipement soit visible dans le plugin il est NECESSAIRE d'activ
 ---------------
 
 -    Compteur d'eau WIFI (HWE-WTR) (Sur pile) [https://www.homewizard.com/fr-be/boutique/compteur-deau-wi-fi/](https://www.homewizard.com/fr-be/boutique/compteur-deau-wi-fi/)
--    Energy Display (pas d'API) [https://www.homewizard.com/fr-be/boutique/energy-display/](https://www.homewizard.com/fr-be/boutique/energy-display/)
+-    Energy Display (pas encore d'API publiée par HomeWizard) [https://www.homewizard.com/fr-be/boutique/energy-display/](https://www.homewizard.com/fr-be/boutique/energy-display/)
