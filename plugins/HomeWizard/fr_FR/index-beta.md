@@ -156,6 +156,18 @@ La Plug-In Battery n'existe qu'en API v2 : il n'y a rien à migrer. Elle se comp
 
 Ses commandes sont créées et mises à jour dès que l'appui est détecté. Il n'y a pas d'API Locale à activer dans l'application HomeWizard pour cet équipement.
 
+**Piloter plusieurs batteries**
+---------------------
+
+Les Plug-In Batteries sont pilotées en groupe par le compteur auquel elles sont associées (compteur P1 ou kWh Meter). Quand ce compteur est en API v2 et qu'au moins une batterie lui est associée, le plugin ajoute sur le **compteur** :
+
+-   des informations : nombre de batteries, mode, puissance actuelle et puissance visée du groupe, consommation et production maximales, charge autorisée, décharge autorisée, charge complète en cours
+-   des actions : choisir le mode (Zéro, Charge complète, Veille, Prédictif), autoriser ou interdire la charge, autoriser ou interdire la décharge, lancer ou arrêter la charge complète
+
+Chaque batterie reste aussi un équipement à part entière dans le plugin, avec ses propres mesures (niveau de charge, puissance, cycles).
+
+Le mode Prédictif n'existe que sur les firmwares récents ; s'il est refusé par l'équipement, l'erreur apparait dans le log.
+
 **Plusieurs Jeedom sur le même équipement**
 ---------------------
 
@@ -166,6 +178,18 @@ La migration ne concerne que le Jeedom sur lequel vous la faites. L'équipement 
 Si un Jeedom est une copie d'un autre (sauvegarde restaurée sur une autre machine), les deux partagent les mêmes autorisations et fonctionnent tous les deux. Le plugin le détecte au démarrage du démon et vous prévient dans le centre de messages. Il donne alors un nouveau nom d'autorisation à la copie : refaire une autorisation sur la copie ne coupe pas le Jeedom d'origine, et un retour à l'API v1 sur la copie ne supprime pas l'autorisation partagée de l'équipement.
 
 Cette détection s'appuie sur l'identifiant de la machine. S'il n'est pas disponible (certaines installations en conteneur), le plugin affiche seulement un message après une restauration : dans ce cas, refaire une autorisation ou revenir à l'API v1 sur l'un des deux Jeedom coupe l'autre.
+
+**Utilisateurs autorisés sur un équipement**
+---------------------
+
+Dans l'assistant, le bouton **Utilisateurs** d'un équipement en API v2 liste toutes les applications autorisées sur cet équipement et permet d'en supprimer. L'équipement ne donne que le nom de chaque utilisateur (ni adresse IP, ni date), le plugin en déduit l'origine :
+
+-   **Ce Jeedom** : ne se supprime pas ici (utilisez **Revenir à l'API v1** ou supprimez l'équipement)
+-   **Un autre Jeedom** : le nom contient le nom du Jeedom qui l'a créé (pour les autorisations faites à partir de cette version)
+-   **Application HomeWizard (cloud)** : la supprimer peut couper l'application HomeWizard de cet équipement
+-   **Autre application locale** : Home Assistant, etc.
+
+Supprimer un utilisateur coupe immédiatement l'accès de l'application qui l'utilise.
 
 **Si un équipement en API v2 ne remonte plus**
 ---------------------
@@ -180,6 +204,10 @@ Si l'équipement a été réinitialisé ou si l'autorisation de Jeedom a été s
 Un équipement est en ligne tant qu'il a envoyé un message pendant les 3 derniers cycles de la fréquence configurée pour son type (au minimum 10 secondes). Avec le réglage par défaut de 5 secondes, il passe donc hors ligne après 15 secondes sans nouvelles, et revient en ligne dès le message suivant.
 
 Pour un équipement en API v2, qui n'envoie que ce qui change, la liaison ouverte avec lui compte aussi comme un signe de vie : un équipement dont les valeurs ne bougent pas reste en ligne. S'il ne répond réellement plus, il est vu hors ligne au plus tard après une minute environ.
+
+Toutes les 5 minutes, le plugin vérifie aussi par un ping les équipements silencieux : sans réponse, ils passent hors ligne.
+
+Quand le démon est arrêté, plus aucune valeur ne remonte : tous les équipements passent hors ligne, et reviennent en ligne à leur premier message après le redémarrage.
 
 **Suppression d'un équipement**
 =============
