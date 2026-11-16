@@ -15,7 +15,9 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 - Exception pour les kWh Meters : les commandes d'index par tarif (`Total_power_import_t1_kwh`, `Total_power_export_t1_kwh`) ne sont plus mises à jour en API v2, utilisez les totaux
 - Un nouvel équipement peut être ajouté directement en API v2, sans activer l'API Locale : il apparait à sa découverte et il suffit de l'autoriser par un appui sur son bouton (même assistant, rien à migrer)
 - Support de la Plug-In Battery (HWE-BAT) : elle n'existe qu'en API v2, donc pas de migration, il suffit d'autoriser Jeedom par un appui sur son bouton (même assistant)
-- Images des kWh Meters HWE-KWH1 et HWE-KWH3 et de la Plug-In Battery
+- Jeedom restauré sur une autre machine : le plugin le détecte, vous prévient dans le centre de messages et évite que les deux Jeedom se coupent mutuellement leurs autorisations API v2
+- Démon plus solide : une coupure courte d'un équipement en API v2 se répare en silence, une erreur imprévue ne l'arrête plus
+- Images des kWh Meters HWE-KWH1 et HWE-KWH3, de la Plug-In Battery et du Temperature Humidity Meter (pas encore d'API pour ce dernier)
 - La librairie homewizard-energy-api est maintenant installée depuis mon fork GitHub (relance des dépendances nécessaire)
 
 # 12-11-2026
