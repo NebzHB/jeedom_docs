@@ -54,6 +54,8 @@ commandes.
 
 -   **API utilisée** (lecture seule) : v1 ou v2. Un bouton **Migrer vers l'API v2** apparait quand la migration est possible pour cet équipement (pour une Plug-In Battery ou un nouvel équipement ajouté directement en API v2, le bouton s'appelle **Autoriser Jeedom**).
 
+-   **Widget du plugin** : affiche l'équipement avec le widget du plugin (voir plus bas) à la place de la liste des commandes. Coché d'office pour les nouveaux équipements, décoché pour ceux qui existaient déjà : votre affichage actuel ne change pas tant que vous ne cochez pas la case.
+
 **Onglet Commandes**
 --------------------
 
@@ -62,6 +64,34 @@ Il existe de nombreuses commandes, elles sont différentes en fonction du type d
 Les noms viennent directement de l'équipement.
 
 La valeur est affichée en temps réel et est modifiée en temps réel.
+
+**Le widget du plugin**
+-----------------------
+
+En cochant **Widget du plugin** dans l'équipement, celui-ci s'affiche sur le dashboard et en mobile avec un widget dédié :
+
+-   la mesure principale en grand : la puissance (en vert avec la mention **Injection** quand un compteur renvoie vers le réseau), ou le débit pour le compteur d'eau
+-   les totaux : import, export, gaz, eau, tarif en cours, et pour une Plug-In Battery sa charge et ses cycles
+-   le détail par phase (tension, courant, puissance) quand l'équipement a plusieurs phases
+-   pour une Energy Socket, un bouton pour l'allumer et l'éteindre
+-   en bas : en ligne ou hors ligne, la qualité du wifi et l'API utilisée
+
+Les valeurs se mettent à jour en direct, et un clic sur une valeur historisée ouvre son historique. Décochez la case pour revenir à l'affichage standard de Jeedom.
+
+**Réglages de l'équipement, Identifier et Redémarrer**
+-----------------------
+
+Le plugin crée ces commandes quand l'équipement les propose :
+
+-   **Cloud activer** / **Cloud désactiver** : la communication de l'équipement avec le cloud HomeWizard. Attention, sans le cloud l'application HomeWizard ne reçoit plus les données de l'équipement. Non modifiable sur une Plug-In Battery.
+-   **Luminosité led** (API v2) : la luminosité de la led d'état, de 0 à 100 %.
+-   **Identifier** : fait clignoter la led de l'équipement quelques secondes, pratique pour le repérer (tous les équipements en API v2, Compteur P1 et Energy Socket en API v1).
+-   **Redémarrer** (Compteur P1 et kWh Meters en API v2) : redémarre l'équipement. La commande est masquée par défaut et demande une confirmation.
+
+**Types génériques**
+-----------------------
+
+La puissance et la consommation totale reçoivent d'office les types génériques **Puissance** et **Consommation**, ceux utilisés par le plugin Homebridge. Pour les équipements existants ils sont ajoutés une seule fois, sans toucher aux types que vous avez déjà choisis ; vous pouvez ensuite les changer librement.
 
 **Activer l'api locale dans l'application HomeWizard**
 =============
@@ -196,7 +226,7 @@ Supprimer un utilisateur coupe immédiatement l'accès de l'application qui l'ut
 
 Une coupure courte (redémarrage de l'équipement, wifi) se répare toute seule : le plugin se reconnecte en continu. Si elle dure, la commande **Online** passe à 0 avec un avertissement dans le log du démon, puis revient à 1 au retour de l'équipement (voir [La commande Online](#la-commande-online)).
 
-Si l'équipement a été réinitialisé ou si l'autorisation de Jeedom a été supprimée, une erreur apparait dans le log, et l'assistant comme la page Santé indiquent « Token refusé » : cliquez sur **Refaire l'autorisation** dans l'assistant et appuyez de nouveau sur le bouton de l'équipement. Vos commandes ne changent pas.
+Si l'équipement a été réinitialisé ou si l'autorisation de Jeedom a été supprimée, une alerte apparait dans le centre de messages (une seule fois, elle disparait quand l'autorisation est refaite), et l'assistant comme la page Santé indiquent « Token refusé » : cliquez sur **Refaire l'autorisation** dans l'assistant et appuyez de nouveau sur le bouton de l'équipement. Vos commandes ne changent pas.
 
 **La commande Online**
 =============

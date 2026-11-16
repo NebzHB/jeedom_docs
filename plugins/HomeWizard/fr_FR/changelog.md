@@ -20,6 +20,11 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 - Gestion des utilisateurs autorisés sur un équipement en API v2 (bouton Utilisateurs de l'assistant) : qui a accès, et suppression
 - La commande Online suit maintenant les messages reçus : hors ligne après 3 cycles sans nouvelles de l'équipement, et dès que le démon est arrêté. Le ping reste utilisé toutes les 5 minutes pour les équipements silencieux
 - La suppression d'un équipement en API v2 retire aussi l'autorisation de Jeedom sur l'équipement
+- Widget du plugin (dashboard et mobile) : mesure principale, totaux, phases, état, mis à jour en direct. Actif d'office sur les nouveaux équipements, à cocher dans l'équipement pour les autres
+- Réglages de l'équipement depuis Jeedom : cloud HomeWizard (activer / désactiver) et luminosité de la led d'état (API v2)
+- Commandes Identifier (fait clignoter la led) et Redémarrer (Compteur P1 et kWh Meters en API v2)
+- Types génériques Puissance et Consommation posés d'office, cohérents avec le plugin Homebridge
+- Autorisation API v2 perdue (équipement réinitialisé, utilisateur supprimé) : une alerte dans le centre de messages, une seule fois par équipement, retirée quand l'autorisation est refaite
 - Démon plus solide : une coupure courte d'un équipement en API v2 se répare en silence, une erreur imprévue ne l'arrête plus
 - Images des kWh Meters HWE-KWH1 et HWE-KWH3, de la Plug-In Battery et du Temperature Humidity Meter (pas encore d'API pour ce dernier)
 - La librairie homewizard-energy-api est maintenant installée depuis mon fork GitHub (relance des dépendances nécessaire)
