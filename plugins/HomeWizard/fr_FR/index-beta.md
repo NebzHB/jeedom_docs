@@ -29,7 +29,7 @@ plugins puis Objets connectés. Vous retrouvez ici :
 
 -   un bouton Santé qui vous donne une vue d'ensemble de tous vos équipements à un moment donné
 
--   un bouton Migration API v2 qui ouvre l'assistant de migration (voir [Migration vers l'API v2](#migration-vers-lapi-v2))
+-   un bouton Migration API v2 qui ouvre l'assistant de migration (voir [Migration vers l'API v2](#migration-vers-lapi-v2)), qui sert aussi à autoriser Jeedom sur une Plug-In Battery
 
 -   enfin en dessous vous retrouvez la liste de vos équipements HomeWizard Energy
 
@@ -52,7 +52,7 @@ commandes.
 
 -   **Adresse IP** (lecture seule) : L'adresse IP envoyée par votre équipement (non modifiable car les équipements sont découverts)
 
--   **API utilisée** (lecture seule) : v1 ou v2. Un bouton **Migrer vers l'API v2** apparait quand la migration est possible pour cet équipement.
+-   **API utilisée** (lecture seule) : v1 ou v2. Un bouton **Migrer vers l'API v2** apparait quand la migration est possible pour cet équipement (pour une Plug-In Battery, le bouton s'appelle **Autoriser Jeedom**).
 
 **Onglet Commandes**
 --------------------
@@ -84,7 +84,7 @@ Ce que l'API v2 apporte :
 
 -   la connexion entre Jeedom et l'équipement est chiffrée (https) et protégée par une autorisation propre à votre Jeedom
 -   l'équipement envoie ses mesures à Jeedom dès qu'elles changent (websocket), Jeedom ne l'interroge plus en boucle. Si cette liaison ne fonctionne pas, le plugin repasse tout seul en interrogation régulière.
--   elle est indispensable pour la batterie Plug-In Battery, qui n'a pas d'API v1
+-   c'est la seule API de la batterie Plug-In Battery (voir [Plug-In Battery](#plug-in-battery))
 
 **Quels équipements ?**
 ---------------------
@@ -94,7 +94,7 @@ Ce que l'API v2 apporte :
 | Compteur P1 (HWE-P1) | Oui |
 | kWh Meter 1 phase (HWE-KWH1, SDM230-wifi) | Oui |
 | kWh Meter 3 phases (HWE-KWH3, SDM630-wifi) | Oui |
-| Plug-In Battery (HWE-BAT) | Oui, uniquement en API v2 |
+| Plug-In Battery (HWE-BAT) | Uniquement en API v2 : pas de migration, seulement une autorisation |
 | Energy Socket (HWE-SKT) | Pas encore proposée par HomeWizard |
 | Compteur d'eau (HWE-WTR) | Pas encore proposée par HomeWizard |
 | Energy Display | Pas encore proposée par HomeWizard |
@@ -109,7 +109,7 @@ Vous devez pouvoir aller jusqu'à l'équipement : il faut appuyer sur son bouton
 1. Cliquez sur **Migration API v2** dans la page du plugin (ou sur **Migrer vers l'API v2** dans la page de l'équipement).
 2. L'assistant liste vos équipements et leur état. Cliquez sur **Migrer** sur l'équipement voulu (ou **Migrer tous les équipements possibles** pour les enchainer).
 3. L'assistant affiche l'équipement avec l'emplacement du bouton et un décompte de 2 minutes. Appuyez sur le bouton de l'équipement :
-    -   Compteur P1 et Plug-In Battery : un appui
+    -   Compteur P1 : un appui
     -   kWh Meter : maintenez le bouton enfoncé entre 1 et 3 secondes, puis relâchez
 4. Jeedom détecte l'appui tout seul et termine la migration. Si rien n'est détecté pendant le décompte, cliquez sur **Réessayer**.
 
@@ -132,12 +132,23 @@ Quelques particularités :
 **Revenir à l'API v1**
 ---------------------
 
-Dans l'assistant, un équipement migré propose **Revenir à l'API v1** (sauf la Plug-In Battery qui n'a pas d'API v1). L'autorisation de Jeedom est supprimée de l'équipement et les commandes reprennent leurs noms d'origine, toujours avec leur historique.
+Dans l'assistant, un équipement migré propose **Revenir à l'API v1**. L'autorisation de Jeedom est supprimée de l'équipement et les commandes reprennent leurs noms d'origine, toujours avec leur historique.
 
-**Si un équipement migré ne remonte plus**
+**Plug-In Battery**
 ---------------------
 
-Si l'équipement a été réinitialisé ou si l'autorisation de Jeedom a été supprimée, l'assistant indique « Token refusé par l'équipement, migration à refaire » : refaites simplement la migration de cet équipement.
+La Plug-In Battery n'existe qu'en API v2 : il n'y a rien à migrer. Elle apparait dans le plugin dès qu'elle est découverte sur le réseau, mais sans valeurs : comme pour tout équipement en API v2, il faut d'abord autoriser Jeedom en appuyant sur son bouton.
+
+1. Ouvrez l'assistant **Migration API v2** (ou cliquez sur **Autoriser Jeedom** dans la page de la batterie).
+2. Cliquez sur **Autoriser** sur la ligne de la batterie.
+3. Appuyez une fois sur le bouton de la batterie pendant le décompte.
+
+Ses commandes sont créées et mises à jour dès que l'appui est détecté. Il n'y a pas d'API Locale à activer dans l'application HomeWizard pour cet équipement.
+
+**Si un équipement en API v2 ne remonte plus**
+---------------------
+
+Si l'équipement a été réinitialisé ou si l'autorisation de Jeedom a été supprimée, l'assistant indique « Token refusé par l'équipement » : refaites simplement la migration (ou l'autorisation pour une Plug-In Battery) de cet équipement.
 
 **Compatibilités**
 ==================
@@ -145,7 +156,7 @@ Si l'équipement a été réinitialisé ou si l'autorisation de Jeedom a été s
 **En attente de tests (mais devraient être fonctionnels)**
 ----------------------
 
--    Plug-In Battery (HWE-BAT) (API v2 uniquement : elle apparait dans le plugin dès sa découverte, ses valeurs arrivent après la [migration](#migration-vers-lapi-v2))
+-    Plug-In Battery (HWE-BAT) (API v2 uniquement : elle apparait dans le plugin dès sa découverte, ses valeurs arrivent une fois Jeedom [autorisé par un appui sur son bouton](#plug-in-battery))
 -    Wi-Fi kWh Meter (1 phase) (HWE-KWH1) [https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-1-phase/](https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-1-phase/)
 -    Wi-Fi kWh Meter (3 phases) (HWE-KWH3) [https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-3-phases/](https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-3-phases/)
 
