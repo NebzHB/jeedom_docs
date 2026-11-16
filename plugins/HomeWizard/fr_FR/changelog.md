@@ -12,6 +12,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 - En API v2 la connexion est chiffrée et l'équipement envoie ses mesures en temps réel (websocket), avec retour automatique à l'interrogation régulière si besoin
 - Les commandes sont renommées avec les noms de l'API v2, l'historique, les scénarios et les designs sont conservés. Retour à l'API v1 possible depuis l'assistant
 - Exception pour les kWh Meters : les commandes d'index par tarif (`Total_power_import_t1_kwh`, `Total_power_export_t1_kwh`) ne sont plus mises à jour en API v2, utilisez les totaux
+- Un nouvel équipement peut être ajouté directement en API v2, sans activer l'API Locale : il apparait à sa découverte et il suffit de l'autoriser par un appui sur son bouton (même assistant, rien à migrer)
 - Support de la Plug-In Battery (HWE-BAT) : elle n'existe qu'en API v2, donc pas de migration, il suffit d'autoriser Jeedom par un appui sur son bouton (même assistant)
 - Images des kWh Meters HWE-KWH1 et HWE-KWH3 et de la Plug-In Battery
 - La librairie homewizard-energy-api est maintenant installée depuis mon fork GitHub (relance des dépendances nécessaire)

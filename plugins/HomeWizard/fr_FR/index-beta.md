@@ -66,7 +66,7 @@ La valeur est affichée en temps réel et est modifiée en temps réel.
 **Activer l'api locale dans l'application HomeWizard**
 =============
 
-Afin que votre équipement soit visible dans le plugin il est NECESSAIRE d'activer l'API Locale sur celui-ci (sauf pour la Plug-In Battery, qui n'utilise que l'API v2 et son bouton).
+Afin que votre équipement soit visible dans le plugin en API v1 il est NECESSAIRE d'activer l'API Locale sur celui-ci. Ce n'est pas nécessaire pour un équipement que vous utilisez directement en API v2 (voir [Nouvel équipement directement en API v2](#nouvel-équipement-directement-en-api-v2)), ni pour la Plug-In Battery.
 
 1. Ouvrez l'application HomeWizard sur votre téléphone
 2. En haut à droite appuyez sur l'engrenage
@@ -134,10 +134,21 @@ Quelques particularités :
 
 Dans l'assistant, un équipement migré propose **Revenir à l'API v1**. L'autorisation de Jeedom est supprimée de l'équipement et les commandes reprennent leurs noms d'origine, toujours avec leur historique.
 
+**Nouvel équipement directement en API v2**
+---------------------
+
+Un nouvel équipement n'a pas besoin de passer par l'API v1 : s'il annonce l'API v2 (voir le tableau ci-dessus), il apparait dans le plugin dès qu'il est découvert sur le réseau, même sans activer l'API Locale dans l'application HomeWizard. Il est alors sans valeurs, en attente d'autorisation.
+
+1. Ouvrez l'assistant **Migration API v2** (ou cliquez sur **Autoriser Jeedom** dans la page de l'équipement).
+2. Cliquez sur **Autoriser** sur la ligne de l'équipement.
+3. Appuyez sur le bouton de l'équipement pendant le décompte (kWh Meter : maintenez 1 à 3 secondes).
+
+Il n'y a rien à migrer dans ce cas : ses commandes sont créées directement avec les noms de l'API v2.
+
 **Plug-In Battery**
 ---------------------
 
-La Plug-In Battery n'existe qu'en API v2 : il n'y a rien à migrer. Elle apparait dans le plugin dès qu'elle est découverte sur le réseau, mais sans valeurs : comme pour tout équipement en API v2, il faut d'abord autoriser Jeedom en appuyant sur son bouton.
+La Plug-In Battery n'existe qu'en API v2 : il n'y a rien à migrer. Elle se comporte comme un nouvel équipement ajouté directement en API v2 : elle apparait dans le plugin dès qu'elle est découverte sur le réseau, mais sans valeurs, il faut d'abord autoriser Jeedom en appuyant sur son bouton.
 
 1. Ouvrez l'assistant **Migration API v2** (ou cliquez sur **Autoriser Jeedom** dans la page de la batterie).
 2. Cliquez sur **Autoriser** sur la ligne de la batterie.
