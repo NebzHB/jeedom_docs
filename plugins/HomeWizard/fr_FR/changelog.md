@@ -16,6 +16,8 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 - Un nouvel équipement peut être ajouté directement en API v2, sans activer l'API Locale : il apparait à sa découverte et il suffit de l'autoriser par un appui sur son bouton (même assistant, rien à migrer)
 - Support de la Plug-In Battery (HWE-BAT) : elle n'existe qu'en API v2, donc pas de migration, il suffit d'autoriser Jeedom par un appui sur son bouton (même assistant)
 - Jeedom restauré sur une autre machine : le plugin le détecte, vous prévient dans le centre de messages et évite que les deux Jeedom se coupent mutuellement leurs autorisations API v2
+- La commande Online suit maintenant les messages reçus : hors ligne après 3 cycles sans nouvelles de l'équipement (au lieu d'un ping toutes les 5 minutes)
+- La suppression d'un équipement en API v2 retire aussi l'autorisation de Jeedom sur l'équipement
 - Démon plus solide : une coupure courte d'un équipement en API v2 se répare en silence, une erreur imprévue ne l'arrête plus
 - Images des kWh Meters HWE-KWH1 et HWE-KWH3, de la Plug-In Battery et du Temperature Humidity Meter (pas encore d'API pour ce dernier)
 - La librairie homewizard-energy-api est maintenant installée depuis mon fork GitHub (relance des dépendances nécessaire)

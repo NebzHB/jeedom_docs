@@ -170,9 +170,23 @@ Cette détection s'appuie sur l'identifiant de la machine. S'il n'est pas dispon
 **Si un équipement en API v2 ne remonte plus**
 ---------------------
 
-Une coupure courte (redémarrage de l'équipement, wifi) se répare toute seule : le plugin se reconnecte en continu, sans rien afficher si elle dure moins de 30 secondes. Au-delà, un avertissement apparait dans le log du démon et la commande **Online** passe à 0, puis revient à 1 à la reconnexion.
+Une coupure courte (redémarrage de l'équipement, wifi) se répare toute seule : le plugin se reconnecte en continu. Si elle dure, la commande **Online** passe à 0 avec un avertissement dans le log du démon, puis revient à 1 au retour de l'équipement (voir [La commande Online](#la-commande-online)).
 
 Si l'équipement a été réinitialisé ou si l'autorisation de Jeedom a été supprimée, une erreur apparait dans le log, et l'assistant comme la page Santé indiquent « Token refusé » : cliquez sur **Refaire l'autorisation** dans l'assistant et appuyez de nouveau sur le bouton de l'équipement. Vos commandes ne changent pas.
+
+**La commande Online**
+=============
+
+Un équipement est en ligne tant qu'il a envoyé un message pendant les 3 derniers cycles de la fréquence configurée pour son type (au minimum 10 secondes). Avec le réglage par défaut de 5 secondes, il passe donc hors ligne après 15 secondes sans nouvelles, et revient en ligne dès le message suivant.
+
+Pour un équipement en API v2, qui n'envoie que ce qui change, la liaison ouverte avec lui compte aussi comme un signe de vie : un équipement dont les valeurs ne bougent pas reste en ligne. S'il ne répond réellement plus, il est vu hors ligne au plus tard après une minute environ.
+
+**Suppression d'un équipement**
+=============
+
+Quand vous supprimez de Jeedom un équipement en API v2, le plugin retire aussi l'autorisation de Jeedom sur l'équipement HomeWizard. Si l'équipement n'est pas joignable à ce moment-là, l'autorisation y reste (un avertissement est écrit dans le log), sans conséquence pour Jeedom.
+
+Un équipement supprimé mais toujours présent sur le réseau sera redécouvert au prochain démarrage du démon.
 
 **Compatibilités**
 ==================
