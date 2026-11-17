@@ -403,6 +403,8 @@ Portails ou Garages
 |Action/Portail ou garage bouton d’ouverture|`Si pas Toggle`|Réf. vers Info/Portail état ouvrant<br/>ou<br/>Réf. vers Info/Garage état ouvrant|
 |Action/Portail ou garage bouton de fermeture|`Si pas Toggle`|Réf. vers Info/Portail état ouvrant<br/>ou<br/>Réf. vers Info/Garage état ouvrant|
 
+Avec le bouton toggle, l'impulsion n'est pas envoyée si l'ouvrant est déjà dans l'état demandé (ouvert ou en ouverture pour « Ouvrir », fermé ou en fermeture pour « Fermer »), d'après Info/Portail état ouvrant ou Info/Garage état ouvrant. C'est utile pour les commandes groupées comme « Dis Siri, ferme tous les portails » : un portail déjà fermé ne s'ouvre plus. S'il est arrêté ou dans un état inconnu, l'impulsion est envoyée comme avant.
+
 Haut-Parleurs (Eve Seulement)
 -----------------------------
 
