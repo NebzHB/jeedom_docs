@@ -22,7 +22,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 - La suppression d'un équipement en API v2 retire aussi l'autorisation de Jeedom sur l'équipement
 - Widget du plugin (dashboard et mobile) : mesure principale, totaux, phases, état, mis à jour en direct, pour tous les équipements
 - Réglages de l'équipement depuis Jeedom : cloud HomeWizard (activer / désactiver) et luminosité de la led d'état (API v2)
-- Commandes Identifier (fait clignoter la led) et Redémarrer (Compteur P1 et kWh Meters en API v2)
+- Commandes Identifier (fait clignoter la led : Compteur P1 et Plug-In Battery en API v2) et Redémarrer (Compteur P1 et kWh Meters en API v2)
+- Nouvelles commandes API v1 activer / désactiver (Compteur P1 et kWh Meters en API v2) : couper l'ancienne API réserve l'équipement aux applications autorisées. Réactivée automatiquement en cas de retour à l'API v1
+- Le plugin utilise maintenant la version officielle 3 de la librairie homewizard-energy-api (qui intègre le travail fait pour ce plugin) : relance automatique des lectures en cas de coupure réseau courte, vérification de l'identité de l'équipement, reconnexion du websocket surveillée en continu
+- NodeJS 22.19 minimum (mis à jour par les dépendances si besoin)
 - Types génériques Puissance, Consommation et Batterie (charge de la Plug-In Battery) posés d'office, cohérents avec le plugin Homebridge
 - Autorisation API v2 perdue (équipement réinitialisé, utilisateur supprimé) : une alerte dans le centre de messages, une seule fois par équipement, retirée quand l'autorisation est refaite
 - Démon plus solide : une coupure courte d'un équipement en API v2 se répare en silence, une erreur imprévue ne l'arrête plus
