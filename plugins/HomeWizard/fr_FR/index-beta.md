@@ -75,7 +75,7 @@ Chaque équipement s'affiche sur le dashboard et en mobile avec le widget du plu
 -   les commandes action visibles (réglages, Identifier, pilotage des batteries...) avec leur widget Jeedom habituel
 -   en bas : en ligne ou hors ligne, la qualité du wifi et l'API utilisée
 
-Les valeurs se mettent à jour en direct, et un clic sur une valeur historisée ouvre son historique. Toutes les autres commandes info visibles se consultent dans un petit popup, par le bouton **Autres valeurs** en bas du widget (rendez une commande non visible pour l'en retirer).
+Les valeurs se mettent à jour en direct, et un clic sur une valeur historisée ouvre son historique. Toutes les autres commandes info visibles se consultent dans un petit popup, par l'icône liste <i class="fas fa-list-ul"></i> (**Autres valeurs**) en bas du widget (rendez une commande non visible pour l'en retirer).
 
 **Réglages de l'équipement, Identifier et Redémarrer**
 -----------------------
