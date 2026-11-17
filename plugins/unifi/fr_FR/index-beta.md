@@ -129,7 +129,7 @@ Un clic sur un port ouvre son détail : son nom, ses valeurs (activé, connecté
 Autres valeurs
 --------------
 
-Toutes les commandes visibles restent accessibles : les plus utiles sont dans le widget, les autres dans un popup ouvert par le bouton **Autres valeurs** en bas du widget (**Autres actions** s'il ne contient que des actions). Pour retirer une commande du widget ou du popup, rendez-la non visible dans l'onglet Commandes.
+Toutes les commandes visibles restent accessibles : les plus utiles sont dans le widget, les autres dans un popup ouvert par l'icône <i class="fas fa-list-ul"></i> (liste) en bas à droite du widget, avec l'infobulle **Autres valeurs** (**Autres actions** s'il ne contient que des actions). Pour retirer une commande du widget ou du popup, rendez-la non visible dans l'onglet Commandes.
 
 Un clic sur une valeur historisée ouvre son historique.
 
