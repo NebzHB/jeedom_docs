@@ -9,6 +9,10 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 Changelog
 =========
 
+En Beta
+-------
+- **Portails / Garages avec bouton toggle** : plus d'impulsion quand l'ouvrant est déjà dans l'état demandé. Par exemple, « Dis Siri, ferme tous les portails » n'ouvre plus un portail déjà fermé.
+
 15-11-2026
 ----------
 - Mise à jour de Config-ui-x via le paquet apt homebridge
