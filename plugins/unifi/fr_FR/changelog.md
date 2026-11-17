@@ -8,6 +8,15 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## En Beta
+
+* **Widgets** : chaque équipement a maintenant son widget sur le dashboard et en mobile, différent selon son type (site, client, WLAN, point d'accès, switch, passerelle), avec les valeurs mises à jour en direct. Voir la [documentation beta](index-beta#widgets-en-beta).
+  * Switchs et passerelles : une case par port (connecté, libre, désactivé, PoE), un clic sur un port affiche son détail et ses actions (PoE, PowerCycle).
+  * Les commandes visibles qui ne sont pas dans le widget se consultent par le bouton **Autres valeurs** en bas du widget.
+  * Une confirmation est demandée avant de redémarrer, mettre à jour, couper le PoE, désactiver un WLAN ou bloquer un client.
+  * Pour revenir à l'affichage standard de Jeedom : décochez **Template de widget** dans la configuration avancée de l'équipement.
+  * La taille des tuiles réglée pour l'ancien affichage est conservée : redimensionnez-les une fois si besoin.
+
 ## 10-11-2026
 
 **Nécessite Jeedom 4.6 minimum.**
