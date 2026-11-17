@@ -13,6 +13,8 @@ Configuration du plugin
 Après installation du plugin, il vous suffit de l’activer. Si vous voullez aller plus vite, vous pouvez lancer les dépendances ou attendre ~5min.
 Une fois les dépendances terminées, le démon démarrera dans les 5min également (ou vous pouvez le lancer à la main).
 
+Le plugin demande NodeJS 22.19 ou plus récent : si votre version est plus ancienne, les dépendances la mettent à jour.
+
 Le démon va détecter les périphériques HomeWizard Energy sur votre réseau automatiquement lors de son démarrage (multicast utilisé, routage non supporté !). Ensuite il continuera d'écouter les messages de vos équipements, ceux-ci doivent envoyer quand ils se connectent.  Pour forcer une découverte sur le réseau, relancez le démon (normalement pas nécessaire).
 
 Vous pouvez régler la fréquence de questionnement des différents équipements déjà reconnus, par défaut c'est toutes les 5 secondes, le constructeur ne conseille pas de descendre sous la seconde (< 1000 ms).
@@ -84,7 +86,8 @@ Le plugin crée ces commandes quand l'équipement les propose :
 
 -   **Cloud activer** / **Cloud désactiver** : la communication de l'équipement avec le cloud HomeWizard. Attention, sans le cloud l'application HomeWizard ne reçoit plus les données de l'équipement. Non modifiable sur une Plug-In Battery.
 -   **Luminosité led** (API v2) : la luminosité de la led d'état, de 0 à 100 %.
--   **Identifier** : fait clignoter la led de l'équipement quelques secondes, pratique pour le repérer (tous les équipements en API v2, Compteur P1 et Energy Socket en API v1).
+-   **API v1 activer** / **API v1 désactiver** (Compteur P1 et kWh Meters en API v2, commandes masquées par défaut, aussi dans l'assistant) : une fois l'équipement en API v2, vous pouvez couper son ancienne API v1. Il n'est alors plus accessible qu'aux applications autorisées par un appui sur son bouton (Jeedom, l'application HomeWizard...). Un retour à l'API v1 depuis l'assistant la réactive automatiquement.
+-   **Identifier** : fait clignoter la led de l'équipement quelques secondes, pratique pour le repérer (Compteur P1 et Plug-In Battery en API v2, Compteur P1 et Energy Socket en API v1).
 -   **Redémarrer** (Compteur P1 et kWh Meters en API v2) : redémarre l'équipement. La commande est masquée par défaut et demande une confirmation.
 
 **Types génériques**
@@ -157,6 +160,13 @@ Quelques particularités :
 -   **Wifi** : la force du signal reste disponible en % (`Wifi_strength`), une commande `Wifi_rssi_db` (en dB) est ajoutée. Elles sont mises à jour toutes les minutes.
 -   **Gaz** (compteur P1) : les commandes `Total_gas_m3` et `Gas_unique_id` continuent d'être mises à jour.
 -   **Pic mensuel** (compteur P1 belge) : `Montly_power_peak_w` et `Montly_power_peak_timestamp` deviennent `Monthly_power_peak_w` et `Monthly_power_peak_timestamp`, `Active_power_average_w` devient `Average_power_15m_w`.
+
+**Couper l'API v1 après la migration**
+---------------------
+
+Une fois un Compteur P1 ou un kWh Meter migré, Jeedom n'utilise plus son ancienne API v1. L'assistant propose alors **Couper l'API v1** (sur l'écran de fin de migration, et dans la liste pour un équipement déjà migré) : l'équipement n'est plus accessible qu'aux applications autorisées par un appui sur son bouton (Jeedom, l'application HomeWizard...). C'est plus sûr, mais une application qui lit encore l'API v1 (ancienne intégration, script...) ne recevra plus rien.
+
+La liste de l'assistant indique **API v1 coupée** et propose **Réactiver l'API v1**. Les commandes **API v1 activer** / **API v1 désactiver** de l'équipement font la même chose (pour un scénario par exemple). Un retour à l'API v1 la réactive automatiquement.
 
 **Revenir à l'API v1**
 ---------------------
