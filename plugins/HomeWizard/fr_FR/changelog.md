@@ -15,7 +15,18 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 - Exception pour les kWh Meters : les commandes d'index par tarif (`Total_power_import_t1_kwh`, `Total_power_export_t1_kwh`) ne sont plus mises à jour en API v2, utilisez les totaux
 - Un nouvel équipement peut être ajouté directement en API v2, sans activer l'API Locale : il apparait à sa découverte et il suffit de l'autoriser par un appui sur son bouton (même assistant, rien à migrer)
 - Support de la Plug-In Battery (HWE-BAT) : elle n'existe qu'en API v2, donc pas de migration, il suffit d'autoriser Jeedom par un appui sur son bouton (même assistant)
-- Images des kWh Meters HWE-KWH1 et HWE-KWH3 et de la Plug-In Battery
+- Jeedom restauré sur une autre machine : le plugin le détecte, vous prévient dans le centre de messages et évite que les deux Jeedom se coupent mutuellement leurs autorisations API v2
+- Pilotage du groupe de Plug-In Batteries depuis le compteur P1 ou le kWh Meter en API v2 : mode, charge, décharge, charge complète, et état du groupe
+- Gestion des utilisateurs autorisés sur un équipement en API v2 (bouton Utilisateurs de l'assistant) : qui a accès, et suppression
+- La commande Online suit maintenant les messages reçus : hors ligne après 3 cycles sans nouvelles de l'équipement, et dès que le démon est arrêté. Le ping reste utilisé toutes les 5 minutes pour les équipements silencieux
+- La suppression d'un équipement en API v2 retire aussi l'autorisation de Jeedom sur l'équipement
+- Widget du plugin (dashboard et mobile) : mesure principale, totaux, phases, état, mis à jour en direct, pour tous les équipements
+- Réglages de l'équipement depuis Jeedom : cloud HomeWizard (activer / désactiver) et luminosité de la led d'état (API v2)
+- Commandes Identifier (fait clignoter la led) et Redémarrer (Compteur P1 et kWh Meters en API v2)
+- Types génériques Puissance, Consommation et Batterie (charge de la Plug-In Battery) posés d'office, cohérents avec le plugin Homebridge
+- Autorisation API v2 perdue (équipement réinitialisé, utilisateur supprimé) : une alerte dans le centre de messages, une seule fois par équipement, retirée quand l'autorisation est refaite
+- Démon plus solide : une coupure courte d'un équipement en API v2 se répare en silence, une erreur imprévue ne l'arrête plus
+- Images des kWh Meters HWE-KWH1 et HWE-KWH3, de la Plug-In Battery et du Temperature Humidity Meter (pas encore d'API pour ce dernier)
 - La librairie homewizard-energy-api est maintenant installée depuis mon fork GitHub (relance des dépendances nécessaire)
 
 # 12-11-2026
