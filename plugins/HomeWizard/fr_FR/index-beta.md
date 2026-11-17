@@ -54,8 +54,6 @@ commandes.
 
 -   **API utilisée** (lecture seule) : v1 ou v2. Un bouton **Migrer vers l'API v2** apparait quand la migration est possible pour cet équipement (pour une Plug-In Battery ou un nouvel équipement ajouté directement en API v2, le bouton s'appelle **Autoriser Jeedom**).
 
--   **Widget du plugin** : affiche l'équipement avec le widget du plugin (voir plus bas) à la place de la liste des commandes. Coché d'office pour les nouveaux équipements, décoché pour ceux qui existaient déjà : votre affichage actuel ne change pas tant que vous ne cochez pas la case.
-
 **Onglet Commandes**
 --------------------
 
@@ -68,15 +66,16 @@ La valeur est affichée en temps réel et est modifiée en temps réel.
 **Le widget du plugin**
 -----------------------
 
-En cochant **Widget du plugin** dans l'équipement, celui-ci s'affiche sur le dashboard et en mobile avec un widget dédié :
+Chaque équipement s'affiche sur le dashboard et en mobile avec le widget du plugin :
 
 -   la mesure principale en grand : la puissance (en vert avec la mention **Injection** quand un compteur renvoie vers le réseau), ou le débit pour le compteur d'eau
 -   les totaux : import, export, gaz, eau, tarif en cours, et pour une Plug-In Battery sa charge et ses cycles
 -   le détail par phase (tension, courant, puissance) quand l'équipement a plusieurs phases
 -   pour une Energy Socket, un bouton pour l'allumer et l'éteindre
+-   les commandes action visibles (réglages, Identifier, pilotage des batteries...) avec leur widget Jeedom habituel
 -   en bas : en ligne ou hors ligne, la qualité du wifi et l'API utilisée
 
-Les valeurs se mettent à jour en direct, et un clic sur une valeur historisée ouvre son historique. Décochez la case pour revenir à l'affichage standard de Jeedom.
+Les valeurs se mettent à jour en direct, et un clic sur une valeur historisée ouvre son historique. Les autres commandes info restent disponibles pour vos scénarios, designs et historiques.
 
 **Réglages de l'équipement, Identifier et Redémarrer**
 -----------------------
@@ -91,7 +90,7 @@ Le plugin crée ces commandes quand l'équipement les propose :
 **Types génériques**
 -----------------------
 
-La puissance et la consommation totale reçoivent d'office les types génériques **Puissance** et **Consommation**, ceux utilisés par le plugin Homebridge. Pour les équipements existants ils sont ajoutés une seule fois, sans toucher aux types que vous avez déjà choisis ; vous pouvez ensuite les changer librement.
+La puissance et la consommation totale reçoivent d'office les types génériques **Puissance** et **Consommation**, et la charge d'une Plug-In Battery le type **Batterie** (elle apparait comme niveau de batterie dans HomeKit) : ce sont ceux utilisés par le plugin Homebridge. Pour les équipements existants ils sont ajoutés une seule fois, sans toucher aux types que vous avez déjà choisis ; vous pouvez ensuite les changer librement.
 
 **Activer l'api locale dans l'application HomeWizard**
 =============
