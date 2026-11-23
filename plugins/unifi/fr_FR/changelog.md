@@ -10,6 +10,8 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 ## En Beta
 
+* **Présence des Clients plus fiable** : à chaque relevé régulier, le plugin vérifie la liste des clients connectés au contrôleur et corrige la présence si un évènement de connexion ou de déconnexion a été perdu (démon arrêté, connexion au contrôleur coupée...). Option **Vérifier la présence des Clients à chaque relevé** dans la configuration, cochée par défaut.
+* **Téléphones** : une nouvelle question dans la FAQ explique comment éviter que la présence d'un téléphone ne fonctionne plus à cause de son adresse Wi-Fi privée.
 * **Widgets** : chaque équipement a maintenant son widget sur le dashboard et en mobile, différent selon son type (site, client, WLAN, point d'accès, switch, passerelle), avec les valeurs mises à jour en direct. Voir la [documentation beta](index-beta#widgets-en-beta).
   * Switchs et passerelles : une case par port (connecté, libre, désactivé, PoE), un clic sur un port affiche son détail et ses actions (PoE, PowerCycle).
   * Les commandes visibles qui ne sont pas dans le widget se consultent par l'icône liste en bas à droite du widget (**Autres valeurs**).
