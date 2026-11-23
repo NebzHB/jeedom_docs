@@ -23,7 +23,7 @@ Après installation du plugin, il vous suffit de l’activer. Il faut ensuite re
 
 -   **Pièce par défaut pour les Clients** : Lors du scan, les nouveaux clients wifi/cablés peuvent être ajoutés par défaut à une pièce.
 -   **Bouton Ne plus ignorer les clients supprimés** : Permet de montrer à nouveau les clients que vous auriez supprimés et ignorés dans la liste des équipements.
--   **Relevé Site et WLAN (secondes)** : Fréquence en secondes à laquelle le relevé des informations du Site et des WLANs doivent être fait.  Les autres mises à jour sont envoyées par le controleur en temps réel, malheureusement pas les informations du site et des wlans. Le plugin doit donc les consulter régulièrement.  Si les informations sont modifiées via le plugin (LED's ou désactiver un WLAN), elles sont mises à jour instantanément, mais si vous modifiez ces informations via l'interface UniFi ou un autre moyen, c'est ici que cette consultation régulière rentre en jeu. (60 secondes par défaut).  Pas besoin de relancer le démon après ce changement, il est directement pris en compte :)
+-   **Relevé Site et WLAN (secondes)** : Fréquence en secondes à laquelle le relevé des informations du Site et des WLANs doivent être fait.  Les autres mises à jour sont envoyées par le controleur en temps réel, malheureusement pas les informations du site et des wlans. Le plugin doit donc les consulter régulièrement.  Si les informations sont modifiées via le plugin (LED's ou désactiver un WLAN), elles sont mises à jour instantanément, mais si vous modifiez ces informations via l'interface UniFi ou un autre moyen, c'est ici que cette consultation régulière rentre en jeu. (60 secondes par défaut). À chaque relevé, le plugin vérifie aussi la liste des clients connectés au contrôleur pour corriger la présence des Clients activés si un évènement de connexion ou de déconnexion a été perdu (une présence qui vient de changer, moins de 2 minutes, n'est pas touchée).  Pas besoin de relancer le démon après ce changement, il est directement pris en compte :)
 -   **Limiter Messages Périphériques (secondes)** : Dans les dernières versions du controleur, les messages des périphériques arrivent beaucoup plus fréquemment.  Si c'est trop fréquemment pour vous (pas besoin, système ralenti, etc), vous pouvez limiter à un message par périphérique toutes les X secondes. Uniquement les messages concernant les périphériques seront affectés.
 
 -   **Ignorer les évênements Last_Seen sur les Clients** : le controleur envoi régulièrement des mises à jour des clients, surtout pour l'information Last_Seen (vu dernièrement). En ignorant cette information (si elle n'est pas importante pour vous), vous allégez les mises à jour des équipements clients activés, et donc vous allégez la charge de votre Jeedom. Pas besoin de relancer le démon après ce changement, il est directement pris en compte :)
@@ -276,3 +276,13 @@ Jeedom n'accepte pas deux équipements du même nom dans une même pièce. Si de
 Ce cas, peut être également rencontré lorsque vous avez un équipement qui peut etre connecté de plusieurs façons différentes à votre réseau.
 Par exemple avec un PC portable a généralement une inerface réseau filaire (ethernet) et une autre sans-fil (wifi). Par défaut, ce dernier peut apparaitre avec le même nom dans le controleur Unifi et causer l'erreur décrite ci-dessus dans Jeedom.
 Dans le controleur Unifi, ajoutez un suffixe afin de les différencier (ex: ethernet ou wifi) et relancer un scan coté Jeedom.
+
+**La présence d'un téléphone ne fonctionne pas (toujours absent, ou un nouveau Client apparaît) ?**
+
+Les téléphones récents utilisent par défaut une **adresse Wi-Fi privée** qui peut changer. Pour le contrôleur, chaque nouvelle adresse est un nouveau client : l'équipement Jeedom du téléphone ne le voit plus, et un autre client apparaît au scan suivant. Sur le réseau Wi-Fi de la maison, réglez le téléphone pour qu'il garde toujours la même adresse :
+
+-   **iPhone / iPad** : Réglages > Wi-Fi > (i) à côté du réseau > **Adresse Wi-Fi privée** sur **Fixe** ou **Désactivée** (pas **Rotation**).
+-   **Android** : Paramètres > Wi-Fi > réseau > Confidentialité (ou Paramètres avancés) > **Utiliser l'adresse MAC de l'appareil** (le nom exact dépend du fabricant).
+
+Après ce changement, le téléphone peut apparaître comme un nouveau client : relancez un scan des Clients et utilisez ce nouvel équipement (supprimez l'ancien si besoin).
+

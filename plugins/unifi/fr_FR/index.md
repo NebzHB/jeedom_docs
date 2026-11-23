@@ -218,3 +218,13 @@ Jeedom n'accepte pas deux équipements du même nom dans une même pièce. Si de
 Ce cas, peut être également rencontré lorsque vous avez un équipement qui peut etre connecté de plusieurs façons différentes à votre réseau.
 Par exemple avec un PC portable a généralement une inerface réseau filaire (ethernet) et une autre sans-fil (wifi). Par défaut, ce dernier peut apparaitre avec le même nom dans le controleur Unifi et causer l'erreur décrite ci-dessus dans Jeedom.
 Dans le controleur Unifi, ajoutez un suffixe afin de les différencier (ex: ethernet ou wifi) et relancer un scan coté Jeedom.
+
+**La présence d'un téléphone ne fonctionne pas (toujours absent, ou un nouveau Client apparaît) ?**
+
+Les téléphones récents utilisent par défaut une **adresse Wi-Fi privée** qui peut changer. Pour le contrôleur, chaque nouvelle adresse est un nouveau client : l'équipement Jeedom du téléphone ne le voit plus, et un autre client apparaît au scan suivant. Sur le réseau Wi-Fi de la maison, réglez le téléphone pour qu'il garde toujours la même adresse :
+
+-   **iPhone / iPad** : Réglages > Wi-Fi > (i) à côté du réseau > **Adresse Wi-Fi privée** sur **Fixe** ou **Désactivée** (pas **Rotation**).
+-   **Android** : Paramètres > Wi-Fi > réseau > Confidentialité (ou Paramètres avancés) > **Utiliser l'adresse MAC de l'appareil** (le nom exact dépend du fabricant).
+
+Après ce changement, le téléphone peut apparaître comme un nouveau client : relancez un scan des Clients et utilisez ce nouvel équipement (supprimez l'ancien si besoin).
+
