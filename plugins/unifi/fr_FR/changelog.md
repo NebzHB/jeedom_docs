@@ -16,6 +16,8 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
   * Une confirmation est demandée avant de redémarrer, mettre à jour, couper le PoE, désactiver un WLAN ou bloquer un client.
   * Pour revenir à l'affichage standard de Jeedom : décochez **Template de widget** dans la configuration avancée de l'équipement.
   * La taille des tuiles réglée pour l'ancien affichage est conservée : redimensionnez-les une fois si besoin.
+* **Image des clients** : chaque client prend l'icône qu'il a dans le contrôleur (détectée par UniFi, ou choisie par vous dans UniFi). Elle est reprise lors d'un scan, y compris celui de chaque nuit : après avoir changé une icône dans UniFi, relancez un scan des Clients. Accès internet nécessaire, sinon l'image générique est gardée.
+* **Site renommable** : le nom du site n'est repris du contrôleur qu'à sa création. Vous pouvez ensuite le renommer dans Jeedom, un scan ne l'écrase plus (utile quand il s'appelle « Default » et qu'un site seul ne se renomme pas dans UniFi).
 
 ## 10-11-2026
 
