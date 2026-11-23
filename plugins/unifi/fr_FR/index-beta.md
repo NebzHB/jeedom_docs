@@ -58,6 +58,8 @@ plugins puis Monitoring. Vous retrouvez ici :
     -   A coté de chaque titre de catégories, vous pouvez lancer le scan sur ce type uniquement
     -   A coté du titre des Clients, vous pouvez cliquer sur la poubelle pour supprimer les Clients (uniquement dans jeedom) qui sont en non-actif (où la case Actif n'est pas cochée) et les ignorer lors des prochains scans (pour ne plus les ignorer, Configuration du plugin > Bouton "Ne plus ignorer les clients supprimés")
 
+> **Image des clients (En Beta)** : lors d'un scan (et de celui fait automatiquement chaque nuit), chaque client prend l'icône qu'il a dans le contrôleur : l'image personnalisée que vous avez envoyée dans UniFi, sinon l'icône que vous y avez choisie, sinon celle détectée par UniFi. Elle est téléchargée chez UniFi, il faut donc un accès internet ; sinon le client garde l'image générique filaire ou Wi-Fi. Si vous changez l'icône d'un client dans UniFi, relancez un scan des Clients pour la voir dans Jeedom. Les images qui ne servent plus (image remplacée, client supprimé) sont effacées à ce même scan.
+
 
 Equipement
 ==========
@@ -69,7 +71,7 @@ commandes.
 Onglet Equipement
 -----------------
 
--   **Nom de l’équipement** : nom de votre équipement
+-   **Nom de l’équipement** : nom de votre équipement. Il est repris du contrôleur à chaque scan (et chaque nuit) : renommez-le dans UniFi. Exception (En Beta) : le nom du **Site** n'est repris qu'à sa création, vous pouvez ensuite le renommer ici, un scan ne l'écrasera plus (un site seul ne se renomme pas dans UniFi).
 
 -   **Objet parent** : indique l’objet parent auquel appartient
     l’équipement
