@@ -22,7 +22,7 @@ Après installation du plugin, il vous suffit de l’activer. Il faut ensuite re
 -   **Bouton Rechercher les équipements Unifi** : Permet de scanner les équipements sur le controleur
 
 -   **Pièce par défaut pour les Clients** : Lors du scan, les nouveaux clients wifi/cablés peuvent être ajoutés par défaut à une pièce.
--   **Bouton Ne plus ignorer les clients supprimés** : Permet de montrer à nouveau les clients que vous auriez supprimés et ignorés dans la liste des équipements.
+-   **Bouton Gérer les clients ignorés** (En Beta, visible s'il y a des clients ignorés) : ouvre la liste des clients que vous avez supprimés avec la poubelle et qui sont donc ignorés aux scans. Pour chacun : son adresse MAC, et ce que le contrôleur en connaît encore (clients vus sur la dernière année) : nom, dernière IP, IP fixe, date de dernière connexion ; « Inconnu » sinon. Vous pouvez ne plus ignorer un client, une sélection (cases à cocher) ou tous les clients ; ils seront ajoutés au prochain scan s'ils sont connectés.
 -   **Relevé Site et WLAN (secondes)** : Fréquence en secondes à laquelle le relevé des informations du Site et des WLANs doivent être fait.  Les autres mises à jour sont envoyées par le controleur en temps réel, malheureusement pas les informations du site et des wlans. Le plugin doit donc les consulter régulièrement.  Si les informations sont modifiées via le plugin (LED's ou désactiver un WLAN), elles sont mises à jour instantanément, mais si vous modifiez ces informations via l'interface UniFi ou un autre moyen, c'est ici que cette consultation régulière rentre en jeu. (60 secondes par défaut). À chaque relevé, le plugin vérifie aussi la liste des clients connectés au contrôleur pour corriger la présence des Clients activés si un évènement de connexion ou de déconnexion a été perdu (une présence qui vient de changer, moins de 2 minutes, n'est pas touchée).  Pas besoin de relancer le démon après ce changement, il est directement pris en compte :)
 -   **Limiter Messages Périphériques (secondes)** : Dans les dernières versions du controleur, les messages des périphériques arrivent beaucoup plus fréquemment.  Si c'est trop fréquemment pour vous (pas besoin, système ralenti, etc), vous pouvez limiter à un message par périphérique toutes les X secondes. Uniquement les messages concernant les périphériques seront affectés.
 
@@ -56,7 +56,7 @@ plugins puis Monitoring. Vous retrouvez ici :
 
 -   enfin en dessous vous retrouvez la liste de vos équipements par catégories
     -   A coté de chaque titre de catégories, vous pouvez lancer le scan sur ce type uniquement
-    -   A coté du titre des Clients, vous pouvez cliquer sur la poubelle pour supprimer les Clients (uniquement dans jeedom) qui sont en non-actif (où la case Actif n'est pas cochée) et les ignorer lors des prochains scans (pour ne plus les ignorer, Configuration du plugin > Bouton "Ne plus ignorer les clients supprimés")
+    -   A coté du titre des Clients, vous pouvez cliquer sur la poubelle pour supprimer les Clients (uniquement dans jeedom) qui sont en non-actif (où la case Actif n'est pas cochée) et les ignorer lors des prochains scans (pour ne plus les ignorer, Configuration du plugin > Bouton "Gérer les clients ignorés")
 
 > **Image des clients (En Beta)** : lors d'un scan (et de celui fait automatiquement chaque nuit), chaque client prend l'icône qu'il a dans le contrôleur : l'image personnalisée que vous avez envoyée dans UniFi, sinon l'icône que vous y avez choisie, sinon celle détectée par UniFi. Elle est téléchargée chez UniFi, il faut donc un accès internet ; sinon le client garde l'image générique filaire ou Wi-Fi. Si vous changez l'icône d'un client dans UniFi, relancez un scan des Clients pour la voir dans Jeedom. Les images qui ne servent plus (image remplacée, client supprimé) sont effacées à ce même scan.
 
@@ -84,7 +84,7 @@ Onglet Equipement
 
 -   **Commentaire** : permet d'écrire un commentaire sur l'équipement.
 
--   **Informations diverses** : plusieurs informations sur l'équipement sont affichées.
+-   **Informations diverses** : plusieurs informations sur l'équipement sont affichées. Pour un Client (En Beta) : son **IP fixe** si une adresse lui est réservée dans UniFi (« Non » sinon), reprise à chaque scan.
 
 
 Onglet Commandes
@@ -101,7 +101,7 @@ Chaque équipement s'affiche sur le dashboard et en mobile avec un widget du plu
 
 -   **Site** : contrôleur à jour ou mise à jour disponible, nombre d'équipements UniFi en ligne et de clients présents (parmi ceux créés dans Jeedom), bouton **LED** du site et **Rescan Clients**.
 
--   **Client** : présent ou absent, adresse IP, réseau Wi-Fi, signal, satisfaction, canal, débits en réception et en envoi, boutons **Bloquer** et **Reconnecter**. Un client filaire n'a pas les informations Wi-Fi.
+-   **Client** : présent ou absent, adresse IP (avec la mention **fixe** si elle est réservée dans UniFi), réseau Wi-Fi, signal, satisfaction, canal, débits en réception et en envoi, boutons **Bloquer** et **Reconnecter**. Un client filaire n'a pas les informations Wi-Fi.
 
 -   **WLAN** : activé ou désactivé, bande, réseau invités, et un interrupteur pour l'activer ou le désactiver.
 
