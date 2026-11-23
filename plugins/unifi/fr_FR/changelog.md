@@ -11,7 +11,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 ## En Beta
 
 * **Clients ignorés** : le bouton de la configuration ouvre maintenant la liste des clients ignorés (MAC, nom, dernière IP, IP fixe, dernière connexion, quand le contrôleur les connaît encore). Vous pouvez ne plus en ignorer un, plusieurs ou tous, au lieu de tout réinitialiser.
-* **IP fixe des Clients** : l'adresse réservée dans UniFi est reprise à chaque scan et affichée sur la page de l'équipement et dans son widget.
+* **IP fixe des Clients** : l'adresse réservée dans UniFi est reprise à chaque scan et affichée sur la page de l'équipement, dans son widget et dans la fenêtre Santé.
 * **Présence des Clients plus fiable** : à chaque relevé régulier, le plugin vérifie la liste des clients connectés au contrôleur et corrige la présence si un évènement de connexion ou de déconnexion a été perdu (démon arrêté, connexion au contrôleur coupée...).
 * **Téléphones** : une nouvelle question dans la FAQ explique comment éviter que la présence d'un téléphone ne fonctionne plus à cause de son adresse Wi-Fi privée.
 * **Widgets** : chaque équipement a maintenant son widget sur le dashboard et en mobile, différent selon son type (site, client, WLAN, point d'accès, switch, passerelle), avec les valeurs mises à jour en direct. Voir la [documentation beta](index-beta#widgets-en-beta).

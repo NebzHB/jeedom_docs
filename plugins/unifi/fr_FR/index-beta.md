@@ -52,7 +52,7 @@ plugins puis Monitoring. Vous retrouvez ici :
 
 -   un bouton pour afficher la configuration du plugin
 
--   un bouton qui vous donne une vue d'ensemble de tous vos équipements et leur état.
+-   un bouton qui vous donne une vue d'ensemble de tous vos équipements et leur état (Santé). Pour un Client (En Beta), l'IP est en vert avec une punaise si elle est réservée dans UniFi, en orange si l'IP réservée n'est pas la dernière vue.
 
 -   enfin en dessous vous retrouvez la liste de vos équipements par catégories
     -   A coté de chaque titre de catégories, vous pouvez lancer le scan sur ce type uniquement
