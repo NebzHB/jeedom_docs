@@ -11,7 +11,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 ## En Beta
 
 * **Noms en double** : deux équipements dont les noms ne diffèrent que par les accents ou les majuscules (« Clim veranda » et « Clim Véranda ») sont maintenant vus comme un doublon, comme le fait la base de Jeedom. Le scan ne s'arrête plus sur une erreur « Duplicate entry ».
-* **Sécurité** : le démon refuse maintenant toute demande qui ne vient pas de Jeedom (clé API du plugin demandée à chaque fois). Avant, un autre appareil du réseau local qui trouvait son port pouvait piloter le réseau UniFi par le démon. Merci à mortyre de l'avoir signalé !
+* **Sécurité** : le démon refuse maintenant toute demande qui ne vient pas de Jeedom (clé API du plugin demandée à chaque fois). Avant, un autre appareil du réseau local qui trouvait son port pouvait piloter le réseau UniFi par le démon. Merci à mortyre de l'avoir signalé ! Si vous régénérez la clé API du plugin dans Jeedom, redémarrez le démon (un message le rappelle dans le log).
 * **IP fixe des Clients** : l'adresse réservée dans UniFi est reprise à chaque scan et affichée sur la page de l'équipement, dans son widget et dans la fenêtre Santé.
 * **Clients ignorés** : le bouton de la configuration ouvre maintenant la liste des clients ignorés (MAC, nom, IP en indiquant si elle est fixe, dernière connexion, quand le contrôleur les connaît encore). Vous pouvez ne plus en ignorer un, plusieurs ou tous, au lieu de tout réinitialiser.
 * **Présence des Clients plus fiable** : à chaque relevé régulier, le plugin vérifie la liste des clients connectés au contrôleur et corrige la présence si un évènement de connexion ou de déconnexion a été perdu (démon arrêté, connexion au contrôleur coupée...).
