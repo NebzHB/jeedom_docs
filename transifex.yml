@@ -47,3 +47,9 @@ filters:
     source_language: fr
     source_file_dir: plugins/hkControl/fr_FR/
     translation_files_expression: /plugins/hkControl/<lang>/	    
+    - filter_type: dir
+    file_format: GITHUBMARKDOWN
+    source_file_extension: md
+    source_language: fr
+    source_file_dir: plugins/deserve/fr_FR/
+    translation_files_expression: /plugins/deserve/<lang>/
