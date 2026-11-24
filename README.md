@@ -14,6 +14,8 @@
 
 [HomeWizard](https://nebzhb.github.io/jeedom_docs/plugins/HomeWizard/fr_FR/)
 
+[Mérite (deserve)](https://nebzhb.github.io/jeedom_docs/plugins/deserve/fr_FR/)
+
 [Unifi](https://nebzhb.github.io/jeedom_docs/plugins/unifi/fr_FR/)
 
 [piHole](https://nebzhb.github.io/jeedom_docs/plugins/piHole/fr_FR/)
