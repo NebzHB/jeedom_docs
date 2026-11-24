@@ -7,6 +7,7 @@ description: Changelog du plugin HomeWizard Energy
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe, de librairie ou pour la compatibilité Jeedom V4
 
 # En Beta
+- Nouvelle commande info Temps de fonctionnement (API v2), historisée : un redémarrage de l'équipement se voit et est signalé dans le log du démon
 - Migration des équipements vers la nouvelle API v2 de HomeWizard, à la demande et équipement par équipement, avec un assistant qui vous montre où appuyer sur l'équipement et attend votre appui (bouton "Migration API v2"). Voir la [documentation beta](index-beta#migration-vers-lapi-v2)
 - La page Santé indique l'API utilisée par chaque équipement
 - Migration possible pour : Compteur P1, kWh Meters 1 et 3 phases. Pas encore proposée par HomeWizard pour l'Energy Socket, le compteur d'eau et l'Energy Display
