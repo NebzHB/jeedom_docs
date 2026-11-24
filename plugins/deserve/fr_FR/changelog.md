@@ -14,4 +14,6 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 - Option « Remise à zéro » par équipement, sans déclencher les actions déméritantes
 - *Est Méritant* est recalculé quand le but change
 - Sélecteur de mots-clés de scénario pour les actions (message, variable, scénario…)
+- Nouvelles commandes « Pourcentage du but » et « Manque »
+- Paliers configurables en pourcentage du but
 - Nettoyage du code et version minimale Jeedom 4.3

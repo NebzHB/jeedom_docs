@@ -25,6 +25,16 @@ Dans **Plugins → Automatisme → Mérite**, cliquez sur **Ajouter** et donnez 
 - **Remise à zéro** : si cette case est cochée, le compteur repasse à 0 dès que le but est atteint, juste après l'exécution des actions méritantes. *Est Méritant* repasse alors aussi à 0, **sans** lancer les actions déméritantes. Chaque franchissement du but se comporte donc comme une impulsion, ce qui convient bien à un système de paliers ou de récompenses.
 - **Où sont utilisées les commandes** : liste des scénarios, vues, designs, etc. qui utilisent les commandes de cet équipement.
 
+### Paliers
+
+Les paliers permettent de déclencher des actions **avant** d'atteindre le but, par exemple pour prévenir qu'un entretien approche.
+
+- Chaque palier a un **seuil en pourcentage du but** (par exemple 80 %), une condition facultative et des actions, comme les évènements décrits ci-dessous.
+- Un palier s'exécute quand le pourcentage franchit son seuil **à la montée**. S'il redescend sous le seuil puis remonte, le palier s'exécute à nouveau.
+- Si plusieurs paliers sont franchis d'un coup, ils s'exécutent du plus bas au plus haut, et toujours avant les actions méritantes.
+- Le seuil étant exprimé en pourcentage, les paliers suivent automatiquement un changement de but. Baisser le but peut d'ailleurs faire franchir un palier.
+- Un seuil au-dessus de 100 % est possible, puisque la valeur peut dépasser le but.
+
 ### Actions Méritantes et Déméritantes
 
 - Les **actions méritantes** s'exécutent quand le compteur **atteint ou dépasse** le but (*Est Méritant* passe de 0 à 1).
@@ -46,6 +56,8 @@ Les actions sont regroupées en **évènements** :
 | **Valeur** | info numérique | Valeur actuelle du compteur (jamais négative). |
 | **Nécessite** | info numérique | But à atteindre (100 par défaut). |
 | **Est Méritant** | info binaire | 1 si Valeur ≥ Nécessite, 0 sinon. |
+| **Pourcentage du but** | info numérique (%) | Valeur / Nécessite × 100, arrondi. Peut dépasser 100 %. |
+| **Manque** | info numérique | Points manquants pour atteindre le but (Nécessite − Valeur, minimum 0). |
 | **Mérite** | action slider | Ajoute la valeur du slider au compteur. |
 | **Démérite** | action slider | Retire la valeur du slider au compteur (minimum 0). |
 | **Doit Nécessiter** | action slider | Change le but (minimum 1). |
@@ -79,6 +91,7 @@ Pour le filtre d'une VMC, d'un adoucisseur ou d'une hotte, ou le bac d'un aspira
 
 - Le but est le seuil d'entretien (par exemple 50 cycles).
 - À chaque cycle, un scénario fait **Mérite**, éventuellement pondéré : cycle court +1, cycle long +3.
+- Un palier à 80 % envoie une notification « Entretien bientôt nécessaire ».
 - Actions méritantes : notification « Pensez à changer le filtre ». *Est Méritant* reste à 1 tant que l'entretien n'est pas fait, ce qui en fait un rappel persistant sur le dashboard.
 - Après l'entretien, un clic sur **Mise à zéro** depuis le dashboard.
 
