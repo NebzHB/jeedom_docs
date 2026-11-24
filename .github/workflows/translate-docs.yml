@@ -1,0 +1,32 @@
+name: translate-docs
+
+on:
+  workflow_dispatch:
+    inputs:
+      documents_roots:
+        description: "Dossiers des plugins à traduire (séparés par des virgules)"
+        default: "plugins/deserve"
+      target_languages:
+        description: "Langues cibles (séparées par des virgules)"
+        default: "en_US,es_ES,de_DE,it_IT,pt_PT"
+  push:
+    branches:
+      - master
+    paths:
+      - "plugins/deserve/fr_FR/*.md"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Mips2648/docs-translations@v3
+        with:
+          deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
+          documents_roots: ${{ inputs.documents_roots || 'plugins/deserve' }}
+          target_languages: ${{ inputs.target_languages || 'en_US,es_ES,de_DE,it_IT,pt_PT' }}
+          memory_path: ${{ github.workspace }}/.translation_memory
