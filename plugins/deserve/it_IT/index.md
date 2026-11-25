@@ -25,7 +25,7 @@ In **Plugins → Automazione → Merito**, clicca su **Aggiungi** e assegna un n
 - **Azzeramento**: se questa casella è spuntata, il contatore torna a 0 non appena l'obiettivo viene raggiunto, subito dopo l'esecuzione delle azioni meritevoli. Anche *È meritevole* torna quindi a 0, **senza** avviare le azioni demeritevoli. Ogni volta che si supera l'obiettivo, si verifica quindi un impulso, il che si adatta bene a un sistema a livelli o a ricompense.
 - **Dove vengono utilizzati i comandi**: elenco degli scenari, delle viste, dei design, ecc. che utilizzano i comandi di questo dispositivo.
 
-### Piani
+### Livelli
 
 I livelli consentono di attivare delle azioni **prima** di raggiungere l'obiettivo, ad esempio per avvisare che si avvicina un intervento di manutenzione.
 
@@ -35,10 +35,10 @@ I livelli consentono di attivare delle azioni **prima** di raggiungere l'obietti
 - Poiché la soglia è espressa in percentuale, i livelli si adeguano automaticamente a una modifica dell'obiettivo. Abbassando l'obiettivo è possibile, tra l'altro, superare un livello.
 - È possibile che il valore superi il 100%, poiché può andare oltre l'obiettivo.
 
-### Azioni meritevoli e demeritevoli
+### Azioni di merito e di demerito
 
-- Le **azioni meritorie** vengono eseguite quando il contatore **raggiunge o supera** l'obiettivo (*È meritevole* passa da 0 a 1).
-- Le **azioni penalizzanti** vengono eseguite quando il contatore **scende al di sotto** dell'obiettivo (*È Meritevole* passa da 1 a 0).
+- Le **azioni di merito** vengono eseguite quando il contatore **raggiunge o supera** l'obiettivo (*È meritevole* passa da 0 a 1).
+- Le **azioni di demerito** vengono eseguite quando il contatore **torna sotto** l'obiettivo (*È meritevole* passa da 1 a 0).
 
 Le azioni vengono eseguite solo al **superamento** dell'obiettivo. Aggiungere punti a un'attrezzatura che ne ha già diritto non riattiva le azioni meritevoli.
 
@@ -53,24 +53,24 @@ Le azioni sono raggruppate in **eventi**:
 
 | Comando | Tipo | Descrizione |
 |---|---|---|
-| **Valore** | dato numerico | Valore attuale del contatore (mai negativo). |
-| **Requisiti** | Informazioni digitali | Obiettivo da raggiungere (100 per impostazione predefinita). |
-| **Meritevole** | informazione binaria | 1 se il valore è ≥ al requisito, 0 altrimenti. |
-| **Percentuale dell'obiettivo** | dato numerico (%) | Valore / Requisito × 100, arrotondato. Può superare il 100%. |
-| **Mancanza** | informazioni digitali | Punti mancanti per raggiungere l'obiettivo (richiede − Valore, minimo 0). |
-| **Merito** | cursore di azione | Aggiunge il valore del cursore al contatore. |
-| **Demerito** | cursore di azione | Rimuove il valore del cursore dal contatore (minimo 0). |
-| **Requisiti** | cursore di azione | Modifica l'obiettivo (minimo 1). |
-| **Guadagnare** | azione | Imposta direttamente il contatore sul valore dell'obiettivo. |
-| **Azzeramento** | azione | Azzeramento del contatore. |
+| **Valore** | info numerica | Valore attuale del contatore (mai negativo). |
+| **Richiede** | info numerica | Obiettivo da raggiungere (100 per impostazione predefinita). |
+| **È meritevole** | info binaria | 1 se Valore ≥ Richiede, 0 altrimenti. |
+| **Percentuale dell'obiettivo** | info numerica (%) | Valore / Richiede × 100, arrotondato. Può superare il 100%. |
+| **Mancante** | info numerica | Punti mancanti per raggiungere l'obiettivo (Richiede − Valore, minimo 0). |
+| **Merito** | azione cursore | Aggiunge il valore del cursore al contatore. |
+| **Demerito** | azione cursore | Sottrae il valore del cursore dal contatore (minimo 0). |
+| **Deve richiedere** | azione cursore | Modifica l'obiettivo (minimo 1). |
+| **Vincere** | azione | Porta direttamente il contatore al valore dell'obiettivo. |
+| **Azzeramento** | azione | Riporta il contatore a 0. |
 
 Note:
 
 - I meriti e i demeriti senza valore, o con valore pari a 0, non hanno alcun effetto.
 - I cursori del widget vanno da 0 a 100. Da uno scenario è possibile inviare un valore più alto (ad esempio *Doit Nécessiter* a 150).
 - Se si abbassa l'obiettivo al di sotto del valore attuale, il valore viene riportato al nuovo obiettivo. Non viene ripristinato se successivamente si aumenta nuovamente l'obiettivo.
-- *Azzeramento* e *Demerito* attivano le azioni di demerito se l'attrezzatura era meritevole. *Guadagno* attiva le azioni di merito se non lo era ancora.
-- *Meritevole* può anche essere utilizzato come trigger o condizione nei vostri scenari.
+- *Azzeramento* e *Demerito* eseguono le azioni di demerito se il dispositivo era meritevole. *Vincere* esegue le azioni di merito se non lo era ancora.
+- *È meritevole* può anche essere usato come trigger o condizione nei vostri scenari.
 
 ## Esempi di utilizzo
 
@@ -80,8 +80,8 @@ Si vuole evitare che troppi elettrodomestici ad alto consumo funzionino contempo
 
 - Crea un Merito «Grandi consumatori» con un obiettivo pari a **3**.
 - Per ogni dispositivo, un piccolo scenario assegna **1 punto** quando la sua potenza supera una soglia e **-1 punto** quando scende al di sotto di essa. È possibile applicare una ponderazione: il terminale può valere 2 punti.
-- Azioni consigliate: mettere il terminale in pausa, spegnere lo scaldabagno, inviare una notifica.
-- Azioni non valide: riattivare tutto.
+- Azioni di merito: mettere in pausa la colonnina di ricarica, spegnere lo scaldabagno, inviare una notifica.
+- Azioni di demerito: riattivare tutto.
 
 Ogni dispositivo gestisce solo il proprio +1 e il proprio −1. L'aggiunta di un dispositivo non richiede la modifica degli altri scenari.
 
@@ -92,7 +92,7 @@ Per il filtro di un sistema di ventilazione meccanica controllata (VMC), di un a
 - L'obiettivo è la soglia di manutenzione (ad esempio 50 cicli).
 - Ad ogni ciclo, uno scenario ottiene **Merito**, eventualmente ponderato: ciclo breve +1, ciclo lungo +3.
 - Quando il livello scende all'80%, viene inviata una notifica «Manutenzione necessaria a breve».
-- Azioni meritevoli: notifica «Ricordati di sostituire il filtro». *È meritevole* rimane a 1 finché la manutenzione non viene effettuata, il che lo rende un promemoria persistente sulla dashboard.
+- Azioni di merito: notifica «Ricordati di sostituire il filtro». *È meritevole* resta a 1 finché la manutenzione non viene fatta, il che lo rende un promemoria persistente sulla dashboard.
 - Dopo la manutenzione, clicca su **Azzeramento** dalla dashboard.
 
 ### Punti di merito

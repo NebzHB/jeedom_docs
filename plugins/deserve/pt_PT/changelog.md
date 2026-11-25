@@ -12,8 +12,8 @@ Se não for indicado nada, trata-se provavelmente de uma pequena atualização o
 - Execução das ações meritórias (objetivo alcançado) e deméritas (objetivo não alcançado), por ordem, com uma condição opcional por evento
 - Arquivo de registos de eventos e reformulação do layout do equipamento
 - Opção «Reinicialização» por equipamento, sem desencadear as ações penalizadoras
-- *É Merecedor* é recalculado quando o objetivo muda
+- *É merecedor* é recalculado quando o objetivo muda
 - Seletor de palavras-chave de cenário para as ações (mensagem, variável, cenário…)
-- Novos comandos «Percentagem da meta» e «Falta»
-- Níveis configuráveis em percentagem da meta
+- Novos comandos «Percentagem do objetivo» e «Em falta»
+- Níveis configuráveis em percentagem do objetivo
 - Limpeza do código e versão mínima do Jeedom 4.3

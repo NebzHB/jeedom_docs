@@ -35,10 +35,10 @@ Os níveis permitem desencadear ações **antes** de atingir o objetivo, por exe
 - Como o limiar é expresso em percentagem, os níveis ajustam-se automaticamente a uma alteração do objetivo. Reduzir o objetivo pode, aliás, fazer com que se ultrapasse um nível.
 - É possível que o valor ultrapasse os 100 %, uma vez que pode exceder o objetivo.
 
-### Ações meritórias e desmeritórias
+### Ações de mérito e de demérito
 
-- As **ações meritórias** são executadas quando o contador **atinge ou ultrapassa** a meta (*É Meritório* passa de 0 para 1).
-- As **ações de demérito** são executadas quando o contador **volta a ficar abaixo** do objetivo (*É Meritório* passa de 1 para 0).
+- As **ações de mérito** são executadas quando o contador **atinge ou ultrapassa** o objetivo (*É merecedor* passa de 0 para 1).
+- As **ações de demérito** são executadas quando o contador **volta a ficar abaixo** do objetivo (*É merecedor* passa de 1 para 0).
 
 As ações só são executadas quando se **ultrapassa** o objetivo. Adicionar pontos a um equipamento que já cumpre os requisitos não reativa as ações que dão direito a pontos.
 
@@ -54,23 +54,23 @@ As ações estão agrupadas em **eventos**:
 | Comando | Tipo | Descrição |
 |---|---|---|
 | **Valor** | informação numérica | Valor atual do contador (nunca negativo). |
-| **Requisitos** | informação digital | Objetivo a atingir (100 por predefinição). |
-| **É merecedor** | informação binária | 1 se o valor for ≥ ao necessário, 0 caso contrário. |
-| **Percentagem da meta** | informação numérica (%) | Valor / Necessidade × 100, arredondado. Pode ultrapassar os 100 %. |
-| **Falta** | informação digital | Pontos em falta para atingir o objetivo (Requer − Valor, mínimo 0). |
-| **Mérito** | controlo deslizante de ação | Adiciona o valor do controlo deslizante ao contador. |
-| **Desmerito** | controlo deslizante de ação | Retira o valor do controlo deslizante do contador (mínimo 0). |
-| **Deve exigir** | barra deslizante de ação | Alterar o objetivo (mínimo 1). |
-| **Ganhar** | ação | Coloca diretamente o marcador no valor do objetivo. |
-| **Zerar** | ação | Repõe o contador a 0. |
+| **Requer** | informação numérica | Objetivo a atingir (100 por predefinição). |
+| **É merecedor** | informação binária | 1 se Valor ≥ Requer, 0 caso contrário. |
+| **Percentagem do objetivo** | informação numérica (%) | Valor / Requer × 100, arredondado. Pode ultrapassar os 100 %. |
+| **Em falta** | informação numérica | Pontos em falta para atingir o objetivo (Requer − Valor, mínimo 0). |
+| **Mérito** | ação deslizante | Adiciona o valor do cursor ao contador. |
+| **Demérito** | ação deslizante | Retira o valor do cursor ao contador (mínimo 0). |
+| **Deve requerer** | ação deslizante | Altera o objetivo (mínimo 1). |
+| **Ganhar** | ação | Coloca diretamente o contador no valor do objetivo. |
+| **Reposição a zero** | ação | Repõe o contador a 0. |
 
 Observações:
 
 - Os méritos e deméritos sem valor, ou com valor 0, não têm qualquer efeito.
 - Os controles deslizantes do widget variam de 0 a 100. A partir de um cenário, é possível enviar um valor superior (por exemplo, *Deve ser necessário* a 150).
 - Se a meta for reduzida para um valor inferior ao atual, o valor é ajustado à nova meta. Não é reposto se a meta for posteriormente aumentada.
-- *Zerar* e *Desmerecer* desencadeiam as ações desmerecedoras se o equipamento fosse merecedor. *Ganhar* desencadeia as ações merecedoras se ainda não o fosse.
-- *É Merecedor* também pode servir como desencadeador ou condição nos seus cenários.
+- *Reposição a zero* e *Demérito* executam as ações de demérito se o equipamento era merecedor. *Ganhar* executa as ações de mérito se ainda não o era.
+- *É merecedor* também pode servir de acionador ou de condição nos seus cenários.
 
 ## Exemplos de utilização
 
@@ -80,8 +80,8 @@ Queremos evitar que demasiados aparelhos de elevado consumo estejam a funcionar 
 
 - Crie um «Grandes consumidores» com um objetivo de **3**.
 - Para cada aparelho, um pequeno cenário atribui **1 ponto positivo** quando a sua potência ultrapassa um limiar e **1 ponto negativo** quando volta a descer. É possível ponderar: o terminal pode valer 2 pontos.
-- Ações recomendadas: colocar o terminal em pausa, desligar o aquecedor de água, enviar uma notificação.
-- Ações indesejáveis: reativar tudo.
+- Ações de mérito: pausar o posto de carregamento, desligar o termoacumulador, enviar uma notificação.
+- Ações de demérito: reativar tudo.
 
 Cada dispositivo gere apenas o seu +1 e o seu −1. Adicionar um dispositivo não requer a alteração dos outros cenários.
 
@@ -92,7 +92,7 @@ Para o filtro de um sistema de ventilação mecânica controlada (VMC), de um de
 - O objetivo é o limiar de manutenção (por exemplo, 50 ciclos).
 - Em cada ciclo, um cenário recebe **Pontos**, eventualmente ponderados: ciclo curto +1, ciclo longo +3.
 - Quando o nível atinge os 80 %, é enviada uma notificação a indicar «Manutenção necessária em breve».
-- Ações merecedoras: notificação «Não se esqueça de trocar o filtro». *É merecedora* permanece em 1 enquanto a manutenção não for realizada, o que a torna um lembrete persistente no painel de controlo.
+- Ações de mérito: notificação «Não se esqueça de trocar o filtro». *É merecedor* fica a 1 enquanto a manutenção não for feita, o que o torna um lembrete persistente no dashboard.
 - Após a manutenção, clique em **Reiniciar** no painel de controlo.
 
 ### Pontos de mérito

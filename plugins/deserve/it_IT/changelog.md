@@ -12,8 +12,8 @@ Se non è specificato nulla, probabilmente si tratta di un piccolo aggiornamento
 - Esecuzione delle azioni positive (obiettivo raggiunto) e negative (obiettivo mancato), in ordine, con una condizione facoltativa per ogni evento
 - Salvataggio degli eventi e riprogettazione del layout delle apparecchiature
 - Opzione «Reset» per singolo dispositivo, senza attivare azioni penalizzanti
-- *Merita* viene ricalcolato quando l'obiettivo cambia
+- *È meritevole* viene ricalcolato quando l'obiettivo cambia
 - Selettore di parole chiave dello scenario per le azioni (messaggio, variabile, scenario…)
-- Nuovi comandi «Percentuale dell'obiettivo» e «Differenza»
-- Livelli configurabili in percentuale rispetto all'obiettivo
+- Nuovi comandi «Percentuale dell'obiettivo» e «Mancante»
+- Livelli configurabili in percentuale dell'obiettivo
 - Riorganizzazione del codice e versione minima di Jeedom 4.3

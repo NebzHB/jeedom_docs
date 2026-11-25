@@ -27,7 +27,7 @@ Klicken Sie unter **Plugins → Automatisierung → Auszeichnung** auf **Hinzuf�
 
 ### Stufen
 
-Mittelpunkte ermöglichen es, Aktionen **vor** dem Erreichen des Ziels auszulösen, beispielsweise um darauf hinzuweisen, dass eine Wartung ansteht.
+Stufen ermöglichen es, Aktionen **vor** dem Erreichen des Ziels auszulösen, beispielsweise um darauf hinzuweisen, dass eine Wartung ansteht.
 
 - Jede Stufe verfügt über einen **Schwellenwert in Prozent des Ziels** (z. B. 80 %), eine optionale Bedingung und Aktionen, wie die unten beschriebenen Ereignisse.
 - Eine Stufe wird ausgeführt, wenn der Prozentsatz **nach oben** seinen Schwellenwert überschreitet. Wenn er wieder unter den Schwellenwert fällt und dann erneut ansteigt, wird die Stufe erneut ausgeführt.
@@ -35,10 +35,10 @@ Mittelpunkte ermöglichen es, Aktionen **vor** dem Erreichen des Ziels auszulös
 - Da der Schwellenwert in Prozent angegeben wird, passen sich die Stufen automatisch an eine Änderung des Zielwerts an. Eine Senkung des Zielwerts kann übrigens dazu führen, dass eine Stufe überschritten wird.
 - Ein Schwellenwert über 100 % ist möglich, da der Wert das Ziel überschreiten kann.
 
-### Positive und negative Maßnahmen
+### Verdienst- und Abzugs-Aktionen
 
-- **Verdienstaktionen** werden ausgeführt, wenn der Zähler das Ziel **erreicht oder überschreitet** (*Ist verdienstvoll* wechselt von 0 auf 1).
-- **Negative Aktionen** werden ausgeführt, wenn der Zähler **unter** den Zielwert fällt (*Ist verdienstvoll* wechselt von 1 auf 0).
+- **Verdienst-Aktionen** werden ausgeführt, wenn der Zähler das Ziel **erreicht oder überschreitet** (*Ist verdienstvoll* wechselt von 0 auf 1).
+- **Abzugs-Aktionen** werden ausgeführt, wenn der Zähler wieder **unter** das Ziel fällt (*Ist verdienstvoll* wechselt von 1 auf 0).
 
 Aktionen werden erst beim **Überschreiten** des Ziels ausgeführt. Das Hinzufügen von Punkten zu einer bereits verdienten Ausrüstung löst keine neuen verdienten Aktionen aus.
 
@@ -53,24 +53,24 @@ Die Aktionen sind in **Ereignisse** zusammengefasst:
 
 | Befehl | Typ | Beschreibung |
 |---|---|---|
-| **Wert** | numerische Angabe | Aktueller Zählerstand (niemals negativ). |
-| **Erforderlich** | Digitale Informationen | Zu erreichendes Ziel (Standardwert: 100). |
-| **Ist berechtigter** | Binäre Information | 1, wenn Wert ≥ Anforderung, andernfalls 0. |
-| **Prozent des Ziels** | numerische Angabe (%) | Wert / Anforderung × 100, gerundet. Kann 100 % überschreiten. |
-| **Mangel** | digitale Informationen | Fehlende Punkte zum Erreichen des Ziels (erforderlich − Wert, mindestens 0). |
-| **Verdienst** | Aktionsschieberegler | Fügt den Wert des Schiebereglers zum Zähler hinzu. |
-| **Abzug** | Schieberegler-Aktion | Zieht den Wert des Schiebereglers vom Zähler ab (Minimum 0). |
-| **Muss erforderlich sein** | Aktionsschieberegler | Ändert das Ziel (mindestens 1). |
+| **Wert** | numerische Info | Aktueller Zählerstand (nie negativ). |
+| **Benötigt** | numerische Info | Zu erreichendes Ziel (standardmäßig 100). |
+| **Ist verdienstvoll** | binäre Info | 1, wenn Wert ≥ Benötigt, sonst 0. |
+| **Prozent des Ziels** | numerische Info (%) | Wert / Benötigt × 100, gerundet. Kann 100 % überschreiten. |
+| **Fehlend** | numerische Info | Fehlende Punkte bis zum Ziel (Benötigt − Wert, mindestens 0). |
+| **Verdienst** | Schieberegler-Aktion | Addiert den Wert des Schiebereglers zum Zähler. |
+| **Abzug** | Schieberegler-Aktion | Zieht den Wert des Schiebereglers vom Zähler ab (mindestens 0). |
+| **Muss benötigen** | Schieberegler-Aktion | Ändert das Ziel (mindestens 1). |
 | **Gewinnen** | Aktion | Setzt den Zähler direkt auf den Wert des Ziels. |
-| **Zurücksetzen** | Aktion | Setzt den Zähler auf 0 zurück. |
+| **Auf Null setzen** | Aktion | Setzt den Zähler auf 0 zurück. |
 
 Anmerkungen:
 
 - Verdienste und Verfehlungen ohne Wert oder mit dem Wert 0 haben keine Auswirkungen.
 - Die Schieberegler des Widgets reichen von 0 bis 100. Über ein Szenario kann ein höherer Wert gesendet werden (z. B. *Muss erforderlich sein* auf 150).
 - Wird das Ziel unter den aktuellen Wert gesenkt, wird der Wert auf das neue Ziel zurückgesetzt. Er wird nicht wiederhergestellt, wenn das Ziel anschließend wieder angehoben wird.
-- *Zurücksetzen* und *Abzug* lösen die abwertenden Aktionen aus, wenn die Ausrüstung zuvor wertvoll war. *Gewinnen* löst die wertschätzenden Aktionen aus, wenn sie es zuvor noch nicht war.
-- *Ist verdient* kann auch als Auslöser oder Bedingung in Ihren Szenarien dienen.
+- *Auf Null setzen* und *Abzug* lösen die Abzugs-Aktionen aus, wenn das Gerät verdienstvoll war. *Gewinnen* löst die Verdienst-Aktionen aus, wenn es das noch nicht war.
+- *Ist verdienstvoll* kann auch als Auslöser oder Bedingung in Ihren Szenarien dienen.
 
 ## Anwendungsbeispiele
 
@@ -80,8 +80,8 @@ Wir möchten vermeiden, dass zu viele Großverbraucher gleichzeitig in Betrieb s
 
 - Erstellen Sie einen „Großverbraucher“-Empfänger mit einem Zielwert von **3**.
 - Für jedes Gerät wird in einem kleinen Szenario **1 Pluspunkt** vergeben, wenn seine Leistung einen Schwellenwert überschreitet, und **1 Minuspunkt**, wenn sie wieder darunter fällt. Eine Gewichtung ist möglich: Der Anschluss kann mit dem Faktor 2 gewichtet werden.
-- Nützliche Aktionen: Das Terminal pausieren, den Warmwasserbereiter ausschalten, eine Benachrichtigung senden.
-- Fehlerhafte Aktionen: Alles wieder aktivieren.
+- Verdienst-Aktionen: die Ladestation pausieren, den Warmwasserbereiter ausschalten, eine Benachrichtigung senden.
+- Abzugs-Aktionen: alles wieder aktivieren.
 
 Jedes Gerät verwaltet nur sein +1 und sein −1. Das Hinzufügen eines Geräts erfordert keine Änderung der anderen Szenarien.
 
@@ -92,7 +92,7 @@ Für den Filter einer Lüftungsanlage, eines Wasserenthärters oder einer Dunsta
 - Das Ziel ist die Wartungsschwelle (z. B. 50 Zyklen).
 - In jedem Zyklus wird ein Szenario mit **Punkten** bewertet, gegebenenfalls gewichtet: kurzer Zyklus +1, langer Zyklus +3.
 - Bei einem Auslastungsgrad von 80 % wird eine Benachrichtigung „Wartung bald erforderlich“ gesendet.
-- Wichtige Maßnahmen: Benachrichtigung „Denken Sie daran, den Filter zu wechseln“. *Ist wichtig* bleibt auf 1 gesetzt, solange die Wartung nicht durchgeführt wurde, wodurch eine dauerhafte Erinnerung auf dem Dashboard angezeigt wird.
+- Verdienst-Aktionen: Benachrichtigung „Denken Sie daran, den Filter zu wechseln“. *Ist verdienstvoll* bleibt auf 1, solange die Wartung nicht durchgeführt wurde, und dient so als dauerhafte Erinnerung auf dem Dashboard.
 - Nach der Wartung klicken Sie im Dashboard auf **Zurücksetzen**.
 
 ### Leistungspunkte
