@@ -118,7 +118,7 @@ Ce que l'API v2 apporte :
 
 -   la connexion entre Jeedom et l'équipement est chiffrée (https) et protégée par une autorisation propre à votre Jeedom
 -   l'équipement envoie ses mesures à Jeedom dès qu'elles changent (websocket), Jeedom ne l'interroge plus en boucle. Si cette liaison ne fonctionne pas, le plugin repasse tout seul en interrogation régulière.
--   c'est la seule API de la batterie Plug-In Battery (voir [Plug-In Battery](#plug-in-battery))
+-   c'est la seule API de la batterie Plug-In Battery (voir [Plug-In Battery](#plug-in-battery-en-beta))
 
 **Quels équipements ?**
 ---------------------
@@ -128,7 +128,7 @@ Ce que l'API v2 apporte :
 | Compteur P1 (HWE-P1) | Oui |
 | kWh Meter 1 phase (HWE-KWH1, SDM230-wifi) | Oui |
 | kWh Meter 3 phases (HWE-KWH3, SDM630-wifi) | Oui |
-| Plug-In Battery (HWE-BAT) | Uniquement en API v2 : pas de migration, seulement une autorisation |
+| Plug-In Battery (HWE-BAT) | Uniquement en API v2 : pas de migration, seulement une autorisation (en beta) |
 | Energy Socket (HWE-SKT) | Pas encore proposée par HomeWizard |
 | Compteur d'eau (HWE-WTR) | Pas encore proposée par HomeWizard |
 | Energy Display | Pas encore proposée par HomeWizard |
@@ -186,8 +186,10 @@ Un nouvel équipement n'a pas besoin de passer par l'API v1 : s'il annonce l'API
 
 Il n'y a rien à migrer dans ce cas : ses commandes sont créées directement avec les noms de l'API v2.
 
-**Plug-In Battery**
+**Plug-In Battery (en beta)**
 ---------------------
+
+> Le support de la Plug-In Battery et le pilotage des batteries sont encore **en beta** : ils n'ont pas encore été testés sur une vraie batterie. Vos retours sont les bienvenus.
 
 La Plug-In Battery n'existe qu'en API v2 : il n'y a rien à migrer. Elle se comporte comme un nouvel équipement ajouté directement en API v2 : elle apparait dans le plugin dès qu'elle est découverte sur le réseau, mais sans valeurs, il faut d'abord autoriser Jeedom en appuyant sur son bouton.
 
@@ -197,7 +199,7 @@ La Plug-In Battery n'existe qu'en API v2 : il n'y a rien à migrer. Elle se comp
 
 Ses commandes sont créées et mises à jour dès que l'appui est détecté. Il n'y a pas d'API Locale à activer dans l'application HomeWizard pour cet équipement.
 
-**Piloter plusieurs batteries**
+**Piloter plusieurs batteries (en beta)**
 ---------------------
 
 Les Plug-In Batteries sont pilotées en groupe par le compteur auquel elles sont associées (compteur P1 ou kWh Meter). Quand ce compteur est en API v2 et qu'au moins une batterie lui est associée, le plugin ajoute sur le **compteur** :
@@ -263,7 +265,7 @@ Un équipement supprimé mais toujours présent sur le réseau sera redécouvert
 **En attente de tests (mais devraient être fonctionnels)**
 ----------------------
 
--    Plug-In Battery (HWE-BAT) (API v2 uniquement : elle apparait dans le plugin dès sa découverte, ses valeurs arrivent une fois Jeedom [autorisé par un appui sur son bouton](#plug-in-battery)) [https://www.homewizard.com/fr-be/boutique/plug-in-battery/](https://www.homewizard.com/fr-be/boutique/plug-in-battery/)
+-    Plug-In Battery (HWE-BAT) (en beta, API v2 uniquement : elle apparait dans le plugin dès sa découverte, ses valeurs arrivent une fois Jeedom [autorisé par un appui sur son bouton](#plug-in-battery-en-beta)) [https://www.homewizard.com/fr-be/boutique/plug-in-battery/](https://www.homewizard.com/fr-be/boutique/plug-in-battery/)
 -    Wi-Fi kWh Meter (1 phase) (HWE-KWH1) [https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-1-phase/](https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-1-phase/)
 -    Wi-Fi kWh Meter (3 phases) (HWE-KWH3) [https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-3-phases/](https://www.homewizard.com/fr-be/boutique/compteur-wi-fi-kwh-mid-3-phases/)
 
