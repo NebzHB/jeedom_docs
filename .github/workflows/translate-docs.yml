@@ -5,7 +5,7 @@ on:
     inputs:
       documents_roots:
         description: "Dossiers des plugins à traduire (séparés par des virgules)"
-        default: "plugins/deserve"
+        default: "plugins/deserve,plugins/AdGuard"
       target_languages:
         description: "Langues cibles (séparées par des virgules)"
         default: "en_US,es_ES,de_DE,it_IT,pt_PT"
@@ -14,6 +14,7 @@ on:
       - master
     paths:
       - "plugins/deserve/fr_FR/*.md"
+      - "plugins/AdGuard/fr_FR/*.md"
 
 permissions:
   contents: write
@@ -26,6 +27,6 @@ jobs:
       - uses: Mips2648/docs-translations@v5
         with:
           deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
-          documents_roots: ${{ inputs.documents_roots || 'plugins/deserve' }}
+          documents_roots: ${{ inputs.documents_roots || 'plugins/deserve,plugins/AdGuard' }}
           target_languages: ${{ inputs.target_languages || 'en_US,es_ES,de_DE,it_IT,pt_PT' }}
           memory_path: ${{ github.workspace }}/.translation_memory
