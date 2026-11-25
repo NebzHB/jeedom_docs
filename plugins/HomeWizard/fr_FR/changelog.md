@@ -31,8 +31,8 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 - Types génériques Puissance, Consommation et Batterie (charge de la Plug-In Battery) posés d'office, cohérents avec le plugin Homebridge
 - Autorisation API v2 perdue (équipement réinitialisé, utilisateur supprimé) : une alerte dans le centre de messages, une seule fois par équipement, retirée quand l'autorisation est refaite
 - Démon plus solide : une coupure courte d'un équipement en API v2 se répare en silence, une erreur imprévue ne l'arrête plus
+- Moins de connexions vers les équipements en API v2 (une à la fois, plus de relecture à chaque annonce réseau, fermeture propre à l'arrêt du démon) : un P1 pouvait redémarrer quand le démon se relançait
 - Images des kWh Meters HWE-KWH1 et HWE-KWH3, de la Plug-In Battery et du Temperature Humidity Meter (pas encore d'API pour ce dernier)
-- La librairie homewizard-energy-api est maintenant installée depuis mon fork GitHub (relance des dépendances nécessaire)
 
 # 12-11-2026
 - Mise à jour de librairies (request, axios)
