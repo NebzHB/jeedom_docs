@@ -5,27 +5,27 @@ title: Plugin Mérite
 description: Documentazione del plugin Mérite (deserve)
 ---
 
-## Presentazione
+# Presentazione
 
 Il plugin **Mérite** è un semaforo per Jeedom. Ogni dispositivo, chiamato «Meritevole», ha un contatore e un obiettivo. Scenari o azioni aggiungono punti (**Merito**) o ne tolgono (**Demerito**). Quando il contatore raggiunge l'obiettivo, il dispositivo diventa meritevole e vengono eseguite le sue azioni di merito. Quando torna sotto l'obiettivo, non lo è più e vengono eseguite le sue azioni di demerito.
 
 Lo scopo è semplificare gli scenari. Invece di scrivere una condizione che deve conoscere lo stato di tutti gli elementi coinvolti, ogni scenario si limita ad aggiungere o togliere i propri punti. Tutta la logica di «cosa succede quando la soglia viene superata» è riunita in un unico punto: il dispositivo Meritevole.
 
-## Configurazione del plugin
+# Configurazione del plugin
 
 Il plugin non ha dipendenze né processi in background. È sufficiente attivarlo.
 
-## Configurazione di un dispositivo
+# Configurazione di un dispositivo
 
 In **Plugins → Automazione → Mérite**, cliccate su **Aggiungi** e date un nome al vostro Meritevole.
 
-### Impostazioni generali
+## Impostazioni generali
 
 - **Nome del dispositivo**, **Oggetto padre**, **Categoria**, **Attiva**, **Visibile**: impostazioni standard di Jeedom.
 - **Reset**: se questa casella è spuntata, il contatore torna a 0 non appena l'obiettivo è raggiunto, subito dopo l'esecuzione delle azioni di merito. *È meritevole* torna quindi anch'esso a 0, **senza** eseguire le azioni di demerito. Ogni raggiungimento dell'obiettivo si comporta quindi come un impulso, adatto a un sistema di livelli o di ricompense.
 - **Dove vengono utilizzati i comandi**: elenco degli scenari, delle viste, dei design, ecc. che utilizzano i comandi di questo dispositivo.
 
-### Livelli
+## Livelli
 
 I livelli permettono di eseguire azioni **prima** di raggiungere l'obiettivo, ad esempio per avvisare che una manutenzione si avvicina.
 
@@ -35,7 +35,7 @@ I livelli permettono di eseguire azioni **prima** di raggiungere l'obiettivo, ad
 - Poiché la soglia è espressa in percentuale, i livelli seguono automaticamente un cambio di obiettivo. Abbassare l'obiettivo può persino far superare un livello.
 - È possibile che il valore superi il 100%, poiché può andare oltre l'obiettivo.
 
-### Azioni di merito e di demerito
+## Azioni di merito e di demerito
 
 - Le **azioni di merito** vengono eseguite quando il contatore **raggiunge o supera** l'obiettivo (*È meritevole* passa da 0 a 1).
 - Le **azioni di demerito** vengono eseguite quando il contatore **torna sotto** l'obiettivo (*È meritevole* passa da 1 a 0).
@@ -49,7 +49,7 @@ Le azioni sono raggruppate in **eventi**:
 - È possibile disattivare un'azione senza eliminarla deselezionando la relativa casella.
 - Gli eventi vengono eseguiti nell'ordine visualizzato, così come le azioni di ciascun evento. Le azioni possono essere riordinate utilizzando la maniglia.
 
-## Comandi
+# Comandi
 
 | Comando | Tipo | Descrizione |
 |---|---|---|
@@ -72,9 +72,9 @@ Note:
 - *Azzeramento* e *Demerito* eseguono le azioni di demerito se il dispositivo era meritevole. *Vincere* esegue le azioni di merito se non lo era ancora.
 - *È meritevole* può anche essere usato come trigger o condizione nei vostri scenari.
 
-## Esempi di utilizzo
+# Esempi di utilizzo
 
-### Riduzione del carico elettrico
+## Riduzione del carico elettrico
 
 Si vuole evitare che troppi grandi consumatori funzionino contemporaneamente: forno, lavatrice, asciugatrice, lavastoviglie, colonnina di ricarica.
 
@@ -85,7 +85,7 @@ Si vuole evitare che troppi grandi consumatori funzionino contemporaneamente: fo
 
 Ogni dispositivo gestisce solo il proprio +1 e il proprio −1. L'aggiunta di un dispositivo non richiede la modifica degli altri scenari.
 
-### Contatore di manutenzione
+## Contatore di manutenzione
 
 Per il filtro di un sistema di ventilazione meccanica controllata (VMC), di un addolcitore o di una cappa aspirante, oppure per il contenitore di un robot aspirapolvere.
 
@@ -95,13 +95,13 @@ Per il filtro di un sistema di ventilazione meccanica controllata (VMC), di un a
 - Azioni di merito: notifica «Ricordati di sostituire il filtro». *È meritevole* resta a 1 finché la manutenzione non viene fatta, il che lo rende un promemoria persistente sulla dashboard.
 - Dopo la manutenzione, un clic su **Azzeramento** dalla dashboard.
 
-### Punti merito
+## Punti merito
 
 - Ogni compito svolto dà punti (**Merito 10**, **Merito 20**…) tramite un pulsante, un'interazione o uno scenario.
 - Una dimenticanza constatata toglie punti (**Demerito 5**).
 - Obiettivo 100, con **Reset** spuntato: ogni raggiungimento dell'obiettivo attiva una ricompensa (accendere una presa, inviare una notifica…).
 - Uno scenario settimanale fa **Azzeramento** per ripartire da zero.
 
-## Registri
+# Registri
 
 Il log `deserve` segnala, a livello **info**, ogni volta che viene raggiunto l'obiettivo. A livello **debug**, riporta inoltre in dettaglio ogni variazione di valore, ogni condizione valutata e ogni azione eseguita.
