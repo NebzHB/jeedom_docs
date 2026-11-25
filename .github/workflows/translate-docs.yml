@@ -23,8 +23,7 @@ jobs:
   translate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-      - uses: Mips2648/docs-translations@v3
+      - uses: Mips2648/docs-translations@v5
         with:
           deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
           documents_roots: ${{ inputs.documents_roots || 'plugins/deserve' }}
