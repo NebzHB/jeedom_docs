@@ -5,27 +5,27 @@ title: Plugin Mérite
 description: Documentation du plugin Mérite (deserve)
 ---
 
-## Présentation
+# Présentation
 
 Le plugin **Mérite** est un sémaphore pour Jeedom. Chaque équipement, appelé « Méritant », possède un compteur et un but. Des scénarios ou des actions ajoutent des points (**Mérite**) ou en retirent (**Démérite**). Quand le compteur atteint le but, l'équipement devient méritant et ses actions méritantes s'exécutent. Quand il repasse sous le but, il ne l'est plus et ses actions déméritantes s'exécutent.
 
 L'intérêt est de simplifier les scénarios. Au lieu d'écrire une condition qui doit connaître l'état de tous les éléments concernés, chaque scénario se contente d'ajouter ou de retirer ses points. Toute la logique de « ce qui se passe quand le seuil est franchi » est rassemblée à un seul endroit : l'équipement Méritant.
 
-## Configuration du plugin
+# Configuration du plugin
 
 Le plugin n'a ni dépendance ni démon. Il suffit de l'activer.
 
-## Configuration d'un équipement
+# Configuration d'un équipement
 
 Dans **Plugins → Automatisme → Mérite**, cliquez sur **Ajouter** et donnez un nom à votre Méritant.
 
-### Paramètres généraux
+## Paramètres généraux
 
 - **Nom de l'équipement**, **Objet parent**, **Catégorie**, **Activer**, **Visible** : paramètres habituels de Jeedom.
 - **Remise à zéro** : si cette case est cochée, le compteur repasse à 0 dès que le but est atteint, juste après l'exécution des actions méritantes. *Est Méritant* repasse alors aussi à 0, **sans** lancer les actions déméritantes. Chaque franchissement du but se comporte donc comme une impulsion, ce qui convient bien à un système de paliers ou de récompenses.
 - **Où sont utilisées les commandes** : liste des scénarios, vues, designs, etc. qui utilisent les commandes de cet équipement.
 
-### Paliers
+## Paliers
 
 Les paliers permettent de déclencher des actions **avant** d'atteindre le but, par exemple pour prévenir qu'un entretien approche.
 
@@ -35,7 +35,7 @@ Les paliers permettent de déclencher des actions **avant** d'atteindre le but, 
 - Le seuil étant exprimé en pourcentage, les paliers suivent automatiquement un changement de but. Baisser le but peut d'ailleurs faire franchir un palier.
 - Un seuil au-dessus de 100 % est possible, puisque la valeur peut dépasser le but.
 
-### Actions Méritantes et Déméritantes
+## Actions Méritantes et Déméritantes
 
 - Les **actions méritantes** s'exécutent quand le compteur **atteint ou dépasse** le but (*Est Méritant* passe de 0 à 1).
 - Les **actions déméritantes** s'exécutent quand le compteur **repasse sous** le but (*Est Méritant* passe de 1 à 0).
@@ -49,7 +49,7 @@ Les actions sont regroupées en **évènements** :
 - Une action peut être désactivée sans être supprimée en décochant sa case.
 - Les évènements sont exécutés dans l'ordre affiché, et les actions de chaque évènement aussi. Les actions peuvent être réordonnées avec la poignée.
 
-## Commandes
+# Commandes
 
 | Commande | Type | Description |
 |---|---|---|
@@ -72,9 +72,9 @@ Remarques :
 - *Mise à zéro* et *Démérite* déclenchent les actions déméritantes si l'équipement était méritant. *Gagner* déclenche les actions méritantes s'il ne l'était pas encore.
 - *Est Méritant* peut aussi servir de déclencheur ou de condition dans vos scénarios.
 
-## Exemples d'utilisation
+# Exemples d'utilisation
 
-### Délestage électrique
+## Délestage électrique
 
 On veut éviter que trop de gros consommateurs tournent en même temps : four, lave-linge, sèche-linge, lave-vaisselle, borne de recharge.
 
@@ -85,7 +85,7 @@ On veut éviter que trop de gros consommateurs tournent en même temps : four, l
 
 Chaque appareil ne gère que son +1 et son −1. Ajouter un appareil ne demande pas de modifier les autres scénarios.
 
-### Compteur d'entretien
+## Compteur d'entretien
 
 Pour le filtre d'une VMC, d'un adoucisseur ou d'une hotte, ou le bac d'un aspirateur robot.
 
@@ -95,13 +95,13 @@ Pour le filtre d'une VMC, d'un adoucisseur ou d'une hotte, ou le bac d'un aspira
 - Actions méritantes : notification « Pensez à changer le filtre ». *Est Méritant* reste à 1 tant que l'entretien n'est pas fait, ce qui en fait un rappel persistant sur le dashboard.
 - Après l'entretien, un clic sur **Mise à zéro** depuis le dashboard.
 
-### Points de mérite
+## Points de mérite
 
 - Chaque tâche accomplie donne des points (**Mérite 10**, **Mérite 20**…) via un bouton, une interaction ou un scénario.
 - Un oubli constaté retire des points (**Démérite 5**).
 - But à 100, avec **Remise à zéro** cochée : chaque palier atteint déclenche une récompense (allumer une prise, envoyer une notification…).
 - Un scénario hebdomadaire fait **Mise à zéro** pour repartir de zéro.
 
-## Logs
+# Logs
 
 Le log `deserve` indique, en niveau **info**, chaque franchissement du but. En niveau **debug**, il détaille aussi chaque changement de valeur, chaque condition évaluée et chaque action exécutée.

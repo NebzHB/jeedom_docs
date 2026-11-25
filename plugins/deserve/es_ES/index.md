@@ -5,27 +5,27 @@ title: Plugin Mérite
 description: Documentación del complemento Mérite (deserve)
 ---
 
-## Presentación
+# Presentación
 
 El plugin **Mérite** es un semáforo para Jeedom. Cada equipo, llamado «Merecedor», tiene un contador y un objetivo. Escenarios o acciones suman puntos (**Mérito**) o los restan (**Demérito**). Cuando el contador alcanza el objetivo, el equipo pasa a ser merecedor y se ejecutan sus acciones de mérito. Cuando vuelve a bajar del objetivo, deja de serlo y se ejecutan sus acciones de demérito.
 
 La idea es simplificar los escenarios. En lugar de escribir una condición que deba conocer el estado de todos los elementos implicados, cada escenario se limita a sumar o restar sus puntos. Toda la lógica de «qué pasa cuando se cruza el umbral» queda reunida en un solo lugar: el equipo Merecedor.
 
-## Configuración del complemento
+# Configuración del complemento
 
 El complemento no tiene dependencias ni procesos en segundo plano. Solo hay que activarlo.
 
-## Configuración de un dispositivo
+# Configuración de un dispositivo
 
 En **Plugins → Automatización → Mérite**, haz clic en **Añadir** y da un nombre a tu Merecedor.
 
-### Configuración general
+## Configuración general
 
 - **Nombre del dispositivo**, **Objeto principal**, **Categoría**, **Activar**, **Visible**: parámetros habituales de Jeedom.
 - **Reinicio**: si esta casilla está marcada, el contador vuelve a 0 en cuanto se alcanza el objetivo, justo después de ejecutar las acciones de mérito. *Es merecedor* vuelve entonces también a 0, **sin** ejecutar las acciones de demérito. Cada vez que se alcanza el objetivo se comporta así como un impulso, lo que encaja bien con un sistema de niveles o de recompensas.
 - **Dónde se utilizan los controles**: lista de escenarios, vistas, diseños, etc., que utilizan los controles de este equipo.
 
-### Niveles
+## Niveles
 
 Los niveles permiten ejecutar acciones **antes** de alcanzar el objetivo, por ejemplo para avisar de que se acerca un mantenimiento.
 
@@ -35,7 +35,7 @@ Los niveles permiten ejecutar acciones **antes** de alcanzar el objetivo, por ej
 - Como el umbral se expresa en porcentaje, los niveles siguen automáticamente un cambio de objetivo. Bajar el objetivo puede incluso hacer que se cruce un nivel.
 - Es posible que el valor supere el 100 %, ya que puede sobrepasar el objetivo.
 
-### Acciones de mérito y de demérito
+## Acciones de mérito y de demérito
 
 - Las **acciones de mérito** se ejecutan cuando el contador **alcanza o supera** el objetivo (*Es merecedor* pasa de 0 a 1).
 - Las **acciones de demérito** se ejecutan cuando el contador **vuelve a bajar** del objetivo (*Es merecedor* pasa de 1 a 0).
@@ -49,7 +49,7 @@ Las acciones se agrupan en **eventos**:
 - Una acción se puede desactivar sin eliminarla desmarcando su casilla.
 - Los eventos se ejecutan en el orden en que aparecen, al igual que las acciones de cada evento. Las acciones se pueden reordenar con el control deslizante.
 
-## Controles
+# Controles
 
 | Control | Tipo | Descripción |
 |---|---|---|
@@ -72,9 +72,9 @@ Observaciones:
 - *Puesta a cero* y *Demérito* ejecutan las acciones de demérito si el equipo era merecedor. *Ganar* ejecuta las acciones de mérito si aún no lo era.
 - *Es merecedor* también puede usarse como desencadenante o condición en tus escenarios.
 
-## Ejemplos de uso
+# Ejemplos de uso
 
-### Descarga eléctrica
+## Descarga eléctrica
 
 Queremos evitar que demasiados grandes consumidores funcionen a la vez: horno, lavadora, secadora, lavavajillas, punto de recarga.
 
@@ -85,7 +85,7 @@ Queremos evitar que demasiados grandes consumidores funcionen a la vez: horno, l
 
 Cada dispositivo solo gestiona su +1 y su −1. Añadir un dispositivo no requiere modificar los demás escenarios.
 
-### Contador de mantenimiento
+## Contador de mantenimiento
 
 Para el filtro de un sistema de ventilación mecánica controlada, un descalcificador o una campana extractora, o para el depósito de un robot aspirador.
 
@@ -95,13 +95,13 @@ Para el filtro de un sistema de ventilación mecánica controlada, un descalcifi
 - Acciones de mérito: notificación «No olvides cambiar el filtro». *Es merecedor* se mantiene en 1 mientras no se haga el mantenimiento, lo que lo convierte en un recordatorio persistente en el dashboard.
 - Tras el mantenimiento, un clic en **Puesta a cero** desde el dashboard.
 
-### Puntos de mérito
+## Puntos de mérito
 
 - Cada tarea realizada da puntos (**Mérito 10**, **Mérito 20**…) mediante un botón, una interacción o un escenario.
 - Un olvido detectado resta puntos (**Demérito 5**).
 - Objetivo de 100, con **Reinicio** marcado: cada vez que se alcanza el objetivo se dispara una recompensa (encender un enchufe, enviar una notificación…).
 - Un escenario semanal hace **Puesta a cero** para volver a empezar.
 
-## Registros
+# Registros
 
 El registro «deserve» indica, en el nivel **info**, cada vez que se supera el objetivo. En el nivel **debug**, también detalla cada cambio de valor, cada condición evaluada y cada acción ejecutada.
