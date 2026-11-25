@@ -7,9 +7,9 @@ description: Dokumentation zum Plugin „Mérite“ (deserve)
 
 ## Übersicht
 
-Das Plugin **Mérite** ist ein Semaphor für Jeedom. Jedes Gerät, das als „Méritant“ bezeichnet wird, verfügt über einen Zähler und ein Ziel. Szenarien oder Aktionen fügen Punkte hinzu (**Mérite**) oder ziehen sie ab (**Démérite**). Wenn der Zähler das Ziel erreicht, wird das Gerät „verdienstvoll“ und seine verdienstvollen Aktionen werden ausgeführt. Wenn der Zähler wieder unter das Ziel fällt, ist das Gerät nicht mehr „verdienstvoll“ und seine verwerflichen Aktionen werden ausgeführt.
+Das Plugin **Mérite** ist ein Semaphor für Jeedom. Jedes Gerät, „Verdienstzähler“ genannt, hat einen Zähler und ein Ziel. Szenarien oder Aktionen fügen Punkte hinzu (**Verdienst**) oder ziehen sie ab (**Abzug**). Erreicht der Zähler das Ziel, wird das Gerät verdienstvoll und seine Verdienst-Aktionen werden ausgeführt. Fällt er wieder unter das Ziel, ist es nicht mehr verdienstvoll und seine Abzugs-Aktionen werden ausgeführt.
 
-Der Vorteil besteht darin, die Szenarien zu vereinfachen. Anstatt eine Bedingung zu schreiben, die den Status aller betroffenen Elemente kennen muss, beschränkt sich jedes Szenario darauf, seine Punkte hinzuzufügen oder abzuziehen. Die gesamte Logik „Was passiert, wenn der Schwellenwert überschritten wird?“ ist an einer einzigen Stelle zusammengefasst: dem Gerät „Méritant“.
+Der Sinn ist, Szenarien zu vereinfachen. Statt eine Bedingung zu schreiben, die den Zustand aller beteiligten Elemente kennen muss, fügt jedes Szenario nur seine Punkte hinzu oder zieht sie ab. Die gesamte Logik „was passiert, wenn die Schwelle überschritten wird“ liegt an einer einzigen Stelle: dem Verdienstzähler.
 
 ## Einrichtung des Plugins
 
@@ -17,22 +17,22 @@ Das Plugin hat weder Abhängigkeiten noch einen Daemon. Sie müssen es lediglich
 
 ## Einrichtung eines Geräts
 
-Klicken Sie unter **Plugins → Automatisierung → Auszeichnung** auf **Hinzufügen** und geben Sie Ihrem Preisträger einen Namen.
+Klicken Sie unter **Plugins → Automatisierung → Mérite** auf **Hinzufügen** und geben Sie Ihrem Verdienstzähler einen Namen.
 
 ### Allgemeine Einstellungen
 
 - **Gerätename**, **Übergeordnetes Objekt**, **Kategorie**, **Aktivieren**, **Sichtbar**: übliche Jeedom-Einstellungen.
-- **Zurücksetzen**: Wenn dieses Kästchen angekreuzt ist, wird der Zähler auf 0 zurückgesetzt, sobald das Ziel erreicht ist, unmittelbar nach der Ausführung der verdienstvollen Aktionen. *Verdienst* wird dann ebenfalls auf 0 zurückgesetzt, **ohne** dass die verwerflichen Aktionen ausgelöst werden. Jedes Erreichen des Ziels wirkt somit wie ein Impuls, was sich gut für ein System mit Stufen oder Belohnungen eignet.
+- **Zurücksetzen**: Ist dieses Kästchen angekreuzt, wird der Zähler auf 0 zurückgesetzt, sobald das Ziel erreicht ist, direkt nach der Ausführung der Verdienst-Aktionen. *Ist verdienstvoll* geht dann ebenfalls auf 0, **ohne** die Abzugs-Aktionen auszuführen. Jedes Erreichen des Ziels wirkt also wie ein Impuls, was gut zu einem Stufen- oder Belohnungssystem passt.
 - **Wo werden die Befehle verwendet?**: Liste der Szenarien, Ansichten, Designs usw., in denen die Befehle dieses Geräts verwendet werden.
 
 ### Stufen
 
-Stufen ermöglichen es, Aktionen **vor** dem Erreichen des Ziels auszulösen, beispielsweise um darauf hinzuweisen, dass eine Wartung ansteht.
+Mit Stufen lassen sich Aktionen **vor** dem Erreichen des Ziels auslösen, zum Beispiel um anzukündigen, dass eine Wartung bevorsteht.
 
-- Jede Stufe verfügt über einen **Schwellenwert in Prozent des Ziels** (z. B. 80 %), eine optionale Bedingung und Aktionen, wie die unten beschriebenen Ereignisse.
-- Eine Stufe wird ausgeführt, wenn der Prozentsatz **nach oben** seinen Schwellenwert überschreitet. Wenn er wieder unter den Schwellenwert fällt und dann erneut ansteigt, wird die Stufe erneut ausgeführt.
-- Werden mehrere Stufen auf einmal durchlaufen, werden sie von der niedrigsten zur höchsten ausgeführt, und zwar immer vor den verdienten Aktionen.
-- Da der Schwellenwert in Prozent angegeben wird, passen sich die Stufen automatisch an eine Änderung des Zielwerts an. Eine Senkung des Zielwerts kann übrigens dazu führen, dass eine Stufe überschritten wird.
+- Jede Stufe hat einen **Schwellenwert in Prozent des Ziels** (z. B. 80 %), eine optionale Bedingung und Aktionen, wie die unten beschriebenen Ereignisse.
+- Eine Stufe wird ausgeführt, wenn der Prozentsatz ihren Schwellenwert **nach oben** überschreitet. Fällt er wieder darunter und steigt erneut, wird die Stufe erneut ausgeführt.
+- Werden mehrere Stufen auf einmal überschritten, werden sie von der niedrigsten zur höchsten ausgeführt, und immer vor den Verdienst-Aktionen.
+- Da der Schwellenwert in Prozent angegeben ist, folgen die Stufen automatisch einer Änderung des Ziels. Ein Senken des Ziels kann sogar eine Stufe überschreiten lassen.
 - Ein Schwellenwert über 100 % ist möglich, da der Wert das Ziel überschreiten kann.
 
 ### Verdienst- und Abzugs-Aktionen
@@ -40,7 +40,7 @@ Stufen ermöglichen es, Aktionen **vor** dem Erreichen des Ziels auszulösen, be
 - **Verdienst-Aktionen** werden ausgeführt, wenn der Zähler das Ziel **erreicht oder überschreitet** (*Ist verdienstvoll* wechselt von 0 auf 1).
 - **Abzugs-Aktionen** werden ausgeführt, wenn der Zähler wieder **unter** das Ziel fällt (*Ist verdienstvoll* wechselt von 1 auf 0).
 
-Aktionen werden erst beim **Überschreiten** des Ziels ausgeführt. Das Hinzufügen von Punkten zu einer bereits verdienten Ausrüstung löst keine neuen verdienten Aktionen aus.
+Die Aktionen werden nur beim **Überschreiten** des Ziels ausgeführt. Punkte zu einem bereits verdienstvollen Gerät hinzuzufügen, führt die Verdienst-Aktionen nicht erneut aus.
 
 Die Aktionen sind in **Ereignisse** zusammengefasst:
 
@@ -66,8 +66,8 @@ Die Aktionen sind in **Ereignisse** zusammengefasst:
 
 Anmerkungen:
 
-- Verdienste und Verfehlungen ohne Wert oder mit dem Wert 0 haben keine Auswirkungen.
-- Die Schieberegler des Widgets reichen von 0 bis 100. Über ein Szenario kann ein höherer Wert gesendet werden (z. B. *Muss erforderlich sein* auf 150).
+- Verdienst und Abzug ohne Wert oder mit 0 bewirken nichts.
+- Die Schieberegler des Widgets reichen von 0 bis 100. Aus einem Szenario kann ein größerer Wert gesendet werden (zum Beispiel *Muss benötigen* auf 150).
 - Wird das Ziel unter den aktuellen Wert gesenkt, wird der Wert auf das neue Ziel zurückgesetzt. Er wird nicht wiederhergestellt, wenn das Ziel anschließend wieder angehoben wird.
 - *Auf Null setzen* und *Abzug* lösen die Abzugs-Aktionen aus, wenn das Gerät verdienstvoll war. *Gewinnen* löst die Verdienst-Aktionen aus, wenn es das noch nicht war.
 - *Ist verdienstvoll* kann auch als Auslöser oder Bedingung in Ihren Szenarien dienen.
@@ -76,10 +76,10 @@ Anmerkungen:
 
 ### Stromlastabwurf
 
-Wir möchten vermeiden, dass zu viele Großverbraucher gleichzeitig in Betrieb sind: Backofen, Waschmaschine, Wäschetrockner, Geschirrspüler, Ladestation.
+Es sollen nicht zu viele Großverbraucher gleichzeitig laufen: Backofen, Waschmaschine, Trockner, Geschirrspüler, Ladestation.
 
-- Erstellen Sie einen „Großverbraucher“-Empfänger mit einem Zielwert von **3**.
-- Für jedes Gerät wird in einem kleinen Szenario **1 Pluspunkt** vergeben, wenn seine Leistung einen Schwellenwert überschreitet, und **1 Minuspunkt**, wenn sie wieder darunter fällt. Eine Gewichtung ist möglich: Der Anschluss kann mit dem Faktor 2 gewichtet werden.
+- Erstellen Sie einen Verdienstzähler „Großverbraucher“ mit einem Ziel von **3**.
+- Für jedes Gerät führt ein kleines Szenario **Verdienst 1** aus, wenn seine Leistung einen Schwellenwert überschreitet, und **Abzug 1**, wenn sie wieder sinkt. Man kann gewichten: Die Ladestation kann für 2 zählen.
 - Verdienst-Aktionen: die Ladestation pausieren, den Warmwasserbereiter ausschalten, eine Benachrichtigung senden.
 - Abzugs-Aktionen: alles wieder aktivieren.
 
@@ -90,17 +90,17 @@ Jedes Gerät verwaltet nur sein +1 und sein −1. Das Hinzufügen eines Geräts 
 Für den Filter einer Lüftungsanlage, eines Wasserenthärters oder einer Dunstabzugshaube oder für den Behälter eines Roboterstaubsaugers.
 
 - Das Ziel ist die Wartungsschwelle (z. B. 50 Zyklen).
-- In jedem Zyklus wird ein Szenario mit **Punkten** bewertet, gegebenenfalls gewichtet: kurzer Zyklus +1, langer Zyklus +3.
-- Bei einem Auslastungsgrad von 80 % wird eine Benachrichtigung „Wartung bald erforderlich“ gesendet.
+- Bei jedem Zyklus führt ein Szenario **Verdienst** aus, eventuell gewichtet: kurzer Zyklus +1, langer Zyklus +3.
+- Eine Stufe bei 80 % sendet die Benachrichtigung „Wartung bald fällig“.
 - Verdienst-Aktionen: Benachrichtigung „Denken Sie daran, den Filter zu wechseln“. *Ist verdienstvoll* bleibt auf 1, solange die Wartung nicht durchgeführt wurde, und dient so als dauerhafte Erinnerung auf dem Dashboard.
-- Nach der Wartung klicken Sie im Dashboard auf **Zurücksetzen**.
+- Nach der Wartung ein Klick auf **Auf Null setzen** im Dashboard.
 
-### Leistungspunkte
+### Verdienstpunkte
 
-- Für jede erledigte Aufgabe gibt es Punkte (**10 Punkte**, **20 Punkte**…) über eine Schaltfläche, eine Interaktion oder ein Szenario.
-- Ein festgestelltes Versäumnis führt zu Punktabzug (**5 Strafpunkte**).
-- Ziel bei 100, wenn **Zurücksetzen** angekreuzt ist: Jede erreichte Stufe löst eine Belohnung aus (eine Steckdose einschalten, eine Benachrichtigung senden …).
-- Ein wöchentliches Szenario führt einen **Reset** durch, um wieder bei Null anzufangen.
+- Jede erledigte Aufgabe bringt Punkte (**Verdienst 10**, **Verdienst 20**…) über eine Taste, eine Interaktion oder ein Szenario.
+- Eine festgestellte Vergesslichkeit zieht Punkte ab (**Abzug 5**).
+- Ziel 100, mit angekreuztem **Zurücksetzen**: Jedes Erreichen des Ziels löst eine Belohnung aus (eine Steckdose einschalten, eine Benachrichtigung senden…).
+- Ein wöchentliches Szenario führt **Auf Null setzen** aus, um neu zu beginnen.
 
 ## Protokolle
 

@@ -9,9 +9,9 @@ Se não for indicado nada, trata-se provavelmente de uma pequena atualização o
 # Registo de alterações
 
 ## Beta
-- Execução das ações meritórias (objetivo alcançado) e deméritas (objetivo não alcançado), por ordem, com uma condição opcional por evento
+- Execução das ações de mérito (objetivo atingido) e de demérito (objetivo perdido), por ordem, com uma condição opcional por evento
 - Arquivo de registos de eventos e reformulação do layout do equipamento
-- Opção «Reinicialização» por equipamento, sem desencadear as ações penalizadoras
+- Opção «Reinício» por equipamento, sem executar as ações de demérito
 - *É merecedor* é recalculado quando o objetivo muda
 - Seletor de palavras-chave de cenário para as ações (mensagem, variável, cenário…)
 - Novos comandos «Percentagem do objetivo» e «Em falta»

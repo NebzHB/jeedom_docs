@@ -7,9 +7,9 @@ description: Documentación del complemento Mérite (deserve)
 
 ## Presentación
 
-El complemento **Mérito** es un semáforo para Jeedom. Cada dispositivo, denominado «Merecedor», cuenta con un contador y un objetivo. Los escenarios o las acciones suman puntos (**Mérito**) o los restan (**Demérito**). Cuando el contador alcanza el objetivo, el dispositivo pasa a ser «meritorio» y se ejecutan sus acciones meritorias. Cuando vuelve a situarse por debajo del objetivo, deja de serlo y se ejecutan sus acciones deméritas.
+El plugin **Mérite** es un semáforo para Jeedom. Cada equipo, llamado «Merecedor», tiene un contador y un objetivo. Escenarios o acciones suman puntos (**Mérito**) o los restan (**Demérito**). Cuando el contador alcanza el objetivo, el equipo pasa a ser merecedor y se ejecutan sus acciones de mérito. Cuando vuelve a bajar del objetivo, deja de serlo y se ejecutan sus acciones de demérito.
 
-El objetivo es simplificar los escenarios. En lugar de escribir una condición que deba conocer el estado de todos los elementos implicados, cada escenario se limita a sumar o restar sus puntos. Toda la lógica de «qué ocurre cuando se supera el umbral» se concentra en un único lugar: el dispositivo Méritant.
+La idea es simplificar los escenarios. En lugar de escribir una condición que deba conocer el estado de todos los elementos implicados, cada escenario se limita a sumar o restar sus puntos. Toda la lógica de «qué pasa cuando se cruza el umbral» queda reunida en un solo lugar: el equipo Merecedor.
 
 ## Configuración del complemento
 
@@ -17,22 +17,22 @@ El complemento no tiene dependencias ni procesos en segundo plano. Solo hay que 
 
 ## Configuración de un dispositivo
 
-En **Plugins → Automatización → Mérito**, haz clic en **Añadir** y asigna un nombre a tu «Meritorio».
+En **Plugins → Automatización → Mérite**, haz clic en **Añadir** y da un nombre a tu Merecedor.
 
 ### Configuración general
 
 - **Nombre del dispositivo**, **Objeto principal**, **Categoría**, **Activar**, **Visible**: parámetros habituales de Jeedom.
-- **Poner a cero**: si se marca esta casilla, el contador vuelve a 0 en cuanto se alcanza el objetivo, justo después de que se ejecuten las acciones que otorgan puntos. *Puntos ganados* también vuelve entonces a 0, **sin** activar las acciones que restan puntos. Cada vez que se supera el objetivo se considera un impulso, lo que se adapta bien a un sistema de niveles o recompensas.
+- **Reinicio**: si esta casilla está marcada, el contador vuelve a 0 en cuanto se alcanza el objetivo, justo después de ejecutar las acciones de mérito. *Es merecedor* vuelve entonces también a 0, **sin** ejecutar las acciones de demérito. Cada vez que se alcanza el objetivo se comporta así como un impulso, lo que encaja bien con un sistema de niveles o de recompensas.
 - **Dónde se utilizan los controles**: lista de escenarios, vistas, diseños, etc., que utilizan los controles de este equipo.
 
 ### Niveles
 
-Los niveles permiten activar acciones **antes** de alcanzar el objetivo, por ejemplo, para avisar de que se acerca una revisión.
+Los niveles permiten ejecutar acciones **antes** de alcanzar el objetivo, por ejemplo para avisar de que se acerca un mantenimiento.
 
-- Cada nivel tiene un **umbral expresado en porcentaje del objetivo** (por ejemplo, el 80 %), una condición opcional y unas acciones, como los eventos que se describen a continuación.
-- Un nivel se ejecuta cuando el porcentaje supera su umbral **al alza**. Si vuelve a bajar por debajo del umbral y luego vuelve a subir, la pausa se ejecuta de nuevo.
-- Si se superan varios niveles a la vez, se ejecutan de menor a mayor, y siempre antes que las acciones que lo merecen.
-- Dado que el umbral se expresa en porcentaje, los niveles se ajustan automáticamente al cambiar el objetivo. De hecho, bajar el objetivo puede hacer que se supere un nivel.
+- Cada nivel tiene un **umbral en porcentaje del objetivo** (por ejemplo 80 %), una condición opcional y acciones, como los eventos descritos más abajo.
+- Un nivel se ejecuta cuando el porcentaje cruza su umbral **al subir**. Si vuelve a bajar del umbral y sube de nuevo, el nivel se ejecuta otra vez.
+- Si se cruzan varios niveles a la vez, se ejecutan del más bajo al más alto, y siempre antes de las acciones de mérito.
+- Como el umbral se expresa en porcentaje, los niveles siguen automáticamente un cambio de objetivo. Bajar el objetivo puede incluso hacer que se cruce un nivel.
 - Es posible que el valor supere el 100 %, ya que puede sobrepasar el objetivo.
 
 ### Acciones de mérito y de demérito
@@ -40,7 +40,7 @@ Los niveles permiten activar acciones **antes** de alcanzar el objetivo, por eje
 - Las **acciones de mérito** se ejecutan cuando el contador **alcanza o supera** el objetivo (*Es merecedor* pasa de 0 a 1).
 - Las **acciones de demérito** se ejecutan cuando el contador **vuelve a bajar** del objetivo (*Es merecedor* pasa de 1 a 0).
 
-Las acciones solo se ejecutan al **superar** el objetivo. Añadir puntos a un equipo que ya cumple los requisitos no reactiva las acciones que dan derecho a puntos.
+Las acciones solo se ejecutan al **cruzar** el objetivo. Sumar puntos a un equipo que ya es merecedor no vuelve a ejecutar las acciones de mérito.
 
 Las acciones se agrupan en **eventos**:
 
@@ -66,8 +66,8 @@ Las acciones se agrupan en **eventos**:
 
 Observaciones:
 
-- Los méritos y deméritos sin valor, o con valor 0, no tienen ningún efecto.
-- Los controles deslizantes del widget van de 0 a 100. Desde un escenario, se puede enviar un valor mayor (por ejemplo, *Debe requerir* a 150).
+- Mérito y Demérito sin valor, o con 0, no hacen nada.
+- Los deslizadores del widget van de 0 a 100. Desde un escenario se puede enviar un valor mayor (por ejemplo *Debe requerir* a 150).
 - Si se reduce el objetivo por debajo del valor actual, el valor se ajusta al nuevo objetivo. No se restablece si posteriormente se vuelve a aumentar el objetivo.
 - *Puesta a cero* y *Demérito* ejecutan las acciones de demérito si el equipo era merecedor. *Ganar* ejecuta las acciones de mérito si aún no lo era.
 - *Es merecedor* también puede usarse como desencadenante o condición en tus escenarios.
@@ -76,10 +76,10 @@ Observaciones:
 
 ### Descarga eléctrica
 
-Queremos evitar que haya demasiados aparatos de alto consumo funcionando al mismo tiempo: horno, lavadora, secadora, lavavajillas y punto de recarga.
+Queremos evitar que demasiados grandes consumidores funcionen a la vez: horno, lavadora, secadora, lavavajillas, punto de recarga.
 
-- Crea un «Gran consumidor» con un objetivo de **3**.
-- Para cada dispositivo, un pequeño escenario otorga **1 punto a favor** cuando su potencia supera un umbral y **1 punto en contra** cuando vuelve a bajar. Se puede aplicar una ponderación: el terminal puede contar como 2.
+- Crea un Merecedor «Grandes consumidores» con un objetivo de **3**.
+- Para cada aparato, un pequeño escenario hace **Mérito 1** cuando su potencia supera un umbral y **Demérito 1** cuando vuelve a bajar. Se puede ponderar: el punto de recarga puede contar como 2.
 - Acciones de mérito: pausar el punto de recarga, apagar el calentador de agua, enviar una notificación.
 - Acciones de demérito: reactivarlo todo.
 
@@ -90,17 +90,17 @@ Cada dispositivo solo gestiona su +1 y su −1. Añadir un dispositivo no requie
 Para el filtro de un sistema de ventilación mecánica controlada, un descalcificador o una campana extractora, o para el depósito de un robot aspirador.
 
 - El objetivo es el umbral de mantenimiento (por ejemplo, 50 ciclos).
-- En cada ciclo, un escenario obtiene **puntos**, que pueden estar ponderados: ciclo corto +1, ciclo largo +3.
-- Cuando el nivel alcanza el 80 %, se envía una notificación que indica «Próximamente será necesario realizar un mantenimiento».
+- En cada ciclo, un escenario hace **Mérito**, eventualmente ponderado: ciclo corto +1, ciclo largo +3.
+- Un nivel al 80 % envía la notificación «Mantenimiento necesario pronto».
 - Acciones de mérito: notificación «No olvides cambiar el filtro». *Es merecedor* se mantiene en 1 mientras no se haga el mantenimiento, lo que lo convierte en un recordatorio persistente en el dashboard.
-- Tras el mantenimiento, haz clic en **Poner a cero** desde el panel de control.
+- Tras el mantenimiento, un clic en **Puesta a cero** desde el dashboard.
 
 ### Puntos de mérito
 
-- Cada tarea completada otorga puntos (**Mérito 10**, **Mérito 20**…) mediante un botón, una interacción o un escenario.
-- Si se detecta algún olvido, se restarán puntos (**5 puntos de penalización**).
-- Objetivo de 100, con la opción **«Poner a cero»** marcada: cada nivel alcanzado activa una recompensa (encender un enchufe, enviar una notificación…).
-- Un escenario semanal se **reinicia** para volver a empezar desde cero.
+- Cada tarea realizada da puntos (**Mérito 10**, **Mérito 20**…) mediante un botón, una interacción o un escenario.
+- Un olvido detectado resta puntos (**Demérito 5**).
+- Objetivo de 100, con **Reinicio** marcado: cada vez que se alcanza el objetivo se dispara una recompensa (encender un enchufe, enviar una notificación…).
+- Un escenario semanal hace **Puesta a cero** para volver a empezar.
 
 ## Registros
 

@@ -9,9 +9,9 @@ Si no se indica nada, probablemente se trate de una pequeña actualización orto
 # Registro de cambios
 
 ## Beta
-- Ejecución de acciones positivas (objetivo alcanzado) y negativas (objetivo no alcanzado), en orden, con una condición opcional por evento
+- Ejecución de las acciones de mérito (objetivo alcanzado) y de demérito (objetivo perdido), en orden, con una condición opcional por evento
 - Copia de seguridad de los eventos y rediseño de la presentación de los dispositivos
-- Opción «Restablecer» por dispositivo, sin activar las acciones penalizadoras
+- Opción «Reinicio» por equipo, sin ejecutar las acciones de demérito
 - *Es merecedor* se recalcula cuando cambia el objetivo
 - Selector de palabras clave de escenario para las acciones (mensaje, variable, escenario…)
 - Nuevos comandos «Porcentaje del objetivo» y «Falta»

@@ -9,9 +9,9 @@ Sofern nichts angegeben ist, handelt es sich wahrscheinlich um ein kleines Updat
 # Änderungsprotokoll
 
 ## Beta
-- Ausführung von Aktionen, die zu einem Erfolg (Ziel erreicht) oder Misserfolg (Ziel verfehlt) führen, in der angegebenen Reihenfolge, mit einer optionalen Bedingung pro Ereignis
+- Ausführung der Verdienst-Aktionen (Ziel erreicht) und Abzugs-Aktionen (Ziel verloren), der Reihe nach, mit einer optionalen Bedingung pro Ereignis
 - Speicherung von Ereignissen und Neugestaltung des Layouts der Geräte
-- Option „Zurücksetzen“ pro Gerät, ohne dass die entsprechenden Aktionen ausgelöst werden
+- Option „Zurücksetzen“ pro Gerät, ohne die Abzugs-Aktionen auszulösen
 - *Ist verdienstvoll* wird neu berechnet, wenn sich das Ziel ändert
 - Auswahl der Szenario-Schlüsselwörter für Aktionen (Meldung, Variable, Szenario…)
 - Neue Befehle „Prozent des Ziels“ und „Fehlend“

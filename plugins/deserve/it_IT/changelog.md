@@ -9,9 +9,9 @@ Se non è specificato nulla, probabilmente si tratta di un piccolo aggiornamento
 # Registro delle modifiche
 
 ## Beta
-- Esecuzione delle azioni positive (obiettivo raggiunto) e negative (obiettivo mancato), in ordine, con una condizione facoltativa per ogni evento
+- Esecuzione delle azioni di merito (obiettivo raggiunto) e di demerito (obiettivo perso), in ordine, con una condizione facoltativa per evento
 - Salvataggio degli eventi e riprogettazione del layout delle apparecchiature
-- Opzione «Reset» per singolo dispositivo, senza attivare azioni penalizzanti
+- Opzione «Reset» per dispositivo, senza eseguire le azioni di demerito
 - *È meritevole* viene ricalcolato quando l'obiettivo cambia
 - Selettore di parole chiave dello scenario per le azioni (messaggio, variabile, scenario…)
 - Nuovi comandi «Percentuale dell'obiettivo» e «Mancante»

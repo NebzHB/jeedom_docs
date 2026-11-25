@@ -7,9 +7,9 @@ description: Documentazione del plugin Mérite (deserve)
 
 ## Presentazione
 
-Il plugin **Merito** è un semaforo per Jeedom. Ogni dispositivo, denominato «Meritevole», possiede un contatore e un obiettivo. Gli scenari o le azioni aggiungono punti (**Merito**) o ne sottraggono (**Demerito**). Quando il contatore raggiunge l’obiettivo, il dispositivo diventa «meritevole» e vengono eseguite le sue azioni meritorie. Quando scende al di sotto dell’obiettivo, non è più «meritevole» e vengono eseguite le sue azioni demeritorie.
+Il plugin **Mérite** è un semaforo per Jeedom. Ogni dispositivo, chiamato «Meritevole», ha un contatore e un obiettivo. Scenari o azioni aggiungono punti (**Merito**) o ne tolgono (**Demerito**). Quando il contatore raggiunge l'obiettivo, il dispositivo diventa meritevole e vengono eseguite le sue azioni di merito. Quando torna sotto l'obiettivo, non lo è più e vengono eseguite le sue azioni di demerito.
 
-Il vantaggio è quello di semplificare gli scenari. Anziché scrivere una condizione che deve conoscere lo stato di tutti gli elementi coinvolti, ogni scenario si limita ad aggiungere o rimuovere i propri punti. Tutta la logica relativa a «cosa succede quando viene superata la soglia» è raggruppata in un unico punto: il dispositivo Méritant.
+Lo scopo è semplificare gli scenari. Invece di scrivere una condizione che deve conoscere lo stato di tutti gli elementi coinvolti, ogni scenario si limita ad aggiungere o togliere i propri punti. Tutta la logica di «cosa succede quando la soglia viene superata» è riunita in un unico punto: il dispositivo Meritevole.
 
 ## Configurazione del plugin
 
@@ -17,22 +17,22 @@ Il plugin non ha dipendenze né processi in background. È sufficiente attivarlo
 
 ## Configurazione di un dispositivo
 
-In **Plugins → Automazione → Merito**, clicca su **Aggiungi** e assegna un nome al tuo Meritevole.
+In **Plugins → Automazione → Mérite**, cliccate su **Aggiungi** e date un nome al vostro Meritevole.
 
 ### Impostazioni generali
 
 - **Nome del dispositivo**, **Oggetto padre**, **Categoria**, **Attiva**, **Visibile**: impostazioni standard di Jeedom.
-- **Azzeramento**: se questa casella è spuntata, il contatore torna a 0 non appena l'obiettivo viene raggiunto, subito dopo l'esecuzione delle azioni meritevoli. Anche *È meritevole* torna quindi a 0, **senza** avviare le azioni demeritevoli. Ogni volta che si supera l'obiettivo, si verifica quindi un impulso, il che si adatta bene a un sistema a livelli o a ricompense.
+- **Reset**: se questa casella è spuntata, il contatore torna a 0 non appena l'obiettivo è raggiunto, subito dopo l'esecuzione delle azioni di merito. *È meritevole* torna quindi anch'esso a 0, **senza** eseguire le azioni di demerito. Ogni raggiungimento dell'obiettivo si comporta quindi come un impulso, adatto a un sistema di livelli o di ricompense.
 - **Dove vengono utilizzati i comandi**: elenco degli scenari, delle viste, dei design, ecc. che utilizzano i comandi di questo dispositivo.
 
 ### Livelli
 
-I livelli consentono di attivare delle azioni **prima** di raggiungere l'obiettivo, ad esempio per avvisare che si avvicina un intervento di manutenzione.
+I livelli permettono di eseguire azioni **prima** di raggiungere l'obiettivo, ad esempio per avvisare che una manutenzione si avvicina.
 
-- Ogni livello ha una **soglia espressa in percentuale dell'obiettivo** (ad esempio l'80%), una condizione facoltativa e delle azioni, come gli eventi descritti di seguito.
-- Un livello viene attivato quando la percentuale supera la soglia **in aumento**. Se scende nuovamente al di sotto della soglia e poi risale, il livello viene attivato nuovamente.
-- Se vengono superati più livelli contemporaneamente, questi vengono eseguiti dal più basso al più alto, e sempre prima delle azioni meritevoli.
-- Poiché la soglia è espressa in percentuale, i livelli si adeguano automaticamente a una modifica dell'obiettivo. Abbassando l'obiettivo è possibile, tra l'altro, superare un livello.
+- Ogni livello ha una **soglia in percentuale dell'obiettivo** (ad esempio 80%), una condizione facoltativa e delle azioni, come gli eventi descritti più sotto.
+- Un livello viene eseguito quando la percentuale supera la sua soglia **in salita**. Se scende di nuovo sotto la soglia e poi risale, il livello viene eseguito di nuovo.
+- Se più livelli vengono superati in una volta, vengono eseguiti dal più basso al più alto, e sempre prima delle azioni di merito.
+- Poiché la soglia è espressa in percentuale, i livelli seguono automaticamente un cambio di obiettivo. Abbassare l'obiettivo può persino far superare un livello.
 - È possibile che il valore superi il 100%, poiché può andare oltre l'obiettivo.
 
 ### Azioni di merito e di demerito
@@ -40,7 +40,7 @@ I livelli consentono di attivare delle azioni **prima** di raggiungere l'obietti
 - Le **azioni di merito** vengono eseguite quando il contatore **raggiunge o supera** l'obiettivo (*È meritevole* passa da 0 a 1).
 - Le **azioni di demerito** vengono eseguite quando il contatore **torna sotto** l'obiettivo (*È meritevole* passa da 1 a 0).
 
-Le azioni vengono eseguite solo al **superamento** dell'obiettivo. Aggiungere punti a un'attrezzatura che ne ha già diritto non riattiva le azioni meritevoli.
+Le azioni vengono eseguite solo al **superamento** dell'obiettivo. Aggiungere punti a un dispositivo già meritevole non riesegue le azioni di merito.
 
 Le azioni sono raggruppate in **eventi**:
 
@@ -66,8 +66,8 @@ Le azioni sono raggruppate in **eventi**:
 
 Note:
 
-- I meriti e i demeriti senza valore, o con valore pari a 0, non hanno alcun effetto.
-- I cursori del widget vanno da 0 a 100. Da uno scenario è possibile inviare un valore più alto (ad esempio *Doit Nécessiter* a 150).
+- Merito e Demerito senza valore, o con 0, non fanno nulla.
+- I cursori del widget vanno da 0 a 100. Da uno scenario si può inviare un valore più grande (ad esempio *Deve richiedere* a 150).
 - Se si abbassa l'obiettivo al di sotto del valore attuale, il valore viene riportato al nuovo obiettivo. Non viene ripristinato se successivamente si aumenta nuovamente l'obiettivo.
 - *Azzeramento* e *Demerito* eseguono le azioni di demerito se il dispositivo era meritevole. *Vincere* esegue le azioni di merito se non lo era ancora.
 - *È meritevole* può anche essere usato come trigger o condizione nei vostri scenari.
@@ -76,10 +76,10 @@ Note:
 
 ### Riduzione del carico elettrico
 
-Si vuole evitare che troppi elettrodomestici ad alto consumo funzionino contemporaneamente: forno, lavatrice, asciugatrice, lavastoviglie, stazione di ricarica.
+Si vuole evitare che troppi grandi consumatori funzionino contemporaneamente: forno, lavatrice, asciugatrice, lavastoviglie, colonnina di ricarica.
 
-- Crea un Merito «Grandi consumatori» con un obiettivo pari a **3**.
-- Per ogni dispositivo, un piccolo scenario assegna **1 punto** quando la sua potenza supera una soglia e **-1 punto** quando scende al di sotto di essa. È possibile applicare una ponderazione: il terminale può valere 2 punti.
+- Create un Meritevole «Grandi consumatori» con un obiettivo di **3**.
+- Per ogni apparecchio, un piccolo scenario fa **Merito 1** quando la sua potenza supera una soglia e **Demerito 1** quando scende di nuovo. Si può ponderare: la colonnina di ricarica può contare 2.
 - Azioni di merito: mettere in pausa la colonnina di ricarica, spegnere lo scaldabagno, inviare una notifica.
 - Azioni di demerito: riattivare tutto.
 
@@ -90,17 +90,17 @@ Ogni dispositivo gestisce solo il proprio +1 e il proprio −1. L'aggiunta di un
 Per il filtro di un sistema di ventilazione meccanica controllata (VMC), di un addolcitore o di una cappa aspirante, oppure per il contenitore di un robot aspirapolvere.
 
 - L'obiettivo è la soglia di manutenzione (ad esempio 50 cicli).
-- Ad ogni ciclo, uno scenario ottiene **Merito**, eventualmente ponderato: ciclo breve +1, ciclo lungo +3.
-- Quando il livello scende all'80%, viene inviata una notifica «Manutenzione necessaria a breve».
+- A ogni ciclo, uno scenario fa **Merito**, eventualmente ponderato: ciclo corto +1, ciclo lungo +3.
+- Un livello all'80% invia la notifica «Manutenzione necessaria a breve».
 - Azioni di merito: notifica «Ricordati di sostituire il filtro». *È meritevole* resta a 1 finché la manutenzione non viene fatta, il che lo rende un promemoria persistente sulla dashboard.
-- Dopo la manutenzione, clicca su **Azzeramento** dalla dashboard.
+- Dopo la manutenzione, un clic su **Azzeramento** dalla dashboard.
 
-### Punti di merito
+### Punti merito
 
-- Ogni attività completata assegna dei punti (**Merito 10**, **Merito 20**…) tramite un pulsante, un'interazione o uno scenario.
-- Ogni dimenticanza riscontrata comporta una penalità (**5 punti di penalità**).
-- Obiettivo a 100, con l'opzione **Azzeramento** selezionata: ogni livello raggiunto attiva una ricompensa (accendere una presa, inviare una notifica…).
-- Uno scenario settimanale esegue il **reset** per ricominciare da zero.
+- Ogni compito svolto dà punti (**Merito 10**, **Merito 20**…) tramite un pulsante, un'interazione o uno scenario.
+- Una dimenticanza constatata toglie punti (**Demerito 5**).
+- Obiettivo 100, con **Reset** spuntato: ogni raggiungimento dell'obiettivo attiva una ricompensa (accendere una presa, inviare una notifica…).
+- Uno scenario settimanale fa **Azzeramento** per ripartire da zero.
 
 ## Registri
 
