@@ -80,7 +80,14 @@ L'équipement AdGuard Home a son propre widget (dashboard et mobile), inspiré d
 - **Pastilles cliquables** : filtrage, sécurité de navigation, contrôle parental et recherche sécurisée. Une pastille rouge « Internet bloqué » s'affiche quand internet est bloqué via DNS.
 - **Pied du widget** : en ligne, version, badge de mise à jour, bouton actualiser et une fenêtre avec les autres infos visibles (services bloqués, résultat du test de domaine…).
 
-Les équipements clients gardent le widget standard de Jeedom.
+Les équipements clients ont aussi leur widget, dans le même style :
+
+- **Internet** : « Autorisé » ou « Bloqué via DNS », avec un bouton qui bloque ou débloque internet pour ce client.
+- **Pastilles cliquables** : paramètres généraux, filtrage, sécurité de navigation, contrôle parental, recherche sécurisée et services bloqués généraux. Les réglages propres au client sont grisés quand il suit les paramètres généraux, et ses services bloqués quand il suit les services bloqués généraux.
+- **Identifiants** et **services bloqués** du client affichés en clair.
+- Le résultat du test de domaine est dans la fenêtre des autres infos.
+
+Sur les deux widgets, les autres commandes action visibles (services, identifiants, règles, test de domaine…) gardent leur widget Jeedom.
 
 Protection Globale
 -----------------------
