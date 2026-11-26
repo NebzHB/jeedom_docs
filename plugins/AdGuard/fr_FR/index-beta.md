@@ -101,6 +101,8 @@ La liste de choix des services affiche l'icône de chaque service, propose une r
 
 Une confirmation est demandée avant les actions qui baissent la protection ou qui ne se défont pas facilement : couper internet (pour un client ou pour tout le réseau), désactiver le filtrage ou le contrôle parental, bloquer ou débloquer tous les services, vider le cache DNS, mettre à jour les filtres, réinitialiser les statistiques et mettre à jour AdGuard Home.
 
+Ces commandes ont l'option **Confirmer l'action** de Jeedom cochée à leur création (elle protège aussi les vues et les designs) : vous pouvez la décocher dans la configuration avancée d'une commande, ou la cocher sur une autre. Dans le widget, chaque action pose sa propre question (par exemple « Vider le cache DNS d'AdGuard Home ? »), dans une fenêtre sur le dashboard et dans un bandeau en bas du widget en mobile, avec **Annuler** et **Confirmer**. Sans réponse, le bandeau disparaît au bout de 30 secondes et rien n'est envoyé.
+
 **Taille du widget**
 
 - Sur le dashboard, le widget fait au moins 320 px de large. S'il est étroit, les interrupteurs passent sur une colonne et les boutons passent à la ligne.

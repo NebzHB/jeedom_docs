@@ -14,7 +14,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 - Widgets : réglages en interrupteurs avec infobulle, actions intégrées sur une ligne (services, groupes, règles, identifiants, test de domaine avec son résultat, maintenance), mise à jour d'AdGuard Home depuis le badge du widget. Voir la [documentation beta](index-beta#widgets-en-beta)
 - Widgets : services bloqués affichés en icônes, sur le serveur comme sur les clients
 - Liste des services avec icônes, recherche et services rangés sous leur groupe ; choisir un groupe bloque ou débloque tout le groupe
-- Widgets : confirmation avant de couper internet, désactiver le filtrage ou le contrôle parental, bloquer ou débloquer tous les services, et avant les actions de maintenance (cache DNS, filtres, statistiques)
+- Confirmation avant de couper internet, désactiver le filtrage ou le contrôle parental, bloquer ou débloquer tous les services, et avant les actions de maintenance (cache DNS, filtres, statistiques, mise à jour d'AdGuard Home) : option « Confirmer l'action » de Jeedom, avec dans le widget une question propre à chaque action
 - Widgets : largeur minimale de 320 px sur le dashboard avec mise en page qui s'adapte, pleine largeur en mobile
 - Widgets : hauteur automatique selon le contenu, avec une option « Hauteur du widget : Fixe » sur l'équipement pour garder celle du mode édition
 - Nouvelle info « Pause restante » : temps restant (en secondes) avant la reprise de la protection
