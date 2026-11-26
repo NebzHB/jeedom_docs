@@ -8,6 +8,9 @@ Unless otherwise noted, this is likely a minor update to correct spelling or ens
 
 # Changelog
 
+## 26-11-2026
+- Compatible with AdGuard Home v1.0.0
+
 ## 12-11-2026
 - Configuration requires administrator privileges
 

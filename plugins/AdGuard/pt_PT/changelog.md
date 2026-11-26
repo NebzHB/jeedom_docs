@@ -8,6 +8,9 @@ Se não for indicado nada, trata-se provavelmente de uma pequena atualização o
 
 # Registo de alterações
 
+## 26-11-2026
+- Compatível com o AdGuard Home v1.0.0
+
 ## 12-11-2026
 - A configuração requer que seja administrador
 

@@ -127,6 +127,7 @@
     "Chaque évènement a une **condition** facultative. Si elle est fausse, l'évènement entier est ignoré. Si elle est laissée vide, l'évènement s'exécute toujours.": "Cada evento tem uma **condição** opcional. Se for falsa, todo o evento é ignorado. Se for deixada em branco, o evento é sempre executado.",
     "Chaque évènement contient une ou plusieurs **actions**. Pour chacune, on peut choisir une commande action (bouton liste) ou un mot-clé de scénario : message, variable, scénario, attendre, alerte… (bouton mot-clé).": "Cada evento contém uma ou mais **ações**. Para cada uma delas, é possível escolher um comando de ação (botão «Lista») ou uma palavra-chave de cenário: mensagem, variável, cenário, esperar, alerta… (botão «Palavra-chave»).",
     "Commandes": "Comandos",
+    "Compatible avec AdGuard Home v1.0.0": "Compatível com o AdGuard Home v1.0.0",
     "Compteur d'entretien": "Contador de manutenção",
     "Configuration d'un équipement": "Configuração de um equipamento",
     "Configuration des équipements": "Configuração dos equipamentos",
