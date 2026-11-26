@@ -9,7 +9,8 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 # Changelog
 
 ## Beta
-- Nouveau widget pour l'équipement AdGuard Home (dashboard et mobile), inspiré du tableau de bord d'AdGuard Home : protection avec menu des durées de pause et décompte, statistiques, pastilles cliquables (filtrage, sécurité de navigation, contrôle parental, recherche sécurisée, internet bloqué). Les clients gardent le widget Jeedom
+- Nouveau widget pour l'équipement AdGuard Home (dashboard et mobile), inspiré du tableau de bord d'AdGuard Home : protection avec menu des durées de pause et décompte, statistiques, pastilles cliquables (filtrage, sécurité de navigation, contrôle parental, recherche sécurisée, internet bloqué)
+- Nouveau widget pour les équipements Client (dashboard et mobile) : internet autorisé ou bloqué avec bouton, pastilles cliquables (paramètres généraux, filtrage, sécurité de navigation, contrôle parental, recherche sécurisée, services bloqués généraux), identifiants et services bloqués
 - Nouvelle info « Pause restante » : temps restant (en secondes) avant la reprise de la protection
 - Nouvelles actions « Vider le cache DNS » et « Mettre à jour les filtres »
 - Nouvelle action « Tester un domaine » (et l'info « Résultat du test de domaine ») sur l'équipement AdGuard Home, et « Tester un domaine pour ce client » sur les clients
