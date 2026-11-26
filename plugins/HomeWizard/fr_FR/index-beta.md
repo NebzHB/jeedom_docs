@@ -79,6 +79,8 @@ Chaque équipement s'affiche sur le dashboard et en mobile avec le widget du plu
 
 Les valeurs se mettent à jour en direct, et un clic sur une valeur historisée ouvre son historique. Toutes les autres commandes info visibles se consultent dans un petit popup, par l'icône liste <i class="fas fa-list-ul"></i> (**Autres valeurs**) en bas du widget (rendez une commande non visible pour l'en retirer).
 
+Les actions qui demandent une confirmation (Cloud désactiver, API v1 désactiver, Redémarrer, ou toute commande où vous avez coché la confirmation) posent une question propre à chaque commande avant d'être envoyées : dans une fenêtre sur le dashboard, et dans un bandeau du widget en mobile (avec **Annuler** et **Confirmer**).
+
 **Réglages de l'équipement, Identifier et Redémarrer**
 -----------------------
 

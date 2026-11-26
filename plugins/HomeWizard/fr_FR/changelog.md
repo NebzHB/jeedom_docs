@@ -6,6 +6,9 @@ description: Changelog du plugin HomeWizard Energy
 ---
 Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'orthographe, de librairie ou pour la compatibilité Jeedom V4
 
+# Beta
+- Widget : les actions à confirmer posent une question propre à chaque commande (par exemple "Redémarrer l'équipement ? Il sera indisponible quelques secondes."), dans une fenêtre sur le dashboard et dans un bandeau du widget en mobile
+
 # 25-11-2026
 - Nouvelle commande info Temps de fonctionnement (API v2), historisée : un redémarrage de l'équipement se voit et est signalé dans le log du démon
 - Nouvelle commande info Dernier démarrage (API v2), historisée : ne change qu'au redémarrage de l'équipement, pratique comme déclencheur de scénario
