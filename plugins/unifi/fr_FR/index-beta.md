@@ -138,7 +138,11 @@ Un clic sur une valeur historisée ouvre son historique.
 Confirmation
 ------------
 
-Les actions qui coupent quelque chose demandent une confirmation : redémarrer, mettre à jour, couper le PoE d'un port, PowerCycle, désactiver un WLAN, bloquer un client.
+Les actions qui coupent quelque chose demandent une confirmation : redémarrer, mettre à jour, couper le PoE d'un port, PowerCycle, désactiver un WLAN, bloquer ou reconnecter un client. Ces commandes ont la case **Confirmer l'action** cochée dans leur configuration avancée (la roue crantée de la commande, sur la page de l'équipement).
+
+* Pour ne plus confirmer une action, décochez sa case. Le widget l'envoie alors directement.
+* Pour confirmer une autre action (débloquer un client, activer un WLAN, la LED...), cochez sa case : le widget demande alors aussi une confirmation.
+* La confirmation est aussi demandée avec l'affichage standard de Jeedom, mais pas dans les scénarios.
 
 Sur le dashboard, la question s'affiche dans la fenêtre de confirmation de Jeedom. En mobile, une petite carte s'ouvre sous le bouton, avec la question (« Bloquer ce client ? », « Couper le PoE de ce port ? »...) et deux boutons **Annuler** et **Confirmer** : l'action n'est envoyée qu'au clic sur **Confirmer**. Un clic ailleurs ou un défilement de la page l'annule.
 
