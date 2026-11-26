@@ -144,7 +144,7 @@ Les actions qui coupent quelque chose demandent une confirmation : redémarrer, 
 * Pour confirmer une autre action (débloquer un client, activer un WLAN, la LED...), cochez sa case : le widget demande alors aussi une confirmation.
 * La confirmation est aussi demandée avec l'affichage standard de Jeedom, mais pas dans les scénarios.
 
-Sur le dashboard, la question s'affiche dans la fenêtre de confirmation de Jeedom. En mobile, une petite carte s'ouvre sous le bouton, avec la question (« Bloquer ce client ? », « Couper le PoE de ce port ? »...) et deux boutons **Annuler** et **Confirmer** : l'action n'est envoyée qu'au clic sur **Confirmer**. Un clic ailleurs ou un défilement de la page l'annule.
+Sur le dashboard, la question s'affiche dans la fenêtre de confirmation de Jeedom. En mobile, une petite carte s'ouvre sous le bouton, avec la question (« Bloquer ce client ? », « Couper le PoE de ce port ? »...) et deux boutons **Annuler** et **Confirmer** : l'action n'est envoyée qu'au clic sur **Confirmer**. Un clic ailleurs, un défilement de la page ou 30 secondes sans réponse l'annulent.
 
 Revenir à l'affichage standard de Jeedom
 ----------------------------------------
