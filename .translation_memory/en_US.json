@@ -127,6 +127,7 @@
     "Chaque évènement a une **condition** facultative. Si elle est fausse, l'évènement entier est ignoré. Si elle est laissée vide, l'évènement s'exécute toujours.": "Each event has an optional **condition**. If it is false, the entire event is ignored. If it is left blank, the event always runs.",
     "Chaque évènement contient une ou plusieurs **actions**. Pour chacune, on peut choisir une commande action (bouton liste) ou un mot-clé de scénario : message, variable, scénario, attendre, alerte… (bouton mot-clé).": "Each event contains one or more **actions**. For each one, you can choose an action command (list button) or a scenario keyword: message, variable, scenario, wait, alert… (keyword button).",
     "Commandes": "Commands",
+    "Compatible avec AdGuard Home v1.0.0": "Compatible with AdGuard Home v1.0.0",
     "Compteur d'entretien": "Maintenance counter",
     "Configuration d'un équipement": "Setting Up a Device",
     "Configuration des équipements": "Device Setup",

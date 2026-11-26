@@ -8,6 +8,9 @@ Sofern nichts angegeben ist, handelt es sich wahrscheinlich um ein kleines Updat
 
 # Änderungsprotokoll
 
+## 26-11-2026
+- Kompatibel mit AdGuard Home v1.0.0
+
 ## 12-11-2026
 - Für die Konfiguration sind Administratorrechte erforderlich
 
