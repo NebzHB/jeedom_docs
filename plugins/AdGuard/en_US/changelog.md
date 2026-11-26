@@ -8,6 +8,30 @@ Unless otherwise noted, this is likely a minor update to correct spelling or ens
 
 # Changelog
 
+## In Beta
+- New widget for AdGuard Home (dashboard and mobile), inspired by the AdGuard Home dashboard: protection with a menu for pause durations and a countdown, statistics, and clickable tiles (filtering, safe browsing, parental controls, secure search, blocked websites)
+- New widget for customer devices (dashboard and mobile): Internet access allowed or blocked via a button, clickable tiles (general settings, filtering, browsing security, parental controls, safe search, generally blocked services), blocked usernames and services
+- Widgets: switch-based settings with tooltips, built-in actions on a single line (services, groups, rules, credentials, domain test with results, maintenance), and AdGuard Home updates via the widget badge. See the [beta documentation](index-beta#widgets-en-beta)
+- Widgets: blocked services displayed as icons, both on the server and on client devices
+- List of services with icons, search, and services organized by group; selecting a group locks or unlocks the entire group
+- Widgets: confirmation before disconnecting from the internet, disabling filtering or parental controls, blocking or unblocking all services, and before performing maintenance actions (DNS cache, filters, statistics)
+- Widgets: minimum width of 320 px on the dashboard with a responsive layout; full width on mobile
+- Widgets: automatic height adjustment based on content, with a “Widget Height: Fixed” option on the device to maintain the height set in edit mode
+- New "Remaining Pause" information: time remaining (in seconds) before protection resumes
+- New actions: “Clear the DNS cache” and “Update filters”
+- New "Test a Domain" action (and "Domain Test Result" information) on the AdGuard Home device, and "Test a Domain for This Client" on clients
+- New actions: “Block a service group” and “Unblock a service group,” available globally and per client (AdGuard Home v0.107.68 or later)
+- The blocked services schedule defined in AdGuard Home is no longer cleared when a service is blocked or unblocked from Jeedom
+- Secure search (global and per-user): only the enabled/disabled status changes; the search engines selected in AdGuard Home are retained (including Ecosia)
+- Browsing safety and parental controls use the latest AdGuard Home API calls, with fallback to older calls for older versions
+- "Update Filters" and "AdGuard Update" wait up to 120 seconds for a response from AdGuard Home (previously, the command would fail and "Online" would change to 0)
+- Reliability: Actions now display a clear message when AdGuard Home is unresponsive, when the client cannot be found, or when the rule is empty, rather than failing silently. Custom rules can no longer be accidentally deleted, and blocking the internet twice no longer creates a duplicate entry
+- Fixing clients whose names contain a hyphen
+- Fixed network error detection (PHP 8)
+- When a client is modified, only the editable fields are sent to AdGuard Home
+- Corrected the spelling error “globlaux” in the customer commands (“Use Global Blocked Services”)
+- Translated command help texts
+
 ## 26-11-2026
 - Compatible with AdGuard Home v1.0.0
 
