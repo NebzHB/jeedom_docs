@@ -66,35 +66,12 @@ Si vous **retirez un client** par la suite, il sera désactivé **automatiquemen
 - **Online** : Binaire indiquant si AdGuard répond correctement aux demandes
 - **Update AdGuard Dispo** : Binaire indiquant si une mise à jour est disponnible
 - **Update AdGuard** : Action permettant de mettre à jour AdGuard (si une mise à jour est disponible)
-- **Vider le cache DNS** : Action permettant de vider le cache DNS d'AdGuard Home
-- **Mettre à jour les filtres** : Action permettant de forcer la mise à jour des listes de filtres
-
-> La mise à jour d'AdGuard et celle des filtres peuvent prendre du temps : le plugin attend jusqu'à 120 s la réponse d'AdGuard Home.
-
-Widget
------------------------
-L'équipement AdGuard Home a son propre widget (dashboard et mobile), inspiré du tableau de bord d'AdGuard Home :
-
-- **Protection** : état et bouton marche/arrêt. Si la protection est active, un clic ouvre le menu des durées de pause. Pendant une pause, le temps restant avant la reprise est décompté.
-- **Statistiques** : requêtes DNS, bloquées par filtres, menaces et contenu adulte bloqués (avec le pourcentage du total), recherches sécurisées forcées et temps moyen de traitement.
-- **Pastilles cliquables** : filtrage, sécurité de navigation, contrôle parental et recherche sécurisée. Une pastille rouge « Internet bloqué » s'affiche quand internet est bloqué via DNS.
-- **Pied du widget** : en ligne, version, badge de mise à jour, bouton actualiser et une fenêtre avec les autres infos visibles (services bloqués, résultat du test de domaine…).
-
-Les équipements clients ont aussi leur widget, dans le même style :
-
-- **Internet** : « Autorisé » ou « Bloqué via DNS », avec un bouton qui bloque ou débloque internet pour ce client.
-- **Pastilles cliquables** : paramètres généraux, filtrage, sécurité de navigation, contrôle parental, recherche sécurisée et services bloqués généraux. Les réglages propres au client sont grisés quand il suit les paramètres généraux, et ses services bloqués quand il suit les services bloqués généraux.
-- **Identifiants** et **services bloqués** du client affichés en clair.
-- Le résultat du test de domaine est dans la fenêtre des autres infos.
-
-Sur les deux widgets, les autres commandes action visibles (services, identifiants, règles, test de domaine…) gardent leur widget Jeedom.
 
 Protection Globale
 -----------------------
 - **Statut protection** : Binaire indiquant l'état de la protection globale
 - **Activer la protection** : Action permettant d'activer la protection globale
 - **Désactiver la protection** : Action permettant de désactiver la protection globale
-- **Pause restante** : Temps restant (en secondes) avant la reprise de la protection, quand elle a été désactivée pour une durée donnée
 
 > Nouveau, vous pouvez maintenant modifier la durée pendant laquelle la protection est désactivée (comme dans l'interface AdGuardHome)
 
@@ -138,8 +115,6 @@ Recherche Sécurisée Globale
 - **Activer la Recherche Sécurisée Globale** : Action permettant d'activer la Recherche Sécurisée Globale
 - **Désactiver la Recherche Sécurisée Globale** : Action permettant de désactiver la Recherche Sécurisée Globale
 
-> Seul l'état activé/désactivé est modifié : les moteurs de recherche choisis dans AdGuard Home sont conservés. Si aucun moteur n'est coché au moment de l'activation, ils sont tous cochés.
-
 **Correspondance AdGuard** (Paramètres > Paramètres généraux > Renforcer la recherche sécurisée) :
 
 ![image](https://user-images.githubusercontent.com/28622481/133207585-41110514-75f3-4a13-8f73-f3aca3c93820.png)
@@ -151,12 +126,6 @@ Services Globaux
 - **Débloquer un service** : Action permettant de débloquer un service de la liste
 - **Bloquer tous les services** : Action permettant de bloquer tous les services de la liste
 - **Débloquer tous les services** : Action permettant de débloquer tous les services de la liste
-- **Bloquer un groupe de services** : Action permettant de bloquer tous les services d'un groupe (liste déroulante)
-- **Débloquer un groupe de services** : Action permettant de débloquer tous les services d'un groupe (liste déroulante)
-
-> Les groupes de services nécessitent AdGuard Home v0.107.68 minimum.
-
-> Le planning des services bloqués défini dans AdGuard Home est conservé quand vous bloquez ou débloquez des services depuis Jeedom.
 
 **Correspondance AdGuard** (Filtres > Services bloqués) : 
 
@@ -180,11 +149,6 @@ Règle filtrage personnalisée
 Voir [ici](https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists){:target="_blank" rel="noopener"}
 
 **Correspondance AdGuard** (Filtres > Règles de filtrage personnalisées > ajout de la règle donnée en premier)
-
-Tester un domaine
------------------------
-- **Tester un domaine** : Action (champ message) permettant de vérifier si un domaine est bloqué ou non avec les réglages globaux
-- **Résultat du test de domaine** : Chaine contenant le résultat du dernier test, par exemple `example.com : Bloqué par un filtre (règle : ||example.com^)`
 
 Statistiques
 -----------------------
@@ -249,11 +213,11 @@ Recherche Sécurisée
 
 **Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Paramètres > Renforcer la recherche sécurisée (5))
 
-Utiliser les services bloqués globaux
+Utiliser les services bloqués globlaux
 --------------------------------
-- **Statut Utiliser les services bloqués globaux** : Binaire indiquant si on a activé Utiliser les services bloqués globaux
-- **Activer Utiliser les services bloqués globaux** : Action permettant d'activer Utiliser les services bloqués globaux
-- **Désactiver Utiliser les services bloqués globaux** : Action permettant de désactiver Utiliser les services bloqués globaux
+- **Statut Utiliser les services bloqués globlaux** : Binaire indiquant si on a activé Utiliser les services bloqués globlaux
+- **Activer Utiliser les services bloqués globlaux** : Action permettant d'activer Utiliser les services bloqués globlaux
+- **Désactiver Utiliser les services bloqués globlaux** : Action permettant de désactiver Utiliser les services bloqués globlaux
 
 **Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Bloquer des services spécifiques > Utiliser les services bloqués globaux (1)):
 
@@ -272,11 +236,6 @@ Services spécifiques
 
 **Correspondance AdGuard** (Paramètres > Paramètres du client > Modifier Client > Bloquer des services spécifiques > Tout bloquer/Tout débloquer (3))
 
-- **Bloquer un groupe de services** : Action permettant de bloquer tous les services d'un groupe spécifiquement pour ce client (liste déroulante)
-- **Débloquer un groupe de services** : Action permettant de débloquer tous les services d'un groupe spécifiquement pour ce client (liste déroulante)
-
-> Les groupes de services nécessitent AdGuard Home v0.107.68 minimum.
-
 Internet Bloqué via DNS
 -----------------------
 - **Statut Internet Bloqué via DNS** : Binaire indiquant si on a bloqué internet via le DNS pour ce client
@@ -286,13 +245,6 @@ Internet Bloqué via DNS
 **Correspondance AdGuard** (Filtres > Règles de filtrage personnalisées > ajout de la règle : `||*^$client='NomClient',important` en premier)
 
 ![image](https://user-images.githubusercontent.com/28622481/133222436-9e17578a-93e2-4be2-a96c-957131d5686a.png)
-
-Tester un domaine pour ce client
------------------------
-- **Tester un domaine pour ce client** : Action (champ message) permettant de vérifier si un domaine est bloqué ou non avec les réglages de ce client
-- **Résultat du test de domaine pour ce client** : Chaine contenant le résultat du dernier test pour ce client
-
-> AdGuard Home ne sait tester un domaine qu'avec une adresse IP ou un ClientID. Le plugin utilise l'adresse IP du client en priorité, sinon l'adresse de sa plage CIDR, sinon son ClientID. Un client qui n'a que des adresses MAC ne peut pas être testé : un message vous le signale.
 
 Identifiants
 -----------------------

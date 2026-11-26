@@ -8,9 +8,15 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
-## Beta
+## En Beta
 - Nouveau widget pour l'équipement AdGuard Home (dashboard et mobile), inspiré du tableau de bord d'AdGuard Home : protection avec menu des durées de pause et décompte, statistiques, pastilles cliquables (filtrage, sécurité de navigation, contrôle parental, recherche sécurisée, internet bloqué)
 - Nouveau widget pour les équipements Client (dashboard et mobile) : internet autorisé ou bloqué avec bouton, pastilles cliquables (paramètres généraux, filtrage, sécurité de navigation, contrôle parental, recherche sécurisée, services bloqués généraux), identifiants et services bloqués
+- Widgets : réglages en interrupteurs avec infobulle, actions intégrées sur une ligne (services, groupes, règles, identifiants, test de domaine avec son résultat, maintenance), mise à jour d'AdGuard Home depuis le badge du widget. Voir la [documentation beta](index-beta#widgets-en-beta)
+- Widgets : services bloqués affichés en icônes, sur le serveur comme sur les clients
+- Liste des services avec icônes, recherche et services rangés sous leur groupe ; choisir un groupe bloque ou débloque tout le groupe
+- Widgets : confirmation avant de couper internet, désactiver le filtrage ou le contrôle parental, bloquer ou débloquer tous les services, et avant les actions de maintenance (cache DNS, filtres, statistiques)
+- Widgets : largeur minimale de 320 px sur le dashboard avec mise en page qui s'adapte, pleine largeur en mobile
+- Widgets : hauteur automatique selon le contenu, avec une option « Hauteur du widget : Fixe » sur l'équipement pour garder celle du mode édition
 - Nouvelle info « Pause restante » : temps restant (en secondes) avant la reprise de la protection
 - Nouvelles actions « Vider le cache DNS » et « Mettre à jour les filtres »
 - Nouvelle action « Tester un domaine » (et l'info « Résultat du test de domaine ») sur l'équipement AdGuard Home, et « Tester un domaine pour ce client » sur les clients
