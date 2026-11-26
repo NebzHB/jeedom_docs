@@ -8,6 +8,23 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## Beta
+- Nouveau widget pour l'équipement AdGuard Home (dashboard et mobile), inspiré du tableau de bord d'AdGuard Home : protection avec menu des durées de pause et décompte, statistiques, pastilles cliquables (filtrage, sécurité de navigation, contrôle parental, recherche sécurisée, internet bloqué). Les clients gardent le widget Jeedom
+- Nouvelle info « Pause restante » : temps restant (en secondes) avant la reprise de la protection
+- Nouvelles actions « Vider le cache DNS » et « Mettre à jour les filtres »
+- Nouvelle action « Tester un domaine » (et l'info « Résultat du test de domaine ») sur l'équipement AdGuard Home, et « Tester un domaine pour ce client » sur les clients
+- Nouvelles actions « Bloquer un groupe de services » et « Débloquer un groupe de services », globales et par client (AdGuard Home v0.107.68 minimum)
+- Le planning des services bloqués défini dans AdGuard Home n'est plus effacé quand on bloque ou débloque un service depuis Jeedom
+- Recherche sécurisée (globale et client) : seul l'état activé/désactivé change, les moteurs choisis dans AdGuard Home sont conservés (Ecosia compris)
+- Sécurité de navigation et contrôle parental utilisent les appels de l'API récente d'AdGuard Home, avec repli sur les anciens appels pour les versions plus anciennes
+- « Mettre à jour les filtres » et « Mise à jour AdGuard » attendent jusqu'à 120 s la réponse d'AdGuard Home (avant, la commande échouait et « En Ligne » passait à 0)
+- Fiabilité : les actions affichent un message clair quand AdGuard Home ne répond pas, quand le client est introuvable ou quand la règle est vide, au lieu d'échouer en silence. Les règles personnalisées ne peuvent plus être effacées par erreur, et bloquer deux fois internet ne crée plus de doublon
+- Correction des clients dont le nom contient un tiret
+- Correction de la détection des erreurs réseau (PHP 8)
+- La modification d'un client n'envoie plus que les champs modifiables à AdGuard Home
+- Correction de la faute « globlaux » dans les noms des commandes client (« Utiliser les services bloqués globaux »)
+- Textes d'aide des commandes traduits
+
 ## 26-11-2026
 - Compatible avec AdGuard Home v1.0.0
 
