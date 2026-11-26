@@ -8,6 +8,9 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## 26-11-2026
+- Compatible avec AdGuard Home v1.0.0
+
 ## 12-11-2026
 - Configuration requière d'être administrateur
 
