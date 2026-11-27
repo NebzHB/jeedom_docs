@@ -8,6 +8,23 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## 27-11-2026 - beta
+Gros travail sur les widgets, surtout celui du HomePod :
+- Mobile : le widget mobile reprend celui du Dashboard (il n'affichait plus rien)
+- Fond flouté propre sur iPhone / iPad : plus de bords nets au chargement ni au changement de chanson
+- Le style des widgets n'est plus gardé en cache par Safari après une mise à jour
+- Écran tactile : plus de bouton grisé « collé » après un appui ; précédent / suivant restent grisés jusqu'au changement de chanson
+- Nouveau panneau Info (bouton i) : pochette floutée en fond, titre / artiste / album sur une ligne avec défilement si trop long (l'option de défilement fonctionne maintenant aussi sous Safari)
+- À côté de la pochette : animation de chargement après précédent / suivant ou quand l'appareil charge (20 s maximum), et indication quand le démon est arrêté
+- Barre de progression sous la pochette et dans le panneau Info (au survol : position, durée, pourcentage et temps restant)
+- Icônes en SVG, nettes sur les écrans Retina
+- Textes du widget traduits (anglais, allemand, espagnol, italien, portugais) et widget utilisable au clavier et avec un lecteur d'écran
+- Aléatoire / répétition grisés quand la source ne les accepte pas (ex. Apple Music lu directement sur le HomePod), avec 2 nouvelles infos : Aléatoire disponible / Répétition disponible
+- Lien « Ouvrir dans Apple Music » dans le panneau Info quand le morceau vient d'Apple Music (nouvelle info Identifiant iTunes)
+- Thème noir par défaut si le thème configuré n'existe plus
+- Ménage : anciens templates mobile, images et code inutilisés supprimés
+- Mise à jour des traductions et de la dépendance axios
+
 ## 11-11-2026
 - retrait des artworks des backups, gain de place non négligable
 
