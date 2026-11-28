@@ -5,125 +5,160 @@ title: Plugin aTVRemote
 description: Documentation du plugin aTVRemote
 ---
 
-Ce plugin permet de monitorer et exécuter quelques actions sur vos AppleTV.
+Ce plugin permet de suivre et de piloter depuis Jeedom vos **Apple TV** et vos **HomePod** : ce qui est en cours de lecture (titre, artiste, pochette, progression), lecture / pause / précédent / suivant, volume, aléatoire, répétition, et pour l'Apple TV la télécommande, la mise en veille et le lancement d'applications.
 
-Veuillez Noter 
-==============
-- Compatible uniquement avec **Debian Buster au minimum** mais Bullseye conseillé !! (Pas compatible Debian Jessie ou Stretch)
-- Ce plugin utilise le protocole Airplay (MRP) et Companion pour communiquer avec votre AppleTV 4 et 4K. 
-- Il n'est pas possible avec ce protocole de :
-  - Modifier le volume (c'est votre TV qui s'en charge)
-  - Effectuer le bouton "Micro" (Siri) de la télécommande :'(
-- Ce plugin utilise le protocole Airplay pour communiquer avec votre AppleTV3.
-- Il n'est pas possible avec ce protocole de :
-  - Mettre en veille votre AppleTV3.
-  - Effectuer des pressions longues sur les boutons (je vous ai vu venir...) de l'AppleTV3.
-  - Modifier le volume (c'est votre TV qui s'en charge)
-  - Effectuer le bouton "Micro" (Siri) de la télécommande :'(
-  - Savoir si votre AppleTV3 est en Veille ou pas (Elle continue aussi à répondre aux pings dans les deux cas)
-- Si votre AppleTV3 est en veille et que vous cliquez sur une commande type Menu, elle sortira de veille. (ca dépend des touches...)
-- Testé sur AppleTV 4+. Pour l'AppleTV 3, les fonctionnalités sont limitées...
-- **Le partage à Domicile DOIT être activé dans Réglages > Comptes > Partage à domicile.**
-- **Airplay doit être activé dans Réglages > Airplay > Airplay ET Accès = Tout le monde.**
-- **Votre AppleTV DOIT avoir une ip fixée (soit par réservation DHCP soit dans les Réglages)**
-- **L'AppleTV DOIT être dans le même réseau que votre Jeedom (sans routage !!, elle est découverte par le protocole Bonjour)**
-- Sur AppleTV3, les données de lecture sont renouvelées toutes les minutes SI vous avez cliqué sur Play VIA JEEDOM (Jusqu'à avoir cliqué sur Pause ou Stop). Car si je scanne ces données de lecture en permanence, votre AppleTV sort de veille :'( 
-- Conseil AppleTV3 : activez la mise en veille automatique pour contrer l'impossibilité de mettre en veille.
+Il s'appuie sur la bibliothèque [pyatv](https://pyatv.dev/) (protocoles AirPlay et Companion).
 
-Configuration du plugin 
+Appareils pris en charge
+========================
+
+| Appareil | Modèles |
+|---|---|
+| Apple TV | Apple TV 3 (fonctions limitées), Apple TV HD, Apple TV 4K (1re à 4e génération, y compris celle de 2026) |
+| HomePod | HomePod (1re et 2e génération), HomePod mini, HomePod mini 2 (toutes les couleurs) |
+
+Les modèles trop récents pour pyatv (qui ne donne alors que l'identifiant Apple, par exemple `AppleTV18,1`) sont reconnus quand même.
+
+Prérequis
+=========
+
+- **Jeedom 4.4** minimum et **Debian 12** minimum.
+- Pas pris en charge : Debian 11 et plus ancien, Docker, Jeedom Mini+, Raspberry Pi 1 et 2, Raspberry Zero (armv6), systèmes 32 bits (i386).
+- L'appareil doit être **dans le même réseau que Jeedom** (sans routage : il est découvert par Bonjour / mDNS).
+- Donnez une **adresse IP fixe** à vos Apple TV et HomePod (réservation DHCP conseillée).
+- Sur l'Apple TV : **Réglages > AirPlay et HomeKit > AirPlay : Oui**, et **Autoriser l'accès : « Tout le monde » ou « Toute personne sur le même réseau »**.
+
+Ce qui n'est pas possible
+-------------------------
+
+- Le bouton « Micro » (Siri) de la télécommande.
+- Sur Apple TV 3 : la mise en veille, les appuis longs, savoir si elle est en veille. Les infos de lecture ne sont relues que si la lecture a été lancée depuis Jeedom (sinon l'interroger la sortirait de veille). Conseil : activez sa mise en veille automatique.
+- L'aléatoire et la répétition ne sont utilisables que si la source les accepte (voir la partie « Aléatoire et répétition »).
+
+Configuration du plugin
 =======================
 
-Après installation du plugin, il vous suffit de l’activer et de lancer les dépendances.
+Après installation, activez le plugin puis lancez les **dépendances** (et relancez-les après chaque mise à jour en beta).
 
-Configuration des équipements 
-=============================
+Démon
+-----
 
-Ajout Rapide :
---------------
-**SI** votre AppleTV a le Partage à domicile activé, Lancez un scan. Celle-ci s'ajoutera en désactivé et invisible.
-Modifiez l'équipement créé et Activez-le + Placez-le dans une pièce et visible.
+Le plugin utilise un démon Python, qui garde une connexion avec chaque appareil :
+- l'état (lecture, volume, veille, fonctions disponibles) est reçu **en temps réel**, sans que Jeedom ait besoin d'interroger les appareils ;
+- la **pochette** est récupérée dès le changement de morceau ;
+- chaque commande renvoie son **vrai résultat** (voir la partie « Notifications ») ;
+- peu de mémoire : environ 72 Mo pour un appareil, quelques Mo de plus par appareil.
 
+Son log est **aTVremote_deamon**. Au démarrage, il indique la date de son fichier et la version de pyatv, puis « Connecté avec succès ! » pour chaque appareil.
 
-Description Complète
---------------------
-La configuration des équipements AppleTV est accessible à partir du menu
-plugins puis Multimédia. Vous retrouvez ici :
+Personnalisation du widget
+--------------------------
 
--   un bouton pour lancer un scan.
+**Mode de défilement des champs Titre, Artiste et Album** : *Alterné* (le texte va et vient) ou *Défilement* (le texte défile en boucle) quand il est trop long pour le widget. Fonctionne aussi sous Safari (iPhone, iPad, Mac).
 
--   un bouton pour afficher la configuration du plugin
+Ajout des équipements
+=====================
 
--   un bouton qui vous donne une vue d'ensemble de tous vos équipements
+Lancez une **détection** depuis la page du plugin (Plugins > Multimédia > aTV Remote). Chaque appareil trouvé est ajouté **désactivé et invisible** : ouvrez-le, activez-le, rendez-le visible, placez-le dans une pièce et sauvegardez. Une nouvelle détection met à jour les équipements existants (IP, modèle, version de l'OS).
 
--   enfin en dessous vous retrouvez la liste de vos équipements
+Les HomePod sont nommés « … (Airplay) ».
 
-En cliquant sur un de vos équipements vous arrivez sur la page
-configuration de votre équipement comprenant 2 onglets, équipement et
-commandes.
-
-Onglet Equipement
+Onglet Équipement
 -----------------
 
--   **Nom de l’équipement** : nom de votre équipement
+- **Nom**, **Objet parent**, **Activer**, **Visible** : comme pour tout équipement Jeedom.
+- **Périphérique, Version, OS, Version de l'OS** : détectés automatiquement.
+- **IP**, **MAC** : adresse de l'appareil (en lecture seule).
+- **Couleur** (HomePod 1re génération, HomePod mini et mini 2) : couleur du HomePod sur le widget. HomePod : noir, blanc ; HomePod mini : noir, blanc, rouge, jaune, bleu ; HomePod mini 2 : noir, blanc, vert, rose, bleu.
+- **Volume + / Volume -** (Apple TV) : commandes Jeedom à utiliser pour régler le volume de la télé (via un équipement infrarouge, Harmony…), quand l'Apple TV ne peut pas le faire elle-même.
+- **Appairage** (Apple TV) : voir ci-dessous.
 
--   **Activer** : permet de rendre votre équipement actif
+Appairage des Apple TV
+======================
 
--   **Visible** : le rend visible sur le dashboard
+Les Apple TV demandent un appairage, une seule fois, pour autoriser Jeedom :
 
--   **Objet parent** : indique l’objet parent auquel appartient
-    l’équipement
+- **AirPlay** : télécommande, lecture, état, pochette ;
+- **Companion** (Apple TV 4 et plus) : lancement des apps, allumer / éteindre, clavier.
 
--   **Ip de l'AppleTV** : l'ip et port de votre AppleTV
+Les HomePod n'ont pas besoin d'appairage.
 
--   **MAC** : Adresse mac de votre AppleTV
+La ligne **Appairage** de l'équipement indique l'état global : **Appairée** seulement si tous les protocoles demandés par l'Apple TV sont appairés, sinon **À appairer**, avec le détail (par exemple « AirPlay ✓ · Companion ✗ »).
 
+1. Allumez la télé et l'Apple TV (pas en veille) et restez devant l'écran.
+2. Cliquez sur **Appairer** : l'assistant explique les étapes et liste les protocoles à appairer.
+3. Pour chaque protocole, l'Apple TV affiche un **code à 4 chiffres** : saisissez-le dans Jeedom (sur téléphone, le clavier numérique s'ouvre et le code est validé au 4e chiffre).
+4. Les clés sont enregistrées et la connexion est relancée automatiquement, sans redémarrer le démon.
+
+Si le code ne s'affiche pas : vérifiez que la télé affiche bien l'Apple TV, et les réglages AirPlay de l'Apple TV (voir la partie « Prérequis »). Le code reste valable environ 3 minutes ; le bouton **Nouveau code** en redemande un. Quand tout est appairé, le bouton devient **Refaire l'appairage**.
+
+Le widget HomePod
+=================
+
+- **Pochette** du morceau sur un fond flouté. Elle est gardée quand la lecture s'arrête (Lecture relance ce morceau).
+- **Barre de progression** sous la pochette ; au survol : position, durée, pourcentage et temps restant.
+- **Indicateur** à côté de la pochette : égaliseur en lecture, animation de chargement après précédent / suivant ou quand l'appareil charge (20 s maximum), et indication quand le démon est arrêté.
+- **Précédent / suivant** restent grisés jusqu'à ce que le morceau change.
+- **Volume** : curseur circulaire et boutons + / -.
+- **Panneau Info** (bouton *i*) : grande pochette, titre, artiste et album (défilement si trop long), progression, et un lien **Ouvrir dans Apple Music** quand le morceau vient d'Apple Music (pas pour Spotify, une radio ou un flux AirPlay). Se ferme d'un clic ou avec Échap.
+- Utilisable **au clavier et avec un lecteur d'écran** ; textes traduits en anglais, allemand, espagnol, italien et portugais.
+- Même widget sur le Dashboard et sur mobile ; sur écran tactile, les boutons ne restent plus « appuyés ».
+
+Aléatoire et répétition
+-----------------------
+
+Ils ne sont utilisables que si la source les accepte. Par exemple, Apple Music lu directement sur un HomePod ne les accepte pas : le HomePod répond « ok » mais ne change rien. Le plugin relit les fonctions disponibles après chaque changement de morceau ou d'application, et **grise** les boutons quand ils sont indisponibles (ils restent cliquables : un clic revérifie).
+
+Notifications
+-------------
+
+- Une commande indisponible pour la source en cours (bouton grisé) affiche une **notification** sur le Dashboard, sans erreur dans le log ; une vraie erreur (appareil qui refuse, pas de réponse, paramètre invalide) est une erreur de la commande, visible aussi dans le centre de messages et le log des scénarios.
+- Une commande lancée alors que le démon est **arrêté** affiche « démon aTVremote arrêté, commande non envoyée ».
 
 Onglet Commandes
-----------------
-Il existe de nombreuses commandes. Toutes ne sont pas affichées par défaut. Vous pouvez les renommer, les afficher ou non, les réorganiser. 
+================
 
--   **Lecture en cours** : Binaire permettant de déterminer si la lecture est en cours ou pas.
--   **URL Artwork** : permet d'afficher l'image.
--   **Hors Veille** : Binaire permettant de déterminer si l'appleTV 4+ est allumée.
--   **Bouton On** : *turn_on* : permet d'allumer l'appleTV 4+.
--   **Bouton Off**: *turn_off*: permet de mettre en veille l'appleTV 4+.
--   **Bouton Lecture** : *play* : Effectue la même action que le bouton Play/Pause de la télécommande.
--   **Bouton Pause** : *pause* : Effectue la même action que le bouton Play/Pause de la télécommande.
--   **Bouton Stop** : *stop* : Effectue la même action que le bouton Play/Pause de la télécommande (idem bouton Pause en fait).
--   **Bouton Précédent** : *previous* : Passe au morceau Précédent.
--   **Bouton Suivant** : *next* : Passe au morceau Suivant.
+Toutes les commandes ne sont pas affichées par défaut : vous pouvez les renommer, les afficher ou non, les réorganiser.
 
--   **Bouton Haut** : *up* : Effectue la même action que un swipe vers le haut sur la télécommande.
--   **Bouton Gauche** : *left* : Effectue la même action que un swipe vers la gauche sur la télécommande.
--   **Bouton Sélection** : *select* : Effectue la même action qu'un click sur la télécommande.
--   **Bouton Droit** : *right* : Effectue la même action que un swipe vers la gauche sur la télécommande.
--   **Bouton Bas** : *down* : Effectue la même action que un swipe vers le bas sur la télécommande.
+Infos
+-----
 
--   **Bouton Menu** : *menu* : Effectue la même action que le bouton Menu sur la télécommande.
--   **Bouton Home** : *top_menu* : Effectue la même action que le bouton Home sur la télécommande.
+- **Statut** : état en clair : Lecture en cours, En pause, Stoppé, Chargement en cours, Avance / Recul rapide, Inactif, Aucun Media.
+- **Lecture en cours** : binaire, 1 si l'appareil joue.
+- **Hors Veille** (Apple TV 4 et plus) : binaire, 1 si l'Apple TV est allumée.
+- **Titre**, **Artiste**, **Album**, **Genre**, **Type Media** : informations sur la lecture en cours, si disponibles.
+- **Position** : position et durée, par exemple `5s/03:50 (2%)`.
+- **URL Artwork** : chemin de la pochette.
+- **Répétition** / **Répétition Humain**, **Aléatoire** / **Aléatoire Humain** : état des modes.
+- **App Active** : identifiant de l'application qui joue (par exemple `com.apple.Music`).
+- **Info Volume** : volume de 0 à 100.
+- **Hash** (masquée) : identifiant du morceau.
+- HomePod, masquées, utilisées par le widget et utilisables en scénario :
+  - **Aléatoire disponible**, **Répétition disponible** : 1 si la source en cours les accepte ;
+  - **Identifiant iTunes** : identifiant Apple Music / iTunes Store du morceau (`-` pour les autres sources).
 
--   **Bouton Aléatoire ON** : *set_shuffle=1* : Active le mode Aléatoire.
--   **Bouton Aléatoire OFF** : *set_shuffle=0* : Désactive le mode Aléatoire.
+Actions
+-------
 
--   **Bouton Répétition Tout** : *set_repeat=2* : Répète tout.
--   **Bouton Répétition Piste** : *set_repeat=1* : Répète la piste.
--   **Bouton Répétition OFF** : *set_repeat=0* : Désactive le mode Répétition.
+- **Rafraichir** : relit l'état de l'appareil.
+- **Bouton Lecture**, **Bouton Pause**, **Bouton Stop**, **Bouton Précédent**, **Bouton Suivant**.
+- **Bouton Aléatoire ON / OFF**, **Bouton Répétition Tout / Piste / OFF**.
+- **Bouton Volume + / -**, **Variateur Volume** (HomePod).
+- Apple TV 4 et plus :
+  - **Bouton On / Off** : sortie de veille, mise en veille ;
+  - **Bouton Haut / Bas / Gauche / Droit / Sélection**, **Bouton Menu**, **Bouton Home** : télécommande ;
+  - **Bouton Chaîne Haut / Bas** ;
+  - **MàJ Liste App** et **Lancer App** : liste des applications installées et lancement de l'une d'elles (appairage Companion nécessaire).
+- **Commande Personnalisée** (masquée) : envoie une ou plusieurs commandes pyatv brutes, séparées par `|` (par exemple `features`, ou `set_volume=30|volume`).
 
--   **Statut** : Affiche l'état en langage humain.
--   **Artiste** : Affiche l'artiste de la lecture en cours si disponible.
--   **Titre** : Affiche le titre de la lecture en cours si disponible.
--   **Album** : Affiche l'album de la lecture en cours si disponible.
--   **Genre** : Affiche le genre de la lecture en cours si disponible.
--   **Type Media** : Affiche le type de media de la lecture en cours si disponible. (souvent Unknown ou Music)
--   **Position** : Affiche la position dans la lecture en cours si disponible.
+FAQ
+===
 
--   **Repeat** : Affiche l'état du mode Répétition.
--   **Shuffle** : Affiche l'état du mode Aléatoire.
+**Le démon ne démarre pas ou rien ne remonte.**
+Relancez les dépendances, redémarrez le démon en mode debug et regardez le log **aTVremote_deamon**. La ligne de démarrage indique la date de son fichier et la version de pyatv, puis chaque appareil doit afficher « Connecté avec succès ! ».
 
--   **App Active** : Affiche l'application active (si possible...)
+**Aléatoire / répétition ne font rien.**
+La source ne les accepte pas (par exemple Apple Music joué directement sur le HomePod) : les boutons sont grisés. Voir la partie « Aléatoire et répétition ».
 
-
-
-
-
-
+**Mon Apple TV récente apparaît avec un OS inconnu ou sans commandes.**
+Relancez une détection après la mise à jour du plugin : les modèles trop récents pour pyatv sont maintenant reconnus.
