@@ -22,8 +22,8 @@ Les modèles trop récents pour pyatv (qui ne donne alors que l'identifiant Appl
 Prérequis
 =========
 
-- **Jeedom 4.4** minimum et **Debian 11** minimum.
-- Pas pris en charge : Debian Buster et plus ancien, Docker, Jeedom Mini+, Raspberry Pi 1 et 2, Raspberry Zero (armv6), systèmes 32 bits (i386).
+- **Jeedom 4.4** minimum et **Debian 12** minimum.
+- Pas pris en charge : Debian 11 et plus ancien, Docker, Jeedom Mini+, Raspberry Pi 1 et 2, Raspberry Zero (armv6), systèmes 32 bits (i386).
 - L'appareil doit être **dans le même réseau que Jeedom** (sans routage : il est découvert par Bonjour / mDNS).
 - Donnez une **adresse IP fixe** à vos Apple TV et HomePod (réservation DHCP conseillée).
 - Sur l'Apple TV : **Réglages > AirPlay et HomeKit > AirPlay : Oui**, et **Autoriser l'accès : « Tout le monde » ou « Toute personne sur le même réseau »**.
@@ -43,25 +43,15 @@ Après installation, activez le plugin puis lancez les **dépendances** (et rela
 Démon
 -----
 
-**Type de démon** : choix du démon qui dialogue avec vos appareils.
+Dans **Type de démon**, choisissez **Python**, puis redémarrez le démon.
 
-| | Node.js (par défaut) | Python (bêta, expérimental) |
-|---|---|---|
-| Fonctionnement | Node.js + 2 programmes Python par appareil | un seul programme Python qui garde une connexion par appareil |
-| Mémoire | ~210 Mo pour 1 appareil (mesuré), de l'ordre de 1,5 Go pour 10 (estimé) | ~72 Mo pour 1 appareil (mesuré), quelques Mo de plus par appareil |
-| Volume | relu par Jeedom (chaque minute en lecture, toutes les 5 min sinon) | reçu en temps réel |
-| Pochette | demandée par Jeedom, puis attente du fichier | récupérée par le démon dès le changement de morceau |
-| Volume d'un HomePod hors lecture | impossible (le démon planterait) | possible |
-| Erreurs des commandes | non signalées | signalées (notification ou erreur) |
-| Appairage des Apple TV | commandes à taper en SSH | assistant dans Jeedom |
-| Détection des appareils | en ligne de commande | par le démon (en ligne de commande s'il est arrêté) |
+Le démon garde une connexion avec chaque appareil :
+- l'état (lecture, volume, veille, fonctions disponibles) est reçu **en temps réel**, sans que Jeedom ait besoin d'interroger les appareils ;
+- la **pochette** est récupérée dès le changement de morceau ;
+- chaque commande renvoie son **vrai résultat** (voir la partie « Notifications ») ;
+- peu de mémoire : environ 72 Mo pour un appareil, quelques Mo de plus par appareil.
 
-Après avoir changé le type de démon, **redémarrez le démon**. Les deux démons écrivent dans le même log, **aTVremote_deamon**. Au démarrage, le démon Python indique la date de son fichier et la version de pyatv.
-
-Réparations
------------
-
-**Réparation de NodeJS** : supprime et réinstalle Node.js en cas de problème de dépendances.
+Son log est **aTVremote_deamon**. Au démarrage, il indique la date de son fichier et la version de pyatv, puis « Connecté avec succès ! » pour chaque appareil.
 
 Personnalisation du widget
 --------------------------
@@ -95,9 +85,6 @@ Les Apple TV demandent un appairage, une seule fois, pour autoriser Jeedom :
 
 Les HomePod n'ont pas besoin d'appairage.
 
-Avec le démon Python : l'assistant
-----------------------------------
-
 La ligne **Appairage** de l'équipement indique l'état global : **Appairée** seulement si tous les protocoles demandés par l'Apple TV sont appairés, sinon **À appairer**, avec le détail (par exemple « AirPlay ✓ · Companion ✗ »).
 
 1. Allumez la télé et l'Apple TV (pas en veille) et restez devant l'écran.
@@ -106,17 +93,6 @@ La ligne **Appairage** de l'équipement indique l'état global : **Appairée** s
 4. Les clés sont enregistrées et la connexion est relancée automatiquement, sans redémarrer le démon.
 
 Si le code ne s'affiche pas : vérifiez que la télé affiche bien l'Apple TV, et les réglages AirPlay de l'Apple TV (voir la partie « Prérequis »). Le code reste valable environ 3 minutes ; le bouton **Nouveau code** en redemande un. Quand tout est appairé, le bouton devient **Refaire l'appairage**.
-
-Avec le démon Node.js : en SSH
-------------------------------
-
-Pour chaque protocole demandé, la page de l'équipement affiche une commande à copier :
-
-1. Connectez-vous en SSH à votre Jeedom et collez la commande ;
-2. tapez le code affiché sur l'Apple TV ;
-3. copiez la clé affichée après « You may now use these credentials: » dans le champ **Clé d'appairage** correspondant, puis sauvegardez.
-
-Le bouton **Aidez-moi** montre la manipulation en vidéo.
 
 Le widget HomePod
 =================
@@ -138,9 +114,8 @@ Ils ne sont utilisables que si la source les accepte. Par exemple, Apple Music l
 Notifications
 -------------
 
-- Avec le démon Python, une commande indisponible pour la source en cours (bouton grisé) affiche une **notification** sur le Dashboard, sans erreur dans le log ; une vraie erreur (appareil qui refuse, pas de réponse, paramètre invalide) est une erreur de la commande, visible aussi dans le centre de messages et le log des scénarios.
+- Une commande indisponible pour la source en cours (bouton grisé) affiche une **notification** sur le Dashboard, sans erreur dans le log ; une vraie erreur (appareil qui refuse, pas de réponse, paramètre invalide) est une erreur de la commande, visible aussi dans le centre de messages et le log des scénarios.
 - Une commande lancée alors que le démon est **arrêté** affiche « démon aTVremote arrêté, commande non envoyée ».
-- Avec le démon Node.js, le volume d'un HomePod ne se règle que pendant la lecture : une notification l'indique au lieu de ne rien faire.
 
 Onglet Commandes
 ================
@@ -182,13 +157,10 @@ FAQ
 ===
 
 **Le démon ne démarre pas ou rien ne remonte.**
-Relancez les dépendances, redémarrez le démon en mode debug et regardez le log **aTVremote_deamon**. Avec le démon Python, la ligne de démarrage indique la date de son fichier et la version de pyatv, puis chaque appareil doit afficher « Connecté avec succès ! ».
+Relancez les dépendances, redémarrez le démon en mode debug et regardez le log **aTVremote_deamon**. La ligne de démarrage indique la date de son fichier et la version de pyatv, puis chaque appareil doit afficher « Connecté avec succès ! ».
 
 **Aléatoire / répétition ne font rien.**
 La source ne les accepte pas (par exemple Apple Music joué directement sur le HomePod) : les boutons sont grisés. Voir la partie « Aléatoire et répétition ».
-
-**Le volume du HomePod ne bouge pas hors lecture.**
-Avec le démon Node.js, c'est volontaire (il planterait) ; passez au démon Python pour régler le volume à tout moment.
 
 **Mon Apple TV récente apparaît avec un OS inconnu ou sans commandes.**
 Relancez une détection après la mise à jour du plugin : les modèles trop récents pour pyatv sont maintenant reconnus.
