@@ -19,6 +19,7 @@ Nouveau démon en Python, utilisé par défaut (relancez les dépendances après
 - Appairage des Apple TV depuis Jeedom avec un assistant pas à pas (aussi sur mobile), plus besoin de SSH ; un seul bouton et un état global « Appairée / À appairer »
 - Détection des Apple TV trop récentes pour pyatv, dont la nouvelle Apple TV 4K (gen 4) de 2026 (OS inconnu et aucune commande créée avant)
 - Notification quand on clique sur un bouton alors que le démon est arrêté
+- **Debian 12 minimum**
 - Documentation mise à jour
 
 ## 27-11-2026 - beta
