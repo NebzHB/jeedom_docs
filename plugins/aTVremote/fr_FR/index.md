@@ -104,13 +104,25 @@ Le widget HomePod
 - Utilisable **au clavier et avec un lecteur d'écran** ; textes traduits en anglais, allemand, espagnol, italien et portugais.
 - Même widget sur le Dashboard et sur mobile ; sur écran tactile, les boutons ne restent plus « appuyés ».
 
+Le widget Apple TV
+==================
+
+- **Pochette** du morceau sur un fond flouté, avec la **télécommande** par-dessus (flèches au survol, sélection au centre).
+- Sous la pochette : artiste et titre (défilement si trop long), puis le genre, le type de média et la **position**, qui avance pendant la lecture (au survol : pourcentage et temps restant).
+- **Indicateur** : égaliseur en lecture, animation de chargement après précédent / suivant ou quand l'appareil charge (20 s maximum), et indication quand le démon est arrêté.
+- Boutons Menu, Accueil, lecture, précédent / suivant (grisés jusqu'au changement de morceau sur écran tactile), chaîne + / -, volume + / -.
+- En haut : allumer / mettre en veille, l'application en cours, et le panneau **Apps** pour lancer une application.
+- **Panneau Info** (bouton *i*) : pochette, artiste, titre et album.
+- Utilisable **au clavier** (Échap ferme les panneaux) et avec un lecteur d'écran ; textes traduits.
+- Sur Apple TV 3 : pas de veille, de chaînes ni de lancement d'apps, mais un bouton Rafraîchir.
+
 Aléatoire et répétition
------------------------
+=======================
 
 Ils ne sont utilisables que si la source les accepte. Par exemple, Apple Music lu directement sur un HomePod ne les accepte pas : le HomePod répond « ok » mais ne change rien. Le plugin relit les fonctions disponibles après chaque changement de morceau ou d'application, et **grise** les boutons quand ils sont indisponibles (ils restent cliquables : un clic revérifie).
 
 Notifications
--------------
+=============
 
 - Une commande indisponible pour la source en cours (bouton grisé) affiche une **notification** sur le Dashboard, sans erreur dans le log ; une vraie erreur (appareil qui refuse, pas de réponse, paramètre invalide) est une erreur de la commande, visible aussi dans le centre de messages et le log des scénarios.
 - Une commande lancée alors que le démon est **arrêté** affiche « démon aTVremote arrêté, commande non envoyée ».
@@ -133,9 +145,9 @@ Infos
 - **App Active** : identifiant de l'application qui joue (par exemple `com.apple.Music`).
 - **Info Volume** : volume de 0 à 100.
 - **Hash** (masquée) : identifiant du morceau.
-- HomePod, masquées, utilisées par le widget et utilisables en scénario :
+- Masquées, utilisées par le widget et utilisables en scénario :
   - **Aléatoire disponible**, **Répétition disponible** : 1 si la source en cours les accepte ;
-  - **Identifiant iTunes** : identifiant Apple Music / iTunes Store du morceau (`-` pour les autres sources).
+  - **Identifiant iTunes** (HomePod) : identifiant Apple Music / iTunes Store du morceau (`-` pour les autres sources).
 
 Actions
 -------

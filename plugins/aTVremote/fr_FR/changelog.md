@@ -20,6 +20,13 @@ Nouveau démon en Python, utilisé par défaut (relancez les dépendances après
 - Détection des Apple TV trop récentes pour pyatv, dont la nouvelle Apple TV 4K (gen 4) de 2026 (OS inconnu et aucune commande créée avant)
 - Notification quand on clique sur un bouton alors que le démon est arrêté
 - **Debian 12 minimum**
+
+Widgets Apple TV, mêmes améliorations que le widget HomePod (le visuel ne change pas) :
+- Titre, artiste et album défilent en CSS quand ils sont trop longs (fonctionne aussi sous Safari)
+- Animation de chargement après précédent / suivant ou quand l'appareil charge, et indication quand le démon est arrêté
+- La position avance en direct pendant la lecture (au survol : pourcentage et temps restant)
+- Aléatoire / répétition grisés quand la source ne les accepte pas (2 nouvelles infos Aléatoire disponible / Répétition disponible aussi sur les Apple TV)
+- Textes traduits, widget utilisable au clavier et avec un lecteur d'écran
 - Documentation mise à jour
 
 ## 27-11-2026 - beta
