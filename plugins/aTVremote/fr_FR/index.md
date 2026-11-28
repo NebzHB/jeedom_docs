@@ -33,7 +33,7 @@ Ce qui n'est pas possible
 
 - Le bouton « Micro » (Siri) de la télécommande.
 - Sur Apple TV 3 : la mise en veille, les appuis longs, savoir si elle est en veille. Les infos de lecture ne sont relues que si la lecture a été lancée depuis Jeedom (sinon l'interroger la sortirait de veille). Conseil : activez sa mise en veille automatique.
-- L'aléatoire et la répétition ne sont utilisables que si la source les accepte (voir [Aléatoire et répétition](#aléatoire-et-répétition)).
+- L'aléatoire et la répétition ne sont utilisables que si la source les accepte (voir la partie « Aléatoire et répétition »).
 
 Configuration du plugin
 =======================
@@ -105,7 +105,7 @@ La ligne **Appairage** de l'équipement indique l'état global : **Appairée** s
 3. Pour chaque protocole, l'Apple TV affiche un **code à 4 chiffres** : saisissez-le dans Jeedom (sur téléphone, le clavier numérique s'ouvre et le code est validé au 4e chiffre).
 4. Les clés sont enregistrées et la connexion est relancée automatiquement, sans redémarrer le démon.
 
-Si le code ne s'affiche pas : vérifiez que la télé affiche bien l'Apple TV, et les réglages AirPlay de l'Apple TV (voir [Prérequis](#prérequis)). Le code reste valable environ 3 minutes ; le bouton **Nouveau code** en redemande un. Quand tout est appairé, le bouton devient **Refaire l'appairage**.
+Si le code ne s'affiche pas : vérifiez que la télé affiche bien l'Apple TV, et les réglages AirPlay de l'Apple TV (voir la partie « Prérequis »). Le code reste valable environ 3 minutes ; le bouton **Nouveau code** en redemande un. Quand tout est appairé, le bouton devient **Refaire l'appairage**.
 
 Avec le démon Node.js : en SSH
 ------------------------------
@@ -185,7 +185,7 @@ FAQ
 Relancez les dépendances, redémarrez le démon en mode debug et regardez le log **aTVremote_deamon**. Avec le démon Python, la ligne de démarrage indique la date de son fichier et la version de pyatv, puis chaque appareil doit afficher « Connecté avec succès ! ».
 
 **Aléatoire / répétition ne font rien.**
-La source ne les accepte pas (par exemple Apple Music joué directement sur le HomePod) : les boutons sont grisés. Voir [Aléatoire et répétition](#aléatoire-et-répétition).
+La source ne les accepte pas (par exemple Apple Music joué directement sur le HomePod) : les boutons sont grisés. Voir la partie « Aléatoire et répétition ».
 
 **Le volume du HomePod ne bouge pas hors lecture.**
 Avec le démon Node.js, c'est volontaire (il planterait) ; passez au démon Python pour régler le volume à tout moment.
