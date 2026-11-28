@@ -114,7 +114,7 @@ Le widget Apple TV
 - En haut : allumer / mettre en veille, l'application en cours, et le panneau **Apps** pour lancer une application.
 - **Panneau Info** (bouton *i*) : pochette, artiste, titre et album.
 - Utilisable **au clavier** (Échap ferme les panneaux) et avec un lecteur d'écran ; textes traduits.
-- Sur Apple TV 3 : pas de veille, de chaînes ni de lancement d'apps, mais un bouton Rafraîchir.
+- Sur Apple TV 3 : pas de veille, de chaînes, de lancement d'apps ni de grisage aléatoire / répétition, mais un bouton Rafraîchir.
 
 Aléatoire et répétition
 =======================
@@ -146,7 +146,7 @@ Infos
 - **Info Volume** : volume de 0 à 100.
 - **Hash** (masquée) : identifiant du morceau.
 - Masquées, utilisées par le widget et utilisables en scénario :
-  - **Aléatoire disponible**, **Répétition disponible** : 1 si la source en cours les accepte ;
+  - **Aléatoire disponible**, **Répétition disponible** (HomePod, Apple TV 4 et plus) : 1 si la source en cours les accepte ;
   - **Identifiant iTunes** (HomePod) : identifiant Apple Music / iTunes Store du morceau (`-` pour les autres sources).
 
 Actions
