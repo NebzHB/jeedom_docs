@@ -25,7 +25,7 @@ Widgets Apple TV, mêmes améliorations que le widget HomePod (le visuel ne chan
 - Titre, artiste et album défilent en CSS quand ils sont trop longs (fonctionne aussi sous Safari)
 - Animation de chargement après précédent / suivant ou quand l'appareil charge, et indication quand le démon est arrêté
 - La position avance en direct pendant la lecture (au survol : pourcentage et temps restant)
-- Aléatoire / répétition grisés quand la source ne les accepte pas (2 nouvelles infos Aléatoire disponible / Répétition disponible aussi sur les Apple TV)
+- Aléatoire / répétition grisés quand la source ne les accepte pas (2 nouvelles infos Aléatoire disponible / Répétition disponible aussi sur les Apple TV 4 et plus)
 - Textes traduits, widget utilisable au clavier et avec un lecteur d'écran
 - Documentation mise à jour
 
