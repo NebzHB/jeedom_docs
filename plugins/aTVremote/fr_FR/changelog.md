@@ -9,7 +9,7 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 # Changelog
 
 ## 28-11-2026 - beta
-Nouveau démon en Python (bêta) : à choisir dans la configuration du plugin (Type de démon : Python), puis redémarrer le démon.
+Nouveau démon en Python, utilisé par défaut (relancez les dépendances après la mise à jour) :
 - Un seul programme qui garde une connexion avec chaque appareil : beaucoup moins de mémoire
 - Volume, veille et fonctions disponibles reçus en temps réel : Jeedom n'interroge plus les appareils toutes les minutes
 - Pochette récupérée par le démon dès le changement de morceau, une par appareil

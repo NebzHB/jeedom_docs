@@ -43,9 +43,7 @@ Après installation, activez le plugin puis lancez les **dépendances** (et rela
 Démon
 -----
 
-Dans **Type de démon**, choisissez **Python**, puis redémarrez le démon.
-
-Le démon garde une connexion avec chaque appareil :
+Le plugin utilise un démon Python, qui garde une connexion avec chaque appareil :
 - l'état (lecture, volume, veille, fonctions disponibles) est reçu **en temps réel**, sans que Jeedom ait besoin d'interroger les appareils ;
 - la **pochette** est récupérée dès le changement de morceau ;
 - chaque commande renvoie son **vrai résultat** (voir la partie « Notifications ») ;
