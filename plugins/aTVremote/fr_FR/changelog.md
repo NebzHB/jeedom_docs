@@ -8,6 +8,24 @@ Si rien n'est indiqué, il s'agit probablement d'une petite mise à jour d'ortho
 
 # Changelog
 
+## 28-11-2026 - beta
+Nouveau démon en Python (bêta, à choisir dans la configuration du plugin, Node.js reste le démon par défaut) :
+- Un seul programme qui garde une connexion avec chaque appareil, au lieu de Node.js + 2 programmes Python par appareil : beaucoup moins de mémoire
+- Volume, veille et fonctions disponibles reçus en temps réel : Jeedom n'interroge plus les appareils toutes les minutes
+- Pochette récupérée par le démon dès le changement de morceau (une par appareil, plus de mélange entre deux appareils)
+- Volume des HomePod réglable même hors lecture
+- Vraies erreurs des commandes : notification si une fonction n'est pas disponible avec la source en cours (ex. aléatoire avec Apple Music sur HomePod), erreur si l'appareil refuse
+- Détection des appareils par le démon
+- Appairage des Apple TV depuis Jeedom avec un assistant pas à pas (aussi sur mobile), plus besoin de SSH ; un seul bouton et un état global « Appairée / À appairer »
+- Même log que le démon Node.js (aTVremote_deamon)
+
+Pour les deux démons :
+- Détection des Apple TV trop récentes pour pyatv, dont la nouvelle Apple TV 4K (gen 4) de 2026 (OS inconnu et aucune commande créée avant)
+- Notification quand on clique sur un bouton alors que le démon est arrêté
+- Démon Node.js : notification quand le volume d'un HomePod ne peut pas être réglé (hors lecture) au lieu de ne rien faire
+- Vérification de la dépendance aiohttp
+- Documentation mise à jour
+
 ## 27-11-2026 - beta
 Gros travail sur les widgets, surtout celui du HomePod :
 - Mobile : le widget mobile reprend celui du Dashboard (il n'affichait plus rien)
